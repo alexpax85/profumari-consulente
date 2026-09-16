@@ -2,6 +2,10 @@
 
 Da chiarire con il titolare prima o durante la fase 2. Per ciascuna è indicata l'ipotesi con cui l'MVP procede se non arriva una risposta.
 
+> **Da mandare al cliente**: `10-questionario-cliente.docx`, che raccoglie queste domande in un foglio da compilare, tenendo solo quelle che cambiano davvero qualcosa e aggiungendo le domande sul PDF delle piramidi. Si rigenera con `node scripts/genera_questionario.js`. Le risposte si riversano in `app/config/domande.json` e `app/config/testi.json`, senza toccare il codice.
+>
+> Chiuse il 16/09/2026: la 1 (le piramidi esistono, in PDF, in arrivo) e la 13 (accessi: rimandata con Firebase, vedi `02-piano.md`).
+
 1. **Piramidi olfattive**: ne ha già una raccolta (schede fornitore, appunti)? Se sì, in che formato? *Ipotesi: si parte dalle bozze generate dagli originali, il personale le rivede nel backoffice.*
 2. **Le equivalenti seguono fedelmente l'originale?** Ci sono referenze note per discostarsi (più dolci, meno persistenti)? *Ipotesi: fedeli; le eccezioni si correggono nella scheda profilo.*
 3. **Cosa mostrare nel risultato oltre al codice**: la famiglia olfattiva in parole semplici va bene? Le note? *Ipotesi: codice, famiglia, motivazione, descrizione; niente note tecniche.*

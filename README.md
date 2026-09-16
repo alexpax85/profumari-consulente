@@ -63,6 +63,8 @@ node scripts/controlla_nomi.mjs
 
 Guardia sulla regola numero uno: confronta ogni profilo con il nome del suo originale (letto da `dati/privato/nomi.json`, che resta fuori dalla repo) e cerca i nomi commerciali interi dentro `app/` e `dati/`. Senza il file privato si salta da solo.
 
+`scripts/genera_questionario.js` rigenera il foglio di domande per il cliente (`docs/10-questionario-cliente.docx`). È l'unica cosa del progetto che vuole una libreria (`npm install docx`) e non ha niente a che fare con l'app: `app/` resta senza build e senza dipendenze.
+
 ## Il percorso del cliente
 
 Schermata di attesa scura → otto domande fisse (per chi, genere, luogo, cosa non sopporti, occasione, intensità, stagione, carattere) → una domanda gioco a rotazione (colore, bevanda, materiale, momento del giorno, zodiaco) → una domanda facoltativa sul ricordo → tre codici con due o tre righe di motivazione e l'invito a provarli al banco.

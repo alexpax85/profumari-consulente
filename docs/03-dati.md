@@ -22,6 +22,8 @@ La copia in questo kit deriva dall'export di Latina del 14/09/2026 (336 codici, 
 
 Un array con una voce per codice. Le bozze presenti nel kit sono state generate il 16/09/2026 dalle piramidi degli originali commerciali; ognuna porta una `confidenza` che dice quanto fidarsi.
 
+> **16/09/2026**: il cliente ha le piramidi olfattive in un PDF, quello da cui stampa le etichette, e lo manderà. Quando arriva sostituisce le bozze dove è più preciso: prima i 35 codici a confidenza bassa, poi i 66 a confidenza media. Le domande su cosa contenga esattamente quel file (tutte le referenze? note o descrizioni? compare il nome dell'originale?) sono nel questionario `10-questionario-cliente.docx`, sezione A. Se il PDF è regolare conviene scrivere uno script di import una volta sola, invece di ricopiare 336 schede a mano dal backoffice.
+
 ```json
 {
   "codice": "018",

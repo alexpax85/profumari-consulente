@@ -17,7 +17,7 @@ Leggi questo file e poi `docs/01-brief.md` … `docs/08-domande-cliente.md` prim
 - Lingua del codice, dei commenti, dei nomi di variabile e dell'interfaccia: **italiano**, come nel gestionale (`stato`, `fragranze`, `salva()`…).
 - Il motore vive in `app/js/motore.js` (puro, senza DOM) e si testa con `node scripts/test_motore.mjs` usando `node:assert/strict`, nello stile di `scripts/test_store.mjs` del gestionale. Ogni modifica al motore o alle mappature va accompagnata da un test.
 - Le mappature domanda → pesi e i pesi degli accordi stanno in **file di configurazione JSON** (`app/config/`), modificabili dal backoffice senza toccare il codice.
-- Persistenza dell'MVP: `localStorage` con punti di ripristino ed export/import JSON (come `store.js` del gestionale), dietro un'interfaccia `Store` con `carica()`, `salva()`, `esporta()`, `importa()` così da sostituirla con Firestore nella fase 2 senza toccare l'interfaccia.
+- Persistenza: `localStorage` con punti di ripristino ed export/import JSON (come `store.js` del gestionale), dietro un'interfaccia `Store` con `carica()`, `salva()`, `esporta()`, `importa()`. **Decisione del 16/09/2026: si resta qui.** Niente Firebase per ora: si sviluppa su GitHub Pages + dati sul dispositivo. L'interfaccia resta quella giusta per passare a Firestore quando servirà, ma non è un obiettivo di adesso.
 - Layout: `app/` (index.html, style.css, js/, config/, lib/, fonts/, sw.js, manifest.json), `scripts/` (test e utilità), `dati/` (catalogo, profili, `privato/` ignorato), `docs/`.
 - Commit in italiano, brevi, all'imperativo o al participio come nel gestionale ("Motore: esclusioni con penalità forte"). `main` pubblicato su GitHub Pages dal workflow in `assets/pages.yml.esempio` (spostarlo in `.github/workflows/pages.yml`).
 

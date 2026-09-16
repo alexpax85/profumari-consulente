@@ -45,7 +45,10 @@ Stesso approccio del gestionale: prima una demo completa che gira sul dispositiv
 - Raccolta impressioni dei commessi: risultati sensati? domande capite? durata giusta?
 - Aggiustamento pesi da backoffice; revisione profili a confidenza bassa.
 
-## Fase 5 · Versione condivisa (dopo l'approvazione)
+## Fase 5 · Versione condivisa (rimandata)
+
+> **Decisione del 16/09/2026**: per ora si resta su GitHub Pages con i dati nel browser del dispositivo. Firebase non si tocca: lo sviluppo continua su questa architettura, che per il negozio basta. Quello che segue resta valido per quando servirà davvero condividere i dati fra Latina e Aprilia — il passaggio è già preparato, perché `store-locale.js` espone l'interfaccia che `store-firebase.js` dovrà reimplementare.
+
 
 - Progetto Firebase dedicato (nome proposto: `profumari-consulente`), separato da `profumari-magazzino`.
 - Firestore: collezioni `catalogo` (codice, categoria, attivo), `profili` (per codice), `config` (pesi, domande), `statistiche` (aggregati giornalieri, anonimi).
