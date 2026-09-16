@@ -20,7 +20,7 @@ let risultati = null;
 let backoffice = null;
 let schermo = 'attesa';
 let timerInattivita = null;
-let ultimoEsito = null;
+let percorsoContato = false;
 
 // ------------------------------------------------------------------ stato
 
@@ -101,6 +101,7 @@ function tornaInAttesa() {
 
 function avviaPercorso() {
   segnaInizio(stato.statistiche);
+  percorsoContato = false;
   salva();
   vaiA('percorso');
   percorso.avvia(true, stato.indiceGioco);
@@ -108,9 +109,12 @@ function avviaPercorso() {
 
 function concludiPercorso(risposte, { secondi }) {
   const esito = raccomanda(risposte, profiliInGioco(), config());
-  ultimoEsito = esito;
-  segnaCompletato(stato.statistiche, { secondi, codici: esito.proposte.map((p) => p.codice) });
-  stato.indiceGioco = (stato.indiceGioco + 1) % 1000; // la domanda gioco ruota a ogni percorso
+  // Tornando indietro dai risultati si passa di qui più volte: il percorso conta una volta sola.
+  if (!percorsoContato) {
+    percorsoContato = true;
+    segnaCompletato(stato.statistiche, { secondi, codici: esito.proposte.map((p) => p.codice) });
+    stato.indiceGioco = (stato.indiceGioco + 1) % 1000; // la domanda gioco ruota a ogni percorso
+  }
   salva();
   risultati.mostra(esito, risposte);
   vaiA('risultati');
@@ -254,8 +258,11 @@ async function avvia() {
     },
   });
 
-  $('#avvia').addEventListener('click', avviaPercorso);
-  $('#attesa').addEventListener('click', (e) => { if (e.target.id === 'attesa' || e.target.closest('.attesa-dentro') === null) avviaPercorso(); });
+  // Nell'attesa si tocca dove si vuole: il logo no, perché è la maniglia del banco.
+  $('#attesa').addEventListener('click', (e) => {
+    if (e.target.closest('#logo-attesa')) return;
+    avviaPercorso();
+  });
   $('#esci-percorso').addEventListener('click', () => {
     segnaAbbandono(stato.statistiche, percorso.domandaCorrente());
     salva();

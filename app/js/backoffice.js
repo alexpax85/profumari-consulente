@@ -6,8 +6,9 @@ import { $, $$, el, svuota, toast, scarica, oggi, dataItaliana } from './ui.js';
 import { ripulisciCatalogo, categoriaDaCodice } from './dati.js';
 import { store } from './store-locale.js';
 import { SCENARI } from './scenari.js';
+import { riepilogo } from './statistiche.js';
 import {
-  elencoAccordi, elencoFamiglie, elencoDomande, etichettaAccordo, ATTRIBUTI, STAGIONI, MOMENTI,
+  elencoAccordi, elencoFamiglie, elencoDomande, ATTRIBUTI, STAGIONI, MOMENTI,
 } from './motore.js';
 
 const OCCASIONI = ['quotidiano', 'ufficio', 'serata', 'sport', 'speciale', 'romantico'];
@@ -629,7 +630,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
   // ============================================================ statistiche
 
   function disegnaStatistiche(sezione) {
-    const dati = riepilogoStatistiche();
+    const dati = riepilogo(s.statistiche);
     const maiProposti = s.catalogo
       .filter((c) => c.attivo && !(s.statistiche.codici || {})[c.codice])
       .map((c) => c.codice);
@@ -688,24 +689,6 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
       ])]),
       el('p', { class: 'muted piccolo-testo' }, 'Nessun dato personale: solo conteggi per giorno.'),
     ]));
-  }
-
-  function riepilogoStatistiche() {
-    const giorni = Object.entries(s.statistiche.giorni || {}).sort((a, b) => b[0].localeCompare(a[0]));
-    let iniziati = 0, completati = 0;
-    const tempi = [];
-    for (const [, g] of giorni) {
-      iniziati += g.iniziati || 0;
-      completati += g.completati || 0;
-      for (const t of g.secondi || []) tempi.push(t);
-    }
-    tempi.sort((a, b) => a - b);
-    return {
-      giorni, iniziati, completati,
-      mediano: tempi.length ? tempi[Math.floor(tempi.length / 2)] : null,
-      codici: Object.entries(s.statistiche.codici || {}).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])),
-      abbandoni: Object.entries(s.statistiche.abbandoni || {}).sort((a, b) => b[1] - a[1]),
-    };
   }
 
   // ================================================================= backup

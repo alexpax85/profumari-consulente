@@ -69,8 +69,6 @@ const D = {
   spunta: '<path d="M4.5 12.5 9.5 17.5 19.5 6.5"/>',
 };
 
-export const ICONE_DISPONIBILI = Object.keys(D);
-
 /** Restituisce un <svg> pronto da inserire. */
 export function icona(nome) {
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
