@@ -1,0 +1,1682 @@
+[
+ {
+  "codice": "000",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "001",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "002",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "003",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "004",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "005",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "006",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "007",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "008",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "009",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "010",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "011",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "012",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "013",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "014",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "015",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "016",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "017",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "018",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "019",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "020",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "021",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "022",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "023",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "024",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "025",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "026",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "027",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "028",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "029",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "030",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "031",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "032",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "033",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "034",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "035",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "036",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "037",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "039",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "040",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "042",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "043",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "044",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "045",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "046",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "047",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "048",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "049",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "051",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "052",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "053",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "054",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "055",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "056",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "057",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "058",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "059",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "060",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "061",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "062",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "063",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "064",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "065",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "066",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "067",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "068",
+  "categoria": "UOMO",
+  "attivo": true
+ },
+ {
+  "codice": "200",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "201",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "202",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "203",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "205",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "206",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "207",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "208",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "209",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "210",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "211",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "212",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "213",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "214",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "215",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "216",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "217",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "218",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "219",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "220",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "221",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "222",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "223",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "224",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "225",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "226",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "227",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "228",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "229",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "230",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "231",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "232",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "233",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "234",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "235",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "237",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "238",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "239",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "241",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "242",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "243",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "244",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "245",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "246",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "247",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "248",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "249",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "250",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "251",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "252",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "253",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "254",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "255",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "256",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "257",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "258",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "259",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "260",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "261",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "262",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "263",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "264",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "265",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "266",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "267",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "268",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "269",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "270",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "271",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "272",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "273",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "274",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "275",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "276",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "277",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "278",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "279",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "280",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "281",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "282",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "283",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "284",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "285",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "286",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "287",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "288",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "289",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "290",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "291",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "292",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "293",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "294",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "295",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "296",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "297",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "298",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "299",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "300",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "302",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "303",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "304",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "305",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "306",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "308",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "309",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "312",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "313",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "314",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "315",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "316",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "317",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "318",
+  "categoria": "DONNA",
+  "attivo": true
+ },
+ {
+  "codice": "500",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "501",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "502",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "503",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "504",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "505",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "506",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "507",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "508",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "509",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "510",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "511",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "512",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "513",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "514",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "515",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "516",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "517",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "518",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "519",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "520",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "521",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "522",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "523",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "524",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "525",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "526",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "527",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "528",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "529",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "530",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "531",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "532",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "533",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "534",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "535",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "536",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "537",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "538",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "539",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "540",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "541",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "542",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "543",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "544",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "545",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "546",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "547",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "548",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "549",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "550",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "551",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "552",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "553",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "554",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "555",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "556",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "557",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "558",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "559",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "560",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "561",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "562",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "563",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "564",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "565",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "566",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "567",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "568",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "569",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "570",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "571",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "572",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "573",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "574",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "575",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "576",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "577",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "578",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "579",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "580",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "581",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "582",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "583",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "584",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "585",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "586",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "587",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "588",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "589",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "590",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "591",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "592",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "593",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "594",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "595",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "596",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "598",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "599",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "600",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "601",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "602",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "603",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "604",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "605",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "606",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "607",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "608",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "609",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "610",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "611",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "612",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "613",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "614",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "615",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "616",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "617",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "618",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "619",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "620",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "621",
+  "categoria": "NICCHIA",
+  "attivo": true
+ },
+ {
+  "codice": "800",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "801",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "802",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "803",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "804",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "805",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "806",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "807",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "808",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "809",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "810",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "811",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "812",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "813",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "814",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "815",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "816",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "817",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "818",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "819",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "820",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "821",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "822",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "823",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "824",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "825",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "826",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "827",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "828",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "829",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "830",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "831",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "832",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "833",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "834",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "835",
+  "categoria": "PREMIUM",
+  "attivo": true
+ },
+ {
+  "codice": "836",
+  "categoria": "PREMIUM",
+  "attivo": true
+ }
+]

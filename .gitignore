@@ -1,0 +1,9 @@
+# Corrispondenza codice -> originale commerciale e file grezzi del cliente: restano solo in locale
+dati/privato/
+*.xlsx
+*.csv
+~$*
+# Sistema e strumenti
+.DS_Store
+.claude/
+build/
