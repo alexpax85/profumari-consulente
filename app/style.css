@@ -1,0 +1,241 @@
+/* Consulente olfattivo — veste grafica di docs/07-stile.md.
+   Variabili e componenti ripresi dal gestionale (assets/style-magazzino.css);
+   il percorso cliente aggiunge schermate a tutto schermo con schede grandi. */
+
+:root {
+  --nero: #121212; --bg: #ffffff; --bg2: #f6f6f6; --card: #ffffff;
+  --ink: #121212; --ink2: rgba(18,18,18,.72); --muted: rgba(18,18,18,.55);
+  --line: rgba(18,18,18,.12); --line2: rgba(18,18,18,.06);
+  --teal: #018a86; --teal-scuro: #016b68; --teal-bg: #e6f3f2; --teal-ink: #fff;
+  --teal-luce: #5fc3bf;
+  --ok: #018a86; --warn: #b7791f; --bad: #b3261e;
+  --ok-bg: #e6f3f2; --warn-bg: #fbeed4; --bad-bg: #f9dedc; --info-bg: #f3f8f8;
+  --radius: 6px; --radius-scheda: 10px; --tap: 46px; --tap-grande: 60px;
+  --font: "Assistant", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* tinte tenui per le icone delle opzioni: mai per il testo */
+  --sabbia: #e9e2d3; --salvia: #dfe8e1; --cipria: #efe1e3; --notte: #2a2f3a;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font: 16px/1.45 var(--font); -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { margin: 0 0 .5rem; line-height: 1.2; font-weight: 400; letter-spacing: .01em; }
+h2 { font-size: 1.45rem; } h3 { font-size: 1.1rem; font-weight: 600; }
+b, strong { font-weight: 700; }
+a { color: var(--teal-scuro); }
+img { -webkit-touch-callout: none; }
+
+/* Modalità chiosco: niente selezione, niente menu contestuale, niente zoom. */
+body { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; touch-action: manipulation; overscroll-behavior: none; }
+input, textarea { -webkit-user-select: text; user-select: text; }
+
+.schermo[hidden] { display: none !important; }
+.colonna { display: flex; flex-direction: column; min-height: 100vh; min-height: 100dvh; }
+
+/* ------------------------------------------------------------- testata */
+header.top { padding: 14px 20px; background: var(--nero); color: #fff; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; border-bottom: 3px solid var(--teal); padding-top: max(14px, env(safe-area-inset-top)); }
+header.top .brand { display: flex; align-items: center; gap: 16px; flex: 1 1 auto; }
+header.top .logo { height: 34px; width: auto; display: block; user-select: none; }
+header.top .sep { width: 1px; height: 30px; background: rgba(255,255,255,.25); }
+header.top h1 { font-size: .95rem; font-weight: 300; letter-spacing: .28em; text-transform: uppercase; color: rgba(255,255,255,.85); margin: 0; }
+header.top.sottile { padding-top: max(10px, env(safe-area-inset-top)); padding-bottom: 10px; border-bottom-width: 2px; }
+header.top.sottile .logo { height: 26px; }
+header.top .utente { display: flex; align-items: center; gap: 10px; font-size: .85rem; color: rgba(255,255,255,.85); }
+header.top button.esci, header.top button.chiudi { background: transparent; color: #fff; border-color: rgba(255,255,255,.4); min-height: 40px; }
+header.top button.esci:hover, header.top button.chiudi:hover { background: rgba(255,255,255,.12); }
+
+/* ------------------------------------------------------------- pulsanti */
+button, .btn { min-height: var(--tap); padding: 0 20px; border-radius: 4px; border: 1px solid var(--nero); background: #fff; color: var(--nero); font: inherit; font-size: .9rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; transition: background .15s, color .15s; }
+button:hover { background: var(--bg2); }
+button.primario { background: var(--teal); color: var(--teal-ink); border-color: var(--teal); }
+button.primario:hover { background: var(--teal-scuro); border-color: var(--teal-scuro); }
+button.pericolo { background: #fff; color: var(--bad); border-color: var(--bad); }
+button.pericolo:hover { background: var(--bad-bg); }
+button.piccolo { min-height: 36px; padding: 0 12px; font-size: .78rem; }
+button.grande { min-height: var(--tap-grande); padding: 0 26px; font-size: .95rem; }
+button:disabled { opacity: .4; cursor: default; }
+button:focus-visible, .scheda-opzione:focus-visible, .tacca:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+.azioni { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+
+/* ================================================= schermata di attesa */
+.attesa { position: fixed; inset: 0; z-index: 30; background: var(--nero); color: #fff; display: flex; align-items: center; justify-content: center; padding: 24px; overflow: hidden; }
+.attesa::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 20% 0%, rgba(1,138,134,.45), transparent 55%), radial-gradient(ellipse at 100% 100%, rgba(1,138,134,.25), transparent 50%); }
+.attesa-dentro { position: relative; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 18px; max-width: 560px; }
+.logo-grande { height: 62px; width: auto; animation: respiro 5.5s ease-in-out infinite; }
+.attesa h1 { font-weight: 300; font-size: 2.1rem; letter-spacing: .04em; margin: 0; }
+.attesa-sotto { margin: 0; color: rgba(255,255,255,.7); font-size: 1.1rem; max-width: 34ch; }
+.attesa-stato { margin: 0; min-height: 1.2em; font-size: .85rem; color: rgba(255,255,255,.45); }
+button.avvia { margin-top: 10px; min-height: var(--tap-grande); padding: 0 34px; background: var(--teal); border-color: var(--teal); color: #fff; font-size: 1rem; letter-spacing: .12em; }
+button.avvia:hover { background: var(--teal-scuro); border-color: var(--teal-scuro); }
+@keyframes respiro { 0%, 100% { opacity: .55; transform: scale(.985); } 50% { opacity: 1; transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .logo-grande { animation: none; opacity: 1; } }
+@media (min-width: 820px) { .logo-grande { height: 72px; } .attesa h1 { font-size: 2.6rem; } }
+
+/* ============================================= percorso · avanzamento */
+.avanzamento { display: flex; align-items: center; gap: 12px; padding: 10px 20px 0; }
+.avanzamento .barra { flex: 1 1 auto; height: 3px; background: var(--line2); border-radius: 999px; overflow: hidden; }
+.avanzamento .barra i { display: block; height: 100%; width: 0; background: var(--teal); transition: width .3s ease; }
+.avanzamento .passo { font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-variant-numeric: tabular-nums; }
+@media (prefers-reduced-motion: reduce) { .avanzamento .barra i { transition: none; } }
+
+/* ============================================= percorso · la domanda */
+.domanda { flex: 1 1 auto; padding: 22px 20px 20px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.domanda:focus { outline: none; }
+.domanda h2 { font-weight: 300; font-size: 1.85rem; line-height: 1.22; letter-spacing: .01em; max-width: 22ch; }
+.domanda .sottotitolo { margin: 0 0 20px; color: var(--muted); font-size: 1rem; }
+@media (min-width: 820px) { .domanda { padding: 30px 40px; } .domanda h2 { font-size: 2.3rem; } }
+/* La domanda resta ancorata in alto anche sugli schermi alti: passando da una
+   schermata all'altra il titolo non si sposta, e lo spazio bianco sotto non dà
+   fastidio. Il vuoto è voluto (docs/07-stile.md). */
+
+.griglia { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+@media (min-width: 720px) { .griglia { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
+@media (min-width: 1100px) { .griglia.larga { grid-template-columns: repeat(4, 1fr); } }
+
+.scheda-opzione { display: flex; align-items: center; gap: 14px; text-align: left; min-height: var(--tap-grande); padding: 14px; border: 1px solid var(--line); border-radius: var(--radius-scheda); background: var(--card); color: var(--ink); font: inherit; letter-spacing: 0; text-transform: none; position: relative; cursor: pointer; transition: border-color .12s, background .12s; }
+.scheda-opzione:hover { background: var(--bg2); }
+.scheda-opzione .cerchio { flex: 0 0 auto; width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; background: var(--salvia); }
+.scheda-opzione .cerchio svg { width: 26px; height: 26px; stroke: var(--nero); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.scheda-opzione .cerchio.sabbia { background: var(--sabbia); }
+.scheda-opzione .cerchio.salvia { background: var(--salvia); }
+.scheda-opzione .cerchio.cipria { background: var(--cipria); }
+.scheda-opzione .cerchio.notte { background: var(--notte); }
+.scheda-opzione .cerchio.notte svg { stroke: #fff; }
+.scheda-opzione .testo { min-width: 0; }
+.scheda-opzione .etichetta { display: block; font-weight: 600; font-size: 1.02rem; line-height: 1.3; }
+.scheda-opzione .dettaglio { display: block; font-size: .85rem; color: var(--muted); margin-top: 2px; }
+.scheda-opzione.scelta { border: 2px solid var(--teal); background: var(--teal-bg); padding: 13px; }
+.scheda-opzione .spunta { position: absolute; top: 8px; right: 8px; width: 22px; height: 22px; border-radius: 50%; background: var(--teal); display: none; place-items: center; }
+.scheda-opzione .spunta svg { width: 13px; height: 13px; stroke: #fff; stroke-width: 2.4; fill: none; }
+.scheda-opzione.scelta .spunta { display: grid; }
+.scheda-opzione.spenta { opacity: .45; }
+.scheda-opzione .pastiglia { flex: 0 0 auto; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); }
+
+/* scala a tacche (intensità) */
+.scala { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin: 26px 0 10px; position: relative; max-width: 560px; }
+.scala::before { content: ""; position: absolute; left: 8%; right: 8%; top: 50%; height: 2px; background: var(--line); }
+.tacca { position: relative; width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--line); background: #fff; padding: 0; display: grid; place-items: center; cursor: pointer; }
+.tacca .punto { width: 14px; height: 14px; border-radius: 50%; background: var(--line); transition: transform .15s, background .15s; }
+.tacca.scelta { border-color: var(--teal); background: var(--teal-bg); }
+.tacca.scelta .punto { background: var(--teal); transform: scale(1.5); }
+.tacca.sotto .punto { background: var(--teal-luce); }
+.scala-etichetta { font-size: 1.15rem; font-weight: 600; min-height: 1.6em; color: var(--teal-scuro); }
+.scala-estremi { display: flex; justify-content: space-between; max-width: 560px; font-size: .8rem; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .tacca .punto { transition: none; } }
+
+/* barra in fondo */
+.fondo { display: flex; gap: 12px; padding: 14px 20px; padding-bottom: max(14px, env(safe-area-inset-bottom)); border-top: 1px solid var(--line); background: var(--bg); position: sticky; bottom: 0; }
+.fondo button { flex: 0 0 auto; }
+.fondo #avanti, .fondo #ricomincia { margin-left: auto; }
+@media (max-width: 520px) { .fondo { flex-wrap: wrap; } .fondo button { flex: 1 1 auto; } .fondo #avanti, .fondo #ricomincia { margin-left: 0; } }
+
+/* =========================================== percorso · i tre risultati */
+.esito { flex: 1 1 auto; padding: 24px 20px 10px; overflow-y: auto; }
+.esito:focus { outline: none; }
+.esito h2 { font-weight: 300; font-size: 1.9rem; }
+.esito-sotto { margin: 0 0 18px; color: var(--ink2); max-width: 60ch; }
+.avviso-morbido { margin: 0 0 16px; padding: 10px 14px; background: var(--info-bg); border-left: 3px solid var(--teal); border-radius: 0 var(--radius) var(--radius) 0; color: var(--ink2); font-size: .95rem; }
+.avviso-morbido[hidden] { display: none; }
+@media (min-width: 820px) { .esito { padding: 30px 40px 16px; } .esito h2 { font-size: 2.3rem; } }
+
+.schede { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 22px; }
+@media (min-width: 860px) { .schede { grid-template-columns: repeat(3, 1fr); gap: 20px; } }
+
+.scheda-esito { border: 1px solid var(--line); border-top: 3px solid var(--teal); border-radius: var(--radius-scheda); background: var(--card); padding: 20px; display: flex; flex-direction: column; gap: 10px; cursor: default; }
+.scheda-esito .codice { font-weight: 700; font-size: 4rem; line-height: .95; color: var(--teal-scuro); font-variant-numeric: tabular-nums; letter-spacing: .02em; }
+@media (min-width: 860px) { .scheda-esito .codice { font-size: 4.6rem; } }
+.scheda-esito .famiglia { font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.scheda-esito .famiglia span { display: block; margin-top: 3px; letter-spacing: .02em; text-transform: none; font-weight: 400; font-size: .92rem; color: var(--ink2); }
+.scheda-esito ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+.scheda-esito ul li { position: relative; padding-left: 16px; line-height: 1.4; }
+.scheda-esito ul li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+.scheda-esito .descrizione { margin: 0; font-style: italic; color: var(--ink2); font-weight: 300; line-height: 1.5; border-top: 1px solid var(--line2); padding-top: 12px; }
+.scheda-esito.riserva { border-top-color: var(--nero); }
+
+.banco { margin: 0 0 18px; padding: 16px 18px; background: var(--nero); color: #fff; border-radius: var(--radius-scheda); border-left: 4px solid var(--teal-luce); font-size: 1.05rem; }
+.riepilogo { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg2); color: var(--ink2); font-size: .88rem; font-weight: 600; letter-spacing: 0; text-transform: none; }
+button.chip:hover { background: var(--teal-bg); border-color: var(--teal); color: var(--teal-scuro); }
+.chip.etichetta { background: transparent; border-style: dashed; font-weight: 400; }
+
+/* ================================================== backoffice (banco) */
+#backoffice { padding: 0 20px 48px; background: var(--bg); min-height: 100vh; }
+#backoffice header.top { margin: 0 -20px; }
+nav.tabs { display: flex; gap: 4px; overflow-x: auto; margin: 0 -20px; padding: 0 20px; position: sticky; top: 0; background: var(--bg); z-index: 5; border-bottom: 1px solid var(--line); scrollbar-width: none; }
+nav.tabs::-webkit-scrollbar { display: none; }
+nav.tabs button { flex: 0 0 auto; min-height: 54px; padding: 0 14px; border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: transparent; font: inherit; font-size: .92rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink2); margin-bottom: -1px; }
+nav.tabs button.attivo { color: var(--nero); border-bottom-color: var(--teal); }
+section.tab { display: none; padding-top: 22px; } section.tab.attivo { display: block; }
+
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; margin: 0 0 16px; }
+.card.info { background: var(--info-bg); border-color: #cfe3e2; border-left: 4px solid var(--teal); }
+.card.avviso { background: var(--warn-bg); border-color: #ecd9ad; }
+.card > h2::after { content: ""; display: block; width: 36px; height: 2px; background: var(--teal); margin-top: 8px; }
+.riga { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.riga > * { flex: 1 1 160px; }
+.riga > .stretto { flex: 0 0 auto; }
+label.campo { display: flex; flex-direction: column; gap: 5px; font-size: .78rem; color: var(--muted); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+input, select, textarea { min-height: var(--tap); padding: 8px 12px; border: 1px solid var(--line); border-radius: 4px; font: inherit; font-size: 1rem; background: #fff; color: var(--ink); width: 100%; letter-spacing: 0; text-transform: none; }
+textarea { min-height: 80px; resize: vertical; }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--teal); outline-offset: 1px; border-color: var(--teal); }
+input[type=range] { min-height: 0; padding: 0; accent-color: var(--teal); }
+input[type=checkbox] { width: 22px; height: 22px; min-height: 0; accent-color: var(--teal); }
+
+.tabella-wrap { overflow-x: auto; max-height: 62vh; }
+table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+th, td { padding: 10px 8px; border-bottom: 1px solid var(--line2); text-align: left; vertical-align: middle; }
+th { position: sticky; top: 0; background: var(--card); font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); border-bottom: 1px solid var(--line); z-index: 1; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.cod { font-weight: 700; white-space: nowrap; color: var(--teal-scuro); font-variant-numeric: tabular-nums; }
+tr.cat td { background: var(--bg2); font-weight: 600; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink2); padding: 12px 8px 8px; }
+tr.manca td.cod { color: var(--bad); }
+tr.manca { background: var(--bad-bg); }
+
+.badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: .8rem; font-weight: 700; white-space: nowrap; }
+.badge.ok { background: var(--ok-bg); color: var(--teal-scuro); }
+.badge.sotto { background: var(--warn-bg); color: var(--warn); }
+.badge.esaurito { background: var(--bad-bg); color: var(--bad); }
+.badge.neutro { background: var(--nero); color: #fff; }
+.badge.grigio { background: var(--bg2); color: var(--muted); }
+
+.kpi { display: grid; grid-template-columns: repeat(auto-fit, minmax(132px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.kpi .card { margin: 0; padding: 14px 16px; border-top: 3px solid var(--nero); }
+.kpi .v { font-size: 2.1rem; font-weight: 300; line-height: 1.05; }
+.kpi .l { font-size: .78rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; margin-top: 4px; }
+.kpi .card.teal { border-top-color: var(--teal); }
+.kpi .card.bad { border-top-color: var(--bad); } .kpi .card.bad .v { color: var(--bad); }
+.kpi .card.warn { border-top-color: var(--warn); } .kpi .card.warn .v { color: var(--warn); }
+
+.muted { color: var(--muted); } .piccolo-testo { font-size: .85rem; }
+.vuoto { text-align: center; padding: 30px; color: var(--muted); }
+.mono { font-family: ui-monospace, Menlo, monospace; font-size: .85rem; }
+.errore-testo { color: var(--bad); font-weight: 600; }
+.errore-testo[hidden] { display: none; }
+
+/* cursori degli accordi nella scheda profilo */
+.cursori { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px 18px; }
+.cursore { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 4px 10px; }
+.cursore .nome { font-size: .9rem; font-weight: 600; }
+.cursore .val { font-variant-numeric: tabular-nums; color: var(--muted); font-size: .85rem; min-width: 2.2em; text-align: right; }
+.cursore input[type=range] { grid-column: 1 / -1; }
+.cursore.spento .nome { color: var(--muted); font-weight: 400; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips button { min-height: 38px; padding: 0 14px; border-radius: 999px; font-size: .85rem; letter-spacing: 0; text-transform: none; font-weight: 600; }
+.chips button.scelto { background: var(--teal-bg); border-color: var(--teal); color: var(--teal-scuro); }
+
+dialog { border: none; border-radius: var(--radius); padding: 24px; max-width: 620px; width: calc(100vw - 32px); box-shadow: 0 24px 70px rgba(0,0,0,.3); border-top: 4px solid var(--teal); font-family: var(--font); color: var(--ink); }
+dialog::backdrop { background: rgba(18,18,18,.5); }
+#toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--nero); color: #fff; padding: 12px 22px; border-radius: 4px; border-left: 4px solid var(--teal); font-weight: 600; opacity: 0; transition: opacity .2s; pointer-events: none; z-index: 50; max-width: 90vw; text-align: center; }
+#toast.on { opacity: 1; }
+
+.cerca { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+.cerca input[type=search] { flex: 1 1 220px; }
+.cerca label.chk { display: flex; align-items: center; gap: 8px; min-height: var(--tap); font-weight: 600; font-size: .9rem; }
+
+@media (max-width: 600px) {
+  #backoffice { padding: 0 14px 40px; }
+  #backoffice header.top, nav.tabs { margin: 0 -14px; padding-left: 14px; padding-right: 14px; }
+  th, td { padding: 8px 5px; }
+  header.top .logo { height: 28px; }
+  .kpi .v { font-size: 1.7rem; }
+}

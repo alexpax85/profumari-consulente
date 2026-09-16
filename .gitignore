@@ -7,3 +7,5 @@ dati/privato/
 .DS_Store
 .claude/
 build/
+# I dati copiati dentro app/ dal workflow di pubblicazione
+app/dati/

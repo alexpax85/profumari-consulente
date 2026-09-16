@@ -327,23 +327,41 @@ function indiceStabile(codice, quanti) {
   return somma % quanti;
 }
 
-function modello(elenco, codice) {
+/**
+ * Sceglie un modello in modo stabile dal codice, saltando quelli già usati dalle
+ * altre schede: tre proposte non devono dire la stessa identica frase.
+ */
+function modello(elenco, codice, usate) {
   if (!Array.isArray(elenco) || !elenco.length) return null;
-  return elenco[indiceStabile(codice, elenco.length)];
+  const partenza = indiceStabile(codice, elenco.length);
+  for (let passo = 0; passo < elenco.length; passo++) {
+    const testo = elenco[(partenza + passo) % elenco.length];
+    if (!usate || !usate.has(testo)) return testo;
+  }
+  return elenco[partenza];
 }
 
-/** Due o tre frasi brevi: mai numeri, mai nomi commerciali, mai gergo. */
-export function spiega(desiderato, profilo, config) {
+/**
+ * Due o tre frasi brevi: mai numeri, mai nomi commerciali, mai gergo.
+ * `usate` (facoltativo) raccoglie i modelli già impiegati nella stessa rosa.
+ */
+export function spiega(desiderato, profilo, config, usate = null) {
   const frasi = (config && config.frasi) || {};
   const motivi = [];
   const comuni = accordiComuni(desiderato, profilo, config, 2);
 
   if (comuni.length >= 2) {
-    const testo = modello(frasi.accordiDue, profilo.codice);
-    if (testo) motivi.push(testo.replace('{a}', comuni[0].etichetta).replace('{b}', comuni[1].etichetta));
+    const testo = modello(frasi.accordiDue, profilo.codice, usate);
+    if (testo) {
+      if (usate) usate.add(testo);
+      motivi.push(testo.replace('{a}', comuni[0].etichetta).replace('{b}', comuni[1].etichetta));
+    }
   } else if (comuni.length === 1) {
-    const testo = modello(frasi.accordoUno, profilo.codice);
-    if (testo) motivi.push(testo.replace('{a}', comuni[0].etichetta));
+    const testo = modello(frasi.accordoUno, profilo.codice, usate);
+    if (testo) {
+      if (usate) usate.add(testo);
+      motivi.push(testo.replace('{a}', comuni[0].etichetta));
+    }
   }
 
   // Un attributo azzeccato: il più vicino fra quelli chiesti, purché netto.
@@ -375,7 +393,7 @@ export function spiega(desiderato, profilo, config) {
     if (stagione && (frasi.stagioni || {})[stagione]) motivi.push(frasi.stagioni[stagione]);
   }
   if (!motivi.length) {
-    const generica = modello(frasi.generiche, profilo.codice);
+    const generica = modello(frasi.generiche, profilo.codice, usate);
     if (generica) motivi.push(generica);
   }
   return motivi.slice(0, 3);
@@ -424,7 +442,7 @@ function scegliConDiversita(candidati, quanti, pesi, maxFamiglia) {
   return { scelti, allargato };
 }
 
-function proposta(candidato, desiderato, config) {
+function proposta(candidato, desiderato, config, usate) {
   const p = candidato.profilo;
   const famiglia = etichettaFamiglia(p.famiglia, config);
   return {
@@ -436,7 +454,7 @@ function proposta(candidato, desiderato, config) {
     sottofamiglia: p.sottofamiglia || '',
     descrizione: p.descrizione || '',
     confidenza: p.confidenza || 'media',
-    motivi: spiega(desiderato, p, config),
+    motivi: spiega(desiderato, p, config, usate),
     accordiComuni: accordiComuni(desiderato, p, config, 3),
     dettaglio: candidato,
   };
@@ -468,9 +486,10 @@ export function raccomanda(risposte, profili, config, opzioni = {}) {
   const restanti = candidati.filter((c) => !scelti.includes(c));
   const riserva = restanti.find((c) => !usate.has(c.profilo.sottofamiglia || c.profilo.famiglia || '')) || restanti[0] || null;
 
+  const modelliUsati = new Set();
   return {
-    proposte: scelti.map((c) => proposta(c, desiderato, config)),
-    riserva: riserva ? proposta(riserva, desiderato, config) : null,
+    proposte: scelti.map((c) => proposta(c, desiderato, config, modelliUsati)),
+    riserva: riserva ? proposta(riserva, desiderato, config, modelliUsati) : null,
     desiderato,
     allargato,
     candidati: candidati.length,

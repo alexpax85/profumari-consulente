@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Profumari · Consulente olfattivo</title>
+<meta name="description" content="Percorso guidato: poche domande e tre codici di fragranza da provare al banco.">
+<meta name="theme-color" content="#121212">
+<meta name="color-scheme" content="light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Consulente">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icona-180.png">
+<link rel="stylesheet" href="fonts/assistant.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================= attesa -->
+<section id="attesa" class="schermo attesa" aria-label="Schermata di attesa">
+  <div class="attesa-dentro">
+    <img id="logo-attesa" class="logo-grande" src="img/logo.svg" alt="i profumari" draggable="false">
+    <h1 id="attesa-titolo">Trova il tuo profumo</h1>
+    <p id="attesa-sotto" class="attesa-sotto"></p>
+    <button id="avvia" class="avvia" type="button">Tocca per cominciare</button>
+    <p id="attesa-stato" class="attesa-stato" role="status"></p>
+  </div>
+</section>
+
+<!-- =========================================================== percorso -->
+<div id="percorso" class="schermo colonna" hidden>
+  <header class="top sottile">
+    <div class="brand">
+      <img class="logo" src="img/logo.svg" alt="i profumari" draggable="false">
+      <span class="sep" aria-hidden="true"></span>
+      <h1>Consulente</h1>
+    </div>
+    <button id="esci-percorso" class="chiudi" type="button" aria-label="Ricomincia da capo">Ricomincia</button>
+  </header>
+
+  <div class="avanzamento">
+    <div class="barra"><i id="barra-piena"></i></div>
+    <span id="passo" class="passo"></span>
+  </div>
+
+  <main id="domanda" class="domanda" tabindex="-1"></main>
+
+  <footer class="fondo">
+    <button id="indietro" class="grande" type="button">Indietro</button>
+    <button id="salta" class="grande" type="button" hidden>Salta</button>
+    <button id="avanti" class="grande primario" type="button">Avanti</button>
+  </footer>
+</div>
+
+<!-- ========================================================== risultati -->
+<div id="risultati" class="schermo colonna" hidden>
+  <header class="top sottile">
+    <div class="brand">
+      <img class="logo" src="img/logo.svg" alt="i profumari" draggable="false">
+      <span class="sep" aria-hidden="true"></span>
+      <h1>Consulente</h1>
+    </div>
+    <button id="esci-risultati" class="chiudi" type="button" aria-label="Ricomincia da capo">Ricomincia</button>
+  </header>
+
+  <main class="esito" tabindex="-1">
+    <h2 id="esito-titolo"></h2>
+    <p id="esito-sotto" class="esito-sotto"></p>
+    <p id="esito-allargato" class="avviso-morbido" hidden></p>
+    <div id="schede" class="schede"></div>
+    <p id="esito-banco" class="banco"></p>
+    <div id="riepilogo" class="riepilogo"></div>
+  </main>
+
+  <footer class="fondo">
+    <button id="riserva" class="grande" type="button">Nessuno mi convince</button>
+    <button id="ricomincia" class="grande primario" type="button">Ricomincia</button>
+  </footer>
+</div>
+
+<!-- ========================================================= backoffice -->
+<div id="backoffice" class="schermo" hidden>
+  <header class="top">
+    <div class="brand">
+      <img class="logo" src="img/logo.svg" alt="i profumari" draggable="false">
+      <span class="sep" aria-hidden="true"></span>
+      <h1>Consulente · Banco</h1>
+    </div>
+    <div class="utente">
+      <span id="bo-stato" class="piccolo-testo"></span>
+      <button id="bo-esci" class="esci" type="button">Esci</button>
+    </div>
+  </header>
+
+  <nav class="tabs" id="bo-tabs" aria-label="Sezioni del backoffice">
+    <button type="button" data-tab="catalogo" class="attivo">Catalogo</button>
+    <button type="button" data-tab="profili">Profili</button>
+    <button type="button" data-tab="taratura">Taratura</button>
+    <button type="button" data-tab="statistiche">Statistiche</button>
+    <button type="button" data-tab="backup">Backup</button>
+  </nav>
+
+  <section class="tab attivo" id="tab-catalogo"></section>
+  <section class="tab" id="tab-profili"></section>
+  <section class="tab" id="tab-taratura"></section>
+  <section class="tab" id="tab-statistiche"></section>
+  <section class="tab" id="tab-backup"></section>
+</div>
+
+<!-- ============================================================= dialog -->
+<dialog id="dlg-pin">
+  <h2 id="dlg-pin-titolo">Accesso al banco</h2>
+  <p id="dlg-pin-testo" class="muted">Inserisci il codice del personale.</p>
+  <label class="campo">Codice
+    <input id="pin" type="password" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="••••">
+  </label>
+  <p id="pin-errore" class="errore-testo" hidden></p>
+  <div class="azioni">
+    <button id="pin-ok" class="primario" type="button">Entra</button>
+    <button id="pin-annulla" type="button">Annulla</button>
+  </div>
+</dialog>
+
+<dialog id="dlg-scheda">
+  <div id="dlg-scheda-corpo"></div>
+  <div class="azioni"><button id="dlg-scheda-chiudi" class="primario" type="button">Chiudi</button></div>
+</dialog>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

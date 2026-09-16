@@ -16,7 +16,7 @@ Codici a confidenza bassa: 000, 060, 273, 313, 551, 552, 553, 586, 587, 590, 591
 
 Distribuzione delle famiglie nelle bozze: orientale 82, floreale 60, legnoso 33, gourmand 32, fruttato-floreale 30, acquatico 17, agrumato 16, ambrato 14, chypre 14, fougère 10, aromatico 9, cuoio 8, cipriato 6, verde 5. Genere: donna 141, unisex 116, uomo 79.
 
-Avvertenza per la revisione: tre descrizioni riprendono una parola del nome dell'originale perché descrive davvero l'odore ("confetto", "gelato al pistacchio", "stile shabby"). Non sono marchi, ma il personale può riformularle se preferisce.
+Controllo dei nomi: `node scripts/controlla_nomi.mjs` confronta ogni profilo con il nome del suo originale (letto da `privato/nomi.json`, che resta fuori dalla repo) e cerca i nomi interi in `app/` e `dati/`. Quattro descrizioni riprendono una parola del nome perché descrive davvero l'odore — "confetto", "gelato al pistacchio", "stile shabby", "cola" — e sono elencate come eccezioni dentro lo script: il personale può riformularle se preferisce. Le altre sono state riscritte il 16/09/2026 (codici 039, 270, 290, 500).
 
 ## Rigenerare o estendere le bozze
 

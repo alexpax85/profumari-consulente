@@ -259,6 +259,14 @@ prova('la riserva è una quarta fragranza, diversa dalle tre', () => {
   assert.ok(!codici(esito).includes(esito.riserva.codice));
 });
 
+prova('le tre schede non ripetono la stessa frase di apertura', () => {
+  const esito = raccomanda({
+    per_chi: 'me', genere: 'libero', luogo: ['citta'], occasione: ['serata'], intensita: 4,
+  }, CATALOGO, config);
+  const aperture = esito.proposte.map((p) => p.motivi[0]).filter(Boolean);
+  assert.equal(new Set(aperture).size, aperture.length, `frasi ripetute: ${aperture.join(' / ')}`);
+});
+
 console.log(`\n${passate} passate, ${fallite.length} fallite\n`);
 if (fallite.length) {
   for (const f of fallite) console.error(f.errore);
