@@ -1,0 +1,39 @@
+{
+ "versione": 1,
+ "nota": "Testi delle schermate (docs/05-percorso.md). Le versioni 'me' e 'regalo' cambiano solo il tono.",
+ "attesa": {
+  "titolo": "Trova il tuo profumo",
+  "invito": "Tocca per cominciare",
+  "sotto": "Poche domande, un minuto, tre codici da provare al banco."
+ },
+ "avanzamento": "{n} di {tot}",
+ "risultati": {
+  "me": {
+   "titolo": "Tre profumi da provare",
+   "sottotitolo": "Non è una sentenza: è una rosa di tre idee, scelte dalle tue risposte.",
+   "banco": "Chiedi al banco di fartele sentire: di' i codici, o mostra questo schermo."
+  },
+  "regalo": {
+   "titolo": "Tre idee per il tuo regalo",
+   "sottotitolo": "Non è una sentenza: è una rosa di tre idee, scelte dalle tue risposte.",
+   "banco": "Chiedi al banco di fartele sentire: di' i codici, o mostra questo schermo."
+  }
+ },
+ "riserva": {
+  "titolo": "Una quarta idea",
+  "vuota": "Non abbiamo una quarta proposta: prova a cambiare qualche risposta."
+ },
+ "pulsanti": {
+  "indietro": "Indietro",
+  "avanti": "Avanti",
+  "salta": "Salta",
+  "ricomincia": "Ricomincia",
+  "nessuno": "Nessuno mi convince",
+  "vediRiserva": "Vedi la quarta",
+  "cambiaLuogo": "Cambia le risposte"
+ },
+ "vuoto": {
+  "titolo": "Ci serve qualche risposta in più",
+  "testo": "Riprova cambiando qualche scelta, oppure chiedi aiuto a chi è al banco."
+ }
+}

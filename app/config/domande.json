@@ -1,0 +1,1311 @@
+{
+ "versione": 1,
+ "nota": "Percorso guidato (docs/05-percorso.md). Ordine = ordine delle schermate. Le domande con gruppo 'gioco' ruotano: se ne mostra una per percorso. I pesi e i contributi si tarano dal backoffice.",
+ "rotazioneGioco": 1,
+ "domande": [
+  {
+   "id": "per_chi",
+   "tipo": "filtro",
+   "peso": 1,
+   "attiva": true,
+   "titolo": "Per chi cerchiamo un profumo?",
+   "sottotitolo": "Cambia solo il modo in cui ti facciamo le domande.",
+   "opzioni": [
+    {
+     "id": "me",
+     "etichetta": "Per me",
+     "icona": "persona",
+     "dettaglio": "Lo porterò io",
+     "modo": "me"
+    },
+    {
+     "id": "regalo",
+     "etichetta": "È un regalo",
+     "icona": "pacco",
+     "dettaglio": "Lo porterà un'altra persona",
+     "modo": "regalo"
+    }
+   ]
+  },
+  {
+   "id": "destinatario",
+   "tipo": "singola",
+   "peso": 0.4,
+   "attiva": true,
+   "soloSe": {
+    "domanda": "per_chi",
+    "valore": "regalo"
+   },
+   "titolo": "Chi lo riceverà?",
+   "sottotitolo": "Serve solo a darci un'idea del tono.",
+   "opzioni": [
+    {
+     "id": "partner",
+     "etichetta": "Il mio partner",
+     "icona": "cuore",
+     "carattere": [
+      "sensuale",
+      "romantico"
+     ],
+     "occasioni": [
+      "serata",
+      "romantico"
+     ]
+    },
+    {
+     "id": "genitore",
+     "etichetta": "Un genitore",
+     "icona": "casa",
+     "carattere": [
+      "elegante",
+      "calmo"
+     ],
+     "accordi": {
+      "cipriato": 0.3,
+      "legnoso": 0.3
+     }
+    },
+    {
+     "id": "amico",
+     "etichetta": "Un amico o un'amica",
+     "icona": "amici",
+     "carattere": [
+      "allegro",
+      "fresco"
+     ],
+     "accordi": {
+      "agrumato": 0.3
+     }
+    },
+    {
+     "id": "collega",
+     "etichetta": "Un collega",
+     "icona": "valigetta",
+     "carattere": [
+      "elegante",
+      "sicuro"
+     ],
+     "occasioni": [
+      "ufficio"
+     ],
+     "attributi": {
+      "intensita": 2
+     }
+    },
+    {
+     "id": "giovane",
+     "etichetta": "Un ragazzo o una ragazza",
+     "icona": "scintilla",
+     "accordi": {
+      "fruttato": 0.3,
+      "muschiato": 0.3
+     },
+     "attributi": {
+      "dolcezza": 4
+     }
+    }
+   ]
+  },
+  {
+   "id": "genere",
+   "tipo": "filtro",
+   "peso": 1,
+   "attiva": true,
+   "titolo": "Chi lo indosserà?",
+   "titoloRegalo": "Chi lo indosserà?",
+   "sottotitolo": "Guardiamo il carattere della fragranza, non lo scaffale.",
+   "opzioni": [
+    {
+     "id": "lui",
+     "etichetta": "Un uomo",
+     "icona": "uomo",
+     "filtro": {
+      "genere": "uomo"
+     }
+    },
+    {
+     "id": "lei",
+     "etichetta": "Una donna",
+     "icona": "donna",
+     "filtro": {
+      "genere": "donna"
+     }
+    },
+    {
+     "id": "libero",
+     "etichetta": "Senza vincoli",
+     "icona": "entrambi",
+     "dettaglio": "Va bene tutto",
+     "filtro": {
+      "genere": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "luogo",
+   "tipo": "multipla",
+   "max": 2,
+   "peso": 1.0,
+   "attiva": true,
+   "titolo": "Dove vorresti essere adesso?",
+   "titoloRegalo": "Dove vorrebbe essere adesso?",
+   "sottotitolo": "Scegli uno o due posti.",
+   "opzioni": [
+    {
+     "id": "mare",
+     "etichetta": "In riva al mare",
+     "icona": "onda",
+     "accordi": {
+      "acquatico": 1,
+      "agrumato": 0.6,
+      "solare": 0.4
+     },
+     "attributi": {
+      "freschezza": 5,
+      "intensita": 2
+     }
+    },
+    {
+     "id": "bosco",
+     "etichetta": "In un bosco dopo la pioggia",
+     "icona": "albero",
+     "accordi": {
+      "verde": 0.8,
+      "legnoso": 0.8,
+      "patchouli": 0.4,
+      "aromatico": 0.3
+     },
+     "attributi": {
+      "freschezza": 3,
+      "dolcezza": 1
+     }
+    },
+    {
+     "id": "citta",
+     "etichetta": "In una città di notte",
+     "icona": "citta",
+     "accordi": {
+      "ambrato": 0.6,
+      "legnoso": 0.5,
+      "speziato": 0.5,
+      "incenso": 0.3,
+      "cuoio": 0.3
+     },
+     "attributi": {
+      "intensita": 4
+     },
+     "momento": {
+      "sera": 1
+     }
+    },
+    {
+     "id": "pasticceria",
+     "etichetta": "In una pasticceria",
+     "icona": "dolce",
+     "accordi": {
+      "gourmand": 1,
+      "vaniglia": 0.8,
+      "fruttato": 0.3
+     },
+     "attributi": {
+      "dolcezza": 5
+     }
+    },
+    {
+     "id": "giardino",
+     "etichetta": "In un giardino in fiore",
+     "icona": "fiore",
+     "accordi": {
+      "floreale-fresco": 0.8,
+      "rosa": 0.6,
+      "floreale-bianco": 0.6,
+      "verde": 0.3
+     },
+     "attributi": {
+      "freschezza": 4
+     }
+    },
+    {
+     "id": "spezie",
+     "etichetta": "In un mercato delle spezie",
+     "icona": "spezie",
+     "accordi": {
+      "speziato": 1,
+      "ambrato": 0.5,
+      "oud": 0.3,
+      "incenso": 0.3
+     },
+     "attributi": {
+      "intensita": 4
+     }
+    },
+    {
+     "id": "tropici",
+     "etichetta": "Su una spiaggia tropicale",
+     "icona": "palma",
+     "accordi": {
+      "solare": 1,
+      "fruttato": 0.5,
+      "vaniglia": 0.3
+     },
+     "attributi": {
+      "dolcezza": 4
+     },
+     "stagioni": {
+      "estate": 1
+     }
+    },
+    {
+     "id": "baita",
+     "etichetta": "In una baita in montagna",
+     "icona": "baita",
+     "accordi": {
+      "legnoso": 0.8,
+      "incenso": 0.5,
+      "boozy": 0.3,
+      "tabacco": 0.3
+     },
+     "stagioni": {
+      "inverno": 1
+     }
+    },
+    {
+     "id": "agrumeto",
+     "etichetta": "In un agrumeto al sole",
+     "icona": "limone",
+     "accordi": {
+      "agrumato": 1,
+      "verde": 0.4,
+      "aromatico": 0.3
+     },
+     "attributi": {
+      "freschezza": 5
+     }
+    },
+    {
+     "id": "biblioteca",
+     "etichetta": "In una biblioteca antica",
+     "icona": "libro",
+     "accordi": {
+      "cuoio": 0.6,
+      "tabacco": 0.5,
+      "legnoso": 0.5,
+      "cipriato": 0.3
+     },
+     "attributi": {
+      "intensita": 3
+     },
+     "carattere": [
+      "misterioso"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "esclusioni",
+   "tipo": "esclusioni",
+   "max": 3,
+   "peso": 1,
+   "attiva": true,
+   "titolo": "Cosa proprio non sopporti?",
+   "titoloRegalo": "Cosa non sopporta?",
+   "sottotitolo": "Fino a tre. È la domanda che ci evita gli errori più grossi.",
+   "opzioni": [
+    {
+     "id": "dolce",
+     "etichetta": "Troppo dolce",
+     "icona": "dolce",
+     "escludi": {
+      "gourmand": 1,
+      "vaniglia": 0.7,
+      "miele": 0.6
+     }
+    },
+    {
+     "id": "doccia",
+     "etichetta": "Troppo fresco, da bagnoschiuma",
+     "icona": "goccia",
+     "escludi": {
+      "acquatico": 0.8,
+      "muschiato": 0.5
+     }
+    },
+    {
+     "id": "forte",
+     "etichetta": "Troppo forte",
+     "icona": "volume",
+     "attributi": {
+      "intensita": 2
+     },
+     "escludiAttributi": {
+      "intensita": {
+       "da": 4,
+       "peso": 0.6
+      }
+     }
+    },
+    {
+     "id": "cipria",
+     "etichetta": "Troppo cipriato",
+     "icona": "cipria",
+     "dettaglio": "Quello che chiamano “da signora”",
+     "escludi": {
+      "cipriato": 1,
+      "floreale-bianco": 0.4
+     }
+    },
+    {
+     "id": "fiori",
+     "etichetta": "I fiori",
+     "icona": "fiore",
+     "escludi": {
+      "rosa": 0.9,
+      "floreale-bianco": 0.9,
+      "floreale-fresco": 0.9
+     }
+    },
+    {
+     "id": "fumo",
+     "etichetta": "Fumo e incenso",
+     "icona": "fumo",
+     "escludi": {
+      "incenso": 1,
+      "tabacco": 0.7,
+      "oud": 0.5
+     }
+    },
+    {
+     "id": "legno",
+     "etichetta": "Legno e terra",
+     "icona": "terra",
+     "escludi": {
+      "legnoso": 0.8,
+      "patchouli": 0.9,
+      "oud": 0.6
+     }
+    },
+    {
+     "id": "niente",
+     "etichetta": "Niente, sono curioso",
+     "icona": "aperto",
+     "esclusiva": true
+    }
+   ]
+  },
+  {
+   "id": "occasione",
+   "tipo": "multipla",
+   "max": 2,
+   "peso": 0.7,
+   "attiva": true,
+   "titolo": "Quando lo userai?",
+   "titoloRegalo": "Quando lo userà?",
+   "sottotitolo": "Al massimo due.",
+   "opzioni": [
+    {
+     "id": "quotidiano",
+     "etichetta": "Tutti i giorni",
+     "icona": "calendario",
+     "occasioni": [
+      "quotidiano"
+     ],
+     "attributi": {
+      "intensita": 3
+     }
+    },
+    {
+     "id": "ufficio",
+     "etichetta": "Al lavoro",
+     "icona": "valigetta",
+     "occasioni": [
+      "ufficio"
+     ],
+     "attributi": {
+      "intensita": 2
+     },
+     "accordi": {
+      "muschiato": 0.3,
+      "agrumato": 0.2
+     }
+    },
+    {
+     "id": "serata",
+     "etichetta": "La sera fuori",
+     "icona": "luna",
+     "occasioni": [
+      "serata"
+     ],
+     "momento": {
+      "sera": 1
+     },
+     "attributi": {
+      "intensita": 4
+     },
+     "accordi": {
+      "ambrato": 0.3
+     }
+    },
+    {
+     "id": "sport",
+     "etichetta": "Per lo sport",
+     "icona": "corsa",
+     "occasioni": [
+      "sport"
+     ],
+     "accordi": {
+      "acquatico": 0.4,
+      "agrumato": 0.4
+     },
+     "attributi": {
+      "freschezza": 5
+     }
+    },
+    {
+     "id": "speciale",
+     "etichetta": "In un'occasione speciale",
+     "icona": "calice",
+     "occasioni": [
+      "speciale"
+     ],
+     "attributi": {
+      "persistenza": 5
+     },
+     "accordi": {
+      "oud": 0.2,
+      "ambrato": 0.2
+     }
+    },
+    {
+     "id": "romantico",
+     "etichetta": "Per un appuntamento",
+     "icona": "cuore",
+     "occasioni": [
+      "romantico"
+     ],
+     "carattere": [
+      "sensuale"
+     ],
+     "accordi": {
+      "vaniglia": 0.3,
+      "muschiato": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "intensita",
+   "tipo": "scala",
+   "min": 1,
+   "max": 5,
+   "peso": 0.8,
+   "attiva": true,
+   "titolo": "Quanto deve farsi sentire?",
+   "sottotitolo": "Tocca una delle cinque tacche.",
+   "attributiScala": [
+    "intensita",
+    "persistenza"
+   ],
+   "tacche": [
+    {
+     "valore": 1,
+     "etichetta": "Una carezza sulla pelle"
+    },
+    {
+     "valore": 2,
+     "etichetta": "Solo per chi ti sta vicino"
+    },
+    {
+     "valore": 3,
+     "etichetta": "Si sente, senza esagerare"
+    },
+    {
+     "valore": 4,
+     "etichetta": "Lascia la scia"
+    },
+    {
+     "valore": 5,
+     "etichetta": "Si sente entrando nella stanza"
+    }
+   ]
+  },
+  {
+   "id": "stagione",
+   "tipo": "singola",
+   "peso": 0.6,
+   "attiva": true,
+   "titolo": "In che stagione siamo nella tua testa?",
+   "sottotitolo": "Non deve essere per forza quella di adesso.",
+   "opzioni": [
+    {
+     "id": "primavera",
+     "etichetta": "Primavera",
+     "icona": "germoglio",
+     "stagioni": {
+      "primavera": 1
+     },
+     "accordi": {
+      "floreale-fresco": 0.3,
+      "verde": 0.3
+     }
+    },
+    {
+     "id": "estate",
+     "etichetta": "Estate",
+     "icona": "sole",
+     "stagioni": {
+      "estate": 1
+     },
+     "accordi": {
+      "agrumato": 0.3,
+      "acquatico": 0.3
+     },
+     "attributi": {
+      "freschezza": 4
+     }
+    },
+    {
+     "id": "autunno",
+     "etichetta": "Autunno",
+     "icona": "fogliacaduta",
+     "stagioni": {
+      "autunno": 1
+     },
+     "accordi": {
+      "legnoso": 0.3,
+      "speziato": 0.3
+     }
+    },
+    {
+     "id": "inverno",
+     "etichetta": "Inverno",
+     "icona": "fiocco",
+     "stagioni": {
+      "inverno": 1
+     },
+     "accordi": {
+      "ambrato": 0.3,
+      "vaniglia": 0.3
+     },
+     "attributi": {
+      "intensita": 4
+     }
+    },
+    {
+     "id": "tutte",
+     "etichetta": "Tutto l'anno",
+     "icona": "ciclo",
+     "stagioni": {
+      "primavera": 0.5,
+      "estate": 0.5,
+      "autunno": 0.5,
+      "inverno": 0.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "carattere",
+   "tipo": "multipla",
+   "max": 2,
+   "peso": 0.7,
+   "attiva": true,
+   "titolo": "Come vuoi sentirti?",
+   "titoloRegalo": "Come vuoi che si senta?",
+   "sottotitolo": "Scegline uno o due.",
+   "opzioni": [
+    {
+     "id": "energico",
+     "etichetta": "Pieno di energia",
+     "icona": "fulmine",
+     "carattere": [
+      "energico",
+      "fresco"
+     ],
+     "accordi": {
+      "agrumato": 0.4,
+      "aromatico": 0.3
+     }
+    },
+    {
+     "id": "calmo",
+     "etichetta": "Calmo e a mio agio",
+     "icona": "zen",
+     "carattere": [
+      "calmo"
+     ],
+     "accordi": {
+      "muschiato": 0.4,
+      "tè": 0.3,
+      "cipriato": 0.2
+     }
+    },
+    {
+     "id": "sensuale",
+     "etichetta": "Sensuale",
+     "icona": "fiamma",
+     "carattere": [
+      "sensuale"
+     ],
+     "accordi": {
+      "vaniglia": 0.3,
+      "ambrato": 0.3,
+      "muschiato": 0.2
+     }
+    },
+    {
+     "id": "elegante",
+     "etichetta": "Elegante",
+     "icona": "diamante",
+     "carattere": [
+      "elegante"
+     ],
+     "accordi": {
+      "cipriato": 0.3,
+      "legnoso": 0.3,
+      "rosa": 0.2
+     }
+    },
+    {
+     "id": "audace",
+     "etichetta": "Audace",
+     "icona": "freccia",
+     "carattere": [
+      "audace"
+     ],
+     "accordi": {
+      "oud": 0.3,
+      "speziato": 0.4,
+      "cuoio": 0.3
+     }
+    },
+    {
+     "id": "coccola",
+     "etichetta": "Coccolato",
+     "icona": "nuvola",
+     "carattere": [
+      "coccola"
+     ],
+     "accordi": {
+      "gourmand": 0.4,
+      "vaniglia": 0.4
+     }
+    },
+    {
+     "id": "misterioso",
+     "etichetta": "Misterioso",
+     "icona": "maschera",
+     "carattere": [
+      "misterioso"
+     ],
+     "accordi": {
+      "incenso": 0.4,
+      "oud": 0.3,
+      "patchouli": 0.2
+     }
+    },
+    {
+     "id": "allegro",
+     "etichetta": "Allegro",
+     "icona": "sorriso",
+     "carattere": [
+      "allegro"
+     ],
+     "accordi": {
+      "fruttato": 0.4,
+      "solare": 0.3
+     }
+    },
+    {
+     "id": "romantico",
+     "etichetta": "Romantico",
+     "icona": "cuore",
+     "carattere": [
+      "romantico"
+     ],
+     "accordi": {
+      "rosa": 0.4,
+      "floreale-bianco": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "colore",
+   "tipo": "singola",
+   "peso": 0.35,
+   "attiva": true,
+   "gruppo": "gioco",
+   "titolo": "Un colore, senza pensarci troppo.",
+   "sottotitolo": "Domanda leggera: serve a sciogliere i pareggi.",
+   "opzioni": [
+    {
+     "id": "blu",
+     "etichetta": "Blu",
+     "icona": "pastiglia",
+     "tinta": "#2f5d8c",
+     "accordi": {
+      "acquatico": 0.5,
+      "agrumato": 0.3
+     }
+    },
+    {
+     "id": "rosso",
+     "etichetta": "Rosso",
+     "icona": "pastiglia",
+     "tinta": "#9b2c2c",
+     "accordi": {
+      "speziato": 0.5,
+      "ambrato": 0.4
+     }
+    },
+    {
+     "id": "verde",
+     "etichetta": "Verde",
+     "icona": "pastiglia",
+     "tinta": "#3f6b4a",
+     "accordi": {
+      "verde": 0.5,
+      "aromatico": 0.3
+     }
+    },
+    {
+     "id": "nero",
+     "etichetta": "Nero",
+     "icona": "pastiglia",
+     "tinta": "#2a2f3a",
+     "accordi": {
+      "oud": 0.4,
+      "cuoio": 0.4,
+      "incenso": 0.3
+     }
+    },
+    {
+     "id": "rosa",
+     "etichetta": "Rosa",
+     "icona": "pastiglia",
+     "tinta": "#d7a3ad",
+     "accordi": {
+      "rosa": 0.4,
+      "fruttato": 0.3
+     }
+    },
+    {
+     "id": "giallo",
+     "etichetta": "Giallo",
+     "icona": "pastiglia",
+     "tinta": "#d8a53a",
+     "accordi": {
+      "agrumato": 0.5,
+      "solare": 0.3
+     }
+    },
+    {
+     "id": "viola",
+     "etichetta": "Viola",
+     "icona": "pastiglia",
+     "tinta": "#6b5b95",
+     "accordi": {
+      "cipriato": 0.4,
+      "floreale-bianco": 0.3
+     }
+    },
+    {
+     "id": "bianco",
+     "etichetta": "Bianco",
+     "icona": "pastiglia",
+     "tinta": "#f2f2ee",
+     "accordi": {
+      "muschiato": 0.5,
+      "floreale-fresco": 0.3
+     }
+    },
+    {
+     "id": "oro",
+     "etichetta": "Oro",
+     "icona": "pastiglia",
+     "tinta": "#b8933f",
+     "accordi": {
+      "ambrato": 0.4,
+      "vaniglia": 0.3
+     }
+    },
+    {
+     "id": "marrone",
+     "etichetta": "Marrone",
+     "icona": "pastiglia",
+     "tinta": "#6b4f3a",
+     "accordi": {
+      "legnoso": 0.4,
+      "tabacco": 0.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "bevanda",
+   "tipo": "singola",
+   "peso": 0.35,
+   "attiva": true,
+   "gruppo": "gioco",
+   "titolo": "Cosa berresti adesso?",
+   "sottotitolo": "Domanda leggera.",
+   "opzioni": [
+    {
+     "id": "caffe",
+     "etichetta": "Un caffè",
+     "icona": "tazza",
+     "accordi": {
+      "gourmand": 0.4,
+      "legnoso": 0.3
+     }
+    },
+    {
+     "id": "te",
+     "etichetta": "Un tè",
+     "icona": "tazza",
+     "accordi": {
+      "tè": 0.5,
+      "verde": 0.3
+     }
+    },
+    {
+     "id": "cocktail",
+     "etichetta": "Un cocktail al tramonto",
+     "icona": "calice",
+     "accordi": {
+      "fruttato": 0.4,
+      "solare": 0.3,
+      "boozy": 0.2
+     }
+    },
+    {
+     "id": "vino",
+     "etichetta": "Un vino rosso",
+     "icona": "calice",
+     "accordi": {
+      "boozy": 0.4,
+      "ambrato": 0.3,
+      "speziato": 0.2
+     }
+    },
+    {
+     "id": "limonata",
+     "etichetta": "Una limonata",
+     "icona": "bicchiere",
+     "accordi": {
+      "agrumato": 0.6
+     }
+    },
+    {
+     "id": "cioccolata",
+     "etichetta": "Una cioccolata calda",
+     "icona": "tazza",
+     "accordi": {
+      "gourmand": 0.5,
+      "vaniglia": 0.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "materiale",
+   "tipo": "singola",
+   "peso": 0.35,
+   "attiva": true,
+   "gruppo": "gioco",
+   "titolo": "Quale ti piace toccare?",
+   "sottotitolo": "Domanda leggera.",
+   "opzioni": [
+    {
+     "id": "lino",
+     "etichetta": "Lino",
+     "icona": "tessuto",
+     "accordi": {
+      "muschiato": 0.4,
+      "agrumato": 0.3
+     }
+    },
+    {
+     "id": "cuoio",
+     "etichetta": "Cuoio",
+     "icona": "cuoio",
+     "accordi": {
+      "cuoio": 0.6
+     }
+    },
+    {
+     "id": "seta",
+     "etichetta": "Seta",
+     "icona": "drappo",
+     "accordi": {
+      "cipriato": 0.3,
+      "rosa": 0.3,
+      "muschiato": 0.2
+     }
+    },
+    {
+     "id": "lana",
+     "etichetta": "Lana",
+     "icona": "gomitolo",
+     "accordi": {
+      "legnoso": 0.3,
+      "ambrato": 0.3
+     }
+    },
+    {
+     "id": "velluto",
+     "etichetta": "Velluto",
+     "icona": "drappo",
+     "accordi": {
+      "vaniglia": 0.3,
+      "oud": 0.3,
+      "ambrato": 0.3
+     }
+    },
+    {
+     "id": "legno",
+     "etichetta": "Legno grezzo",
+     "icona": "albero",
+     "accordi": {
+      "legnoso": 0.6
+     }
+    }
+   ]
+  },
+  {
+   "id": "momento_giorno",
+   "tipo": "singola",
+   "peso": 0.35,
+   "attiva": true,
+   "gruppo": "gioco",
+   "titolo": "Il tuo momento della giornata?",
+   "sottotitolo": "Domanda leggera.",
+   "opzioni": [
+    {
+     "id": "alba",
+     "etichetta": "L'alba",
+     "icona": "alba",
+     "accordi": {
+      "agrumato": 0.4,
+      "verde": 0.3
+     },
+     "momento": {
+      "giorno": 1
+     }
+    },
+    {
+     "id": "pomeriggio",
+     "etichetta": "Il pomeriggio al sole",
+     "icona": "sole",
+     "accordi": {
+      "solare": 0.4,
+      "fruttato": 0.3
+     },
+     "momento": {
+      "giorno": 1
+     }
+    },
+    {
+     "id": "tramonto",
+     "etichetta": "Il tramonto",
+     "icona": "tramonto",
+     "accordi": {
+      "ambrato": 0.4,
+      "rosa": 0.2
+     }
+    },
+    {
+     "id": "notte",
+     "etichetta": "La notte fonda",
+     "icona": "luna",
+     "accordi": {
+      "oud": 0.3,
+      "incenso": 0.3
+     },
+     "momento": {
+      "sera": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "zodiaco",
+   "tipo": "singola",
+   "peso": 0.35,
+   "attiva": true,
+   "gruppo": "gioco",
+   "titolo": "Il tuo segno zodiacale?",
+   "titoloRegalo": "Il suo segno zodiacale?",
+   "sottotitolo": "Domanda leggera: contano i quattro elementi, non l'oroscopo.",
+   "opzioni": [
+    {
+     "id": "ariete",
+     "etichetta": "Ariete",
+     "icona": "fiamma",
+     "dettaglio": "21 mar – 19 apr",
+     "elemento": "fuoco",
+     "accordi": {
+      "speziato": 0.4,
+      "ambrato": 0.3
+     },
+     "carattere": [
+      "audace"
+     ]
+    },
+    {
+     "id": "toro",
+     "etichetta": "Toro",
+     "icona": "terra",
+     "dettaglio": "20 apr – 20 mag",
+     "elemento": "terra",
+     "accordi": {
+      "legnoso": 0.4,
+      "verde": 0.3,
+      "patchouli": 0.2
+     },
+     "carattere": [
+      "calmo"
+     ]
+    },
+    {
+     "id": "gemelli",
+     "etichetta": "Gemelli",
+     "icona": "vento",
+     "dettaglio": "21 mag – 20 giu",
+     "elemento": "aria",
+     "accordi": {
+      "agrumato": 0.4,
+      "aromatico": 0.3,
+      "floreale-fresco": 0.2
+     },
+     "carattere": [
+      "allegro"
+     ]
+    },
+    {
+     "id": "cancro",
+     "etichetta": "Cancro",
+     "icona": "goccia",
+     "dettaglio": "21 giu – 22 lug",
+     "elemento": "acqua",
+     "accordi": {
+      "acquatico": 0.3,
+      "floreale-bianco": 0.3,
+      "muschiato": 0.3
+     },
+     "carattere": [
+      "sensuale"
+     ]
+    },
+    {
+     "id": "leone",
+     "etichetta": "Leone",
+     "icona": "fiamma",
+     "dettaglio": "23 lug – 22 ago",
+     "elemento": "fuoco",
+     "accordi": {
+      "speziato": 0.4,
+      "ambrato": 0.3
+     },
+     "carattere": [
+      "audace"
+     ]
+    },
+    {
+     "id": "vergine",
+     "etichetta": "Vergine",
+     "icona": "terra",
+     "dettaglio": "23 ago – 22 set",
+     "elemento": "terra",
+     "accordi": {
+      "legnoso": 0.4,
+      "verde": 0.3,
+      "patchouli": 0.2
+     },
+     "carattere": [
+      "calmo"
+     ]
+    },
+    {
+     "id": "bilancia",
+     "etichetta": "Bilancia",
+     "icona": "vento",
+     "dettaglio": "23 set – 22 ott",
+     "elemento": "aria",
+     "accordi": {
+      "agrumato": 0.4,
+      "aromatico": 0.3,
+      "floreale-fresco": 0.2
+     },
+     "carattere": [
+      "allegro"
+     ]
+    },
+    {
+     "id": "scorpione",
+     "etichetta": "Scorpione",
+     "icona": "goccia",
+     "dettaglio": "23 ott – 21 nov",
+     "elemento": "acqua",
+     "accordi": {
+      "acquatico": 0.3,
+      "floreale-bianco": 0.3,
+      "muschiato": 0.3
+     },
+     "carattere": [
+      "sensuale"
+     ]
+    },
+    {
+     "id": "sagittario",
+     "etichetta": "Sagittario",
+     "icona": "fiamma",
+     "dettaglio": "22 nov – 21 dic",
+     "elemento": "fuoco",
+     "accordi": {
+      "speziato": 0.4,
+      "ambrato": 0.3
+     },
+     "carattere": [
+      "audace"
+     ]
+    },
+    {
+     "id": "capricorno",
+     "etichetta": "Capricorno",
+     "icona": "terra",
+     "dettaglio": "22 dic – 19 gen",
+     "elemento": "terra",
+     "accordi": {
+      "legnoso": 0.4,
+      "verde": 0.3,
+      "patchouli": 0.2
+     },
+     "carattere": [
+      "calmo"
+     ]
+    },
+    {
+     "id": "acquario",
+     "etichetta": "Acquario",
+     "icona": "vento",
+     "dettaglio": "20 gen – 18 feb",
+     "elemento": "aria",
+     "accordi": {
+      "agrumato": 0.4,
+      "aromatico": 0.3,
+      "floreale-fresco": 0.2
+     },
+     "carattere": [
+      "allegro"
+     ]
+    },
+    {
+     "id": "pesci",
+     "etichetta": "Pesci",
+     "icona": "goccia",
+     "dettaglio": "19 feb – 20 mar",
+     "elemento": "acqua",
+     "accordi": {
+      "acquatico": 0.3,
+      "floreale-bianco": 0.3,
+      "muschiato": 0.3
+     },
+     "carattere": [
+      "sensuale"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ricordo",
+   "tipo": "singola",
+   "peso": 0.6,
+   "attiva": true,
+   "saltabile": true,
+   "titolo": "Un profumo che hai amato somigliava a...",
+   "titoloRegalo": "Un profumo che le o gli è piaciuto somigliava a...",
+   "sottotitolo": "Se non ti viene in mente niente, salta pure.",
+   "opzioni": [
+    {
+     "id": "bucato",
+     "etichetta": "Un bucato steso al sole",
+     "icona": "bucato",
+     "dettaglio": "Fresco e pulito",
+     "accordi": {
+      "muschiato": 0.8,
+      "acquatico": 0.3,
+      "agrumato": 0.3
+     }
+    },
+    {
+     "id": "fiori",
+     "etichetta": "Fiori appena colti",
+     "icona": "fiore",
+     "dettaglio": "Delicato",
+     "accordi": {
+      "floreale-fresco": 0.8,
+      "rosa": 0.3,
+      "floreale-bianco": 0.3
+     }
+    },
+    {
+     "id": "dessert",
+     "etichetta": "Un dessert",
+     "icona": "dolce",
+     "dettaglio": "Dolce e avvolgente",
+     "accordi": {
+      "gourmand": 0.8,
+      "vaniglia": 0.3,
+      "miele": 0.3
+     }
+    },
+    {
+     "id": "legno_spezie",
+     "etichetta": "Legno e spezie calde",
+     "icona": "albero",
+     "dettaglio": "Caldo e asciutto",
+     "accordi": {
+      "legnoso": 0.8,
+      "speziato": 0.3,
+      "ambrato": 0.3
+     }
+    },
+    {
+     "id": "fumo_cuoio",
+     "etichetta": "Fumo, cuoio, notte",
+     "icona": "fumo",
+     "dettaglio": "Scuro e deciso",
+     "accordi": {
+      "incenso": 0.8,
+      "cuoio": 0.3,
+      "oud": 0.3
+     }
+    },
+    {
+     "id": "agrumi_sole",
+     "etichetta": "Agrumi e sole",
+     "icona": "limone",
+     "dettaglio": "Vivace",
+     "accordi": {
+      "agrumato": 0.8,
+      "solare": 0.3,
+      "verde": 0.3
+     }
+    },
+    {
+     "id": "cipria",
+     "etichetta": "Cipria e rossetto",
+     "icona": "cipria",
+     "dettaglio": "Elegante, un po' retro",
+     "accordi": {
+      "cipriato": 0.8,
+      "rosa": 0.3,
+      "floreale-bianco": 0.3
+     }
+    }
+   ]
+  }
+ ]
+}

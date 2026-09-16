@@ -1,0 +1,26 @@
+{
+ "versione": 1,
+ "nota": "Coefficienti del punteggio (docs/04-motore.md). Si tarano dal backoffice; 'Ripristina i valori consigliati' rilegge questo file.",
+ "coseno": 0.6,
+ "attributi": 0.15,
+ "contesto": 0.1,
+ "carattere": 0.05,
+ "esclusione": 1,
+ "confidenzaBassa": 0.03,
+ "neutro": 0.5,
+ "sogliaMinima": 0.25,
+ "esclusioneFuori": 0.5,
+ "maxPerSottofamiglia": 1,
+ "maxPerFamiglia": 2,
+ "proposte": 3,
+ "accordiDefault": {
+  "agrumato": 0.5,
+  "muschiato": 0.5,
+  "legnoso": 0.4,
+  "floreale-fresco": 0.35,
+  "ambrato": 0.3,
+  "aromatico": 0.3,
+  "vaniglia": 0.25,
+  "fruttato": 0.25
+ }
+}

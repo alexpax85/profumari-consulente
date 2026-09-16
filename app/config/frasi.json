@@ -1,0 +1,64 @@
+{
+ "versione": 1,
+ "nota": "Modelli delle motivazioni (docs/04-motore.md). {a} e {b} sono le etichette degli accordi in comune. Il motore sceglie il modello in modo stabile dal codice, cosi' le tre schede non dicono la stessa frase.",
+ "accordiDue": [
+  "{a} e {b}, come volevi.",
+  "Ci ritrovi {a} e {b}.",
+  "Va dritto su {a}, con {b} accanto."
+ ],
+ "accordoUno": [
+  "Soprattutto {a}, come chiedevi.",
+  "Punta tutto su {a}.",
+  "{a}, in primo piano."
+ ],
+ "attributi": {
+  "intensita": {
+   "basso": "Resta vicino alla pelle, discreto.",
+   "alto": "Si fa sentire, come volevi."
+  },
+  "persistenza": {
+   "basso": "Leggero, da rimettere quando ti va.",
+   "alto": "Dura a lungo sulla pelle."
+  },
+  "dolcezza": {
+   "basso": "Asciutto, per niente dolce.",
+   "alto": "Dolce, ma non stucchevole."
+  },
+  "freschezza": {
+   "basso": "Caldo più che fresco.",
+   "alto": "Fresco, come cercavi."
+  }
+ },
+ "occasioni": {
+  "quotidiano": "Buono per tutti i giorni.",
+  "ufficio": "Misurato: in ufficio non dà fastidio a nessuno.",
+  "serata": "Pensato per la sera.",
+  "sport": "Regge il movimento e il caldo.",
+  "speciale": "Da tenere per le occasioni che contano.",
+  "romantico": "Funziona quando vuoi piacere a qualcuno."
+ },
+ "stagioni": {
+  "primavera": "Sta bene in primavera.",
+  "estate": "Regge il caldo dell'estate.",
+  "autunno": "È un profumo da autunno.",
+  "inverno": "Scalda, d'inverno."
+ },
+ "carattere": {
+  "energico": "Ha la spinta che cercavi.",
+  "calmo": "Ti lascia tranquillo, senza chiedere attenzione.",
+  "sensuale": "Ha il lato sensuale che hai scelto.",
+  "elegante": "Elegante senza sforzo.",
+  "audace": "Non passa inosservato, come volevi.",
+  "coccola": "È una coccola.",
+  "misterioso": "Ha quel lato misterioso che hai scelto.",
+  "allegro": "Ha un tono allegro.",
+  "romantico": "Romantico, come lo volevi.",
+  "sicuro": "Dà sicurezza.",
+  "fresco": "Pulito e fresco."
+ },
+ "generiche": [
+  "Una scelta che piace quasi a tutti: un buon punto di partenza.",
+  "Sta in mezzo: facile da portare, difficile che dispiaccia."
+ ],
+ "allargato": "Per queste risposte abbiamo cercato un po' più in largo: provale comunque."
+}
