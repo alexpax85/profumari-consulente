@@ -3,7 +3,7 @@
 // Nessun nome commerciale entra qui: dall'import teniamo solo codice, categoria, attivo.
 
 import { $, $$, el, svuota, toast, scarica, oggi, dataItaliana } from './ui.js';
-import { ripulisciCatalogo, categoriaDaCodice } from './dati.js';
+import { leggiCatalogo, categoriaDaCodice } from './dati.js';
 import { store } from './store-locale.js';
 import { SCENARI } from './scenari.js';
 import { riepilogo } from './statistiche.js';
@@ -25,6 +25,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
   let cercaProfili = '';
   let codiceAperto = null;
   let risposteProva = { per_chi: 'me', genere: 'libero' };
+  let esitoImport = null; // sopravvive al ridisegno della scheda dopo il salvataggio
 
   const profiloDi = (codice) => s.profili.find((p) => p.codice === codice) || null;
   const vociCatalogo = () => [...s.catalogo].sort((a, b) => a.codice.localeCompare(b.codice));
@@ -62,27 +63,62 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
     ]);
   }
 
+  const plurale = (n, uno, molti) => `${n} ${n === 1 ? uno : molti}`;
+
+  /** Il resoconto dell'ultimo import: si ridisegna insieme alla scheda. */
+  function riquadroEsito(esito) {
+    if (esito.errore) {
+      return el('div', { class: 'card errore' }, [
+        el('h3', { testo: 'Import non riuscito' }),
+        el('p', { class: 'errore-testo', testo: esito.errore }),
+      ]);
+    }
+    const { letto, rapporto } = esito;
+    return el('div', { class: 'card info' }, [
+      el('h3', { testo: 'Import completato' }),
+      el('p', { testo: `Riconosciuto: ${letto.origine} — ${letto.referenze} referenze lette dal file.` }),
+      el('p', { testo: `Nuove ${rapporto.nuove} · disattivate ${rapporto.disattivate} · riattivate ${rapporto.riattivate} · invariate ${rapporto.invariate}` }),
+      el('p', { testo: `In catalogo adesso: ${rapporto.totale} referenze, ${rapporto.attive} attive nel percorso.` }),
+      letto.scartate
+        ? el('p', { class: 'muted', testo: `${plurale(letto.scartate, 'voce saltata', 'voci saltate')} perché senza un codice a tre cifre: le essenze singole, per esempio.` })
+        : null,
+      rapporto.sparite
+        ? el('p', { class: 'muted', testo: rapporto.sparite === 1
+          ? 'Una referenza non c\'era più nel file: resta in archivio col suo profilo, ma disattivata.'
+          : `${rapporto.sparite} referenze non c'erano più nel file: restano in archivio col loro profilo, ma disattivate.` })
+        : null,
+      el('p', { class: 'muted piccolo-testo', testo: 'Di ogni referenza sono stati tenuti solo codice, categoria e stato. Nome, brand, fornitori, costi e giacenze sono stati scartati senza mai essere salvati.' }),
+      rapporto.senzaProfilo.length
+        ? el('p', { class: 'errore-testo', testo: `Attive senza profilo (${rapporto.senzaProfilo.length}): ${rapporto.senzaProfilo.join(', ')}` })
+        : el('p', { class: 'muted', testo: 'Ogni referenza attiva ha il suo profilo.' }),
+    ]);
+  }
+
   function cardImport() {
-    const area = el('textarea', { placeholder: 'Incolla qui il JSON del catalogo esportato dal gestionale…', rows: 4 });
+    const area = el('textarea', { placeholder: 'Incolla qui il contenuto del backup del gestionale…', rows: 4 });
     const file = el('input', { type: 'file', accept: '.json,application/json' });
-    const esito = el('div');
+    const esito = el('div', {}, esitoImport ? [riquadroEsito(esitoImport)] : []);
 
     const applica = (testo) => {
+      let letto;
       try {
-        const pulito = ripulisciCatalogo(JSON.parse(testo));
-        const rapporto = importaCatalogo(pulito);
-        svuota(esito).append(el('div', { class: 'card info' }, [
-          el('h3', { testo: 'Import completato' }),
-          el('p', { testo: `Nuove ${rapporto.nuove} · disattivate ${rapporto.disattivate} · riattivate ${rapporto.riattivate} · invariate ${rapporto.invariate}` }),
-          rapporto.senzaProfilo.length
-            ? el('p', { class: 'errore-testo', testo: `Attive senza profilo (${rapporto.senzaProfilo.length}): ${rapporto.senzaProfilo.join(', ')}` })
-            : el('p', { class: 'muted', testo: 'Ogni referenza attiva ha il suo profilo.' }),
-        ]));
-        area.value = '';
-        salvaEDisegna('Catalogo aggiornato.');
+        letto = leggiCatalogo(JSON.parse(testo));
       } catch (errore) {
-        svuota(esito).append(el('p', { class: 'errore-testo', testo: `Non riesco a leggere il file: ${errore.message}` }));
+        esitoImport = {
+          errore: errore instanceof SyntaxError
+            ? 'il file non è JSON valido. Dal gestionale serve quello di «Storico e backup» → «Scarica backup».'
+            : errore.message,
+        };
+        svuota(esito).append(riquadroEsito(esitoImport));
+        return;
       }
+      const rapporto = importaCatalogo(letto.referenze);
+      esitoImport = {
+        letto: { origine: letto.origine, referenze: letto.referenze.length, scartate: letto.scartate },
+        rapporto,
+      };
+      area.value = '';
+      salvaEDisegna('Catalogo aggiornato.');
     };
 
     file.addEventListener('change', async () => {
@@ -92,19 +128,20 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
 
     return el('section', { class: 'card' }, [
       el('h2', { testo: 'Import del catalogo' }),
-      el('p', { class: 'muted' }, 'Dal gestionale teniamo solo codice, categoria e attivo. Nome, brand, fornitori e costi vengono scartati prima del salvataggio: qui dentro non esistono.'),
+      el('p', { class: 'muted' }, 'Va bene il backup del gestionale («Storico e backup» → «Scarica backup») oppure un export del solo catalogo. Di ogni referenza si tengono solo codice, categoria e stato: nome, brand, fornitori, costi e giacenze vengono scartati prima del salvataggio, qui dentro non esistono.'),
       el('label', { class: 'campo' }, ['File JSON', file]),
       el('label', { class: 'campo' }, ['Oppure incolla il testo', area]),
       el('div', { class: 'azioni' }, [
-        el('button', { class: 'primario', type: 'button', onclick: () => area.value.trim() ? applica(area.value) : toast('Incolla prima il testo.') }, 'Importa dal testo'),
+        el('button', { class: 'primario', type: 'button', onclick: () => area.value.trim() ? applica(area.value) : toast('Scegli un file o incolla il testo.') }, 'Importa dal testo'),
       ]),
       esito,
     ]);
   }
 
-  function importaCatalogo(nuovo) {
+  function importaCatalogo(letteDalFile) {
+    const nuovo = letteDalFile.map((voce) => ({ ...voce }));
     const vecchio = new Map(s.catalogo.map((c) => [c.codice, c]));
-    const rapporto = { nuove: 0, disattivate: 0, riattivate: 0, invariate: 0, senzaProfilo: [] };
+    const rapporto = { nuove: 0, disattivate: 0, riattivate: 0, invariate: 0, attive: 0, totale: 0, sparite: 0, senzaProfilo: [] };
     const conProfilo = new Set(s.profili.map((p) => p.codice));
     for (const voce of nuovo) {
       const prima = vecchio.get(voce.codice);
@@ -114,14 +151,17 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
       else rapporto.invariate++;
       if (voce.attivo && !conProfilo.has(voce.codice)) rapporto.senzaProfilo.push(voce.codice);
     }
-    // Le referenze sparite dall'export restano in archivio, ma disattivate.
+    // Le referenze sparite dall'export restano in archivio con il loro profilo,
+    // ma disattivate: nel motore non entrano più (docs/01-brief.md, regola 3).
     for (const [codice, voce] of vecchio) {
       if (!nuovo.some((n) => n.codice === codice)) {
         nuovo.push({ ...voce, attivo: false });
-        if (voce.attivo) rapporto.disattivate++;
+        if (voce.attivo) { rapporto.disattivate++; rapporto.sparite++; }
       }
     }
     nuovo.sort((a, b) => a.codice.localeCompare(b.codice));
+    rapporto.attive = nuovo.filter((c) => c.attivo).length;
+    rapporto.totale = nuovo.length;
     s.catalogo = nuovo;
     return rapporto;
   }
@@ -769,6 +809,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
   // ================================================================ telaio
 
   function vaiA(nome) {
+    if (nome !== scheda) esitoImport = null;
     scheda = nome;
     disegna();
   }

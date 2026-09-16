@@ -51,6 +51,12 @@ node scripts/valida_profili.mjs
 Controlla che ogni profilo rispetti lo schema di `docs/09-schema-profilo.md` e che ogni referenza attiva abbia il suo profilo.
 
 ```bash
+node scripts/test_import.mjs
+```
+
+Le undici prove sull'import del catalogo: le forme di file che arrivano dal gestionale (backup intero, export, array), le categorie numerate, lo stato attivo, e la garanzia che nome, brand, fornitori e costi non sopravvivano mai all'import.
+
+```bash
 node scripts/prova_catalogo.mjs            # tutti gli scenari
 node scripts/prova_catalogo.mjs mare       # solo quelli col nome indicato
 ```
@@ -81,7 +87,7 @@ Dettagli utili:
 
 Tocco lungo di tre secondi sul logo nella schermata di attesa, poi codice numerico (al primo accesso lo si sceglie; se si dimentica, si azzera da *Backup*). Cinque schede: **Catalogo** (import dal gestionale, attivo/inattivo, referenze senza profilo in rosso), **Profili** (revisione, con le bozze incerte in cima), **Taratura** (pesi, coefficienti, *prova rapida* con risultati in tempo reale, ripristino dei valori consigliati), **Statistiche** (anonime e aggregate), **Backup** (export/import e punti di ripristino).
 
-Dall'import si tengono **solo** codice, categoria e attivo: nome, brand, fornitori e costi vengono scartati prima di qualsiasi salvataggio.
+**Per aggiornare il catalogo** basta il backup del gestionale: *Storico e backup → Scarica backup*, poi nel consulente *Catalogo → Import*, scegliendo il file o incollandone il contenuto. Il consulente ne tiene **solo** codice, categoria e stato — nome, brand, fornitori, costi e giacenze vengono scartati prima di qualsiasi salvataggio — e dopo l'import il motore lavora sulle sole referenze attive. Quelle disattivate o sparite dall'export restano in archivio con il loro profilo, pronte a tornare.
 
 ## Pubblicazione
 

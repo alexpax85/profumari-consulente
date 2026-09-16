@@ -46,37 +46,73 @@ export async function caricaPredefiniti() {
 }
 
 /**
- * Dal catalogo del gestionale teniamo solo codice, categoria e attivo.
- * Qualunque altro campo (nome, brand, fornitore, costo) viene buttato via qui,
- * prima di qualsiasi salvataggio: nel consulente quei dati non devono esistere.
+ * Trova l'elenco delle referenze dentro il file, qualunque forma abbia:
+ *  · l'export dedicato del consulente: un array, oppure { catalogo: [...] };
+ *  · un backup del gestionale: lo stato intero, con le referenze in `fragranze`,
+ *    che è un oggetto indicizzato per codice, non un array;
+ *  · un backup del consulente: { stato: { catalogo: [...] } }.
  */
-export function ripulisciCatalogo(grezzo) {
-  const elenco = Array.isArray(grezzo) ? grezzo : (grezzo && Array.isArray(grezzo.catalogo) ? grezzo.catalogo : null);
-  if (!elenco) throw new Error('Il file non contiene un elenco di referenze.');
-  const pulito = [];
+function trovaReferenze(grezzo) {
+  if (Array.isArray(grezzo)) return { elenco: grezzo, origine: 'elenco di referenze' };
+  if (!grezzo || typeof grezzo !== 'object') return null;
+  if (grezzo.stato && typeof grezzo.stato === 'object') return trovaReferenze(grezzo.stato);
+  const dove = [
+    ['catalogo', 'export del catalogo'],
+    ['fragranze', 'backup del gestionale'],
+    ['referenze', 'elenco di referenze'],
+  ];
+  for (const [chiave, origine] of dove) {
+    const voce = grezzo[chiave];
+    if (Array.isArray(voce)) return { elenco: voce, origine };
+    if (voce && typeof voce === 'object') return { elenco: Object.values(voce), origine };
+  }
+  return null;
+}
+
+/**
+ * Legge un file di catalogo e ne tiene SOLO codice, categoria e attivo.
+ * Qualsiasi altro campo — nome, brand, fornitore, costi, note, giacenze —
+ * viene buttato via qui, prima di qualunque salvataggio: nel consulente
+ * quei dati non devono esistere (regola numero uno, docs/01-brief.md).
+ */
+export function leggiCatalogo(grezzo) {
+  const trovato = trovaReferenze(grezzo);
+  if (!trovato) {
+    throw new Error('non trovo le referenze. Va bene l\'export del catalogo, oppure un backup del gestionale.');
+  }
+  const referenze = [];
   const visti = new Set();
-  for (const voce of elenco) {
-    if (!voce || typeof voce !== 'object') continue;
+  let scartate = 0;
+  for (const voce of trovato.elenco) {
+    if (!voce || typeof voce !== 'object') { scartate++; continue; }
     const codice = String(voce.codice ?? voce.cod ?? '').trim();
-    if (!/^\d{1,3}$/.test(codice)) continue;
+    if (!/^\d{1,3}$/.test(codice)) { scartate++; continue; }
     const normalizzato = codice.padStart(3, '0');
-    if (visti.has(normalizzato)) continue;
+    if (visti.has(normalizzato)) { scartate++; continue; }
     visti.add(normalizzato);
-    pulito.push({
+    referenze.push({
       codice: normalizzato,
       categoria: categoriaValida(voce.categoria) || categoriaDaCodice(normalizzato),
       attivo: voce.attivo === undefined ? true : Boolean(voce.attivo),
     });
   }
-  if (!pulito.length) throw new Error('Nessuna referenza valida nel file.');
-  pulito.sort((a, b) => a.codice.localeCompare(b.codice));
-  return pulito;
+  if (!referenze.length) {
+    throw new Error(`nessuna referenza con un codice a tre cifre (${trovato.elenco.length} voci lette).`);
+  }
+  referenze.sort((a, b) => a.codice.localeCompare(b.codice));
+  return { referenze, origine: trovato.origine, scartate };
+}
+
+/** Solo l'elenco ripulito, per chi non ha bisogno del resoconto. */
+export function ripulisciCatalogo(grezzo) {
+  return leggiCatalogo(grezzo).referenze;
 }
 
 const CATEGORIE = ['UOMO', 'DONNA', 'NICCHIA', 'PREMIUM'];
 
 function categoriaValida(valore) {
-  const c = String(valore || '').trim().toUpperCase();
+  // Il gestionale numera le categorie per tenerle in ordine ("02 DONNA"): il numero si butta.
+  const c = String(valore || '').trim().toUpperCase().replace(/^\d+\s*[-.)]?\s*/, '');
   return CATEGORIE.includes(c) ? c : null;
 }
 

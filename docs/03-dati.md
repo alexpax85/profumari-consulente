@@ -16,7 +16,13 @@ Un array di referenze. È l'unico dato che arriva dal gestionale, per export a s
 
 La copia in questo kit deriva dall'export di Latina del 14/09/2026 (336 codici, due voci senza codice scartate: OLIBANO e PATCHOULI, che sembrano essenze singole). Va sostituita con l'export ufficiale del gestionale appena disponibile.
 
-**Export dal gestionale**: proporre al progetto gestionale un pulsante "Esporta catalogo per il consulente" nella scheda Referenze, che scarica esattamente questo JSON (senza brand, nome, fornitori, costi). Nel frattempo il backoffice accetta anche l'incolla di un JSON con campi in più: tiene solo `codice`, `categoria`, `attivo` e scarta il resto già al momento dell'import, così i nomi non vengono mai salvati.
+**Import dal gestionale (16/09/2026)**: non serve un pulsante nuovo nel gestionale. Il backoffice legge direttamente il suo **backup** («Storico e backup» → «Scarica backup»), che è lo stato intero: le referenze stanno in `fragranze`, un oggetto indicizzato per codice, e le categorie sono numerate (`"01 UOMO"`, `"02 DONNA"`, `"03 NICCHIA"`, `"04 PREMIUM"`). L'import riconosce anche un semplice array di referenze, un `{ catalogo: [...] }` e un backup del consulente.
+
+Di ogni referenza si tengono **solo** `codice`, `categoria` e `attivo`; nome, brand, fornitori, costi, note e giacenze vengono scartati prima di qualsiasi salvataggio. Le voci senza un codice a tre cifre (le essenze singole tipo OLIBANO e PATCHOULI) restano fuori. Le referenze sparite dall'export restano in archivio con il loro profilo, ma disattivate: nel motore non entrano più.
+
+Resta comunque utile, più avanti, un pulsante "Esporta catalogo per il consulente" nel gestionale che scarichi solo i tre campi: sarebbe un file da 10 KB invece che da 500, e non passerebbe nemmeno dalle mani di chi importa. Ma non è necessario per lavorare.
+
+Le prove di tutto questo sono in `scripts/test_import.mjs`, comprese quelle che verificano che nome, brand, fornitori e costi non sopravvivano all'import.
 
 ## Profili olfattivi · `dati/profili.json`
 
