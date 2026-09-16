@@ -1,5 +1,7 @@
 # Profumari · Consulente olfattivo
 
+Demo: <https://alexpax85.github.io/profumari-consulente/>
+
 Chiosco (iPad in negozio) e web app con cui la clientela de **i profumari** (Latina e Aprilia) arriva, in circa un minuto e senza saper nulla di profumeria, a **tre codici di fragranza da provare al banco**. Il percorso parte da preferenze olfattive e da domande "soft" (luoghi, colori, emozioni, stagioni, segno zodiacale, occasione, per sé o per un regalo) e le confronta con le **piramidi olfattive** del catalogo.
 
 Progetto **indipendente** dal gestionale di magazzino (`profumari-gestionale`): repo, hosting e dati separati. L'unico legame è un export a senso unico del catalogo (codice, categoria, attivo). Nel chiosco **non compare mai il nome commerciale**: solo il codice a tre cifre.
@@ -87,9 +89,11 @@ Sull'iPad: aprire il sito in Safari, *Condividi → Aggiungi alla schermata Home
 
 ## Stato del lavoro
 
-Fatto: motore con le sue prove, percorso completo, risultati, backoffice, PWA, pubblicazione.
-Da verificare sul posto: il service worker (il browser di sviluppo non lo registra, va provato su Safari dell'iPad) e la taratura dei pesi con il personale.
-Poi: le fasi 4 e 5 di `docs/02-piano.md` — prova in negozio, quindi versione condivisa su Firebase con `store-firebase.js` al posto di `store-locale.js`.
+Fatte le fasi 0-3 di `docs/02-piano.md`: motore con le sue prove, percorso completo, risultati, backoffice, PWA, pubblicazione su Pages. Il service worker si registra e mette in cache guscio, configurazione e dati (trenta file), quindi il chiosco regge anche senza rete.
+
+Da fare: **fase 4**, la prova in negozio — installare la PWA sull'iPad (*Condividi → Aggiungi alla schermata Home* + Accesso Guidato), leggere insieme al personale l'uscita di `prova_catalogo.mjs`, tarare i pesi dal backoffice e rivedere per prime le trentacinque bozze a confidenza bassa. Poi la **fase 5**: Firebase, con `store-firebase.js` al posto di `store-locale.js` e la stessa interfaccia.
+
+Restano aperte le domande di `docs/08-domande-cliente.md`: l'MVP procede con le ipotesi indicate lì.
 
 ## Regole non negoziabili
 
