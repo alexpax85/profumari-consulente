@@ -2,7 +2,7 @@
 // Alla prima visita mette in cache il guscio dell'app e i dati di partenza;
 // poi serve dalla cache e aggiorna in sottofondo.
 
-const CACHE = 'consulente-v1';
+const CACHE = 'consulente-v2';   // si alza a ogni pubblicazione che cambia file o dati
 
 const GUSCIO = [
   './',
@@ -42,8 +42,10 @@ const GUSCIO = [
 self.addEventListener('install', (evento) => {
   evento.waitUntil((async () => {
     const cache = await caches.open(CACHE);
+    // Sempre dalla rete, mai dalla cache del browser: mescolare file di due
+    // versioni diverse rompe l'app (un modulo nuovo che importa da uno vecchio).
     // Uno alla volta: un file mancante (i due percorsi di dati/) non deve far fallire tutto.
-    await Promise.all(GUSCIO.map((url) => cache.add(url).catch(() => null)));
+    await Promise.all(GUSCIO.map((url) => cache.add(new Request(url, { cache: 'reload' })).catch(() => null)));
     self.skipWaiting();
   })());
 });

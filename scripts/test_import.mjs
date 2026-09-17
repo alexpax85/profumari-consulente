@@ -4,7 +4,7 @@
 //   node scripts/test_import.mjs
 
 import assert from 'node:assert/strict';
-import { leggiCatalogo, ripulisciCatalogo, categoriaDaCodice } from '../app/js/dati.js';
+import { leggiCatalogo, ripulisciCatalogo, categoriaDaCodice, aggiornaProfili, VERSIONE_DATI } from '../app/js/dati.js';
 
 let passate = 0;
 const fallite = [];
@@ -124,6 +124,43 @@ prova('ripulisciCatalogo resta la scorciatoia che restituisce solo l\'elenco', (
   const elenco = ripulisciCatalogo(backupGestionale);
   assert.ok(Array.isArray(elenco));
   assert.equal(elenco.length, 4);
+});
+
+
+// ------------------------------- la base dei profili avanza sui dispositivi in uso
+
+const scheda = (codice, extra = {}) => ({ codice, famiglia: 'legnoso', descrizione: `scheda ${codice}`, ...extra });
+
+prova('i profili di fabbrica nuovi sostituiscono quelli vecchi sul dispositivo', () => {
+  const esito = aggiornaProfili([scheda('001', { descrizione: 'vecchia' })], [scheda('001', { descrizione: 'nuova' })]);
+  assert.equal(esito.profili.length, 1);
+  assert.equal(esito.profili[0].descrizione, 'nuova');
+  assert.equal(esito.sostituiti, 1);
+});
+
+prova('una scheda confermata dal personale non si tocca', () => {
+  const confermata = scheda('002', { descrizione: 'confermata dal banco', rivisto: '2026-09-17' });
+  const esito = aggiornaProfili([confermata], [scheda('002', { descrizione: 'di fabbrica' })]);
+  assert.equal(esito.profili[0].descrizione, 'confermata dal banco');
+  assert.equal(esito.confermati, 1);
+  assert.equal(esito.sostituiti, 0);
+});
+
+prova('le note interne si riportano sulla scheda nuova', () => {
+  const esito = aggiornaProfili([scheda('003', { noteStaff: 'troppo dolce, dicono i clienti' })], [scheda('003')]);
+  assert.equal(esito.profili[0].noteStaff, 'troppo dolce, dicono i clienti');
+  assert.equal(esito.profili[0].descrizione, 'scheda 003');
+});
+
+prova('i profili scritti solo sul dispositivo restano, e i codici nuovi entrano', () => {
+  const esito = aggiornaProfili([scheda('900', { descrizione: 'aggiunta dal backoffice' })], [scheda('001'), scheda('002')]);
+  assert.deepEqual(esito.profili.map((p) => p.codice), ['001', '002', '900']);
+  assert.equal(esito.nuovi, 2);
+  assert.equal(esito.propri, 1);
+});
+
+prova('la versione dei dati di fabbrica è un numero che sale', () => {
+  assert.ok(Number.isInteger(VERSIONE_DATI) && VERSIONE_DATI >= 2, `VERSIONE_DATI = ${VERSIONE_DATI}`);
 });
 
 console.log(`\n${passate} passate, ${fallite.length} fallite\n`);

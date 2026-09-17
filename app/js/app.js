@@ -3,7 +3,7 @@
 // backoffice.js, store-locale.js.
 
 import { $, toast, toccoLungo, mostra } from './ui.js';
-import { caricaPredefiniti } from './dati.js';
+import { caricaPredefiniti, aggiornaProfili, VERSIONE_DATI } from './dati.js';
 import { store, VERSIONE_STATO } from './store-locale.js';
 import { creaPercorso } from './percorso.js';
 import { creaRisultati } from './risultati.js';
@@ -49,11 +49,23 @@ async function preparaStato() {
     stato.config = unisciConfig(salvato.config || {}, predefiniti.config);
     stato.statistiche = salvato.statistiche || nuoveStatistiche();
     stato.indiceGioco = Number.isInteger(salvato.indiceGioco) ? salvato.indiceGioco : 0;
+    // Profili di fabbrica più recenti di quelli sul dispositivo: la base avanza.
+    // Il catalogo no: quello lo decide il negozio con l'import dal gestionale.
+    if (!(Number(salvato.versioneDati) >= VERSIONE_DATI)) {
+      if (store.disponibile()) store.creaPuntoRipristino(structuredClone(salvato), 'prima dei profili nuovi');
+      const esito = aggiornaProfili(salvato.profili, predefiniti.profili);
+      stato.profili = esito.profili;
+      stato.versioneDati = VERSIONE_DATI;
+      if (store.disponibile()) store.salvaSubito(stato);
+      console.info(`Profili portati alla base ${VERSIONE_DATI}: ${esito.sostituiti} aggiornati, `
+        + `${esito.nuovi} nuovi, ${esito.confermati} confermati dal personale lasciati com'erano.`);
+    }
     return;
   }
 
   stato = {
     versione: VERSIONE_STATO,
+    versioneDati: VERSIONE_DATI,
     catalogo: predefiniti.catalogo,
     profili: predefiniti.profili,
     config: predefiniti.config,

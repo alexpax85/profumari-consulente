@@ -6,6 +6,17 @@
 const FILE_CONFIG = ['accordi', 'domande', 'pesi', 'frasi', 'testi'];
 
 /**
+ * Versione dei profili di fabbrica. **Si alza di uno** ogni volta che
+ * dati/profili.json cambia e la nuova versione deve diventare la base anche sui
+ * dispositivi già in uso: all'avvio l'app se ne accorge e li sostituisce
+ * (vedi aggiornaProfili e app.js). Chi apre l'app per la prima volta parte
+ * sempre dai file, quindi non la guarda nemmeno.
+ *   1 · 16/09/2026 · bozze ricostruite dagli originali
+ *   2 · 17/09/2026 · profili costruiti sulle piramidi del fornitore
+ */
+export const VERSIONE_DATI = 2;
+
+/**
  * In sviluppo il server sta nella radice della repo e la pagina è /app/index.html:
  * lì i dati sono in ../dati/. Sul sito pubblicato la radice è app/ e i dati sono
  * in dati/. Si prova per primo il percorso più probabile, l'altro resta come rete.
@@ -31,6 +42,34 @@ async function primoDisponibile(nomeFile) {
     }
   }
   throw new Error(`Non trovo ${nomeFile} (${ultimo && ultimo.message})`);
+}
+
+/**
+ * Porta i profili del dispositivo alla nuova base di fabbrica, senza buttare via
+ * il lavoro del personale: una scheda confermata (`rivisto`) resta com'è, e le
+ * note interne si riportano sulla scheda nuova. I profili che esistono solo sul
+ * dispositivo (aggiunti dal backoffice) restano dove sono.
+ */
+export function aggiornaProfili(salvati, predefiniti) {
+  const vecchi = new Map((salvati || []).filter((p) => p && p.codice).map((p) => [String(p.codice), p]));
+  const profili = [];
+  let sostituiti = 0;
+  let confermati = 0;
+  let nuovi = 0;
+  for (const nuovo of predefiniti || []) {
+    if (!nuovo || !nuovo.codice) continue;
+    const codice = String(nuovo.codice);
+    const vecchio = vecchi.get(codice);
+    vecchi.delete(codice);
+    if (!vecchio) { profili.push(nuovo); nuovi++; continue; }
+    if (vecchio.rivisto) { profili.push(vecchio); confermati++; continue; }
+    profili.push(vecchio.noteStaff ? { ...nuovo, noteStaff: vecchio.noteStaff } : nuovo);
+    sostituiti++;
+  }
+  const propri = [...vecchi.values()];
+  profili.push(...propri);
+  profili.sort((a, b) => String(a.codice).localeCompare(String(b.codice)));
+  return { profili, sostituiti, confermati, nuovi, propri: propri.length };
 }
 
 /** { config: {accordi, domande, pesi, frasi, testi}, catalogo, profili } */
