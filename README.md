@@ -20,9 +20,9 @@ app/                  la web app (è anche la radice del sito pubblicato)
   js/dati.js          caricamento e ripulitura del catalogo importato
   js/icone.js         le icone a linea, disegnate a mano · js/ui.js  aiutanti DOM
   js/scenari.js       gli scenari tipici di taratura (usati anche dagli script)
-  config/             accordi, domande, pesi, frasi, testi: si modificano dal backoffice
+  config/             accordi, domande, pesi, frasi, testi, note: si modificano dal backoffice
   fonts/ img/ sw.js manifest.json
-dati/                 catalogo.json, profili.json e privato/ (mai versionato)
+dati/                 catalogo.json, piramidi.json, profili.json e privato/ (mai versionato)
 docs/                 brief, piano, dati, motore, percorso, backoffice, stile, domande
 scripts/              prove e utilità da riga di comando
 assets/               logo, favicon, font, CSS del gestionale, workflow di esempio
@@ -68,6 +68,22 @@ node scripts/controlla_nomi.mjs
 ```
 
 Guardia sulla regola numero uno: confronta ogni profilo con il nome del suo originale (letto da `dati/privato/nomi.json`, che resta fuori dalla repo) e cerca i nomi commerciali interi dentro `app/` e `dati/`. Senza il file privato si salta da solo.
+
+```bash
+node scripts/test_genera_profili.mjs
+```
+
+Le diciannove prove della mappatura note → accordi (`app/config/note.json`) e della costruzione dei profili: normalizzazione delle note, copertura della tabella su tutte le piramidi in archivio, attributi nella scala 1-5, stagioni e occasioni sensate, descrizione entro i 140 caratteri.
+
+```bash
+python3 scripts/estrai_piramidi.py          # card PDF del fornitore -> dati/piramidi.json
+node scripts/genera_profili.mjs             # prova a vuoto, stampa il riepilogo
+node scripts/genera_profili.mjs --scrivi    # scrive dati/profili.json
+```
+
+Dopo una rigenerazione va alzato `VERSIONE_DATI` in `app/js/dati.js`: è così che i profili nuovi entrano anche nei dispositivi già in uso, lasciando però intatte le schede confermate dal personale e le note interne.
+
+La catena che porta dalle piramidi del fornitore ai profili del motore: com'è fatta e cosa resta stima sta in `docs/03-dati.md` e in `dati/README.md`. L'estrattore è l'unico pezzo in Python (serve `pymupdf` per leggere i PDF), gira offline e non c'entra con l'app.
 
 `scripts/genera_questionario.js` rigenera il foglio di domande per il cliente (`docs/10-questionario-cliente.docx`). È l'unica cosa del progetto che vuole una libreria (`npm install docx`) e non ha niente a che fare con l'app: `app/` resta senza build e senza dipendenze.
 

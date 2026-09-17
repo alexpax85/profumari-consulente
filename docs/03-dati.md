@@ -26,9 +26,23 @@ Le prove di tutto questo sono in `scripts/test_import.mjs`, comprese quelle che 
 
 ## Profili olfattivi · `dati/profili.json`
 
-Un array con una voce per codice. Le bozze presenti nel kit sono state generate il 16/09/2026 dalle piramidi degli originali commerciali; ognuna porta una `confidenza` che dice quanto fidarsi.
+Un array con una voce per codice. **Dal 17/09/2026 non si scrivono a mano: si generano** dalle piramidi del fornitore (vedi sotto). La `confidenza` dice da dove viene il profilo: `alta` se dietro c'è la card del fornitore, `media` o `bassa` se è ancora una ricostruzione.
 
-> **16/09/2026**: il cliente ha le piramidi olfattive in un PDF, quello da cui stampa le etichette, e lo manderà. Quando arriva sostituisce le bozze dove è più preciso: prima i 35 codici a confidenza bassa, poi i 66 a confidenza media. Le domande su cosa contenga esattamente quel file (tutte le referenze? note o descrizioni? compare il nome dell'originale?) sono nel questionario `10-questionario-cliente.docx`, sezione A. Se il PDF è regolare conviene scrivere uno script di import una volta sola, invece di ricopiare 336 schede a mano dal backoffice.
+> **17/09/2026**: le piramidi sono arrivate — 339 card PDF, una per codice, in quattro cartelle per categoria. Il nome del file è `codice BRAND-NOME.pdf`, quindi la cartella **non si versiona** (è in `.gitignore`: i nomi commerciali restano fuori dalla repo). La card contiene solo codice, famiglia e le tre file di note: nessun attributo, nessuna descrizione.
+
+### Dalla card al profilo
+
+```
+card PDF  --estrai_piramidi.py-->  dati/piramidi.json  --genera_profili.mjs-->  dati/profili.json
+                                                        ^
+                                              app/config/note.json
+```
+
+1. `python3 scripts/estrai_piramidi.py` legge le card e scrive `dati/piramidi.json` (codice, categoria, famiglia, testa, cuore, fondo). Undici card sono state corrette a mano dal fornitore con annotazioni sopra la scheda vecchia: lo script scarta il testo coperto e tiene la correzione, altrimenti undici profili prenderebbero la piramide di un'altra fragranza.
+2. `app/config/note.json` traduce ogni nota in accordi della tassonomia (331 voci, coprono tutte le note delle card), dice a quale famiglia corrisponde la parola stampata sulla card, e raddrizza le storpiature del fornitore quando la nota va scritta ("CAFFE’" → caffè, "MUSCIHO BIANCO" → muschio bianco). Si modifica senza toccare il codice.
+3. `node scripts/genera_profili.mjs --scrivi` costruisce i profili: accordi dalle note (le note del fondo pesano un po' più di quelle di testa, e la famiglia della card entra come una nota in più), e da lì **stima** intensità, persistenza, dolcezza, freschezza, stagioni, momento, occasioni e carattere. Le prove stanno in `scripts/test_genera_profili.mjs`.
+
+Quello che la card non dice resta una stima e va confermato al banco: è la parte da rivedere per prima, insieme al genere (che viene dal profilo precedente o dalla categoria di listino). Rigenerare sovrascrive le correzioni fatte dal backoffice, tranne `noteStaff` e genere: prima di rigenerare, esportare il backup.
 
 ```json
 {
