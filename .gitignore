@@ -1,5 +1,6 @@
 # Corrispondenza codice -> originale commerciale e file grezzi del cliente: restano solo in locale
 dati/privato/
+Piramidi Olfattive/
 *.xlsx
 *.csv
 ~$*
