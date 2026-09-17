@@ -43,6 +43,7 @@ const AMMESSE = {
   594: ['gelato'],     // idem per il gelato al pistacchio
   614: ['shabby'],     // descrive lo stile, non il marchio
   617: ['cola'],       // la cola è una nota, come la vaniglia
+  589: ['tiarè'],      // il tiarè è il fiore, ed è scritto così sulla card del fornitore
 };
 
 function fileApp(cartella, raccolti = []) {
