@@ -108,6 +108,7 @@
   "menta": { "aromatico": 0.8, "verde": 0.4 },
   "menta speziata": { "aromatico": 0.8, "speziato": 0.3 },
   "artemisia": { "aromatico": 0.8, "verde": 0.4 },
+  "dragoncello": { "aromatico": 0.8, "verde": 0.4 },
   "aneto": { "aromatico": 0.6, "verde": 0.5 },
   "mirto": { "aromatico": 0.7, "verde": 0.4 },
   "camomilla": { "aromatico": 0.6, "floreale-fresco": 0.4 },
@@ -155,6 +156,7 @@
   "legno marino": { "legnoso": 0.7, "acquatico": 0.5 },
   "loto": { "acquatico": 0.7, "floreale-fresco": 0.5 },
   "loto bianco": { "acquatico": 0.7, "floreale-fresco": 0.5 },
+  "loto blu": { "acquatico": 0.7, "floreale-fresco": 0.5 },
   "ninfea": { "acquatico": 0.7, "floreale-fresco": 0.5 },
   "gelsomino acquatico": { "floreale-bianco": 0.7, "acquatico": 0.4 },
 
@@ -233,6 +235,7 @@
   "rosa di maggio": { "rosa": 1 },
   "rosa taif": { "rosa": 1 },
   "rosa turca": { "rosa": 1 },
+  "acqua di rose": { "rosa": 1 },
   "essenza di rosa": { "rosa": 1 },
   "peonia rosa": { "floreale-fresco": 0.8, "rosa": 0.3 },
 
@@ -287,6 +290,7 @@
   "note orientali": { "ambrato": 0.7, "speziato": 0.5 },
 
   "note legnose": { "legnoso": 0.9 },
+  "legni chiari": { "legnoso": 0.9 },
   "legni bianchi": { "legnoso": 0.9 },
   "legni scuri": { "legnoso": 0.9 },
   "legno biondo": { "legnoso": 0.9 },
@@ -392,6 +396,8 @@
   "musciho bianco": { "muschiato": 1 },
   "muscio": { "muschiato": 1 },
   "muschio vegetale": { "muschiato": 1 },
+  "note pulite": { "muschiato": 0.9 },
+  "ambretta": { "muschiato": 0.8, "fruttato": 0.2 },
   "muschio animale": { "muschiato": 0.9, "cuoio": 0.3 },
   "note animali": { "muschiato": 0.6, "cuoio": 0.5 },
   "zibetto": { "muschiato": 0.8, "cuoio": 0.4 },

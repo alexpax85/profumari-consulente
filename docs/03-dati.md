@@ -85,7 +85,7 @@ Campi che il backoffice aggiunge quando il personale interviene: `rivisto` (data
 
 ## Tassonomia degli accordi · `app/config/accordi.json`
 
-Ventitré accordi; ogni profilo ne usa in genere da tre a sei. Il file di configurazione porta, per ciascuno, l'etichetta da mostrare al cliente e un'icona o colore.
+Ventiquattro accordi; ogni profilo ne usa in genere da tre a sei. Il file di configurazione porta, per ciascuno, l'etichetta da mostrare al cliente e un'icona o colore.
 
 | Chiave | Cosa raccoglie |
 |---|---|

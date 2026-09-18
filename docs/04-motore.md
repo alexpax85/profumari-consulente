@@ -47,7 +47,7 @@ S = 0.60 · cos(accordi_desiderati, accordi_profilo)
   − 0.03 · (confidenza == 'bassa')
 ```
 
-- La similarità coseno lavora sulle 23 chiavi della tassonomia; chiavi assenti valgono 0.
+- La similarità coseno lavora sulle 24 chiavi della tassonomia; chiavi assenti valgono 0.
 - I coefficienti stanno in `config.pesi` e si tarano dal backoffice.
 - Un profilo con `esclusione` ≥ 0.5 (cioè un accordo escluso con valore alto) è di fatto tolto dalla rosa.
 - Risultato in [−1, 1]; per il cliente si può mostrare come "affinità" in percentuale solo se davvero utile; nell'MVP meglio non mostrare numeri, solo l'ordine e le motivazioni.
@@ -85,4 +85,4 @@ I test usano profili sintetici, non il catalogo reale, così restano stabili qua
 
 ## 6. Prestazioni
 
-Trecentocinquanta profili per 23 chiavi: il calcolo è istantaneo anche su un iPad vecchio. Nessuna precomputazione necessaria. I vettori si normalizzano una volta all'avvio.
+Trecentocinquanta profili per 24 chiavi: il calcolo è istantaneo anche su un iPad vecchio. Nessuna precomputazione necessaria. I vettori si normalizzano una volta all'avvio.

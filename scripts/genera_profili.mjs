@@ -18,6 +18,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
+import { normalizzaNota } from '../app/js/ricerca.js';
 
 const RADICE = join(dirname(fileURLToPath(import.meta.url)), '..');
 const leggi = (p) => JSON.parse(readFileSync(join(RADICE, p), 'utf8'));
@@ -41,13 +42,11 @@ const scala1a5 = (v) => fra(1, Math.round(1 + 4 * a01(v)), 5);
 const decimo = (v) => Math.round(a01(v) * 10) / 10;
 const g = (accordi, chiave) => (accordi && accordi[chiave]) || 0;
 
-/** Confronto tollerante: niente maiuscole, accenti o apostrofi ("CAFFE’" = "caffè"). */
-export function normalizzaNota(testo) {
-  return String(testo || '')
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .toLowerCase().replace(/['’]/g, '')
-    .replace(/\s+/g, ' ').trim();
-}
+// Confronto tollerante fra note ("CAFFE’" = "caffè"): la funzione vive in
+// app/js/ricerca.js, perché la ricerca del chiosco deve confrontare le note
+// esattamente come sono state scritte qui. Due copie che si scostano farebbero
+// sparire referenze in silenzio, quindi la copia è una sola.
+export { normalizzaNota };
 
 function tabella(oggetto) {
   const mappa = new Map();

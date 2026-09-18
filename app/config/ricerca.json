@@ -1,0 +1,443 @@
+{
+ "versione": 1,
+ "nota": "Ricerca per note, il secondo percorso del chiosco (docs/12-ricerca-note.md). Qui stanno le soglie del punteggio e i gruppi di note che per un cliente sono la stessa cosa. Dopo una modifica: node scripts/test_ricerca.mjs",
+ "pesiFila": {
+  "testa": 0.85,
+  "cuore": 1,
+  "fondo": 1
+ },
+ "sogliaAccordo": 0.3,
+ "sogliaVeto": 0.5,
+ "affinita": 0.45,
+ "forzaNota": 0.3,
+ "massimoScelte": 5,
+ "minimoOccorrenze": 2,
+ "quanteNotePerFamiglia": 14,
+ "quantiRisultati": 12,
+ "quanteNotePerGruppo": 12,
+ "soglieFamiglia": {
+  "_nota": "Quando una famiglia c'è davvero. Fuori da qui vale sogliaAccordo. L'ambra sta più in alto perché l'accordo arriva anche dalla parola ORIENTALE stampata sulla card del fornitore: settantotto profili la portano senza avere una nota ambrata in piramide.",
+  "ambrato": 0.5
+ },
+ "famigliaNota": {
+  "_nota": "Dove mettere una nota nella tavolozza, quando la famiglia che note.json le dà non è quella che il cliente si aspetta. Il muschio di quercia è il caso da non sbagliare: il nome dice muschio, ma è terra e sottobosco, e fra la lavanda e la menta non ci sta. Il cachemire invece è un pareggio vero (muschiato 0.6, legnoso 0.6): scritto qui perché non lo decida l'ordine delle chiavi del file.",
+  "muschio di quercia": "patchouli",
+  "osmanto": "floreale-bianco",
+  "liquirizia": "speziato",
+  "cachemire": "muschiato"
+ },
+ "nascoste": {
+  "_nota": "Note che restano cercabili e continuano a contare per la loro famiglia, ma nella tavolozza non si mostrano: sono nomi da profumiere, non parole che un cliente tocca.",
+  "elenco": [
+   "iso e super",
+   "hedione",
+   "akigalawood",
+   "cypriol",
+   "olio di cypriol",
+   "labdano",
+   "benzoino",
+   "cashmeran",
+   "ambrofix",
+   "ambretta",
+   "zibetto",
+   "vinile",
+   "aldeidi",
+   "note terrose",
+   "note pulite",
+   "note floreali",
+   "fiori bianchi",
+   "note fruttate",
+   "note verdi",
+   "spezie",
+   "note legnose",
+   "agrumi",
+   "note ambrate",
+   "note talcate",
+   "note balsamiche",
+   "note minerali",
+   "resine",
+   "note speziate",
+   "note dolci",
+   "note gourmand",
+   "note animali",
+   "note cuoiate",
+   "note muschiate"
+  ]
+ },
+ "gruppi": [
+  {
+   "chiave": "agrumi",
+   "etichetta": "Agrumi",
+   "icona": "limone",
+   "tinta": "sabbia",
+   "famiglie": [
+    "agrumato"
+   ]
+  },
+  {
+   "chiave": "fiori",
+   "etichetta": "Fiori",
+   "icona": "fiore",
+   "tinta": "cipria",
+   "famiglie": [
+    "floreale-bianco",
+    "rosa",
+    "floreale-fresco",
+    "cipriato"
+   ]
+  },
+  {
+   "chiave": "frutta",
+   "etichetta": "Frutta e sole",
+   "icona": "pera",
+   "tinta": "sabbia",
+   "famiglie": [
+    "fruttato",
+    "solare"
+   ]
+  },
+  {
+   "chiave": "erbe",
+   "etichetta": "Erbe e foglie",
+   "icona": "erba",
+   "tinta": "salvia",
+   "famiglie": [
+    "aromatico",
+    "verde",
+    "tè"
+   ]
+  },
+  {
+   "chiave": "mare",
+   "etichetta": "Mare e bucato",
+   "icona": "onda",
+   "tinta": "salvia",
+   "famiglie": [
+    "acquatico",
+    "muschiato"
+   ]
+  },
+  {
+   "chiave": "legni",
+   "etichetta": "Legni e terra",
+   "icona": "albero",
+   "tinta": "sabbia",
+   "famiglie": [
+    "legnoso",
+    "patchouli",
+    "oud"
+   ]
+  },
+  {
+   "chiave": "spezie",
+   "etichetta": "Spezie",
+   "icona": "spezie",
+   "tinta": "sabbia",
+   "famiglie": [
+    "speziato"
+   ]
+  },
+  {
+   "chiave": "dolce",
+   "etichetta": "Dolce",
+   "icona": "dolce",
+   "tinta": "sabbia",
+   "famiglie": [
+    "vaniglia",
+    "gourmand",
+    "miele"
+   ]
+  },
+  {
+   "chiave": "ambra",
+   "etichetta": "Ambra, incenso e cuoio",
+   "icona": "ambra",
+   "tinta": "notte",
+   "famiglie": [
+    "ambrato",
+    "incenso",
+    "cuoio",
+    "tabacco",
+    "boozy"
+   ]
+  }
+ ],
+ "intensita": {
+  "leggera": {
+   "max": 2
+  },
+  "media": {
+   "min": 3,
+   "max": 3
+  },
+  "decisa": {
+   "min": 4
+  }
+ },
+ "sinonimi": {
+  "_nota": "A sinistra il nome che vede il cliente, a destra le forme che nelle piramidi vogliono dire la stessa cosa. Servono a non mostrare otto rose diverse e a far trovare comunque chi ha scritto 'rosa bulgara'.",
+  "rosa": [
+   "rosa bulgara",
+   "rosa di damasco",
+   "rosa turca",
+   "rosa di maggio",
+   "rosa di grasse",
+   "rosa taif",
+   "essenza di rosa",
+   "assoluta di rosa",
+   "acqua di rose",
+   "petali di rosa"
+  ],
+  "gelsomino": [
+   "gelsomino sambac",
+   "gelsomino egiziano",
+   "assoluta di gelsomino",
+   "fiori di gelsomino"
+  ],
+  "fiore d'arancio": [
+   "fiori d'arancio",
+   "zagara"
+  ],
+  "bergamotto": [
+   "bergamotto di calabria"
+  ],
+  "limone": [
+   "limone di sicilia",
+   "limone di amalfi"
+  ],
+  "mandarino": [
+   "mandarino di sicilia",
+   "mandarino verde",
+   "mandarino rosso",
+   "tangerino"
+  ],
+  "arancia": [
+   "arancia dolce",
+   "scorza di arancia",
+   "arancia amara",
+   "arancia rossa"
+  ],
+  "legno di cedro": [
+   "cedro",
+   "cedro bianco",
+   "legni chiari",
+   "cedro della virginia",
+   "cedro dell'atlante"
+  ],
+  "sandalo": [
+   "legno di sandalo",
+   "sandalo mysore"
+  ],
+  "oud": [
+   "legno di agar",
+   "legno di oud",
+   "olio di agarwood",
+   "agarwood"
+  ],
+  "vaniglia": [
+   "vaniglia assoluta",
+   "caviale di vaniglia",
+   "zucchero vanigliato",
+   "vaniglia del madagascar",
+   "baccello di vaniglia"
+  ],
+  "muschio": [
+   "muschio bianco",
+   "note muschiate",
+   "muschi bianchi",
+   "note pulite",
+   "malva muschiata"
+  ],
+  "patchouli": [
+   "foglia di patchouli",
+   "foglie di patchouli"
+  ],
+  "cocco": [
+   "latte di cocco",
+   "acqua di cocco"
+  ],
+  "cuoio": [
+   "pelle",
+   "note cuoiate"
+  ],
+  "incenso": [
+   "olibano"
+  ],
+  "pepe": [
+   "pepe nero",
+   "pepe bianco"
+  ],
+  "cachemire": [
+   "legno di cachemire",
+   "legno di cashmere",
+   "cashmeran"
+  ],
+  "ambra bianca": [
+   "ambroxan",
+   "amberwood",
+   "ambrofix"
+  ],
+  "chiodi di garofano": [
+   "garofano"
+  ],
+  "mandorla": [
+   "mandorla amara",
+   "mandorla dolce",
+   "mandorle"
+  ],
+  "ginepro": [
+   "bacche di ginepro"
+  ],
+  "anice": [
+   "anice stellato"
+  ],
+  "salvia": [
+   "salvia sclarea"
+  ],
+  "note marine": [
+   "note acquatiche",
+   "note ozoniche",
+   "acqua di mare"
+  ],
+  "sale": [
+   "sale marino",
+   "note di sale"
+  ],
+  "loto": [
+   "loto bianco",
+   "loto blu",
+   "ninfea"
+  ],
+  "note legnose": [
+   "note boschive",
+   "legni bianchi",
+   "legni scuri",
+   "legno biondo"
+  ],
+  "bacche rosse": [
+   "bacche selvatiche",
+   "frutti rossi"
+  ],
+  "tabacco": [
+   "foglia di tabacco",
+   "miele di tabacco"
+  ],
+  "fava tonka": [
+   "cumarina"
+  ]
+ },
+ "spiegazioni": {
+  "_nota": "Una riga per dire che cos'è quella nota, in parole normali: è quello che rende il cassetto leggibile a chi di profumeria non sa niente. Le note senza riga mostrano solo il nome e il conteggio.",
+  "bergamotto": "l'agrume che apre quasi tutti i profumi: fresco e un po' amaro",
+  "limone": "secco e pulito, come la buccia appena grattata",
+  "mandarino": "il più dolce degli agrumi, morbido",
+  "pompelmo": "agrume amaro e frizzante",
+  "arancia": "dolce e solare",
+  "lime": "tagliente, quasi verde",
+  "verbena": "erba di limone, leggera",
+  "yuzu": "agrume giapponese, fra limone e mandarino",
+  "rosa": "il fiore per eccellenza: può essere fresco o denso",
+  "gelsomino": "fiore bianco caldo e avvolgente, da sera",
+  "fiore d'arancio": "bianco e luminoso, un po' di miele",
+  "neroli": "il fiore d'arancio in versione fresca e verde",
+  "iris": "polvere e cipria: elegante, un po' retrò",
+  "tuberosa": "fiore bianco intenso, cremoso",
+  "ylang ylang": "fiore tropicale, dolce e burroso",
+  "peonia": "fiore leggero e acquoso",
+  "violetta": "dolce e polverosa, come una caramella",
+  "gardenia": "fiore bianco cremoso, sa un po' di cocco",
+  "geranio": "verde e pungente, con un lato di rosa",
+  "mughetto": "fresco e primaverile",
+  "fresia": "leggera e pulita",
+  "magnolia": "fiore agrumato e leggero",
+  "osmanto": "fiore che sa di albicocca e pelle",
+  "ciclamino": "acquoso e delicato",
+  "eliotropio": "mandorla e cipria",
+  "pesca": "morbida e vellutata",
+  "pera": "fresca e succosa",
+  "mela": "croccante, verde",
+  "prugna": "frutto scuro, un po' liquoroso",
+  "ribes nero": "frutto acidulo e scuro",
+  "lampone": "dolce e acidulo",
+  "fragola": "dolce, da estate",
+  "ananas": "esotico e frizzante",
+  "bacche rosse": "frutti di bosco, dolci e aciduli",
+  "mango": "polposo e tropicale",
+  "ciliegia": "dolce e un po' di mandorla",
+  "litchi": "delicato, fra rosa e uva",
+  "cocco": "crema solare, spiaggia",
+  "melone": "fresco e acquoso",
+  "frutti tropicali": "mango, papaya, frutto della passione",
+  "lavanda": "pulita e rilassante: il profumo del barbiere",
+  "salvia": "erba asciutta e un po' amara",
+  "menta": "fresca e pungente",
+  "rosmarino": "erba mediterranea, secca",
+  "basilico": "verde e aromatico",
+  "timo": "erba secca di macchia",
+  "ginepro": "bacca resinosa, sa di gin",
+  "anice": "dolce e balsamico, come la liquirizia",
+  "liquirizia": "dolce e nera, un po' amara",
+  "tè": "foglia asciutta, sobria",
+  "tè verde": "leggero e amarognolo",
+  "mirto": "macchia mediterranea",
+  "bambù": "verde e acquoso",
+  "albero di fico": "foglia di fico: verde e lattiginosa",
+  "rabarbaro": "verde e acidulo",
+  "foglia di violetta": "verde e umida, sa di cetriolo",
+  "galbano": "verde tagliente, quasi amaro",
+  "felce": "sottobosco pulito",
+  "fieno": "erba tagliata al sole",
+  "muschio": "il pulito del bucato steso, morbido sulla pelle",
+  "note marine": "aria di mare, iodio e vento",
+  "sale": "salino, come la pelle dopo il bagno",
+  "alghe": "marino e un po' verde",
+  "loto": "fiore d'acqua, leggero",
+  "cachemire": "morbido e ovattato, come un maglione",
+  "patchouli": "terra umida e sottobosco, scuro",
+  "sandalo": "legno cremoso e caldo",
+  "legno di cedro": "legno secco, come una matita appena temperata",
+  "vetiver": "radice fresca e terrosa",
+  "oud": "legno prezioso d'oriente, denso e scuro",
+  "muschio di quercia": "muschio degli alberi: terra e bosco umido, non bucato",
+  "cipresso": "legno verde e balsamico",
+  "betulla": "legno affumicato, sa di cuoio",
+  "legno di guaiaco": "legno dolce e affumicato",
+  "abete": "resina e aghi di pino",
+  "palo santo": "legno sacro, dolce e fumoso",
+  "pepe rosa": "pepe leggero, quasi fruttato",
+  "pepe": "secco e pungente",
+  "zenzero": "piccante e fresco",
+  "cannella": "spezia dolce e calda",
+  "cardamomo": "spezia fresca, da caffè orientale",
+  "zafferano": "spezia preziosa, va verso il cuoio",
+  "chiodi di garofano": "spezia calda e un po' medicinale",
+  "coriandolo": "spezia leggera e verde",
+  "noce moscata": "spezia dolce e polverosa",
+  "cumino": "spezia calda e terrosa",
+  "vaniglia": "dolce e morbida: la nota più amata del catalogo",
+  "fava tonka": "cugina della vaniglia, più asciutta, sa di mandorla",
+  "miele": "dolce e denso, un po' animale",
+  "mandorla": "dolce e un po' amara, da pasticceria",
+  "caramello": "zucchero cotto",
+  "caffè": "tostato e amaro",
+  "cacao": "cioccolato amaro, asciutto",
+  "cioccolato": "dolce e scuro",
+  "pralina": "nocciola e zucchero",
+  "canna da zucchero": "dolce e liquoroso",
+  "burro di cacao": "cremoso e dolce",
+  "zucchero filato": "dolce da luna park",
+  "ambra": "calore avvolgente, resine dolci",
+  "ambra bianca": "ambra moderna, pulita e luminosa",
+  "ambra grigia": "salata e minerale, viene dal mare",
+  "cuoio": "pelle conciata, come una giacca nuova",
+  "incenso": "fumo e resine, come in una chiesa antica",
+  "mirra": "resina scura e balsamica",
+  "fumo": "affumicato, come un camino",
+  "tabacco": "foglia di tabacco: calda e dolce, non sigaretta",
+  "rum": "liquoroso e caldo",
+  "cognac": "liquore scuro e avvolgente",
+  "liquore": "dolce e alcolico",
+  "whisky": "legnoso e alcolico",
+  "cera d'api": "miele e calore, morbido"
+ }
+}
