@@ -61,9 +61,11 @@ export function aggiornaProfili(salvati, predefiniti) {
     const codice = String(nuovo.codice);
     const vecchio = vecchi.get(codice);
     vecchi.delete(codice);
-    if (!vecchio) { profili.push(nuovo); nuovi++; continue; }
+    if (!vecchio) { profili.push(structuredClone(nuovo)); nuovi++; continue; }
     if (vecchio.rivisto) { profili.push(vecchio); confermati++; continue; }
-    profili.push(vecchio.noteStaff ? { ...nuovo, noteStaff: vecchio.noteStaff } : nuovo);
+    const aggiornato = structuredClone(nuovo);
+    if (vecchio.noteStaff) aggiornato.noteStaff = vecchio.noteStaff;
+    profili.push(aggiornato);
     sostituiti++;
   }
   const propri = [...vecchi.values()];
@@ -94,7 +96,7 @@ function fondiMancanti(salvato, difetto, conto) {
   }
   const fuori = { ...salvato };
   for (const [chiave, valore] of Object.entries(difetto)) {
-    if (!(chiave in fuori)) { fuori[chiave] = valore; conto.aggiunte++; }
+    if (!(chiave in fuori)) { fuori[chiave] = structuredClone(valore); conto.aggiunte++; }
     else fuori[chiave] = fondiMancanti(fuori[chiave], valore, conto);
   }
   return fuori;
@@ -105,7 +107,7 @@ function fondiElenco(salvato, difetto, chiave, conto) {
   const visti = new Set(salvato.map((v) => v && v[chiave]));
   const fuori = [...salvato];
   for (const voce of difetto) {
-    if (voce && !visti.has(voce[chiave])) { fuori.push(voce); conto.aggiunte++; }
+    if (voce && !visti.has(voce[chiave])) { fuori.push(structuredClone(voce)); conto.aggiunte++; }
   }
   return fuori;
 }
@@ -130,7 +132,7 @@ export function aggiornaDomande(salvate, predefinite, rimosse = []) {
     viste.add(domanda.id);
     const difetto = difettoPerId.get(domanda.id);
     if (!difetto || domanda.toccata) { elenco.push(domanda); continue; }
-    const riallineata = { ...difetto };
+    const riallineata = structuredClone(difetto);
     if (domanda.peso !== undefined) riallineata.peso = domanda.peso;
     if (domanda.attiva !== undefined) riallineata.attiva = domanda.attiva;
     elenco.push(riallineata);
@@ -139,7 +141,7 @@ export function aggiornaDomande(salvate, predefinite, rimosse = []) {
 
   (predefinite || []).forEach((domanda, i) => {
     if (!domanda || !domanda.id || viste.has(domanda.id) || cancellate.has(domanda.id)) return;
-    elenco.splice(Math.min(i, elenco.length), 0, domanda);
+    elenco.splice(Math.min(i, elenco.length), 0, structuredClone(domanda));
     nuove++;
   });
 
@@ -179,6 +181,25 @@ export function aggiornaConfig(salvata, difetto) {
     vociAggiunte: conto.aggiunte,
     novita: esitoDomande.nuove + esitoDomande.riallineate + conto.aggiunte,
   };
+}
+
+/** Le domande scritte dal negozio: quelle che non arrivano con l'app. */
+export function domandeProprie(salvata, difetto) {
+  const diFabbrica = new Set(elencoDi(difetto && difetto.domande, 'domande').map((d) => d && d.id));
+  return elencoDi(salvata && salvata.domande, 'domande').filter((d) => d && d.id && !diFabbrica.has(d.id));
+}
+
+/**
+ * Torna ai valori consigliati. Le domande che il negozio ha scritto di suo
+ * possono restare: non sono una taratura, sono roba sua.
+ */
+export function ripristinaConfig(salvata, difetto, { tieniDomandeMie = true } = {}) {
+  const config = structuredClone(difetto);
+  const mie = tieniDomandeMie ? domandeProprie(salvata, difetto) : [];
+  if (mie.length) {
+    config.domande = conElenco(config.domande, 'domande', [...elencoDi(config.domande, 'domande'), ...structuredClone(mie)]);
+  }
+  return { config, tenute: mie.length };
 }
 
 /** { config: {accordi, domande, pesi, frasi, testi}, catalogo, profili } */

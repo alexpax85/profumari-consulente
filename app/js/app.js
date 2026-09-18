@@ -61,12 +61,14 @@ async function preparaStato() {
     return;
   }
 
+  // Copia, non riferimento: quello che il negozio modifica non deve sporcare i
+  // dati di fabbrica, che servono al confronto e al "ripristina i consigliati".
   stato = {
     versione: VERSIONE_STATO,
     versioneDati: VERSIONE_DATI,
-    catalogo: predefiniti.catalogo,
-    profili: predefiniti.profili,
-    config: predefiniti.config,
+    catalogo: structuredClone(predefiniti.catalogo),
+    profili: structuredClone(predefiniti.profili),
+    config: structuredClone(predefiniti.config),
     statistiche: nuoveStatistiche(),
     pin: null,
     indiceGioco: 0,

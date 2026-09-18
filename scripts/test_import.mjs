@@ -6,8 +6,9 @@
 import assert from 'node:assert/strict';
 import {
   leggiCatalogo, ripulisciCatalogo, categoriaDaCodice,
-  aggiornaProfili, aggiornaDomande, aggiornaConfig, VERSIONE_DATI,
+  aggiornaProfili, aggiornaDomande, aggiornaConfig, ripristinaConfig, domandeProprie, VERSIONE_DATI,
 } from '../app/js/dati.js';
+import { store } from '../app/js/store-locale.js';
 
 let passate = 0;
 const fallite = [];
@@ -230,6 +231,80 @@ prova('senza niente di nuovo, aggiornaConfig non segnala novità', () => {
   const config = { domande: { domande: [domanda('a')] }, frasi: {}, testi: {}, pesi: {}, accordi: { accordi: [], famiglie: [] } };
   const esito = aggiornaConfig(structuredClone(config), structuredClone(config));
   assert.equal(esito.novita, 0);
+});
+
+
+// ------------------------------- ripristino di fabbrica e travaso fra banchi
+
+prova('il ripristino riconosce le domande scritte dal negozio', () => {
+  const difetto = { domande: { domande: [domanda('a'), domanda('b')] } };
+  const salvata = { domande: { domande: [domanda('a', { peso: 0.1 }), domanda('sua')] } };
+  assert.deepEqual(domandeProprie(salvata, difetto).map((d) => d.id), ['sua']);
+});
+
+prova('"valori consigliati" rimette il file ma può tenere le domande tue', () => {
+  const difetto = { domande: { domande: [domanda('a', { peso: 1, titolo: 'Di fabbrica' })] }, pesi: { coseno: 0.6 } };
+  const salvata = {
+    domande: { domande: [domanda('a', { peso: 0.1, titolo: 'Ritoccata', toccata: true }), domanda('sua')] },
+    pesi: { coseno: 0.95 },
+  };
+  const conLeMie = ripristinaConfig(salvata, difetto, { tieniDomandeMie: true });
+  assert.deepEqual(conLeMie.config.domande.domande.map((d) => d.id), ['a', 'sua']);
+  assert.equal(conLeMie.config.domande.domande[0].peso, 1, 'la domanda di fabbrica torna com\'era');
+  assert.equal(conLeMie.config.pesi.coseno, 0.6, 'anche i coefficienti tornano ai consigliati');
+  assert.equal(conLeMie.tenute, 1);
+
+  const pulito = ripristinaConfig(salvata, difetto, { tieniDomandeMie: false });
+  assert.deepEqual(pulito.config.domande.domande.map((d) => d.id), ['a']);
+  assert.equal(pulito.tenute, 0);
+});
+
+prova('il ripristino non lascia legami con la configurazione di prima', () => {
+  const difetto = { domande: { domande: [domanda('a')] }, pesi: { coseno: 0.6 } };
+  const esito = ripristinaConfig({ domande: { domande: [] } }, difetto, {});
+  esito.config.pesi.coseno = 0.1;
+  assert.equal(difetto.pesi.coseno, 0.6, 'i valori di fabbrica non si toccano mai');
+});
+
+prova('la sola configurazione si esporta e si rilegge, anche da un backup intero', () => {
+  const config = { domande: { domande: [domanda('a')] }, pesi: { coseno: 0.6 }, frasi: {}, testi: {} };
+  const riletta = store.importaConfig(store.esportaConfig(config));
+  assert.deepEqual(riletta.domande.domande.map((d) => d.id), ['a']);
+
+  const backupIntero = JSON.stringify({ tipo: 'profumari-consulente', stato: { catalogo: [], profili: [], config } });
+  assert.deepEqual(store.importaConfig(backupIntero).pesi, { coseno: 0.6 });
+});
+
+prova('un file senza configurazione dice perché non va', () => {
+  assert.throws(() => store.importaConfig('{"tipo":"altro"}'), /configurazione/);
+});
+
+
+prova('quello che arriva dai file non resta legato ai file', () => {
+  const difetto = {
+    domande: { domande: [domanda('a', { titolo: 'Di fabbrica' })] },
+    frasi: { accordiDue: ['frase di fabbrica'] },
+    pesi: { coseno: 0.6 },
+    accordi: { accordi: [{ chiave: 'agrumato', etichetta: 'agrumi' }], famiglie: [] },
+  };
+  const impronta = JSON.stringify(difetto);
+  const esito = aggiornaConfig({ domande: { domande: [] }, frasi: {}, pesi: {}, accordi: { accordi: [], famiglie: [] } }, difetto);
+
+  // il negozio lavora sulla sua copia…
+  esito.config.domande.domande[0].titolo = 'Ritoccata dal negozio';
+  esito.config.frasi.accordiDue[0] = 'frase del negozio';
+  esito.config.pesi.coseno = 0.95;
+  esito.config.accordi.accordi[0].etichetta = 'agrumi del negozio';
+
+  // …e i valori di fabbrica restano quelli, se no "ripristina i consigliati" non ripristina niente
+  assert.equal(JSON.stringify(difetto), impronta);
+});
+
+prova('anche i profili di fabbrica arrivano come copia', () => {
+  const diFabbrica = [scheda('001', { descrizione: 'di fabbrica' })];
+  const esito = aggiornaProfili([], diFabbrica);
+  esito.profili[0].descrizione = 'ritoccata';
+  assert.equal(diFabbrica[0].descrizione, 'di fabbrica');
 });
 
 console.log(`\n${passate} passate, ${fallite.length} fallite\n`);
