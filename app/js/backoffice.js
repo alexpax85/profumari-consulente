@@ -5,7 +5,8 @@
 import { $, $$, el, svuota, toast, scarica, oggi, dataItaliana, chiediConferma } from './ui.js';
 import { leggiCatalogo, categoriaDaCodice, ripristinaConfig, domandeProprie, aggiornaConfig } from './dati.js';
 import { store } from './store-locale.js';
-import { SCENARI } from './scenari.js';
+import { SCENARI, RICERCHE } from './scenari.js';
+import { indiceNote, cerca, impostazioni } from './ricerca.js';
 import { riepilogo, nuoveStatistiche } from './statistiche.js';
 import { creaEditorDomande } from './editor-domande.js';
 import {
@@ -26,6 +27,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
   let cercaProfili = '';
   let codiceAperto = null;
   let risposteProva = { per_chi: 'me', genere: 'libero' };
+  let criteriProva = { accordi: [], note: [], escludi: [], escludiNote: [] };
   let esitoImport = null; // sopravvive al ridisegno della scheda dopo il salvataggio
 
   const editorDomande = creaEditorDomande({
@@ -559,9 +561,11 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
 
     sezione.append(cardProvaRapida());
 
+    sezione.append(cardRicercaNote());
+
     sezione.append(el('section', { class: 'card' }, [
       el('h2', { testo: 'Valori di fabbrica' }),
-      el('p', { class: 'muted' }, 'Rimette pesi, domande, frasi e testi come sono nei file di configurazione. Catalogo, profili e statistiche non si toccano.'),
+      el('p', { class: 'muted' }, 'Rimette pesi, domande, frasi, testi e le soglie della ricerca per note come sono nei file di configurazione. Catalogo, profili e statistiche non si toccano.'),
       el('div', { class: 'azioni' }, [
         el('button', {
           class: 'pericolo', type: 'button',
@@ -570,7 +574,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
             const scelte = await chiediConferma({
               titolo: 'Rimetti i valori consigliati',
               righe: [
-                { cosa: 'cambia', testo: 'Pesi, coefficienti, frasi e testi tornano come li abbiamo consegnati.' },
+                { cosa: 'cambia', testo: 'Pesi, coefficienti, frasi, testi e la taratura della ricerca per note tornano come li abbiamo consegnati.' },
                 { cosa: 'cambia', testo: 'Le domande arrivate con l\'app tornano alla versione originale, comprese quelle eliminate.' },
                 { cosa: 'resta', testo: 'Catalogo, profili e statistiche non si toccano.' },
                 { cosa: 'resta', testo: 'Prima viene creato un punto di ripristino.' },
@@ -677,7 +681,159 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
     ]);
   }
 
+  /**
+   * Taratura del secondo percorso (docs/12-ricerca-note.md): le soglie della
+   * ricerca per note, la sua prova sul catalogo vero e i controlli di salute
+   * della tavolozza — quello che dopo un import può essere diventato un buco.
+   */
+  function cardRicercaNote() {
+    const ricerca = s.config.ricerca || (s.config.ricerca = {});
+    const opzioni = impostazioni(s.config);
+    const configConNote = () => ({ ...s.config, note: predefiniti.note });
+    const profili = profiliInGioco();
+    const indice = indiceNote(profili, configConNote());
+
+    const numerico = (chiave, etichetta, min, max, passo = 0.05) => el('label', { class: 'campo' }, [
+      etichetta,
+      el('input', {
+        type: 'number', value: String(ricerca[chiave] ?? opzioni[chiave]), min: String(min), max: String(max), step: String(passo),
+        onchange: (e) => { ricerca[chiave] = Number(e.target.value); salvaEDisegna(); },
+      }),
+    ]);
+
+    // Prova: si scelgono note e famiglie e si vede cosa uscirebbe al cliente.
+    const esitoNodo = el('div');
+    function ricalcola() {
+      const esito = cerca(criteriProva, profili, configConNote());
+      const conQualcosa = esito.risultati.filter((r) => r.presi > 0).length;
+      svuota(esitoNodo).append(
+        el('p', { class: 'muted piccolo-testo', testo: `${esito.pieni} con tutto, ${conQualcosa - esito.pieni} con una parte, `
+          + `${esito.risultati.length - conQualcosa} solo somiglianti`
+          + `${esito.fuoriPerVeto ? ` · ${esito.fuoriPerVeto} tolte dai veti` : ''}`
+          + ` · ogni criterio da solo: ${esito.daSoli.map((d) => `${d.tipo === 'nota' ? d.chiave : `famiglia ${d.chiave}`} ${d.quante}`).join(', ') || '—'}` }),
+        el('div', { class: 'tabella-wrap' }, [el('table', {}, [
+          el('thead', {}, [el('tr', {}, [
+            el('th', { testo: 'Codice' }), el('th', { testo: 'Famiglia' }),
+            el('th', { class: 'num', testo: 'Punteggio' }), el('th', { testo: 'Trovato per' }),
+          ])]),
+          el('tbody', {}, esito.risultati.slice(0, 12).map((r) => el('tr', {}, [
+            el('td', { class: 'cod', testo: r.codice }),
+            el('td', { testo: `${r.profilo.famiglia} · ${r.profilo.sottofamiglia}` }),
+            el('td', { class: 'num', testo: r.punteggio.toFixed(3) }),
+            el('td', { class: 'muted', testo: r.trovate.map((x) => (x.tipo === 'nota' ? `${x.nome} (${x.fila})` : x.chiave)).join(', ') || 'somiglianza' }),
+          ]))),
+        ])]),
+      );
+    }
+
+    const chipsGruppi = el('div', { class: 'chips' });
+    for (const gruppo of indice.gruppi) {
+      for (const famiglia of gruppo.famiglie) {
+        chipsGruppi.append(el('button', {
+          type: 'button',
+          class: criteriProva.accordi.includes(famiglia.chiave) ? 'scelto' : '',
+          onclick: () => {
+            criteriProva.accordi = criteriProva.accordi.includes(famiglia.chiave)
+              ? criteriProva.accordi.filter((c) => c !== famiglia.chiave)
+              : [...criteriProva.accordi, famiglia.chiave];
+            disegna();
+          },
+        }, [famiglia.etichetta, el('span', { class: 'livello', testo: String(famiglia.quante) })]));
+      }
+    }
+
+    const chipsNote = el('div', { class: 'chips' });
+    for (const nota of indice.note.slice(0, 24)) {
+      chipsNote.append(el('button', {
+        type: 'button',
+        class: criteriProva.note.includes(nota.chiave) ? 'scelto' : '',
+        onclick: () => {
+          criteriProva.note = criteriProva.note.includes(nota.chiave)
+            ? criteriProva.note.filter((c) => c !== nota.chiave)
+            : [...criteriProva.note, nota.chiave];
+          disegna();
+        },
+      }, [nota.nome, el('span', { class: 'livello', testo: String(nota.quante) })]));
+    }
+
+    // Salute della tavolozza: quello che un import del catalogo può aver rotto.
+    const povere = indice.famiglie.filter((f) => f.quante > 0 && f.quante < 8).map((f) => `${f.etichetta} (${f.quante})`);
+    const vuote = indice.famiglie.filter((f) => !f.note.length).map((f) => f.etichetta);
+
+    ricalcola();
+    return el('section', { class: 'card' }, [
+      el('h2', { testo: 'Ricerca per note' }),
+      el('p', { class: 'muted piccolo-testo' },
+        'Il secondo percorso: il cliente sceglie gli ingredienti e sfoglia il catalogo. '
+        + 'Qui si tarano le soglie; i gruppi della tavolozza, i sinonimi e le spiegazioni delle note stanno in app/config/ricerca.json.'),
+      el('div', { class: 'riga' }, [
+        numerico('sogliaAccordo', 'Quando una famiglia c\'è', 0, 1),
+        numerico('sogliaVeto', 'Quando un veto colpisce', 0, 1),
+        numerico('affinita', 'Quanto vale una somiglianza', 0, 1),
+        numerico('forzaNota', 'Peso della nota protagonista', 0, 1),
+      ]),
+      el('div', { class: 'riga' }, [
+        numerico('massimoScelte', 'Quante cose può mettere insieme', 1, 8, 1),
+        numerico('minimoOccorrenze', 'Nota mostrata da', 1, 10, 1),
+        numerico('quanteNotePerGruppo', 'Note per cassetto', 4, 20, 1),
+        numerico('quantiRisultati', 'Risultati per volta', 4, 40, 1),
+      ]),
+      el('p', { class: 'piccolo-testo muted', testo: `${indice.gruppi.length} gruppi, ${indice.note.length} note distinte nel catalogo attivo`
+        + `${indice.senzaFamiglia ? `, ${indice.senzaFamiglia} senza famiglia in note.json` : ''}.` }),
+      indice.senzaFamiglia || vuote.length
+        ? el('p', { class: 'avviso', testo: vuote.length
+          ? `Famiglie rimaste senza note da mostrare: ${vuote.join(', ')}. Dopo un import può succedere: controlla il catalogo.`
+          : 'Qualche nota del catalogo non ha una riga in note.json: non si può cercare per quella nota.' })
+        : null,
+      povere.length
+        ? el('p', { class: 'piccolo-testo muted', testo: `Famiglie con poche referenze attive: ${povere.join(' · ')}. Da sole vanno bene, incrociate con altro danno pochi risultati.` })
+        : null,
+      el('h3', { testo: 'Prova la ricerca' }),
+      el('p', { class: 'muted piccolo-testo' }, 'Le famiglie e le venti note più presenti. I risultati sono quelli veri, sul catalogo attivo.'),
+      chipsGruppi,
+      el('p', { class: 'piccolo-testo muted', testo: 'Note' }),
+      chipsNote,
+      el('div', { class: 'azioni' }, [
+        el('button', { type: 'button', onclick: () => { criteriProva = { accordi: [], note: [], escludi: [], escludiNote: [] }; disegna(); } }, 'Azzera la prova'),
+        ...RICERCHE.slice(0, 4).map((r) => el('button', {
+          type: 'button', class: 'piccolo',
+          onclick: () => { criteriProva = { accordi: [], note: [], escludi: [], escludiNote: [], ...r.criteri }; disegna(); },
+        }, r.titolo)),
+      ]),
+      esitoNodo,
+    ]);
+  }
+
   // ============================================================ statistiche
+
+  /** Cosa cerca chi entra dalla porta delle note: famiglie, note precise, veti. */
+  function cardNoteCercate(dati) {
+    const etichetta = (chiave) => {
+      const accordo = elencoAccordi(s.config).find((a) => a.chiave === chiave);
+      return accordo ? `${accordo.etichetta} (famiglia)` : chiave;
+    };
+    const veti = Object.entries((dati.ricerche && dati.ricerche.veti) || {}).sort((a, b) => b[1] - a[1]);
+    const schede = Object.entries((dati.ricerche && dati.ricerche.schede) || {}).sort((a, b) => b[1] - a[1]);
+
+    return el('section', { class: 'card' }, [
+      el('h2', { testo: 'Ricerca per note' }),
+      el('p', { class: 'muted piccolo-testo' },
+        `${dati.ricerche.fatte === 1 ? 'Una ricerca fatta' : `${dati.ricerche.fatte || 0} ricerche fatte`}`
+        + `${dati.ricerche.vuote ? `, ${dati.ricerche.vuote} senza nessun risultato` : ''}`
+        + `${dati.ricerche.soloSomiglianti ? `, ${dati.ricerche.soloSomiglianti} con sole somiglianze` : ''}`
+        + '. Dice quali ingredienti chiede la clientela: è la traccia più diretta per capire dove il catalogo ha un buco.'),
+      dati.note.length
+        ? el('div', { class: 'tabella-wrap' }, [el('table', {}, [
+          el('thead', {}, [el('tr', {}, [el('th', { testo: 'Cercata' }), el('th', { class: 'num', testo: 'Volte' })])]),
+          el('tbody', {}, dati.note.slice(0, 40).map(([chiave, n]) => el('tr', {}, [
+            el('td', { testo: etichetta(chiave) }), el('td', { class: 'num', testo: String(n) }),
+          ]))),
+        ])])
+        : el('p', { class: 'vuoto', testo: 'Ancora nessuna ricerca per note.' }),
+      veti.length ? el('p', { class: 'piccolo-testo muted', testo: `Non lo voglio: ${veti.map(([k, n]) => `${etichetta(k)} ${n}`).join(' · ')}` }) : null,
+      schede.length ? el('p', { class: 'piccolo-testo muted', testo: `Schede aperte per leggerne la piramide: ${schede.slice(0, 12).map(([k, n]) => `${k} (${n})`).join(' · ')}` }) : null,
+    ]);
+  }
 
   function disegnaStatistiche(sezione) {
     const dati = riepilogo(s.statistiche);
@@ -687,10 +843,14 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
 
     sezione.append(el('div', { class: 'kpi' }, [
       riquadro(String(dati.iniziati), 'Percorsi iniziati'),
-      riquadro(String(dati.completati), 'Completati', 'teal'),
-      riquadro(dati.mediano ? `${dati.mediano}s` : '—', 'Tempo mediano'),
+      riquadro(String(dati.completati), 'Domande completate', 'teal'),
+      riquadro(dati.mediano ? `${dati.mediano}s` : '—', 'Tempo mediano (domande)'),
       riquadro(dati.abbandoni.length ? dati.abbandoni[0][0] : '—', 'Si abbandona su', dati.abbandoni.length ? 'warn' : ''),
+      riquadro(String(dati.percorsi.guidato || 0), 'Scelgono le domande'),
+      riquadro(String(dati.percorsi.note || 0), 'Scelgono le note', 'teal'),
     ]));
+
+    sezione.append(cardNoteCercate(dati));
 
     sezione.append(el('section', { class: 'card' }, [
       el('h2', { testo: 'Codici proposti più spesso' }),
@@ -737,7 +897,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
             const scelte = await chiediConferma({
               titolo: 'Azzera le statistiche',
               righe: [
-                { cosa: 'cambia', testo: `Percorsi (${dati.iniziati}), tempi, codici proposti e risposte tornano a zero.` },
+                { cosa: 'cambia', testo: `Percorsi (${dati.iniziati}), tempi, codici proposti, risposte e ricerche per note tornano a zero.` },
                 { cosa: 'resta', testo: 'Catalogo, profili, domande e tarature non si toccano.' },
                 { cosa: 'resta', testo: 'Prima viene creato un punto di ripristino.' },
               ],
@@ -780,7 +940,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
         const scelte = await chiediConferma({
           titolo: 'Prendi la configurazione dal file',
           righe: [
-            { cosa: 'cambia', testo: `Domande (${quante}), pesi, frasi e testi diventano quelli del file.` },
+            { cosa: 'cambia', testo: `Domande (${quante}), pesi, frasi, testi e taratura della ricerca diventano quelli del file.` },
             { cosa: 'resta', testo: 'Catalogo, profili e statistiche di questo dispositivo restano come sono.' },
             { cosa: 'resta', testo: 'Prima viene creato un punto di ripristino.' },
           ],
@@ -847,14 +1007,14 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
           }, 'Crea punto di ripristino'),
         ]),
         el('p', { class: 'muted piccolo-testo' },
-          'Il backup intero serve a clonare un banco o a tornare indietro. La sola configurazione — domande, pesi, frasi e testi — '
+          'Il backup intero serve a clonare un banco o a tornare indietro. La sola configurazione — domande, pesi, frasi, testi e ricerca per note — '
           + 'serve a portare la messa a punto su un altro negozio senza toccarne profili e statistiche.'),
       ]),
       el('section', { class: 'card' }, [
         el('h2', { testo: 'Importa' }),
         el('p', { class: 'muted' }, 'Il backup intero sostituisce catalogo, profili e configurazione di questo dispositivo; prima di procedere una finestra dice cosa cambia e cosa resta.'),
         el('label', { class: 'campo' }, ['Backup intero', file]),
-        el('label', { class: 'campo' }, ['Solo la configurazione (domande, pesi, frasi, testi)', fileConfig]),
+        el('label', { class: 'campo' }, ['Solo la configurazione (domande, pesi, frasi, testi, ricerca)', fileConfig]),
       ]),
       el('section', { class: 'card' }, [
         el('h2', { testo: 'Punti di ripristino' }),

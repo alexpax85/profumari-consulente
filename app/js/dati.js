@@ -3,7 +3,12 @@
 // cartella sopra); su GitHub Pages il workflow copia i JSON dentro app/dati/.
 // Si prova prima il percorso pubblicato, poi quello di sviluppo.
 
-const FILE_CONFIG = ['accordi', 'domande', 'pesi', 'frasi', 'testi'];
+const FILE_CONFIG = ['accordi', 'domande', 'pesi', 'frasi', 'testi', 'ricerca'];
+
+// note.json (19 KB) sta fuori dalla configurazione di proposito: config finisce in
+// localStorage a ogni salvataggio e dentro ognuno dei dieci punti di ripristino.
+// Serve solo in lettura alla ricerca per note, quindi viaggia a parte.
+const FILE_NOTE = 'note';
 
 /**
  * Versione dei profili di fabbrica. **Si alza di uno** ogni volta che
@@ -164,7 +169,7 @@ export function aggiornaConfig(salvata, difetto) {
   );
   config.domande = conElenco(config.domande || difetto.domande, 'domande', esitoDomande.domande);
 
-  for (const chiave of ['frasi', 'testi', 'pesi']) {
+  for (const chiave of ['frasi', 'testi', 'pesi', 'ricerca']) {
     config[chiave] = fondiMancanti(config[chiave], difetto[chiave], conto);
   }
 
@@ -202,16 +207,34 @@ export function ripristinaConfig(salvata, difetto, { tieniDomandeMie = true } = 
   return { config, tenute: mie.length };
 }
 
-/** { config: {accordi, domande, pesi, frasi, testi}, catalogo, profili } */
+/**
+ * Un file di configurazione che non risponde non deve far morire il chiosco: senza
+ * accordi o domande non si va da nessuna parte, ma senza ricerca.json o note.json
+ * il percorso guidato funziona lo stesso, e il motore ha i suoi valori di riserva.
+ */
+async function facoltativo(url) {
+  try {
+    return await json(url);
+  } catch (errore) {
+    console.warn(`${url} non disponibile: si va avanti senza.`, errore);
+    return null;
+  }
+}
+
+/** { config: {accordi, domande, pesi, frasi, testi, ricerca}, catalogo, profili, note } */
 export async function caricaPredefiniti() {
-  const parti = await Promise.all(FILE_CONFIG.map((nome) => json(`config/${nome}.json`)));
+  const necessari = ['accordi', 'domande', 'pesi', 'frasi', 'testi'];
+  const parti = await Promise.all(FILE_CONFIG.map((nome) => (necessari.includes(nome)
+    ? json(`config/${nome}.json`)
+    : facoltativo(`config/${nome}.json`))));
   const config = {};
-  FILE_CONFIG.forEach((nome, i) => { config[nome] = parti[i]; });
-  const [catalogo, profili] = await Promise.all([
+  FILE_CONFIG.forEach((nome, i) => { if (parti[i]) config[nome] = parti[i]; });
+  const [catalogo, profili, note] = await Promise.all([
     primoDisponibile('catalogo.json'),
     primoDisponibile('profili.json'),
+    facoltativo(`config/${FILE_NOTE}.json`),
   ]);
-  return { config, catalogo, profili };
+  return { config, catalogo, profili, note: note || {} };
 }
 
 /**

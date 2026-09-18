@@ -25,13 +25,15 @@ Area riservata dentro la stessa web app, raggiungibile con tocco lungo di tre se
 - **Domande del percorso**: si scrivono da qui, non dai file. La tabella elenca titolo, tipo, gruppo, numero di risposte, peso e interruttore, e permette di riordinarle. Aprendone una si modificano titolo e sottotitolo, il tipo (una risposta sola, più risposte, cursore 1-5), il gruppo (percorso o gioco), e ogni risposta: testo, icona scelta da una griglia, e **verso cosa porta** — gli accordi si toccano a giro su tre livelli (*un tocco · abbastanza · tanto*) invece di scrivere numeri, più le chip di carattere e occasioni. "Nuova domanda", "Duplica" (nasce spenta) e "Elimina" completano il giro; un badge *da completare* segnala le domande che non hanno ancora titolo, due risposte o un contributo.
 - Una domanda modificata qui viene marcata `toccata`: da quel momento gli aggiornamenti dell'app non la riscrivono più. Quelle di fabbrica mai toccate invece si riallineano da sole quando l'app si aggiorna, tenendo però peso e interruttore. Se una domanda di fabbrica viene eliminata, l'id finisce in `config.domandeRimosse` e non torna più indietro.
 - La Prova rapida qui sotto usa la configurazione del momento: una domanda appena scritta si prova subito, senza uscire dalla scheda.
+- **Ricerca per note** (`12-ricerca-note.md`): le soglie del secondo percorso — quando una famiglia c'è, quando un veto colpisce, quanto vale una somiglianza, quante cose si possono mettere insieme, quante note per cassetto — più la prova sul catalogo vero (famiglie e note da toccare, scenari pronti, tabella dei risultati con il motivo per cui ognuno è uscito) e i **controlli di salute**: famiglie rimaste senza note da mostrare, famiglie con poche referenze attive, note del catalogo senza riga in `note.json`. Sono le cose che un import del catalogo può rompere in silenzio. I gruppi della tavolozza, i sinonimi e le spiegazioni delle note stanno in `app/config/ricerca.json`.
 - Testi del percorso (versione "per me" e "regalo").
 - **Prova rapida**: un pannello dove il personale compila il percorso in forma compatta (tutte le domande in una schermata) e vede in tempo reale i tre risultati con punteggi e accordi coincidenti. È lo strumento principale per capire e correggere il motore.
 - "Ripristina i valori consigliati" riporta ai file di configurazione di fabbrica.
 
 ### Statistiche
 
-- Per giorno e in totale: percorsi iniziati, completati, tempo mediano, domanda in cui si abbandona di più.
+- Per giorno e in totale: percorsi iniziati (tutti e due i percorsi), domande completate e tempo mediano (che riguardano solo il percorso a domande: la ricerca per note non ha una fine), domanda in cui si abbandona di più, e **da quale delle due porte entra la clientela**.
+- **Ricerca per note**: quali note e famiglie vengono chieste più spesso, quante ricerche sono finite senza niente, cosa viene escluso, quali codici sono stati aperti per leggerne la piramide. È la traccia più diretta per capire dove il catalogo ha un buco: se in venti ricerche qualcuno chiede il tabacco e in catalogo ce ne sono sette, quello è un dato da portare al fornitore.
 - Codici proposti più spesso (tabella con conteggi) e mai proposti (per capire se un profilo è tarato male o se il catalogo ha buchi).
 - Distribuzione delle risposte per domanda.
 - Tutto anonimo; nessun dato personale esiste da nessuna parte.
@@ -40,7 +42,7 @@ Area riservata dentro la stessa web app, raggiungibile con tocco lungo di tre se
 ### Backup
 
 - Esporta tutto (catalogo, profili, configurazione, statistiche) in un JSON; importa da JSON con conferma. Punti di ripristino automatici come in `store.js` del gestionale.
-- **Scarica solo la configurazione** (domande, pesi, frasi, testi) e **importala** su un altro banco: è il modo per portare la messa a punto da un negozio all'altro senza portarsi dietro profili e statistiche. Il file di sola configurazione si rilegge, ma va bene anche un backup intero: da lì viene presa solo la configurazione.
+- **Scarica solo la configurazione** (domande, pesi, frasi, testi, ricerca per note) e **importala** su un altro banco: è il modo per portare la messa a punto da un negozio all'altro senza portarsi dietro profili e statistiche. Il file di sola configurazione si rilegge, ma va bene anche un backup intero: da lì viene presa solo la configurazione.
 - All'import di un backup intero si può **tenere le statistiche del dispositivo**, e il codice del banco resta quello locale: un backup portato da un altro negozio non si porta dietro i suoi numeri né il suo PIN.
 
 ## Conferme che dicono cosa succede

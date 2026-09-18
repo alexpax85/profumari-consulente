@@ -1,10 +1,25 @@
 {
- "versione": 1,
- "nota": "Testi delle schermate (docs/05-percorso.md). Le versioni 'me' e 'regalo' cambiano solo il tono.",
+ "versione": 2,
+ "nota": "Testi delle schermate (docs/05-percorso.md e docs/12-ricerca-note.md). Le versioni 'me' e 'regalo' cambiano solo il tono; il blocco 'ricerca' e' il secondo percorso, quello che parte dalle note.",
  "attesa": {
   "titolo": "Trova il tuo profumo",
   "invito": "Tocca per cominciare",
   "sotto": "Poche domande, un minuto, tre codici da provare al banco."
+ },
+ "scelta": {
+  "titolo": "Da dove vuoi partire?",
+  "sotto": "Due strade per arrivare alla stessa cosa: qualche codice da provare al banco.",
+  "domande": {
+   "titolo": "Rispondi a qualche domanda",
+   "dettaglio": "Posti, colori, stagioni: da come ti senti tiriamo fuori tre profumi.",
+   "durata": "circa un minuto"
+  },
+  "note": {
+   "titolo": "Parti dalle note che ti piacciono",
+   "dettaglio": "Muschio, cuoio, agrumi, vaniglia: scegli tu gli ingredienti e guardiamo nel catalogo.",
+   "durata": "quanto vuoi tu"
+  },
+  "aiuto": "Se non sai decidere, comincia dalle domande: si fa in un minuto."
  },
  "avanzamento": "{n} di {tot}",
  "risultati": {
@@ -35,5 +50,66 @@
  "vuoto": {
   "titolo": "Ci serve qualche risposta in più",
   "testo": "Riprova cambiando qualche scelta, oppure chiedi aiuto a chi è al banco."
+ },
+ "ricerca": {
+  "titolo": "Che odore ti piace?",
+  "sotto": "Scegline uno: poi entriamo nel dettaglio. Puoi mettere insieme fino a {max} cose.",
+  "tutta": "Oppure prendi tutta una famiglia: più larga di una nota sola",
+  "torna": "Tutti gli odori",
+  "altre": "Ce ne sono altre {n}, più rare: non si mostrano, ma contano lo stesso.",
+  "quante": "{n} profumi",
+  "cesto": {
+   "vuoto": "Tocca un odore per cominciare.",
+   "uno": "{profumi} ce l'hanno davvero.",
+   "tanti": "{profumi} hanno tutto quello che hai scelto, altri {altri} ne hanno una parte.",
+   "niente": "Con queste scelte non resta niente: prova a togliere qualcosa.",
+   "vedi": "Vedi i profumi",
+   "tolgo": "Non lo voglio",
+   "tolgoAttivo": "Sto togliendo",
+   "tolgoAvviso": "Adesso quello che tocchi lo togliamo dalla ricerca.",
+   "massimo": "Puoi metterne insieme al massimo {max}: tocca quello che hai già scelto per toglierlo.",
+   "unoParziale": "{profumi} ce l'hanno davvero, altri {altri} ci somigliano.",
+   "tantiNiente": "Nessun profumo le mette insieme tutte: {tutti} ne hanno una parte.",
+   "soloVeti": "Questo l'abbiamo tolto. Adesso scegli qualcosa che ti piace: da lì partiamo.",
+   "filtroChiude": "Con «{filtro}» non resta niente: tocca la sua chip per toglierlo."
+  },
+  "risultati": {
+   "titolo": "I profumi con le tue note",
+   "sotto": "Non è una sentenza: è quello che c'è in catalogo con gli ingredienti che hai scelto.",
+   "banco": "Chiedi al banco di fartele sentire: di' i codici, o mostra questo schermo.",
+   "tutte": "Hanno tutto quello che hai chiesto",
+   "tutteUno": "Hanno quello che hai chiesto",
+   "parziale": "Ne hanno {presi} su {tot}",
+   "somiglianti": "Non le hanno, ma ci somigliano",
+   "vuoto": "Con queste scelte non resta niente.",
+   "consiglio": "Non c'è un profumo che le metta insieme tutte. Da sola, «{chiave}» sta in {profumi}.",
+   "altri": "Mostrane altri",
+   "aggiungi": "Tocca una nota della piramide per cercare chi ce l'ha."
+  },
+  "filtri": {
+   "genere": "Per chi",
+   "tutti": "Per chiunque",
+   "lui": "Per lui",
+   "lei": "Per lei",
+   "intensita": "Quanto si fa sentire",
+   "qualsiasi": "Come viene",
+   "leggera": "Discreto",
+   "media": "Medio",
+   "decisa": "Deciso"
+  },
+  "scheda": {
+   "testa": "Testa · i primi minuti",
+   "cuore": "Cuore · la prima ora",
+   "fondo": "Fondo · quello che resta",
+   "intensita": "Quanto si sente",
+   "persistenza": "Quanto dura",
+   "dolcezza": "Quanto è dolce",
+   "freschezza": "Quanto è fresco",
+   "chiedi": "Al banco chiedi il codice {codice}."
+  },
+  "titoloTolgo": "C'è qualcosa che non sopporti?",
+  "sottoTolgo": "Tocca quello che non vuoi sentire: lo togliamo dalla ricerca.",
+  "dentro": "Quale ti piace di più?",
+  "vediTutte": "Vedi tutte le {n} note"
  }
 }

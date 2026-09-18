@@ -5,7 +5,7 @@
 import { oggi } from './ui.js';
 
 export function nuoveStatistiche() {
-  return { giorni: {}, codici: {}, opzioni: {}, abbandoni: {} };
+  return { giorni: {}, codici: {}, opzioni: {}, abbandoni: {}, percorsi: {}, note: {}, ricerche: {} };
 }
 
 function giorno(statistiche) {
@@ -17,6 +17,42 @@ function giorno(statistiche) {
 export function segnaInizio(statistiche) {
   if (!statistiche) return;
   giorno(statistiche).iniziati++;
+}
+
+/** Da quale delle due porte entra la clientela: percorso guidato o ricerca per note. */
+export function segnaPercorso(statistiche, tipo) {
+  if (!statistiche || !tipo) return;
+  const percorsi = statistiche.percorsi || (statistiche.percorsi = {});
+  percorsi[tipo] = (percorsi[tipo] || 0) + 1;
+}
+
+/**
+ * Cosa cerca la gente quando sceglie le note. Si contano le chiavi scelte
+ * (famiglie, note, veti) e quante fragranze ha trovato: niente altro, come sempre.
+ */
+export function segnaRicerca(statistiche, criteri = {}, esito = {}) {
+  if (!statistiche) return;
+  const note = statistiche.note || (statistiche.note = {});
+  for (const chiave of [...(criteri.accordi || []), ...(criteri.note || [])]) {
+    if (!chiave) continue;
+    note[String(chiave)] = (note[String(chiave)] || 0) + 1;
+  }
+  const ricerche = statistiche.ricerche || (statistiche.ricerche = {});
+  ricerche.fatte = (ricerche.fatte || 0) + 1;
+  if (!esito.quanti) ricerche.vuote = (ricerche.vuote || 0) + 1;
+  else if (!esito.pieni) ricerche.soloSomiglianti = (ricerche.soloSomiglianti || 0) + 1;
+  for (const chiave of criteri.escludi || []) {
+    const veti = ricerche.veti || (ricerche.veti = {});
+    veti[String(chiave)] = (veti[String(chiave)] || 0) + 1;
+  }
+}
+
+/** Il codice che il cliente si è aperto per leggerne la piramide. */
+export function segnaSchedaAperta(statistiche, codice) {
+  if (!statistiche || !codice) return;
+  const aperte = (statistiche.ricerche || (statistiche.ricerche = {}));
+  const schede = aperte.schede || (aperte.schede = {});
+  schede[String(codice)] = (schede[String(codice)] || 0) + 1;
 }
 
 export function segnaCompletato(statistiche, { secondi = 0, codici = [] } = {}) {
@@ -62,5 +98,9 @@ export function riepilogo(statistiche) {
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
   const abbandoni = Object.entries((statistiche && statistiche.abbandoni) || {})
     .sort((a, b) => b[1] - a[1]);
-  return { giorni, iniziati, completati, mediano, codici, abbandoni };
+  const note = Object.entries((statistiche && statistiche.note) || {})
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  const percorsi = (statistiche && statistiche.percorsi) || {};
+  const ricerche = (statistiche && statistiche.ricerche) || {};
+  return { giorni, iniziati, completati, mediano, codici, abbandoni, note, percorsi, ricerche };
 }

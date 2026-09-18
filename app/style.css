@@ -160,6 +160,146 @@ button.avvia:hover { background: var(--teal-scuro); border-color: var(--teal-scu
 button.chip:hover { background: var(--teal-bg); border-color: var(--teal); color: var(--teal-scuro); }
 .chip.etichetta { background: transparent; border-style: dashed; font-weight: 400; }
 
+/* ===================================================== scelta · il bivio */
+.bivio { flex: 1 1 auto; padding: 26px 20px 20px; overflow-y: auto; display: flex; flex-direction: column; }
+.bivio:focus { outline: none; }
+.bivio h2 { font-weight: 300; font-size: 1.9rem; letter-spacing: .01em; }
+.bivio .sottotitolo { margin: 0 0 22px; color: var(--muted-forte); font-size: 1.05rem; max-width: 46ch; }
+.bivio .aiuto { margin: 18px 0 0; color: var(--muted-forte); font-size: .95rem; }
+@media (min-width: 820px) { .bivio { padding: 34px 40px 24px; } .bivio h2 { font-size: 2.3rem; } }
+
+.porte { display: grid; grid-template-columns: 1fr; gap: 14px; }
+@media (min-width: 760px) { .porte { grid-template-columns: 1fr 1fr; gap: 20px; } }
+
+button.porta { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; text-align: left; min-height: 190px; padding: 24px; border: 1px solid var(--line); border-top: 3px solid var(--teal); border-radius: var(--radius-scheda); background: var(--card); color: var(--ink); font: inherit; letter-spacing: 0; text-transform: none; cursor: pointer; transition: background .12s, border-color .12s; }
+button.porta:hover { background: var(--teal-bg); border-color: var(--teal); border-top-color: var(--teal); }
+button.porta .cerchio { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: var(--salvia); flex: 0 0 auto; }
+button.porta .cerchio.sabbia { background: var(--sabbia); }
+button.porta .cerchio svg { width: 30px; height: 30px; stroke: var(--nero); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+button.porta .etichetta { display: block; font-weight: 600; font-size: 1.3rem; line-height: 1.25; }
+button.porta .dettaglio { display: block; margin-top: 6px; font-size: 1rem; font-weight: 400; color: var(--muted-forte); line-height: 1.45; }
+button.porta .durata { margin-top: auto; font-size: .74rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--teal-scuro); }
+
+/* ================================================ ricerca · il banco delle note */
+/* .banco, senza altro, è la striscia scura "chiedi al banco" del percorso guidato:
+   la tavolozza ha un nome suo per non accendersi di nero. */
+.tavolozza { flex: 1 1 auto; padding: 20px 20px 16px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.tavolozza:focus { outline: none; }
+.tavolozza h2 { font-weight: 300; font-size: 1.7rem; max-width: 24ch; }
+.tavolozza .sottotitolo { margin: 0 0 18px; color: var(--muted-forte); font-size: 1rem; }
+@media (min-width: 820px) { .tavolozza { padding: 26px 40px 20px; } .tavolozza h2 { font-size: 2.1rem; } }
+
+.scaffali { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+@media (min-width: 720px) { .scaffali { grid-template-columns: repeat(3, 1fr); gap: 14px; } }
+@media (min-width: 1100px) { .scaffali { grid-template-columns: repeat(4, 1fr); } }
+
+button.scaffale { display: flex; align-items: center; gap: 12px; text-align: left; min-height: var(--tap-grande); padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius-scheda); background: var(--card); color: var(--ink); font: inherit; letter-spacing: 0; text-transform: none; cursor: pointer; position: relative; }
+button.scaffale:hover { background: var(--bg2); }
+button.scaffale.scelto { border: 2px solid var(--teal); background: var(--teal-bg); padding: 11px 13px; }
+button.scaffale.tolto { border: 2px solid var(--nero); background: var(--bg2); padding: 11px 13px; }
+button.scaffale.tolto .etichetta { text-decoration: line-through; }
+button.scaffale .cerchio { flex: 0 0 auto; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--salvia); }
+button.scaffale .cerchio.sabbia { background: var(--sabbia); }
+button.scaffale .cerchio.salvia { background: var(--salvia); }
+button.scaffale .cerchio.cipria { background: var(--cipria); }
+button.scaffale .cerchio.notte { background: var(--notte); }
+button.scaffale .cerchio svg { width: 24px; height: 24px; stroke: var(--nero); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+button.scaffale .cerchio.notte svg { stroke: #fff; }
+button.scaffale .testo { min-width: 0; }
+button.scaffale .etichetta { display: block; font-weight: 600; font-size: 1.02rem; line-height: 1.25; }
+button.scaffale .quante { display: block; margin-top: 2px; font-size: .82rem; color: var(--muted-forte); font-variant-numeric: tabular-nums; }
+
+.dentro-famiglia { display: flex; flex-direction: column; gap: 16px; }
+.occhiello { display: flex; align-items: center; gap: 10px; font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted-forte); }
+button.torna { min-height: 48px; padding: 0 16px; font-size: .78rem; }
+.note-scelte { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+button.nota { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 3px; text-align: left; min-height: var(--tap-grande); padding: 10px 14px; border: 1px solid var(--line); border-radius: var(--radius-scheda); background: var(--card); color: var(--ink); font: inherit; letter-spacing: 0; text-transform: none; cursor: pointer; }
+button.nota:hover { background: var(--bg2); }
+button.nota .nome { font-weight: 600; font-size: 1.05rem; }
+button.nota .spiegazione { font-size: .86rem; color: var(--muted-forte); line-height: 1.35; }
+button.nota .quante { font-size: .84rem; color: var(--teal-scuro); font-weight: 600; font-variant-numeric: tabular-nums; }
+/* le famiglie intere: chip grandi sotto le note, con il loro titolino */
+.occhiello.largo { margin: 6px 0 0; letter-spacing: .08em; }
+.chips.famiglie-intere { gap: 10px; }
+.chips.famiglie-intere button.grande { min-height: var(--tap); padding: 0 16px; font-size: .92rem; }
+.chips button.tolto { background: var(--nero); border-color: var(--nero); color: #fff; text-decoration: line-through; }
+button.nota.scelto { border: 2px solid var(--teal); background: var(--teal-bg); padding: 9px 13px; }
+button.nota.tolto { border: 2px solid var(--nero); background: var(--bg2); padding: 9px 13px; }
+button.nota.tolto .nome { text-decoration: line-through; }
+button.tutta-famiglia { width: 100%; justify-content: flex-start; }
+.nota-rara { margin: 0; color: var(--muted-forte); font-size: .9rem; }
+
+/* il cesto: cosa hai scelto, quanti profumi restano */
+.fondo.cesto { flex-direction: column; align-items: stretch; gap: 10px; }
+@media (min-width: 760px) { .fondo.cesto { flex-direction: row; align-items: center; } }
+.cesto-dentro { flex: 1 1 auto; min-width: 0; }
+.cesto-chip { display: flex; flex-wrap: wrap; gap: 8px; }
+.cesto-chip button.chip { min-height: 44px; }
+.cesto-chip:empty { display: none; }
+.cesto-conto { margin: 6px 0 0; font-size: .95rem; color: var(--ink2); }
+.cesto-conto b { color: var(--teal-scuro); }
+.cesto-tasti { display: flex; gap: 10px; flex: 0 0 auto; }
+@media (max-width: 759px) { .cesto-tasti button { flex: 1 1 auto; } }
+button.chip.tolto { background: var(--nero); border-color: var(--nero); color: #fff; text-decoration: line-through; }
+/* i filtri scelti sui risultati, riportati sul banco: lì non si vedrebbero altrove */
+button.chip.filtro-scelto { background: var(--teal-bg); border-color: var(--teal); color: var(--teal-scuro); }
+button#cesto-tolgo[aria-pressed="true"] { background: var(--nero); color: #fff; border-color: var(--nero); }
+
+/* ============================================ ricerca · i profumi trovati */
+.trovati { padding-bottom: 6px; }
+.filtri { display: flex; flex-wrap: wrap; gap: 16px; margin: 0 0 18px; }
+.filtro { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.filtro > .nome { font-size: .74rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted-forte); }
+.filtro button { min-height: 48px; padding: 0 16px; border-radius: 999px; font-size: .88rem; font-weight: 600; letter-spacing: 0; text-transform: none; }
+.filtro button.scelto { background: var(--teal-bg); border-color: var(--teal); color: var(--teal-scuro); }
+.filtro button .quante { color: var(--muted-forte); font-weight: 400; margin-left: 6px; font-variant-numeric: tabular-nums; }
+.filtro button:disabled { opacity: .35; }
+
+.trovati-elenco { display: flex; flex-direction: column; gap: 22px; margin-bottom: 20px; }
+.fascia > h3 { display: flex; align-items: baseline; gap: 10px; font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted-forte); margin: 0 0 12px; }
+.fascia > h3 b { font-size: 1rem; color: var(--teal-scuro); letter-spacing: 0; font-variant-numeric: tabular-nums; }
+.fascia .schede-trovate { display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 860px) { .fascia .schede-trovate { grid-template-columns: 1fr 1fr; gap: 16px; } }
+@media (min-width: 1320px) { .fascia .schede-trovate { grid-template-columns: repeat(3, 1fr); } }
+
+.scheda-trovato { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; align-items: start; border: 1px solid var(--line); border-top: 3px solid var(--teal); border-radius: var(--radius-scheda); background: var(--card); padding: 16px 18px; text-align: left; }
+.scheda-trovato.parziale { border-top-color: var(--line); }
+.scheda-trovato .colonna-codice { grid-row: 1 / span 2; }
+.scheda-trovato .codice { font-weight: 700; font-size: 3rem; line-height: .95; color: var(--teal-scuro); font-variant-numeric: tabular-nums; }
+.scheda-trovato .famiglia { margin-top: 4px; font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted-forte); max-width: 14ch; }
+.scheda-trovato .descrizione { grid-column: 2; margin: 6px 0 0; font-style: italic; font-weight: 300; color: var(--ink2); line-height: 1.45; }
+.scheda-trovato .apri { grid-column: 1 / -1; justify-self: start; margin-top: 8px; min-height: 48px; padding: 0 16px; font-size: .78rem; }
+
+.piramide { display: flex; flex-direction: column; gap: 6px; }
+.piramide .fila { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.piramide .fila > .nome { flex: 0 0 52px; font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted-forte); }
+/* Le note della piramide si toccano per aggiungerle alla ricerca: stanno dentro una
+   scheda, quindi non arrivano ai 60px delle schede grandi, ma sotto i 40 il dito
+   non le prende. */
+button.pastiglia-nota, span.pastiglia-nota { min-height: 40px; padding: 0 13px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg2); color: var(--ink2); font: inherit; font-size: .86rem; font-weight: 400; letter-spacing: 0; text-transform: none; display: inline-flex; align-items: center; }
+button.pastiglia-nota:hover { border-color: var(--teal); color: var(--teal-scuro); background: var(--teal-bg); }
+.pastiglia-nota.voluta { background: var(--teal); border-color: var(--teal); color: #fff; font-weight: 600; }
+.pastiglia-nota.affine { background: var(--teal-bg); border-color: var(--teal); color: var(--teal-scuro); font-weight: 600; }
+
+.banco-invito { margin: 0 0 16px; padding: 16px 18px; background: var(--nero); color: #fff; border-radius: var(--radius-scheda); border-left: 4px solid var(--teal-luce); font-size: 1.05rem; }
+.mostra-altri { margin-top: 12px; }
+
+/* la scheda intera di un profumo, nel dialogo */
+.scheda-piena { display: flex; flex-direction: column; gap: 14px; }
+.scheda-piena .codice { font-weight: 700; font-size: 3.4rem; line-height: 1; color: var(--teal-scuro); font-variant-numeric: tabular-nums; }
+/* .riga, nel backoffice, è già una riga di campi in flex: le file della piramide
+   hanno un nome loro, altrimenti ereditano un layout che non è il loro. */
+.scheda-piena .piramide-piena { display: flex; flex-direction: column; gap: 10px; }
+.scheda-piena .fila-piena { border-left: 3px solid var(--teal-bg); padding-left: 12px; }
+.scheda-piena .fila-piena > .nome { display: block; font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted-forte); margin-bottom: 6px; }
+.scheda-piena .fila-piena .fila { display: flex; flex-wrap: wrap; gap: 6px; }
+.misure { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px 20px; }
+.misura { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.misura .nome { font-size: .9rem; color: var(--ink2); }
+.misura .punti { display: flex; gap: 4px; }
+.misura .punti i { width: 9px; height: 9px; border-radius: 50%; background: var(--line); display: block; }
+.misura .punti i.acceso { background: var(--teal); }
+
 /* ================================================== backoffice (banco) */
 #backoffice { padding: 0 20px 48px; background: var(--bg); min-height: 100vh; }
 #backoffice header.top { margin: 0 -20px; }

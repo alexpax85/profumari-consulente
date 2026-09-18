@@ -2,7 +2,7 @@
 // Alla prima visita mette in cache il guscio dell'app e i dati di partenza;
 // poi serve dalla cache e aggiorna in sottofondo.
 
-const CACHE = 'consulente-v4';   // si alza a ogni pubblicazione che cambia file o dati
+const CACHE = 'consulente-v5';   // si alza a ogni pubblicazione che cambia file o dati
 
 const GUSCIO = [
   './',
@@ -21,6 +21,8 @@ const GUSCIO = [
   'js/motore.js',
   'js/percorso.js',
   'js/risultati.js',
+  'js/ricerca.js',
+  'js/esplora.js',
   'js/backoffice.js',
   'js/editor-domande.js',
   'js/store-locale.js',
@@ -34,6 +36,8 @@ const GUSCIO = [
   'config/pesi.json',
   'config/frasi.json',
   'config/testi.json',
+  'config/ricerca.json',
+  'config/note.json',
   'dati/catalogo.json',
   'dati/profili.json',
   '../dati/catalogo.json',

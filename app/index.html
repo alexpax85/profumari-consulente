@@ -29,6 +29,42 @@
   </div>
 </section>
 
+<!-- ============================================================= scelta -->
+<div id="scelta" class="schermo colonna" hidden>
+  <header class="top sottile">
+    <div class="brand">
+      <img class="logo" src="img/logo.svg" alt="i profumari" draggable="false">
+      <span class="sep" aria-hidden="true"></span>
+      <h1>Consulente</h1>
+    </div>
+    <button id="esci-scelta" class="chiudi" type="button" aria-label="Torna alla schermata iniziale">Indietro</button>
+  </header>
+
+  <main class="bivio" tabindex="-1">
+    <h2 id="scelta-titolo">Da dove vuoi partire?</h2>
+    <p id="scelta-sotto" class="sottotitolo"></p>
+    <div class="porte">
+      <button id="porta-domande" class="porta" type="button">
+        <span class="cerchio salvia" data-icona="sorriso"></span>
+        <span class="testo">
+          <span class="etichetta" id="porta-domande-titolo">Rispondi a qualche domanda</span>
+          <span class="dettaglio" id="porta-domande-detto"></span>
+        </span>
+        <span class="durata" id="porta-domande-durata"></span>
+      </button>
+      <button id="porta-note" class="porta" type="button">
+        <span class="cerchio sabbia" data-icona="goccia"></span>
+        <span class="testo">
+          <span class="etichetta" id="porta-note-titolo">Parti dalle note che ti piacciono</span>
+          <span class="dettaglio" id="porta-note-detto"></span>
+        </span>
+        <span class="durata" id="porta-note-durata"></span>
+      </button>
+    </div>
+    <p id="scelta-aiuto" class="aiuto"></p>
+  </main>
+</div>
+
 <!-- =========================================================== percorso -->
 <div id="percorso" class="schermo colonna" hidden>
   <header class="top sottile">
@@ -77,6 +113,60 @@
   <footer class="fondo">
     <button id="riserva" class="grande" type="button">Nessuno mi convince</button>
     <button id="ricomincia" class="grande primario" type="button">Ricomincia</button>
+  </footer>
+</div>
+
+<!-- ====================================================== banco delle note -->
+<div id="ricerca" class="schermo colonna" hidden>
+  <header class="top sottile">
+    <div class="brand">
+      <img class="logo" src="img/logo.svg" alt="i profumari" draggable="false">
+      <span class="sep" aria-hidden="true"></span>
+      <h1>Consulente</h1>
+    </div>
+    <button id="esci-ricerca" class="chiudi" type="button" aria-label="Ricomincia da capo">Ricomincia</button>
+  </header>
+
+  <main id="banco" class="tavolozza" tabindex="-1"></main>
+
+  <footer class="fondo cesto">
+    <div class="cesto-dentro">
+      <div id="cesto-chip" class="cesto-chip"></div>
+      <p id="cesto-conto" class="cesto-conto" role="status"></p>
+    </div>
+    <div class="cesto-tasti">
+      <button id="cesto-tolgo" class="grande" type="button" aria-pressed="false">Non lo voglio</button>
+      <button id="cesto-vedi" class="grande primario" type="button">Vedi i profumi</button>
+    </div>
+  </footer>
+</div>
+
+<!-- ================================================= i profumi con quelle note -->
+<div id="trovati" class="schermo colonna" hidden>
+  <header class="top sottile">
+    <div class="brand">
+      <img class="logo" src="img/logo.svg" alt="i profumari" draggable="false">
+      <span class="sep" aria-hidden="true"></span>
+      <h1>Consulente</h1>
+    </div>
+    <button id="esci-trovati" class="chiudi" type="button" aria-label="Ricomincia da capo">Ricomincia</button>
+  </header>
+
+  <main class="esito trovati" tabindex="-1">
+    <h2 id="trovati-titolo"></h2>
+    <p id="trovati-sotto" class="esito-sotto"></p>
+    <div id="trovati-scelte" class="riepilogo"></div>
+    <div id="trovati-filtri" class="filtri"></div>
+    <p id="trovati-avviso" class="avviso-morbido" hidden></p>
+    <!-- L'invito al banco sta prima dell'elenco: con quaranta risultati, in fondo
+         non lo leggerebbe nessuno, e è la sola cosa che il cliente deve fare. -->
+    <p id="trovati-banco" class="banco-invito"></p>
+    <div id="trovati-elenco" class="trovati-elenco"></div>
+  </main>
+
+  <footer class="fondo">
+    <button id="trovati-cambia" class="grande" type="button">Cambia le note</button>
+    <button id="trovati-ricomincia" class="grande primario" type="button">Ricomincia</button>
   </footer>
 </div>
 

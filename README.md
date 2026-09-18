@@ -2,7 +2,12 @@
 
 Demo: <https://alexpax85.github.io/profumari-consulente/>
 
-Chiosco (iPad in negozio) e web app con cui la clientela de **i profumari** (Latina e Aprilia) arriva, in circa un minuto e senza saper nulla di profumeria, a **tre codici di fragranza da provare al banco**. Il percorso parte da preferenze olfattive e da domande "soft" (luoghi, colori, emozioni, stagioni, segno zodiacale, occasione, per sé o per un regalo) e le confronta con le **piramidi olfattive** del catalogo.
+Chiosco (iPad in negozio) e web app con cui la clientela de **i profumari** (Latina e Aprilia) arriva, senza saper nulla di profumeria, a **qualche codice di fragranza da provare al banco**. Dopo la schermata di attesa si sceglie fra due strade:
+
+- **Rispondi a qualche domanda** — un minuto di domande "soft" (luoghi, colori, emozioni, stagioni, segno zodiacale, occasione, per sé o per un regalo) e alla fine tre codici con la loro motivazione. Per chi non ha un'idea precisa.
+- **Parti dalle note che ti piacciono** — si sfoglia il catalogo per ingredienti (muschio, cuoio, agrumi, vaniglia), si vede quante fragranze contengono ogni nota e si leggono le piramidi. Per chi una mezza idea ce l'ha, e per il commesso che deve rispondere subito a una richiesta precisa.
+
+Tutte e due lavorano sulle **piramidi olfattive** del catalogo, e finiscono allo stesso posto: "chiedi al banco di fartele provare".
 
 Progetto **indipendente** dal gestionale di magazzino (`profumari-gestionale`): repo, hosting e dati separati. L'unico legame è un export a senso unico del catalogo (codice, categoria, attivo). Nel chiosco **non compare mai il nome commerciale**: solo il codice a tre cifre.
 
@@ -12,16 +17,19 @@ HTML, CSS e JavaScript puro con moduli ES, **senza build e senza dipendenze**: f
 
 ```
 app/                  la web app (è anche la radice del sito pubblicato)
-  index.html          le quattro schermate: attesa, percorso, risultati, backoffice
+  index.html          le schermate: attesa, scelta, percorso, risultati, ricerca, trovati, backoffice
   style.css           palette e componenti del gestionale + le schede grandi del chiosco
   js/motore.js        il motore di raccomandazione: puro, senza DOM, senza rete
+  js/ricerca.js       il motore della ricerca per note: puro anche lui
   js/percorso.js      il percorso guidato · js/risultati.js  i tre codici
+  js/esplora.js       il banco delle note e i profumi che ne escono
   js/backoffice.js    l'area del personale · js/store-locale.js  la persistenza
   js/editor-domande.js  scrivere e tarare le domande dal backoffice
   js/dati.js          caricamento e ripulitura del catalogo importato
   js/icone.js         le icone a linea, disegnate a mano · js/ui.js  aiutanti DOM
   js/scenari.js       gli scenari tipici di taratura (usati anche dagli script)
-  config/             accordi, domande, pesi, frasi, testi, note: si modificano dal backoffice
+  config/             accordi, domande, pesi, frasi, testi, ricerca, note: le prime si tarano
+                      dal backoffice, i gruppi di note e le loro spiegazioni si scrivono nel file
   fonts/ img/ sw.js manifest.json
 dati/                 catalogo.json, piramidi.json, profili.json e privato/ (mai versionato)
 docs/                 brief, piano, dati, motore, percorso, backoffice, stile, domande
@@ -44,6 +52,17 @@ node scripts/test_motore.mjs
 ```
 
 Le quattordici prove del motore: i casi elencati in `docs/04-motore.md` (mare/ufficio, veti, filtro di genere, diversità, scelta multipla, nessuna risposta, confidenza) più i controlli di impianto. Profili sintetici, configurazione vera.
+
+```bash
+node scripts/test_ricerca.mjs
+```
+
+Le trentatré prove della ricerca per note: l'indice della tavolozza (gruppi, famiglie, sinonimi, note nascoste), il punteggio (nota in piramide contro somiglianza di famiglia, peso delle tre file), i veti, i filtri, l'ordine stabile, e una passata sul catalogo vero (ogni nota ha la sua famiglia, i nove gruppi sono pieni, le ricerche tipiche trovano qualcosa).
+
+```bash
+node scripts/prova_ricerca.mjs            # le ricerche tipiche sul catalogo vero
+node scripts/prova_ricerca.mjs --indice   # la tavolozza com'è oggi: gruppi, note, conteggi
+```
 
 ```bash
 node scripts/valida_profili.mjs
@@ -94,13 +113,17 @@ La catena che porta dalle piramidi del fornitore ai profili del motore: com'è f
 
 `scripts/genera_questionario.js` rigenera il foglio di domande per il cliente (`docs/10-questionario-cliente.docx`). È l'unica cosa del progetto che vuole una libreria (`npm install docx`) e non ha niente a che fare con l'app: `app/` resta senza build e senza dipendenze.
 
-## Il percorso del cliente
+## I due percorsi del cliente
 
-Schermata di attesa scura → otto domande fisse (per chi, genere, luogo, cosa non sopporti, occasione, intensità, stagione, carattere) → una domanda gioco a rotazione (colore, bevanda, materiale, momento del giorno, zodiaco) → una domanda facoltativa sul ricordo → tre codici con due o tre righe di motivazione e l'invito a provarli al banco.
+Schermata di attesa scura → **il bivio** → una delle due strade.
+
+**Rispondi a qualche domanda** (`docs/05-percorso.md`): otto domande fisse (per chi, genere, luogo, cosa non sopporti, occasione, intensità, stagione, carattere) → una domanda gioco a rotazione (colore, bevanda, materiale, momento del giorno, zodiaco) → una domanda facoltativa sul ricordo → tre codici con due o tre righe di motivazione.
+
+**Parti dalle note** (`docs/12-ricerca-note.md`): nove gruppi di odori → il cassetto di un gruppo, con le note vere del catalogo, una riga che spiega ognuna e quante fragranze la contengono → i profumi trovati, a fasce (*hanno tutto quello che hai chiesto* / *ne hanno una su due*), ognuno con la sua piramide e le note cercate accese. Toccando una nota della piramide la si aggiunge alla ricerca. Un interruttore *"Non lo voglio"* trasforma ogni tocco in un veto.
 
 Dettagli utili:
 
-- **Ripartenza automatica**: 60 secondi di inattività nel percorso, 90 nei risultati, poi si torna all'attesa.
+- **Ripartenza automatica**: 45 secondi sul bivio, 60 nel percorso a domande, 90 nei risultati, 120 nella ricerca per note (che si legge, quindi serve più tempo).
 - **"Nessuno mi convince"** mostra la riserva, cioè il quarto classificato.
 - **Tocco lungo su una scheda risultato** (per il personale): punteggio, componenti e accordi in comune.
 - **Le chip in fondo ai risultati** riportano alla domanda corrispondente, così si cambia una risposta sola.
@@ -108,7 +131,7 @@ Dettagli utili:
 
 ## Il backoffice
 
-Tocco lungo di tre secondi sul logo nella schermata di attesa, poi codice numerico (al primo accesso lo si sceglie; se si dimentica, si azzera da *Backup*). Cinque schede: **Catalogo** (import dal gestionale, attivo/inattivo, referenze senza profilo in rosso), **Profili** (revisione, con le bozze incerte in cima), **Taratura** (pesi, coefficienti, *prova rapida* con risultati in tempo reale, ripristino dei valori consigliati), **Statistiche** (anonime e aggregate), **Backup** (export/import e punti di ripristino).
+Tocco lungo di tre secondi sul logo nella schermata di attesa, poi codice numerico (al primo accesso lo si sceglie; se si dimentica, si azzera da *Backup*). Cinque schede: **Catalogo** (import dal gestionale, attivo/inattivo, referenze senza profilo in rosso), **Profili** (revisione, con le bozze incerte in cima), **Taratura** (pesi, coefficienti, *prova rapida* con risultati in tempo reale, soglie e prova della *ricerca per note*, ripristino dei valori consigliati), **Statistiche** (anonime e aggregate, comprese le note più cercate e da quale delle due porte entra la clientela), **Backup** (export/import e punti di ripristino).
 
 **Per aggiornare il catalogo** basta il backup del gestionale: *Storico e backup → Scarica backup*, poi nel consulente *Catalogo → Import*, scegliendo il file o incollandone il contenuto. Il consulente ne tiene **solo** codice, categoria e stato — nome, brand, fornitori, costi e giacenze vengono scartati prima di qualsiasi salvataggio — e dopo l'import il motore lavora sulle sole referenze attive. Quelle disattivate o sparite dall'export restano in archivio con il loro profilo, pronte a tornare.
 
@@ -120,7 +143,7 @@ Sull'iPad: aprire il sito in Safari, *Condividi → Aggiungi alla schermata Home
 
 ## Stato del lavoro
 
-Fatte le fasi 0-3 di `docs/02-piano.md`: motore con le sue prove, percorso completo, risultati, backoffice, PWA, pubblicazione su Pages. Il service worker si registra e mette in cache guscio, configurazione e dati (trenta file), quindi il chiosco regge anche senza rete.
+Fatte le fasi 0-3 di `docs/02-piano.md`: motore con le sue prove, percorso completo, risultati, backoffice, PWA, pubblicazione su Pages. Dal 18/09/2026 c'è anche il secondo percorso, la ricerca per note (`docs/12-ricerca-note.md`), con il suo motore puro e le sue prove. Il service worker si registra e mette in cache guscio, configurazione e dati, quindi il chiosco regge anche senza rete.
 
 Da fare: **fase 4**, la prova in negozio — installare la PWA sull'iPad (*Condividi → Aggiungi alla schermata Home* + Accesso Guidato), leggere insieme al personale l'uscita di `prova_catalogo.mjs`, tarare i pesi dal backoffice e rivedere per prime le trentacinque bozze a confidenza bassa. Poi la **fase 5**: Firebase, con `store-firebase.js` al posto di `store-locale.js` e la stessa interfaccia.
 

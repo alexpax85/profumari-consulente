@@ -2,20 +2,27 @@
 // Tutto il resto sta nei moduli: motore.js (puro), percorso.js, risultati.js,
 // backoffice.js, store-locale.js.
 
-import { $, toast, toccoLungo, mostra } from './ui.js';
+import { $, $$, toast, toccoLungo, mostra } from './ui.js';
 import { caricaPredefiniti, aggiornaProfili, aggiornaConfig, VERSIONE_DATI } from './dati.js';
 import { store, VERSIONE_STATO } from './store-locale.js';
 import { creaPercorso } from './percorso.js';
+import { creaEsplora } from './esplora.js';
 import { creaRisultati } from './risultati.js';
 import { creaBackoffice } from './backoffice.js';
 import { raccomanda, profiliAttivi } from './motore.js';
-import { nuoveStatistiche, segnaInizio, segnaCompletato, segnaAbbandono, segnaRisposta } from './statistiche.js';
+import { icona } from './icone.js';
+import {
+  nuoveStatistiche, segnaInizio, segnaCompletato, segnaAbbandono, segnaRisposta,
+  segnaPercorso, segnaRicerca, segnaSchedaAperta,
+} from './statistiche.js';
 
-const INATTIVITA = { percorso: 60_000, risultati: 90_000 };
+// La ricerca per note si legge: ci vuole più tempo di una domanda a schede.
+const INATTIVITA = { scelta: 45_000, percorso: 60_000, risultati: 90_000, ricerca: 120_000, trovati: 120_000 };
 
 let stato = null;
 let predefiniti = null;
 let percorso = null;
+let esplora = null;
 let risultati = null;
 let backoffice = null;
 let schermo = 'attesa';
@@ -26,6 +33,13 @@ let percorsoContato = false;
 
 const config = () => stato.config;
 const testi = () => stato.config.testi;
+
+/**
+ * La ricerca per note ha bisogno anche di note.json, che di proposito non sta
+ * dentro stato.config: sono 19 KB che finirebbero in localStorage a ogni
+ * salvataggio e dentro ognuno dei dieci punti di ripristino (vedi dati.js).
+ */
+const configRicerca = () => ({ ...stato.config, note: predefiniti.note });
 
 function salva() {
   if (store.disponibile()) store.salva(stato);
@@ -85,7 +99,8 @@ function profiliInGioco() {
 
 function vaiA(nuovo) {
   schermo = nuovo;
-  for (const nome of ['attesa', 'percorso', 'risultati', 'backoffice']) {
+  // Chi non è in questo elenco non viene mai nascosto: resterebbe sopra a tutto.
+  for (const nome of ['attesa', 'scelta', 'percorso', 'risultati', 'ricerca', 'trovati', 'backoffice']) {
     mostra($(`#${nome}`), nome === nuovo);
   }
   riavviaInattivita();
@@ -106,17 +121,36 @@ function riavviaInattivita() {
 
 function tornaInAttesa() {
   if (percorso) percorso.ferma();
+  if (esplora) esplora.ferma();
   vaiA('attesa');
+}
+
+/** Il bivio: da qui si sceglie come farsi aiutare (docs/12-ricerca-note.md). */
+function vaiAllaScelta() {
+  if (percorso) percorso.ferma();
+  if (esplora) esplora.ferma();
+  vaiA('scelta');
 }
 
 // ---------------------------------------------------------------- percorso
 
 function avviaPercorso() {
   segnaInizio(stato.statistiche);
+  segnaPercorso(stato.statistiche, 'guidato');
   percorsoContato = false;
   salva();
   vaiA('percorso');
   percorso.avvia(true, stato.indiceGioco);
+}
+
+// ---------------------------------------------------------------- ricerca
+
+function avviaRicerca() {
+  segnaInizio(stato.statistiche);
+  segnaPercorso(stato.statistiche, 'note');
+  salva();
+  vaiA('ricerca');
+  esplora.avvia();
 }
 
 function concludiPercorso(risposte, { secondi }) {
@@ -230,6 +264,26 @@ function scriviTestiAttesa() {
   $('#avvia').textContent = t.invito || 'Tocca per cominciare';
 }
 
+/** Il bivio fra i due percorsi: testi dal file, icone disegnate in icone.js. */
+function scriviTestiScelta() {
+  const t = testi().scelta || {};
+  const domande = t.domande || {};
+  const note = t.note || {};
+  $('#scelta-titolo').textContent = t.titolo || 'Da dove vuoi partire?';
+  $('#scelta-sotto').textContent = t.sotto || '';
+  $('#scelta-aiuto').textContent = t.aiuto || '';
+  $('#porta-domande-titolo').textContent = domande.titolo || 'Rispondi a qualche domanda';
+  $('#porta-domande-detto').textContent = domande.dettaglio || '';
+  $('#porta-domande-durata').textContent = domande.durata || '';
+  $('#porta-note-titolo').textContent = note.titolo || 'Parti dalle note che ti piacciono';
+  $('#porta-note-detto').textContent = note.dettaglio || '';
+  $('#porta-note-durata').textContent = note.durata || '';
+  for (const cerchio of $$('#scelta [data-icona]')) {
+    if (cerchio.firstChild) continue;
+    cerchio.append(icona(cerchio.dataset.icona));
+  }
+}
+
 function registraServiceWorker() {
   if (!('serviceWorker' in navigator)) return;
   if (location.protocol === 'file:') return;
@@ -251,6 +305,7 @@ async function avvia() {
   }
 
   scriviTestiAttesa();
+  scriviTestiScelta();
 
   percorso = creaPercorso({
     dammiConfig: config,
@@ -263,10 +318,28 @@ async function avvia() {
     },
   });
 
+  esplora = creaEsplora({
+    dammiConfig: configRicerca,
+    dammiTesti: testi,
+    dammiProfili: profiliInGioco,
+    vaiA,
+    allUscita: tornaInAttesa,
+    allaRicerca: (criteri, esito) => {
+      segnaRicerca(stato.statistiche, criteri, esito);
+      salva();
+      riavviaInattivita();
+    },
+    allaScheda: (codice) => {
+      segnaSchedaAperta(stato.statistiche, codice);
+      riavviaInattivita();
+    },
+  });
+
   risultati = creaRisultati({
     dammiConfig: config,
     dammiTesti: testi,
-    onRicomincia: avviaPercorso,
+    // Con due porte, "Ricomincia" riporta al bivio: da lì si può anche cambiare strada.
+    onRicomincia: vaiAllaScelta,
     onTornaA: (idDomanda) => {
       vaiA('percorso');
       if (!percorso.tornaA(idDomanda)) avviaPercorso();
@@ -276,8 +349,18 @@ async function avvia() {
   // Nell'attesa si tocca dove si vuole: il logo no, perché è la maniglia del banco.
   $('#attesa').addEventListener('click', (e) => {
     if (e.target.closest('#logo-attesa')) return;
-    avviaPercorso();
+    vaiAllaScelta();
   });
+  $('#porta-domande').addEventListener('click', avviaPercorso);
+  $('#porta-note').addEventListener('click', avviaRicerca);
+
+  // Senza note.json la tavolozza sarebbe vuota: meglio non offrire una porta che
+  // non porta da nessuna parte. Succede solo se il file manca davvero.
+  if (!predefiniti.note || !predefiniti.note.note) {
+    mostra($('#porta-note'), false);
+    console.warn('note.json non disponibile: la ricerca per note resta chiusa.');
+  }
+  $('#esci-scelta').addEventListener('click', tornaInAttesa);
   $('#esci-percorso').addEventListener('click', () => {
     segnaAbbandono(stato.statistiche, percorso.domandaCorrente());
     salva();

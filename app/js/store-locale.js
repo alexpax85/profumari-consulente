@@ -90,7 +90,7 @@ export const store = {
     }, null, 1);
   },
 
-  /** Solo domande, pesi, frasi e testi: per portare la messa a punto su un altro banco. */
+  /** Domande, pesi, frasi, testi e taratura della ricerca: la messa a punto, per portarla su un altro banco. */
   esportaConfig(config) {
     return JSON.stringify({
       tipo: 'profumari-consulente-configurazione',

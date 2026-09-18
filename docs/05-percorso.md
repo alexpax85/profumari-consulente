@@ -8,6 +8,12 @@ Le domande qui sotto sono quelle di fabbrica, e stanno in `app/config/domande.js
 
 Schermo scuro con logo, animazione lenta, "Tocca per trovare il tuo profumo". Ripartenza automatica dopo 60 secondi di inattività in qualsiasi punto del percorso. Tocco lungo sul logo (3 s) apre il backoffice con PIN.
 
+## 0-bis · Da dove vuoi partire? (bivio)
+
+**Dal 18/09/2026 il chiosco ha due percorsi.** Il tocco sull'attesa non apre più le domande: apre una schermata con due schede pari fra loro — *"Rispondi a qualche domanda"* (quello che segue) e *"Parti dalle note che ti piacciono"* (`12-ricerca-note.md`). Sotto, una riga per chi non sa decidere: *"Se non sai decidere, comincia dalle domande."*
+
+Il percorso guidato non cambia di una virgola; cambia solo come ci si arriva, e il fatto che "Ricomincia", dai risultati, riporti al bivio invece che alle domande. Testi in `app/config/testi.json`, blocco `scelta`.
+
 ## 1 · Per chi è? (`per_chi`, filtro, peso 1)
 
 - **Per me** → nessun contributo; abilita le domande in prima persona.
