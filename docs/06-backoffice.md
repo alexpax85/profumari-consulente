@@ -35,10 +35,19 @@ Area riservata dentro la stessa web app, raggiungibile con tocco lungo di tre se
 - Codici proposti più spesso (tabella con conteggi) e mai proposti (per capire se un profilo è tarato male o se il catalogo ha buchi).
 - Distribuzione delle risposte per domanda.
 - Tutto anonimo; nessun dato personale esiste da nessuna parte.
+- **Azzera le statistiche**: i conteggi ripartono da zero, senza toccare catalogo, profili, domande e tarature. Serve alla fine del collaudo e quando si porta un banco in un altro negozio.
 
 ### Backup
 
 - Esporta tutto (catalogo, profili, configurazione, statistiche) in un JSON; importa da JSON con conferma. Punti di ripristino automatici come in `store.js` del gestionale.
+- **Scarica solo la configurazione** (domande, pesi, frasi, testi) e **importala** su un altro banco: è il modo per portare la messa a punto da un negozio all'altro senza portarsi dietro profili e statistiche. Il file di sola configurazione si rilegge, ma va bene anche un backup intero: da lì viene presa solo la configurazione.
+- All'import di un backup intero si può **tenere le statistiche del dispositivo**, e il codice del banco resta quello locale: un backup portato da un altro negozio non si porta dietro i suoi numeri né il suo PIN.
+
+## Conferme che dicono cosa succede
+
+Dove qualcosa viene sostituito o perso — eliminare una domanda, rimettere i valori consigliati, importare, tornare a un punto di ripristino, azzerare le statistiche, dimenticare il PIN — non compare un "sei sicuro?", ma due o tre righe che dicono **cosa cambia** (freccia) e **cosa resta** (punto), più le eventuali scelte (tenere le proprie domande, tenere le proprie statistiche). Il tono è descrittivo, non allarmistico.
+
+Sugli interruttori, sui pesi e sulle modifiche normali non c'è nessuna finestra: una conferma che si clicca senza leggere non protegge niente, e toglierebbe attenzione a quelle che contano davvero. `chiediConferma()` in `app/js/ui.js` è l'unico posto dove queste finestre si costruiscono.
 - Nella fase Firebase: sincronizzazione automatica, l'export resta come backup manuale.
 
 ## Permessi (fase Firebase)

@@ -90,6 +90,28 @@ export const store = {
     }, null, 1);
   },
 
+  /** Solo domande, pesi, frasi e testi: per portare la messa a punto su un altro banco. */
+  esportaConfig(config) {
+    return JSON.stringify({
+      tipo: 'profumari-consulente-configurazione',
+      versione: VERSIONE_STATO,
+      esportatoIl: new Date().toISOString(),
+      config,
+    }, null, 1);
+  },
+
+  /** Accetta il file di sola configurazione o un backup intero: da lì prende la configurazione. */
+  importaConfig(testo) {
+    const letto = typeof testo === 'string' ? JSON.parse(testo) : testo;
+    const config = (letto && letto.config)
+      || (letto && letto.stato && letto.stato.config)
+      || (letto && letto.domande ? letto : null);
+    if (!config || typeof config !== 'object' || !config.domande) {
+      throw new Error('Nel file non c\'è una configurazione.');
+    }
+    return config;
+  },
+
   /** Accetta sia il file di export sia uno stato nudo. Non salva: restituisce. */
   importa(testo) {
     const letto = typeof testo === 'string' ? JSON.parse(testo) : testo;

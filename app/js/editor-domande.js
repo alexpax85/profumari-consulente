@@ -7,7 +7,7 @@
 // Ogni domanda modificata qui viene marcata `toccata`: da quel momento gli
 // aggiornamenti dell'app non la riscrivono più (vedi aggiornaDomande in dati.js).
 
-import { el, svuota, toast } from './ui.js';
+import { el, svuota, toast, chiediConferma } from './ui.js';
 import { icona, NOMI_ICONE } from './icone.js';
 import { elencoAccordi, elencoDomande, etichettaAccordo } from './motore.js';
 
@@ -111,7 +111,7 @@ export function problemiDi(domanda) {
 
 // ------------------------------------------------------------------- editor
 
-export function creaEditorDomande({ salva, disegna }) {
+export function creaEditorDomande({ salva, disegna, predefinite = () => [] }) {
   let aperta = null;
 
   const elenco = (s) => elencoDomande(s.config);
@@ -125,6 +125,9 @@ export function creaEditorDomande({ salva, disegna }) {
   function segna(domanda) {
     domanda.toccata = true;
   }
+
+  /** Arrivata con l'app (e quindi tornerebbe da sola), oppure scritta dal negozio. */
+  const diFabbrica = (domanda) => predefinite().some((d) => d && d.id === domanda.id);
 
   // ------------------------------------------------------------ la tabella
 
@@ -177,7 +180,7 @@ export function creaEditorDomande({ salva, disegna }) {
                 toast('Copia creata, spenta finché non la accendi.');
               },
             }, 'Duplica'),
-            el('button', { class: 'pericolo', type: 'button', onclick: () => elimina(s, domanda) }, 'Elimina'),
+            el('button', { class: 'pericolo', type: 'button', onclick: () => elimina(s, domanda, diFabbrica(domanda)) }, 'Elimina'),
           ]),
         ]),
       ]));
@@ -219,8 +222,20 @@ export function creaEditorDomande({ salva, disegna }) {
     ]);
   }
 
-  function elimina(s, domanda) {
-    if (!confirm(`Eliminare la domanda “${domanda.titolo || domanda.id}”?`)) return;
+  async function elimina(s, domanda, arrivataConLApp) {
+    const scelte = await chiediConferma({
+      titolo: `Elimina “${domanda.titolo || domanda.id}”`,
+      righe: [
+        { cosa: 'cambia', testo: 'Sparisce dal percorso a partire dal prossimo cliente.' },
+        arrivataConLApp
+          ? { cosa: 'cambia', testo: 'È una domanda arrivata con l\'app: non tornerà con i prossimi aggiornamenti.' }
+          : { cosa: 'cambia', testo: 'L\'hai scritta tu: per riaverla va riscritta.' },
+        { cosa: 'resta', testo: 'Le altre domande, i profili e le statistiche non si toccano.' },
+      ],
+      conferma: 'Elimina',
+      pericolo: true,
+    });
+    if (!scelte) return;
     scriviElenco(s, elenco(s).filter((d) => d.id !== domanda.id));
     // Se è una domanda arrivata con l'app, va ricordato che è stata tolta:
     // altrimenti il prossimo aggiornamento la rimetterebbe dentro.
@@ -371,7 +386,7 @@ export function creaEditorDomande({ salva, disegna }) {
         el('h2', { testo: domanda.titolo || 'Domanda nuova' }),
         el('div', { class: 'azioni-riga' }, [
           el('button', { type: 'button', onclick: () => { aperta = null; disegna(); } }, 'Chiudi'),
-          el('button', { class: 'pericolo', type: 'button', onclick: () => elimina(s, domanda) }, 'Elimina'),
+          el('button', { class: 'pericolo', type: 'button', onclick: () => elimina(s, domanda, diFabbrica(domanda)) }, 'Elimina'),
         ]),
       ]),
       rigaId,

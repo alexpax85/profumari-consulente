@@ -66,6 +66,67 @@ export function toccoLungo(nodo, millisecondi, azione) {
   return ferma;
 }
 
+/**
+ * Conferma che invece di chiedere "sei sicuro?" dice **cosa cambia e cosa resta**.
+ * Si usa solo dove qualcosa viene sostituito o perso: su un interruttore sarebbe
+ * rumore, e un popup che si clicca senza leggere non protegge più niente.
+ *
+ *   const scelte = await chiediConferma({
+ *     titolo: 'Elimina la domanda',
+ *     righe: [
+ *       { cosa: 'cambia', testo: 'Sparisce dal percorso al prossimo cliente.' },
+ *       { cosa: 'resta', testo: 'Statistiche e profili non si toccano.' },
+ *     ],
+ *     opzioni: [{ id: 'tieni', etichetta: 'Tieni le mie domande', valore: true }],
+ *     conferma: 'Elimina', pericolo: true,
+ *   });
+ *   if (!scelte) return;      // annullato
+ *   if (scelte.tieni) { ... } // le caselle spuntate tornano qui
+ */
+export function chiediConferma({
+  titolo, righe = [], opzioni = [], conferma = 'Conferma', annulla = 'Annulla', pericolo = false,
+} = {}) {
+  const dialogo = document.getElementById('dlg-conferma');
+  if (!dialogo) return Promise.resolve(window.confirm(titolo) ? {} : false);
+
+  document.getElementById('dlg-conferma-titolo').textContent = titolo || 'Conferma';
+  const elencoRighe = svuota(document.getElementById('dlg-conferma-righe'));
+  for (const riga of righe) {
+    if (!riga) continue;
+    const { cosa = 'cambia', testo } = typeof riga === 'string' ? { testo: riga } : riga;
+    elencoRighe.append(el('li', { class: cosa, testo }));
+  }
+  const elencoOpzioni = svuota(document.getElementById('dlg-conferma-opzioni'));
+  const caselle = new Map();
+  for (const opzione of opzioni) {
+    const casella = el('input', { type: 'checkbox', checked: opzione.valore !== false });
+    caselle.set(opzione.id, casella);
+    elencoOpzioni.append(el('label', { class: 'casella' }, [casella, opzione.etichetta]));
+  }
+
+  const ok = document.getElementById('dlg-conferma-ok');
+  const no = document.getElementById('dlg-conferma-annulla');
+  ok.textContent = conferma;
+  no.textContent = annulla;
+  ok.className = pericolo ? 'pericolo' : 'primario';
+
+  return new Promise((risolvi) => {
+    const chiudi = (esito) => {
+      ok.removeEventListener('click', accetta);
+      no.removeEventListener('click', rifiuta);
+      dialogo.removeEventListener('close', rifiuta);
+      dialogo.close();
+      risolvi(esito);
+    };
+    const accetta = () => chiudi(Object.fromEntries([...caselle].map(([id, c]) => [id, c.checked])));
+    const rifiuta = () => chiudi(false);
+    ok.addEventListener('click', accetta);
+    no.addEventListener('click', rifiuta);
+    dialogo.addEventListener('close', rifiuta);
+    dialogo.showModal();
+  });
+}
+
 /** Scarica un file dal browser (export JSON del backoffice). */
 export function scarica(nomeFile, testo, tipo = 'application/json') {
   const blob = new Blob([testo], { type: `${tipo};charset=utf-8` });

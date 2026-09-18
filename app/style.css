@@ -243,6 +243,14 @@ p.avviso { margin: 0 0 12px; padding: 10px 14px; background: var(--warn-bg); bor
 
 dialog { border: none; border-radius: var(--radius); padding: 24px; max-width: 620px; width: calc(100vw - 32px); box-shadow: 0 24px 70px rgba(0,0,0,.3); border-top: 4px solid var(--teal); font-family: var(--font); color: var(--ink); }
 dialog::backdrop { background: rgba(18,18,18,.5); }
+.conseguenze { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 8px; }
+.conseguenze li { position: relative; padding-left: 22px; color: var(--ink2); font-size: .95rem; line-height: 1.45; }
+.conseguenze li::before { position: absolute; left: 0; top: 0; font-weight: 700; }
+.conseguenze li.cambia::before { content: "→"; color: var(--teal); }
+.conseguenze li.resta::before { content: "·"; color: var(--muted); font-size: 1.3rem; line-height: 1.1; }
+#dlg-conferma-opzioni { margin-top: 14px; display: grid; gap: 8px; }
+label.casella { display: flex; align-items: center; gap: 10px; font-size: .95rem; color: var(--ink); background: var(--bg2); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; cursor: pointer; }
+label.casella input { width: 18px; height: 18px; }
 #toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--nero); color: #fff; padding: 12px 22px; border-radius: 4px; border-left: 4px solid var(--teal); font-weight: 600; opacity: 0; transition: opacity .2s; pointer-events: none; z-index: 50; max-width: 90vw; text-align: center; }
 #toast.on { opacity: 1; }
 

@@ -2,11 +2,11 @@
 // statistiche, backup. Stessa impostazione visiva del gestionale.
 // Nessun nome commerciale entra qui: dall'import teniamo solo codice, categoria, attivo.
 
-import { $, $$, el, svuota, toast, scarica, oggi, dataItaliana } from './ui.js';
-import { leggiCatalogo, categoriaDaCodice } from './dati.js';
+import { $, $$, el, svuota, toast, scarica, oggi, dataItaliana, chiediConferma } from './ui.js';
+import { leggiCatalogo, categoriaDaCodice, ripristinaConfig, domandeProprie, aggiornaConfig } from './dati.js';
 import { store } from './store-locale.js';
 import { SCENARI } from './scenari.js';
-import { riepilogo } from './statistiche.js';
+import { riepilogo, nuoveStatistiche } from './statistiche.js';
 import { creaEditorDomande } from './editor-domande.js';
 import {
   elencoAccordi, elencoFamiglie, elencoDomande, ATTRIBUTI, STAGIONI, MOMENTI,
@@ -28,7 +28,11 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
   let risposteProva = { per_chi: 'me', genere: 'libero' };
   let esitoImport = null; // sopravvive al ridisegno della scheda dopo il salvataggio
 
-  const editorDomande = creaEditorDomande({ salva, disegna: () => disegna() });
+  const editorDomande = creaEditorDomande({
+    salva,
+    disegna: () => disegna(),
+    predefinite: () => elencoDomande(predefiniti.config),
+  });
 
   const profiloDi = (codice) => s.profili.find((p) => p.codice === codice) || null;
   const vociCatalogo = () => [...s.catalogo].sort((a, b) => a.codice.localeCompare(b.codice));
@@ -338,7 +342,11 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
           el('button', { type: 'button', onclick: () => { codiceAperto = null; disegna(); } }, 'Torna all\'elenco'),
           el('button', {
             class: 'primario', type: 'button',
-            onclick: () => { profilo.confidenza = 'alta'; profilo.rivisto = oggi(); salvaEDisegna(`${codice} confermato.`); },
+            onclick: () => {
+              profilo.confidenza = 'alta';
+              profilo.rivisto = oggi();
+              salvaEDisegna(`${codice} confermato: da ora gli aggiornamenti non lo sostituiscono.`);
+            },
           }, 'Confermato'),
         ]),
       ]),
@@ -557,12 +565,34 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
       el('div', { class: 'azioni' }, [
         el('button', {
           class: 'pericolo', type: 'button',
-          onclick: () => {
-            if (!confirm('Ripristinare pesi, domande, frasi e testi consigliati?')) return;
+          onclick: async () => {
+            const mie = domandeProprie(s.config, predefiniti.config);
+            const scelte = await chiediConferma({
+              titolo: 'Rimetti i valori consigliati',
+              righe: [
+                { cosa: 'cambia', testo: 'Pesi, coefficienti, frasi e testi tornano come li abbiamo consegnati.' },
+                { cosa: 'cambia', testo: 'Le domande arrivate con l\'app tornano alla versione originale, comprese quelle eliminate.' },
+                { cosa: 'resta', testo: 'Catalogo, profili e statistiche non si toccano.' },
+                { cosa: 'resta', testo: 'Prima viene creato un punto di ripristino.' },
+              ],
+              opzioni: mie.length
+                ? [{
+                  id: 'tieniMie',
+                  etichetta: mie.length === 1 ? 'Tieni la domanda che hai scritto tu' : `Tieni le ${mie.length} domande che hai scritto tu`,
+                  valore: true,
+                }]
+                : [],
+              conferma: 'Rimetti i consigliati',
+              pericolo: true,
+            });
+            if (!scelte) return;
             store.creaPuntoRipristino(s, 'prima del ripristino configurazione');
-            s.config = structuredClone(predefiniti.config);
+            const esito = ripristinaConfig(s.config, predefiniti.config, { tieniDomandeMie: scelte.tieniMie !== false });
+            s.config = esito.config;
             editorDomande.chiudi();
-            salvaEDisegna('Configurazione riportata ai valori consigliati.');
+            salvaEDisegna(esito.tenute
+              ? `Valori consigliati rimessi, ${esito.tenute} domande tue tenute.`
+              : 'Configurazione riportata ai valori consigliati.');
           },
         }, 'Ripristina i valori consigliati'),
       ]),
@@ -698,6 +728,32 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
     ]));
 
     sezione.append(el('section', { class: 'card' }, [
+      el('h2', { testo: 'Azzera' }),
+      el('p', { class: 'muted piccolo-testo' }, 'Da fare quando il collaudo finisce, o quando si porta il banco in un altro negozio: i conteggi ripartono da zero.'),
+      el('div', { class: 'azioni' }, [
+        el('button', {
+          class: 'pericolo', type: 'button',
+          onclick: async () => {
+            const scelte = await chiediConferma({
+              titolo: 'Azzera le statistiche',
+              righe: [
+                { cosa: 'cambia', testo: `Percorsi (${dati.iniziati}), tempi, codici proposti e risposte tornano a zero.` },
+                { cosa: 'resta', testo: 'Catalogo, profili, domande e tarature non si toccano.' },
+                { cosa: 'resta', testo: 'Prima viene creato un punto di ripristino.' },
+              ],
+              conferma: 'Azzera',
+              pericolo: true,
+            });
+            if (!scelte) return;
+            store.creaPuntoRipristino(s, 'prima di azzerare le statistiche');
+            s.statistiche = nuoveStatistiche();
+            salvaEDisegna('Statistiche azzerate.');
+          },
+        }, 'Azzera le statistiche'),
+      ]),
+    ]));
+
+    sezione.append(el('section', { class: 'card' }, [
       el('h2', { testo: 'Per giorno' }),
       el('div', { class: 'tabella-wrap' }, [el('table', {}, [
         el('thead', {}, [el('tr', {}, [el('th', { testo: 'Giorno' }), el('th', { class: 'num', testo: 'Iniziati' }), el('th', { class: 'num', testo: 'Completati' })])]),
@@ -714,14 +770,54 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
   // ================================================================= backup
 
   function disegnaBackup(sezione) {
+    const fileConfig = el('input', { type: 'file', accept: '.json,application/json' });
+    fileConfig.addEventListener('change', async () => {
+      const scelto = fileConfig.files && fileConfig.files[0];
+      if (!scelto) return;
+      try {
+        const config = store.importaConfig(await scelto.text());
+        const quante = elencoDomande(config).length;
+        const scelte = await chiediConferma({
+          titolo: 'Prendi la configurazione dal file',
+          righe: [
+            { cosa: 'cambia', testo: `Domande (${quante}), pesi, frasi e testi diventano quelli del file.` },
+            { cosa: 'resta', testo: 'Catalogo, profili e statistiche di questo dispositivo restano come sono.' },
+            { cosa: 'resta', testo: 'Prima viene creato un punto di ripristino.' },
+          ],
+          conferma: 'Prendi la configurazione',
+        });
+        if (!scelte) return;
+        store.creaPuntoRipristino(s, 'prima di un import della configurazione');
+        s.config = aggiornaConfig(config, predefiniti.config).config;
+        editorDomande.chiudi();
+        salvaEDisegna('Configurazione importata.');
+      } catch (errore) {
+        toast(`Import non riuscito: ${errore.message}`);
+      } finally {
+        fileConfig.value = '';
+      }
+    });
+
     const file = el('input', { type: 'file', accept: '.json,application/json' });
     file.addEventListener('change', async () => {
       const scelto = file.files && file.files[0];
       if (!scelto) return;
       try {
         const nuovo = store.importa(await scelto.text());
-        if (!confirm(`Sostituire i dati di questo dispositivo con il file?\n${nuovo.catalogo.length} referenze, ${nuovo.profili.length} profili.`)) return;
+        const scelte = await chiediConferma({
+          titolo: 'Importa il backup',
+          righe: [
+            { cosa: 'cambia', testo: `Catalogo (${nuovo.catalogo.length} referenze), profili (${nuovo.profili.length}) e configurazione di questo dispositivo vengono sostituiti.` },
+            { cosa: 'resta', testo: 'Il codice del banco di questo dispositivo non cambia.' },
+            { cosa: 'resta', testo: 'Prima viene creato un punto di ripristino.' },
+          ],
+          opzioni: [{ id: 'tieniStatistiche', etichetta: 'Tieni le statistiche di questo dispositivo', valore: true }],
+          conferma: 'Importa',
+        });
+        if (!scelte) return;
         store.creaPuntoRipristino(s, 'prima di un import');
+        if (scelte.tieniStatistiche) nuovo.statistiche = s.statistiche;
+        if (s.pin) nuovo.pin = s.pin;
         sostituisciStato(nuovo);
         toast('Dati importati.');
         disegna();
@@ -743,14 +839,22 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
           }, 'Scarica il backup'),
           el('button', {
             type: 'button',
+            onclick: () => scarica(`consulente-configurazione-${oggi()}.json`, store.esportaConfig(s.config)),
+          }, 'Scarica solo la configurazione'),
+          el('button', {
+            type: 'button',
             onclick: () => { store.creaPuntoRipristino(s, 'manuale'); toast('Punto di ripristino creato.'); disegna(); },
           }, 'Crea punto di ripristino'),
         ]),
+        el('p', { class: 'muted piccolo-testo' },
+          'Il backup intero serve a clonare un banco o a tornare indietro. La sola configurazione — domande, pesi, frasi e testi — '
+          + 'serve a portare la messa a punto su un altro negozio senza toccarne profili e statistiche.'),
       ]),
       el('section', { class: 'card' }, [
         el('h2', { testo: 'Importa' }),
-        el('p', { class: 'muted' }, 'Sostituisce tutto quello che c\'è su questo dispositivo. Prima viene creato un punto di ripristino.'),
-        el('label', { class: 'campo' }, ['File di backup', file]),
+        el('p', { class: 'muted' }, 'Il backup intero sostituisce catalogo, profili e configurazione di questo dispositivo; prima di procedere una finestra dice cosa cambia e cosa resta.'),
+        el('label', { class: 'campo' }, ['Backup intero', file]),
+        el('label', { class: 'campo' }, ['Solo la configurazione (domande, pesi, frasi, testi)', fileConfig]),
       ]),
       el('section', { class: 'card' }, [
         el('h2', { testo: 'Punti di ripristino' }),
@@ -759,10 +863,21 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
             `${dataItaliana(p.quando)} ${String(p.quando).slice(11, 16)} — ${p.motivo} `,
             el('button', {
               class: 'piccolo', type: 'button',
-              onclick: () => {
-                if (!confirm('Tornare a questo punto? I dati attuali vengono sostituiti.')) return;
+              onclick: async () => {
+                const scelte = await chiediConferma({
+                  titolo: `Torna al ${dataItaliana(p.quando)} ${String(p.quando).slice(11, 16)}`,
+                  righe: [
+                    { cosa: 'cambia', testo: 'Catalogo, profili e configurazione tornano a com\'erano in quel momento.' },
+                    { cosa: 'resta', testo: 'Lo stato di adesso viene messo da parte come nuovo punto di ripristino.' },
+                  ],
+                  opzioni: [{ id: 'tieniStatistiche', etichetta: 'Tieni le statistiche di adesso', valore: true }],
+                  conferma: 'Torna a questo punto',
+                });
+                if (!scelte) return;
                 store.creaPuntoRipristino(s, 'prima di un ripristino');
-                sostituisciStato(store.ripristina(p.id));
+                const tornato = store.ripristina(p.id);
+                if (scelte.tieniStatistiche) tornato.statistiche = s.statistiche;
+                sostituisciStato(tornato);
                 toast('Ripristinato.');
                 disegna();
               },
@@ -775,8 +890,17 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
         el('div', { class: 'azioni' }, [
           el('button', {
             class: 'pericolo', type: 'button',
-            onclick: () => {
-              if (!confirm('Dimenticare il codice? Al prossimo accesso ne verrà chiesto uno nuovo.')) return;
+            onclick: async () => {
+              const scelte = await chiediConferma({
+                titolo: 'Dimentica il codice del banco',
+                righe: [
+                  { cosa: 'cambia', testo: 'Al prossimo accesso al banco ne viene chiesto uno nuovo.' },
+                  { cosa: 'resta', testo: 'Catalogo, profili, domande e statistiche non cambiano.' },
+                ],
+                conferma: 'Dimentica il codice',
+                pericolo: true,
+              });
+              if (!scelte) return;
               s.pin = null;
               salvaEDisegna('Codice azzerato.');
             },
