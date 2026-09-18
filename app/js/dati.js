@@ -72,6 +72,115 @@ export function aggiornaProfili(salvati, predefiniti) {
   return { profili, sostituiti, confermati, nuovi, propri: propri.length };
 }
 
+// ------------------------------------------------- configurazione: si aggiorna sempre
+
+/** Le domande stanno dentro { versione, nota, domande: [...] }, ma accettiamo anche l'array nudo. */
+function elencoDi(voce, chiave) {
+  if (Array.isArray(voce)) return voce;
+  return voce && Array.isArray(voce[chiave]) ? voce[chiave] : [];
+}
+
+function conElenco(voce, chiave, elenco) {
+  return Array.isArray(voce) ? elenco : { ...(voce || {}), [chiave]: elenco };
+}
+
+/** Aggiunge le chiavi che mancano e non tocca quelle che ci sono (frasi, testi, pesi). */
+function fondiMancanti(salvato, difetto, conto) {
+  if (!difetto || typeof difetto !== 'object' || Array.isArray(difetto)) {
+    return salvato === undefined ? difetto : salvato;
+  }
+  if (!salvato || typeof salvato !== 'object' || Array.isArray(salvato)) {
+    return salvato === undefined ? difetto : salvato;
+  }
+  const fuori = { ...salvato };
+  for (const [chiave, valore] of Object.entries(difetto)) {
+    if (!(chiave in fuori)) { fuori[chiave] = valore; conto.aggiunte++; }
+    else fuori[chiave] = fondiMancanti(fuori[chiave], valore, conto);
+  }
+  return fuori;
+}
+
+/** Unisce due elenchi di voci con una chiave (accordi, famiglie): le nuove entrano in coda. */
+function fondiElenco(salvato, difetto, chiave, conto) {
+  const visti = new Set(salvato.map((v) => v && v[chiave]));
+  const fuori = [...salvato];
+  for (const voce of difetto) {
+    if (voce && !visti.has(voce[chiave])) { fuori.push(voce); conto.aggiunte++; }
+  }
+  return fuori;
+}
+
+/**
+ * Domande del dispositivo portate a quelle di fabbrica:
+ *  · quelle che il personale ha modificato dal backoffice (`toccata`) restano com'erano;
+ *  · le altre si riallineano al file, ma tengono peso e interruttore, che sono la sua taratura;
+ *  · le domande nuove di fabbrica entrano, tranne quelle che ha cancellato (`rimosse`);
+ *  · le domande scritte da lui restano dove sono.
+ */
+export function aggiornaDomande(salvate, predefinite, rimosse = []) {
+  const cancellate = new Set(rimosse);
+  const difettoPerId = new Map((predefinite || []).filter((d) => d && d.id).map((d) => [d.id, d]));
+  const viste = new Set();
+  const elenco = [];
+  let riallineate = 0;
+  let nuove = 0;
+
+  for (const domanda of salvate || []) {
+    if (!domanda || !domanda.id) continue;
+    viste.add(domanda.id);
+    const difetto = difettoPerId.get(domanda.id);
+    if (!difetto || domanda.toccata) { elenco.push(domanda); continue; }
+    const riallineata = { ...difetto };
+    if (domanda.peso !== undefined) riallineata.peso = domanda.peso;
+    if (domanda.attiva !== undefined) riallineata.attiva = domanda.attiva;
+    elenco.push(riallineata);
+    if (JSON.stringify(riallineata) !== JSON.stringify(domanda)) riallineate++;
+  }
+
+  (predefinite || []).forEach((domanda, i) => {
+    if (!domanda || !domanda.id || viste.has(domanda.id) || cancellate.has(domanda.id)) return;
+    elenco.splice(Math.min(i, elenco.length), 0, domanda);
+    nuove++;
+  });
+
+  return { domande: elenco, nuove, riallineate };
+}
+
+/**
+ * Configurazione del dispositivo + quello che è arrivato con l'app.
+ * Gira a ogni avvio: è così che una domanda nuova, una frase nuova o un accordo
+ * nuovo raggiungono un chiosco già in uso, senza cancellare la taratura del negozio.
+ */
+export function aggiornaConfig(salvata, difetto) {
+  const conto = { aggiunte: 0 };
+  const config = { ...difetto, ...salvata };
+
+  const esitoDomande = aggiornaDomande(
+    elencoDi(config.domande, 'domande'),
+    elencoDi(difetto.domande, 'domande'),
+    (salvata && salvata.domandeRimosse) || [],
+  );
+  config.domande = conElenco(config.domande || difetto.domande, 'domande', esitoDomande.domande);
+
+  for (const chiave of ['frasi', 'testi', 'pesi']) {
+    config[chiave] = fondiMancanti(config[chiave], difetto[chiave], conto);
+  }
+
+  if (difetto.accordi) {
+    const accordi = fondiElenco(elencoDi(config.accordi, 'accordi'), elencoDi(difetto.accordi, 'accordi'), 'chiave', conto);
+    const famiglie = fondiElenco(elencoDi(config.accordi, 'famiglie'), elencoDi(difetto.accordi, 'famiglie'), 'chiave', conto);
+    config.accordi = { ...(difetto.accordi || {}), ...(config.accordi || {}), accordi, famiglie };
+  }
+
+  return {
+    config,
+    domandeNuove: esitoDomande.nuove,
+    domandeRiallineate: esitoDomande.riallineate,
+    vociAggiunte: conto.aggiunte,
+    novita: esitoDomande.nuove + esitoDomande.riallineate + conto.aggiunte,
+  };
+}
+
 /** { config: {accordi, domande, pesi, frasi, testi}, catalogo, profili } */
 export async function caricaPredefiniti() {
   const parti = await Promise.all(FILE_CONFIG.map((nome) => json(`config/${nome}.json`)));

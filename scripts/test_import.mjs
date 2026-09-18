@@ -4,7 +4,10 @@
 //   node scripts/test_import.mjs
 
 import assert from 'node:assert/strict';
-import { leggiCatalogo, ripulisciCatalogo, categoriaDaCodice, aggiornaProfili, VERSIONE_DATI } from '../app/js/dati.js';
+import {
+  leggiCatalogo, ripulisciCatalogo, categoriaDaCodice,
+  aggiornaProfili, aggiornaDomande, aggiornaConfig, VERSIONE_DATI,
+} from '../app/js/dati.js';
 
 let passate = 0;
 const fallite = [];
@@ -161,6 +164,72 @@ prova('i profili scritti solo sul dispositivo restano, e i codici nuovi entrano'
 
 prova('la versione dei dati di fabbrica è un numero che sale', () => {
   assert.ok(Number.isInteger(VERSIONE_DATI) && VERSIONE_DATI >= 2, `VERSIONE_DATI = ${VERSIONE_DATI}`);
+});
+
+
+// ------------------------------ la configurazione nuova raggiunge i dispositivi
+
+const domanda = (id, extra = {}) => ({ id, tipo: 'singola', peso: 1, titolo: `Domanda ${id}`, opzioni: [], ...extra });
+
+prova('una domanda nuova di fabbrica arriva sul dispositivo, al posto giusto', () => {
+  const esito = aggiornaDomande([domanda('a'), domanda('c')], [domanda('a'), domanda('b'), domanda('c')]);
+  assert.deepEqual(esito.domande.map((d) => d.id), ['a', 'b', 'c']);
+  assert.equal(esito.nuove, 1);
+});
+
+prova('peso e interruttore del negozio sopravvivono al riallineamento', () => {
+  const sulDispositivo = [domanda('a', { peso: 0.2, attiva: false, titolo: 'vecchio titolo' })];
+  const diFabbrica = [domanda('a', { peso: 1, titolo: 'titolo nuovo' })];
+  const esito = aggiornaDomande(sulDispositivo, diFabbrica);
+  assert.equal(esito.domande[0].titolo, 'titolo nuovo', 'il testo si riallinea al file');
+  assert.equal(esito.domande[0].peso, 0.2, 'il peso è taratura del negozio');
+  assert.equal(esito.domande[0].attiva, false, 'anche l\'interruttore');
+});
+
+prova('una domanda modificata dal backoffice non viene riscritta', () => {
+  const sulDispositivo = [domanda('a', { titolo: 'come l\'ha scritta il negozio', toccata: true })];
+  const esito = aggiornaDomande(sulDispositivo, [domanda('a', { titolo: 'titolo nuovo' })]);
+  assert.equal(esito.domande[0].titolo, 'come l\'ha scritta il negozio');
+});
+
+prova('le domande scritte dal negozio restano, quelle cancellate non tornano', () => {
+  const esito = aggiornaDomande([domanda('sua')], [domanda('a'), domanda('b')], ['b']);
+  assert.deepEqual(esito.domande.map((d) => d.id).sort(), ['a', 'sua']);
+});
+
+prova('aggiornaConfig aggiunge frasi, testi, pesi e accordi mancanti senza toccare i tuoi', () => {
+  const salvata = {
+    domande: { domande: [domanda('a', { peso: 0.5 })] },
+    frasi: { accordiDue: ['la tua frase'] },
+    testi: { attesa: { titolo: 'Il tuo titolo' } },
+    pesi: { coseno: 0.9 },
+    accordi: { accordi: [{ chiave: 'agrumato' }], famiglie: [{ chiave: 'agrumato' }] },
+  };
+  const difetto = {
+    domande: { domande: [domanda('a'), domanda('b')] },
+    frasi: { accordiDue: ['frase di fabbrica'], accordoUno: ['frase nuova'] },
+    testi: { attesa: { titolo: 'Titolo di fabbrica', sottotitolo: 'Sottotitolo nuovo' } },
+    pesi: { coseno: 0.6, carattere: 0.05 },
+    accordi: { accordi: [{ chiave: 'agrumato' }, { chiave: 'oud' }], famiglie: [{ chiave: 'agrumato' }, { chiave: 'chypre' }] },
+  };
+  const esito = aggiornaConfig(salvata, difetto);
+  assert.deepEqual(esito.config.frasi.accordiDue, ['la tua frase'], 'le frasi del negozio restano');
+  assert.deepEqual(esito.config.frasi.accordoUno, ['frase nuova'], 'quelle nuove arrivano');
+  assert.equal(esito.config.testi.attesa.titolo, 'Il tuo titolo');
+  assert.equal(esito.config.testi.attesa.sottotitolo, 'Sottotitolo nuovo');
+  assert.equal(esito.config.pesi.coseno, 0.9, 'la taratura del punteggio non si tocca');
+  assert.equal(esito.config.pesi.carattere, 0.05, 'i coefficienti nuovi arrivano');
+  assert.deepEqual(esito.config.accordi.accordi.map((a) => a.chiave), ['agrumato', 'oud']);
+  assert.deepEqual(esito.config.accordi.famiglie.map((f) => f.chiave), ['agrumato', 'chypre']);
+  assert.deepEqual(esito.config.domande.domande.map((d) => d.id), ['a', 'b']);
+  assert.equal(esito.config.domande.domande[0].peso, 0.5);
+  assert.ok(esito.novita > 0);
+});
+
+prova('senza niente di nuovo, aggiornaConfig non segnala novità', () => {
+  const config = { domande: { domande: [domanda('a')] }, frasi: {}, testi: {}, pesi: {}, accordi: { accordi: [], famiglie: [] } };
+  const esito = aggiornaConfig(structuredClone(config), structuredClone(config));
+  assert.equal(esito.novita, 0);
 });
 
 console.log(`\n${passate} passate, ${fallite.length} fallite\n`);

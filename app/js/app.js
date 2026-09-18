@@ -3,7 +3,7 @@
 // backoffice.js, store-locale.js.
 
 import { $, toast, toccoLungo, mostra } from './ui.js';
-import { caricaPredefiniti, aggiornaProfili, VERSIONE_DATI } from './dati.js';
+import { caricaPredefiniti, aggiornaProfili, aggiornaConfig, VERSIONE_DATI } from './dati.js';
 import { store, VERSIONE_STATO } from './store-locale.js';
 import { creaPercorso } from './percorso.js';
 import { creaRisultati } from './risultati.js';
@@ -31,22 +31,20 @@ function salva() {
   if (store.disponibile()) store.salva(stato);
 }
 
-/** Riempie solo le chiavi mancanti: le tarature del personale non si toccano. */
-function unisciConfig(salvata, difetto) {
-  const unito = { ...difetto, ...salvata };
-  for (const chiave of Object.keys(difetto)) {
-    if (unito[chiave] === undefined || unito[chiave] === null) unito[chiave] = difetto[chiave];
-  }
-  return unito;
-}
-
 async function preparaStato() {
   predefiniti = await caricaPredefiniti();
   const salvato = store.disponibile() ? store.carica() : null;
 
   if (salvato && Array.isArray(salvato.catalogo) && Array.isArray(salvato.profili)) {
     stato = salvato;
-    stato.config = unisciConfig(salvato.config || {}, predefiniti.config);
+    // La configurazione si riallinea a ogni avvio: domande, frasi e accordi nuovi
+    // arrivano anche su un chiosco già in uso, la taratura del negozio resta.
+    const esitoConfig = aggiornaConfig(salvato.config || {}, predefiniti.config);
+    stato.config = esitoConfig.config;
+    if (esitoConfig.novita) {
+      console.info(`Configurazione aggiornata: ${esitoConfig.domandeNuove} domande nuove, `
+        + `${esitoConfig.domandeRiallineate} riallineate, ${esitoConfig.vociAggiunte} voci aggiunte.`);
+    }
     stato.statistiche = salvato.statistiche || nuoveStatistiche();
     stato.indiceGioco = Number.isInteger(salvato.indiceGioco) ? salvato.indiceGioco : 0;
     // Profili di fabbrica più recenti di quelli sul dispositivo: la base avanza.
@@ -208,7 +206,10 @@ function apriBackoffice() {
       esci: () => { backoffice.aggiornaStato(stato); tornaInAttesa(); },
       sostituisciStato: (nuovo) => {
         stato = nuovo;
-        stato.config = unisciConfig(stato.config || {}, predefiniti.config);
+        stato.config = aggiornaConfig(stato.config || {}, predefiniti.config).config;
+        // Un backup importato o un punto di ripristino sono una scelta esplicita del
+        // personale: restano come sono, il riavvio non li riporta alla base di fabbrica.
+        stato.versioneDati = VERSIONE_DATI;
         if (store.disponibile()) store.salvaSubito(stato);
         backoffice.aggiornaStato(stato);
       },
