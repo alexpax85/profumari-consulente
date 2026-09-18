@@ -21,8 +21,10 @@ Area riservata dentro la stessa web app, raggiungibile con tocco lungo di tre se
 
 ### Taratura
 
-- Pesi delle domande (0-1), coefficienti del punteggio (`config.pesi`), soglia minima, vincoli di diversità.
-- Domande gioco: attiva/disattiva ciascuna, ordine di rotazione.
+- Coefficienti del punteggio (`config.pesi`), soglia minima, vincoli di diversità.
+- **Domande del percorso**: si scrivono da qui, non dai file. La tabella elenca titolo, tipo, gruppo, numero di risposte, peso e interruttore, e permette di riordinarle. Aprendone una si modificano titolo e sottotitolo, il tipo (una risposta sola, più risposte, cursore 1-5), il gruppo (percorso o gioco), e ogni risposta: testo, icona scelta da una griglia, e **verso cosa porta** — gli accordi si toccano a giro su tre livelli (*un tocco · abbastanza · tanto*) invece di scrivere numeri, più le chip di carattere e occasioni. "Nuova domanda", "Duplica" (nasce spenta) e "Elimina" completano il giro; un badge *da completare* segnala le domande che non hanno ancora titolo, due risposte o un contributo.
+- Una domanda modificata qui viene marcata `toccata`: da quel momento gli aggiornamenti dell'app non la riscrivono più. Quelle di fabbrica mai toccate invece si riallineano da sole quando l'app si aggiorna, tenendo però peso e interruttore. Se una domanda di fabbrica viene eliminata, l'id finisce in `config.domandeRimosse` e non torna più indietro.
+- La Prova rapida qui sotto usa la configurazione del momento: una domanda appena scritta si prova subito, senza uscire dalla scheda.
 - Testi del percorso (versione "per me" e "regalo").
 - **Prova rapida**: un pannello dove il personale compila il percorso in forma compatta (tutte le domande in una schermata) e vede in tempo reale i tre risultati con punteggi e accordi coincidenti. È lo strumento principale per capire e correggere il motore.
 - "Ripristina i valori consigliati" riporta ai file di configurazione di fabbrica.

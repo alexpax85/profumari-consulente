@@ -69,6 +69,9 @@ const D = {
   spunta: '<path d="M4.5 12.5 9.5 17.5 19.5 6.5"/>',
 };
 
+/** I nomi disponibili, per chi deve farli scegliere (l'editor delle domande). */
+export const NOMI_ICONE = Object.keys(D).sort();
+
 /** Restituisce un <svg> pronto da inserire. */
 export function icona(nome) {
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');

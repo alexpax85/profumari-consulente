@@ -17,6 +17,7 @@ app/                  la web app (è anche la radice del sito pubblicato)
   js/motore.js        il motore di raccomandazione: puro, senza DOM, senza rete
   js/percorso.js      il percorso guidato · js/risultati.js  i tre codici
   js/backoffice.js    l'area del personale · js/store-locale.js  la persistenza
+  js/editor-domande.js  scrivere e tarare le domande dal backoffice
   js/dati.js          caricamento e ripulitura del catalogo importato
   js/icone.js         le icone a linea, disegnate a mano · js/ui.js  aiutanti DOM
   js/scenari.js       gli scenari tipici di taratura (usati anche dagli script)
@@ -51,10 +52,16 @@ node scripts/valida_profili.mjs
 Controlla che ogni profilo rispetti lo schema di `docs/09-schema-profilo.md` e che ogni referenza attiva abbia il suo profilo.
 
 ```bash
+node scripts/test_editor_domande.mjs
+```
+
+Le dieci prove dell'editor delle domande: id ricavati dal titolo, i tre livelli con cui si dice quanto una risposta spinge, i controlli che segnalano una domanda incompleta, e la verifica che una domanda scritta dal negozio sposti il risultato esattamente come quelle di fabbrica e sopravviva agli aggiornamenti.
+
+```bash
 node scripts/test_import.mjs
 ```
 
-Le undici prove sull'import del catalogo: le forme di file che arrivano dal gestionale (backup intero, export, array), le categorie numerate, lo stato attivo, e la garanzia che nome, brand, fornitori e costi non sopravvivano mai all'import.
+Le ventidue prove sull'import del catalogo e sull'arrivo dei dati nuovi: le forme di file che arrivano dal gestionale (backup intero, export, array), le categorie numerate, lo stato attivo, e la garanzia che nome, brand, fornitori e costi non sopravvivano mai all'import.
 
 ```bash
 node scripts/prova_catalogo.mjs            # tutti gli scenari

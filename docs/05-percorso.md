@@ -2,7 +2,7 @@
 
 Otto schermate fisse più una o due "domande gioco" a rotazione. Solo tocco, niente tastiera, schede grandi con icona e testo breve, barra di avanzamento in alto, tasto "Indietro" sempre visibile, durata obiettivo 60-90 secondi. Il tono è quello di un commesso gentile che chiede, non di un questionario.
 
-Ogni opzione qui sotto elenca i contributi che finiscono in `app/config/domande.json`. I numeri sono il punto di partenza per la taratura, non verità definitive. Notazione: `accordo +0.8` è un contributo agli accordi desiderati; `attr: freschezza 5` è un attributo; `escludi: gourmand 1` è un'esclusione.
+Le domande qui sotto sono quelle di fabbrica, e stanno in `app/config/domande.json`. Il negozio però può scriverne di sue dal backoffice (scheda Taratura), senza toccare i file e senza passare da noi: il motore legge le domande che trova. Ogni opzione qui sotto elenca i contributi che finiscono nella configurazione. I numeri sono il punto di partenza per la taratura, non verità definitive. Notazione: `accordo +0.8` è un contributo agli accordi desiderati; `attr: freschezza 5` è un attributo; `escludi: gourmand 1` è un'esclusione.
 
 ## 0 · Attesa
 

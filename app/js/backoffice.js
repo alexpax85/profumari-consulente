@@ -7,6 +7,7 @@ import { leggiCatalogo, categoriaDaCodice } from './dati.js';
 import { store } from './store-locale.js';
 import { SCENARI } from './scenari.js';
 import { riepilogo } from './statistiche.js';
+import { creaEditorDomande } from './editor-domande.js';
 import {
   elencoAccordi, elencoFamiglie, elencoDomande, ATTRIBUTI, STAGIONI, MOMENTI,
 } from './motore.js';
@@ -26,6 +27,8 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
   let codiceAperto = null;
   let risposteProva = { per_chi: 'me', genere: 'libero' };
   let esitoImport = null; // sopravvive al ridisegno della scheda dopo il salvataggio
+
+  const editorDomande = creaEditorDomande({ salva, disegna: () => disegna() });
 
   const profiloDi = (codice) => s.profili.find((p) => p.codice === codice) || null;
   const vociCatalogo = () => [...s.catalogo].sort((a, b) => a.codice.localeCompare(b.codice));
@@ -544,31 +547,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
       ]),
     ]));
 
-    // pesi delle domande e domande gioco
-    const righe = el('tbody');
-    for (const domanda of elencoDomande(s.config)) {
-      righe.append(el('tr', {}, [
-        el('td', { testo: domanda.id }),
-        el('td', { class: 'muted', testo: domanda.titolo }),
-        el('td', { testo: domanda.gruppo || '' }),
-        el('td', { class: 'num' }, [el('input', {
-          type: 'number', value: String(domanda.peso ?? 1), min: '0', max: '2', step: '0.05',
-          style: 'max-width:7rem', onchange: (e) => { domanda.peso = Number(e.target.value); salva(); },
-        })]),
-        el('td', {}, [el('input', {
-          type: 'checkbox', checked: domanda.attiva !== false,
-          onchange: (e) => { domanda.attiva = e.target.checked; salva(); },
-        })]),
-      ]));
-    }
-    sezione.append(el('section', { class: 'card' }, [
-      el('h2', { testo: 'Domande' }),
-      el('p', { class: 'muted piccolo-testo' }, 'Il peso moltiplica i contributi della domanda. Le domande “gioco” ruotano: a ogni percorso ne compare una.'),
-      el('div', { class: 'tabella-wrap' }, [el('table', {}, [
-        el('thead', {}, [el('tr', {}, [el('th', { testo: 'Id' }), el('th', { testo: 'Domanda' }), el('th', { testo: 'Gruppo' }), el('th', { class: 'num', testo: 'Peso' }), el('th', { testo: 'Attiva' })])]),
-        righe,
-      ])]),
-    ]));
+    sezione.append(...editorDomande.sezione(s));
 
     sezione.append(cardProvaRapida());
 
@@ -582,6 +561,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
             if (!confirm('Ripristinare pesi, domande, frasi e testi consigliati?')) return;
             store.creaPuntoRipristino(s, 'prima del ripristino configurazione');
             s.config = structuredClone(predefiniti.config);
+            editorDomande.chiudi();
             salvaEDisegna('Configurazione riportata ai valori consigliati.');
           },
         }, 'Ripristina i valori consigliati'),
@@ -809,7 +789,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
   // ================================================================ telaio
 
   function vaiA(nome) {
-    if (nome !== scheda) esitoImport = null;
+    if (nome !== scheda) { esitoImport = null; editorDomande.chiudi(); }
     scheda = nome;
     disegna();
   }
