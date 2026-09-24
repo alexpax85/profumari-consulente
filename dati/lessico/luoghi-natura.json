@@ -9,7 +9,12 @@
    "brezza di mare",
    "vento di mare",
    "mare aperto",
-   "onde del mare"
+   "onde del mare",
+   "onde",
+   "profumo di mare",
+   "immersioni",
+   "snorkeling",
+   "nuotare in mare"
   ],
   "evoca": "il mare",
   "accordi": {
@@ -330,7 +335,11 @@
    "riva dell'oceano",
    "costa atlantica",
    "costa oceanica",
-   "spiaggia sull'oceano"
+   "spiaggia sull'oceano",
+   "surf",
+   "surfista",
+   "tavola da surf",
+   "onde da surf"
   ],
   "evoca": "l'oceano",
   "accordi": {
@@ -402,7 +411,10 @@
    "strapiombo sul mare",
    "spiaggia di sassi",
    "ciottoli sul mare",
-   "caletta tra gli scogli"
+   "caletta tra gli scogli",
+   "scoglio",
+   "sugli scogli",
+   "scogli al sole"
   ],
   "evoca": "gli scogli sul mare",
   "accordi": {
@@ -486,7 +498,10 @@
    "costa rocciosa",
    "paesino sul mare",
    "borgo sul mare",
-   "terrazze sul mare"
+   "terrazze sul mare",
+   "lungomare",
+   "passeggiata sul lungomare",
+   "paese di mare"
   ],
   "evoca": "la costiera mediterranea",
   "accordi": {
@@ -522,7 +537,11 @@
    "isola del mediterraneo",
    "isolotto",
    "isoletta",
-   "isola in estate"
+   "isola in estate",
+   "isola",
+   "isole",
+   "estate su un'isola",
+   "isola in mezzo al mare"
   ],
   "evoca": "un'isola del Mediterraneo",
   "accordi": {
@@ -562,7 +581,11 @@
    "sotto le palme",
    "paradiso tropicale",
    "isola deserta",
-   "mari del sud"
+   "mari del sud",
+   "tropici",
+   "tropicale",
+   "ai tropici",
+   "esotico tropicale"
   ],
   "evoca": "un'isola tropicale",
   "accordi": {
@@ -899,7 +922,16 @@
    "settimana bianca",
    "piste da sci",
    "montagna con la neve",
-   "paesaggio innevato"
+   "paesaggio innevato",
+   "sciare",
+   "sciata",
+   "andare a sciare",
+   "sulle piste",
+   "vacanza sulla neve",
+   "snowboard",
+   "doposci",
+   "sciatore",
+   "sciatrice"
   ],
   "evoca": "la montagna d'inverno",
   "accordi": {
@@ -1244,7 +1276,10 @@
    "felci",
    "humus",
    "foglie umide",
-   "odore di terra"
+   "odore di terra",
+   "licheni",
+   "lichene",
+   "muschio sulle pietre"
   ],
   "evoca": "il sottobosco",
   "accordi": {
@@ -1461,7 +1496,6 @@
   "tipo": "luogo",
   "forme": [
    "castagneto",
-   "castagni",
    "bosco di castagni",
    "raccolta delle castagne",
    "andar per castagne",
@@ -1571,7 +1605,10 @@
    "eucalipteto",
    "eucalipti al mare",
    "boschetto di eucalipti",
-   "alberi di eucalipto"
+   "alberi di eucalipto",
+   "eucalipto",
+   "foglie di eucalipto",
+   "eucalipto e menta"
   ],
   "evoca": "un bosco di eucalipti",
   "accordi": {
@@ -1686,7 +1723,9 @@
    "erba falciata",
    "tosaerba",
    "sfalcio",
-   "prato rasato"
+   "prato rasato",
+   "golf",
+   "campo da golf"
   ],
   "evoca": "l'erba appena tagliata",
   "accordi": {
@@ -2209,7 +2248,11 @@
    "casolare",
    "cascina",
    "fattoria",
-   "paesaggio di campagna"
+   "paesaggio di campagna",
+   "contadino",
+   "vita contadina",
+   "rustico",
+   "rustica"
   ],
   "evoca": "la campagna",
   "accordi": {
@@ -2730,7 +2773,12 @@
    "giardino fiorito",
    "aiuole",
    "giardinetto",
-   "giardino di casa"
+   "giardino di casa",
+   "giardinaggio",
+   "curare il giardino",
+   "parco",
+   "giardini pubblici",
+   "parco in città"
   ],
   "evoca": "un giardino fiorito",
   "accordi": {
@@ -2769,7 +2817,13 @@
    "rose in fiore",
    "roseto in fiore",
    "pergolato di rose",
-   "rose rampicanti"
+   "rose rampicanti",
+   "mazzo di rose",
+   "rose rosse",
+   "bouquet di rose",
+   "petali di rosa",
+   "rosa rossa",
+   "rose profumate"
   ],
   "evoca": "un giardino di rose",
   "accordi": {
@@ -2801,7 +2855,11 @@
    "giardino mediterraneo",
    "giardino sul mare",
    "terrazza fiorita sul mare",
-   "giardino del sud"
+   "giardino del sud",
+   "oleandri",
+   "oleandro",
+   "bouganville",
+   "buganvillea"
   ],
   "evoca": "un giardino mediterraneo",
   "accordi": {
@@ -3204,7 +3262,10 @@
    "giardino delle erbe",
    "aiuola di erbe",
    "erbe del giardino",
-   "vasi di erbe sul balcone"
+   "vasi di erbe sul balcone",
+   "piante aromatiche",
+   "erbe aromatiche",
+   "vasi di aromatiche"
   ],
   "evoca": "un orto di erbe aromatiche",
   "accordi": {
@@ -3609,7 +3670,10 @@
    "lentisco",
    "cisto",
    "elicriso",
-   "arbusti sul mare"
+   "arbusti sul mare",
+   "erbe selvatiche",
+   "erbe di campo",
+   "erbe spontanee"
   ],
   "evoca": "la macchia mediterranea",
   "accordi": {
@@ -3640,6 +3704,77 @@
   "manca": [
    "lentisco",
    "elicriso"
+  ]
+ },
+ {
+  "chiave": "ginestre",
+  "tipo": "luogo",
+  "forme": [
+   "ginestra",
+   "ginestre in fiore",
+   "colline di ginestre",
+   "ginestre sul mare",
+   "ginestra selvatica",
+   "cespugli di ginestra"
+  ],
+  "evoca": "le ginestre in fiore",
+  "accordi": {
+   "miele": 0.7,
+   "floreale-bianco": 0.5,
+   "solare": 0.3,
+   "verde": 0.3
+  },
+  "note": {
+   "miele": 0.8,
+   "fiore d'arancio": 0.5,
+   "fieno": 0.4,
+   "gelsomino": 0.3,
+   "mimosa": 0.4,
+   "note verdi": 0.3
+  },
+  "stagioni": {
+   "primavera": 0.8,
+   "estate": 0.5
+  },
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "ginestra"
+  ]
+ },
+ {
+  "chiave": "fiori-acacia",
+  "tipo": "luogo",
+  "forme": [
+   "acacia",
+   "fiori di acacia",
+   "acacia in fiore",
+   "robinia",
+   "fiori di robinia",
+   "grappoli di acacia"
+  ],
+  "evoca": "l'acacia in fiore",
+  "accordi": {
+   "floreale-fresco": 0.7,
+   "miele": 0.6,
+   "floreale-bianco": 0.4
+  },
+  "note": {
+   "mimosa": 0.7,
+   "miele": 0.6,
+   "fiore d'arancio": 0.4,
+   "eliotropio": 0.3,
+   "gelsomino": 0.3
+  },
+  "stagioni": {
+   "primavera": 1
+  },
+  "carattere": [
+   "romantico"
+  ],
+  "manca": [
+   "acacia"
   ]
  }
 ]

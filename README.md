@@ -6,7 +6,7 @@ Chiosco (iPad in negozio) e web app con cui la clientela de **i profumari** (Lat
 
 - **Rispondi a qualche domanda** — un minuto di domande "soft" (luoghi, colori, emozioni, stagioni, segno zodiacale, occasione, per sé o per un regalo) e alla fine tre codici con la loro motivazione. Per chi non ha un'idea precisa.
 - **Parti dalle note che ti piacciono** — si sfoglia il catalogo per ingredienti (muschio, cuoio, agrumi, vaniglia), si vede quante fragranze contengono ogni nota e si leggono le piramidi. Per chi una mezza idea ce l'ha, e per il commesso che deve rispondere subito a una richiesta precisa.
-- **Raccontami cosa cerchi** — il consulente a parole: *"un profumo fresco, che mi ricordi un bosco d'inverno"*, scritto, detto a voce o composto toccando degli spunti, e tre codici con il perché scritto sulla piramide (*"Per il bosco d'inverno: bacche di ginepro in testa, vetiver sul fondo"*). Nessun modello linguistico sull'iPad: un lessico di oltre ottocento scene, scritto offline con Claude e controllato contro il catalogo, letto da un interprete deterministico (`docs/13-consulente.md`).
+- **Raccontami cosa cerchi** — il consulente a parole: *"un profumo fresco, che mi ricordi un bosco d'inverno"*, scritto, detto a voce o composto toccando degli spunti, e tre codici con il perché scritto sulla piramide (*"Per il bosco d'inverno: bacche di ginepro in testa, vetiver sul fondo"*). Nessun modello linguistico sull'iPad: un lessico di 840 scene e oltre seimila modi di dirle, scritto offline con Claude e controllato contro il catalogo, letto da un interprete deterministico (`docs/13-consulente.md`).
 
 Tutte e tre lavorano sulle **piramidi olfattive** del catalogo, e finiscono allo stesso posto: "chiedi al banco di fartele provare".
 
@@ -75,7 +75,7 @@ node scripts/test_interpreta.mjs
 node scripts/test_consulente.mjs
 ```
 
-Le prove del consulente a parole. L'interprete su un lessico sintetico (parole vuote, radici e genere, la forma più lunga che vince, negazioni prima e dopo, "non troppo", "un filo di", il tè che non è il pronome, la lettera sbagliata) più una passata sul lessico vero: ogni forma di ogni scena deve tornare alla sua scena. Il consulente su profili sintetici (note in piramide, veti, filtri, diversità, il perché) più le frasi tipiche di `app/js/scenari.js` sul catalogo vero, ognuna con le sue attese.
+Le prove del consulente a parole. L'interprete su un lessico sintetico (parole vuote, radici e genere, la forma più lunga che vince, negazioni prima e dopo, "non troppo", "un filo di", il tè che non è il pronome, la lettera sbagliata) più una passata sul lessico vero: ogni forma di ogni scena deve tornare alla sua scena. Il consulente su profili sintetici (note in piramide, veti, filtri, diversità, il perché) più le frasi tipiche di `app/js/scenari.js` sul catalogo vero, ognuna con le sue attese, e 220 frasi libere scritte alla cieca (`scripts/frasi_libere.json`): almeno l'85% deve dare una proposta.
 
 ```bash
 node scripts/costruisci_lessico.mjs                  # dati/lessico/*.json -> app/config/lessico.json

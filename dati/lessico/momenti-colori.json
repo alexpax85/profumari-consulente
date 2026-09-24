@@ -124,7 +124,10 @@
    "mezzodì",
    "pieno giorno",
    "ore centrali",
-   "ore centrali del giorno"
+   "ore centrali del giorno",
+   "pranzo",
+   "ora di pranzo",
+   "pausa pranzo"
   ],
   "evoca": "il mezzogiorno",
   "accordi": {
@@ -329,7 +332,12 @@
   "forme": [
    "sera",
    "stasera",
-   "serale"
+   "serale",
+   "dopocena",
+   "dopo cena",
+   "fine giornata",
+   "fine della giornata",
+   "di sera"
   ],
   "evoca": "la sera",
   "accordi": {
@@ -683,7 +691,13 @@
    "marzo",
    "aprile",
    "maggio",
-   "arrivo della primavera"
+   "arrivo della primavera",
+   "fine dell'inverno",
+   "dopo l'inverno",
+   "primo giorno di primavera",
+   "primi caldi",
+   "primo sole dopo l'inverno",
+   "primo tepore"
   ],
   "evoca": "la primavera",
   "accordi": {
@@ -1053,7 +1067,14 @@
    "mesi freddi",
    "dicembre",
    "gennaio",
-   "febbraio"
+   "febbraio",
+   "freddo",
+   "quando fa freddo",
+   "giornate fredde",
+   "giorni freddi",
+   "clima freddo",
+   "per il freddo",
+   "mesi invernali"
   ],
   "evoca": "l'inverno",
   "accordi": {
@@ -1260,7 +1281,6 @@
    "martedì grasso",
    "giovedì grasso",
    "maschere di carnevale",
-   "coriandoli",
    "stelle filanti"
   ],
   "evoca": "il Carnevale",
@@ -1592,7 +1612,6 @@
   "tipo": "meteo",
   "forme": [
    "gelo",
-   "gelata",
    "ghiaccio",
    "brina",
    "galaverna",
@@ -1989,7 +2008,10 @@
    "cielo sereno",
    "aria cristallina",
    "cielo blu",
-   "cielo senza nuvole"
+   "cielo senza nuvole",
+   "cielo",
+   "cielo aperto",
+   "aria limpida"
   ],
   "evoca": "un cielo terso",
   "accordi": {

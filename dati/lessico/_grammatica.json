@@ -359,7 +359,11 @@
   "ehm",
   "ehi",
   "oh",
-  "tu"
+  "tu",
+  "favore",
+  "mentre",
+  "atmosfera",
+  "tipo di"
  ],
  "intere": {
   "_nota": "Parole che non si accorciano: la radice le farebbe cadere insieme (ragazzo/ragazza), e qui il genere conta perché accende il filtro. Chiave: come si dice; valore: la forma a cui riportarla (il plurale al singolare).",

@@ -187,6 +187,18 @@ if (existsSync(join(RADICE, 'app/config/lessico.json'))) {
     }
   });
 
+  // 220 frasi scritte da chi non aveva visto il lessico, come le direbbe un cliente
+  // (anche sgrammaticate, in dialetto, vaghe). Il 24/09/2026 ne capiva 195: la
+  // soglia sta un po' sotto, e un lessico nuovo non deve scendere di lì.
+  prova('frasi libere: almeno l\'85% dà una proposta', () => {
+    const libere = leggi('scripts/frasi_libere.json');
+    const buone = libere.filter((f) => {
+      const d = interpreta(f, vero);
+      return d.capito.length && consiglia(d, profili, config, vero).proposte.length;
+    }).length;
+    assert.ok(buone / libere.length >= 0.85, `${buone} su ${libere.length}`);
+  });
+
   prova('catalogo vero: solo referenze attive', () => {
     const attivi = new Set(profili.map((p) => p.codice));
     for (const { frase } of FRASI) {

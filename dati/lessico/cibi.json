@@ -12,7 +12,9 @@
    "mele e cannella",
    "cannella e mele",
    "mela cotta con la cannella",
-   "apple pie"
+   "apple pie",
+   "torta di mele appena sfornata",
+   "torta di mele della nonna"
   ],
   "evoca": "una torta di mele appena sfornata",
   "accordi": {
@@ -374,7 +376,8 @@
    "colomba con le mandorle",
    "glassa di mandorle",
    "fetta di colomba",
-   "dolce colomba"
+   "dolce colomba",
+   "colomba"
   ],
   "evoca": "una colomba pasquale",
   "accordi": {
@@ -410,7 +413,13 @@
    "frollini",
    "biscotti caldi",
    "biscotti nel forno",
-   "biscotti di pasta frolla"
+   "biscotti di pasta frolla",
+   "biscotti",
+   "biscotto",
+   "biscottini",
+   "biscotti appena fatti",
+   "biscotti al forno",
+   "biscotti di casa"
   ],
   "evoca": "i biscotti appena sfornati",
   "accordi": {
@@ -811,7 +820,13 @@
    "pan di spagna",
    "torta soffice",
    "plumcake",
-   "torta allo yogurt"
+   "torta allo yogurt",
+   "torta",
+   "torta fatta in casa",
+   "torta appena sfornata",
+   "dolce appena sfornato",
+   "ciambella",
+   "torta della colazione"
   ],
   "evoca": "un ciambellone soffice",
   "accordi": {
@@ -1611,7 +1626,6 @@
   "chiave": "cibo-caramelle",
   "tipo": "cibo",
   "forme": [
-   "caramelle",
    "caramelle alla frutta",
    "caramelle gommose",
    "orsetti gommosi",
@@ -2035,7 +2049,10 @@
    "lamponi e more",
    "mirtilli e lamponi",
    "cestino di frutti rossi",
-   "fragole e lamponi"
+   "fragole e lamponi",
+   "ribes",
+   "cassis",
+   "ribes e mirtilli"
   ],
   "evoca": "i frutti rossi",
   "accordi": {
@@ -2070,7 +2087,13 @@
    "more selvatiche",
    "mirtilli selvatici",
    "fragoline di bosco",
-   "mirtilli neri"
+   "mirtilli neri",
+   "fragoline",
+   "more",
+   "gelsi",
+   "more di gelso",
+   "lamponi selvatici",
+   "fragole selvatiche"
   ],
   "evoca": "i frutti di bosco",
   "accordi": {
@@ -2360,7 +2383,11 @@
    "ciliegie nere",
    "duroni",
    "ciliegie succose",
-   "ciliegie dall'albero"
+   "ciliegie dall'albero",
+   "cerase",
+   "cerasa",
+   "ciliegie",
+   "ciliegione"
   ],
   "evoca": "le ciliegie mature",
   "accordi": {
@@ -2470,7 +2497,8 @@
    "prosciutto e melone",
    "fetta di melone",
    "cantalupo",
-   "melone retato"
+   "melone retato",
+   "mellone"
   ],
   "evoca": "un melone maturo",
   "accordi": {
@@ -3276,7 +3304,11 @@
    "castagne sul fuoco",
    "castagne nel camino",
    "ballotte",
-   "castagne lesse"
+   "castagne lesse",
+   "castagne",
+   "castagne calde",
+   "caldarroste calde",
+   "castagne in autunno"
   ],
   "evoca": "le caldarroste",
   "accordi": {
@@ -3410,7 +3442,15 @@
    "pagnotta",
    "pane nel forno",
    "pane casereccio",
-   "pane tostato"
+   "pane tostato",
+   "pane",
+   "pane appena fatto",
+   "pane fatto in casa",
+   "pane di casa",
+   "pane cotto a legna",
+   "lievito",
+   "pasta lievitata",
+   "impasto"
   ],
   "evoca": "il pane appena sfornato",
   "accordi": {
@@ -3478,7 +3518,11 @@
    "pane burro e miele",
    "favo di miele",
    "miele colato",
-   "cucchiaio di miele"
+   "cucchiaio di miele",
+   "mielato",
+   "miele caldo",
+   "miele di acacia",
+   "miele di castagno"
   ],
   "evoca": "pane e miele",
   "accordi": {
@@ -3984,7 +4028,8 @@
    "finocchietto selvatico",
    "semi di finocchio",
    "finocchio selvatico",
-   "anicini"
+   "anicini",
+   "finocchio"
   ],
   "evoca": "i semi di anice e finocchietto",
   "accordi": {
@@ -4308,7 +4353,10 @@
    "verdure fresche",
    "insalata appena lavata",
    "foglie di insalata",
-   "insalata dell'orto"
+   "insalata dell'orto",
+   "sedano",
+   "verdure",
+   "ortaggi freschi"
   ],
   "evoca": "un'insalata appena colta",
   "accordi": {
@@ -4330,6 +4378,84 @@
   ],
   "manca": [
    "lattuga"
+  ]
+ },
+ {
+  "chiave": "cibo-dolciumi",
+  "tipo": "cibo",
+  "forme": [
+   "dolciumi",
+   "dolcetti",
+   "pasticcini",
+   "vassoio di pasticcini",
+   "paste della domenica",
+   "pastarelle",
+   "dolci di pasticceria",
+   "pasticcino",
+   "merendine",
+   "dolci e dolcetti"
+  ],
+  "evoca": "un vassoio di dolcetti",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.7,
+   "fruttato": 0.3,
+   "miele": 0.2
+  },
+  "note": {
+   "caramello": 0.8,
+   "vaniglia": 0.8,
+   "pralina": 0.6,
+   "zucchero": 0.5,
+   "mandorla": 0.5,
+   "zucchero filato": 0.4
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-zucca",
+  "tipo": "cibo",
+  "forme": [
+   "zucca",
+   "torta di zucca",
+   "zucca al forno",
+   "zucca speziata",
+   "vellutata di zucca",
+   "pumpkin spice",
+   "zucca e cannella",
+   "dolce di zucca"
+  ],
+  "evoca": "la zucca speziata d'autunno",
+  "accordi": {
+   "speziato": 0.8,
+   "gourmand": 0.6,
+   "vaniglia": 0.5,
+   "ambrato": 0.3
+  },
+  "note": {
+   "cannella": 0.9,
+   "noce moscata": 0.7,
+   "chiodi di garofano": 0.5,
+   "zenzero": 0.5,
+   "vaniglia": 0.5,
+   "caramello": 0.4
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "autunno": 1
+  },
+  "carattere": [
+   "coccola"
+  ],
+  "manca": [
+   "zucca"
   ]
  }
 ]

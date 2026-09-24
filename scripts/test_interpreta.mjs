@@ -176,6 +176,12 @@ prova('negazione a voce o in dialetto: "nun", "nn"', () => {
   assert.deepEqual(capite('nn mi piace il mare, vorrei il bosco'), ['mare:no', 'bosco:si']);
 });
 
+prova('le parole della grammatica non diventano scene: "pero" resta un però', () => {
+  const lessico = { ...LESSICO, scene: [...LESSICO.scene, { chiave: 'pera', tipo: 'cibo', forme: ['pera', 'pere'], evoca: 'la pera', accordi: { fruttato: 1 } }] };
+  const p = preparaLessico(lessico, config, PROFILI);
+  assert.deepEqual(interpreta('fresco pero non dolce', p).capito.map((c) => `${c.chiave}:${c.modo}`), ['fresco:si', 'dolce:no']);
+});
+
 prova('negazione dopo: "il dolce no"', () => {
   assert.deepEqual(capite('il mare sì, il dolce no'), ['mare:si', 'dolce:no']);
   assert.deepEqual(capite('dolce no grazie'), ['dolce:no']);

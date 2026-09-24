@@ -16,7 +16,13 @@
    "uscire con un ragazzo",
    "conquistare qualcuno",
    "fare colpo",
-   "far colpo su qualcuno"
+   "far colpo su qualcuno",
+   "appuntamento",
+   "appuntamento importante",
+   "appuntamento romantico",
+   "uscita romantica",
+   "appuntamento con lui",
+   "appuntamento con lei"
   ],
   "evoca": "la sera di un primo appuntamento",
   "accordi": {
@@ -424,7 +430,10 @@
    "balletto",
    "concerto di musica classica",
    "concerto sinfonico",
-   "musica classica"
+   "musica classica",
+   "pianoforte",
+   "concerto di pianoforte",
+   "violino"
   ],
   "evoca": "una serata a teatro",
   "accordi": {
@@ -518,7 +527,12 @@
    "incontro con un cliente",
    "appuntamento di lavoro",
    "consiglio di amministrazione",
-   "discorso"
+   "discorso",
+   "avvocato",
+   "avvocatessa",
+   "studio legale",
+   "tribunale",
+   "notaio"
   ],
   "evoca": "una riunione importante",
   "accordi": {
@@ -609,7 +623,17 @@
    "lavoro a contatto con la gente",
    "lavoro in mezzo alla gente",
    "lavoro in farmacia",
-   "sportello"
+   "sportello",
+   "pubblico",
+   "clienti",
+   "a contatto con i clienti",
+   "negozio",
+   "medico",
+   "dottore",
+   "dottoressa",
+   "dentista",
+   "estetista",
+   "studio medico"
   ],
   "evoca": "una giornata a contatto con la gente",
   "accordi": {
@@ -695,7 +719,14 @@
    "sport",
    "sportivo",
    "calcetto",
-   "partita di calcetto"
+   "partita di calcetto",
+   "basket",
+   "pallavolo",
+   "rugby",
+   "danza",
+   "lezione di danza",
+   "arti marziali",
+   "boxe"
   ],
   "evoca": "l'allenamento in palestra",
   "accordi": {
@@ -879,7 +910,11 @@
    "pelle appena lavata",
    "profumo di doccia",
    "effetto doccia",
-   "accappatoio"
+   "accappatoio",
+   "doccia appena fatta",
+   "appena fatto la doccia",
+   "appena uscito dalla doccia",
+   "appena uscita dalla doccia"
   ],
   "evoca": "la pelle appena uscita dalla doccia",
   "accordi": {
@@ -1013,7 +1048,10 @@
    "rave",
    "dj set",
    "serata danzante",
-   "ballare tutta la notte"
+   "ballare tutta la notte",
+   "ballo",
+   "ballare",
+   "balli latini"
   ],
   "evoca": "una serata in discoteca",
   "accordi": {
@@ -1105,7 +1143,10 @@
    "live",
    "serata di musica dal vivo",
    "musica dal vivo",
-   "sotto il palco"
+   "sotto il palco",
+   "musica",
+   "festival",
+   "musica rock"
   ],
   "evoca": "un concerto dal vivo",
   "accordi": {
@@ -1147,7 +1188,14 @@
    "cena fuori",
    "cena al ristorante",
    "cena in un bel ristorante",
-   "cena di classe"
+   "cena di classe",
+   "cena",
+   "a cena",
+   "per cena",
+   "uscire a cena",
+   "invito a cena",
+   "ristorante",
+   "al ristorante"
   ],
   "evoca": "una cena elegante al ristorante",
   "accordi": {
@@ -1332,7 +1380,15 @@
    "settimana al mare",
    "mese al mare",
    "vacanza in barca",
-   "crociera"
+   "crociera",
+   "vacanza",
+   "in vacanza",
+   "ferie",
+   "in ferie",
+   "aria di vacanza",
+   "voglia di vacanza",
+   "vacanza senza pensieri",
+   "giornate di vacanza"
   ],
   "evoca": "una vacanza al mare",
   "accordi": {
@@ -1422,7 +1478,11 @@
    "passeggiata in campagna",
    "escursione",
    "trekking",
-   "gita in giornata"
+   "gita in giornata",
+   "passeggiata",
+   "camminata",
+   "passeggiata all'aria aperta",
+   "camminare nella natura"
   ],
   "evoca": "una gita fuori porta",
   "accordi": {
@@ -1507,7 +1567,14 @@
    "giornata a casa",
    "senza impegni",
    "pigrizia",
-   "oziare"
+   "oziare",
+   "dopo il lavoro",
+   "dopo l'ufficio",
+   "tornata a casa",
+   "tornato a casa",
+   "staccare la spina",
+   "tempo libero",
+   "giornata di riposo tranquilla"
   ],
   "evoca": "una domenica senza impegni",
   "accordi": {
@@ -1602,7 +1669,11 @@
    "sul cuscino",
    "buonanotte",
    "ninna nanna",
-   "addormentarsi"
+   "addormentarsi",
+   "sonno",
+   "sogni d'oro",
+   "dolci sogni",
+   "nanna"
   ],
   "evoca": "il momento di andare a dormire",
   "accordi": {
@@ -1693,7 +1764,10 @@
    "università",
    "lezioni all'università",
    "biblioteca a studiare",
-   "studiare"
+   "studiare",
+   "studente",
+   "studentessa",
+   "lezione"
   ],
   "evoca": "il giorno di un esame",
   "accordi": {
@@ -2481,7 +2555,9 @@
    "donna",
    "femminile",
    "femmina",
-   "signorina"
+   "signorina",
+   "femminilità",
+   "da donna"
   ],
   "evoca": "lei",
   "filtro": {
@@ -2648,10 +2724,11 @@
    "dolce metà",
    "amore mio",
    "persona che amo",
-   "la persona che mi piace",
    "moroso",
    "morosino",
-   "fidanzatino"
+   "fidanzatino",
+   "la persona di cui sono innamorato",
+   "la persona di cui sono innamorata"
   ],
   "evoca": "la persona che ami",
   "occasioni": [
@@ -2743,7 +2820,17 @@
    "neomaggiorenne",
    "nipote",
    "universitario",
-   "ventenne"
+   "ventenne",
+   "vent'anni",
+   "diciotto anni",
+   "sedici anni",
+   "quindici anni",
+   "diciassette anni",
+   "dodici anni",
+   "tredici anni",
+   "quattordici anni",
+   "sedicenne",
+   "quindicenne"
   ],
   "evoca": "una persona giovane",
   "accordi": {
@@ -3332,7 +3419,7 @@
    "da condividere",
    "per la coppia",
    "per tutti quanti",
-   "adatto a tutti"
+   "adatto a uomo e donna"
   ],
   "evoca": "un profumo per tutti",
   "accordi": {
@@ -3362,7 +3449,17 @@
    "regalo di natale",
    "idea regalo",
    "confezione regalo",
-   "sorpresa"
+   "sorpresa",
+   "compleanno",
+   "per il compleanno",
+   "compleanno importante",
+   "onomastico",
+   "cinquantesimo",
+   "quarantesimo",
+   "sessantesimo",
+   "compie",
+   "compie gli anni",
+   "fa gli anni"
   ],
   "evoca": "un regalo",
   "modo": "regalo"

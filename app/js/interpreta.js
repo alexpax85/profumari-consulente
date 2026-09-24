@@ -265,12 +265,17 @@ export function leggiFrase(testo, pronto) {
     punto: p === ',',
     vuota: p !== ',' && (g.vuote.has(p) || /^\d+$/.test(p)),
   }));
-  for (const t of gettoni) t.radice = t.punto || t.vuota ? null : radiceConosciuta(t.testo, pronto, correzioni);
+  // Le parole della grammatica non sono mai scene, né si correggono in una scena:
+  // "però" senza accento resta un "però", non diventa una pera.
+  for (const t of gettoni) {
+    t.grammatica = !t.punto && (g.separatori.has(t.testo) || g.negazioni.has(t.testo) || g.riaperture.has(t.testo));
+    t.radice = t.punto || t.vuota || t.grammatica ? null : radiceConosciuta(t.testo, pronto, correzioni);
+  }
 
   // Le parole piene, in ordine: le forme si confrontano su queste. La punteggiatura
   // spezza: "bosco, inverno" non è la scena "bosco d'inverno".
   const piene = [];
-  gettoni.forEach((t, i) => { if (t.punto) piene.push({ punto: true, i }); else if (!t.vuota) piene.push({ radice: t.radice, i }); });
+  gettoni.forEach((t, i) => { if (t.punto) piene.push({ punto: true, i }); else if (!t.vuota && !t.grammatica) piene.push({ radice: t.radice, i }); });
 
   const trovate = [];
   const usate = new Set();

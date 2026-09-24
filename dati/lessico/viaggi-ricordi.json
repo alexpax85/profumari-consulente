@@ -79,7 +79,6 @@
   "tipo": "viaggio",
   "forme": [
    "grasse",
-   "città del profumo",
    "capitale del profumo",
    "colline di grasse",
    "campi di gelsomino",
@@ -1711,13 +1710,14 @@
   "chiave": "viaggio-peru",
   "tipo": "viaggio",
   "forme": [
-   "perù",
    "peruviano",
    "ande",
    "machu picchu",
    "sud america",
    "sudamerica",
-   "cuzco"
+   "cuzco",
+   "viaggio in perù",
+   "perù andino"
   ],
   "evoca": "le Ande",
   "accordi": {
@@ -2140,7 +2140,10 @@
    "crostata della nonna",
    "ciambellone della nonna",
    "merenda dalla nonna",
-   "torte della nonna appena sfornate"
+   "torte della nonna appena sfornate",
+   "merenda",
+   "merenda da bambini",
+   "pane e cioccolato"
   ],
   "evoca": "i dolci della nonna",
   "accordi": {
@@ -2352,7 +2355,11 @@
    "nonno con la pipa",
    "tabacco da pipa del nonno",
    "studio del nonno",
-   "poltrona del nonno"
+   "poltrona del nonno",
+   "pipa",
+   "tabacco da pipa",
+   "fumo di pipa",
+   "fumatore di pipa"
   ],
   "evoca": "la pipa del nonno",
   "accordi": {
@@ -2394,7 +2401,11 @@
    "bambino appena nato",
    "talco del neonato",
    "culla del bimbo",
-   "nascita di un bambino"
+   "nascita di un bambino",
+   "biberon",
+   "ciuccio",
+   "carrozzina",
+   "pappa del neonato"
   ],
   "evoca": "la pelle di un neonato",
   "accordi": {
@@ -2431,7 +2442,16 @@
    "libri di scuola nuovi",
    "gomma per cancellare",
    "diario di scuola",
-   "scuola elementare"
+   "scuola elementare",
+   "plastilina",
+   "pongo",
+   "pastelli a cera",
+   "colla vinilica",
+   "astuccio",
+   "asilo",
+   "scuola materna",
+   "grembiule",
+   "grembiulino"
   ],
   "evoca": "il primo giorno di scuola",
   "accordi": {
@@ -2891,7 +2911,9 @@
    "ferragosto in spiaggia",
    "falò di ferragosto",
    "falò con gli amici",
-   "chitarra intorno al falò"
+   "chitarra intorno al falò",
+   "falò",
+   "fuoco di sera in spiaggia"
   ],
   "evoca": "un falò sulla spiaggia",
   "accordi": {
@@ -3331,7 +3353,9 @@
    "tornare a casa",
    "rientrare a casa",
    "come a casa propria",
-   "casa dolce casa"
+   "casa dolce casa",
+   "casa dei miei genitori",
+   "rientro a casa"
   ],
   "evoca": "il calore di casa",
   "accordi": {
@@ -3510,6 +3534,127 @@
   },
   "misure": {
    "dolcezza": 5
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "viaggio-italia",
+  "tipo": "viaggio",
+  "forme": [
+   "italia",
+   "italiano",
+   "stile italiano",
+   "made in italy",
+   "estate italiana",
+   "all'italiana",
+   "eleganza italiana",
+   "gusto italiano"
+  ],
+  "evoca": "l'Italia",
+  "accordi": {
+   "agrumato": 0.9,
+   "aromatico": 0.5,
+   "floreale-bianco": 0.4,
+   "legnoso": 0.3,
+   "cipriato": 0.2
+  },
+  "note": {
+   "bergamotto": 1,
+   "limone": 0.8,
+   "neroli": 0.6,
+   "mandarino": 0.5,
+   "iris": 0.4,
+   "rosmarino": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.6
+  },
+  "carattere": [
+   "elegante",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "ricordo-infanzia",
+  "tipo": "ricordo",
+  "forme": [
+   "infanzia",
+   "da piccolo",
+   "quando ero piccolo",
+   "quando ero bambino",
+   "ero bambino",
+   "ero bambina",
+   "ero piccola",
+   "ricordi d'infanzia",
+   "fanciullezza",
+   "anni dell'infanzia",
+   "sapore d'infanzia"
+  ],
+  "evoca": "un ricordo d'infanzia",
+  "accordi": {
+   "vaniglia": 0.8,
+   "cipriato": 0.6,
+   "gourmand": 0.5,
+   "muschiato": 0.5,
+   "fruttato": 0.3
+  },
+  "note": {
+   "vaniglia": 0.8,
+   "eliotropio": 0.7,
+   "note talcate": 0.6,
+   "mandorla": 0.5,
+   "muschio bianco": 0.5,
+   "fragola": 0.4
+  },
+  "misure": {
+   "dolcezza": 4,
+   "intensita": 2
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "ricordo-giochi-aperto",
+  "tipo": "ricordo",
+  "forme": [
+   "giocare all'aperto",
+   "giocavo fuori",
+   "giocare fuori",
+   "giocare in cortile",
+   "cortile",
+   "pomeriggi in cortile",
+   "giochi all'aperto",
+   "parco giochi",
+   "altalena",
+   "giocare nei prati"
+  ],
+  "evoca": "i giochi all'aperto da bambini",
+  "accordi": {
+   "verde": 0.8,
+   "fruttato": 0.4,
+   "muschiato": 0.4,
+   "solare": 0.2
+  },
+  "note": {
+   "note verdi": 0.9,
+   "mela verde": 0.6,
+   "fieno": 0.4,
+   "albero di fico": 0.4,
+   "muschio": 0.4,
+   "bergamotto": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.6,
+   "primavera": 0.5
   },
   "carattere": [
    "allegro"

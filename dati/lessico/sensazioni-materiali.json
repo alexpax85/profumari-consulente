@@ -9,7 +9,9 @@
    "sensazione di fresco",
    "che rinfresca",
    "fresco e leggero",
-   "freschino"
+   "freschino",
+   "freschetto",
+   "fresh"
   ],
   "evoca": "una sensazione di fresco",
   "accordi": {
@@ -140,7 +142,13 @@
    "pulizia",
    "sensazione di pulito",
    "sa di lavato",
-   "igienico"
+   "igienico",
+   "pulitino",
+   "pulito pulito",
+   "odore di pulito",
+   "clean",
+   "asettico",
+   "igienizzato"
   ],
   "evoca": "una sensazione di pulito",
   "accordi": {
@@ -291,7 +299,12 @@
    "arioso",
    "trasparente",
    "etereo",
-   "leggero leggero"
+   "leggero leggero",
+   "profumino",
+   "leggerino",
+   "leggerina",
+   "leggero come una piuma",
+   "acqua profumata"
   ],
   "evoca": "qualcosa di leggero",
   "accordi": {
@@ -361,7 +374,12 @@
    "vicino alla pelle",
    "si sente solo da vicino",
    "intimo",
-   "a contatto con la pelle"
+   "a contatto con la pelle",
+   "inosservato",
+   "passa inosservato",
+   "passare inosservato",
+   "che non disturba",
+   "che non dà fastidio"
   ],
   "evoca": "una presenza discreta",
   "accordi": {
@@ -435,7 +453,21 @@
    "scia lunga",
    "d'impatto",
    "esplosivo",
-   "che riempie la stanza"
+   "che riempie la stanza",
+   "si sente da lontano",
+   "si sentono da lontano",
+   "da lontano",
+   "si sente a un chilometro",
+   "da un chilometro",
+   "lontano un chilometro",
+   "si sentono da lontano un chilometro",
+   "si sente a distanza",
+   "scia",
+   "bella scia",
+   "che lasci la scia",
+   "profumone",
+   "profumo forte",
+   "che arriva prima di te"
   ],
   "evoca": "una scia che si fa sentire",
   "accordi": {
@@ -501,9 +533,11 @@
    "opprimente",
    "nauseante",
    "che stordisce",
-   "che dà alla testa",
    "che fa venire mal di testa",
-   "stordente"
+   "stordente",
+   "mal di testa",
+   "emicrania",
+   "mi stordisce"
   ],
   "evoca": "una scia densa e pesante",
   "accordi": {
@@ -540,7 +574,16 @@
    "lunga durata",
    "lunga tenuta",
    "che resta sui vestiti",
-   "che non va via subito"
+   "che non va via subito",
+   "fino a sera",
+   "fino alla sera",
+   "fino a notte",
+   "che non svanisce",
+   "che non sparisca",
+   "non svanisce subito",
+   "che non evapora",
+   "non evapora subito",
+   "che tenga"
   ],
   "evoca": "una scia che dura",
   "accordi": {
@@ -571,7 +614,9 @@
    "dolcino",
    "dolciastro",
    "dolce ma leggero",
-   "dolcione"
+   "dolcione",
+   "doce",
+   "dorce"
   ],
   "evoca": "una nota dolce",
   "accordi": {
@@ -604,7 +649,9 @@
    "mieloso",
    "sdolcinato",
    "caramelloso",
-   "dolce dolce"
+   "dolce dolce",
+   "melenso",
+   "appiccicoso"
   ],
   "evoca": "una dolcezza zuccherina",
   "accordi": {
@@ -635,7 +682,9 @@
    "commestibile",
    "appetitoso",
    "che fa venire fame",
-   "gourmet"
+   "gourmet",
+   "gustoso",
+   "da leccarsi i baffi"
   ],
   "evoca": "un profumo goloso",
   "accordi": {
@@ -664,7 +713,10 @@
   "forme": [
    "vanigliato",
    "vanigliatissimo",
-   "sa di vanillina"
+   "sa di vanillina",
+   "vanilla",
+   "vainiglia",
+   "vaniglioso"
   ],
   "evoca": "una morbidezza vanigliata",
   "accordi": {
@@ -851,7 +903,10 @@
    "bouquet di fiori",
    "mazzo di fiori",
    "tanti fiori",
-   "floreale pieno"
+   "floreale pieno",
+   "petali",
+   "petali di fiori",
+   "fiori freschi recisi"
   ],
   "evoca": "un bouquet floreale",
   "accordi": {
@@ -881,7 +936,11 @@
    "pepato",
    "spezie calde",
    "caldo speziato",
-   "piccantino"
+   "piccantino",
+   "speziatino",
+   "peperoncino",
+   "peperoncino piccante",
+   "spicy"
   ],
   "evoca": "un calore speziato",
   "accordi": {
@@ -911,7 +970,12 @@
    "boschivo",
    "legnosetto",
    "legni caldi",
-   "legno pregiato"
+   "legno pregiato",
+   "woody",
+   "rovere",
+   "legno di rovere",
+   "legno scuro",
+   "legno chiaro"
   ],
   "evoca": "un fondo legnoso",
   "accordi": {
@@ -941,7 +1005,9 @@
    "note agrumate",
    "esperidato",
    "esperidico",
-   "sa di agrume"
+   "sa di agrume",
+   "citrus",
+   "agrumoso"
   ],
   "evoca": "una testa agrumata",
   "accordi": {
@@ -1008,7 +1074,11 @@
    "foglie fresche",
    "sa di foglie",
    "vegetale",
-   "gambi verdi"
+   "gambi verdi",
+   "piante",
+   "pianta",
+   "piante verdi",
+   "foglie"
   ],
   "evoca": "una freschezza verde, di foglie e linfa",
   "accordi": {
@@ -1041,7 +1111,13 @@
    "autentico",
    "naturalissimo",
    "sa di natura vera",
-   "vegetale e naturale"
+   "vegetale e naturale",
+   "biologico",
+   "bio",
+   "ingredienti naturali",
+   "essenze naturali",
+   "oli essenziali",
+   "olio essenziale"
   ],
   "evoca": "una sensazione naturale, di piante vere",
   "accordi": {
@@ -1422,7 +1498,12 @@
    "ambrato orientale",
    "gusto orientale",
    "stile orientale",
-   "speziato orientale"
+   "speziato orientale",
+   "esotico",
+   "note esotiche",
+   "oriente",
+   "profumo d'oriente",
+   "fascino orientale"
   ],
   "evoca": "un calore orientale",
   "accordi": {
@@ -1692,7 +1773,12 @@
    "eleganza",
    "chic",
    "distinto",
-   "elegantissimo"
+   "elegantissimo",
+   "sciccoso",
+   "sciccosa",
+   "glamour",
+   "glam",
+   "elegantone"
   ],
   "evoca": "un'eleganza senza sforzo",
   "accordi": {
@@ -1731,7 +1817,10 @@
    "signorile",
    "di gran classe",
    "curato",
-   "sofisticatissimo"
+   "sofisticatissimo",
+   "finezza",
+   "di gran finezza",
+   "fine e raffinato"
   ],
   "evoca": "un gusto raffinato",
   "accordi": {
@@ -1762,7 +1851,10 @@
    "intramontabile",
    "evergreen",
    "classicone",
-   "sempreverde"
+   "sempreverde",
+   "storico",
+   "classico di sempre",
+   "un classico"
   ],
   "evoca": "un classico senza tempo",
   "accordi": {
@@ -1826,7 +1918,10 @@
    "caldo e sensuale",
    "sensualissimo",
    "languido",
-   "pelle a pelle"
+   "pelle a pelle",
+   "passione",
+   "passionale",
+   "caliente"
   ],
   "evoca": "un'aura sensuale",
   "accordi": {
@@ -2131,7 +2226,18 @@
    "di spessore",
    "strutturato",
    "importante",
-   "complesso"
+   "complesso",
+   "sessant'anni",
+   "cinquant'anni",
+   "settant'anni",
+   "quarant'anni",
+   "ottant'anni",
+   "sessantenne",
+   "settantenne",
+   "quarantenne",
+   "cinquantenne",
+   "età matura",
+   "una certa età"
   ],
   "evoca": "un profumo maturo e strutturato",
   "accordi": {
@@ -2171,7 +2277,12 @@
    "contenuto",
    "understatement",
    "sottotono",
-   "professionale"
+   "professionale",
+   "serio",
+   "serioso",
+   "posato",
+   "affidabile",
+   "rigoroso"
   ],
   "evoca": "uno stile sobrio",
   "accordi": {
@@ -2211,7 +2322,13 @@
    "poetico",
    "da favola",
    "romanticissimo",
-   "sognatore"
+   "sognatore",
+   "innamorata",
+   "innamorato",
+   "innamoramento",
+   "batticuore",
+   "da sogno",
+   "sogno"
   ],
   "evoca": "un'atmosfera romantica",
   "accordi": {
@@ -2252,7 +2369,13 @@
    "giocoso",
    "vivace",
    "pieno di vita",
-   "sorridente"
+   "sorridente",
+   "senza pensieri",
+   "positivo",
+   "positività",
+   "ottimista",
+   "ottimismo",
+   "di buonumore"
   ],
   "evoca": "un'allegria spensierata",
   "accordi": {
@@ -2441,7 +2564,12 @@
    "come un abbraccio",
    "tenero",
    "tenerezza",
-   "coccolone"
+   "coccolone",
+   "abbracciano",
+   "che abbraccia",
+   "ti abbraccia",
+   "abbracciare",
+   "coccole"
   ],
   "evoca": "una coccola",
   "accordi": {
@@ -2629,7 +2757,23 @@
    "introvabile",
    "alternativo",
    "artistico",
-   "strano"
+   "strano",
+   "stanca dei soliti",
+   "stanco dei soliti",
+   "stufa dei soliti",
+   "stufo dei soliti",
+   "stanca del solito",
+   "stufa del solito",
+   "sorprendimi",
+   "sorprendente",
+   "stupiscimi",
+   "scoprire cose nuove",
+   "qualcosa di nuovo",
+   "diverso",
+   "mai sentito",
+   "artigianale",
+   "profumeria artistica",
+   "profumo di nicchia"
   ],
   "evoca": "qualcosa fuori dal comune",
   "accordi": {
@@ -2668,7 +2812,11 @@
    "opulento",
    "sfarzoso",
    "che sembra costoso",
-   "lussuosissimo"
+   "lussuosissimo",
+   "di qualità",
+   "qualità",
+   "alta qualità",
+   "di lusso"
   ],
   "evoca": "un tocco di lusso",
   "accordi": {
@@ -2713,7 +2861,16 @@
    "basic",
    "portabile",
    "versatile",
-   "facile da portare"
+   "facile da portare",
+   "casual",
+   "informale",
+   "disinvolto",
+   "alla mano",
+   "jeans",
+   "jeans e maglietta",
+   "senza pretese",
+   "senza troppe pretese",
+   "easy"
   ],
   "evoca": "un profumo semplice e portabile",
   "accordi": {
@@ -2746,12 +2903,27 @@
    "vintage",
    "retrò",
    "d'altri tempi",
-   "di una volta",
    "vecchio stile",
    "all'antica",
    "d'epoca",
    "vecchia scuola",
-   "old style"
+   "old style",
+   "vecchio",
+   "da vecchia",
+   "vecchia signora",
+   "da vecchia signora",
+   "roba da nonna",
+   "datato",
+   "antiquato",
+   "sorpassato",
+   "fuori moda",
+   "passato di moda",
+   "vecchiotto",
+   "naftalina",
+   "sa di naftalina",
+   "dei tempi di una volta",
+   "stile di una volta",
+   "come si usava una volta"
   ],
   "evoca": "un fascino d'altri tempi",
   "accordi": {
@@ -2778,7 +2950,6 @@
   "forme": [
    "innocente",
    "innocenza",
-   "puro",
    "purezza",
    "angelico",
    "ingenuo",
@@ -3606,7 +3777,10 @@
    "sa di ferro",
    "acciaio",
    "freddo metallico",
-   "monetine"
+   "monetine",
+   "ruggine",
+   "ferro arrugginito",
+   "ferro"
   ],
   "evoca": "una nota metallica e fredda",
   "accordi": {
@@ -3735,7 +3909,8 @@
    "vernice fresca",
    "smalto per unghie",
    "solvente",
-   "acetone"
+   "acetone",
+   "smalto"
   ],
   "evoca": "una nota di benzina e vernice",
   "accordi": {
@@ -3907,7 +4082,12 @@
    "pelle al sole",
    "pelle abbronzata",
    "monoi",
-   "olio di monoi"
+   "olio di monoi",
+   "abbronzatura",
+   "abbronzato",
+   "abbronzata",
+   "tintarella",
+   "pelle dorata"
   ],
   "evoca": "la crema solare sulla pelle",
   "accordi": {
@@ -3982,7 +4162,12 @@
    "schiuma da barba",
    "rasatura",
    "crema da barba",
-   "lozione dopobarba"
+   "lozione dopobarba",
+   "barba",
+   "barba curata",
+   "olio da barba",
+   "barba appena fatta",
+   "appena rasato"
   ],
   "evoca": "la schiuma da barba",
   "accordi": {
@@ -4005,6 +4190,276 @@
   "carattere": [
    "fresco",
    "elegante"
+  ]
+ },
+ {
+  "chiave": "umore-comune",
+  "tipo": "umore",
+  "forme": [
+   "scontato",
+   "banale",
+   "banalissimo",
+   "soliti profumi",
+   "il solito",
+   "i soliti",
+   "normale",
+   "comune",
+   "commerciale",
+   "mainstream",
+   "di massa",
+   "visto e rivisto",
+   "sentito e risentito",
+   "anonimo",
+   "prevedibile",
+   "dozzinale",
+   "famoso",
+   "famosissimo",
+   "conosciuto",
+   "conosciutissimo",
+   "il più venduto",
+   "best seller"
+  ],
+  "evoca": "un profumo come tanti",
+  "accordi": {
+   "muschiato": 0.7,
+   "fruttato": 0.6,
+   "vaniglia": 0.5,
+   "agrumato": 0.4
+  },
+  "note": {
+   "ambroxan": 0.8,
+   "muschio bianco": 0.7,
+   "pera": 0.6,
+   "vaniglia": 0.5,
+   "bergamotto": 0.5,
+   "pesca": 0.4
+  },
+  "misure": {
+   "intensita": 3
+  },
+  "occasioni": [
+   "quotidiano"
+  ]
+ },
+ {
+  "chiave": "sens-volgare",
+  "tipo": "sensazione",
+  "forme": [
+   "volgare",
+   "pacchiano",
+   "cafone",
+   "tamarro",
+   "tamarra",
+   "zarro",
+   "coatto",
+   "sguaiato",
+   "kitsch",
+   "da discoteca di paese",
+   "profumo da tamarro"
+  ],
+  "evoca": "un profumo sopra le righe",
+  "accordi": {
+   "gourmand": 0.7,
+   "vaniglia": 0.6,
+   "ambrato": 0.6,
+   "fruttato": 0.4
+  },
+  "note": {
+   "zucchero filato": 0.7,
+   "caramello": 0.7,
+   "ambroxan": 0.6,
+   "vaniglia": 0.6,
+   "patchouli": 0.4,
+   "ananas": 0.3
+  },
+  "misure": {
+   "intensita": 5,
+   "dolcezza": 5,
+   "persistenza": 5
+  }
+ },
+ {
+  "chiave": "umore-grazioso",
+  "tipo": "umore",
+  "forme": [
+   "carino",
+   "carinissimo",
+   "grazioso",
+   "delizioso",
+   "piacevole",
+   "gradevole",
+   "caruccio",
+   "leggiadro",
+   "graziosissimo",
+   "simpatico"
+  ],
+  "evoca": "un profumo grazioso",
+  "accordi": {
+   "floreale-fresco": 0.8,
+   "fruttato": 0.6,
+   "muschiato": 0.5
+  },
+  "note": {
+   "peonia": 0.8,
+   "pera": 0.6,
+   "fresia": 0.5,
+   "lampone": 0.4,
+   "mughetto": 0.4,
+   "muschio bianco": 0.5
+  },
+  "misure": {
+   "intensita": 2,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "primavera": 0.6
+  },
+  "carattere": [
+   "allegro",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "sens-chypre",
+  "tipo": "sensazione",
+  "forme": [
+   "chypre",
+   "cipro",
+   "chipre",
+   "cyprè",
+   "chypre fiorito",
+   "chypre fruttato",
+   "accordo chypre",
+   "muschio di quercia e bergamotto"
+  ],
+  "evoca": "un accordo chypre",
+  "accordi": {
+   "verde": 0.7,
+   "patchouli": 0.7,
+   "agrumato": 0.5,
+   "rosa": 0.3,
+   "ambrato": 0.2
+  },
+  "note": {
+   "muschio di quercia": 1,
+   "bergamotto": 0.8,
+   "patchouli": 0.8,
+   "labdano": 0.4,
+   "rosa": 0.4,
+   "vetiver": 0.3
+  },
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "sens-fougere",
+  "tipo": "sensazione",
+  "forme": [
+   "fougère",
+   "felciato",
+   "accordo fougère",
+   "felce aromatica",
+   "classico da barbiere",
+   "fougère aromatico"
+  ],
+  "evoca": "un accordo fougère",
+  "accordi": {
+   "aromatico": 1,
+   "verde": 0.5,
+   "vaniglia": 0.4,
+   "muschiato": 0.3
+  },
+  "note": {
+   "lavanda": 1,
+   "fava tonka": 0.7,
+   "muschio di quercia": 0.6,
+   "geranio": 0.5,
+   "cumarina": 0.4,
+   "bergamotto": 0.4
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "elegante",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "sens-sintetico",
+  "tipo": "sensazione",
+  "forme": [
+   "chimico",
+   "sintetico",
+   "artificiale",
+   "sa di chimico",
+   "da laboratorio",
+   "plasticoso",
+   "chimicoso"
+  ],
+  "evoca": "un effetto sintetico",
+  "accordi": {
+   "muschiato": 0.7,
+   "ambrato": 0.6,
+   "acquatico": 0.4,
+   "cipriato": 0.3
+  },
+  "note": {
+   "ambroxan": 0.9,
+   "iso e super": 0.7,
+   "aldeidi": 0.6,
+   "muschio bianco": 0.6,
+   "note ozoniche": 0.4,
+   "cashmeran": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  }
+ },
+ {
+  "chiave": "mat-sigaro",
+  "tipo": "materiale",
+  "forme": [
+   "sigaro",
+   "scatola di sigari",
+   "sigaro acceso",
+   "fumo di sigaro",
+   "humidor",
+   "cassetta dei sigari",
+   "sigaro e cognac",
+   "sigaro dopo cena"
+  ],
+  "evoca": "un sigaro appena acceso",
+  "accordi": {
+   "tabacco": 1,
+   "legnoso": 0.5,
+   "cuoio": 0.4,
+   "ambrato": 0.3,
+   "boozy": 0.2
+  },
+  "note": {
+   "tabacco": 1,
+   "foglia di tabacco": 0.8,
+   "legno di cedro": 0.6,
+   "cuoio": 0.4,
+   "vaniglia": 0.3,
+   "cognac": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4
+  },
+  "stagioni": {
+   "inverno": 0.6
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "carattere": [
+   "sicuro",
+   "misterioso"
   ]
  }
 ]

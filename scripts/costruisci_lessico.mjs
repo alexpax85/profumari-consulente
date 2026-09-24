@@ -16,13 +16,17 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join, basename } from 'node:path';
 import { normalizzaNota } from '../app/js/ricerca.js';
 import { ATTRIBUTI, STAGIONI, MOMENTI } from '../app/js/motore.js';
-import { formaNormale } from '../app/js/interpreta.js';
+import { formaNormale, parole } from '../app/js/interpreta.js';
 
 const RADICE = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CARTELLA = join(RADICE, 'dati/lessico');
 const USCITA = join(RADICE, 'app/config/lessico.json');
 const leggi = (percorso) => JSON.parse(readFileSync(percorso, 'utf8'));
 const GRAMMATICA = leggi(join(CARTELLA, '_grammatica.json'));
+// Le parole che la grammatica usa (non, senza, ma, vorrei…) non entrano mai in una
+// scena: una forma che le contiene non si potrebbe riconoscere, quindi si scarta.
+const DELLA_GRAMMATICA = new Set([...GRAMMATICA.negazioni, ...GRAMMATICA.separatori, ...GRAMMATICA.riaperture]
+  .map((p) => parole(p).join(' ')));
 
 export const TIPI = [
   'luogo', 'ambiente', 'cibo', 'bevanda', 'situazione', 'persona', 'momento', 'stagione',
@@ -67,6 +71,8 @@ function pulisciScena(scena, dove, errori, avvisi) {
   const forme = [];
   const normali = [];
   for (const forma of scena.forme || []) {
+    const conGrammatica = parole(forma).find((p) => DELLA_GRAMMATICA.has(p));
+    if (conGrammatica) { avvisi.push(`${dove2}: la forma "${forma}" contiene "${conGrammatica}", che è della grammatica: la salto`); continue; }
     const normale = formaNormale(forma, GRAMMATICA);
     if (!normale) { avvisi.push(`${dove2}: la forma "${forma}" è fatta solo di parole vuote, la salto`); continue; }
     if (normali.includes(normale)) continue;

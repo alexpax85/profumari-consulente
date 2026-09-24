@@ -81,7 +81,13 @@
    "lenzuola fresche di bucato",
    "biancheria pulita",
    "ammorbidente",
-   "bucato fresco"
+   "bucato fresco",
+   "lenzuola",
+   "lenzuola appena lavate",
+   "lenzuola fresche",
+   "lenzuola pulite di bucato",
+   "biancheria appena lavata",
+   "panni puliti"
   ],
   "evoca": "il bucato steso al sole",
   "accordi": {
@@ -118,7 +124,14 @@
    "ferro da stiro",
    "vapore del ferro da stiro",
    "camicie stirate",
-   "camicia appena stirata"
+   "camicia appena stirata",
+   "lenzuola stirate",
+   "lenzuola appena stirate",
+   "biancheria stirata",
+   "appena stirato",
+   "panni stirati",
+   "stirare",
+   "vapore del ferro"
   ],
   "evoca": "una lavanderia",
   "accordi": {
@@ -182,7 +195,11 @@
    "schiuma da bagno",
    "bagno caldo con la schiuma",
    "stanza da bagno",
-   "box doccia"
+   "box doccia",
+   "bagno",
+   "bagno caldo",
+   "bagno rilassante",
+   "vasca"
   ],
   "evoca": "il bagno dopo la doccia",
   "accordi": {
@@ -222,7 +239,12 @@
    "wellness",
    "percorso benessere",
    "giornata alla spa",
-   "spa dell'hotel"
+   "spa dell'hotel",
+   "massaggio",
+   "massaggi",
+   "olio da massaggio",
+   "benessere",
+   "trattamento benessere"
   ],
   "evoca": "una spa",
   "accordi": {
@@ -367,7 +389,10 @@
    "sala di lettura",
    "archivio",
    "archivio storico",
-   "biblioteca di un palazzo"
+   "biblioteca di un palazzo",
+   "lettura",
+   "angolo lettura",
+   "libro davanti al camino"
   ],
   "evoca": "una vecchia biblioteca",
   "accordi": {
@@ -541,9 +566,10 @@
    "cattedrale",
    "cattedrale gotica",
    "duomo",
-   "basilica",
    "navata",
-   "navata della cattedrale"
+   "navata della cattedrale",
+   "basilica antica",
+   "navata della basilica"
   ],
   "evoca": "la navata di una cattedrale",
   "accordi": {
@@ -678,7 +704,8 @@
    "tronchi tagliati",
    "tronchi appena segati",
    "cataste di legna",
-   "legnaia"
+   "legnaia",
+   "legname"
   ],
   "evoca": "una segheria di montagna",
   "accordi": {
@@ -862,7 +889,11 @@
    "box dei cavalli",
    "selleria",
    "finimenti",
-   "selle di cuoio"
+   "selle di cuoio",
+   "cavallo",
+   "cavalli",
+   "odore di cavallo",
+   "criniera"
   ],
   "evoca": "una scuderia",
   "accordi": {
@@ -1193,7 +1224,12 @@
    "baretto",
    "bar sotto casa",
    "bar dell'angolo",
-   "bar di paese"
+   "bar di paese",
+   "bar di una volta",
+   "vecchio bar",
+   "bar d'altri tempi",
+   "bancone di legno",
+   "barista"
   ],
   "evoca": "il bancone di un bar",
   "accordi": {
@@ -2450,7 +2486,15 @@
    "stufa a legna",
    "brace",
    "ceppo che arde",
-   "davanti al camino"
+   "davanti al camino",
+   "caminetto acceso",
+   "fuoco",
+   "fuoco acceso",
+   "fuoco scoppiettante",
+   "stufa accesa",
+   "stufa in ghisa",
+   "stufa di ghisa",
+   "legna nel camino"
   ],
   "evoca": "un camino acceso",
   "accordi": {
@@ -2634,7 +2678,10 @@
    "portico",
    "pergolato",
    "patio",
-   "gazebo"
+   "gazebo",
+   "balcone",
+   "balcone fiorito",
+   "terrazzino"
   ],
   "evoca": "una veranda fiorita",
   "accordi": {
@@ -2840,7 +2887,10 @@
    "bordo piscina",
    "piscina all'aperto",
    "acqua della piscina",
-   "piscina dell'hotel"
+   "piscina dell'hotel",
+   "nuoto",
+   "nuotare",
+   "vasca olimpionica"
   ],
   "evoca": "il bordo di una piscina",
   "accordi": {
@@ -2986,7 +3036,10 @@
    "mostra d'arte",
    "vernissage",
    "spazio espositivo",
-   "arte contemporanea"
+   "arte contemporanea",
+   "arte",
+   "opere d'arte",
+   "mostra di pittura"
   ],
   "evoca": "una galleria d'arte",
   "accordi": {
@@ -3018,7 +3071,10 @@
    "colori a olio",
    "trementina",
    "tele e pennelli",
-   "laboratorio d'arte"
+   "laboratorio d'arte",
+   "pittura",
+   "dipingere",
+   "pittore"
   ],
   "evoca": "l'atelier di un pittore",
   "accordi": {
@@ -3186,7 +3242,12 @@
    "fornelli",
    "pentole sul fuoco",
    "cucina calda",
-   "cucina rustica"
+   "cucina rustica",
+   "cuoco",
+   "cuoca",
+   "chef",
+   "cucinare",
+   "ai fornelli"
   ],
   "evoca": "una cucina di casa",
   "accordi": {
@@ -3537,6 +3598,88 @@
   },
   "carattere": [
    "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "amb-citta",
+  "tipo": "ambiente",
+  "forme": [
+   "città",
+   "metropolitano",
+   "metropoli",
+   "urbano",
+   "cittadino",
+   "vita di città",
+   "aria di città",
+   "grande città",
+   "centro città",
+   "cemento",
+   "asfalto",
+   "giungla d'asfalto",
+   "palazzi e cemento",
+   "città moderna"
+  ],
+  "evoca": "la città",
+  "accordi": {
+   "legnoso": 0.7,
+   "aromatico": 0.4,
+   "speziato": 0.3,
+   "cuoio": 0.3,
+   "cipriato": 0.3
+  },
+  "note": {
+   "vetiver": 0.8,
+   "pepe nero": 0.6,
+   "legno di cedro": 0.5,
+   "aldeidi": 0.4,
+   "iris": 0.4,
+   "ambroxan": 0.4
+  },
+  "carattere": [
+   "sicuro",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "amb-porto",
+  "tipo": "ambiente",
+  "forme": [
+   "porticciolo",
+   "porto di mare",
+   "porto dei pescatori",
+   "porto turistico",
+   "vecchio porto",
+   "molo",
+   "banchina",
+   "barche dei pescatori",
+   "pescatori",
+   "reti da pesca",
+   "barche ormeggiate"
+  ],
+  "evoca": "un porticciolo di mare",
+  "accordi": {
+   "acquatico": 1,
+   "legnoso": 0.3,
+   "aromatico": 0.3,
+   "verde": 0.2
+  },
+  "note": {
+   "note marine": 1,
+   "alghe": 0.8,
+   "sale": 0.6,
+   "legno marino": 0.4,
+   "vetiver": 0.3,
+   "note minerali": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.6
+  },
+  "carattere": [
+   "fresco",
    "calmo"
   ]
  }

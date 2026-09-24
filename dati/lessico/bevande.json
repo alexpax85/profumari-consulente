@@ -12,7 +12,9 @@
    "chicchi di caffè",
    "caffè tostato",
    "caffè macinato",
-   "torrefazione"
+   "torrefazione",
+   "cafè",
+   "café"
   ],
   "evoca": "il caffè appena fatto",
   "accordi": {
@@ -175,7 +177,11 @@
    "latte e caffè",
    "tazza di caffellatte",
    "caffellatte della colazione",
-   "latte caldo col caffè"
+   "latte caldo col caffè",
+   "colazione",
+   "prima colazione",
+   "colazione a letto",
+   "colazione in famiglia"
   ],
   "evoca": "una tazza di caffellatte",
   "accordi": {
@@ -2129,7 +2135,12 @@
    "cocktail analcolico",
    "analcolico alla frutta",
    "sex on the beach",
-   "cocktail da spiaggia"
+   "cocktail da spiaggia",
+   "cocktail",
+   "drink",
+   "cocktail estivo",
+   "cocktail d'estate",
+   "cocktail fresco"
   ],
   "evoca": "un cocktail alla frutta",
   "accordi": {
@@ -3127,7 +3138,12 @@
    "chianti",
    "amarone",
    "primitivo",
-   "cantina di vino rosso"
+   "cantina di vino rosso",
+   "vino",
+   "calice di vino",
+   "bicchiere di vino",
+   "vino buono",
+   "buon vino"
   ],
   "evoca": "un calice di vino rosso",
   "accordi": {
@@ -3226,7 +3242,6 @@
   "chiave": "bev-rose",
   "tipo": "bevanda",
   "forme": [
-   "rosé",
    "vino rosé",
    "vino rosato",
    "rosato",
