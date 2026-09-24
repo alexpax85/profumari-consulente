@@ -377,6 +377,8 @@ async function avvia() {
     dammiPronto: lessico,
     vaiA,
     allUscita: tornaInAttesa,
+    // Da una frase che non dice abbastanza si passa alle domande, senza ripartire dall'attesa.
+    allaGuida: () => { consiglio.ferma(); avviaPercorso(); },
     alConsulto: (desiderio, esito) => {
       segnaConsulto(stato.statistiche, desiderio, esito);
       salva();

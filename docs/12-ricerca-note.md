@@ -5,6 +5,8 @@
 > - **Fatti guidare** — il percorso a domande di `05-percorso.md`: si risponde per immagini e sensazioni, escono tre codici da provare.
 > - **Cerca per note** — quello di questo documento: si parte dagli ingredienti (muschio, cuoio, agrumi) e si sfoglia il catalogo. Meno astratto, più analitico; stesso tono e stessa veste.
 >
+> Dal 24/09/2026 le porte sono tre: la terza, *Raccontami cosa cerchi*, è il consulente a parole di `13-consulente.md`.
+>
 > Il primo è per chi non sa da dove cominciare, il secondo per chi una mezza idea ce l'ha ("mi piacciono i legni", "cerco qualcosa col cuoio") o per il commesso che vuole rispondere subito a una richiesta precisa. Nessuno dei due è "quello giusto": sono due porte sulla stessa stanza.
 
 Regole di sempre, che valgono anche qui: **solo referenze attive**, **mai un nome commerciale** (solo il codice a tre cifre), nessun dato del cliente, nessun campo di testo (niente tastiera sul chiosco), tocco minimo 60 px.

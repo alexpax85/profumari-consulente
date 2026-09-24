@@ -31,7 +31,7 @@ function riconoscitore() {
 }
 
 export function creaConsiglio({
-  dammiConfig, dammiTesti, dammiProfili, dammiPronto, vaiA, allUscita, alConsulto,
+  dammiConfig, dammiTesti, dammiProfili, dammiPronto, vaiA, allUscita, alConsulto, allaGuida,
 }) {
   const config = () => dammiConfig();
   const T = () => dammiTesti().consulente || {};
@@ -44,6 +44,9 @@ export function creaConsiglio({
     microfono: $('#microfono'),
     microfonoTesto: $('#microfono-testo'),
     messaggio: $('#racconto-messaggio'),
+    guida: $('#racconto-guida'),
+    guidaTesto: $('#racconto-guida-testo'),
+    guidaVai: $('#racconto-guida-vai'),
     spuntiTitolo: $('#spunti-titolo'),
     spunti: $('#spunti'),
     cancella: $('#frase-cancella'),
@@ -70,9 +73,14 @@ export function creaConsiglio({
 
   // -------------------------------------------------------------- racconto
 
-  function mostraMessaggio(testo) {
+  function mostraMessaggio(testo, { guida = false } = {}) {
     riferimenti.messaggio.textContent = testo || '';
     riferimenti.messaggio.hidden = !testo;
+    // Chi non sa da dove partire ("sorprendimi", "non saprei") non va lasciato
+    // davanti a un riquadro vuoto: la porta delle domande è fatta apposta per lui.
+    riferimenti.guida.hidden = !guida || !allaGuida;
+    riferimenti.guidaTesto.textContent = T().guida || '';
+    riferimenti.guidaVai.textContent = T().guidaPulsante || 'Rispondi a qualche domanda';
   }
 
   function aggiungi(pezzo) {
@@ -179,7 +187,9 @@ export function creaConsiglio({
     if (!trovato || !trovato.proposte.length) {
       const ignote = desiderio.ignorate.length
         ? ` ${conModello(T().ignote || '', { parole: desiderio.ignorate.map((p) => `«${p}»`).join(', ') })}` : '';
-      mostraMessaggio(`${T().nonCapito || ''}${ignote}`);
+      const soloVeti = desiderio.capito.length > 0 && desiderio.capito.every((c) => c.modo === 'no' || c.modo === 'attenuato' || c.tipo === 'persona');
+      if (soloVeti) mostraMessaggio(T().soloVeti || T().nonCapito || '');
+      else mostraMessaggio(`${T().nonCapito || ''}${ignote}`, { guida: true });
       if (alConsulto && fraseContata !== testo) { fraseContata = testo; alConsulto(desiderio, null); }
       return;
     }
@@ -322,6 +332,7 @@ export function creaConsiglio({
   });
   riferimenti.frase.addEventListener('input', () => mostraMessaggio(''));
   riferimenti.riserva.addEventListener('click', mostraRiserva);
+  riferimenti.guidaVai.addEventListener('click', () => { fermaAscolto(); if (allaGuida) allaGuida(); });
   riferimenti.cambia.addEventListener('click', () => { vaiA('racconto'); riferimenti.frase.focus(); });
   riferimenti.ricomincia.addEventListener('click', () => allUscita && allUscita());
   $('#esci-racconto').addEventListener('click', () => allUscita && allUscita());

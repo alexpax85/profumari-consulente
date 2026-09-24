@@ -156,6 +156,9 @@
    "attenuato": "non troppo {x}",
    "poco": "un filo di {x}",
    "forte": "tanto {x}"
-  }
+  },
+  "soloVeti": "Ho capito cosa non ti piace. Adesso dimmi anche qualcosa che ti piace: un posto, un sapore, una sensazione.",
+  "guida": "Se non sai da dove partire, rispondi a qualche domanda: ci pensiamo noi.",
+  "guidaPulsante": "Rispondi a qualche domanda"
  }
 }

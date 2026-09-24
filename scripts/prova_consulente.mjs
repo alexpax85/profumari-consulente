@@ -2,7 +2,8 @@
 //
 //   node scripts/prova_consulente.mjs                   le frasi tipiche di app/js/scenari.js
 //   node scripts/prova_consulente.mjs "una frase"       una frase qualsiasi, con il dettaglio
-//   node scripts/prova_consulente.mjs --copertura       quante parole di un elenco di frasi libere capisce
+//   node scripts/prova_consulente.mjs --copertura       quante frasi libere capisce (elenco qui sotto)
+//   node scripts/prova_consulente.mjs --copertura FILE  idem, con le frasi di un file JSON (un array di stringhe)
 
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -70,6 +71,7 @@ if (argomento === '--copertura') {
     'la pelle abbronzata', 'l\'odore della carta dei libri', 'fumo di sigaro e cuoio',
     'qualcosa di misterioso e notturno', 'fiori bianchi ma non troppo', 'per una festa di matrimonio in estate',
   ];
+  if (process.argv[3]) LIBERE.splice(0, LIBERE.length, ...JSON.parse(readFileSync(process.argv[3], 'utf8')));
   let capiteTutte = 0;
   let proposte = 0;
   const ignote = new Map();

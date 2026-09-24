@@ -171,6 +171,11 @@ prova('negazione: copre l\'elenco che segue ("senza dolce e senza mare", "niente
   assert.deepEqual(capite('niente mare e caffè'), ['mare:no', 'bev-caffe:no']);
 });
 
+prova('negazione a voce o in dialetto: "nun", "nn"', () => {
+  assert.deepEqual(capite('nun voglio il dolce'), ['dolce:no']);
+  assert.deepEqual(capite('nn mi piace il mare, vorrei il bosco'), ['mare:no', 'bosco:si']);
+});
+
 prova('negazione dopo: "il dolce no"', () => {
   assert.deepEqual(capite('il mare sì, il dolce no'), ['mare:si', 'dolce:no']);
   assert.deepEqual(capite('dolce no grazie'), ['dolce:no']);
