@@ -1,0 +1,4177 @@
+[
+ {
+  "chiave": "bev-caffe",
+  "tipo": "bevanda",
+  "forme": [
+   "caffè",
+   "caffettino",
+   "tazzina di caffè",
+   "tazza di caffè",
+   "caffè appena fatto",
+   "caffè caldo",
+   "chicchi di caffè",
+   "caffè tostato",
+   "caffè macinato",
+   "torrefazione"
+  ],
+  "evoca": "il caffè appena fatto",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.4,
+   "legnoso": 0.3,
+   "ambrato": 0.2
+  },
+  "note": {
+   "caffè": 1,
+   "cacao": 0.6,
+   "fava tonka": 0.5,
+   "caramello": 0.3,
+   "vaniglia": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.6,
+   "inverno": 0.6
+  },
+  "carattere": [
+   "energico"
+  ]
+ },
+ {
+  "chiave": "bev-espresso-bar",
+  "tipo": "bevanda",
+  "forme": [
+   "espresso",
+   "espressino",
+   "caffè espresso",
+   "caffè al bar",
+   "bancone del bar",
+   "caffè ristretto",
+   "ristretto",
+   "caffè della mattina al bar",
+   "macchina dell'espresso"
+  ],
+  "evoca": "un espresso al bar",
+  "accordi": {
+   "gourmand": 0.9,
+   "legnoso": 0.35,
+   "speziato": 0.2,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "caffè": 1,
+   "cacao": 0.5,
+   "zucchero": 0.3,
+   "fava tonka": 0.4,
+   "pepe nero": 0.15
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 2
+  },
+  "momento": {
+   "giorno": 0.8
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "energico",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "bev-moka",
+  "tipo": "bevanda",
+  "forme": [
+   "moka",
+   "caffè della moka",
+   "caffè di casa",
+   "caffè fatto in casa",
+   "caffettiera",
+   "caffè della nonna",
+   "caffè che sale",
+   "caffè che borbotta",
+   "caffè della domenica mattina"
+  ],
+  "evoca": "il caffè della moka che sale in cucina",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.4,
+   "legnoso": 0.25,
+   "ambrato": 0.2
+  },
+  "note": {
+   "caffè": 1,
+   "cacao": 0.5,
+   "zucchero di canna": 0.4,
+   "vaniglia": 0.35,
+   "fava tonka": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "momento": {
+   "giorno": 0.8
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "bev-cappuccino",
+  "tipo": "bevanda",
+  "forme": [
+   "cappuccino",
+   "cappuccio",
+   "cappuccino e cornetto",
+   "cappuccino con la schiuma",
+   "schiuma del cappuccino",
+   "cappuccino al bar",
+   "cappuccino con cacao",
+   "cappuccino alla cannella",
+   "colazione al bar"
+  ],
+  "evoca": "un cappuccino con la schiuma",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.6,
+   "muschiato": 0.2,
+   "speziato": 0.15
+  },
+  "note": {
+   "caffè": 0.8,
+   "latte": 0.9,
+   "panna montata": 0.6,
+   "cacao": 0.5,
+   "vaniglia": 0.5,
+   "cannella": 0.2
+  },
+  "misure": {
+   "dolcezza": 4,
+   "intensita": 3
+  },
+  "momento": {
+   "giorno": 0.9
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "bev-caffelatte",
+  "tipo": "bevanda",
+  "forme": [
+   "caffellatte",
+   "caffè latte",
+   "caffelatte",
+   "latte macchiato",
+   "latte e caffè",
+   "tazza di caffellatte",
+   "caffellatte della colazione",
+   "latte caldo col caffè"
+  ],
+  "evoca": "una tazza di caffellatte",
+  "accordi": {
+   "gourmand": 0.85,
+   "vaniglia": 0.6,
+   "muschiato": 0.3
+  },
+  "note": {
+   "latte": 1,
+   "caffè": 0.6,
+   "vaniglia": 0.5,
+   "zucchero": 0.4,
+   "fava tonka": 0.3
+  },
+  "misure": {
+   "dolcezza": 4,
+   "intensita": 2
+  },
+  "momento": {
+   "giorno": 0.9
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "bev-caffe-freddo",
+  "tipo": "bevanda",
+  "forme": [
+   "caffè freddo",
+   "caffè shakerato",
+   "shakerato",
+   "caffè in ghiaccio",
+   "cremino al caffè",
+   "crema di caffè",
+   "caffè frappè",
+   "iced coffee",
+   "cold brew"
+  ],
+  "evoca": "un caffè shakerato con ghiaccio",
+  "accordi": {
+   "gourmand": 0.85,
+   "vaniglia": 0.5,
+   "agrumato": 0.1
+  },
+  "note": {
+   "caffè": 1,
+   "zucchero di canna": 0.5,
+   "panna montata": 0.4,
+   "vaniglia": 0.4,
+   "cacao": 0.3
+  },
+  "misure": {
+   "dolcezza": 4,
+   "freschezza": 2
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "momento": {
+   "giorno": 0.7
+  },
+  "carattere": [
+   "energico"
+  ]
+ },
+ {
+  "chiave": "bev-marocchino",
+  "tipo": "bevanda",
+  "forme": [
+   "marocchino",
+   "caffè marocchino",
+   "mocaccino",
+   "moccaccino",
+   "caffè al cioccolato",
+   "caffè con cacao",
+   "bicerin",
+   "caffè con cioccolato e panna"
+  ],
+  "evoca": "un marocchino, caffè e cioccolato",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.5,
+   "ambrato": 0.2
+  },
+  "note": {
+   "caffè": 0.9,
+   "cacao": 0.9,
+   "cioccolato": 0.7,
+   "panna montata": 0.5,
+   "vaniglia": 0.4,
+   "fava tonka": 0.3
+  },
+  "misure": {
+   "dolcezza": 4,
+   "intensita": 4
+  },
+  "stagioni": {
+   "autunno": 0.6,
+   "inverno": 0.7
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "bev-caffe-corretto",
+  "tipo": "bevanda",
+  "forme": [
+   "caffè corretto",
+   "caffè corretto grappa",
+   "caffè corretto sambuca",
+   "caffè corretto al rum",
+   "ammazzacaffè",
+   "resentin",
+   "caffè con la grappa",
+   "caffè col liquore"
+  ],
+  "evoca": "un caffè corretto a fine pranzo",
+  "accordi": {
+   "gourmand": 0.8,
+   "boozy": 0.7,
+   "aromatico": 0.2,
+   "legnoso": 0.2
+  },
+  "note": {
+   "caffè": 1,
+   "liquore": 0.6,
+   "rum": 0.4,
+   "anice": 0.3,
+   "fava tonka": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "stagioni": {
+   "inverno": 0.6
+  },
+  "carattere": [
+   "audace"
+  ],
+  "manca": [
+   "grappa"
+  ]
+ },
+ {
+  "chiave": "bev-irish-coffee",
+  "tipo": "bevanda",
+  "forme": [
+   "irish coffee",
+   "caffè irlandese",
+   "caffè al whisky",
+   "caffè con whisky e panna",
+   "caffè con panna e whisky"
+  ],
+  "evoca": "un irish coffee, caffè, whisky e panna",
+  "accordi": {
+   "gourmand": 0.8,
+   "boozy": 0.8,
+   "vaniglia": 0.4,
+   "legnoso": 0.2
+  },
+  "note": {
+   "caffè": 0.9,
+   "whisky": 0.8,
+   "panna montata": 0.6,
+   "zucchero di canna": 0.4,
+   "vaniglia": 0.3
+  },
+  "misure": {
+   "dolcezza": 3,
+   "intensita": 4
+  },
+  "stagioni": {
+   "inverno": 0.8
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "carattere": [
+   "coccola",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "bev-espresso-martini",
+  "tipo": "bevanda",
+  "forme": [
+   "espresso martini",
+   "cocktail al caffè",
+   "drink al caffè",
+   "martini al caffè",
+   "vodka e caffè"
+  ],
+  "evoca": "un espresso martini a notte fonda",
+  "accordi": {
+   "gourmand": 0.85,
+   "boozy": 0.6,
+   "vaniglia": 0.4,
+   "muschiato": 0.15
+  },
+  "note": {
+   "caffè": 1,
+   "liquore": 0.5,
+   "vodka al muschio": 0.3,
+   "vaniglia": 0.4,
+   "zucchero": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "sensuale",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "bev-liquore-caffe",
+  "tipo": "bevanda",
+  "forme": [
+   "liquore al caffè",
+   "crema di caffè alcolica",
+   "caffè alcolico",
+   "rosolio al caffè"
+  ],
+  "evoca": "un liquore al caffè",
+  "accordi": {
+   "gourmand": 0.9,
+   "boozy": 0.7,
+   "vaniglia": 0.5
+  },
+  "note": {
+   "caffè": 1,
+   "liquore": 0.7,
+   "vaniglia": 0.5,
+   "caramello": 0.4,
+   "zucchero di canna": 0.3
+  },
+  "misure": {
+   "dolcezza": 4,
+   "intensita": 4
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "carattere": [
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "bev-orzo-ginseng",
+  "tipo": "bevanda",
+  "forme": [
+   "caffè d'orzo",
+   "orzo",
+   "orzo in tazza grande",
+   "caffè al ginseng",
+   "ginseng",
+   "caffè di cicoria",
+   "orzetto"
+  ],
+  "evoca": "un orzo in tazza grande",
+  "accordi": {
+   "gourmand": 0.8,
+   "legnoso": 0.3,
+   "vaniglia": 0.4,
+   "ambrato": 0.2
+  },
+  "note": {
+   "caramello": 0.8,
+   "nocciola": 0.6,
+   "caffè": 0.4,
+   "fava tonka": 0.5,
+   "latte": 0.3
+  },
+  "misure": {
+   "dolcezza": 3,
+   "intensita": 2
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "orzo tostato",
+   "ginseng"
+  ]
+ },
+ {
+  "chiave": "bev-cioccolata-calda",
+  "tipo": "bevanda",
+  "forme": [
+   "cioccolata calda",
+   "cioccolata in tazza",
+   "tazza di cioccolata",
+   "cioccolata densa",
+   "cioccolata con panna",
+   "cioccolata fumante",
+   "cioccolata della baita",
+   "cioccolata calda con panna"
+  ],
+  "evoca": "una tazza di cioccolata calda con la panna",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.6,
+   "ambrato": 0.3,
+   "speziato": 0.1
+  },
+  "note": {
+   "cioccolato": 1,
+   "cacao": 0.9,
+   "panna montata": 0.6,
+   "vaniglia": 0.6,
+   "latte": 0.4,
+   "cannella": 0.15
+  },
+  "misure": {
+   "dolcezza": 5,
+   "intensita": 4,
+   "persistenza": 4
+  },
+  "stagioni": {
+   "inverno": 1,
+   "autunno": 0.5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "bev-cioccolata-speziata",
+  "tipo": "bevanda",
+  "forme": [
+   "cioccolata speziata",
+   "cioccolata al peperoncino",
+   "cioccolata con cannella",
+   "cioccolata messicana",
+   "cioccolata alle spezie",
+   "cioccolata all'arancia"
+  ],
+  "evoca": "una cioccolata calda alle spezie",
+  "accordi": {
+   "gourmand": 0.9,
+   "speziato": 0.7,
+   "ambrato": 0.3,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "cacao": 1,
+   "cannella": 0.7,
+   "pepe rosa": 0.4,
+   "vaniglia": 0.5,
+   "arancia": 0.3,
+   "noce moscata": 0.3
+  },
+  "misure": {
+   "dolcezza": 4,
+   "intensita": 4
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "carattere": [
+   "coccola",
+   "audace"
+  ],
+  "manca": [
+   "peperoncino"
+  ]
+ },
+ {
+  "chiave": "bev-cioccolata-bianca",
+  "tipo": "bevanda",
+  "forme": [
+   "cioccolata bianca calda",
+   "cioccolata calda bianca",
+   "cioccolata bianca in tazza",
+   "tazza di cioccolata bianca",
+   "latte e cioccolato bianco"
+  ],
+  "evoca": "una cioccolata bianca calda",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.8,
+   "muschiato": 0.2
+  },
+  "note": {
+   "cioccolato bianco": 1,
+   "latte": 0.7,
+   "vaniglia": 0.7,
+   "burro di cacao": 0.5,
+   "zucchero": 0.4
+  },
+  "misure": {
+   "dolcezza": 5,
+   "intensita": 3
+  },
+  "stagioni": {
+   "inverno": 0.9
+  },
+  "carattere": [
+   "coccola",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "bev-te-nero",
+  "tipo": "bevanda",
+  "forme": [
+   "tè nero",
+   "tè delle cinque",
+   "tè all'inglese",
+   "tè col latte",
+   "tè della colazione",
+   "tazza di tè nero",
+   "tè forte"
+  ],
+  "evoca": "una tazza di tè nero",
+  "accordi": {
+   "tè": 1,
+   "legnoso": 0.3,
+   "miele": 0.25,
+   "tabacco": 0.15
+  },
+  "note": {
+   "tè nero": 1,
+   "tè": 0.8,
+   "miele": 0.3,
+   "limone": 0.2,
+   "foglia di tabacco": 0.15,
+   "latte": 0.2
+  },
+  "misure": {
+   "intensita": 3,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "autunno": 0.6,
+   "inverno": 0.5
+  },
+  "carattere": [
+   "elegante",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "bev-te-bergamotto",
+  "tipo": "bevanda",
+  "forme": [
+   "tè al bergamotto",
+   "tè nero al bergamotto",
+   "tè aromatizzato al bergamotto",
+   "tè del conte",
+   "earl grey",
+   "tè grey"
+  ],
+  "evoca": "un tè nero al bergamotto",
+  "accordi": {
+   "tè": 0.9,
+   "agrumato": 0.8,
+   "floreale-fresco": 0.15
+  },
+  "note": {
+   "bergamotto": 1,
+   "tè nero": 0.8,
+   "tè": 0.6,
+   "lavanda": 0.2,
+   "fiori": 0.15
+  },
+  "misure": {
+   "freschezza": 3,
+   "intensita": 3
+  },
+  "occasioni": [
+   "ufficio",
+   "quotidiano"
+  ],
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "bev-te-limone",
+  "tipo": "bevanda",
+  "forme": [
+   "tè al limone",
+   "tè caldo al limone",
+   "tè freddo al limone",
+   "tè con fettina di limone"
+  ],
+  "evoca": "un tè al limone",
+  "accordi": {
+   "tè": 0.9,
+   "agrumato": 0.8,
+   "verde": 0.1
+  },
+  "note": {
+   "tè": 1,
+   "limone": 0.9,
+   "zucchero": 0.2,
+   "tè nero": 0.4
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "bev-te-verde",
+  "tipo": "bevanda",
+  "forme": [
+   "tè verde",
+   "tè verde giapponese",
+   "tè giapponese",
+   "tè cinese",
+   "sencha",
+   "tè verde caldo",
+   "infuso di tè verde",
+   "cerimonia del tè"
+  ],
+  "evoca": "una tazza di tè verde",
+  "accordi": {
+   "tè": 1,
+   "verde": 0.6,
+   "agrumato": 0.25,
+   "muschiato": 0.15
+  },
+  "note": {
+   "tè verde": 1,
+   "tè": 0.7,
+   "note verdi": 0.4,
+   "bergamotto": 0.3,
+   "bambù": 0.2
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 2,
+   "dolcezza": 1
+  },
+  "occasioni": [
+   "ufficio",
+   "quotidiano"
+  ],
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "bev-matcha",
+  "tipo": "bevanda",
+  "forme": [
+   "matcha",
+   "tè matcha",
+   "matcha latte",
+   "latte al matcha",
+   "tè verde in polvere"
+  ],
+  "evoca": "una tazza di matcha",
+  "accordi": {
+   "tè": 0.9,
+   "verde": 0.8,
+   "gourmand": 0.25,
+   "muschiato": 0.2
+  },
+  "note": {
+   "tè verde": 1,
+   "note verdi": 0.6,
+   "latte": 0.4,
+   "bambù": 0.3,
+   "fava tonka": 0.15
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 2
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "matcha"
+  ]
+ },
+ {
+  "chiave": "bev-te-gelsomino",
+  "tipo": "bevanda",
+  "forme": [
+   "tè al gelsomino",
+   "tè verde al gelsomino",
+   "tè ai fiori di gelsomino",
+   "tè cinese al gelsomino",
+   "tè ai fiori",
+   "tè floreale",
+   "tè ai petali"
+  ],
+  "evoca": "un tè al gelsomino",
+  "accordi": {
+   "tè": 0.9,
+   "floreale-bianco": 0.8,
+   "verde": 0.3
+  },
+  "note": {
+   "gelsomino sambac": 0.9,
+   "gelsomino": 0.8,
+   "tè verde": 0.8,
+   "tè": 0.5,
+   "note verdi": 0.2
+  },
+  "misure": {
+   "intensita": 2,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "primavera": 0.7
+  },
+  "carattere": [
+   "calmo",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "bev-te-pesca",
+  "tipo": "bevanda",
+  "forme": [
+   "tè freddo",
+   "tè freddo alla pesca",
+   "tè alla pesca",
+   "tè alla pesca freddo",
+   "tè in bottiglia",
+   "tè freddo con ghiaccio"
+  ],
+  "evoca": "un tè freddo alla pesca",
+  "accordi": {
+   "tè": 0.8,
+   "fruttato": 0.9,
+   "agrumato": 0.2
+  },
+  "note": {
+   "pesca": 1,
+   "tè": 0.8,
+   "tè nero": 0.4,
+   "limone": 0.3,
+   "zucchero": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "bev-chai",
+  "tipo": "bevanda",
+  "forme": [
+   "chai",
+   "tè chai",
+   "chai latte",
+   "masala chai",
+   "tè speziato",
+   "tè alle spezie",
+   "tè indiano",
+   "tè allo zenzero e cannella"
+  ],
+  "evoca": "un chai speziato col latte",
+  "accordi": {
+   "speziato": 0.9,
+   "tè": 0.8,
+   "gourmand": 0.3,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "masala chai": 1,
+   "cardamomo": 0.8,
+   "cannella": 0.7,
+   "zenzero": 0.6,
+   "tè nero": 0.5,
+   "chiodi di garofano": 0.3,
+   "latte": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.8,
+   "inverno": 0.8
+  },
+  "carattere": [
+   "coccola",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "bev-te-menta",
+  "tipo": "bevanda",
+  "forme": [
+   "tè alla menta",
+   "tè marocchino",
+   "tè alla menta marocchino",
+   "tè verde alla menta",
+   "tè arabo",
+   "tè del deserto",
+   "infuso di menta"
+  ],
+  "evoca": "un tè alla menta alla marocchina",
+  "accordi": {
+   "aromatico": 0.9,
+   "tè": 0.8,
+   "verde": 0.4,
+   "gourmand": 0.1
+  },
+  "note": {
+   "menta": 1,
+   "tè verde": 0.8,
+   "tè": 0.5,
+   "zucchero": 0.3,
+   "note verdi": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 2
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "bev-te-affumicato",
+  "tipo": "bevanda",
+  "forme": [
+   "tè affumicato",
+   "tè nero affumicato",
+   "lapsang souchong",
+   "tè al fumo",
+   "tè cinese affumicato"
+  ],
+  "evoca": "un tè nero affumicato",
+  "accordi": {
+   "tè": 0.9,
+   "incenso": 0.6,
+   "cuoio": 0.35,
+   "legnoso": 0.4
+  },
+  "note": {
+   "tè nero": 1,
+   "fumo": 0.8,
+   "betulla": 0.5,
+   "legno di guaiaco": 0.4,
+   "cuoio": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4
+  },
+  "stagioni": {
+   "autunno": 0.7,
+   "inverno": 0.8
+  },
+  "carattere": [
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "bev-mate",
+  "tipo": "bevanda",
+  "forme": [
+   "mate",
+   "yerba mate",
+   "erba mate",
+   "infuso di mate",
+   "mate argentino",
+   "tè del sud america"
+  ],
+  "evoca": "un mate",
+  "accordi": {
+   "tè": 0.8,
+   "verde": 0.7,
+   "aromatico": 0.3,
+   "tabacco": 0.2
+  },
+  "note": {
+   "erba mate": 1,
+   "note verdi": 0.5,
+   "fieno": 0.5,
+   "tè": 0.4,
+   "foglia di tabacco": 0.2
+  },
+  "misure": {
+   "intensita": 3
+  },
+  "carattere": [
+   "energico"
+  ]
+ },
+ {
+  "chiave": "bev-tisana",
+  "tipo": "bevanda",
+  "forme": [
+   "tisana",
+   "tisana della sera",
+   "infuso",
+   "infuso di erbe",
+   "tisana alle erbe",
+   "tazza di tisana",
+   "decotto",
+   "tisana rilassante",
+   "tisana calda"
+  ],
+  "evoca": "una tisana calda della sera",
+  "accordi": {
+   "aromatico": 0.9,
+   "verde": 0.4,
+   "miele": 0.3,
+   "floreale-fresco": 0.2
+  },
+  "note": {
+   "camomilla": 0.6,
+   "verbena": 0.7,
+   "menta": 0.4,
+   "lavanda": 0.4,
+   "fieno": 0.4,
+   "miele": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "dolcezza": 2
+  },
+  "momento": {
+   "sera": 0.9
+  },
+  "stagioni": {
+   "inverno": 0.6,
+   "autunno": 0.5
+  },
+  "carattere": [
+   "calmo",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "bev-camomilla",
+  "tipo": "bevanda",
+  "forme": [
+   "camomilla calda",
+   "tazza di camomilla",
+   "camomilla della sera",
+   "camomilla prima di dormire",
+   "camomilla col miele",
+   "camomillina"
+  ],
+  "evoca": "una camomilla col miele prima di dormire",
+  "accordi": {
+   "aromatico": 0.8,
+   "miele": 0.6,
+   "verde": 0.3,
+   "floreale-fresco": 0.2
+  },
+  "note": {
+   "camomilla": 1,
+   "miele": 0.6,
+   "fieno": 0.5,
+   "mela": 0.2,
+   "verbena": 0.2
+  },
+  "misure": {
+   "intensita": 1,
+   "dolcezza": 3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "calmo",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "bev-infuso-frutti-rossi",
+  "tipo": "bevanda",
+  "forme": [
+   "infuso ai frutti rossi",
+   "tisana ai frutti rossi",
+   "tisana ai frutti di bosco",
+   "infuso ai frutti di bosco",
+   "infuso all'ibisco",
+   "karkadè",
+   "carcadè",
+   "tisana all'ibisco",
+   "infuso di frutta"
+  ],
+  "evoca": "un infuso ai frutti rossi",
+  "accordi": {
+   "fruttato": 0.9,
+   "floreale-fresco": 0.3,
+   "tè": 0.2,
+   "gourmand": 0.15
+  },
+  "note": {
+   "bacche rosse": 1,
+   "lampone": 0.7,
+   "ribes nero": 0.6,
+   "ibisco": 0.5,
+   "fragola": 0.4,
+   "mirtillo": 0.3
+  },
+  "misure": {
+   "dolcezza": 3,
+   "intensita": 2
+  },
+  "stagioni": {
+   "inverno": 0.5,
+   "autunno": 0.5
+  },
+  "carattere": [
+   "allegro",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "bev-zenzero-limone",
+  "tipo": "bevanda",
+  "forme": [
+   "zenzero e limone",
+   "tisana zenzero e limone",
+   "infuso zenzero e limone",
+   "acqua calda zenzero e limone",
+   "zenzero limone e miele",
+   "infuso allo zenzero",
+   "tisana allo zenzero",
+   "shot di zenzero"
+  ],
+  "evoca": "un infuso di zenzero e limone",
+  "accordi": {
+   "speziato": 0.8,
+   "agrumato": 0.8,
+   "miele": 0.2
+  },
+  "note": {
+   "zenzero": 1,
+   "limone": 0.9,
+   "miele": 0.3,
+   "lime": 0.2,
+   "curcuma": 0.15
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 3
+  },
+  "stagioni": {
+   "inverno": 0.6
+  },
+  "carattere": [
+   "energico"
+  ]
+ },
+ {
+  "chiave": "bev-latte-miele",
+  "tipo": "bevanda",
+  "forme": [
+   "latte e miele",
+   "latte caldo col miele",
+   "latte caldo",
+   "tazza di latte caldo",
+   "latte caldo della sera",
+   "latte della buonanotte"
+  ],
+  "evoca": "una tazza di latte caldo col miele",
+  "accordi": {
+   "miele": 0.8,
+   "gourmand": 0.7,
+   "muschiato": 0.4,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "latte": 1,
+   "miele": 0.9,
+   "vaniglia": 0.4,
+   "cera d'api": 0.2,
+   "muschio bianco": 0.3
+  },
+  "misure": {
+   "dolcezza": 4,
+   "intensita": 2
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "stagioni": {
+   "inverno": 0.8
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "bev-golden-milk",
+  "tipo": "bevanda",
+  "forme": [
+   "latte d'oro",
+   "golden milk",
+   "latte alla curcuma",
+   "curcuma latte",
+   "latte speziato",
+   "latte con curcuma e zenzero"
+  ],
+  "evoca": "un latte d'oro alla curcuma",
+  "accordi": {
+   "speziato": 0.8,
+   "gourmand": 0.5,
+   "miele": 0.3,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "curcuma": 1,
+   "zenzero": 0.6,
+   "latte": 0.7,
+   "cannella": 0.5,
+   "miele": 0.3,
+   "pepe nero": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "inverno": 0.7
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "bev-latte-mandorla",
+  "tipo": "bevanda",
+  "forme": [
+   "latte di mandorla",
+   "latte di mandorla freddo",
+   "latte vegetale",
+   "bevanda alla mandorla",
+   "orzata",
+   "sciroppo d'orzata",
+   "latte di mandorla pugliese"
+  ],
+  "evoca": "un bicchiere di latte di mandorla",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.4,
+   "muschiato": 0.3,
+   "floreale-bianco": 0.1
+  },
+  "note": {
+   "latte di mandorla": 1,
+   "mandorla": 0.8,
+   "mandorla amara": 0.4,
+   "latte": 0.4,
+   "fiore d'arancio": 0.2,
+   "zucchero": 0.2
+  },
+  "misure": {
+   "dolcezza": 4,
+   "freschezza": 2
+  },
+  "stagioni": {
+   "estate": 0.7
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "bev-latte-cocco",
+  "tipo": "bevanda",
+  "forme": [
+   "latte di cocco",
+   "acqua di cocco",
+   "cocco fresco da bere",
+   "noce di cocco da bere",
+   "bevanda al cocco",
+   "cocco con la cannuccia"
+  ],
+  "evoca": "il latte di cocco bevuto dalla noce",
+  "accordi": {
+   "solare": 1,
+   "gourmand": 0.4,
+   "vaniglia": 0.3,
+   "muschiato": 0.2
+  },
+  "note": {
+   "latte di cocco": 1,
+   "cocco": 0.9,
+   "acqua di cocco": 0.5,
+   "vaniglia": 0.3,
+   "tiarè": 0.2
+  },
+  "misure": {
+   "dolcezza": 3,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "bev-spremuta",
+  "tipo": "bevanda",
+  "forme": [
+   "spremuta",
+   "spremuta d'arancia",
+   "succo d'arancia",
+   "arancia spremuta",
+   "spremuta fresca",
+   "spremuta di arance rosse",
+   "spremuta della colazione"
+  ],
+  "evoca": "una spremuta d'arancia appena fatta",
+  "accordi": {
+   "agrumato": 1,
+   "fruttato": 0.4,
+   "verde": 0.1
+  },
+  "note": {
+   "arancia": 1,
+   "arancia dolce": 0.7,
+   "arancia rossa": 0.5,
+   "mandarino": 0.4,
+   "scorza di arancia": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "bev-spremuta-pompelmo",
+  "tipo": "bevanda",
+  "forme": [
+   "succo di pompelmo",
+   "spremuta di pompelmo",
+   "pompelmo spremuto",
+   "pompelmo rosa da bere",
+   "bibita al pompelmo",
+   "soda al pompelmo"
+  ],
+  "evoca": "una spremuta di pompelmo",
+  "accordi": {
+   "agrumato": 1,
+   "fruttato": 0.2,
+   "verde": 0.2
+  },
+  "note": {
+   "pompelmo": 1,
+   "limone": 0.3,
+   "pepe rosa": 0.3,
+   "arancia amara": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "momento": {
+   "giorno": 0.8
+  },
+  "carattere": [
+   "energico",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "bev-limonata",
+  "tipo": "bevanda",
+  "forme": [
+   "limonata",
+   "limonata fresca",
+   "limonata fatta in casa",
+   "acqua e limone",
+   "succo di limone",
+   "limonata con menta",
+   "lemonade",
+   "citronnade",
+   "spremuta di limone"
+  ],
+  "evoca": "una limonata fresca",
+  "accordi": {
+   "agrumato": 1,
+   "aromatico": 0.2,
+   "verde": 0.2
+  },
+  "note": {
+   "limone": 1,
+   "limone di sicilia": 0.5,
+   "lime": 0.4,
+   "zucchero": 0.3,
+   "menta": 0.3,
+   "verbena": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "bev-granita-limone",
+  "tipo": "bevanda",
+  "forme": [
+   "granita al limone",
+   "granita siciliana",
+   "granita",
+   "grattachecca",
+   "grattachecca al limone",
+   "ghiacciolo al limone",
+   "sorbetto al limone da bere"
+  ],
+  "evoca": "una granita al limone",
+  "accordi": {
+   "agrumato": 1,
+   "acquatico": 0.2,
+   "gourmand": 0.2
+  },
+  "note": {
+   "limone": 1,
+   "limone di sicilia": 0.6,
+   "zucchero": 0.4,
+   "limone candito": 0.3,
+   "menta": 0.15
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "bev-granita-caffe",
+  "tipo": "bevanda",
+  "forme": [
+   "granita al caffè",
+   "granita di caffè con panna",
+   "grattachecca al caffè"
+  ],
+  "evoca": "una granita al caffè con la panna",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.4,
+   "acquatico": 0.1
+  },
+  "note": {
+   "caffè": 1,
+   "panna montata": 0.7,
+   "zucchero": 0.4,
+   "vaniglia": 0.3
+  },
+  "misure": {
+   "dolcezza": 4,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "energico",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "bev-granita-frutta",
+  "tipo": "bevanda",
+  "forme": [
+   "granita alla fragola",
+   "granita alla mandorla",
+   "granita al gelso",
+   "granita all'amarena",
+   "granita alla pesca",
+   "granita alla frutta",
+   "grattachecca alla frutta"
+  ],
+  "evoca": "una granita alla frutta",
+  "accordi": {
+   "fruttato": 0.9,
+   "gourmand": 0.4,
+   "agrumato": 0.2
+  },
+  "note": {
+   "fragola": 0.8,
+   "amarena": 0.6,
+   "mandorla": 0.5,
+   "pesca": 0.4,
+   "zucchero": 0.4,
+   "limone": 0.2
+  },
+  "misure": {
+   "dolcezza": 4,
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "gelso"
+  ]
+ },
+ {
+  "chiave": "bev-aranciata",
+  "tipo": "bevanda",
+  "forme": [
+   "aranciata",
+   "aranciata amara",
+   "bibita all'arancia",
+   "soda all'arancia",
+   "chinotto",
+   "gassosa all'arancia",
+   "aranciata frizzante"
+  ],
+  "evoca": "un'aranciata frizzante",
+  "accordi": {
+   "agrumato": 1,
+   "gourmand": 0.3,
+   "fruttato": 0.2
+  },
+  "note": {
+   "arancia": 1,
+   "arancia amara": 0.6,
+   "mandarino": 0.4,
+   "zucchero": 0.4,
+   "note ozoniche": 0.15
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "bev-cola",
+  "tipo": "bevanda",
+  "forme": [
+   "bibita alla cola",
+   "cola",
+   "bibita gassata",
+   "bevanda gassata",
+   "cola con ghiaccio",
+   "cola e limone",
+   "bibita scura",
+   "bollicine della cola",
+   "gazzosa",
+   "gassosa"
+  ],
+  "evoca": "una bibita alla cola con ghiaccio e limone",
+  "accordi": {
+   "gourmand": 0.8,
+   "speziato": 0.5,
+   "agrumato": 0.5,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "caramello": 0.8,
+   "cannella": 0.5,
+   "lime": 0.6,
+   "vaniglia": 0.4,
+   "limone": 0.4,
+   "noce moscata": 0.2
+  },
+  "misure": {
+   "dolcezza": 4,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ],
+  "manca": [
+   "cola"
+  ]
+ },
+ {
+  "chiave": "bev-acqua-tonica",
+  "tipo": "bevanda",
+  "forme": [
+   "acqua tonica",
+   "tonica",
+   "tonic water",
+   "acqua tonica e limone",
+   "tonica con ghiaccio",
+   "bibita amara"
+  ],
+  "evoca": "un bicchiere di acqua tonica col limone",
+  "accordi": {
+   "agrumato": 0.8,
+   "acquatico": 0.4,
+   "verde": 0.3
+  },
+  "note": {
+   "limone": 0.8,
+   "pompelmo": 0.5,
+   "note ozoniche": 0.4,
+   "lime": 0.4,
+   "arancia amara": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "fresco"
+  ],
+  "manca": [
+   "chinino"
+  ]
+ },
+ {
+  "chiave": "bev-ginger-beer",
+  "tipo": "bevanda",
+  "forme": [
+   "ginger beer",
+   "ginger ale",
+   "bibita allo zenzero",
+   "soda allo zenzero",
+   "birra allo zenzero",
+   "gassosa allo zenzero",
+   "moscow mule",
+   "mule"
+  ],
+  "evoca": "una ginger beer ghiacciata",
+  "accordi": {
+   "speziato": 0.9,
+   "agrumato": 0.7,
+   "gourmand": 0.1
+  },
+  "note": {
+   "zenzero": 1,
+   "lime": 0.8,
+   "limone": 0.3,
+   "zucchero": 0.2,
+   "pepe rosa": 0.2
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 3
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "energico",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "bev-acqua-aromatizzata",
+  "tipo": "bevanda",
+  "forme": [
+   "acqua aromatizzata",
+   "acqua con cetriolo",
+   "acqua cetriolo e menta",
+   "acqua detox",
+   "acqua con frutta",
+   "acqua con limone e menta",
+   "infused water",
+   "caraffa d'acqua con frutta"
+  ],
+  "evoca": "una caraffa d'acqua con cetriolo e menta",
+  "accordi": {
+   "verde": 0.8,
+   "acquatico": 0.7,
+   "agrumato": 0.4,
+   "aromatico": 0.3
+  },
+  "note": {
+   "cetriolo": 1,
+   "menta": 0.6,
+   "note acquatiche": 0.6,
+   "limone": 0.5,
+   "lime": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "intensita": 1,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "occasioni": [
+   "sport",
+   "quotidiano"
+  ],
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "bev-acqua-frizzante",
+  "tipo": "bevanda",
+  "forme": [
+   "acqua frizzante",
+   "acqua gassata",
+   "acqua con le bollicine",
+   "acqua minerale",
+   "acqua di sorgente",
+   "acqua fresca di fonte",
+   "acqua ghiacciata"
+  ],
+  "evoca": "un bicchiere d'acqua frizzante ghiacciata",
+  "accordi": {
+   "acquatico": 0.9,
+   "agrumato": 0.3,
+   "muschiato": 0.2
+  },
+  "note": {
+   "note acquatiche": 1,
+   "note ozoniche": 0.6,
+   "note minerali": 0.5,
+   "limone": 0.3,
+   "muschio bianco": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "intensita": 1,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "bev-frullato",
+  "tipo": "bevanda",
+  "forme": [
+   "frullato",
+   "frullato di frutta",
+   "frullato alla banana",
+   "frullato di fragole",
+   "smoothie",
+   "centrifuga",
+   "centrifugato",
+   "estratto di frutta",
+   "frullato di frutta fresca"
+  ],
+  "evoca": "un frullato di frutta fresca",
+  "accordi": {
+   "fruttato": 1,
+   "gourmand": 0.3,
+   "agrumato": 0.2
+  },
+  "note": {
+   "fragola": 0.8,
+   "pesca": 0.6,
+   "mango": 0.5,
+   "ananas": 0.4,
+   "latte": 0.3,
+   "note fruttate": 0.5
+  },
+  "misure": {
+   "dolcezza": 4,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ],
+  "manca": [
+   "banana"
+  ]
+ },
+ {
+  "chiave": "bev-frullato-verde",
+  "tipo": "bevanda",
+  "forme": [
+   "frullato verde",
+   "estratto verde",
+   "centrifuga verde",
+   "succo verde",
+   "smoothie verde",
+   "estratto di mela e sedano",
+   "succo di mela verde"
+  ],
+  "evoca": "un estratto verde di mela e cetriolo",
+  "accordi": {
+   "verde": 0.9,
+   "fruttato": 0.6,
+   "agrumato": 0.3
+  },
+  "note": {
+   "mela verde": 1,
+   "cetriolo": 0.7,
+   "note verdi": 0.6,
+   "lime": 0.4,
+   "zenzero": 0.3,
+   "kiwi": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "occasioni": [
+   "sport"
+  ],
+  "carattere": [
+   "energico",
+   "fresco"
+  ],
+  "manca": [
+   "sedano"
+  ]
+ },
+ {
+  "chiave": "bev-milkshake",
+  "tipo": "bevanda",
+  "forme": [
+   "milkshake",
+   "milk shake",
+   "frappè",
+   "frappè alla vaniglia",
+   "frappè al cioccolato",
+   "milkshake alla fragola",
+   "frappè alla fragola",
+   "frullato col gelato"
+  ],
+  "evoca": "un milkshake col gelato",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.7,
+   "fruttato": 0.2
+  },
+  "note": {
+   "gelato": 0.8,
+   "latte": 0.8,
+   "vaniglia": 0.8,
+   "panna montata": 0.6,
+   "fragola": 0.3,
+   "cioccolato": 0.3
+  },
+  "misure": {
+   "dolcezza": 5,
+   "intensita": 3
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "allegro",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "bev-kombucha",
+  "tipo": "bevanda",
+  "forme": [
+   "kombucha",
+   "tè fermentato",
+   "kefir d'acqua",
+   "bevanda fermentata",
+   "kombucha allo zenzero"
+  ],
+  "evoca": "una kombucha frizzante",
+  "accordi": {
+   "tè": 0.7,
+   "fruttato": 0.5,
+   "agrumato": 0.5,
+   "speziato": 0.2
+  },
+  "note": {
+   "tè": 0.9,
+   "mela verde": 0.6,
+   "zenzero": 0.4,
+   "limone": 0.4,
+   "aceto balsamico": 0.1
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "energico"
+  ],
+  "manca": [
+   "fermentato"
+  ]
+ },
+ {
+  "chiave": "bev-sidro",
+  "tipo": "bevanda",
+  "forme": [
+   "sidro",
+   "sidro di mele",
+   "sidro caldo",
+   "succo di mela caldo",
+   "sidro frizzante",
+   "cidre"
+  ],
+  "evoca": "un bicchiere di sidro di mele",
+  "accordi": {
+   "fruttato": 0.9,
+   "boozy": 0.4,
+   "speziato": 0.2,
+   "miele": 0.2
+  },
+  "note": {
+   "mela": 1,
+   "mela rossa": 0.6,
+   "mela verde": 0.4,
+   "cannella": 0.3,
+   "miele": 0.2,
+   "liquore": 0.3
+  },
+  "misure": {
+   "dolcezza": 3,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "autunno": 1
+  },
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "sidro"
+  ]
+ },
+ {
+  "chiave": "bev-mojito",
+  "tipo": "bevanda",
+  "forme": [
+   "mojito",
+   "mojto",
+   "mohito",
+   "mojito analcolico",
+   "virgin mojito",
+   "rum lime e menta",
+   "menta e lime",
+   "lime e menta",
+   "mojito alla fragola"
+  ],
+  "evoca": "un mojito con menta e lime",
+  "accordi": {
+   "aromatico": 0.9,
+   "agrumato": 0.9,
+   "boozy": 0.4,
+   "gourmand": 0.15
+  },
+  "note": {
+   "menta": 1,
+   "lime": 1,
+   "rum bianco": 0.6,
+   "zucchero di canna": 0.4,
+   "note verdi": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "sera": 0.6
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "fresco",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "bev-pina-colada",
+  "tipo": "bevanda",
+  "forme": [
+   "piña colada",
+   "pinacolada",
+   "cocco e ananas",
+   "ananas e cocco",
+   "cocktail al cocco",
+   "drink al cocco",
+   "rum cocco e ananas"
+  ],
+  "evoca": "una piña colada",
+  "accordi": {
+   "solare": 0.9,
+   "fruttato": 0.8,
+   "gourmand": 0.4,
+   "boozy": 0.4
+  },
+  "note": {
+   "cocco": 1,
+   "ananas": 0.9,
+   "latte di cocco": 0.6,
+   "rum": 0.5,
+   "vaniglia": 0.3,
+   "panna montata": 0.2
+  },
+  "misure": {
+   "dolcezza": 5,
+   "freschezza": 2
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "bev-liquore-cocco",
+  "tipo": "bevanda",
+  "forme": [
+   "liquore al cocco",
+   "rum al cocco",
+   "crema al cocco alcolica",
+   "cocco e rum"
+  ],
+  "evoca": "un liquore al cocco",
+  "accordi": {
+   "solare": 0.9,
+   "boozy": 0.7,
+   "gourmand": 0.5,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "cocco": 1,
+   "rum bianco": 0.6,
+   "liquore": 0.5,
+   "vaniglia": 0.4,
+   "zucchero": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "sensuale",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "bev-cocktail-tropicale",
+  "tipo": "bevanda",
+  "forme": [
+   "cocktail tropicale",
+   "drink tropicale",
+   "cocktail esotico",
+   "cocktail alla frutta tropicale",
+   "mai tai",
+   "tiki",
+   "cocktail tiki",
+   "punch tropicale",
+   "planter's punch",
+   "cocktail con l'ombrellino"
+  ],
+  "evoca": "un cocktail tropicale con l'ombrellino",
+  "accordi": {
+   "fruttato": 0.9,
+   "boozy": 0.6,
+   "solare": 0.5,
+   "agrumato": 0.4
+  },
+  "note": {
+   "frutto della passione": 0.8,
+   "mango": 0.7,
+   "ananas": 0.7,
+   "rum": 0.6,
+   "lime": 0.4,
+   "mandorla": 0.2
+  },
+  "misure": {
+   "dolcezza": 4,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "sera": 0.6
+  },
+  "carattere": [
+   "allegro",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "bev-drink-frutta",
+  "tipo": "bevanda",
+  "forme": [
+   "drink alla frutta",
+   "cocktail alla frutta",
+   "cocktail fruttato",
+   "drink fruttato",
+   "cocktail colorato",
+   "cocktail dolce",
+   "cocktail analcolico",
+   "analcolico alla frutta",
+   "sex on the beach",
+   "cocktail da spiaggia"
+  ],
+  "evoca": "un cocktail alla frutta",
+  "accordi": {
+   "fruttato": 1,
+   "agrumato": 0.4,
+   "boozy": 0.3,
+   "gourmand": 0.2
+  },
+  "note": {
+   "pesca": 0.8,
+   "lampone": 0.6,
+   "arancia": 0.6,
+   "ananas": 0.4,
+   "melograno": 0.3,
+   "liquore": 0.2
+  },
+  "misure": {
+   "dolcezza": 4,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "bev-spritz",
+  "tipo": "bevanda",
+  "forme": [
+   "spritz",
+   "spriz",
+   "spritz arancione",
+   "aperitivo arancione",
+   "spritz al bitter",
+   "spritz amaro",
+   "bitter e prosecco",
+   "aperitivo col bitter",
+   "spritzino"
+  ],
+  "evoca": "uno spritz all'aperitivo",
+  "accordi": {
+   "agrumato": 0.9,
+   "boozy": 0.5,
+   "fruttato": 0.3,
+   "verde": 0.2
+  },
+  "note": {
+   "arancia amara": 1,
+   "arancia rossa": 0.7,
+   "rabarbaro": 0.4,
+   "pompelmo": 0.3,
+   "liquore": 0.4,
+   "note ozoniche": 0.2
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "estate": 0.9,
+   "primavera": 0.5
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "bitter",
+   "prosecco"
+  ]
+ },
+ {
+  "chiave": "bev-hugo",
+  "tipo": "bevanda",
+  "forme": [
+   "hugo",
+   "spritz hugo",
+   "hugo spritz",
+   "spritz al sambuco",
+   "sambuco e menta",
+   "fiori di sambuco da bere",
+   "sciroppo di sambuco"
+  ],
+  "evoca": "un hugo con sambuco e menta",
+  "accordi": {
+   "floreale-fresco": 0.7,
+   "aromatico": 0.7,
+   "agrumato": 0.5,
+   "boozy": 0.2
+  },
+  "note": {
+   "menta": 0.8,
+   "lime": 0.6,
+   "fiori": 0.6,
+   "mughetto": 0.3,
+   "note verdi": 0.3,
+   "pera": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "primavera": 0.8,
+   "estate": 0.8
+  },
+  "momento": {
+   "sera": 0.6
+  },
+  "carattere": [
+   "fresco",
+   "allegro"
+  ],
+  "manca": [
+   "sambuco"
+  ]
+ },
+ {
+  "chiave": "bev-negroni",
+  "tipo": "bevanda",
+  "forme": [
+   "negroni",
+   "negroni sbagliato",
+   "americano con gin",
+   "boulevardier",
+   "cocktail amaro",
+   "vermut",
+   "vermouth",
+   "vermut rosso",
+   "vermouth rosso"
+  ],
+  "evoca": "un negroni al banco",
+  "accordi": {
+   "boozy": 0.8,
+   "agrumato": 0.7,
+   "aromatico": 0.4,
+   "speziato": 0.3,
+   "legnoso": 0.2
+  },
+  "note": {
+   "arancia amara": 1,
+   "bacche di ginepro": 0.6,
+   "rabarbaro": 0.5,
+   "scorza di arancia": 0.5,
+   "chiodi di garofano": 0.2,
+   "liquore": 0.4
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 2
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "sicuro",
+   "elegante"
+  ],
+  "manca": [
+   "bitter",
+   "vermut"
+  ]
+ },
+ {
+  "chiave": "bev-gin-tonic",
+  "tipo": "bevanda",
+  "forme": [
+   "gin tonic",
+   "gin and tonic",
+   "gin lemon",
+   "gin",
+   "gin con cetriolo",
+   "gin fizz",
+   "tom collins",
+   "gin e ginepro"
+  ],
+  "evoca": "un gin tonic ghiacciato",
+  "accordi": {
+   "aromatico": 0.8,
+   "agrumato": 0.8,
+   "verde": 0.3,
+   "acquatico": 0.2
+  },
+  "note": {
+   "bacche di ginepro": 1,
+   "ginepro": 0.7,
+   "limone": 0.6,
+   "coriandolo": 0.4,
+   "cetriolo": 0.3,
+   "lime": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "fresco",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "bev-martini",
+  "tipo": "bevanda",
+  "forme": [
+   "martini",
+   "martini cocktail",
+   "dry martini",
+   "martini dry",
+   "vodka martini",
+   "martini con oliva",
+   "cocktail con l'oliva"
+  ],
+  "evoca": "un dry martini",
+  "accordi": {
+   "aromatico": 0.7,
+   "agrumato": 0.5,
+   "muschiato": 0.3,
+   "boozy": 0.5
+  },
+  "note": {
+   "bacche di ginepro": 0.9,
+   "limone": 0.5,
+   "aldeidi": 0.4,
+   "vodka al muschio": 0.4,
+   "foglie di olivo": 0.3
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 1,
+   "intensita": 3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata",
+   "speciale"
+  ],
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "bev-margarita",
+  "tipo": "bevanda",
+  "forme": [
+   "margarita",
+   "margherita cocktail",
+   "tequila",
+   "tequila sale e limone",
+   "tequila bum bum",
+   "paloma",
+   "tequila e lime",
+   "margarita col sale"
+  ],
+  "evoca": "un margarita col sale sul bordo",
+  "accordi": {
+   "agrumato": 1,
+   "boozy": 0.5,
+   "acquatico": 0.2,
+   "verde": 0.2
+  },
+  "note": {
+   "lime": 1,
+   "arancia amara": 0.5,
+   "sale": 0.5,
+   "pompelmo": 0.3,
+   "liquore": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "carattere": [
+   "audace",
+   "allegro"
+  ],
+  "manca": [
+   "agave"
+  ]
+ },
+ {
+  "chiave": "bev-mezcal",
+  "tipo": "bevanda",
+  "forme": [
+   "mezcal",
+   "mescal",
+   "tequila affumicata",
+   "distillato affumicato",
+   "cocktail affumicato",
+   "drink affumicato"
+  ],
+  "evoca": "un bicchiere di mezcal affumicato",
+  "accordi": {
+   "incenso": 0.7,
+   "boozy": 0.7,
+   "agrumato": 0.3,
+   "cuoio": 0.3
+  },
+  "note": {
+   "fumo": 1,
+   "liquore": 0.5,
+   "lime": 0.4,
+   "betulla": 0.4,
+   "cuoio": 0.3,
+   "pepe nero": 0.2
+  },
+  "misure": {
+   "intensita": 5,
+   "persistenza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "audace",
+   "misterioso"
+  ],
+  "manca": [
+   "agave"
+  ]
+ },
+ {
+  "chiave": "bev-daiquiri",
+  "tipo": "bevanda",
+  "forme": [
+   "daiquiri",
+   "daikiri",
+   "daiquiri alla fragola",
+   "daiquiri frozen",
+   "frozen alla fragola",
+   "cocktail frozen",
+   "frozen"
+  ],
+  "evoca": "un daiquiri alla fragola",
+  "accordi": {
+   "fruttato": 0.8,
+   "agrumato": 0.7,
+   "boozy": 0.5,
+   "gourmand": 0.2
+  },
+  "note": {
+   "lime": 0.9,
+   "fragola": 0.8,
+   "rum bianco": 0.7,
+   "zucchero di canna": 0.4
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "bev-cuba-libre",
+  "tipo": "bevanda",
+  "forme": [
+   "cuba libre",
+   "rum e cola",
+   "cubalibre"
+  ],
+  "evoca": "un cuba libre con rum, cola e lime",
+  "accordi": {
+   "boozy": 0.8,
+   "gourmand": 0.6,
+   "agrumato": 0.5,
+   "speziato": 0.3
+  },
+  "note": {
+   "rum": 1,
+   "caramello": 0.7,
+   "lime": 0.6,
+   "cannella": 0.3,
+   "vaniglia": 0.3
+  },
+  "misure": {
+   "dolcezza": 4,
+   "intensita": 3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro",
+   "audace"
+  ],
+  "manca": [
+   "cola"
+  ]
+ },
+ {
+  "chiave": "bev-caipirinha",
+  "tipo": "bevanda",
+  "forme": [
+   "caipirinha",
+   "caipiroska",
+   "caipirina",
+   "caipiroska alla fragola",
+   "cachaça",
+   "lime pestato",
+   "lime e zucchero di canna"
+  ],
+  "evoca": "una caipirinha con lime pestato",
+  "accordi": {
+   "agrumato": 1,
+   "gourmand": 0.3,
+   "boozy": 0.5,
+   "verde": 0.2
+  },
+  "note": {
+   "lime": 1,
+   "zucchero di canna": 0.7,
+   "canna da zucchero": 0.6,
+   "rum bianco": 0.5,
+   "note verdi": 0.2
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "bev-cosmopolitan",
+  "tipo": "bevanda",
+  "forme": [
+   "cosmopolitan",
+   "vodka e mirtillo rosso",
+   "succo di mirtillo rosso",
+   "cranberry",
+   "vodka lemon",
+   "vodka alla fragola",
+   "vodka alla pesca"
+  ],
+  "evoca": "un cosmopolitan rosa",
+  "accordi": {
+   "fruttato": 0.9,
+   "agrumato": 0.7,
+   "muschiato": 0.3,
+   "boozy": 0.4
+  },
+  "note": {
+   "ribes rosso": 0.8,
+   "mirtillo": 0.7,
+   "lime": 0.6,
+   "arancia": 0.4,
+   "vodka al muschio": 0.5,
+   "lampone": 0.3
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro",
+   "elegante"
+  ],
+  "manca": [
+   "mirtillo rosso"
+  ]
+ },
+ {
+  "chiave": "bev-bellini",
+  "tipo": "bevanda",
+  "forme": [
+   "bellini",
+   "pesca e prosecco",
+   "prosecco alla pesca",
+   "rossini",
+   "fragola e prosecco",
+   "mimosa cocktail",
+   "prosecco e arancia",
+   "brunch con le bollicine"
+  ],
+  "evoca": "un bellini, pesca bianca e bollicine",
+  "accordi": {
+   "fruttato": 1,
+   "boozy": 0.4,
+   "floreale-fresco": 0.2,
+   "muschiato": 0.1
+  },
+  "note": {
+   "pesca bianca": 1,
+   "pesca": 0.9,
+   "champagne rosé": 0.5,
+   "aldeidi": 0.3,
+   "fiori bianchi": 0.2
+  },
+  "misure": {
+   "dolcezza": 3,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "primavera": 0.6,
+   "estate": 0.8
+  },
+  "occasioni": [
+   "speciale",
+   "serata"
+  ],
+  "carattere": [
+   "allegro",
+   "romantico"
+  ],
+  "manca": [
+   "prosecco"
+  ]
+ },
+ {
+  "chiave": "bev-aperitivo",
+  "tipo": "bevanda",
+  "forme": [
+   "aperitivo",
+   "aperitivo al bar",
+   "aperitivo sul terrazzo",
+   "aperitivo in piazza",
+   "happy hour",
+   "apericena",
+   "aperitivo al tramonto",
+   "aperitivo con gli amici",
+   "bitter analcolico"
+  ],
+  "evoca": "l'ora dell'aperitivo",
+  "accordi": {
+   "agrumato": 0.8,
+   "boozy": 0.4,
+   "aromatico": 0.3,
+   "verde": 0.2
+  },
+  "note": {
+   "arancia amara": 0.9,
+   "bergamotto": 0.6,
+   "pompelmo": 0.5,
+   "rabarbaro": 0.4,
+   "pepe rosa": 0.3,
+   "liquore": 0.3
+  },
+  "misure": {
+   "freschezza": 3,
+   "intensita": 3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "bev-rum",
+  "tipo": "bevanda",
+  "forme": [
+   "rum",
+   "rhum",
+   "ron",
+   "bicchiere di rum",
+   "rum scuro",
+   "rum dei caraibi",
+   "rum dei pirati",
+   "rum speziato"
+  ],
+  "evoca": "un bicchiere di rum scuro",
+  "accordi": {
+   "boozy": 1,
+   "ambrato": 0.5,
+   "vaniglia": 0.5,
+   "gourmand": 0.4,
+   "speziato": 0.2
+  },
+  "note": {
+   "rum": 1,
+   "caramello": 0.6,
+   "vaniglia": 0.6,
+   "zucchero di canna": 0.5,
+   "cannella": 0.3,
+   "legno di cedro": 0.2
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.6,
+   "inverno": 0.7
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "sensuale",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "bev-rum-invecchiato",
+  "tipo": "bevanda",
+  "forme": [
+   "rum invecchiato",
+   "rum agricolo",
+   "rum vecchio",
+   "rum da meditazione",
+   "rum in botte",
+   "rum stravecchio",
+   "rum ambrato",
+   "rum pregiato"
+  ],
+  "evoca": "un rum invecchiato da meditazione",
+  "accordi": {
+   "boozy": 1,
+   "legnoso": 0.6,
+   "ambrato": 0.6,
+   "vaniglia": 0.5,
+   "tabacco": 0.3
+  },
+  "note": {
+   "rum": 1,
+   "quercia": 0.6,
+   "vaniglia": 0.6,
+   "fava tonka": 0.5,
+   "foglia di tabacco": 0.3,
+   "frutti secchi": 0.3,
+   "benzoino": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 5,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.8,
+   "inverno": 0.9
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata",
+   "speciale"
+  ],
+  "carattere": [
+   "sensuale",
+   "sicuro",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "bev-whisky",
+  "tipo": "bevanda",
+  "forme": [
+   "whisky",
+   "whiskey",
+   "wisky",
+   "uischi",
+   "bicchiere di whisky",
+   "whisky con ghiaccio",
+   "whisky liscio",
+   "whisky scozzese",
+   "scotch",
+   "single malt",
+   "whisky on the rocks"
+  ],
+  "evoca": "un bicchiere di whisky",
+  "accordi": {
+   "boozy": 1,
+   "legnoso": 0.7,
+   "ambrato": 0.4,
+   "miele": 0.3,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "whisky": 1,
+   "quercia": 0.7,
+   "miele": 0.4,
+   "vaniglia": 0.4,
+   "legno di cedro": 0.3,
+   "cuoio": 0.2
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "autunno": 0.7,
+   "inverno": 0.8
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "sicuro",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "bev-whisky-torbato",
+  "tipo": "bevanda",
+  "forme": [
+   "whisky torbato",
+   "whisky affumicato",
+   "torba",
+   "whisky alla torba",
+   "scotch torbato",
+   "whisky che sa di fumo",
+   "whisky dell'isola",
+   "whisky delle isole scozzesi"
+  ],
+  "evoca": "un whisky torbato",
+  "accordi": {
+   "boozy": 0.9,
+   "incenso": 0.7,
+   "cuoio": 0.5,
+   "legnoso": 0.5,
+   "acquatico": 0.15
+  },
+  "note": {
+   "whisky": 1,
+   "fumo": 0.9,
+   "betulla": 0.6,
+   "cuoio": 0.5,
+   "legno di guaiaco": 0.4,
+   "sale": 0.2
+  },
+  "misure": {
+   "intensita": 5,
+   "persistenza": 5,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "inverno": 0.9
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "audace",
+   "misterioso"
+  ],
+  "manca": [
+   "torba"
+  ]
+ },
+ {
+  "chiave": "bev-bourbon",
+  "tipo": "bevanda",
+  "forme": [
+   "bourbon",
+   "whiskey americano",
+   "whisky americano",
+   "old fashioned",
+   "manhattan",
+   "whisky sour",
+   "whiskey sour",
+   "bourbon con ghiaccio",
+   "bourbon e vaniglia"
+  ],
+  "evoca": "un old fashioned al bourbon",
+  "accordi": {
+   "boozy": 1,
+   "vaniglia": 0.7,
+   "legnoso": 0.5,
+   "gourmand": 0.4,
+   "agrumato": 0.2
+  },
+  "note": {
+   "whisky": 0.9,
+   "caramello": 0.7,
+   "vaniglia": 0.7,
+   "quercia": 0.5,
+   "scorza di arancia": 0.3,
+   "amarena": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.8,
+   "inverno": 0.8
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "sicuro",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "bev-crema-whisky",
+  "tipo": "bevanda",
+  "forme": [
+   "crema di whisky",
+   "liquore alla crema",
+   "crema irlandese",
+   "liquore cremoso",
+   "zabaione alcolico",
+   "eggnog",
+   "egg nog",
+   "liquore all'uovo",
+   "punch all'uovo"
+  ],
+  "evoca": "un liquore alla crema",
+  "accordi": {
+   "gourmand": 0.9,
+   "boozy": 0.7,
+   "vaniglia": 0.7,
+   "speziato": 0.2
+  },
+  "note": {
+   "panna montata": 0.7,
+   "vaniglia": 0.8,
+   "whisky": 0.5,
+   "liquore": 0.5,
+   "caramello": 0.5,
+   "noce moscata": 0.3
+  },
+  "misure": {
+   "dolcezza": 5,
+   "persistenza": 4
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "carattere": [
+   "coccola"
+  ],
+  "manca": [
+   "uovo"
+  ]
+ },
+ {
+  "chiave": "bev-bombardino",
+  "tipo": "bevanda",
+  "forme": [
+   "bombardino",
+   "bombardino caldo",
+   "bombardino con panna",
+   "calimero",
+   "drink del rifugio",
+   "bevanda calda in baita",
+   "zabaione caldo alcolico"
+  ],
+  "evoca": "un bombardino caldo in rifugio",
+  "accordi": {
+   "gourmand": 0.9,
+   "boozy": 0.8,
+   "vaniglia": 0.6,
+   "ambrato": 0.2
+  },
+  "note": {
+   "cognac": 0.7,
+   "panna montata": 0.7,
+   "vaniglia": 0.7,
+   "liquore": 0.6,
+   "caramello": 0.4,
+   "caffè": 0.2
+  },
+  "misure": {
+   "dolcezza": 5,
+   "intensita": 4
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "carattere": [
+   "coccola",
+   "allegro"
+  ],
+  "manca": [
+   "uovo"
+  ]
+ },
+ {
+  "chiave": "bev-cognac",
+  "tipo": "bevanda",
+  "forme": [
+   "cognac",
+   "brandy",
+   "armagnac",
+   "calvados",
+   "bicchiere di cognac",
+   "cognac dopo cena",
+   "brandy invecchiato",
+   "distillato di vino",
+   "cognac col sigaro",
+   "brandy davanti al camino"
+  ],
+  "evoca": "un cognac dopo cena",
+  "accordi": {
+   "boozy": 1,
+   "legnoso": 0.6,
+   "ambrato": 0.5,
+   "fruttato": 0.3,
+   "tabacco": 0.3
+  },
+  "note": {
+   "cognac": 1,
+   "quercia": 0.6,
+   "prugna": 0.5,
+   "vaniglia": 0.4,
+   "foglia di tabacco": 0.3,
+   "cuoio": 0.2
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 5,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.8,
+   "inverno": 1
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata",
+   "speciale"
+  ],
+  "carattere": [
+   "elegante",
+   "sicuro",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "bev-vino-rosso",
+  "tipo": "bevanda",
+  "forme": [
+   "vino rosso",
+   "bicchiere di vino rosso",
+   "calice di rosso",
+   "vino rosso corposo",
+   "rosso importante",
+   "barolo",
+   "chianti",
+   "amarone",
+   "primitivo",
+   "cantina di vino rosso"
+  ],
+  "evoca": "un calice di vino rosso",
+  "accordi": {
+   "boozy": 0.8,
+   "fruttato": 0.8,
+   "speziato": 0.4,
+   "legnoso": 0.5
+  },
+  "note": {
+   "prugna": 0.9,
+   "ciliegia nera": 0.8,
+   "ribes nero": 0.6,
+   "pepe nero": 0.4,
+   "quercia": 0.5,
+   "violetta": 0.3,
+   "liquore": 0.4
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4
+  },
+  "stagioni": {
+   "autunno": 0.9,
+   "inverno": 0.8
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata",
+   "romantico"
+  ],
+  "carattere": [
+   "sensuale",
+   "elegante"
+  ],
+  "manca": [
+   "vino"
+  ]
+ },
+ {
+  "chiave": "bev-vino-bianco",
+  "tipo": "bevanda",
+  "forme": [
+   "vino bianco",
+   "bianco fresco",
+   "calice di bianco",
+   "bicchiere di vino bianco",
+   "vino bianco fresco",
+   "vino bianco ghiacciato",
+   "vermentino",
+   "sauvignon",
+   "gewürztraminer",
+   "vino bianco aromatico"
+  ],
+  "evoca": "un calice di vino bianco fresco",
+  "accordi": {
+   "fruttato": 0.8,
+   "agrumato": 0.6,
+   "floreale-fresco": 0.3,
+   "verde": 0.3,
+   "boozy": 0.3
+  },
+  "note": {
+   "pera": 0.8,
+   "mela verde": 0.7,
+   "pesca bianca": 0.5,
+   "limone": 0.4,
+   "fiori bianchi": 0.3,
+   "note minerali": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "estate": 0.8,
+   "primavera": 0.7
+  },
+  "momento": {
+   "sera": 0.7
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "fresco",
+   "elegante"
+  ],
+  "manca": [
+   "vino",
+   "uva"
+  ]
+ },
+ {
+  "chiave": "bev-rose",
+  "tipo": "bevanda",
+  "forme": [
+   "rosé",
+   "vino rosé",
+   "vino rosato",
+   "rosato",
+   "calice di rosé",
+   "rosé ghiacciato",
+   "rosé della provenza",
+   "bicchiere di rosato"
+  ],
+  "evoca": "un calice di rosé ghiacciato",
+  "accordi": {
+   "fruttato": 0.9,
+   "rosa": 0.4,
+   "agrumato": 0.4,
+   "boozy": 0.3
+  },
+  "note": {
+   "fragola": 0.8,
+   "lampone": 0.7,
+   "pompelmo": 0.5,
+   "rosa": 0.4,
+   "pesca": 0.4,
+   "note minerali": 0.2
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "sera": 0.7
+  },
+  "occasioni": [
+   "serata",
+   "romantico"
+  ],
+  "carattere": [
+   "romantico",
+   "allegro"
+  ],
+  "manca": [
+   "vino"
+  ]
+ },
+ {
+  "chiave": "bev-champagne",
+  "tipo": "bevanda",
+  "forme": [
+   "champagne",
+   "champagne rosé",
+   "calice di champagne",
+   "flûte di champagne",
+   "brindisi con lo champagne",
+   "tappo che salta",
+   "bottiglia stappata",
+   "metodo classico",
+   "spumante"
+  ],
+  "evoca": "un calice di champagne per brindare",
+  "accordi": {
+   "fruttato": 0.6,
+   "boozy": 0.6,
+   "agrumato": 0.4,
+   "muschiato": 0.3,
+   "cipriato": 0.2
+  },
+  "note": {
+   "champagne rosé": 1,
+   "aldeidi": 0.6,
+   "pera": 0.5,
+   "limone": 0.4,
+   "mela verde": 0.3,
+   "muschio bianco": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 3
+  },
+  "momento": {
+   "sera": 0.9
+  },
+  "occasioni": [
+   "speciale",
+   "serata"
+  ],
+  "carattere": [
+   "elegante",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "bev-prosecco",
+  "tipo": "bevanda",
+  "forme": [
+   "prosecco",
+   "bollicine",
+   "calice di prosecco",
+   "calice di bollicine",
+   "flûte di prosecco",
+   "prosecchino",
+   "vino frizzante",
+   "brut",
+   "franciacorta",
+   "calice di spumante"
+  ],
+  "evoca": "un calice di bollicine",
+  "accordi": {
+   "fruttato": 0.8,
+   "agrumato": 0.5,
+   "floreale-fresco": 0.3,
+   "boozy": 0.4
+  },
+  "note": {
+   "mela verde": 0.8,
+   "pera": 0.8,
+   "fiore di pero": 0.4,
+   "aldeidi": 0.5,
+   "limone": 0.3,
+   "champagne rosé": 0.4
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "serata",
+   "speciale"
+  ],
+  "carattere": [
+   "allegro",
+   "elegante"
+  ],
+  "manca": [
+   "prosecco"
+  ]
+ },
+ {
+  "chiave": "bev-moscato",
+  "tipo": "bevanda",
+  "forme": [
+   "moscato",
+   "vino dolce",
+   "vino da dessert",
+   "passito",
+   "vin santo",
+   "vino liquoroso",
+   "marsala",
+   "vino da meditazione"
+  ],
+  "evoca": "un bicchierino di vino dolce da dessert",
+  "accordi": {
+   "boozy": 0.8,
+   "fruttato": 0.7,
+   "miele": 0.5,
+   "ambrato": 0.3
+  },
+  "note": {
+   "albicocca": 0.8,
+   "miele": 0.7,
+   "fico": 0.5,
+   "frutta candita": 0.4,
+   "frutti secchi": 0.4,
+   "liquore": 0.5
+  },
+  "misure": {
+   "dolcezza": 5,
+   "persistenza": 4
+  },
+  "stagioni": {
+   "autunno": 0.8,
+   "inverno": 0.7
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "coccola",
+   "sensuale"
+  ],
+  "manca": [
+   "uva",
+   "vino"
+  ]
+ },
+ {
+  "chiave": "bev-sangria",
+  "tipo": "bevanda",
+  "forme": [
+   "sangria",
+   "vino con la frutta",
+   "sangria bianca",
+   "sangria spagnola",
+   "caraffa di sangria",
+   "tinto de verano"
+  ],
+  "evoca": "una caraffa di sangria",
+  "accordi": {
+   "fruttato": 1,
+   "agrumato": 0.6,
+   "boozy": 0.5,
+   "speziato": 0.3
+  },
+  "note": {
+   "arancia": 0.8,
+   "prugna": 0.6,
+   "bacche rosse": 0.6,
+   "mela": 0.4,
+   "cannella": 0.4,
+   "liquore": 0.3
+  },
+  "misure": {
+   "dolcezza": 3,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "vino"
+  ]
+ },
+ {
+  "chiave": "bev-vin-brule",
+  "tipo": "bevanda",
+  "forme": [
+   "vin brulé",
+   "vino caldo",
+   "vino speziato",
+   "vino caldo con le spezie",
+   "vin brulé ai mercatini",
+   "glühwein",
+   "vino caldo dei mercatini",
+   "brulé"
+  ],
+  "evoca": "un vin brulé ai mercatini di Natale",
+  "accordi": {
+   "speziato": 1,
+   "boozy": 0.7,
+   "fruttato": 0.5,
+   "agrumato": 0.4,
+   "ambrato": 0.2
+  },
+  "note": {
+   "cannella": 1,
+   "chiodi di garofano": 0.8,
+   "arancia": 0.6,
+   "anice stellato": 0.5,
+   "prugna": 0.4,
+   "noce moscata": 0.4,
+   "liquore": 0.4
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "carattere": [
+   "coccola",
+   "allegro"
+  ],
+  "manca": [
+   "vino"
+  ]
+ },
+ {
+  "chiave": "bev-punch",
+  "tipo": "bevanda",
+  "forme": [
+   "punch",
+   "ponce",
+   "ponce livornese",
+   "punch caldo",
+   "punch al rum",
+   "punch all'arancia",
+   "grog",
+   "rum caldo",
+   "toddy",
+   "hot toddy"
+  ],
+  "evoca": "un punch caldo al rum",
+  "accordi": {
+   "boozy": 0.9,
+   "speziato": 0.6,
+   "agrumato": 0.5,
+   "miele": 0.3
+  },
+  "note": {
+   "rum": 1,
+   "scorza di arancia": 0.6,
+   "limone": 0.4,
+   "cannella": 0.5,
+   "miele": 0.3,
+   "zucchero di canna": 0.4,
+   "chiodi di garofano": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "momento": {
+   "sera": 0.9
+  },
+  "carattere": [
+   "coccola",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "bev-limoncello",
+  "tipo": "bevanda",
+  "forme": [
+   "limoncello",
+   "limoncino",
+   "liquore al limone",
+   "limoncello ghiacciato",
+   "crema di limoncello",
+   "bicchierino di limoncello",
+   "arancello",
+   "liquore all'arancia",
+   "liquore agli agrumi",
+   "mandarinetto"
+  ],
+  "evoca": "un bicchierino di limoncello ghiacciato",
+  "accordi": {
+   "agrumato": 1,
+   "boozy": 0.5,
+   "gourmand": 0.3
+  },
+  "note": {
+   "limone": 1,
+   "limone di amalfi": 0.7,
+   "limone candito": 0.6,
+   "liquore": 0.5,
+   "zucchero": 0.3,
+   "scorza di arancia": 0.2
+  },
+  "misure": {
+   "dolcezza": 4,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "bev-amaretto",
+  "tipo": "bevanda",
+  "forme": [
+   "amaretto",
+   "liquore all'amaretto",
+   "liquore alla mandorla",
+   "amaretto sour",
+   "liquore alla nocciola",
+   "nocino",
+   "liquore alle noci"
+  ],
+  "evoca": "un bicchierino di amaretto",
+  "accordi": {
+   "gourmand": 0.9,
+   "boozy": 0.7,
+   "vaniglia": 0.4,
+   "ambrato": 0.2
+  },
+  "note": {
+   "mandorla amara": 1,
+   "mandorla": 0.7,
+   "liquore": 0.6,
+   "caramello": 0.4,
+   "nocciola": 0.3,
+   "ciliegia": 0.2
+  },
+  "misure": {
+   "dolcezza": 4,
+   "persistenza": 4
+  },
+  "stagioni": {
+   "autunno": 0.7,
+   "inverno": 0.7
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "coccola",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "bev-amaro",
+  "tipo": "bevanda",
+  "forme": [
+   "amaro alle erbe",
+   "liquore alle erbe",
+   "digestivo",
+   "amaro dopo cena",
+   "amaro della casa",
+   "genziana",
+   "liquore alla genziana",
+   "génépy",
+   "genepì",
+   "amaro di montagna",
+   "rabarbaro da bere"
+  ],
+  "evoca": "un amaro alle erbe dopo cena",
+  "accordi": {
+   "aromatico": 0.9,
+   "boozy": 0.7,
+   "verde": 0.4,
+   "speziato": 0.3,
+   "legnoso": 0.2
+  },
+  "note": {
+   "liquore": 0.8,
+   "artemisia": 0.7,
+   "rabarbaro": 0.6,
+   "liquirizia": 0.5,
+   "arancia amara": 0.5,
+   "salvia": 0.3,
+   "cardamomo": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4,
+   "dolcezza": 2
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "sicuro",
+   "misterioso"
+  ],
+  "manca": [
+   "genziana"
+  ]
+ },
+ {
+  "chiave": "bev-mirto",
+  "tipo": "bevanda",
+  "forme": [
+   "mirto sardo",
+   "liquore di mirto",
+   "mirto rosso",
+   "mirto bianco",
+   "bicchierino di mirto"
+  ],
+  "evoca": "un bicchierino di mirto sardo",
+  "accordi": {
+   "aromatico": 0.8,
+   "boozy": 0.6,
+   "fruttato": 0.5,
+   "verde": 0.3
+  },
+  "note": {
+   "mirto": 1,
+   "bacche selvatiche": 0.6,
+   "liquore": 0.6,
+   "mirtillo": 0.4,
+   "bacche di ginepro": 0.3
+  },
+  "misure": {
+   "dolcezza": 3,
+   "intensita": 3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "bev-sambuca-anice",
+  "tipo": "bevanda",
+  "forme": [
+   "sambuca",
+   "sambuca con la mosca",
+   "sambuca con i chicchi di caffè",
+   "liquore all'anice",
+   "anisetta",
+   "anice da bere",
+   "pastis",
+   "ouzo",
+   "rakı",
+   "mistrà"
+  ],
+  "evoca": "una sambuca con i chicchi di caffè",
+  "accordi": {
+   "aromatico": 0.9,
+   "boozy": 0.6,
+   "gourmand": 0.3,
+   "speziato": 0.3
+  },
+  "note": {
+   "anice": 1,
+   "anice stellato": 0.8,
+   "liquirizia": 0.5,
+   "liquore": 0.5,
+   "caffè": 0.2,
+   "zucchero": 0.2
+  },
+  "misure": {
+   "dolcezza": 3,
+   "intensita": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "audace"
+  ]
+ },
+ {
+  "chiave": "bev-assenzio",
+  "tipo": "bevanda",
+  "forme": [
+   "assenzio",
+   "fata verde",
+   "liquore d'assenzio",
+   "absinthe",
+   "assenzio con lo zucchero"
+  ],
+  "evoca": "un bicchiere di assenzio, la fata verde",
+  "accordi": {
+   "aromatico": 0.9,
+   "verde": 0.6,
+   "boozy": 0.6,
+   "speziato": 0.2
+  },
+  "note": {
+   "artemisia": 1,
+   "anice": 0.7,
+   "liquore": 0.5,
+   "menta": 0.2,
+   "note verdi": 0.4
+  },
+  "misure": {
+   "intensita": 5,
+   "persistenza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "misterioso",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "bev-grappa",
+  "tipo": "bevanda",
+  "forme": [
+   "grappa",
+   "grappa barricata",
+   "grappino",
+   "bicchierino di grappa",
+   "acquavite",
+   "distillato",
+   "grappa di montagna",
+   "grappa al mirtillo",
+   "slivovitz"
+  ],
+  "evoca": "un grappino dopo cena",
+  "accordi": {
+   "boozy": 0.9,
+   "fruttato": 0.4,
+   "legnoso": 0.4,
+   "aromatico": 0.2
+  },
+  "note": {
+   "liquore": 0.9,
+   "pera": 0.5,
+   "quercia": 0.4,
+   "fieno": 0.3,
+   "prugna": 0.3,
+   "vaniglia": 0.2
+  },
+  "misure": {
+   "intensita": 5,
+   "dolcezza": 1
+  },
+  "momento": {
+   "sera": 1
+  },
+  "stagioni": {
+   "inverno": 0.7
+  },
+  "carattere": [
+   "sicuro",
+   "audace"
+  ],
+  "manca": [
+   "grappa"
+  ]
+ },
+ {
+  "chiave": "bev-sake",
+  "tipo": "bevanda",
+  "forme": [
+   "sake",
+   "vino di riso",
+   "sake caldo",
+   "liquore giapponese",
+   "umeshu",
+   "liquore di prugne giapponese"
+  ],
+  "evoca": "un sorso di sake",
+  "accordi": {
+   "muschiato": 0.6,
+   "fruttato": 0.5,
+   "floreale-fresco": 0.4,
+   "boozy": 0.5
+  },
+  "note": {
+   "pera": 0.6,
+   "muschio bianco": 0.6,
+   "fiori bianchi": 0.4,
+   "prugna": 0.4,
+   "note minerali": 0.4,
+   "liquore": 0.4
+  },
+  "misure": {
+   "intensita": 2,
+   "freschezza": 3
+  },
+  "carattere": [
+   "calmo",
+   "elegante"
+  ],
+  "manca": [
+   "riso",
+   "sake"
+  ]
+ },
+ {
+  "chiave": "bev-vodka",
+  "tipo": "bevanda",
+  "forme": [
+   "vodka",
+   "vodka liscia",
+   "vodka ghiacciata",
+   "shottino di vodka",
+   "vodka tonic",
+   "vodka con ghiaccio",
+   "vodka russa"
+  ],
+  "evoca": "un bicchierino di vodka ghiacciata",
+  "accordi": {
+   "muschiato": 0.7,
+   "boozy": 0.7,
+   "acquatico": 0.3,
+   "agrumato": 0.2
+  },
+  "note": {
+   "vodka al muschio": 1,
+   "aldeidi": 0.5,
+   "note ozoniche": 0.4,
+   "muschio bianco": 0.4,
+   "limone": 0.2
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "audace",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "bev-birra",
+  "tipo": "bevanda",
+  "forme": [
+   "birra",
+   "birretta",
+   "birra fresca",
+   "birra alla spina",
+   "boccale di birra",
+   "pinta",
+   "pinta di birra",
+   "birra artigianale",
+   "birra bionda",
+   "birra ghiacciata",
+   "birra con gli amici",
+   "ipa"
+  ],
+  "evoca": "una birra fresca alla spina",
+  "accordi": {
+   "verde": 0.6,
+   "miele": 0.5,
+   "agrumato": 0.4,
+   "aromatico": 0.3
+  },
+  "note": {
+   "fieno": 0.8,
+   "miele": 0.6,
+   "pompelmo": 0.5,
+   "note verdi": 0.4,
+   "cannabis": 0.2
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "birra",
+   "luppolo",
+   "malto"
+  ]
+ },
+ {
+  "chiave": "bev-birra-scura",
+  "tipo": "bevanda",
+  "forme": [
+   "birra scura",
+   "birra rossa",
+   "stout",
+   "birra doppio malto",
+   "birra al caffè",
+   "birra natalizia",
+   "birra d'abbazia",
+   "birra trappista"
+  ],
+  "evoca": "una birra scura",
+  "accordi": {
+   "gourmand": 0.6,
+   "boozy": 0.5,
+   "miele": 0.4,
+   "tabacco": 0.2
+  },
+  "note": {
+   "caramello": 0.8,
+   "caffè": 0.5,
+   "cacao": 0.5,
+   "miele": 0.4,
+   "frutti secchi": 0.3,
+   "fieno": 0.2
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.7,
+   "inverno": 0.8
+  },
+  "momento": {
+   "sera": 0.9
+  },
+  "carattere": [
+   "coccola"
+  ],
+  "manca": [
+   "birra",
+   "malto"
+  ]
+ },
+ {
+  "chiave": "bev-idromele",
+  "tipo": "bevanda",
+  "forme": [
+   "idromele",
+   "vino di miele",
+   "bevanda al miele",
+   "liquore al miele",
+   "miele e grappa",
+   "grappa al miele"
+  ],
+  "evoca": "un calice di idromele",
+  "accordi": {
+   "miele": 1,
+   "boozy": 0.6,
+   "ambrato": 0.3,
+   "fruttato": 0.2
+  },
+  "note": {
+   "miele": 1,
+   "cera d'api": 0.6,
+   "liquore": 0.5,
+   "mela": 0.3,
+   "benzoino": 0.3
+  },
+  "misure": {
+   "dolcezza": 4,
+   "persistenza": 3
+  },
+  "stagioni": {
+   "autunno": 0.7,
+   "inverno": 0.6
+  },
+  "carattere": [
+   "coccola",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "bev-sciroppo-menta",
+  "tipo": "bevanda",
+  "forme": [
+   "sciroppo di menta",
+   "latte e menta",
+   "acqua e menta",
+   "menta con ghiaccio",
+   "bibita alla menta",
+   "granatina",
+   "sciroppo di granatina",
+   "tamarindo"
+  ],
+  "evoca": "un bicchiere di latte e menta",
+  "accordi": {
+   "aromatico": 0.8,
+   "gourmand": 0.5,
+   "muschiato": 0.2
+  },
+  "note": {
+   "menta": 1,
+   "zucchero": 0.5,
+   "latte": 0.4,
+   "melograno": 0.2,
+   "vaniglia": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "bev-succo-mirtillo-frutti",
+  "tipo": "bevanda",
+  "forme": [
+   "succo di mirtillo",
+   "succo ai frutti di bosco",
+   "succo di melograno",
+   "succo di pera",
+   "succo di pesca",
+   "succo all'albicocca",
+   "succo ace",
+   "succhi di frutta"
+  ],
+  "evoca": "un succo di frutta",
+  "accordi": {
+   "fruttato": 1,
+   "gourmand": 0.2,
+   "agrumato": 0.2
+  },
+  "note": {
+   "mirtillo": 0.7,
+   "melograno": 0.6,
+   "pera": 0.5,
+   "pesca": 0.5,
+   "albicocca": 0.5,
+   "bacche selvatiche": 0.4
+  },
+  "misure": {
+   "dolcezza": 4,
+   "intensita": 2
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "bev-anguria-cocktail",
+  "tipo": "bevanda",
+  "forme": [
+   "succo di anguria",
+   "anguria frullata",
+   "drink all'anguria",
+   "acqua di anguria",
+   "succo di melone",
+   "cocktail all'anguria",
+   "agua fresca"
+  ],
+  "evoca": "un succo d'anguria ghiacciato",
+  "accordi": {
+   "fruttato": 1,
+   "acquatico": 0.5,
+   "verde": 0.3
+  },
+  "note": {
+   "anguria": 1,
+   "melone": 0.7,
+   "note acquatiche": 0.5,
+   "cetriolo": 0.3,
+   "menta": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco",
+   "allegro"
+  ]
+ }
+]

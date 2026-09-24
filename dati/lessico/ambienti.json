@@ -1,0 +1,3543 @@
+[
+ {
+  "chiave": "amb-casa",
+  "tipo": "ambiente",
+  "forme": [
+   "casa",
+   "aria di casa",
+   "calore di casa",
+   "casa accogliente",
+   "focolare domestico",
+   "tra le mura di casa",
+   "sentirsi a casa"
+  ],
+  "evoca": "l'aria di casa",
+  "accordi": {
+   "muschiato": 0.8,
+   "vaniglia": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "muschio bianco": 1,
+   "cachemire": 0.6,
+   "vaniglia": 0.5,
+   "legno di cedro": 0.4,
+   "fiore d'arancio": 0.3
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "amb-casa-pulita",
+  "tipo": "ambiente",
+  "forme": [
+   "casa pulita",
+   "casa appena pulita",
+   "casa appena lavata",
+   "pavimenti lavati",
+   "pavimenti appena lavati",
+   "detersivo per pavimenti",
+   "profumo di detersivo",
+   "pulizie di casa"
+  ],
+  "evoca": "una casa appena pulita",
+  "accordi": {
+   "muschiato": 0.9,
+   "floreale-fresco": 0.4,
+   "agrumato": 0.3
+  },
+  "note": {
+   "muschio bianco": 1,
+   "note pulite": 0.8,
+   "mughetto": 0.5,
+   "limone": 0.4,
+   "aldeidi": 0.4
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "manca": [
+   "detersivo"
+  ]
+ },
+ {
+  "chiave": "amb-bucato-steso",
+  "tipo": "ambiente",
+  "forme": [
+   "bucato steso",
+   "bucato",
+   "panni stesi",
+   "panni appena lavati",
+   "lenzuola pulite",
+   "lenzuola stese al sole",
+   "lenzuola fresche di bucato",
+   "biancheria pulita",
+   "ammorbidente",
+   "bucato fresco"
+  ],
+  "evoca": "il bucato steso al sole",
+  "accordi": {
+   "muschiato": 1,
+   "floreale-fresco": 0.3,
+   "cipriato": 0.3,
+   "solare": 0.2
+  },
+  "note": {
+   "muschio bianco": 1,
+   "aldeidi": 0.7,
+   "note pulite": 0.7,
+   "mughetto": 0.4,
+   "iris": 0.3,
+   "fiori bianchi": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "amb-lavanderia",
+  "tipo": "ambiente",
+  "forme": [
+   "lavanderia",
+   "lavanderia a gettoni",
+   "tintoria",
+   "stireria",
+   "ferro da stiro",
+   "vapore del ferro da stiro",
+   "camicie stirate",
+   "camicia appena stirata"
+  ],
+  "evoca": "una lavanderia",
+  "accordi": {
+   "muschiato": 0.9,
+   "cipriato": 0.4,
+   "floreale-fresco": 0.2
+  },
+  "note": {
+   "muschio bianco": 1,
+   "aldeidi": 0.7,
+   "note pulite": 0.6,
+   "note talcate": 0.4,
+   "iris": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "amb-armadio-lavanda",
+  "tipo": "ambiente",
+  "forme": [
+   "armadio con la lavanda",
+   "lavanda nell'armadio",
+   "sacchetti di lavanda",
+   "sacchettini di lavanda",
+   "cassetti con la lavanda",
+   "biancheria alla lavanda",
+   "cassetto della biancheria",
+   "armadio profumato"
+  ],
+  "evoca": "un armadio con i sacchetti di lavanda",
+  "accordi": {
+   "aromatico": 0.9,
+   "muschiato": 0.6,
+   "cipriato": 0.3
+  },
+  "note": {
+   "lavanda": 1,
+   "muschio bianco": 0.6,
+   "note talcate": 0.4,
+   "iris": 0.3,
+   "fava tonka": 0.2
+  },
+  "carattere": [
+   "calmo",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "amb-bagno-doccia",
+  "tipo": "ambiente",
+  "forme": [
+   "bagno dopo la doccia",
+   "bagno pieno di vapore",
+   "bagnoschiuma",
+   "vasca da bagno",
+   "schiuma da bagno",
+   "bagno caldo con la schiuma",
+   "stanza da bagno",
+   "box doccia"
+  ],
+  "evoca": "il bagno dopo la doccia",
+  "accordi": {
+   "muschiato": 0.9,
+   "acquatico": 0.4,
+   "agrumato": 0.3,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "muschio bianco": 1,
+   "note pulite": 0.7,
+   "bergamotto": 0.4,
+   "note acquatiche": 0.4,
+   "neroli": 0.3,
+   "lavanda": 0.2
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 2
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "amb-spa",
+  "tipo": "ambiente",
+  "forme": [
+   "spa",
+   "centro benessere",
+   "beauty farm",
+   "centro estetico",
+   "wellness",
+   "percorso benessere",
+   "giornata alla spa",
+   "spa dell'hotel"
+  ],
+  "evoca": "una spa",
+  "accordi": {
+   "muschiato": 0.7,
+   "tè": 0.6,
+   "aromatico": 0.5,
+   "verde": 0.3
+  },
+  "note": {
+   "tè verde": 1,
+   "muschio bianco": 0.7,
+   "bambù": 0.6,
+   "loto": 0.4,
+   "menta": 0.4,
+   "zenzero": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 2
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "eucalipto"
+  ]
+ },
+ {
+  "chiave": "amb-hammam",
+  "tipo": "ambiente",
+  "forme": [
+   "hammam",
+   "hamam",
+   "bagno turco",
+   "bagno di vapore",
+   "bagno arabo",
+   "sapone nero",
+   "rituale dell'hammam"
+  ],
+  "evoca": "il vapore di un hammam",
+  "accordi": {
+   "floreale-bianco": 0.6,
+   "muschiato": 0.6,
+   "ambrato": 0.4,
+   "rosa": 0.4
+  },
+  "note": {
+   "fiore d'arancio": 1,
+   "acqua di rose": 0.6,
+   "muschio bianco": 0.6,
+   "note pulite": 0.4,
+   "ambra": 0.4,
+   "foglie di olivo": 0.3
+  },
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "calmo",
+   "sensuale"
+  ],
+  "manca": [
+   "eucalipto",
+   "sapone nero"
+  ]
+ },
+ {
+  "chiave": "amb-sauna",
+  "tipo": "ambiente",
+  "forme": [
+   "sauna",
+   "sauna finlandese",
+   "bagno finlandese",
+   "sauna in legno",
+   "cabina della sauna",
+   "sauna con la betulla"
+  ],
+  "evoca": "il legno caldo di una sauna",
+  "accordi": {
+   "legnoso": 1,
+   "verde": 0.3,
+   "incenso": 0.3
+  },
+  "note": {
+   "betulla": 1,
+   "abete": 0.7,
+   "legno di cedro": 0.6,
+   "resina di abete": 0.5,
+   "fumo": 0.3,
+   "note minerali": 0.2
+  },
+  "misure": {
+   "intensita": 3
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "eucalipto"
+  ]
+ },
+ {
+  "chiave": "amb-terme",
+  "tipo": "ambiente",
+  "forme": [
+   "terme",
+   "stabilimento termale",
+   "piscina termale",
+   "acque termali",
+   "vasca termale",
+   "bagni termali",
+   "centro termale"
+  ],
+  "evoca": "le acque delle terme",
+  "accordi": {
+   "acquatico": 0.7,
+   "muschiato": 0.5,
+   "verde": 0.3
+  },
+  "note": {
+   "note minerali": 1,
+   "muschio bianco": 0.6,
+   "note acquatiche": 0.5,
+   "sale": 0.5,
+   "bambù": 0.3
+  },
+  "misure": {
+   "freschezza": 3,
+   "intensita": 2
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "amb-biblioteca",
+  "tipo": "ambiente",
+  "forme": [
+   "biblioteca",
+   "biblioteca antica",
+   "vecchia biblioteca",
+   "sala di lettura",
+   "archivio",
+   "archivio storico",
+   "biblioteca di un palazzo"
+  ],
+  "evoca": "una vecchia biblioteca",
+  "accordi": {
+   "legnoso": 0.8,
+   "vaniglia": 0.4,
+   "cipriato": 0.4,
+   "cuoio": 0.3
+  },
+  "note": {
+   "legno di cedro": 1,
+   "papiro": 0.6,
+   "vaniglia": 0.5,
+   "inchiostro": 0.5,
+   "cuoio": 0.4,
+   "iris": 0.3,
+   "fava tonka": 0.3
+  },
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ],
+  "manca": [
+   "carta"
+  ]
+ },
+ {
+  "chiave": "amb-libreria-antica",
+  "tipo": "ambiente",
+  "forme": [
+   "libreria antica",
+   "libreria antiquaria",
+   "libraio antiquario",
+   "libreria dell'usato",
+   "bottega di libri usati",
+   "bancarella di libri",
+   "mercatino dei libri"
+  ],
+  "evoca": "una libreria antiquaria",
+  "accordi": {
+   "legnoso": 0.7,
+   "vaniglia": 0.5,
+   "cuoio": 0.4,
+   "tabacco": 0.3
+  },
+  "note": {
+   "papiro": 0.7,
+   "legno di cedro": 0.6,
+   "vaniglia": 0.6,
+   "cuoio": 0.5,
+   "fava tonka": 0.4,
+   "tabacco": 0.3
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ],
+  "manca": [
+   "carta"
+  ]
+ },
+ {
+  "chiave": "amb-libreria",
+  "tipo": "ambiente",
+  "forme": [
+   "libreria",
+   "negozio di libri",
+   "grande libreria",
+   "libreria di quartiere",
+   "scaffali di libri"
+  ],
+  "evoca": "una libreria",
+  "accordi": {
+   "legnoso": 0.7,
+   "muschiato": 0.4,
+   "cipriato": 0.3
+  },
+  "note": {
+   "papiro": 0.8,
+   "inchiostro": 0.6,
+   "legni chiari": 0.5,
+   "legno di cedro": 0.5,
+   "muschio bianco": 0.4
+  },
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "carta"
+  ]
+ },
+ {
+  "chiave": "amb-studio-scrivania",
+  "tipo": "ambiente",
+  "forme": [
+   "studio con la scrivania di legno",
+   "scrivania di legno",
+   "studio con la scrivania",
+   "studio antico",
+   "studio del notaio",
+   "studio del professore",
+   "scrittoio",
+   "stanza dello studio"
+  ],
+  "evoca": "uno studio con la scrivania di legno",
+  "accordi": {
+   "legnoso": 0.9,
+   "cuoio": 0.5,
+   "tabacco": 0.3
+  },
+  "note": {
+   "legno di cedro": 1,
+   "cuoio": 0.6,
+   "inchiostro": 0.5,
+   "sandalo": 0.4,
+   "vetiver": 0.3,
+   "tabacco": 0.3
+  },
+  "occasioni": [
+   "ufficio"
+  ],
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "amb-chiesa",
+  "tipo": "ambiente",
+  "forme": [
+   "chiesa",
+   "chiesa antica",
+   "chiesetta",
+   "chiesa di campagna",
+   "sacrestia",
+   "messa",
+   "candele in chiesa"
+  ],
+  "evoca": "una chiesa antica",
+  "accordi": {
+   "incenso": 1,
+   "ambrato": 0.4,
+   "legnoso": 0.4,
+   "miele": 0.2
+  },
+  "note": {
+   "incenso": 1,
+   "olibano": 0.8,
+   "mirra": 0.6,
+   "cera d'api": 0.4,
+   "labdano": 0.3,
+   "legno di cedro": 0.3
+  },
+  "misure": {
+   "persistenza": 4
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "amb-cattedrale",
+  "tipo": "ambiente",
+  "forme": [
+   "cattedrale",
+   "cattedrale gotica",
+   "duomo",
+   "basilica",
+   "navata",
+   "navata della cattedrale"
+  ],
+  "evoca": "la navata di una cattedrale",
+  "accordi": {
+   "incenso": 1,
+   "legnoso": 0.4,
+   "ambrato": 0.3,
+   "cipriato": 0.2
+  },
+  "note": {
+   "olibano": 1,
+   "incenso": 0.9,
+   "mirra": 0.6,
+   "elemi": 0.4,
+   "note minerali": 0.3,
+   "legno di cedro": 0.3
+  },
+  "misure": {
+   "persistenza": 4,
+   "intensita": 3
+  },
+  "carattere": [
+   "misterioso",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "amb-monastero",
+  "tipo": "ambiente",
+  "forme": [
+   "monastero",
+   "convento",
+   "abbazia",
+   "chiostro",
+   "eremo",
+   "certosa",
+   "orto dei frati"
+  ],
+  "evoca": "il chiostro di un monastero",
+  "accordi": {
+   "incenso": 0.7,
+   "aromatico": 0.6,
+   "legnoso": 0.4,
+   "miele": 0.3
+  },
+  "note": {
+   "olibano": 0.8,
+   "salvia": 0.6,
+   "incenso": 0.6,
+   "rosmarino": 0.5,
+   "cera d'api": 0.4,
+   "cipresso": 0.4
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "amb-tempio",
+  "tipo": "ambiente",
+  "forme": [
+   "tempio",
+   "templi",
+   "tempio buddista",
+   "tempio orientale",
+   "pagoda",
+   "santuario"
+  ],
+  "evoca": "un tempio orientale",
+  "accordi": {
+   "incenso": 1,
+   "legnoso": 0.6,
+   "oud": 0.3
+  },
+  "note": {
+   "incenso": 0.8,
+   "sandalo": 0.8,
+   "legno di agar": 0.5,
+   "olibano": 0.4,
+   "palo santo": 0.3,
+   "mirra": 0.3
+  },
+  "misure": {
+   "persistenza": 4
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "amb-falegnameria",
+  "tipo": "ambiente",
+  "forme": [
+   "bottega del falegname",
+   "falegnameria",
+   "falegname",
+   "laboratorio del falegname",
+   "banco del falegname",
+   "ebanista",
+   "bottega dell'ebanista",
+   "trucioli di legno"
+  ],
+  "evoca": "la bottega di un falegname",
+  "accordi": {
+   "legnoso": 1,
+   "verde": 0.3,
+   "ambrato": 0.2
+  },
+  "note": {
+   "legno di cedro": 1,
+   "quercia": 0.6,
+   "abete": 0.5,
+   "legni chiari": 0.5,
+   "resina di abete": 0.4,
+   "vetiver": 0.3
+  },
+  "carattere": [
+   "calmo",
+   "sicuro"
+  ],
+  "manca": [
+   "pino"
+  ]
+ },
+ {
+  "chiave": "amb-segheria",
+  "tipo": "ambiente",
+  "forme": [
+   "segheria",
+   "deposito di legname",
+   "tronchi tagliati",
+   "tronchi appena segati",
+   "cataste di legna",
+   "legnaia"
+  ],
+  "evoca": "una segheria di montagna",
+  "accordi": {
+   "legnoso": 1,
+   "verde": 0.5
+  },
+  "note": {
+   "abete": 1,
+   "resina di abete": 0.7,
+   "legno di cedro": 0.6,
+   "cipresso": 0.5,
+   "quercia": 0.4,
+   "aghi di pino": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "manca": [
+   "pino"
+  ]
+ },
+ {
+  "chiave": "amb-liuteria",
+  "tipo": "ambiente",
+  "forme": [
+   "liuteria",
+   "liutaio",
+   "bottega del liutaio",
+   "laboratorio di violini",
+   "vernice dei violini",
+   "violini in legno"
+  ],
+  "evoca": "la bottega di un liutaio",
+  "accordi": {
+   "legnoso": 0.9,
+   "ambrato": 0.5,
+   "incenso": 0.2
+  },
+  "note": {
+   "legno di cedro": 0.6,
+   "benzoino": 0.6,
+   "ebano": 0.5,
+   "resine": 0.5,
+   "labdano": 0.4,
+   "sandalo": 0.3
+  },
+  "carattere": [
+   "elegante",
+   "calmo"
+  ],
+  "manca": [
+   "colofonia"
+  ]
+ },
+ {
+  "chiave": "amb-sartoria",
+  "tipo": "ambiente",
+  "forme": [
+   "sartoria",
+   "sartoria su misura",
+   "sarto",
+   "bottega del sarto",
+   "atelier di moda",
+   "negozio di tessuti",
+   "merceria",
+   "rotoli di stoffa"
+  ],
+  "evoca": "una sartoria",
+  "accordi": {
+   "cipriato": 0.7,
+   "muschiato": 0.6,
+   "legnoso": 0.3
+  },
+  "note": {
+   "iris": 1,
+   "cachemire": 0.7,
+   "muschio bianco": 0.6,
+   "aldeidi": 0.4,
+   "violetta": 0.3,
+   "legno di cedro": 0.3
+  },
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "amb-pelletteria",
+  "tipo": "ambiente",
+  "forme": [
+   "pelletteria",
+   "laboratorio di pelletteria",
+   "negozio di pelle",
+   "bottega del pellaio",
+   "valigeria",
+   "selleria artigiana"
+  ],
+  "evoca": "una pelletteria artigiana",
+  "accordi": {
+   "cuoio": 1,
+   "legnoso": 0.3,
+   "ambrato": 0.3
+  },
+  "note": {
+   "cuoio": 1,
+   "pelle": 0.6,
+   "betulla": 0.5,
+   "zafferano": 0.4,
+   "iris": 0.3,
+   "labdano": 0.3
+  },
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "amb-conceria",
+  "tipo": "ambiente",
+  "forme": [
+   "conceria",
+   "concia delle pelli",
+   "pelli conciate",
+   "laboratorio di concia"
+  ],
+  "evoca": "una conceria",
+  "accordi": {
+   "cuoio": 1,
+   "incenso": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "cuoio": 1,
+   "betulla": 0.8,
+   "fumo": 0.4,
+   "labdano": 0.4,
+   "legno di guaiaco": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4
+  },
+  "carattere": [
+   "audace"
+  ]
+ },
+ {
+  "chiave": "amb-calzolaio",
+  "tipo": "ambiente",
+  "forme": [
+   "calzolaio",
+   "ciabattino",
+   "bottega del calzolaio",
+   "calzoleria",
+   "lucido da scarpe",
+   "negozio di scarpe",
+   "scarpe fatte a mano"
+  ],
+  "evoca": "la bottega di un calzolaio",
+  "accordi": {
+   "cuoio": 1,
+   "legnoso": 0.3,
+   "miele": 0.2
+  },
+  "note": {
+   "cuoio": 1,
+   "betulla": 0.5,
+   "cera d'api": 0.4,
+   "labdano": 0.3,
+   "legno di cedro": 0.3
+  },
+  "carattere": [
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "amb-scuderia",
+  "tipo": "ambiente",
+  "forme": [
+   "scuderia",
+   "stalla dei cavalli",
+   "box dei cavalli",
+   "selleria",
+   "finimenti",
+   "selle di cuoio"
+  ],
+  "evoca": "una scuderia",
+  "accordi": {
+   "cuoio": 0.9,
+   "verde": 0.4,
+   "aromatico": 0.3,
+   "muschiato": 0.3
+  },
+  "note": {
+   "cuoio": 1,
+   "fieno": 0.6,
+   "pelle": 0.5,
+   "betulla": 0.4,
+   "note animali": 0.3,
+   "muschio di quercia": 0.3
+  },
+  "carattere": [
+   "audace",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "amb-maneggio",
+  "tipo": "ambiente",
+  "forme": [
+   "maneggio",
+   "equitazione",
+   "lezione di equitazione",
+   "centro ippico",
+   "cavallerizza",
+   "concorso ippico"
+  ],
+  "evoca": "un maneggio",
+  "accordi": {
+   "cuoio": 0.8,
+   "verde": 0.6,
+   "legnoso": 0.3
+  },
+  "note": {
+   "cuoio": 0.9,
+   "fieno": 0.7,
+   "note verdi": 0.5,
+   "vetiver": 0.4,
+   "betulla": 0.3,
+   "muschio di quercia": 0.3
+  },
+  "occasioni": [
+   "sport"
+  ],
+  "carattere": [
+   "sicuro",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "amb-fienile",
+  "tipo": "ambiente",
+  "forme": [
+   "granaio",
+   "fieno in cascina"
+  ],
+  "evoca": "un fienile",
+  "accordi": {
+   "verde": 0.6,
+   "aromatico": 0.6,
+   "vaniglia": 0.4,
+   "miele": 0.2
+  },
+  "note": {
+   "fieno": 1,
+   "cumarina": 0.6,
+   "fava tonka": 0.6,
+   "camomilla": 0.4,
+   "miele": 0.3,
+   "tabacco": 0.3
+  },
+  "stagioni": {
+   "estate": 0.5,
+   "autunno": 0.4
+  },
+  "carattere": [
+   "calmo",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "amb-stalla",
+  "tipo": "ambiente",
+  "forme": [
+   "stalla",
+   "ovile",
+   "aia",
+   "stalla delle mucche",
+   "mungitura"
+  ],
+  "evoca": "una stalla di campagna",
+  "accordi": {
+   "verde": 0.5,
+   "muschiato": 0.4,
+   "cuoio": 0.4,
+   "patchouli": 0.3
+  },
+  "note": {
+   "fieno": 0.9,
+   "note animali": 0.5,
+   "cuoio": 0.4,
+   "note terrose": 0.4,
+   "latte": 0.3
+  },
+  "carattere": [
+   "audace"
+  ]
+ },
+ {
+  "chiave": "amb-casa-campagna",
+  "tipo": "ambiente",
+  "forme": [
+   "casa di campagna",
+   "casale",
+   "masseria",
+   "agriturismo",
+   "villa di campagna",
+   "casa colonica"
+  ],
+  "evoca": "una casa di campagna",
+  "accordi": {
+   "verde": 0.6,
+   "aromatico": 0.6,
+   "legnoso": 0.4,
+   "floreale-fresco": 0.2
+  },
+  "note": {
+   "fieno": 0.5,
+   "rosmarino": 0.5,
+   "lavanda": 0.5,
+   "foglie di olivo": 0.4,
+   "fico": 0.4,
+   "legno di cedro": 0.3,
+   "note terrose": 0.3
+  },
+  "stagioni": {
+   "estate": 0.5
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "amb-cantina",
+  "tipo": "ambiente",
+  "forme": [
+   "cantina",
+   "cantina del vino",
+   "botti di rovere",
+   "barricaia",
+   "botte",
+   "cantina sotterranea"
+  ],
+  "evoca": "una cantina con le botti di rovere",
+  "accordi": {
+   "boozy": 0.9,
+   "legnoso": 0.6,
+   "fruttato": 0.3,
+   "patchouli": 0.2
+  },
+  "note": {
+   "quercia": 0.8,
+   "cognac": 0.7,
+   "legno di cedro": 0.5,
+   "prugna": 0.5,
+   "note terrose": 0.4,
+   "liquore": 0.4
+  },
+  "carattere": [
+   "misterioso"
+  ],
+  "manca": [
+   "vino rosso"
+  ]
+ },
+ {
+  "chiave": "amb-enoteca",
+  "tipo": "ambiente",
+  "forme": [
+   "enoteca",
+   "wine bar",
+   "vineria",
+   "bottiglieria",
+   "degustazione di vini",
+   "sommelier"
+  ],
+  "evoca": "un'enoteca",
+  "accordi": {
+   "boozy": 0.9,
+   "fruttato": 0.5,
+   "legnoso": 0.4
+  },
+  "note": {
+   "cognac": 0.6,
+   "ribes nero": 0.6,
+   "prugna": 0.5,
+   "quercia": 0.5,
+   "champagne rosé": 0.5,
+   "legno di cedro": 0.3
+  },
+  "momento": {
+   "sera": 0.7
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "elegante",
+   "sensuale"
+  ],
+  "manca": [
+   "vino rosso"
+  ]
+ },
+ {
+  "chiave": "amb-distilleria",
+  "tipo": "ambiente",
+  "forme": [
+   "distilleria",
+   "distilleria di whisky",
+   "distilleria di rum",
+   "alambicco",
+   "botti di whisky",
+   "botti di rum"
+  ],
+  "evoca": "una distilleria",
+  "accordi": {
+   "boozy": 1,
+   "legnoso": 0.6,
+   "vaniglia": 0.3,
+   "incenso": 0.2
+  },
+  "note": {
+   "whisky": 1,
+   "rum": 0.7,
+   "quercia": 0.6,
+   "caramello": 0.4,
+   "vaniglia": 0.4,
+   "fumo": 0.4
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "carattere": [
+   "audace"
+  ]
+ },
+ {
+  "chiave": "amb-osteria",
+  "tipo": "ambiente",
+  "forme": [
+   "osteria",
+   "trattoria",
+   "taverna",
+   "bettola",
+   "osteria di paese"
+  ],
+  "evoca": "un'osteria",
+  "accordi": {
+   "boozy": 0.6,
+   "aromatico": 0.5,
+   "legnoso": 0.4
+  },
+  "note": {
+   "rosmarino": 0.5,
+   "foglia di alloro": 0.4,
+   "quercia": 0.4,
+   "liquore": 0.4,
+   "prugna": 0.3,
+   "pepe nero": 0.3
+  },
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "vino rosso"
+  ]
+ },
+ {
+  "chiave": "amb-pub",
+  "tipo": "ambiente",
+  "forme": [
+   "pub",
+   "birreria",
+   "pub irlandese",
+   "pub inglese",
+   "taverna inglese",
+   "brew pub"
+  ],
+  "evoca": "un vecchio pub",
+  "accordi": {
+   "boozy": 0.8,
+   "legnoso": 0.5,
+   "cuoio": 0.3,
+   "miele": 0.2
+  },
+  "note": {
+   "whisky": 0.6,
+   "quercia": 0.5,
+   "caramello": 0.4,
+   "cuoio": 0.4,
+   "miele": 0.3,
+   "fieno": 0.3
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "birra"
+  ]
+ },
+ {
+  "chiave": "amb-bar",
+  "tipo": "ambiente",
+  "forme": [
+   "bar",
+   "baretto",
+   "bar sotto casa",
+   "bar dell'angolo",
+   "bar di paese"
+  ],
+  "evoca": "il bancone di un bar",
+  "accordi": {
+   "gourmand": 0.8,
+   "boozy": 0.3,
+   "agrumato": 0.2
+  },
+  "note": {
+   "caffè": 1,
+   "zucchero": 0.4,
+   "cacao": 0.4,
+   "liquore": 0.3,
+   "limone": 0.2
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "allegro",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "amb-caffetteria",
+  "tipo": "ambiente",
+  "forme": [
+   "caffetteria",
+   "caffè letterario",
+   "coffee shop",
+   "sala da caffè",
+   "caffè storico",
+   "caffè del centro"
+  ],
+  "evoca": "una caffetteria",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.4,
+   "speziato": 0.2
+  },
+  "note": {
+   "caffè": 1,
+   "latte": 0.5,
+   "caramello": 0.5,
+   "vaniglia": 0.4,
+   "cannella": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "amb-torrefazione",
+  "tipo": "ambiente",
+  "forme": [
+   "torrefazione del caffè",
+   "caffè appena tostato",
+   "tostatura del caffè",
+   "chicchi appena tostati"
+  ],
+  "evoca": "una torrefazione",
+  "accordi": {
+   "gourmand": 1,
+   "legnoso": 0.3,
+   "speziato": 0.2
+  },
+  "note": {
+   "caffè": 1,
+   "fava di cacao": 0.5,
+   "cacao": 0.4,
+   "fumo": 0.3,
+   "note legnose": 0.3,
+   "cardamomo": 0.2
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "carattere": [
+   "energico"
+  ]
+ },
+ {
+  "chiave": "amb-pasticceria",
+  "tipo": "ambiente",
+  "forme": [
+   "pasticceria",
+   "vetrina della pasticceria",
+   "laboratorio di pasticceria",
+   "pasticcere",
+   "pasticciere",
+   "bancone della pasticceria"
+  ],
+  "evoca": "una pasticceria",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.7
+  },
+  "note": {
+   "vaniglia": 1,
+   "caramello": 0.8,
+   "mandorla": 0.6,
+   "burro": 0.5,
+   "zucchero": 0.5,
+   "panna montata": 0.4,
+   "fava tonka": 0.4
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "amb-gelateria",
+  "tipo": "ambiente",
+  "forme": [
+   "gelateria",
+   "gelateria artigianale",
+   "banco dei gelati",
+   "gelataio",
+   "carretto dei gelati",
+   "vaschette di gelato"
+  ],
+  "evoca": "una gelateria",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.6,
+   "fruttato": 0.3
+  },
+  "note": {
+   "vaniglia": 1,
+   "gelato": 0.8,
+   "panna montata": 0.6,
+   "pistacchio": 0.5,
+   "latte": 0.4,
+   "fragola": 0.3
+  },
+  "misure": {
+   "dolcezza": 5,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "allegro",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "amb-panetteria",
+  "tipo": "ambiente",
+  "forme": [
+   "panetteria",
+   "panificio",
+   "fornaio",
+   "forno",
+   "forno del paese",
+   "bottega del fornaio"
+  ],
+  "evoca": "il forno del fornaio",
+  "accordi": {
+   "gourmand": 0.8,
+   "vaniglia": 0.4,
+   "miele": 0.2
+  },
+  "note": {
+   "burro": 0.7,
+   "sesamo": 0.5,
+   "latte": 0.5,
+   "zucchero": 0.4,
+   "mandorla": 0.4,
+   "vaniglia": 0.4
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "momento": {
+   "giorno": 0.7
+  },
+  "carattere": [
+   "coccola"
+  ],
+  "manca": [
+   "pane"
+  ]
+ },
+ {
+  "chiave": "amb-cioccolateria",
+  "tipo": "ambiente",
+  "forme": [
+   "cioccolateria",
+   "cioccolatiere",
+   "fabbrica di cioccolato",
+   "laboratorio del cioccolato",
+   "bottega del cioccolato",
+   "negozio di cioccolato"
+  ],
+  "evoca": "una cioccolateria",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.5
+  },
+  "note": {
+   "cacao": 1,
+   "cioccolato": 0.9,
+   "burro di cacao": 0.6,
+   "pralina": 0.5,
+   "vaniglia": 0.5,
+   "nocciola": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "inverno": 0.5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "amb-negozio-caramelle",
+  "tipo": "ambiente",
+  "forme": [
+   "negozio di caramelle",
+   "negozio di dolciumi",
+   "confetteria",
+   "bottega delle caramelle",
+   "barattoli di caramelle",
+   "caramelle colorate"
+  ],
+  "evoca": "un negozio di caramelle",
+  "accordi": {
+   "gourmand": 1,
+   "fruttato": 0.6
+  },
+  "note": {
+   "zucchero filato": 0.7,
+   "fragola": 0.6,
+   "lampone": 0.5,
+   "gomma da masticare": 0.5,
+   "caramello": 0.5,
+   "marshmallow": 0.4,
+   "ciliegia": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "amb-luna-park",
+  "tipo": "ambiente",
+  "forme": [
+   "luna park",
+   "lunapark",
+   "giostre",
+   "fiera di paese",
+   "parco divertimenti",
+   "baracconi"
+  ],
+  "evoca": "un luna park",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.4,
+   "fruttato": 0.3
+  },
+  "note": {
+   "zucchero filato": 1,
+   "caramello": 0.6,
+   "mela rossa": 0.5,
+   "vaniglia": 0.4,
+   "burro": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ],
+  "manca": [
+   "popcorn"
+  ]
+ },
+ {
+  "chiave": "amb-mercatino-natale",
+  "tipo": "ambiente",
+  "forme": [
+   "mercatino di natale",
+   "mercatino natalizio",
+   "bancarelle di natale",
+   "casette di natale"
+  ],
+  "evoca": "un mercatino di Natale",
+  "accordi": {
+   "speziato": 0.8,
+   "gourmand": 0.5,
+   "agrumato": 0.3,
+   "boozy": 0.3
+  },
+  "note": {
+   "cannella": 0.8,
+   "chiodi di garofano": 0.6,
+   "arancia": 0.5,
+   "vaniglia": 0.4,
+   "zenzero": 0.4,
+   "castagna": 0.4
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "momento": {
+   "sera": 0.5
+  },
+  "carattere": [
+   "coccola",
+   "allegro"
+  ],
+  "manca": [
+   "vin brulé"
+  ]
+ },
+ {
+  "chiave": "amb-fioraio",
+  "tipo": "ambiente",
+  "forme": [
+   "fioraio",
+   "fiorista",
+   "fioreria",
+   "negozio di fiori",
+   "bottega del fioraio",
+   "chiosco dei fiori",
+   "banco dei fiori",
+   "mercato dei fiori"
+  ],
+  "evoca": "la bottega di un fioraio",
+  "accordi": {
+   "floreale-fresco": 0.9,
+   "rosa": 0.6,
+   "verde": 0.6,
+   "floreale-bianco": 0.4
+  },
+  "note": {
+   "rosa": 0.8,
+   "peonia": 0.8,
+   "note verdi": 0.6,
+   "fresia": 0.5,
+   "giacinto": 0.4,
+   "tuberosa": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "primavera": 0.6
+  },
+  "carattere": [
+   "romantico",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "amb-serra",
+  "tipo": "ambiente",
+  "forme": [
+   "vivaio",
+   "vivai",
+   "garden center"
+  ],
+  "evoca": "una serra",
+  "accordi": {
+   "verde": 1,
+   "floreale-bianco": 0.4,
+   "patchouli": 0.3
+  },
+  "note": {
+   "foglie verdi": 0.8,
+   "note verdi": 0.8,
+   "note terrose": 0.5,
+   "orchidea": 0.5,
+   "gelsomino": 0.4,
+   "galbano": 0.4,
+   "felce": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "amb-limonaia",
+  "tipo": "ambiente",
+  "forme": [
+   "aranciera",
+   "orangerie",
+   "serra dei limoni",
+   "serra degli agrumi"
+  ],
+  "evoca": "una limonaia",
+  "accordi": {
+   "agrumato": 0.9,
+   "verde": 0.5,
+   "floreale-bianco": 0.4
+  },
+  "note": {
+   "limone": 1,
+   "fiore d'arancio": 0.6,
+   "neroli": 0.5,
+   "arancia amara": 0.5,
+   "note verdi": 0.4,
+   "bergamotto": 0.4
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "primavera": 0.6,
+   "estate": 0.5
+  },
+  "carattere": [
+   "fresco",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "amb-erboristeria",
+  "tipo": "ambiente",
+  "forme": [
+   "erboristeria",
+   "erborista",
+   "negozio di erbe",
+   "bottega delle erbe",
+   "tisaneria",
+   "erbe officinali"
+  ],
+  "evoca": "un'erboristeria",
+  "accordi": {
+   "aromatico": 1,
+   "verde": 0.5,
+   "tè": 0.3
+  },
+  "note": {
+   "salvia": 0.8,
+   "camomilla": 0.6,
+   "lavanda": 0.6,
+   "menta": 0.5,
+   "timo": 0.5,
+   "artemisia": 0.4,
+   "liquirizia": 0.4
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "amb-farmacia-antica",
+  "tipo": "ambiente",
+  "forme": [
+   "farmacia antica",
+   "antica farmacia",
+   "vecchia farmacia",
+   "farmacia storica",
+   "farmacia dei frati",
+   "officina farmaceutica",
+   "vasi di farmacia"
+  ],
+  "evoca": "un'antica farmacia",
+  "accordi": {
+   "aromatico": 0.8,
+   "cipriato": 0.4,
+   "ambrato": 0.3,
+   "speziato": 0.3
+  },
+  "note": {
+   "benzoino": 0.5,
+   "iris": 0.5,
+   "liquirizia": 0.5,
+   "anice": 0.4,
+   "note talcate": 0.4,
+   "salvia": 0.4
+  },
+  "carattere": [
+   "misterioso",
+   "elegante"
+  ],
+  "manca": [
+   "canfora"
+  ]
+ },
+ {
+  "chiave": "amb-speziale",
+  "tipo": "ambiente",
+  "forme": [
+   "speziale",
+   "spezieria",
+   "bottega dello speziale",
+   "bottega delle spezie",
+   "negozio di spezie",
+   "barattoli di spezie",
+   "vasetti di spezie"
+  ],
+  "evoca": "la bottega di uno speziale",
+  "accordi": {
+   "speziato": 1,
+   "ambrato": 0.3,
+   "legnoso": 0.3
+  },
+  "note": {
+   "cannella": 0.8,
+   "chiodi di garofano": 0.7,
+   "noce moscata": 0.6,
+   "cardamomo": 0.6,
+   "zafferano": 0.5,
+   "pepe nero": 0.5,
+   "anice stellato": 0.4
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "carattere": [
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "amb-mercato-spezie",
+  "tipo": "ambiente",
+  "forme": [
+   "mercato delle spezie",
+   "bazar delle spezie",
+   "banchi di spezie",
+   "bazar",
+   "bazaar",
+   "mercato orientale"
+  ],
+  "evoca": "un mercato delle spezie",
+  "accordi": {
+   "speziato": 1,
+   "ambrato": 0.4,
+   "fruttato": 0.3,
+   "rosa": 0.2
+  },
+  "note": {
+   "zafferano": 0.8,
+   "cardamomo": 0.7,
+   "cumino": 0.6,
+   "cannella": 0.6,
+   "curcuma": 0.5,
+   "pepe": 0.5,
+   "frutti secchi": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "carattere": [
+   "audace",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "amb-suk",
+  "tipo": "ambiente",
+  "forme": [
+   "suk",
+   "souk",
+   "suq",
+   "mercato arabo",
+   "mercato marocchino",
+   "vicoli della medina",
+   "kasbah"
+  ],
+  "evoca": "i vicoli di un suk",
+  "accordi": {
+   "speziato": 0.8,
+   "ambrato": 0.5,
+   "cuoio": 0.5,
+   "rosa": 0.4
+  },
+  "note": {
+   "cannella": 0.6,
+   "cuoio": 0.6,
+   "cumino": 0.5,
+   "rosa": 0.5,
+   "ambra": 0.5,
+   "fiore d'arancio": 0.4,
+   "zafferano": 0.4
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "carattere": [
+   "audace",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "amb-mercato-frutta",
+  "tipo": "ambiente",
+  "forme": [
+   "mercato della frutta",
+   "banco della frutta",
+   "fruttivendolo",
+   "frutteria",
+   "mercato ortofrutticolo",
+   "cassette di frutta",
+   "mercato rionale"
+  ],
+  "evoca": "il banco del fruttivendolo",
+  "accordi": {
+   "fruttato": 1,
+   "agrumato": 0.5,
+   "verde": 0.3
+  },
+  "note": {
+   "pesca": 0.8,
+   "mela": 0.6,
+   "arancia": 0.6,
+   "fragola": 0.5,
+   "melone": 0.5,
+   "pera": 0.5,
+   "note verdi": 0.3
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.4
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "amb-vecchia-drogheria",
+  "tipo": "ambiente",
+  "forme": [
+   "vecchia drogheria",
+   "drogheria",
+   "emporio",
+   "vecchio emporio",
+   "bottega di paese",
+   "bottega di una volta",
+   "negozio di coloniali"
+  ],
+  "evoca": "una vecchia drogheria",
+  "accordi": {
+   "speziato": 0.6,
+   "gourmand": 0.4,
+   "legnoso": 0.4,
+   "aromatico": 0.3
+  },
+  "note": {
+   "caffè": 0.5,
+   "cannella": 0.5,
+   "liquirizia": 0.5,
+   "anice": 0.4,
+   "garofano": 0.4,
+   "legno di cedro": 0.4,
+   "vaniglia": 0.3
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "amb-tabaccheria",
+  "tipo": "ambiente",
+  "forme": [
+   "tabaccheria",
+   "tabaccaio",
+   "negozio di tabacchi",
+   "rivendita di tabacchi",
+   "bottega del tabacco",
+   "tabaccheria antica"
+  ],
+  "evoca": "una vecchia tabaccheria",
+  "accordi": {
+   "tabacco": 1,
+   "miele": 0.3,
+   "vaniglia": 0.3,
+   "legnoso": 0.3
+  },
+  "note": {
+   "tabacco": 1,
+   "foglia di tabacco": 0.9,
+   "miele": 0.4,
+   "fava tonka": 0.4,
+   "legno di cedro": 0.3
+  },
+  "misure": {
+   "persistenza": 4
+  },
+  "carattere": [
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "amb-mieleria",
+  "tipo": "ambiente",
+  "forme": [
+   "mieleria",
+   "apiario",
+   "arnie",
+   "alveare",
+   "apicoltore",
+   "bottega del miele",
+   "laboratorio del miele"
+  ],
+  "evoca": "la bottega di un apicoltore",
+  "accordi": {
+   "miele": 1,
+   "floreale-fresco": 0.3,
+   "verde": 0.2
+  },
+  "note": {
+   "miele": 1,
+   "cera d'api": 0.7,
+   "note floreali": 0.4,
+   "mimosa": 0.3,
+   "fieno": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "carattere": [
+   "coccola"
+  ],
+  "manca": [
+   "propoli"
+  ]
+ },
+ {
+  "chiave": "amb-negozio-candele",
+  "tipo": "ambiente",
+  "forme": [
+   "negozio di candele",
+   "bottega delle candele",
+   "candele profumate",
+   "cera delle candele",
+   "fabbrica di candele"
+  ],
+  "evoca": "un negozio di candele",
+  "accordi": {
+   "vaniglia": 0.6,
+   "miele": 0.5,
+   "ambrato": 0.4
+  },
+  "note": {
+   "cera d'api": 0.7,
+   "vaniglia": 0.7,
+   "ambra": 0.4,
+   "benzoino": 0.4,
+   "cannella": 0.3,
+   "fumo": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "amb-saponeria",
+  "tipo": "ambiente",
+  "forme": [
+   "saponeria",
+   "saponificio",
+   "negozio di saponi",
+   "bottega del sapone",
+   "saponi artigianali"
+  ],
+  "evoca": "una saponeria artigiana",
+  "accordi": {
+   "muschiato": 0.8,
+   "floreale-fresco": 0.4,
+   "aromatico": 0.4
+  },
+  "note": {
+   "muschio bianco": 0.7,
+   "note pulite": 0.7,
+   "lavanda": 0.5,
+   "aldeidi": 0.4,
+   "fiori bianchi": 0.4,
+   "mandorla dolce": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "amb-profumeria-antica",
+  "tipo": "ambiente",
+  "forme": [
+   "profumeria antica",
+   "antica profumeria",
+   "vecchia profumeria",
+   "profumeria storica",
+   "profumeria d'altri tempi",
+   "laboratorio del profumiere"
+  ],
+  "evoca": "un'antica profumeria",
+  "accordi": {
+   "cipriato": 0.8,
+   "rosa": 0.5,
+   "ambrato": 0.3,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "iris": 0.8,
+   "violetta": 0.6,
+   "rosa": 0.5,
+   "aldeidi": 0.5,
+   "eliotropio": 0.5,
+   "benzoino": 0.4,
+   "muschio": 0.4
+  },
+  "carattere": [
+   "elegante",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "amb-barbiere",
+  "tipo": "ambiente",
+  "forme": [
+   "barbiere",
+   "barberia",
+   "bottega del barbiere",
+   "salone del barbiere",
+   "barbiere all'antica",
+   "rasatura dal barbiere"
+  ],
+  "evoca": "la bottega di un barbiere",
+  "accordi": {
+   "aromatico": 0.9,
+   "agrumato": 0.4,
+   "cipriato": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "lavanda": 1,
+   "bergamotto": 0.6,
+   "fava tonka": 0.5,
+   "note talcate": 0.4,
+   "geranio": 0.4,
+   "muschio di quercia": 0.4,
+   "vetiver": 0.3
+  },
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "amb-parrucchiere",
+  "tipo": "ambiente",
+  "forme": [
+   "parrucchiere",
+   "salone di bellezza",
+   "salone del parrucchiere",
+   "acconciatore",
+   "lavaggio dal parrucchiere"
+  ],
+  "evoca": "il salone del parrucchiere",
+  "accordi": {
+   "muschiato": 0.7,
+   "fruttato": 0.4,
+   "floreale-bianco": 0.4,
+   "solare": 0.2
+  },
+  "note": {
+   "muschio bianco": 0.8,
+   "mela verde": 0.5,
+   "fiori bianchi": 0.5,
+   "cocco": 0.4,
+   "aldeidi": 0.3,
+   "pesca": 0.3
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "amb-hotel-lusso",
+  "tipo": "ambiente",
+  "forme": [
+   "hotel di lusso",
+   "hotel a cinque stelle",
+   "albergo di lusso",
+   "albergo a cinque stelle",
+   "hotel",
+   "albergo",
+   "grand hotel",
+   "hall dell'hotel",
+   "hotel elegante",
+   "suite"
+  ],
+  "evoca": "la hall di un hotel di lusso",
+  "accordi": {
+   "tè": 0.6,
+   "muschiato": 0.6,
+   "legnoso": 0.6,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "tè": 0.7,
+   "legno di cedro": 0.7,
+   "muschio bianco": 0.7,
+   "fico": 0.4,
+   "ambra": 0.4,
+   "fiori bianchi": 0.4,
+   "bergamotto": 0.4
+  },
+  "occasioni": [
+   "speciale"
+  ],
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "amb-lounge",
+  "tipo": "ambiente",
+  "forme": [
+   "lounge",
+   "lounge bar",
+   "sala vip",
+   "privé",
+   "salotto elegante",
+   "sala d'attesa vip"
+  ],
+  "evoca": "una lounge elegante",
+  "accordi": {
+   "ambrato": 0.7,
+   "legnoso": 0.6,
+   "cuoio": 0.4,
+   "oud": 0.3
+  },
+  "note": {
+   "ambra": 0.8,
+   "sandalo": 0.6,
+   "cuoio": 0.5,
+   "legno di agar": 0.4,
+   "vaniglia": 0.4,
+   "pepe rosa": 0.3
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "elegante",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "amb-cocktail-bar",
+  "tipo": "ambiente",
+  "forme": [
+   "cocktail bar",
+   "american bar",
+   "bar dei cocktail",
+   "bancone dei cocktail",
+   "barman",
+   "bartender",
+   "speakeasy"
+  ],
+  "evoca": "il bancone di un cocktail bar",
+  "accordi": {
+   "boozy": 0.9,
+   "agrumato": 0.6,
+   "verde": 0.2,
+   "speziato": 0.2
+  },
+  "note": {
+   "lime": 0.7,
+   "rum": 0.6,
+   "liquore": 0.5,
+   "menta": 0.4,
+   "pompelmo": 0.4,
+   "arancia amara": 0.4,
+   "zenzero": 0.3
+  },
+  "momento": {
+   "sera": 0.9
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "amb-discoteca",
+  "tipo": "ambiente",
+  "forme": [
+   "discoteca",
+   "disco",
+   "club",
+   "locale notturno",
+   "nightclub",
+   "pista da ballo",
+   "privé della discoteca"
+  ],
+  "evoca": "la pista di una discoteca",
+  "accordi": {
+   "vaniglia": 0.6,
+   "fruttato": 0.6,
+   "ambrato": 0.5,
+   "gourmand": 0.4
+  },
+  "note": {
+   "vaniglia": 0.7,
+   "ambroxan": 0.6,
+   "frutto della passione": 0.5,
+   "pepe rosa": 0.4,
+   "zucchero filato": 0.4,
+   "rum": 0.3
+  },
+  "misure": {
+   "intensita": 5,
+   "persistenza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "audace",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "amb-club-jazz",
+  "tipo": "ambiente",
+  "forme": [
+   "club jazz",
+   "jazz club",
+   "locale jazz",
+   "piano bar",
+   "cantina jazz",
+   "blues bar",
+   "locale con musica dal vivo"
+  ],
+  "evoca": "un club jazz",
+  "accordi": {
+   "tabacco": 0.8,
+   "boozy": 0.7,
+   "cuoio": 0.5,
+   "legnoso": 0.4
+  },
+  "note": {
+   "foglia di tabacco": 0.8,
+   "cognac": 0.6,
+   "rum": 0.5,
+   "cuoio": 0.5,
+   "legni scuri": 0.4,
+   "vaniglia": 0.4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "misterioso",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "amb-locale-fumoso",
+  "tipo": "ambiente",
+  "forme": [
+   "locale fumoso",
+   "stanza fumosa",
+   "sala fumatori",
+   "fumoir",
+   "club dei sigari",
+   "salotto dei sigari",
+   "cigar lounge",
+   "circolo privato"
+  ],
+  "evoca": "un salotto fumoso",
+  "accordi": {
+   "tabacco": 1,
+   "cuoio": 0.5,
+   "boozy": 0.5,
+   "legnoso": 0.4,
+   "incenso": 0.2
+  },
+  "note": {
+   "tabacco": 1,
+   "foglia di tabacco": 0.8,
+   "cuoio": 0.5,
+   "cognac": 0.5,
+   "fumo": 0.5,
+   "miele": 0.3,
+   "legni scuri": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 5
+  },
+  "momento": {
+   "sera": 0.9
+  },
+  "carattere": [
+   "misterioso",
+   "audace"
+  ],
+  "manca": [
+   "sigaro"
+  ]
+ },
+ {
+  "chiave": "amb-sala-te",
+  "tipo": "ambiente",
+  "forme": [
+   "sala da tè",
+   "casa del tè",
+   "tea room",
+   "teahouse",
+   "bottega del tè",
+   "negozio di tè"
+  ],
+  "evoca": "una sala da tè",
+  "accordi": {
+   "tè": 1,
+   "verde": 0.4,
+   "agrumato": 0.3,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "tè": 1,
+   "tè verde": 0.7,
+   "tè nero": 0.5,
+   "bergamotto": 0.5,
+   "gelsomino": 0.4,
+   "osmanto": 0.3
+  },
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "calmo",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "amb-baita",
+  "tipo": "ambiente",
+  "forme": [
+   "baita",
+   "baita di montagna",
+   "baita di legno",
+   "casetta in montagna",
+   "casa in montagna"
+  ],
+  "evoca": "una baita di montagna",
+  "accordi": {
+   "legnoso": 0.9,
+   "incenso": 0.4,
+   "verde": 0.3
+  },
+  "note": {
+   "abete": 0.7,
+   "legno di cedro": 0.7,
+   "fumo": 0.6,
+   "resina di abete": 0.5,
+   "fieno": 0.4,
+   "betulla": 0.3
+  },
+  "stagioni": {
+   "inverno": 0.7
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ],
+  "manca": [
+   "pino"
+  ]
+ },
+ {
+  "chiave": "amb-rifugio-alpino",
+  "tipo": "ambiente",
+  "forme": [
+   "rifugio alpino",
+   "rifugio di montagna",
+   "rifugio",
+   "bivacco",
+   "rifugio in quota"
+  ],
+  "evoca": "un rifugio alpino",
+  "accordi": {
+   "legnoso": 0.8,
+   "aromatico": 0.4,
+   "incenso": 0.3
+  },
+  "note": {
+   "abete": 0.8,
+   "fumo": 0.5,
+   "legno di cedro": 0.5,
+   "artemisia": 0.4,
+   "resina di abete": 0.4,
+   "fieno": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "inverno": 0.5
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "pino"
+  ]
+ },
+ {
+  "chiave": "amb-camino",
+  "tipo": "ambiente",
+  "forme": [
+   "camino acceso",
+   "camino",
+   "caminetto",
+   "fuoco del camino",
+   "legna che brucia",
+   "stufa a legna",
+   "brace",
+   "ceppo che arde",
+   "davanti al camino"
+  ],
+  "evoca": "un camino acceso",
+  "accordi": {
+   "incenso": 0.8,
+   "legnoso": 0.8,
+   "ambrato": 0.5,
+   "vaniglia": 0.2
+  },
+  "note": {
+   "fumo": 1,
+   "legno di guaiaco": 0.7,
+   "betulla": 0.6,
+   "cypriol": 0.4,
+   "ambra": 0.4,
+   "labdano": 0.4,
+   "vaniglia": 0.2
+  },
+  "misure": {
+   "persistenza": 4
+  },
+  "stagioni": {
+   "inverno": 0.9
+  },
+  "momento": {
+   "sera": 0.6
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "amb-chalet",
+  "tipo": "ambiente",
+  "forme": [
+   "chalet",
+   "chalet di montagna",
+   "chalet di lusso",
+   "chalet svizzero",
+   "chalet di legno"
+  ],
+  "evoca": "uno chalet di montagna",
+  "accordi": {
+   "legnoso": 0.8,
+   "ambrato": 0.5,
+   "vaniglia": 0.4,
+   "cuoio": 0.3
+  },
+  "note": {
+   "legno di cedro": 0.8,
+   "abete": 0.5,
+   "cachemire": 0.5,
+   "ambra": 0.5,
+   "vaniglia": 0.4,
+   "fumo": 0.3,
+   "cuoio": 0.3
+  },
+  "stagioni": {
+   "inverno": 0.9
+  },
+  "carattere": [
+   "elegante",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "amb-stazione-sciistica",
+  "tipo": "ambiente",
+  "forme": [
+   "stazione sciistica",
+   "località sciistica",
+   "stazione di montagna",
+   "impianti da sci",
+   "funivia",
+   "seggiovia"
+  ],
+  "evoca": "una stazione sciistica",
+  "accordi": {
+   "acquatico": 0.5,
+   "legnoso": 0.6,
+   "aromatico": 0.4,
+   "muschiato": 0.3
+  },
+  "note": {
+   "note ozoniche": 0.7,
+   "abete": 0.6,
+   "menta": 0.4,
+   "muschio bianco": 0.4,
+   "resina di abete": 0.3
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "occasioni": [
+   "sport"
+  ],
+  "carattere": [
+   "energico",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "amb-casa-mare",
+  "tipo": "ambiente",
+  "forme": [
+   "casa al mare",
+   "casa sulla spiaggia",
+   "villetta al mare",
+   "casetta al mare",
+   "appartamento al mare",
+   "casa delle vacanze al mare"
+  ],
+  "evoca": "una casa al mare",
+  "accordi": {
+   "acquatico": 0.7,
+   "solare": 0.5,
+   "muschiato": 0.5,
+   "legnoso": 0.3
+  },
+  "note": {
+   "note marine": 0.7,
+   "legno marino": 0.5,
+   "muschio bianco": 0.5,
+   "sale": 0.5,
+   "fico": 0.4,
+   "cocco": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "amb-stabilimento-balneare",
+  "tipo": "ambiente",
+  "forme": [
+   "beach club",
+   "chiringuito",
+   "bar sulla spiaggia",
+   "ombrelloni e lettini"
+  ],
+  "evoca": "un beach club",
+  "accordi": {
+   "solare": 0.9,
+   "acquatico": 0.5,
+   "agrumato": 0.4
+  },
+  "note": {
+   "cocco": 0.9,
+   "tiarè": 0.5,
+   "note marine": 0.5,
+   "lime": 0.4,
+   "ylang ylang": 0.3
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "amb-veranda",
+  "tipo": "ambiente",
+  "forme": [
+   "veranda",
+   "terrazza",
+   "terrazza fiorita",
+   "portico",
+   "pergolato",
+   "patio",
+   "gazebo"
+  ],
+  "evoca": "una veranda fiorita",
+  "accordi": {
+   "floreale-bianco": 0.6,
+   "verde": 0.5,
+   "legnoso": 0.3
+  },
+  "note": {
+   "gelsomino": 0.8,
+   "note verdi": 0.5,
+   "fiore d'arancio": 0.4,
+   "legni chiari": 0.3
+  },
+  "stagioni": {
+   "estate": 0.6,
+   "primavera": 0.5
+  },
+  "carattere": [
+   "calmo",
+   "romantico"
+  ],
+  "manca": [
+   "glicine",
+   "caprifoglio"
+  ]
+ },
+ {
+  "chiave": "amb-cabina-armadio",
+  "tipo": "ambiente",
+  "forme": [
+   "cabina armadio",
+   "guardaroba",
+   "armadio elegante",
+   "armadio di cedro",
+   "cabina armadio con i vestiti",
+   "walk-in closet"
+  ],
+  "evoca": "una cabina armadio",
+  "accordi": {
+   "cipriato": 0.6,
+   "legnoso": 0.6,
+   "muschiato": 0.6
+  },
+  "note": {
+   "legno di cedro": 0.8,
+   "iris": 0.6,
+   "cachemire": 0.6,
+   "muschio bianco": 0.5,
+   "violetta": 0.3,
+   "cuoio": 0.3
+  },
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "amb-auto-nuova",
+  "tipo": "ambiente",
+  "forme": [
+   "auto nuova",
+   "macchina nuova",
+   "interni in pelle",
+   "sedili in pelle",
+   "abitacolo in pelle",
+   "auto di lusso",
+   "macchina sportiva",
+   "auto sportiva"
+  ],
+  "evoca": "gli interni in pelle di un'auto nuova",
+  "accordi": {
+   "cuoio": 1,
+   "muschiato": 0.2,
+   "legnoso": 0.2
+  },
+  "note": {
+   "cuoio": 1,
+   "pelle": 0.7,
+   "vinile": 0.4,
+   "betulla": 0.3,
+   "iris": 0.3,
+   "note minerali": 0.3
+  },
+  "carattere": [
+   "sicuro",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "amb-officina",
+  "tipo": "ambiente",
+  "forme": [
+   "officina",
+   "officina meccanica",
+   "autofficina",
+   "garage",
+   "meccanico",
+   "officina di moto"
+  ],
+  "evoca": "un'officina",
+  "accordi": {
+   "cuoio": 0.6,
+   "incenso": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "cuoio": 0.6,
+   "note minerali": 0.5,
+   "betulla": 0.5,
+   "vinile": 0.4,
+   "fumo": 0.4,
+   "pepe nero": 0.3
+  },
+  "carattere": [
+   "audace"
+  ],
+  "manca": [
+   "benzina",
+   "olio motore"
+  ]
+ },
+ {
+  "chiave": "amb-yacht",
+  "tipo": "ambiente",
+  "forme": [
+   "yacht",
+   "panfilo",
+   "barca di lusso",
+   "motoscafo",
+   "ponte dello yacht",
+   "ponte della barca",
+   "crociera in yacht"
+  ],
+  "evoca": "il ponte di uno yacht",
+  "accordi": {
+   "acquatico": 0.9,
+   "agrumato": 0.5,
+   "legnoso": 0.4,
+   "ambrato": 0.3
+  },
+  "note": {
+   "note marine": 0.9,
+   "legno marino": 0.6,
+   "bergamotto": 0.6,
+   "sale marino": 0.5,
+   "ambroxan": 0.5,
+   "pompelmo": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "amb-barca-vela",
+  "tipo": "ambiente",
+  "forme": [
+   "barca a vela",
+   "veliero",
+   "barca",
+   "regata",
+   "gozzo"
+  ],
+  "evoca": "una barca a vela",
+  "accordi": {
+   "acquatico": 1,
+   "agrumato": 0.3,
+   "legnoso": 0.3,
+   "aromatico": 0.3
+  },
+  "note": {
+   "note marine": 1,
+   "sale": 0.6,
+   "alghe": 0.5,
+   "note ozoniche": 0.5,
+   "legno marino": 0.4,
+   "limone": 0.3
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "occasioni": [
+   "sport"
+  ],
+  "carattere": [
+   "energico",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "amb-piscina",
+  "tipo": "ambiente",
+  "forme": [
+   "piscina",
+   "bordo piscina",
+   "piscina all'aperto",
+   "acqua della piscina",
+   "piscina dell'hotel"
+  ],
+  "evoca": "il bordo di una piscina",
+  "accordi": {
+   "acquatico": 0.8,
+   "solare": 0.6,
+   "muschiato": 0.3,
+   "agrumato": 0.3
+  },
+  "note": {
+   "note acquatiche": 0.8,
+   "cocco": 0.6,
+   "note ozoniche": 0.5,
+   "muschio bianco": 0.4,
+   "lime": 0.3,
+   "tiarè": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ],
+  "manca": [
+   "cloro"
+  ]
+ },
+ {
+  "chiave": "amb-palestra",
+  "tipo": "ambiente",
+  "forme": [
+   "palestra",
+   "sala pesi",
+   "centro sportivo",
+   "spogliatoio della palestra",
+   "spogliatoio"
+  ],
+  "evoca": "una palestra",
+  "accordi": {
+   "agrumato": 0.6,
+   "aromatico": 0.5,
+   "acquatico": 0.4,
+   "muschiato": 0.3
+  },
+  "note": {
+   "menta": 0.6,
+   "pompelmo": 0.6,
+   "note acquatiche": 0.5,
+   "lime": 0.4,
+   "muschio bianco": 0.4,
+   "zenzero": 0.4
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "occasioni": [
+   "sport"
+  ],
+  "carattere": [
+   "energico"
+  ]
+ },
+ {
+  "chiave": "amb-teatro",
+  "tipo": "ambiente",
+  "forme": [
+   "teatro",
+   "teatro d'opera",
+   "palco del teatro",
+   "platea",
+   "loggione",
+   "palchetto",
+   "prima a teatro"
+  ],
+  "evoca": "una sera a teatro",
+  "accordi": {
+   "cipriato": 0.7,
+   "rosa": 0.5,
+   "legnoso": 0.4,
+   "ambrato": 0.3
+  },
+  "note": {
+   "iris": 0.7,
+   "violetta": 0.6,
+   "rosa": 0.6,
+   "aldeidi": 0.4,
+   "note talcate": 0.4,
+   "ambra": 0.4,
+   "legno di cedro": 0.3
+  },
+  "momento": {
+   "sera": 0.9
+  },
+  "occasioni": [
+   "serata",
+   "speciale"
+  ],
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "amb-museo",
+  "tipo": "ambiente",
+  "forme": [
+   "museo",
+   "pinacoteca",
+   "sala del museo",
+   "museo antico",
+   "museo archeologico"
+  ],
+  "evoca": "le sale di un museo",
+  "accordi": {
+   "legnoso": 0.6,
+   "cipriato": 0.5,
+   "incenso": 0.2
+  },
+  "note": {
+   "iris": 0.6,
+   "legno di cedro": 0.6,
+   "note minerali": 0.4,
+   "papiro": 0.4,
+   "cera d'api": 0.3,
+   "muschio": 0.3
+  },
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "calmo",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "amb-galleria-arte",
+  "tipo": "ambiente",
+  "forme": [
+   "galleria d'arte",
+   "galleria moderna",
+   "mostra d'arte",
+   "vernissage",
+   "spazio espositivo",
+   "arte contemporanea"
+  ],
+  "evoca": "una galleria d'arte",
+  "accordi": {
+   "muschiato": 0.6,
+   "legnoso": 0.5,
+   "cipriato": 0.3
+  },
+  "note": {
+   "note minerali": 0.6,
+   "muschio bianco": 0.6,
+   "iso e super": 0.5,
+   "aldeidi": 0.4,
+   "legni bianchi": 0.4,
+   "pepe rosa": 0.3
+  },
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "amb-atelier-pittura",
+  "tipo": "ambiente",
+  "forme": [
+   "atelier di pittura",
+   "atelier dell'artista",
+   "studio del pittore",
+   "bottega del pittore",
+   "colori a olio",
+   "trementina",
+   "tele e pennelli",
+   "laboratorio d'arte"
+  ],
+  "evoca": "l'atelier di un pittore",
+  "accordi": {
+   "legnoso": 0.6,
+   "verde": 0.4,
+   "ambrato": 0.3,
+   "cipriato": 0.3
+  },
+  "note": {
+   "inchiostro": 0.6,
+   "resina di abete": 0.5,
+   "elemi": 0.5,
+   "semi di carota": 0.4,
+   "iris": 0.4,
+   "labdano": 0.3
+  },
+  "carattere": [
+   "audace",
+   "misterioso"
+  ],
+  "manca": [
+   "trementina",
+   "olio di lino"
+  ]
+ },
+ {
+  "chiave": "amb-cartoleria",
+  "tipo": "ambiente",
+  "forme": [
+   "cartoleria",
+   "cartoleria di quartiere",
+   "matite temperate",
+   "matite nuove",
+   "quaderni nuovi"
+  ],
+  "evoca": "una cartoleria",
+  "accordi": {
+   "legnoso": 0.7,
+   "cipriato": 0.3,
+   "vaniglia": 0.2
+  },
+  "note": {
+   "legno di cedro": 1,
+   "papiro": 0.6,
+   "inchiostro": 0.5,
+   "iris": 0.3,
+   "note talcate": 0.3,
+   "vaniglia": 0.2
+  },
+  "carattere": [
+   "calmo",
+   "allegro"
+  ],
+  "manca": [
+   "carta"
+  ]
+ },
+ {
+  "chiave": "amb-tipografia",
+  "tipo": "ambiente",
+  "forme": [
+   "tipografia",
+   "stamperia",
+   "giornale appena stampato",
+   "rotative",
+   "laboratorio di stampa"
+  ],
+  "evoca": "una tipografia",
+  "accordi": {
+   "legnoso": 0.6,
+   "cipriato": 0.3,
+   "muschiato": 0.2
+  },
+  "note": {
+   "inchiostro": 1,
+   "papiro": 0.6,
+   "note minerali": 0.4,
+   "aldeidi": 0.3,
+   "legno di cedro": 0.3
+  },
+  "carattere": [
+   "audace"
+  ],
+  "manca": [
+   "carta"
+  ]
+ },
+ {
+  "chiave": "amb-negozio-dischi",
+  "tipo": "ambiente",
+  "forme": [
+   "negozio di dischi",
+   "negozi di dischi",
+   "dischi in vinile",
+   "vecchi vinili",
+   "negozio di vinili"
+  ],
+  "evoca": "un negozio di dischi",
+  "accordi": {
+   "legnoso": 0.5,
+   "muschiato": 0.3,
+   "tabacco": 0.2
+  },
+  "note": {
+   "vinile": 0.8,
+   "papiro": 0.5,
+   "legno di cedro": 0.3,
+   "muschio": 0.3,
+   "tabacco": 0.2
+  },
+  "carattere": [
+   "misterioso"
+  ],
+  "manca": [
+   "cartone"
+  ]
+ },
+ {
+  "chiave": "amb-cinema",
+  "tipo": "ambiente",
+  "forme": [
+   "cinema",
+   "sala cinematografica",
+   "sala del cinema",
+   "multisala",
+   "cinema d'essai",
+   "cinema all'aperto"
+  ],
+  "evoca": "una sala del cinema",
+  "accordi": {
+   "gourmand": 0.8,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "caramello": 0.8,
+   "burro": 0.7,
+   "zucchero": 0.4,
+   "vaniglia": 0.3,
+   "sale": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "momento": {
+   "sera": 0.7
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro",
+   "coccola"
+  ],
+  "manca": [
+   "popcorn"
+  ]
+ },
+ {
+  "chiave": "amb-cucina",
+  "tipo": "ambiente",
+  "forme": [
+   "cucina",
+   "cucina di casa",
+   "cucina che profuma",
+   "fornelli",
+   "pentole sul fuoco",
+   "cucina calda",
+   "cucina rustica"
+  ],
+  "evoca": "una cucina di casa",
+  "accordi": {
+   "aromatico": 0.6,
+   "gourmand": 0.5,
+   "speziato": 0.4,
+   "agrumato": 0.3
+  },
+  "note": {
+   "basilico": 0.6,
+   "rosmarino": 0.6,
+   "foglia di alloro": 0.4,
+   "limone": 0.4,
+   "noce moscata": 0.3,
+   "burro": 0.3,
+   "vaniglia": 0.3
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "amb-frantoio",
+  "tipo": "ambiente",
+  "forme": [
+   "frantoio",
+   "frantoi",
+   "oleificio",
+   "olio appena spremuto",
+   "olio nuovo",
+   "spremitura delle olive"
+  ],
+  "evoca": "un frantoio",
+  "accordi": {
+   "verde": 0.8,
+   "fruttato": 0.3,
+   "speziato": 0.2
+  },
+  "note": {
+   "foglie di olivo": 1,
+   "note verdi": 0.7,
+   "mandorla verde": 0.4,
+   "mela verde": 0.3,
+   "pepe": 0.3
+  },
+  "stagioni": {
+   "autunno": 0.7
+  },
+  "manca": [
+   "olio d'oliva"
+  ]
+ },
+ {
+  "chiave": "amb-ristorante-elegante",
+  "tipo": "ambiente",
+  "forme": [
+   "ristorante elegante",
+   "ristorante stellato",
+   "ristorante di lusso",
+   "ristorante gourmet",
+   "ristorante raffinato"
+  ],
+  "evoca": "un ristorante elegante",
+  "accordi": {
+   "legnoso": 0.5,
+   "speziato": 0.4,
+   "ambrato": 0.4,
+   "boozy": 0.3
+  },
+  "note": {
+   "sandalo": 0.5,
+   "tartufo": 0.5,
+   "pepe nero": 0.5,
+   "champagne rosé": 0.4,
+   "ambra": 0.4,
+   "iris": 0.3
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "serata",
+   "speciale"
+  ],
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "amb-boutique",
+  "tipo": "ambiente",
+  "forme": [
+   "boutique elegante",
+   "boutique",
+   "boutique di lusso",
+   "negozio elegante",
+   "negozio di lusso",
+   "showroom",
+   "atelier di alta moda",
+   "vetrina di lusso"
+  ],
+  "evoca": "una boutique elegante",
+  "accordi": {
+   "cipriato": 0.6,
+   "muschiato": 0.6,
+   "legnoso": 0.4,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "iris": 0.7,
+   "muschio bianco": 0.6,
+   "aldeidi": 0.5,
+   "cachemire": 0.5,
+   "legno di cedro": 0.4,
+   "fiori bianchi": 0.3,
+   "cuoio": 0.3
+  },
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "amb-ufficio-moderno",
+  "tipo": "ambiente",
+  "forme": [
+   "ufficio moderno",
+   "ufficio luminoso",
+   "ufficio di design",
+   "open space",
+   "sala riunioni",
+   "coworking",
+   "grattacielo di vetro"
+  ],
+  "evoca": "un ufficio moderno",
+  "accordi": {
+   "muschiato": 0.6,
+   "agrumato": 0.5,
+   "legnoso": 0.5,
+   "tè": 0.3
+  },
+  "note": {
+   "bergamotto": 0.6,
+   "muschio bianco": 0.6,
+   "iso e super": 0.5,
+   "note minerali": 0.4,
+   "tè verde": 0.4,
+   "vetiver": 0.4,
+   "pompelmo": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "freschezza": 3
+  },
+  "occasioni": [
+   "ufficio"
+  ],
+  "carattere": [
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "amb-loft-industriale",
+  "tipo": "ambiente",
+  "forme": [
+   "loft industriale",
+   "loft",
+   "loft in città",
+   "ex fabbrica",
+   "capannone",
+   "mattoni a vista",
+   "stile industriale"
+  ],
+  "evoca": "un loft industriale",
+  "accordi": {
+   "legnoso": 0.6,
+   "cuoio": 0.5,
+   "incenso": 0.3,
+   "speziato": 0.2
+  },
+  "note": {
+   "note minerali": 0.6,
+   "cuoio": 0.5,
+   "legni scuri": 0.5,
+   "pepe nero": 0.4,
+   "iso e super": 0.4,
+   "vetiver": 0.4,
+   "fumo": 0.3
+  },
+  "carattere": [
+   "audace",
+   "sicuro"
+  ],
+  "manca": [
+   "metallo",
+   "cemento"
+  ]
+ },
+ {
+  "chiave": "amb-palazzo-antico",
+  "tipo": "ambiente",
+  "forme": [
+   "palazzo antico",
+   "palazzo nobiliare",
+   "villa antica",
+   "dimora storica",
+   "villa d'epoca",
+   "saloni affrescati"
+  ],
+  "evoca": "le sale di un palazzo antico",
+  "accordi": {
+   "legnoso": 0.6,
+   "cipriato": 0.5,
+   "cuoio": 0.4,
+   "incenso": 0.3
+  },
+  "note": {
+   "iris": 0.6,
+   "legno di cedro": 0.5,
+   "cuoio": 0.4,
+   "cera d'api": 0.4,
+   "olibano": 0.3,
+   "rosa": 0.3,
+   "muschio": 0.3
+  },
+  "carattere": [
+   "elegante",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "amb-soffitta",
+  "tipo": "ambiente",
+  "forme": [
+   "soffitta",
+   "solaio",
+   "vecchia soffitta",
+   "sottotetto",
+   "bauli in soffitta"
+  ],
+  "evoca": "una vecchia soffitta",
+  "accordi": {
+   "legnoso": 0.7,
+   "patchouli": 0.3,
+   "cipriato": 0.3
+  },
+  "note": {
+   "legno di cedro": 0.6,
+   "patchouli": 0.4,
+   "note terrose": 0.4,
+   "vetiver": 0.4,
+   "iris": 0.3,
+   "papiro": 0.3
+  },
+  "carattere": [
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "amb-salotto",
+  "tipo": "ambiente",
+  "forme": [
+   "salotto",
+   "salotto di casa",
+   "salotto borghese",
+   "soggiorno"
+  ],
+  "evoca": "un salotto accogliente",
+  "accordi": {
+   "muschiato": 0.5,
+   "legnoso": 0.5,
+   "cipriato": 0.4,
+   "ambrato": 0.4
+  },
+  "note": {
+   "cachemire": 0.6,
+   "sandalo": 0.5,
+   "iris": 0.4,
+   "ambra": 0.4,
+   "vaniglia": 0.3,
+   "violetta": 0.3
+  },
+  "carattere": [
+   "coccola",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "amb-camera-letto",
+  "tipo": "ambiente",
+  "forme": [
+   "camera da letto",
+   "stanza da letto",
+   "letto matrimoniale",
+   "letto appena rifatto",
+   "letto rifatto"
+  ],
+  "evoca": "una camera da letto",
+  "accordi": {
+   "muschiato": 0.9,
+   "cipriato": 0.4,
+   "aromatico": 0.2
+  },
+  "note": {
+   "muschio bianco": 0.9,
+   "cachemire": 0.6,
+   "iris": 0.4,
+   "note talcate": 0.4,
+   "lavanda": 0.3
+  },
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "amb-cameretta",
+  "tipo": "ambiente",
+  "forme": [
+   "cameretta",
+   "cameretta del bambino",
+   "stanza del neonato",
+   "nursery"
+  ],
+  "evoca": "la cameretta di un bambino",
+  "accordi": {
+   "cipriato": 0.8,
+   "muschiato": 0.7,
+   "vaniglia": 0.2
+  },
+  "note": {
+   "note talcate": 1,
+   "muschio bianco": 0.7,
+   "iris": 0.4,
+   "latte": 0.4,
+   "fiore d'arancio": 0.4,
+   "vaniglia": 0.3
+  },
+  "misure": {
+   "intensita": 1,
+   "dolcezza": 3
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ }
+]

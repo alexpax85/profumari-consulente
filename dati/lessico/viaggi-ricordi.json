@@ -1,0 +1,3518 @@
+[
+ {
+  "chiave": "viaggio-provenza",
+  "tipo": "viaggio",
+  "forme": [
+   "provenza",
+   "provenzale",
+   "campagna provenzale",
+   "lavanda di provenza",
+   "campi di lavanda in provenza",
+   "estate in provenza",
+   "luberon",
+   "colline della provenza"
+  ],
+  "evoca": "la campagna di Provenza",
+  "accordi": {
+   "aromatico": 1,
+   "verde": 0.35,
+   "legnoso": 0.3,
+   "miele": 0.2
+  },
+  "note": {
+   "lavanda": 1,
+   "rosmarino": 0.6,
+   "timo": 0.5,
+   "salvia": 0.4,
+   "fieno": 0.35,
+   "miele": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "viaggio-costa-azzurra",
+  "tipo": "viaggio",
+  "forme": [
+   "costa azzurra",
+   "riviera francese",
+   "nizza",
+   "cannes",
+   "sud della francia",
+   "mare della costa azzurra",
+   "croisette"
+  ],
+  "evoca": "la Costa Azzurra",
+  "accordi": {
+   "agrumato": 0.7,
+   "floreale-bianco": 0.7,
+   "acquatico": 0.5
+  },
+  "note": {
+   "fiore d'arancio": 1,
+   "neroli": 0.8,
+   "bergamotto": 0.7,
+   "note marine": 0.5,
+   "mimosa": 0.35,
+   "gelsomino": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "elegante",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "viaggio-grasse",
+  "tipo": "viaggio",
+  "forme": [
+   "grasse",
+   "città del profumo",
+   "capitale del profumo",
+   "colline di grasse",
+   "campi di gelsomino",
+   "raccolta del gelsomino"
+  ],
+  "evoca": "i campi di fiori di Grasse",
+  "accordi": {
+   "floreale-bianco": 0.9,
+   "rosa": 0.7,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "gelsomino": 1,
+   "rosa di maggio": 0.6,
+   "tuberosa": 0.6,
+   "rosa": 0.5,
+   "mimosa": 0.4,
+   "fiore d'arancio": 0.4
+  },
+  "stagioni": {
+   "primavera": 0.8,
+   "estate": 0.4
+  },
+  "carattere": [
+   "elegante",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "viaggio-parigi",
+  "tipo": "viaggio",
+  "forme": [
+   "parigi",
+   "parigino",
+   "stile parigino",
+   "eleganza parigina",
+   "bistrot parigino",
+   "montmartre",
+   "boulevard parigini",
+   "francia"
+  ],
+  "evoca": "Parigi",
+  "accordi": {
+   "cipriato": 0.9,
+   "rosa": 0.6,
+   "muschiato": 0.4,
+   "gourmand": 0.2
+  },
+  "note": {
+   "iris": 0.9,
+   "rosa": 0.7,
+   "violetta": 0.5,
+   "aldeidi": 0.5,
+   "muschio": 0.4,
+   "pralina": 0.2
+  },
+  "carattere": [
+   "elegante",
+   "romantico"
+  ],
+  "occasioni": [
+   "serata",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "viaggio-sicilia",
+  "tipo": "viaggio",
+  "forme": [
+   "sicilia",
+   "siciliano",
+   "estate in sicilia",
+   "vacanza in sicilia",
+   "giardini siciliani",
+   "zagara siciliana",
+   "taormina",
+   "agrumeti siciliani"
+  ],
+  "evoca": "un'estate in Sicilia",
+  "accordi": {
+   "agrumato": 1,
+   "floreale-bianco": 0.6,
+   "fruttato": 0.25,
+   "gourmand": 0.2
+  },
+  "note": {
+   "limone": 0.9,
+   "fiore d'arancio": 0.8,
+   "arancia rossa": 0.7,
+   "mandarino": 0.6,
+   "mandorla": 0.4,
+   "fico": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "viaggio-sardegna",
+  "tipo": "viaggio",
+  "forme": [
+   "sardegna",
+   "sardo",
+   "mare della sardegna",
+   "vacanza in sardegna",
+   "costa smeralda",
+   "macchia sarda",
+   "coste sarde"
+  ],
+  "evoca": "la Sardegna tra macchia e mare",
+  "accordi": {
+   "aromatico": 0.9,
+   "acquatico": 0.7,
+   "verde": 0.5,
+   "legnoso": 0.3
+  },
+  "note": {
+   "mirto": 1,
+   "note marine": 0.7,
+   "ginepro": 0.6,
+   "rosmarino": 0.5,
+   "sale": 0.4,
+   "cipresso": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ],
+  "manca": [
+   "elicriso",
+   "lentisco"
+  ]
+ },
+ {
+  "chiave": "viaggio-puglia",
+  "tipo": "viaggio",
+  "forme": [
+   "puglia",
+   "pugliese",
+   "salento",
+   "salentino",
+   "trulli",
+   "vacanza in puglia"
+  ],
+  "evoca": "una masseria in Puglia",
+  "accordi": {
+   "verde": 0.7,
+   "fruttato": 0.6,
+   "acquatico": 0.4,
+   "gourmand": 0.25
+  },
+  "note": {
+   "fico": 1,
+   "foglie di olivo": 0.8,
+   "albero di fico": 0.5,
+   "mandorla": 0.5,
+   "note marine": 0.4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "viaggio-toscana",
+  "tipo": "viaggio",
+  "forme": [
+   "toscana",
+   "val d'orcia",
+   "cipressi toscani",
+   "casale in toscana"
+  ],
+  "evoca": "le colline toscane",
+  "accordi": {
+   "legnoso": 0.8,
+   "aromatico": 0.6,
+   "cuoio": 0.3,
+   "boozy": 0.25
+  },
+  "note": {
+   "cipresso": 1,
+   "rosmarino": 0.7,
+   "foglie di olivo": 0.5,
+   "iris": 0.4,
+   "cuoio": 0.3,
+   "liquore": 0.2
+  },
+  "stagioni": {
+   "estate": 0.5,
+   "autunno": 0.5
+  },
+  "carattere": [
+   "elegante",
+   "calmo"
+  ],
+  "manca": [
+   "vino rosso"
+  ]
+ },
+ {
+  "chiave": "viaggio-firenze",
+  "tipo": "viaggio",
+  "forme": [
+   "firenze",
+   "fiorentino",
+   "iris di firenze",
+   "botteghe fiorentine",
+   "ponte vecchio",
+   "pelletteria fiorentina"
+  ],
+  "evoca": "Firenze",
+  "accordi": {
+   "cipriato": 0.9,
+   "cuoio": 0.6,
+   "legnoso": 0.4
+  },
+  "note": {
+   "iris": 1,
+   "cuoio": 0.7,
+   "violetta": 0.4,
+   "legno di cedro": 0.4,
+   "bergamotto": 0.3
+  },
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "viaggio-costiera",
+  "tipo": "viaggio",
+  "forme": [
+   "costiera amalfitana",
+   "costiera sorrentina",
+   "penisola sorrentina",
+   "sorrento",
+   "terrazze sulla costiera"
+  ],
+  "evoca": "la costiera tra limoni e mare",
+  "accordi": {
+   "agrumato": 1,
+   "acquatico": 0.6,
+   "floreale-bianco": 0.4,
+   "aromatico": 0.2
+  },
+  "note": {
+   "limone": 1,
+   "note marine": 0.6,
+   "bergamotto": 0.5,
+   "fiore d'arancio": 0.5,
+   "basilico": 0.3,
+   "liquore": 0.2
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ],
+  "manca": [
+   "limoncello"
+  ]
+ },
+ {
+  "chiave": "viaggio-capri",
+  "tipo": "viaggio",
+  "forme": [
+   "capri",
+   "isola di capri",
+   "faraglioni",
+   "piazzetta di capri",
+   "estate a capri"
+  ],
+  "evoca": "un'estate a Capri",
+  "accordi": {
+   "agrumato": 0.8,
+   "floreale-bianco": 0.6,
+   "acquatico": 0.6,
+   "solare": 0.3
+  },
+  "note": {
+   "limone": 0.8,
+   "fiore d'arancio": 0.6,
+   "note marine": 0.6,
+   "gelsomino": 0.5,
+   "fico": 0.3,
+   "cocco": 0.2
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "elegante",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "viaggio-napoli",
+  "tipo": "viaggio",
+  "forme": [
+   "napoli",
+   "napoletano",
+   "golfo di napoli",
+   "lungomare di napoli",
+   "spaccanapoli",
+   "ischia",
+   "procida"
+  ],
+  "evoca": "il golfo di Napoli",
+  "accordi": {
+   "agrumato": 0.6,
+   "gourmand": 0.5,
+   "acquatico": 0.5,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "limone": 0.7,
+   "caffè": 0.6,
+   "note marine": 0.5,
+   "fiore d'arancio": 0.4,
+   "vaniglia": 0.3,
+   "cannella": 0.2
+  },
+  "stagioni": {
+   "estate": 0.7
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "viaggio-liguria",
+  "tipo": "viaggio",
+  "forme": [
+   "liguria",
+   "ligure",
+   "cinque terre",
+   "borghi liguri",
+   "riviera di levante",
+   "riviera di ponente",
+   "riviera dei fiori"
+  ],
+  "evoca": "la riviera ligure",
+  "accordi": {
+   "aromatico": 0.8,
+   "acquatico": 0.7,
+   "verde": 0.5,
+   "agrumato": 0.3
+  },
+  "note": {
+   "rosmarino": 0.8,
+   "note marine": 0.7,
+   "basilico": 0.6,
+   "foglie di olivo": 0.5,
+   "aghi di pino": 0.4,
+   "mimosa": 0.3,
+   "limone": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "viaggio-dolomiti",
+  "tipo": "viaggio",
+  "forme": [
+   "trentino",
+   "alto adige",
+   "sudtirolo",
+   "val gardena",
+   "val di fassa",
+   "montagne alpine"
+  ],
+  "evoca": "le Dolomiti",
+  "accordi": {
+   "legnoso": 1,
+   "verde": 0.6,
+   "aromatico": 0.3,
+   "muschiato": 0.2
+  },
+  "note": {
+   "abete": 1,
+   "resina di abete": 0.6,
+   "bacche di ginepro": 0.5,
+   "cipresso": 0.4,
+   "fieno": 0.4,
+   "muschio di quercia": 0.4
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "inverno": 0.5,
+   "estate": 0.4
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "viaggio-venezia",
+  "tipo": "viaggio",
+  "forme": [
+   "venezia",
+   "veneziano",
+   "laguna veneta",
+   "laguna di venezia",
+   "canali di venezia",
+   "gondola",
+   "carnevale di venezia",
+   "calli veneziane"
+  ],
+  "evoca": "Venezia",
+  "accordi": {
+   "speziato": 0.6,
+   "incenso": 0.6,
+   "acquatico": 0.5,
+   "ambrato": 0.4,
+   "cipriato": 0.3
+  },
+  "note": {
+   "incenso": 0.8,
+   "note acquatiche": 0.6,
+   "cannella": 0.5,
+   "ambra": 0.5,
+   "iris": 0.3,
+   "garofano": 0.3
+  },
+  "momento": {
+   "sera": 0.6
+  },
+  "carattere": [
+   "misterioso",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "viaggio-roma",
+  "tipo": "viaggio",
+  "forme": [
+   "roma",
+   "città eterna",
+   "vicoli di roma",
+   "trastevere",
+   "fontane di roma",
+   "pini di roma",
+   "centro di roma",
+   "roma antica"
+  ],
+  "evoca": "Roma",
+  "accordi": {
+   "incenso": 0.6,
+   "legnoso": 0.6,
+   "gourmand": 0.3,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "incenso": 0.7,
+   "aghi di pino": 0.6,
+   "legno di cedro": 0.4,
+   "caffè": 0.4,
+   "lillà": 0.3
+  },
+  "carattere": [
+   "elegante",
+   "misterioso"
+  ],
+  "manca": [
+   "pino marittimo",
+   "glicine"
+  ]
+ },
+ {
+  "chiave": "viaggio-vienna",
+  "tipo": "viaggio",
+  "forme": [
+   "vienna",
+   "viennese",
+   "austria",
+   "austriaco",
+   "pasticceria viennese",
+   "caffè storici di vienna",
+   "caffetterie viennesi"
+  ],
+  "evoca": "un caffè storico di Vienna",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.5,
+   "fruttato": 0.3,
+   "speziato": 0.2
+  },
+  "note": {
+   "cacao": 0.7,
+   "caffè": 0.7,
+   "panna montata": 0.5,
+   "albicocca": 0.4,
+   "vaniglia": 0.4,
+   "cannella": 0.3,
+   "mela": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "inverno": 0.7
+  },
+  "carattere": [
+   "coccola",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "viaggio-londra",
+  "tipo": "viaggio",
+  "forme": [
+   "londra",
+   "londinese",
+   "inghilterra",
+   "inglese",
+   "stile inglese",
+   "gentleman inglese",
+   "club inglese",
+   "pomeriggio a londra"
+  ],
+  "evoca": "un pomeriggio a Londra",
+  "accordi": {
+   "tè": 0.7,
+   "aromatico": 0.5,
+   "cuoio": 0.4,
+   "rosa": 0.3,
+   "legnoso": 0.3
+  },
+  "note": {
+   "tè": 0.8,
+   "bergamotto": 0.7,
+   "tè nero": 0.6,
+   "lavanda": 0.5,
+   "cuoio": 0.4,
+   "rosa": 0.3
+  },
+  "stagioni": {
+   "autunno": 0.6
+  },
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "viaggio-scozia",
+  "tipo": "viaggio",
+  "forme": [
+   "scozia",
+   "scozzese",
+   "highlands",
+   "brughiera scozzese",
+   "castello scozzese",
+   "distilleria scozzese"
+  ],
+  "evoca": "le Highlands scozzesi",
+  "accordi": {
+   "boozy": 0.7,
+   "legnoso": 0.6,
+   "incenso": 0.5,
+   "cuoio": 0.3,
+   "miele": 0.3
+  },
+  "note": {
+   "whisky": 0.9,
+   "fumo": 0.7,
+   "betulla": 0.5,
+   "cuoio": 0.4,
+   "miele": 0.4,
+   "felce": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "stagioni": {
+   "autunno": 0.7,
+   "inverno": 0.6
+  },
+  "carattere": [
+   "misterioso",
+   "sicuro"
+  ],
+  "manca": [
+   "torba",
+   "erica"
+  ]
+ },
+ {
+  "chiave": "viaggio-irlanda",
+  "tipo": "viaggio",
+  "forme": [
+   "irlanda",
+   "irlandese",
+   "scogliere irlandesi",
+   "campagna irlandese",
+   "prati irlandesi",
+   "verde d'irlanda"
+  ],
+  "evoca": "i prati d'Irlanda",
+  "accordi": {
+   "verde": 1,
+   "acquatico": 0.5,
+   "aromatico": 0.3
+  },
+  "note": {
+   "note verdi": 0.8,
+   "felce": 0.6,
+   "foglie verdi": 0.6,
+   "muschio di quercia": 0.5,
+   "alghe": 0.4
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "primavera": 0.7
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "viaggio-scandinavia",
+  "tipo": "viaggio",
+  "forme": [
+   "scandinavia",
+   "scandinavo",
+   "nord europa",
+   "paesi nordici",
+   "nordico",
+   "norvegia",
+   "svezia",
+   "finlandia",
+   "lapponia",
+   "fiordi norvegesi"
+  ],
+  "evoca": "i paesaggi del Nord",
+  "accordi": {
+   "legnoso": 0.9,
+   "verde": 0.5,
+   "muschiato": 0.4,
+   "acquatico": 0.3
+  },
+  "note": {
+   "abete": 0.9,
+   "betulla": 0.8,
+   "resina di abete": 0.5,
+   "muschio bianco": 0.4,
+   "note ozoniche": 0.4,
+   "bacche selvatiche": 0.4
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "stagioni": {
+   "inverno": 0.8
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "viaggio-russia",
+  "tipo": "viaggio",
+  "forme": [
+   "russia",
+   "russo",
+   "siberia",
+   "siberiano",
+   "mosca",
+   "samovar",
+   "inverno russo"
+  ],
+  "evoca": "un inverno russo, tra taiga e samovar",
+  "accordi": {
+   "legnoso": 0.8,
+   "tè": 0.7,
+   "cuoio": 0.4,
+   "incenso": 0.4
+  },
+  "note": {
+   "tè nero": 0.7,
+   "betulla": 0.7,
+   "abete": 0.6,
+   "fumo": 0.5,
+   "cuoio": 0.5,
+   "resina di abete": 0.4
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "carattere": [
+   "misterioso",
+   "sicuro"
+  ],
+  "manca": [
+   "tè affumicato"
+  ]
+ },
+ {
+  "chiave": "viaggio-bulgaria",
+  "tipo": "viaggio",
+  "forme": [
+   "bulgaria",
+   "bulgaro",
+   "valle delle rose bulgara",
+   "kazanlak"
+  ],
+  "evoca": "la valle delle rose",
+  "accordi": {
+   "rosa": 1,
+   "verde": 0.3,
+   "miele": 0.3,
+   "fruttato": 0.2
+  },
+  "note": {
+   "rosa bulgara": 1,
+   "rosa di damasco": 0.6,
+   "rosa": 0.6,
+   "geranio": 0.3,
+   "miele": 0.3,
+   "litchi": 0.2
+  },
+  "stagioni": {
+   "primavera": 0.8
+  },
+  "carattere": [
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "viaggio-grecia",
+  "tipo": "viaggio",
+  "forme": [
+   "grecia",
+   "mykonos",
+   "santorini",
+   "cicladi",
+   "mar egeo",
+   "creta"
+  ],
+  "evoca": "un'isola greca",
+  "accordi": {
+   "acquatico": 0.8,
+   "aromatico": 0.7,
+   "fruttato": 0.3,
+   "agrumato": 0.3,
+   "verde": 0.3
+  },
+  "note": {
+   "note marine": 0.8,
+   "timo": 0.6,
+   "fico": 0.5,
+   "foglie di olivo": 0.5,
+   "sale": 0.5,
+   "limone": 0.4
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "viaggio-baleari",
+  "tipo": "viaggio",
+  "forme": [
+   "ibiza",
+   "formentera",
+   "isole baleari",
+   "baleari",
+   "maiorca",
+   "minorca"
+  ],
+  "evoca": "un'estate alle Baleari",
+  "accordi": {
+   "acquatico": 0.7,
+   "fruttato": 0.6,
+   "solare": 0.5,
+   "verde": 0.3
+  },
+  "note": {
+   "fico": 0.8,
+   "note marine": 0.7,
+   "cocco": 0.5,
+   "foglia di fico": 0.4,
+   "sale": 0.4,
+   "bergamotto": 0.3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "viaggio-andalusia",
+  "tipo": "viaggio",
+  "forme": [
+   "andalusia",
+   "andaluso",
+   "siviglia",
+   "granada",
+   "patio andaluso",
+   "flamenco",
+   "spagna",
+   "spagnolo"
+  ],
+  "evoca": "un patio andaluso",
+  "accordi": {
+   "floreale-bianco": 0.9,
+   "agrumato": 0.7,
+   "cuoio": 0.3,
+   "speziato": 0.2
+  },
+  "note": {
+   "fiore d'arancio": 1,
+   "arancia amara": 0.7,
+   "neroli": 0.6,
+   "gelsomino": 0.6,
+   "cuoio": 0.3,
+   "garofano": 0.2
+  },
+  "stagioni": {
+   "primavera": 0.7,
+   "estate": 0.6
+  },
+  "carattere": [
+   "sensuale",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "viaggio-marocco",
+  "tipo": "viaggio",
+  "forme": [
+   "marocco",
+   "medina",
+   "casbah",
+   "nord africa",
+   "tunisia"
+  ],
+  "evoca": "un souk marocchino",
+  "accordi": {
+   "speziato": 1,
+   "ambrato": 0.6,
+   "rosa": 0.4,
+   "cuoio": 0.3,
+   "aromatico": 0.2
+  },
+  "note": {
+   "cannella": 0.7,
+   "zafferano": 0.6,
+   "ambra": 0.6,
+   "rosa": 0.5,
+   "cuoio": 0.4,
+   "cumino": 0.4,
+   "menta": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "stagioni": {
+   "autunno": 0.6
+  },
+  "carattere": [
+   "misterioso",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "viaggio-marrakech",
+  "tipo": "viaggio",
+  "forme": [
+   "marrakech",
+   "marrakesh",
+   "marrakesch",
+   "giardini di marrakech",
+   "riad",
+   "piazza di marrakech",
+   "atlante marocchino"
+  ],
+  "evoca": "un riad di Marrakech",
+  "accordi": {
+   "speziato": 0.7,
+   "floreale-bianco": 0.6,
+   "legnoso": 0.6,
+   "rosa": 0.5
+  },
+  "note": {
+   "legno di cedro": 0.7,
+   "fiore d'arancio": 0.7,
+   "rosa": 0.6,
+   "cardamomo": 0.5,
+   "menta": 0.4,
+   "cumino": 0.3
+  },
+  "carattere": [
+   "misterioso",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "viaggio-sahara",
+  "tipo": "viaggio",
+  "forme": [
+   "deserto del sahara",
+   "beduini",
+   "tenda berbera",
+   "dune del sahara",
+   "viaggio nel sahara",
+   "berberi"
+  ],
+  "evoca": "una notte nel deserto",
+  "accordi": {
+   "ambrato": 1,
+   "speziato": 0.5,
+   "legnoso": 0.4,
+   "cuoio": 0.3,
+   "incenso": 0.3
+  },
+  "note": {
+   "ambra": 0.9,
+   "labdano": 0.5,
+   "benzoino": 0.5,
+   "zafferano": 0.4,
+   "cuoio": 0.4,
+   "mirra": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 3
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "carattere": [
+   "misterioso",
+   "sensuale"
+  ],
+  "manca": [
+   "datteri"
+  ]
+ },
+ {
+  "chiave": "viaggio-egitto",
+  "tipo": "viaggio",
+  "forme": [
+   "egitto",
+   "egiziano",
+   "antico egitto",
+   "piramidi",
+   "faraoni",
+   "nilo",
+   "crociera sul nilo"
+  ],
+  "evoca": "l'antico Egitto",
+  "accordi": {
+   "incenso": 0.9,
+   "ambrato": 0.6,
+   "floreale-bianco": 0.4,
+   "speziato": 0.3
+  },
+  "note": {
+   "mirra": 0.8,
+   "olibano": 0.8,
+   "loto": 0.6,
+   "benzoino": 0.4,
+   "gelsomino": 0.3,
+   "balsamo egiziano": 0.3
+  },
+  "momento": {
+   "sera": 0.6
+  },
+  "carattere": [
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "viaggio-istanbul",
+  "tipo": "viaggio",
+  "forme": [
+   "istanbul",
+   "costantinopoli",
+   "turchia",
+   "turco",
+   "gran bazar",
+   "bosforo"
+  ],
+  "evoca": "i bazar di Istanbul",
+  "accordi": {
+   "rosa": 0.7,
+   "speziato": 0.7,
+   "gourmand": 0.4,
+   "ambrato": 0.4
+  },
+  "note": {
+   "rosa turca": 0.8,
+   "cannella": 0.5,
+   "zafferano": 0.5,
+   "caffè": 0.4,
+   "pistacchio": 0.4,
+   "cardamomo": 0.4,
+   "ambra": 0.4
+  },
+  "carattere": [
+   "misterioso",
+   "sensuale"
+  ],
+  "manca": [
+   "lokum"
+  ]
+ },
+ {
+  "chiave": "viaggio-medio-oriente",
+  "tipo": "viaggio",
+  "forme": [
+   "medio oriente",
+   "mediorientale",
+   "arabia",
+   "arabo",
+   "penisola arabica",
+   "mille e una notte",
+   "libano",
+   "giordania",
+   "petra"
+  ],
+  "evoca": "le notti d'Arabia",
+  "accordi": {
+   "oud": 1,
+   "rosa": 0.6,
+   "ambrato": 0.6,
+   "incenso": 0.4,
+   "speziato": 0.4
+  },
+  "note": {
+   "legno di agar": 1,
+   "rosa": 0.6,
+   "zafferano": 0.6,
+   "ambra": 0.5,
+   "olibano": 0.4,
+   "muschio": 0.3
+  },
+  "misure": {
+   "intensita": 5,
+   "persistenza": 5
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "stagioni": {
+   "inverno": 0.6
+  },
+  "carattere": [
+   "audace",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "viaggio-dubai",
+  "tipo": "viaggio",
+  "forme": [
+   "dubai",
+   "emirati",
+   "emirati arabi",
+   "abu dhabi",
+   "lusso di dubai",
+   "grattacieli di dubai"
+  ],
+  "evoca": "il lusso di Dubai",
+  "accordi": {
+   "oud": 0.8,
+   "ambrato": 0.7,
+   "vaniglia": 0.4,
+   "rosa": 0.4,
+   "gourmand": 0.3
+  },
+  "note": {
+   "legno di agar": 0.8,
+   "ambra": 0.6,
+   "zafferano": 0.5,
+   "vaniglia": 0.4,
+   "rosa": 0.4,
+   "caramello": 0.3
+  },
+  "misure": {
+   "intensita": 5,
+   "persistenza": 5,
+   "dolcezza": 3
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "speciale",
+   "serata"
+  ],
+  "carattere": [
+   "audace"
+  ]
+ },
+ {
+  "chiave": "viaggio-oman",
+  "tipo": "viaggio",
+  "forme": [
+   "oman",
+   "omanita",
+   "muscat",
+   "incenso dell'oman",
+   "terra dell'incenso",
+   "via dell'incenso"
+  ],
+  "evoca": "la terra dell'incenso",
+  "accordi": {
+   "incenso": 1,
+   "ambrato": 0.5,
+   "legnoso": 0.3,
+   "agrumato": 0.2
+  },
+  "note": {
+   "olibano": 1,
+   "incenso": 0.8,
+   "mirra": 0.5,
+   "ambra": 0.4,
+   "legno di cedro": 0.3,
+   "elemi": 0.3
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "viaggio-india",
+  "tipo": "viaggio",
+  "forme": [
+   "india",
+   "viaggio in india",
+   "rajasthan",
+   "mercati indiani",
+   "templi indiani"
+  ],
+  "evoca": "un viaggio in India",
+  "accordi": {
+   "speziato": 1,
+   "floreale-bianco": 0.6,
+   "legnoso": 0.5,
+   "incenso": 0.4
+  },
+  "note": {
+   "cardamomo": 0.8,
+   "sandalo": 0.7,
+   "zafferano": 0.6,
+   "gelsomino sambac": 0.6,
+   "incenso": 0.4,
+   "chiodi di garofano": 0.3,
+   "curcuma": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "carattere": [
+   "misterioso",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "viaggio-kerala",
+  "tipo": "viaggio",
+  "forme": [
+   "kerala",
+   "india del sud",
+   "costa del malabar",
+   "malabar",
+   "piantagioni di spezie",
+   "giardini delle spezie"
+  ],
+  "evoca": "le piantagioni di spezie del Kerala",
+  "accordi": {
+   "speziato": 0.9,
+   "verde": 0.4,
+   "solare": 0.4
+  },
+  "note": {
+   "cardamomo": 1,
+   "pepe nero": 0.7,
+   "zenzero": 0.6,
+   "cocco": 0.4,
+   "chiodi di garofano": 0.4,
+   "curcuma": 0.3
+  },
+  "carattere": [
+   "energico",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "viaggio-sri-lanka",
+  "tipo": "viaggio",
+  "forme": [
+   "sri lanka",
+   "ceylon",
+   "tè di ceylon",
+   "cannella di ceylon"
+  ],
+  "evoca": "le colline del tè di Ceylon",
+  "accordi": {
+   "tè": 1,
+   "speziato": 0.5,
+   "verde": 0.4,
+   "agrumato": 0.2
+  },
+  "note": {
+   "tè": 0.9,
+   "tè nero": 0.8,
+   "cannella": 0.6,
+   "cardamomo": 0.3,
+   "bergamotto": 0.3,
+   "foglie verdi": 0.3
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "viaggio-tibet",
+  "tipo": "viaggio",
+  "forme": [
+   "tibet",
+   "tibetano",
+   "nepal",
+   "himalaya",
+   "monasteri tibetani",
+   "monastero buddista",
+   "lhasa",
+   "kathmandu"
+  ],
+  "evoca": "un monastero sull'Himalaya",
+  "accordi": {
+   "incenso": 1,
+   "legnoso": 0.6,
+   "speziato": 0.3
+  },
+  "note": {
+   "incenso": 0.9,
+   "legno di cedro": 0.6,
+   "sandalo": 0.5,
+   "mirra": 0.4,
+   "zafferano": 0.3
+  },
+  "misure": {
+   "intensita": 3
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "viaggio-thailandia",
+  "tipo": "viaggio",
+  "forme": [
+   "thailandia",
+   "tailandia",
+   "thailandese",
+   "bangkok",
+   "phuket",
+   "isole thailandesi",
+   "sud est asiatico",
+   "vietnam"
+  ],
+  "evoca": "la Thailandia",
+  "accordi": {
+   "agrumato": 0.7,
+   "solare": 0.5,
+   "fruttato": 0.5,
+   "speziato": 0.4,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "lime": 0.8,
+   "zenzero": 0.6,
+   "cocco": 0.5,
+   "mango": 0.5,
+   "frutti tropicali": 0.4,
+   "orchidea": 0.3,
+   "gelsomino": 0.3
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ],
+  "manca": [
+   "citronella"
+  ]
+ },
+ {
+  "chiave": "viaggio-bali",
+  "tipo": "viaggio",
+  "forme": [
+   "bali",
+   "balinese",
+   "indonesia",
+   "giava",
+   "sumatra",
+   "templi di bali",
+   "risaie di bali"
+  ],
+  "evoca": "un tempio di Bali tra i fiori",
+  "accordi": {
+   "floreale-bianco": 0.9,
+   "solare": 0.6,
+   "legnoso": 0.4,
+   "patchouli": 0.3,
+   "incenso": 0.3
+  },
+  "note": {
+   "frangipane": 0.8,
+   "ylang ylang": 0.7,
+   "tiarè": 0.5,
+   "cocco": 0.5,
+   "sandalo": 0.5,
+   "patchouli": 0.4,
+   "incenso": 0.3
+  },
+  "stagioni": {
+   "estate": 0.7
+  },
+  "carattere": [
+   "calmo",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "viaggio-giappone",
+  "tipo": "viaggio",
+  "forme": [
+   "giappone",
+   "giapponese",
+   "tokyo",
+   "stile giapponese",
+   "ryokan",
+   "viaggio in giappone"
+  ],
+  "evoca": "il Giappone",
+  "accordi": {
+   "tè": 0.7,
+   "legnoso": 0.6,
+   "agrumato": 0.5,
+   "incenso": 0.4
+  },
+  "note": {
+   "yuzu": 0.8,
+   "tè verde": 0.8,
+   "cipresso": 0.5,
+   "incenso": 0.4,
+   "bambù": 0.4,
+   "legno di cedro": 0.3
+  },
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "calmo",
+   "elegante"
+  ],
+  "manca": [
+   "hinoki"
+  ]
+ },
+ {
+  "chiave": "viaggio-kyoto",
+  "tipo": "viaggio",
+  "forme": [
+   "kyoto",
+   "templi di kyoto",
+   "tempio buddista giapponese",
+   "vecchia kyoto",
+   "antica capitale giapponese"
+  ],
+  "evoca": "un giardino zen di Kyoto",
+  "accordi": {
+   "incenso": 0.8,
+   "tè": 0.7,
+   "legnoso": 0.6,
+   "verde": 0.3
+  },
+  "note": {
+   "incenso": 0.8,
+   "tè verde": 0.7,
+   "legno di cedro": 0.5,
+   "cipresso": 0.5,
+   "bambù": 0.4,
+   "sandalo": 0.4
+  },
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "viaggio-cina",
+  "tipo": "viaggio",
+  "forme": [
+   "cina",
+   "cinese",
+   "pechino",
+   "shanghai",
+   "città proibita",
+   "giardini cinesi"
+  ],
+  "evoca": "un giardino cinese",
+  "accordi": {
+   "tè": 0.7,
+   "fruttato": 0.5,
+   "speziato": 0.5,
+   "floreale-bianco": 0.3,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "osmanto": 0.7,
+   "tè": 0.6,
+   "anice stellato": 0.6,
+   "litchi": 0.4,
+   "peonia": 0.4,
+   "gelsomino": 0.3
+  },
+  "carattere": [
+   "calmo",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "viaggio-caraibi",
+  "tipo": "viaggio",
+  "forme": [
+   "caraibi",
+   "caraibico",
+   "mar dei caraibi",
+   "antille",
+   "giamaica",
+   "isole caraibiche",
+   "repubblica dominicana",
+   "santo domingo"
+  ],
+  "evoca": "un'isola dei Caraibi",
+  "accordi": {
+   "solare": 0.8,
+   "boozy": 0.6,
+   "fruttato": 0.5,
+   "acquatico": 0.4
+  },
+  "note": {
+   "cocco": 0.8,
+   "rum": 0.7,
+   "ananas": 0.6,
+   "lime": 0.5,
+   "note marine": 0.4,
+   "canna da zucchero": 0.4
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "viaggio-cuba",
+  "tipo": "viaggio",
+  "forme": [
+   "cuba",
+   "cubano",
+   "l'avana",
+   "havana",
+   "sigaro cubano"
+  ],
+  "evoca": "una sera all'Avana",
+  "accordi": {
+   "tabacco": 1,
+   "boozy": 0.6,
+   "cuoio": 0.3,
+   "gourmand": 0.3
+  },
+  "note": {
+   "tabacco": 0.9,
+   "foglia di tabacco": 0.8,
+   "rum": 0.6,
+   "cuoio": 0.3,
+   "canna da zucchero": 0.3,
+   "lime": 0.3,
+   "cacao": 0.2
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "carattere": [
+   "sensuale",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "viaggio-brasile",
+  "tipo": "viaggio",
+  "forme": [
+   "brasile",
+   "brasiliano",
+   "rio de janeiro",
+   "copacabana",
+   "bahia",
+   "carnevale di rio"
+  ],
+  "evoca": "il Brasile",
+  "accordi": {
+   "fruttato": 0.7,
+   "solare": 0.6,
+   "agrumato": 0.4,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "frutto della passione": 0.7,
+   "cocco": 0.6,
+   "lime": 0.5,
+   "mango": 0.4,
+   "fava tonka": 0.4,
+   "caffè": 0.3
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "viaggio-messico",
+  "tipo": "viaggio",
+  "forme": [
+   "messico",
+   "messicano",
+   "yucatan",
+   "tulum",
+   "oaxaca",
+   "vaniglia messicana"
+  ],
+  "evoca": "il Messico",
+  "accordi": {
+   "vaniglia": 0.8,
+   "gourmand": 0.6,
+   "speziato": 0.4,
+   "floreale-bianco": 0.3,
+   "agrumato": 0.3
+  },
+  "note": {
+   "vaniglia": 0.8,
+   "cacao": 0.7,
+   "cannella": 0.5,
+   "tuberosa": 0.4,
+   "lime": 0.4,
+   "pepe rosa": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "carattere": [
+   "sensuale",
+   "allegro"
+  ],
+  "manca": [
+   "tequila"
+  ]
+ },
+ {
+  "chiave": "viaggio-peru",
+  "tipo": "viaggio",
+  "forme": [
+   "perù",
+   "peruviano",
+   "ande",
+   "machu picchu",
+   "sud america",
+   "sudamerica",
+   "cuzco"
+  ],
+  "evoca": "le Ande",
+  "accordi": {
+   "legnoso": 0.8,
+   "incenso": 0.6,
+   "verde": 0.3,
+   "agrumato": 0.3
+  },
+  "note": {
+   "palo santo": 1,
+   "legno di guaiaco": 0.5,
+   "incenso": 0.4,
+   "lime": 0.3,
+   "erba mate": 0.3
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "viaggio-polinesia",
+  "tipo": "viaggio",
+  "forme": [
+   "polinesia",
+   "polinesiano",
+   "tahiti",
+   "isole polinesiane",
+   "fiore di tiarè"
+  ],
+  "evoca": "un'isola dei mari del Sud",
+  "accordi": {
+   "solare": 1,
+   "floreale-bianco": 0.7,
+   "acquatico": 0.4,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "tiarè": 1,
+   "cocco": 0.7,
+   "latte di cocco": 0.5,
+   "vaniglia": 0.4,
+   "ylang ylang": 0.4,
+   "note marine": 0.4
+  },
+  "misure": {
+   "dolcezza": 3,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "sensuale",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "viaggio-hawaii",
+  "tipo": "viaggio",
+  "forme": [
+   "hawaii",
+   "hawaiano",
+   "isole hawaii",
+   "honolulu",
+   "surf alle hawaii",
+   "collana di fiori"
+  ],
+  "evoca": "le Hawaii",
+  "accordi": {
+   "solare": 0.8,
+   "fruttato": 0.7,
+   "floreale-bianco": 0.6,
+   "acquatico": 0.5
+  },
+  "note": {
+   "ananas": 0.8,
+   "frangipane": 0.6,
+   "cocco": 0.6,
+   "note marine": 0.5,
+   "gardenia": 0.4,
+   "mango": 0.3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "viaggio-maldive",
+  "tipo": "viaggio",
+  "forme": [
+   "maldive",
+   "maldiviano",
+   "resort alle maldive",
+   "acqua cristallina",
+   "laguna tropicale"
+  ],
+  "evoca": "un atollo alle Maldive",
+  "accordi": {
+   "acquatico": 1,
+   "solare": 0.6,
+   "muschiato": 0.3,
+   "agrumato": 0.3
+  },
+  "note": {
+   "note acquatiche": 0.8,
+   "note marine": 0.7,
+   "cocco": 0.6,
+   "sale marino": 0.4,
+   "lime": 0.3,
+   "muschio bianco": 0.3
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "viaggio-seychelles",
+  "tipo": "viaggio",
+  "forme": [
+   "seychelles",
+   "mauritius",
+   "isola di mauritius",
+   "oceano indiano",
+   "isole dell'oceano indiano",
+   "zanzibar"
+  ],
+  "evoca": "un'isola dell'oceano Indiano",
+  "accordi": {
+   "solare": 0.7,
+   "floreale-bianco": 0.5,
+   "acquatico": 0.5,
+   "speziato": 0.4
+  },
+  "note": {
+   "cocco": 0.7,
+   "vaniglia": 0.5,
+   "ylang ylang": 0.5,
+   "note marine": 0.5,
+   "cannella": 0.3,
+   "chiodi di garofano": 0.3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "sensuale",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "viaggio-madagascar",
+  "tipo": "viaggio",
+  "forme": [
+   "madagascar",
+   "malgascio",
+   "isola della vaniglia",
+   "nosy be"
+  ],
+  "evoca": "il Madagascar, isola della vaniglia",
+  "accordi": {
+   "vaniglia": 1,
+   "speziato": 0.5,
+   "floreale-bianco": 0.4,
+   "legnoso": 0.2
+  },
+  "note": {
+   "vaniglia": 0.9,
+   "vaniglia assoluta": 0.8,
+   "ylang ylang": 0.6,
+   "chiodi di garofano": 0.5,
+   "pepe nero": 0.4,
+   "cannella": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "carattere": [
+   "coccola",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "viaggio-africa",
+  "tipo": "viaggio",
+  "forme": [
+   "africa",
+   "africano",
+   "safari",
+   "kenya",
+   "tanzania",
+   "sudafrica",
+   "serengeti"
+  ],
+  "evoca": "la savana africana",
+  "accordi": {
+   "legnoso": 0.7,
+   "ambrato": 0.5,
+   "aromatico": 0.4,
+   "speziato": 0.3,
+   "cuoio": 0.3
+  },
+  "note": {
+   "vetiver": 0.7,
+   "fieno": 0.5,
+   "ambra": 0.4,
+   "legno di guaiaco": 0.4,
+   "cuoio": 0.3,
+   "pepe": 0.3
+  },
+  "stagioni": {
+   "estate": 0.6
+  },
+  "carattere": [
+   "audace",
+   "sicuro"
+  ],
+  "manca": [
+   "erba secca"
+  ]
+ },
+ {
+  "chiave": "viaggio-new-york",
+  "tipo": "viaggio",
+  "forme": [
+   "new york",
+   "newyorkese",
+   "brooklyn",
+   "grande mela",
+   "grattacieli di new york"
+  ],
+  "evoca": "New York",
+  "accordi": {
+   "legnoso": 0.6,
+   "muschiato": 0.5,
+   "cuoio": 0.5,
+   "speziato": 0.3,
+   "gourmand": 0.3
+  },
+  "note": {
+   "legno di cedro": 0.6,
+   "caffè": 0.5,
+   "cuoio": 0.5,
+   "pepe nero": 0.5,
+   "muschio": 0.5,
+   "vetiver": 0.4,
+   "aldeidi": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "occasioni": [
+   "ufficio",
+   "serata"
+  ],
+  "carattere": [
+   "energico",
+   "sicuro"
+  ],
+  "manca": [
+   "asfalto"
+  ]
+ },
+ {
+  "chiave": "viaggio-california",
+  "tipo": "viaggio",
+  "forme": [
+   "california",
+   "californiano",
+   "los angeles",
+   "san francisco",
+   "malibu",
+   "big sur",
+   "costa californiana",
+   "west coast"
+  ],
+  "evoca": "la costa californiana",
+  "accordi": {
+   "agrumato": 0.7,
+   "acquatico": 0.6,
+   "legnoso": 0.4,
+   "solare": 0.4
+  },
+  "note": {
+   "arancia": 0.8,
+   "note marine": 0.6,
+   "pompelmo": 0.5,
+   "legno di cedro": 0.4,
+   "sale": 0.3,
+   "cocco": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "ricordo-casa-nonna",
+  "tipo": "ricordo",
+  "forme": [
+   "casa della nonna",
+   "casa dei nonni",
+   "domenica dai nonni",
+   "salotto della nonna",
+   "casa di campagna dei nonni"
+  ],
+  "evoca": "la casa della nonna",
+  "accordi": {
+   "cipriato": 0.6,
+   "aromatico": 0.5,
+   "legnoso": 0.4,
+   "gourmand": 0.3,
+   "miele": 0.3
+  },
+  "note": {
+   "lavanda": 0.6,
+   "iris": 0.4,
+   "violetta": 0.4,
+   "legno di cedro": 0.4,
+   "cera d'api": 0.4,
+   "caffè": 0.3,
+   "mandorla": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "ricordo-armadio-nonna",
+  "tipo": "ricordo",
+  "forme": [
+   "armadio della nonna",
+   "cassetti della nonna",
+   "biancheria della nonna",
+   "cassettone della nonna",
+   "sacchetti di lavanda nei cassetti",
+   "lenzuola della nonna",
+   "corredo della nonna"
+  ],
+  "evoca": "l'armadio della nonna",
+  "accordi": {
+   "aromatico": 0.8,
+   "cipriato": 0.6,
+   "legnoso": 0.5,
+   "muschiato": 0.4
+  },
+  "note": {
+   "lavanda": 1,
+   "legno di cedro": 0.6,
+   "iris": 0.5,
+   "note talcate": 0.5,
+   "muschio bianco": 0.4,
+   "violetta": 0.3
+  },
+  "carattere": [
+   "calmo",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "ricordo-cucina-nonna",
+  "tipo": "ricordo",
+  "forme": [
+   "cucina della nonna",
+   "nonna ai fornelli",
+   "nonna che cucinava",
+   "dispensa della nonna"
+  ],
+  "evoca": "la cucina della nonna",
+  "accordi": {
+   "gourmand": 0.6,
+   "speziato": 0.5,
+   "aromatico": 0.3,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "cannella": 0.6,
+   "caffè": 0.5,
+   "vaniglia": 0.5,
+   "foglia d'alloro": 0.4,
+   "burro": 0.3,
+   "chiodi di garofano": 0.3,
+   "rosmarino": 0.3
+  },
+  "stagioni": {
+   "autunno": 0.5,
+   "inverno": 0.5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "ricordo-dolci-nonna",
+  "tipo": "ricordo",
+  "forme": [
+   "dolci della nonna",
+   "biscotti della nonna",
+   "crostata della nonna",
+   "ciambellone della nonna",
+   "merenda dalla nonna",
+   "torte della nonna appena sfornate"
+  ],
+  "evoca": "i dolci della nonna",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.8,
+   "agrumato": 0.2
+  },
+  "note": {
+   "vaniglia": 0.9,
+   "burro": 0.5,
+   "mandorla": 0.5,
+   "zucchero vanigliato": 0.4,
+   "latte": 0.3,
+   "caramello": 0.3,
+   "limone": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "autunno": 0.4,
+   "inverno": 0.4
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "ricordo-colazione-nonna",
+  "tipo": "ricordo",
+  "forme": [
+   "colazione dalla nonna",
+   "moka della nonna",
+   "caffellatte della nonna",
+   "inzuppare i biscotti",
+   "latte e biscotti",
+   "colazione da bambino"
+  ],
+  "evoca": "la colazione dalla nonna",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "caffè": 0.8,
+   "latte": 0.5,
+   "burro": 0.4,
+   "vaniglia": 0.4,
+   "zucchero": 0.3,
+   "cacao": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "momento": {
+   "giorno": 0.8
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "ricordo-cipria-nonna",
+  "tipo": "ricordo",
+  "forme": [
+   "cipria della nonna",
+   "borsetta della nonna",
+   "rossetto della nonna",
+   "nonna elegante",
+   "nonna che si truccava",
+   "specchiera della nonna"
+  ],
+  "evoca": "la cipria della nonna",
+  "accordi": {
+   "cipriato": 1,
+   "rosa": 0.6,
+   "floreale-fresco": 0.3,
+   "speziato": 0.2
+  },
+  "note": {
+   "violetta": 0.7,
+   "iris": 0.6,
+   "rosa": 0.6,
+   "aldeidi": 0.5,
+   "note talcate": 0.5,
+   "garofano": 0.3
+  },
+  "carattere": [
+   "elegante",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "ricordo-mamma",
+  "tipo": "ricordo",
+  "forme": [
+   "abbraccio della mamma",
+   "borsetta della mamma",
+   "cipria della mamma",
+   "rossetto della mamma",
+   "collo della mamma",
+   "mamma che si preparava per uscire",
+   "mamma quando usciva la sera"
+  ],
+  "evoca": "il profumo della mamma",
+  "accordi": {
+   "cipriato": 0.8,
+   "muschiato": 0.6,
+   "rosa": 0.5,
+   "floreale-fresco": 0.5,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "iris": 0.6,
+   "rosa": 0.6,
+   "muschio bianco": 0.6,
+   "aldeidi": 0.4,
+   "mughetto": 0.4,
+   "gelsomino": 0.3,
+   "note talcate": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "carattere": [
+   "coccola",
+   "elegante",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "ricordo-papa",
+  "tipo": "ricordo",
+  "forme": [
+   "dopobarba del papà",
+   "barba del papà",
+   "schiuma da barba del papà",
+   "papà che si radeva",
+   "papà che si faceva la barba",
+   "giacca del papà",
+   "abbraccio del papà",
+   "cravatta del papà"
+  ],
+  "evoca": "il dopobarba del papà",
+  "accordi": {
+   "aromatico": 0.9,
+   "legnoso": 0.6,
+   "agrumato": 0.3,
+   "muschiato": 0.3,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "lavanda": 1,
+   "muschio di quercia": 0.6,
+   "bergamotto": 0.5,
+   "fava tonka": 0.5,
+   "geranio": 0.4,
+   "legno di cedro": 0.4,
+   "cumarina": 0.4
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "sicuro",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "ricordo-colonia-nonno",
+  "tipo": "ricordo",
+  "forme": [
+   "colonia del nonno",
+   "acqua di colonia del nonno",
+   "nonno elegante",
+   "giacca del nonno",
+   "cappello del nonno",
+   "nonno la domenica"
+  ],
+  "evoca": "l'acqua di colonia del nonno",
+  "accordi": {
+   "agrumato": 0.8,
+   "aromatico": 0.6,
+   "floreale-bianco": 0.3,
+   "legnoso": 0.3
+  },
+  "note": {
+   "bergamotto": 0.8,
+   "limone": 0.6,
+   "neroli": 0.5,
+   "lavanda": 0.4,
+   "rosmarino": 0.4,
+   "vetiver": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "carattere": [
+   "elegante",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "ricordo-nonno-pipa",
+  "tipo": "ricordo",
+  "forme": [
+   "nonno che fumava la pipa",
+   "pipa del nonno",
+   "nonno con la pipa",
+   "tabacco da pipa del nonno",
+   "studio del nonno",
+   "poltrona del nonno"
+  ],
+  "evoca": "la pipa del nonno",
+  "accordi": {
+   "tabacco": 1,
+   "cuoio": 0.5,
+   "vaniglia": 0.4,
+   "miele": 0.4,
+   "legnoso": 0.4
+  },
+  "note": {
+   "tabacco": 0.9,
+   "foglia di tabacco": 0.7,
+   "cuoio": 0.5,
+   "miele": 0.4,
+   "vaniglia": 0.4,
+   "fava tonka": 0.4,
+   "cognac": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.6,
+   "inverno": 0.6
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "ricordo-neonato",
+  "tipo": "ricordo",
+  "forme": [
+   "profumo di neonato",
+   "pelle di neonato",
+   "testolina del neonato",
+   "bimbo appena nato",
+   "bambino appena nato",
+   "talco del neonato",
+   "culla del bimbo",
+   "nascita di un bambino"
+  ],
+  "evoca": "la pelle di un neonato",
+  "accordi": {
+   "muschiato": 0.8,
+   "cipriato": 0.8,
+   "vaniglia": 0.3,
+   "gourmand": 0.2
+  },
+  "note": {
+   "muschio bianco": 0.8,
+   "note talcate": 0.8,
+   "latte": 0.4,
+   "eliotropio": 0.4,
+   "iris": 0.4,
+   "vaniglia": 0.2
+  },
+  "misure": {
+   "intensita": 1,
+   "dolcezza": 3
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "ricordo-scuola",
+  "tipo": "ricordo",
+  "forme": [
+   "banchi di scuola",
+   "astuccio di scuola",
+   "matite colorate",
+   "temperamatite",
+   "libri di scuola nuovi",
+   "gomma per cancellare",
+   "diario di scuola",
+   "scuola elementare"
+  ],
+  "evoca": "il primo giorno di scuola",
+  "accordi": {
+   "legnoso": 0.9,
+   "cipriato": 0.4
+  },
+  "note": {
+   "legno di cedro": 1,
+   "cedro": 0.6,
+   "inchiostro": 0.4,
+   "papiro": 0.3,
+   "vinile": 0.3,
+   "iris": 0.3
+  },
+  "stagioni": {
+   "autunno": 0.8
+  },
+  "carattere": [
+   "allegro",
+   "calmo"
+  ],
+  "manca": [
+   "carta",
+   "gomma da cancellare"
+  ]
+ },
+ {
+  "chiave": "ricordo-estate-bambino",
+  "tipo": "ricordo",
+  "forme": [
+   "estate da bambino",
+   "estati dell'infanzia",
+   "estate da piccolo",
+   "estate di quando ero piccolo",
+   "vacanze estive da bambino",
+   "estati da ragazzino"
+  ],
+  "evoca": "le estati da bambino",
+  "accordi": {
+   "solare": 0.6,
+   "fruttato": 0.5,
+   "verde": 0.4,
+   "acquatico": 0.3,
+   "gourmand": 0.2
+  },
+  "note": {
+   "cocco": 0.5,
+   "anguria": 0.5,
+   "pesca": 0.5,
+   "albicocca": 0.4,
+   "foglie verdi": 0.4,
+   "fieno": 0.3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "ricordo-mare-bambino",
+  "tipo": "ricordo",
+  "forme": [
+   "vacanze al mare da piccolo",
+   "mare da bambino",
+   "mare da piccolo",
+   "estate al mare coi genitori",
+   "castelli di sabbia",
+   "secchiello e paletta",
+   "sotto l'ombrellone da bambino"
+  ],
+  "evoca": "le vacanze al mare da piccolo",
+  "accordi": {
+   "solare": 0.8,
+   "acquatico": 0.7,
+   "muschiato": 0.2
+  },
+  "note": {
+   "cocco": 0.7,
+   "note marine": 0.7,
+   "sale": 0.5,
+   "fiori bianchi": 0.3,
+   "vaniglia": 0.2,
+   "muschio bianco": 0.2
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "ricordo-crema-solare",
+  "tipo": "ricordo",
+  "forme": [
+   "crema solare",
+   "crema abbronzante",
+   "olio abbronzante",
+   "olio solare",
+   "latte solare",
+   "protezione solare",
+   "doposole"
+  ],
+  "evoca": "la crema solare",
+  "accordi": {
+   "solare": 1,
+   "floreale-bianco": 0.5,
+   "vaniglia": 0.3,
+   "muschiato": 0.3
+  },
+  "note": {
+   "cocco": 1,
+   "latte di cocco": 0.6,
+   "tiarè": 0.5,
+   "ylang ylang": 0.4,
+   "fiori bianchi": 0.4,
+   "vaniglia": 0.3,
+   "eliotropio": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "sensuale",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "ricordo-gelati-estate",
+  "tipo": "ricordo",
+  "forme": [
+   "gelati d'estate",
+   "gelato sulla spiaggia",
+   "gelateria sotto casa"
+  ],
+  "evoca": "i gelati d'estate",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.5,
+   "fruttato": 0.5
+  },
+  "note": {
+   "gelato": 0.8,
+   "panna montata": 0.5,
+   "vaniglia": 0.5,
+   "pistacchio": 0.4,
+   "fragola": 0.4,
+   "cioccolato": 0.3,
+   "limone": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "ricordo-natale-famiglia",
+  "tipo": "ricordo",
+  "forme": [
+   "natale in famiglia",
+   "natale dai nonni",
+   "pranzo di natale",
+   "cenone di natale",
+   "aria di natale",
+   "natale da bambino"
+  ],
+  "evoca": "il Natale in famiglia",
+  "accordi": {
+   "speziato": 0.8,
+   "gourmand": 0.6,
+   "agrumato": 0.4,
+   "ambrato": 0.3,
+   "legnoso": 0.3
+  },
+  "note": {
+   "cannella": 0.8,
+   "chiodi di garofano": 0.6,
+   "arancia": 0.5,
+   "mandarino": 0.5,
+   "zenzero": 0.4,
+   "vaniglia": 0.4,
+   "abete": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "momento": {
+   "sera": 0.6
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "ricordo-albero-natale",
+  "tipo": "ricordo",
+  "forme": [
+   "albero natalizio",
+   "addobbi di natale",
+   "abete di natale",
+   "ghirlanda di natale"
+  ],
+  "evoca": "l'albero di Natale",
+  "accordi": {
+   "legnoso": 1,
+   "verde": 0.5,
+   "speziato": 0.3,
+   "agrumato": 0.2
+  },
+  "note": {
+   "abete": 1,
+   "resina di abete": 0.7,
+   "aghi di pino": 0.5,
+   "cannella": 0.3,
+   "arancia": 0.3,
+   "chiodi di garofano": 0.2
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "carattere": [
+   "coccola",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "ricordo-presepe",
+  "tipo": "ricordo",
+  "forme": [
+   "presepio",
+   "presepe vivente",
+   "capanna del presepe",
+   "muschio del presepe"
+  ],
+  "evoca": "il presepe",
+  "accordi": {
+   "incenso": 0.7,
+   "verde": 0.6,
+   "legnoso": 0.4,
+   "ambrato": 0.3
+  },
+  "note": {
+   "olibano": 0.6,
+   "muschio di quercia": 0.6,
+   "fieno": 0.5,
+   "mirra": 0.5,
+   "muschio vegetale": 0.4,
+   "legno di cedro": 0.3
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "ricordo-chiesa-domenica",
+  "tipo": "ricordo",
+  "forme": [
+   "chiesa la domenica",
+   "messa della domenica",
+   "incenso in chiesa",
+   "chierichetto",
+   "navata della chiesa"
+  ],
+  "evoca": "la chiesa la domenica",
+  "accordi": {
+   "incenso": 1,
+   "ambrato": 0.4,
+   "legnoso": 0.4,
+   "miele": 0.3
+  },
+  "note": {
+   "incenso": 1,
+   "olibano": 0.8,
+   "mirra": 0.5,
+   "cera d'api": 0.4,
+   "benzoino": 0.3,
+   "legno di cedro": 0.3
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "ricordo-pasqua",
+  "tipo": "ricordo",
+  "forme": [
+   "pasqua in famiglia",
+   "pranzo di pasqua",
+   "pasqua dai nonni",
+   "pasqua da bambino",
+   "pasquetta in famiglia"
+  ],
+  "evoca": "la Pasqua in famiglia",
+  "accordi": {
+   "gourmand": 0.8,
+   "floreale-bianco": 0.5,
+   "agrumato": 0.4,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "fiore d'arancio": 0.7,
+   "vaniglia": 0.6,
+   "mandorla": 0.5,
+   "frutta candita": 0.4,
+   "cioccolato": 0.4,
+   "arancia": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "primavera": 1
+  },
+  "carattere": [
+   "allegro",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "ricordo-festa-paese",
+  "tipo": "ricordo",
+  "forme": [
+   "festa di paese",
+   "sagra di paese",
+   "sagra",
+   "festa patronale",
+   "bancarelle della festa",
+   "croccante della festa"
+  ],
+  "evoca": "la festa di paese",
+  "accordi": {
+   "gourmand": 1,
+   "miele": 0.3,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "caramello": 0.8,
+   "mandorla": 0.6,
+   "zucchero": 0.5,
+   "miele": 0.4,
+   "nocciola": 0.3,
+   "zucchero filato": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "estate": 0.7
+  },
+  "momento": {
+   "sera": 0.6
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "ricordo-luna-park",
+  "tipo": "ricordo",
+  "forme": [
+   "autoscontri",
+   "giostre di paese",
+   "luna park da bambino",
+   "giostre da bambino",
+   "fiera con le giostre"
+  ],
+  "evoca": "il luna park",
+  "accordi": {
+   "gourmand": 1,
+   "fruttato": 0.5,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "zucchero filato": 1,
+   "caramello": 0.6,
+   "mela": 0.4,
+   "zucchero": 0.4,
+   "burro": 0.3,
+   "fragola": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "momento": {
+   "sera": 0.7
+  },
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "popcorn"
+  ]
+ },
+ {
+  "chiave": "ricordo-barbiere",
+  "tipo": "ricordo",
+  "forme": [
+   "barbiere di una volta",
+   "sapone da barba",
+   "pennello da barba",
+   "rasatura col rasoio"
+  ],
+  "evoca": "il barbiere di una volta",
+  "accordi": {
+   "aromatico": 0.8,
+   "muschiato": 0.5,
+   "cipriato": 0.4,
+   "agrumato": 0.3,
+   "legnoso": 0.3
+  },
+  "note": {
+   "lavanda": 0.9,
+   "note talcate": 0.5,
+   "bergamotto": 0.5,
+   "muschio bianco": 0.4,
+   "fava tonka": 0.4,
+   "geranio": 0.3,
+   "legno di cedro": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "sicuro",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "ricordo-falo-spiaggia",
+  "tipo": "ricordo",
+  "forme": [
+   "fuoco sulla spiaggia",
+   "ferragosto in spiaggia",
+   "falò di ferragosto",
+   "falò con gli amici",
+   "chitarra intorno al falò"
+  ],
+  "evoca": "un falò sulla spiaggia",
+  "accordi": {
+   "incenso": 0.7,
+   "acquatico": 0.6,
+   "legnoso": 0.6,
+   "ambrato": 0.3
+  },
+  "note": {
+   "fumo": 0.8,
+   "note marine": 0.6,
+   "legno marino": 0.5,
+   "betulla": 0.4,
+   "legno di guaiaco": 0.4,
+   "sale": 0.4,
+   "ambra": 0.3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "romantico",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "ricordo-campeggio",
+  "tipo": "ricordo",
+  "forme": [
+   "campeggio",
+   "tenda in campeggio",
+   "campeggio in montagna",
+   "campeggio al mare",
+   "campo scout",
+   "scout",
+   "fuoco da campo",
+   "notte in tenda"
+  ],
+  "evoca": "le estati in campeggio",
+  "accordi": {
+   "legnoso": 0.8,
+   "verde": 0.6,
+   "incenso": 0.4,
+   "aromatico": 0.2
+  },
+  "note": {
+   "aghi di pino": 0.6,
+   "abete": 0.5,
+   "fumo": 0.5,
+   "betulla": 0.4,
+   "felce": 0.4,
+   "note verdi": 0.4,
+   "muschio di quercia": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "energico"
+  ]
+ },
+ {
+  "chiave": "ricordo-montagna-bambino",
+  "tipo": "ricordo",
+  "forme": [
+   "vacanze in montagna da piccolo",
+   "montagna da bambino",
+   "estate in montagna coi nonni",
+   "colonia estiva",
+   "colonia in montagna",
+   "passeggiate nei boschi da bambino"
+  ],
+  "evoca": "le vacanze in montagna da bambino",
+  "accordi": {
+   "legnoso": 0.8,
+   "verde": 0.6,
+   "aromatico": 0.3,
+   "fruttato": 0.2
+  },
+  "note": {
+   "abete": 0.8,
+   "fieno": 0.6,
+   "resina di abete": 0.4,
+   "bacche selvatiche": 0.4,
+   "mirtillo": 0.3,
+   "camomilla": 0.3,
+   "note verdi": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "ricordo-san-lorenzo",
+  "tipo": "ricordo",
+  "forme": [
+   "san lorenzo",
+   "notte delle stelle cadenti",
+   "dieci agosto",
+   "notte d'agosto sotto le stelle"
+  ],
+  "evoca": "la notte di San Lorenzo",
+  "accordi": {
+   "floreale-bianco": 0.8,
+   "verde": 0.4,
+   "acquatico": 0.3,
+   "muschiato": 0.3
+  },
+  "note": {
+   "gelsomino": 0.9,
+   "tuberosa": 0.4,
+   "note verdi": 0.4,
+   "fieno": 0.3,
+   "note ozoniche": 0.3,
+   "muschio": 0.3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "romantico",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "ricordo-campagna-nonni",
+  "tipo": "ricordo",
+  "forme": [
+   "campagna dei nonni",
+   "casale dei nonni",
+   "covoni di fieno",
+   "aia dei nonni"
+  ],
+  "evoca": "la campagna dei nonni",
+  "accordi": {
+   "aromatico": 0.6,
+   "verde": 0.6,
+   "miele": 0.4,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "fieno": 1,
+   "cumarina": 0.5,
+   "fava tonka": 0.4,
+   "miele": 0.4,
+   "camomilla": 0.3,
+   "note verdi": 0.3
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "calmo",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "ricordo-vendemmia",
+  "tipo": "ricordo",
+  "forme": [
+   "vendemmia col nonno",
+   "vendemmia in campagna",
+   "raccogliere l'uva",
+   "pigiatura dell'uva",
+   "cantina del nonno"
+  ],
+  "evoca": "la vendemmia col nonno",
+  "accordi": {
+   "fruttato": 0.8,
+   "boozy": 0.5,
+   "legnoso": 0.4,
+   "verde": 0.3
+  },
+  "note": {
+   "prugna": 0.5,
+   "ribes nero": 0.5,
+   "liquore": 0.4,
+   "quercia": 0.4,
+   "fico": 0.3,
+   "foglie verdi": 0.3
+  },
+  "stagioni": {
+   "autunno": 1
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ],
+  "manca": [
+   "uva",
+   "mosto"
+  ]
+ },
+ {
+  "chiave": "ricordo-raccolta-olive",
+  "tipo": "ricordo",
+  "forme": [
+   "raccogliere le olive",
+   "olive col nonno",
+   "olio nuovo al frantoio",
+   "reti sotto gli ulivi"
+  ],
+  "evoca": "la raccolta delle olive",
+  "accordi": {
+   "verde": 0.9,
+   "legnoso": 0.4,
+   "aromatico": 0.3,
+   "patchouli": 0.2
+  },
+  "note": {
+   "foglie di olivo": 1,
+   "note verdi": 0.6,
+   "foglie verdi": 0.5,
+   "galbano": 0.3,
+   "vetiver": 0.3,
+   "note terrose": 0.3
+  },
+  "stagioni": {
+   "autunno": 1
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "olio d'oliva"
+  ]
+ },
+ {
+  "chiave": "ricordo-orto-nonno",
+  "tipo": "ricordo",
+  "forme": [
+   "orto del nonno",
+   "innaffiare l'orto",
+   "orto della nonna",
+   "raccogliere i pomodori"
+  ],
+  "evoca": "l'orto del nonno",
+  "accordi": {
+   "verde": 1,
+   "aromatico": 0.5,
+   "fruttato": 0.2
+  },
+  "note": {
+   "note verdi": 0.8,
+   "foglie verdi": 0.6,
+   "basilico": 0.5,
+   "menta": 0.3,
+   "rabarbaro": 0.3,
+   "cetriolo": 0.3,
+   "note terrose": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ],
+  "manca": [
+   "foglia di pomodoro"
+  ]
+ },
+ {
+  "chiave": "ricordo-primo-amore",
+  "tipo": "ricordo",
+  "forme": [
+   "primo amore",
+   "prima cotta",
+   "primo bacio",
+   "amore adolescente",
+   "innamorarsi da ragazzi"
+  ],
+  "evoca": "il primo amore",
+  "accordi": {
+   "rosa": 0.6,
+   "fruttato": 0.6,
+   "muschiato": 0.5,
+   "vaniglia": 0.4,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "rosa": 0.6,
+   "peonia": 0.5,
+   "lampone": 0.5,
+   "muschio bianco": 0.5,
+   "pesca": 0.4,
+   "vaniglia": 0.4
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "primavera": 0.7
+  },
+  "carattere": [
+   "romantico"
+  ],
+  "occasioni": [
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "ricordo-ballo-scuola",
+  "tipo": "ricordo",
+  "forme": [
+   "ballo della scuola",
+   "ballo di fine anno",
+   "festa di fine anno",
+   "festa dei diciotto anni",
+   "diciottesimo",
+   "prom"
+  ],
+  "evoca": "il ballo di fine anno",
+  "accordi": {
+   "fruttato": 0.7,
+   "gourmand": 0.5,
+   "muschiato": 0.3,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "pera": 0.5,
+   "fragola": 0.5,
+   "vaniglia": 0.4,
+   "zucchero filato": 0.3,
+   "gelsomino": 0.3,
+   "muschio": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "ricordo-vacanza-amici",
+  "tipo": "ricordo",
+  "forme": [
+   "prima vacanza da soli",
+   "prima vacanza con gli amici",
+   "vacanza con gli amici",
+   "viaggio con gli amici",
+   "interrail",
+   "zaino in spalla",
+   "vacanza da ragazzi"
+  ],
+  "evoca": "la prima vacanza da soli",
+  "accordi": {
+   "agrumato": 0.8,
+   "acquatico": 0.6,
+   "fruttato": 0.3,
+   "aromatico": 0.2
+  },
+  "note": {
+   "pompelmo": 0.7,
+   "note marine": 0.6,
+   "lime": 0.5,
+   "menta": 0.4,
+   "zenzero": 0.3,
+   "muschio": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "energico",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "ricordo-viaggio-nozze",
+  "tipo": "ricordo",
+  "forme": [
+   "viaggio di nozze",
+   "luna di miele",
+   "honeymoon",
+   "vacanza da sposi",
+   "isola romantica"
+  ],
+  "evoca": "il viaggio di nozze",
+  "accordi": {
+   "floreale-bianco": 0.8,
+   "solare": 0.5,
+   "vaniglia": 0.4,
+   "muschiato": 0.3
+  },
+  "note": {
+   "gelsomino": 0.7,
+   "fiore d'arancio": 0.6,
+   "tiarè": 0.5,
+   "cocco": 0.4,
+   "vaniglia": 0.4,
+   "muschio": 0.3
+  },
+  "occasioni": [
+   "romantico",
+   "speciale"
+  ],
+  "carattere": [
+   "romantico",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "ricordo-casa",
+  "tipo": "ricordo",
+  "forme": [
+   "tornare a casa",
+   "rientrare a casa",
+   "come a casa propria",
+   "casa dolce casa"
+  ],
+  "evoca": "il calore di casa",
+  "accordi": {
+   "muschiato": 0.8,
+   "vaniglia": 0.5,
+   "legnoso": 0.4,
+   "gourmand": 0.2
+  },
+  "note": {
+   "muschio bianco": 0.8,
+   "cachemire": 0.5,
+   "vaniglia": 0.5,
+   "note pulite": 0.4,
+   "legno di cedro": 0.4,
+   "fava tonka": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "ricordo-anni-cinquanta",
+  "tipo": "ricordo",
+  "forme": [
+   "anni cinquanta",
+   "anni sessanta",
+   "dive di una volta",
+   "dive del cinema di una volta",
+   "signora di una volta"
+  ],
+  "evoca": "l'eleganza degli anni Cinquanta",
+  "accordi": {
+   "cipriato": 0.9,
+   "rosa": 0.6,
+   "floreale-bianco": 0.4,
+   "muschiato": 0.3
+  },
+  "note": {
+   "aldeidi": 0.8,
+   "iris": 0.6,
+   "rosa": 0.6,
+   "gelsomino": 0.4,
+   "ylang ylang": 0.3,
+   "muschio": 0.3
+  },
+  "carattere": [
+   "elegante"
+  ],
+  "occasioni": [
+   "serata",
+   "speciale"
+  ]
+ },
+ {
+  "chiave": "ricordo-anni-settanta",
+  "tipo": "ricordo",
+  "forme": [
+   "anni settanta",
+   "figli dei fiori",
+   "stile hippie",
+   "hippy"
+  ],
+  "evoca": "gli anni Settanta",
+  "accordi": {
+   "patchouli": 1,
+   "incenso": 0.4,
+   "legnoso": 0.4,
+   "ambrato": 0.3
+  },
+  "note": {
+   "patchouli": 1,
+   "sandalo": 0.5,
+   "incenso": 0.4,
+   "muschio di quercia": 0.4,
+   "ambra": 0.3,
+   "bergamotto": 0.2
+  },
+  "carattere": [
+   "audace",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "ricordo-anni-ottanta",
+  "tipo": "ricordo",
+  "forme": [
+   "anni ottanta",
+   "profumoni anni ottanta",
+   "stile anni ottanta",
+   "spalline anni ottanta"
+  ],
+  "evoca": "gli anni Ottanta",
+  "accordi": {
+   "floreale-bianco": 0.8,
+   "speziato": 0.5,
+   "ambrato": 0.5,
+   "patchouli": 0.4,
+   "fruttato": 0.3
+  },
+  "note": {
+   "tuberosa": 0.8,
+   "gelsomino": 0.5,
+   "garofano": 0.4,
+   "prugna": 0.4,
+   "patchouli": 0.4,
+   "ambra": 0.4,
+   "muschio di quercia": 0.3
+  },
+  "misure": {
+   "intensita": 5,
+   "persistenza": 5
+  },
+  "carattere": [
+   "audace"
+  ]
+ },
+ {
+  "chiave": "ricordo-anni-novanta",
+  "tipo": "ricordo",
+  "forme": [
+   "anni novanta",
+   "stile anni novanta",
+   "acquatici anni novanta",
+   "moda anni novanta"
+  ],
+  "evoca": "gli anni Novanta",
+  "accordi": {
+   "acquatico": 0.9,
+   "floreale-fresco": 0.4,
+   "agrumato": 0.4,
+   "muschiato": 0.4
+  },
+  "note": {
+   "note ozoniche": 0.8,
+   "note acquatiche": 0.7,
+   "melone": 0.5,
+   "loto": 0.4,
+   "bergamotto": 0.4,
+   "muschio bianco": 0.4,
+   "cetriolo": 0.3
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "ricordo-anni-duemila",
+  "tipo": "ricordo",
+  "forme": [
+   "anni duemila",
+   "primi anni duemila",
+   "anni zero",
+   "moda anni duemila"
+  ],
+  "evoca": "i primi anni Duemila",
+  "accordi": {
+   "gourmand": 0.7,
+   "fruttato": 0.7,
+   "vaniglia": 0.5,
+   "muschiato": 0.3
+  },
+  "note": {
+   "zucchero filato": 0.6,
+   "vaniglia": 0.6,
+   "fragola": 0.5,
+   "lampone": 0.4,
+   "pralina": 0.4,
+   "muschio": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "allegro"
+  ]
+ }
+]

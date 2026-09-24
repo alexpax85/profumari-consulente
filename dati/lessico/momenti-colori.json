@@ -1,0 +1,3122 @@
+[
+ {
+  "chiave": "momento-mattina",
+  "tipo": "momento",
+  "forme": [
+   "mattina",
+   "mattinata",
+   "prima mattina",
+   "mattina presto",
+   "mattiniero"
+  ],
+  "evoca": "la mattina",
+  "accordi": {
+   "agrumato": 0.8,
+   "aromatico": 0.4,
+   "muschiato": 0.4,
+   "verde": 0.3
+  },
+  "note": {
+   "bergamotto": 1,
+   "limone": 0.7,
+   "neroli": 0.5,
+   "muschio bianco": 0.5,
+   "tè verde": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 2
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "quotidiano",
+   "ufficio"
+  ],
+  "carattere": [
+   "fresco",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "momento-risveglio",
+  "tipo": "momento",
+  "forme": [
+   "risveglio",
+   "appena sveglio",
+   "svegliarsi",
+   "appena alzato",
+   "buon risveglio"
+  ],
+  "evoca": "il risveglio",
+  "accordi": {
+   "agrumato": 0.7,
+   "muschiato": 0.6,
+   "tè": 0.4,
+   "floreale-bianco": 0.2
+  },
+  "note": {
+   "mandarino": 0.9,
+   "muschio bianco": 0.8,
+   "tè": 0.5,
+   "fiore d'arancio": 0.4,
+   "bergamotto": 0.5
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 2
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "coccola",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "momento-alba",
+  "tipo": "momento",
+  "forme": [
+   "alba",
+   "aurora",
+   "sorgere del sole",
+   "sole che sorge",
+   "prime luci",
+   "prime luci del giorno",
+   "primo sole"
+  ],
+  "evoca": "l'alba",
+  "accordi": {
+   "floreale-fresco": 0.7,
+   "agrumato": 0.6,
+   "muschiato": 0.4,
+   "acquatico": 0.3
+  },
+  "note": {
+   "neroli": 0.8,
+   "bergamotto": 0.7,
+   "peonia": 0.5,
+   "note ozoniche": 0.4,
+   "muschio bianco": 0.4
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "momento-mezzogiorno",
+  "tipo": "momento",
+  "forme": [
+   "mezzogiorno",
+   "mezzodì",
+   "pieno giorno",
+   "ore centrali",
+   "ore centrali del giorno"
+  ],
+  "evoca": "il mezzogiorno",
+  "accordi": {
+   "agrumato": 0.8,
+   "solare": 0.4,
+   "aromatico": 0.4,
+   "floreale-bianco": 0.2
+  },
+  "note": {
+   "limone": 0.8,
+   "pompelmo": 0.6,
+   "neroli": 0.4,
+   "rosmarino": 0.3,
+   "cocco": 0.2
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "carattere": [
+   "energico"
+  ]
+ },
+ {
+  "chiave": "momento-giorno",
+  "tipo": "momento",
+  "forme": [
+   "di giorno",
+   "giornata",
+   "durante il giorno",
+   "diurno",
+   "tutto il giorno"
+  ],
+  "evoca": "il giorno",
+  "accordi": {
+   "agrumato": 0.7,
+   "muschiato": 0.5,
+   "floreale-fresco": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "bergamotto": 0.8,
+   "muschio bianco": 0.6,
+   "peonia": 0.4,
+   "legno di cedro": 0.4,
+   "pompelmo": 0.3
+  },
+  "misure": {
+   "intensita": 3
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "quotidiano"
+  ]
+ },
+ {
+  "chiave": "momento-pomeriggio",
+  "tipo": "momento",
+  "forme": [
+   "pomeriggio",
+   "primo pomeriggio",
+   "tardo pomeriggio",
+   "pomeridiano"
+  ],
+  "evoca": "il pomeriggio",
+  "accordi": {
+   "tè": 0.7,
+   "floreale-fresco": 0.5,
+   "muschiato": 0.5,
+   "fruttato": 0.4
+  },
+  "note": {
+   "tè": 0.8,
+   "pera": 0.6,
+   "peonia": 0.5,
+   "muschio bianco": 0.5,
+   "iris": 0.3
+  },
+  "momento": {
+   "giorno": 0.8,
+   "sera": 0.2
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "momento-controra",
+  "tipo": "momento",
+  "forme": [
+   "controra",
+   "siesta",
+   "pennichella",
+   "ore calde",
+   "riposino pomeridiano",
+   "persiane chiuse"
+  ],
+  "evoca": "la controra d'estate",
+  "accordi": {
+   "solare": 0.7,
+   "floreale-bianco": 0.5,
+   "muschiato": 0.4,
+   "verde": 0.3
+  },
+  "note": {
+   "albero di fico": 0.7,
+   "gelsomino": 0.5,
+   "cocco": 0.4,
+   "muschio bianco": 0.5,
+   "tè": 0.3
+  },
+  "misure": {
+   "intensita": 2
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "momento-tramonto",
+  "tipo": "momento",
+  "forme": [
+   "tramonto",
+   "calar del sole",
+   "sole che tramonta",
+   "golden hour"
+  ],
+  "evoca": "il tramonto",
+  "accordi": {
+   "ambrato": 0.8,
+   "fruttato": 0.5,
+   "solare": 0.4,
+   "speziato": 0.3
+  },
+  "note": {
+   "ambra": 0.8,
+   "albicocca": 0.6,
+   "arancia": 0.5,
+   "osmanto": 0.5,
+   "sandalo": 0.5,
+   "pepe rosa": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "momento": {
+   "sera": 0.7,
+   "giorno": 0.3
+  },
+  "carattere": [
+   "romantico",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "momento-crepuscolo",
+  "tipo": "momento",
+  "forme": [
+   "crepuscolo",
+   "imbrunire",
+   "dopo il tramonto",
+   "primo buio",
+   "calar della sera",
+   "sera che scende",
+   "tra il giorno e la notte"
+  ],
+  "evoca": "il crepuscolo",
+  "accordi": {
+   "cipriato": 0.7,
+   "aromatico": 0.5,
+   "ambrato": 0.4,
+   "muschiato": 0.4
+  },
+  "note": {
+   "violetta": 0.7,
+   "lavanda": 0.6,
+   "iris": 0.5,
+   "ambra": 0.4,
+   "muschio": 0.4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "misterioso",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "momento-sera",
+  "tipo": "momento",
+  "forme": [
+   "sera",
+   "stasera",
+   "serale"
+  ],
+  "evoca": "la sera",
+  "accordi": {
+   "ambrato": 0.8,
+   "legnoso": 0.5,
+   "speziato": 0.4,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "ambra": 0.9,
+   "sandalo": 0.6,
+   "vaniglia": 0.5,
+   "cardamomo": 0.4,
+   "fava tonka": 0.4
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "elegante",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "momento-notte",
+  "tipo": "momento",
+  "forme": [
+   "notte",
+   "stanotte",
+   "notturno",
+   "nottata",
+   "ore piccole",
+   "nottambulo"
+  ],
+  "evoca": "la notte",
+  "accordi": {
+   "ambrato": 0.8,
+   "oud": 0.4,
+   "incenso": 0.4,
+   "vaniglia": 0.4,
+   "muschiato": 0.3
+  },
+  "note": {
+   "ambra": 0.8,
+   "legno di agar": 0.5,
+   "patchouli": 0.5,
+   "vaniglia": 0.5,
+   "incenso": 0.4,
+   "benzoino": 0.4
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 5
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "misterioso",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "momento-mezzanotte",
+  "tipo": "momento",
+  "forme": [
+   "mezzanotte",
+   "mezza notte",
+   "rintocchi di mezzanotte",
+   "scoccare della mezzanotte",
+   "dopo mezzanotte"
+  ],
+  "evoca": "la mezzanotte",
+  "accordi": {
+   "incenso": 0.7,
+   "ambrato": 0.6,
+   "speziato": 0.4,
+   "legnoso": 0.4
+  },
+  "note": {
+   "incenso": 0.8,
+   "ambra": 0.6,
+   "pepe nero": 0.5,
+   "legno di cedro": 0.4,
+   "mirra": 0.4
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "momento-notte-fonda",
+  "tipo": "momento",
+  "forme": [
+   "notte fonda",
+   "piena notte",
+   "cuore della notte",
+   "tarda notte",
+   "notte inoltrata",
+   "fino all'alba"
+  ],
+  "evoca": "la notte fonda",
+  "accordi": {
+   "oud": 0.8,
+   "incenso": 0.5,
+   "cuoio": 0.4,
+   "ambrato": 0.4
+  },
+  "note": {
+   "legno di agar": 0.9,
+   "incenso": 0.5,
+   "cuoio": 0.5,
+   "patchouli": 0.5,
+   "labdano": 0.4
+  },
+  "misure": {
+   "intensita": 5,
+   "persistenza": 5
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "misterioso",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "momento-notte-estate",
+  "tipo": "momento",
+  "forme": [
+   "notte d'estate",
+   "notte estiva",
+   "sera d'estate",
+   "serata estiva",
+   "notte di mezza estate",
+   "notte calda",
+   "sera estiva"
+  ],
+  "evoca": "una notte d'estate",
+  "accordi": {
+   "floreale-bianco": 0.9,
+   "solare": 0.4,
+   "muschiato": 0.4,
+   "ambrato": 0.3
+  },
+  "note": {
+   "gelsomino": 1,
+   "tuberosa": 0.6,
+   "fiore d'arancio": 0.5,
+   "muschio": 0.4,
+   "cocco": 0.3,
+   "ambra": 0.3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata",
+   "romantico"
+  ],
+  "carattere": [
+   "sensuale",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "momento-notte-inverno",
+  "tipo": "momento",
+  "forme": [
+   "notte d'inverno",
+   "notte invernale",
+   "sera d'inverno",
+   "serata invernale",
+   "notte gelida",
+   "sera invernale"
+  ],
+  "evoca": "una sera d'inverno",
+  "accordi": {
+   "ambrato": 0.8,
+   "vaniglia": 0.5,
+   "incenso": 0.4,
+   "legnoso": 0.4,
+   "speziato": 0.3
+  },
+  "note": {
+   "ambra": 0.8,
+   "benzoino": 0.6,
+   "vaniglia": 0.6,
+   "incenso": 0.4,
+   "legno di cedro": 0.4,
+   "cannella": 0.3
+  },
+  "misure": {
+   "persistenza": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "momento-notte-stellata",
+  "tipo": "momento",
+  "forme": [
+   "notte stellata",
+   "cielo stellato",
+   "sotto le stelle",
+   "stelle",
+   "stelle cadenti",
+   "notte di san lorenzo",
+   "cielo pieno di stelle",
+   "via lattea"
+  ],
+  "evoca": "una notte stellata",
+  "accordi": {
+   "cipriato": 0.7,
+   "incenso": 0.5,
+   "muschiato": 0.5,
+   "acquatico": 0.3
+  },
+  "note": {
+   "iris": 0.7,
+   "muschio bianco": 0.6,
+   "incenso": 0.5,
+   "note ozoniche": 0.5,
+   "ambroxan": 0.4,
+   "gelsomino": 0.3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "misterioso",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "momento-chiaro-di-luna",
+  "tipo": "momento",
+  "forme": [
+   "chiaro di luna",
+   "luna piena",
+   "sotto la luna",
+   "notte di luna",
+   "luce della luna",
+   "luna"
+  ],
+  "evoca": "una notte al chiaro di luna",
+  "accordi": {
+   "floreale-bianco": 0.7,
+   "muschiato": 0.5,
+   "cipriato": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "gelsomino": 0.7,
+   "tuberosa": 0.5,
+   "muschio bianco": 0.5,
+   "iris": 0.4,
+   "sandalo": 0.4,
+   "magnolia": 0.3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "romantico"
+  ],
+  "carattere": [
+   "romantico",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "momento-domenica-mattina",
+  "tipo": "momento",
+  "forme": [
+   "domenica mattina",
+   "domenica",
+   "weekend",
+   "fine settimana",
+   "sabato mattina",
+   "giorno libero",
+   "giorno di riposo",
+   "week end"
+  ],
+  "evoca": "una domenica mattina",
+  "accordi": {
+   "muschiato": 0.8,
+   "tè": 0.4,
+   "floreale-fresco": 0.4,
+   "agrumato": 0.4
+  },
+  "note": {
+   "muschio bianco": 0.8,
+   "cachemire": 0.6,
+   "tè": 0.4,
+   "fiore d'arancio": 0.4,
+   "mandarino": 0.4
+  },
+  "misure": {
+   "intensita": 2
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "stagione-primavera",
+  "tipo": "stagione",
+  "forme": [
+   "primavera",
+   "primaverile",
+   "bella stagione",
+   "marzo",
+   "aprile",
+   "maggio",
+   "arrivo della primavera"
+  ],
+  "evoca": "la primavera",
+  "accordi": {
+   "floreale-fresco": 0.9,
+   "verde": 0.6,
+   "agrumato": 0.4,
+   "fruttato": 0.3
+  },
+  "note": {
+   "peonia": 1,
+   "mughetto": 0.8,
+   "fresia": 0.5,
+   "note verdi": 0.5,
+   "bergamotto": 0.5,
+   "giacinto": 0.4,
+   "lillà": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "primavera": 1
+  },
+  "carattere": [
+   "allegro",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "stagione-fioritura",
+  "tipo": "stagione",
+  "forme": [
+   "fioritura",
+   "alberi fioriti",
+   "tutto in fiore",
+   "fiori sugli alberi",
+   "stagione dei fiori"
+  ],
+  "evoca": "gli alberi in fiore",
+  "accordi": {
+   "floreale-fresco": 0.8,
+   "cipriato": 0.4,
+   "fruttato": 0.4,
+   "verde": 0.3
+  },
+  "note": {
+   "biancospino": 0.7,
+   "eliotropio": 0.5,
+   "peonia": 0.6,
+   "fresia": 0.5,
+   "fiore di pero": 0.3,
+   "mandorla": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "primavera": 1
+  },
+  "carattere": [
+   "romantico",
+   "allegro"
+  ],
+  "manca": [
+   "fiori di ciliegio",
+   "glicine"
+  ]
+ },
+ {
+  "chiave": "stagione-estate",
+  "tipo": "stagione",
+  "forme": [
+   "estate",
+   "estivo",
+   "stagione calda"
+  ],
+  "evoca": "l'estate",
+  "accordi": {
+   "agrumato": 0.7,
+   "acquatico": 0.5,
+   "solare": 0.4,
+   "aromatico": 0.3
+  },
+  "note": {
+   "bergamotto": 0.7,
+   "limone": 0.6,
+   "note marine": 0.5,
+   "neroli": 0.5,
+   "cocco": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 2
+  },
+  "stagioni": {
+   "estate": 1
+  }
+ },
+ {
+  "chiave": "stagione-piena-estate",
+  "tipo": "stagione",
+  "forme": [
+   "piena estate",
+   "estate piena",
+   "agosto",
+   "pieno agosto",
+   "luglio",
+   "solleone",
+   "cuore dell'estate",
+   "estate calda"
+  ],
+  "evoca": "la piena estate",
+  "accordi": {
+   "solare": 0.8,
+   "floreale-bianco": 0.5,
+   "agrumato": 0.5,
+   "acquatico": 0.4
+  },
+  "note": {
+   "cocco": 0.8,
+   "tiarè": 0.5,
+   "ylang ylang": 0.5,
+   "limone": 0.5,
+   "sale": 0.4,
+   "fico": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "festa-ferragosto",
+  "tipo": "stagione",
+  "forme": [
+   "ferragosto",
+   "quindici agosto",
+   "ferragosto al mare",
+   "grigliata di ferragosto",
+   "vacanze di ferragosto"
+  ],
+  "evoca": "Ferragosto",
+  "accordi": {
+   "solare": 0.7,
+   "fruttato": 0.6,
+   "agrumato": 0.5,
+   "acquatico": 0.4
+  },
+  "note": {
+   "melone": 0.6,
+   "cocco": 0.6,
+   "limone": 0.5,
+   "note marine": 0.5,
+   "pesca": 0.4
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "occasioni": [
+   "speciale"
+  ],
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "anguria vera e propria"
+  ]
+ },
+ {
+  "chiave": "festa-san-giovanni",
+  "tipo": "stagione",
+  "forme": [
+   "notte di san giovanni",
+   "san giovanni",
+   "acqua di san giovanni",
+   "solstizio d'estate",
+   "solstizio",
+   "notte più corta",
+   "fuochi di san giovanni"
+  ],
+  "evoca": "la notte di San Giovanni",
+  "accordi": {
+   "aromatico": 0.8,
+   "floreale-fresco": 0.4,
+   "verde": 0.4,
+   "rosa": 0.2
+  },
+  "note": {
+   "lavanda": 0.7,
+   "rosmarino": 0.6,
+   "salvia": 0.5,
+   "menta": 0.4,
+   "note verdi": 0.4,
+   "rosa": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ],
+  "manca": [
+   "iperico"
+  ]
+ },
+ {
+  "chiave": "stagione-fine-estate",
+  "tipo": "stagione",
+  "forme": [
+   "fine estate",
+   "settembre",
+   "estate che finisce",
+   "ultimi giorni d'estate",
+   "coda dell'estate",
+   "settembrino",
+   "rientro dalle vacanze"
+  ],
+  "evoca": "la fine dell'estate",
+  "accordi": {
+   "fruttato": 0.7,
+   "legnoso": 0.4,
+   "verde": 0.3,
+   "solare": 0.3
+  },
+  "note": {
+   "fico": 0.8,
+   "albero di fico": 0.5,
+   "prugna": 0.5,
+   "pera": 0.4,
+   "sandalo": 0.4,
+   "muschio": 0.3
+  },
+  "stagioni": {
+   "estate": 0.5,
+   "autunno": 0.5
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "stagione-estate-san-martino",
+  "tipo": "stagione",
+  "forme": [
+   "estate di san martino",
+   "estate indiana",
+   "ottobrata",
+   "autunno mite",
+   "caldo d'ottobre"
+  ],
+  "evoca": "l'estate di San Martino",
+  "accordi": {
+   "fruttato": 0.7,
+   "legnoso": 0.5,
+   "ambrato": 0.4,
+   "speziato": 0.3
+  },
+  "note": {
+   "fico": 0.6,
+   "mela": 0.5,
+   "sandalo": 0.5,
+   "ambra": 0.4,
+   "cannella": 0.3,
+   "castagna": 0.3
+  },
+  "stagioni": {
+   "autunno": 1
+  },
+  "carattere": [
+   "calmo",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "stagione-autunno",
+  "tipo": "stagione",
+  "forme": [
+   "autunno",
+   "autunnale",
+   "ottobre",
+   "novembre",
+   "arrivo dell'autunno"
+  ],
+  "evoca": "l'autunno",
+  "accordi": {
+   "legnoso": 0.8,
+   "speziato": 0.5,
+   "patchouli": 0.4,
+   "fruttato": 0.3
+  },
+  "note": {
+   "legno di cedro": 0.6,
+   "patchouli": 0.6,
+   "vetiver": 0.5,
+   "cannella": 0.4,
+   "prugna": 0.4,
+   "fava tonka": 0.3
+  },
+  "misure": {
+   "freschezza": 2,
+   "intensita": 3
+  },
+  "stagioni": {
+   "autunno": 1
+  }
+ },
+ {
+  "chiave": "stagione-mezza-stagione",
+  "tipo": "stagione",
+  "forme": [
+   "mezza stagione",
+   "cambio di stagione",
+   "stagione di mezzo",
+   "né caldo né freddo"
+  ],
+  "evoca": "la mezza stagione",
+  "accordi": {
+   "muschiato": 0.7,
+   "legnoso": 0.5,
+   "aromatico": 0.5,
+   "agrumato": 0.4
+  },
+  "note": {
+   "muschio": 0.6,
+   "legno di cedro": 0.5,
+   "lavanda": 0.4,
+   "bergamotto": 0.5,
+   "iris": 0.3
+  },
+  "misure": {
+   "freschezza": 3,
+   "intensita": 3
+  },
+  "stagioni": {
+   "primavera": 0.6,
+   "autunno": 0.6
+  },
+  "occasioni": [
+   "quotidiano"
+  ]
+ },
+ {
+  "chiave": "stagione-inverno",
+  "tipo": "stagione",
+  "forme": [
+   "inverno",
+   "invernale",
+   "stagione fredda",
+   "mesi freddi",
+   "dicembre",
+   "gennaio",
+   "febbraio"
+  ],
+  "evoca": "l'inverno",
+  "accordi": {
+   "ambrato": 0.7,
+   "legnoso": 0.5,
+   "vaniglia": 0.5,
+   "speziato": 0.4
+  },
+  "note": {
+   "ambra": 0.6,
+   "vaniglia": 0.6,
+   "legno di cedro": 0.5,
+   "cannella": 0.4,
+   "benzoino": 0.4,
+   "fava tonka": 0.4
+  },
+  "misure": {
+   "freschezza": 2,
+   "intensita": 4,
+   "persistenza": 4
+  },
+  "stagioni": {
+   "inverno": 1
+  }
+ },
+ {
+  "chiave": "meteo-sole-inverno",
+  "tipo": "meteo",
+  "forme": [
+   "sole d'inverno",
+   "sole invernale",
+   "giornata di sole d'inverno",
+   "inverno soleggiato",
+   "sole di gennaio",
+   "sole freddo"
+  ],
+  "evoca": "il sole d'inverno",
+  "accordi": {
+   "agrumato": 0.7,
+   "ambrato": 0.5,
+   "legnoso": 0.4,
+   "muschiato": 0.3
+  },
+  "note": {
+   "mandarino": 0.7,
+   "arancia": 0.4,
+   "ambra": 0.5,
+   "legno di cedro": 0.4,
+   "cardamomo": 0.3,
+   "muschio": 0.3
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "festa-natale",
+  "tipo": "stagione",
+  "forme": [
+   "natale",
+   "natalizio",
+   "periodo natalizio",
+   "feste di natale",
+   "albero di natale",
+   "atmosfera natalizia",
+   "feste natalizie",
+   "sotto natale",
+   "vacanze di natale"
+  ],
+  "evoca": "il Natale",
+  "accordi": {
+   "speziato": 0.8,
+   "ambrato": 0.6,
+   "legnoso": 0.5,
+   "vaniglia": 0.4,
+   "agrumato": 0.3
+  },
+  "note": {
+   "cannella": 1,
+   "chiodi di garofano": 0.7,
+   "arancia": 0.6,
+   "vaniglia": 0.5,
+   "abete": 0.5,
+   "noce moscata": 0.4
+  },
+  "misure": {
+   "dolcezza": 3,
+   "persistenza": 4
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "occasioni": [
+   "speciale"
+  ],
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "festa-vigilia-natale",
+  "tipo": "stagione",
+  "forme": [
+   "vigilia di natale",
+   "vigilia",
+   "notte di natale",
+   "ventiquattro dicembre",
+   "messa di mezzanotte",
+   "notte santa",
+   "presepe"
+  ],
+  "evoca": "la notte di Natale",
+  "accordi": {
+   "incenso": 0.8,
+   "ambrato": 0.6,
+   "speziato": 0.4,
+   "legnoso": 0.4
+  },
+  "note": {
+   "incenso": 1,
+   "mirra": 0.7,
+   "olibano": 0.6,
+   "benzoino": 0.5,
+   "arancia": 0.3,
+   "abete": 0.3
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "speciale"
+  ],
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "festa-capodanno",
+  "tipo": "stagione",
+  "forme": [
+   "capodanno",
+   "san silvestro",
+   "notte di capodanno",
+   "veglione",
+   "cenone di capodanno",
+   "brindisi di mezzanotte",
+   "fine anno",
+   "ultimo dell'anno",
+   "veglione di capodanno"
+  ],
+  "evoca": "la notte di Capodanno",
+  "accordi": {
+   "ambrato": 0.7,
+   "cipriato": 0.5,
+   "boozy": 0.5,
+   "floreale-bianco": 0.4,
+   "speziato": 0.3
+  },
+  "note": {
+   "aldeidi": 0.8,
+   "ambra": 0.6,
+   "champagne rosé": 0.5,
+   "pepe rosa": 0.5,
+   "gelsomino": 0.4,
+   "vaniglia": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "stagioni": {
+   "inverno": 0.8
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "speciale",
+   "serata"
+  ],
+  "carattere": [
+   "audace",
+   "allegro"
+  ],
+  "manca": [
+   "spumante"
+  ]
+ },
+ {
+  "chiave": "festa-carnevale",
+  "tipo": "stagione",
+  "forme": [
+   "carnevale",
+   "festa di carnevale",
+   "martedì grasso",
+   "giovedì grasso",
+   "maschere di carnevale",
+   "coriandoli",
+   "stelle filanti"
+  ],
+  "evoca": "il Carnevale",
+  "accordi": {
+   "gourmand": 0.8,
+   "vaniglia": 0.4,
+   "agrumato": 0.4,
+   "cipriato": 0.3
+  },
+  "note": {
+   "zucchero filato": 0.6,
+   "zucchero": 0.5,
+   "vaniglia": 0.5,
+   "limone": 0.4,
+   "arancia": 0.4,
+   "note talcate": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "inverno": 0.6
+  },
+  "carattere": [
+   "allegro",
+   "audace"
+  ],
+  "manca": [
+   "frittelle"
+  ]
+ },
+ {
+  "chiave": "festa-san-valentino",
+  "tipo": "stagione",
+  "forme": [
+   "san valentino",
+   "festa degli innamorati",
+   "quattordici febbraio",
+   "sera di san valentino",
+   "cena di san valentino"
+  ],
+  "evoca": "San Valentino",
+  "accordi": {
+   "rosa": 0.9,
+   "fruttato": 0.4,
+   "vaniglia": 0.4,
+   "muschiato": 0.3
+  },
+  "note": {
+   "rosa": 1,
+   "lampone": 0.5,
+   "pepe rosa": 0.4,
+   "vaniglia": 0.4,
+   "muschio": 0.4,
+   "peonia": 0.3
+  },
+  "stagioni": {
+   "inverno": 0.6
+  },
+  "occasioni": [
+   "romantico"
+  ],
+  "carattere": [
+   "romantico",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "festa-pasqua",
+  "tipo": "stagione",
+  "forme": [
+   "pasqua",
+   "pasquale",
+   "periodo pasquale",
+   "pasquetta",
+   "vacanze di pasqua",
+   "domenica di pasqua"
+  ],
+  "evoca": "la Pasqua",
+  "accordi": {
+   "floreale-fresco": 0.6,
+   "gourmand": 0.5,
+   "agrumato": 0.4,
+   "vaniglia": 0.4,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "fiore d'arancio": 0.7,
+   "mandorla": 0.6,
+   "arancia": 0.5,
+   "vaniglia": 0.4,
+   "mughetto": 0.4,
+   "zucchero": 0.3
+  },
+  "stagioni": {
+   "primavera": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "festa-halloween",
+  "tipo": "stagione",
+  "forme": [
+   "halloween",
+   "notte delle streghe",
+   "dolcetto o scherzetto",
+   "zucche intagliate",
+   "notte di halloween",
+   "festa di halloween"
+  ],
+  "evoca": "la notte di Halloween",
+  "accordi": {
+   "gourmand": 0.7,
+   "speziato": 0.6,
+   "incenso": 0.4,
+   "fruttato": 0.3
+  },
+  "note": {
+   "caramello": 0.7,
+   "cannella": 0.6,
+   "noce moscata": 0.5,
+   "fumo": 0.4,
+   "prugna": 0.3,
+   "patchouli": 0.3
+  },
+  "stagioni": {
+   "autunno": 1
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "misterioso",
+   "allegro"
+  ],
+  "manca": [
+   "zucca"
+  ]
+ },
+ {
+  "chiave": "meteo-pioggia",
+  "tipo": "meteo",
+  "forme": [
+   "pioggia",
+   "piove",
+   "giornata di pioggia",
+   "pioggerella",
+   "pioggerellina",
+   "acquazzone",
+   "sotto la pioggia",
+   "pioggia battente",
+   "piovoso",
+   "giornata piovosa",
+   "pioggia d'autunno"
+  ],
+  "evoca": "la pioggia",
+  "accordi": {
+   "acquatico": 0.7,
+   "verde": 0.5,
+   "legnoso": 0.3,
+   "cipriato": 0.3
+  },
+  "note": {
+   "note ozoniche": 0.7,
+   "note acquatiche": 0.6,
+   "vetiver": 0.5,
+   "muschio di quercia": 0.4,
+   "violetta": 0.3,
+   "note minerali": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "meteo-dopo-pioggia",
+  "tipo": "meteo",
+  "forme": [
+   "dopo la pioggia",
+   "terra bagnata",
+   "petricore",
+   "asfalto bagnato",
+   "dopo il temporale",
+   "pioggia d'estate",
+   "asfalto dopo la pioggia",
+   "aria dopo la pioggia"
+  ],
+  "evoca": "l'aria dopo la pioggia",
+  "accordi": {
+   "patchouli": 0.8,
+   "verde": 0.6,
+   "legnoso": 0.5,
+   "acquatico": 0.3
+  },
+  "note": {
+   "vetiver": 1,
+   "patchouli": 0.7,
+   "muschio di quercia": 0.6,
+   "note verdi": 0.4,
+   "note terrose": 0.4,
+   "note minerali": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "meteo-temporale",
+  "tipo": "meteo",
+  "forme": [
+   "temporale",
+   "tempesta",
+   "lampi",
+   "fulmini",
+   "tuoni",
+   "aria elettrica",
+   "prima del temporale",
+   "temporale estivo"
+  ],
+  "evoca": "il temporale",
+  "accordi": {
+   "acquatico": 0.8,
+   "legnoso": 0.4,
+   "aromatico": 0.4,
+   "speziato": 0.3
+  },
+  "note": {
+   "note ozoniche": 1,
+   "ambroxan": 0.5,
+   "vetiver": 0.5,
+   "pepe nero": 0.4,
+   "note minerali": 0.4,
+   "salvia": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "freschezza": 4
+  },
+  "carattere": [
+   "audace",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "meteo-neve",
+  "tipo": "meteo",
+  "forme": [
+   "neve",
+   "nevica",
+   "nevicata",
+   "fiocchi di neve",
+   "innevato",
+   "manto di neve",
+   "bianco di neve"
+  ],
+  "evoca": "la neve",
+  "accordi": {
+   "muschiato": 0.8,
+   "cipriato": 0.5,
+   "acquatico": 0.3,
+   "aromatico": 0.2
+  },
+  "note": {
+   "muschio bianco": 1,
+   "aldeidi": 0.7,
+   "iris": 0.5,
+   "note ozoniche": 0.4,
+   "note talcate": 0.4,
+   "menta": 0.2
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "carattere": [
+   "calmo",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "meteo-prima-neve",
+  "tipo": "meteo",
+  "forme": [
+   "prima neve",
+   "primi fiocchi",
+   "prima nevicata",
+   "neve che cade",
+   "prima nevicata dell'anno"
+  ],
+  "evoca": "la prima neve",
+  "accordi": {
+   "muschiato": 0.7,
+   "cipriato": 0.5,
+   "legnoso": 0.4,
+   "incenso": 0.2
+  },
+  "note": {
+   "muschio bianco": 0.8,
+   "aldeidi": 0.6,
+   "iris": 0.5,
+   "legno di cedro": 0.4,
+   "fumo": 0.3,
+   "bergamotto": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "carattere": [
+   "calmo",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "meteo-gelo",
+  "tipo": "meteo",
+  "forme": [
+   "gelo",
+   "gelata",
+   "ghiaccio",
+   "brina",
+   "galaverna",
+   "freddo polare",
+   "freddo pungente",
+   "sottozero",
+   "inverno rigido",
+   "ghiacciato"
+  ],
+  "evoca": "il gelo",
+  "accordi": {
+   "aromatico": 0.7,
+   "acquatico": 0.5,
+   "muschiato": 0.5,
+   "legnoso": 0.3
+  },
+  "note": {
+   "menta": 0.7,
+   "note ozoniche": 0.6,
+   "muschio bianco": 0.5,
+   "ambroxan": 0.4,
+   "abete": 0.3,
+   "pepe bianco": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "meteo-nebbia",
+  "tipo": "meteo",
+  "forme": [
+   "nebbia",
+   "nebbioso",
+   "foschia",
+   "bruma",
+   "giornata nebbiosa",
+   "nebbia fitta",
+   "nebbiolina",
+   "caligine"
+  ],
+  "evoca": "la nebbia",
+  "accordi": {
+   "cipriato": 0.7,
+   "muschiato": 0.6,
+   "legnoso": 0.4,
+   "incenso": 0.3
+  },
+  "note": {
+   "iris": 0.7,
+   "muschio": 0.6,
+   "vetiver": 0.4,
+   "note ozoniche": 0.3,
+   "incenso": 0.3,
+   "violetta": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.8,
+   "inverno": 0.4
+  },
+  "carattere": [
+   "misterioso",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "meteo-vento",
+  "tipo": "meteo",
+  "forme": [
+   "vento",
+   "ventoso",
+   "giornata di vento",
+   "raffiche",
+   "vento forte",
+   "maestrale",
+   "tramontana",
+   "bora",
+   "ventata"
+  ],
+  "evoca": "il vento",
+  "accordi": {
+   "acquatico": 0.8,
+   "aromatico": 0.5,
+   "agrumato": 0.3,
+   "legnoso": 0.3
+  },
+  "note": {
+   "note ozoniche": 0.7,
+   "ambroxan": 0.5,
+   "salvia": 0.4,
+   "lavanda": 0.3,
+   "bergamotto": 0.3,
+   "sale": 0.3
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "carattere": [
+   "energico",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "meteo-brezza",
+  "tipo": "meteo",
+  "forme": [
+   "brezza",
+   "brezza leggera",
+   "venticello",
+   "arietta",
+   "brezza estiva",
+   "zefiro",
+   "filo d'aria",
+   "brezzolina"
+  ],
+  "evoca": "una brezza leggera",
+  "accordi": {
+   "acquatico": 0.7,
+   "agrumato": 0.4,
+   "floreale-fresco": 0.4,
+   "muschiato": 0.4
+  },
+  "note": {
+   "note acquatiche": 0.6,
+   "bergamotto": 0.5,
+   "muschio bianco": 0.5,
+   "fresia": 0.4,
+   "loto": 0.3,
+   "neroli": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 2
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "meteo-aria-frizzante",
+  "tipo": "meteo",
+  "forme": [
+   "aria frizzante",
+   "aria pungente",
+   "frizzantino",
+   "aria che pizzica",
+   "aria fresca del mattino",
+   "frescolino",
+   "aria tersa"
+  ],
+  "evoca": "l'aria frizzante",
+  "accordi": {
+   "agrumato": 0.8,
+   "aromatico": 0.5,
+   "verde": 0.4,
+   "speziato": 0.2
+  },
+  "note": {
+   "pompelmo": 0.7,
+   "bergamotto": 0.5,
+   "menta": 0.4,
+   "zenzero": 0.4,
+   "note verdi": 0.3,
+   "pepe rosa": 0.3
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "carattere": [
+   "energico",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "meteo-sole",
+  "tipo": "meteo",
+  "forme": [
+   "sole",
+   "giornata di sole",
+   "soleggiato",
+   "pieno sole",
+   "raggi di sole",
+   "sole caldo",
+   "sotto il sole",
+   "giornata soleggiata"
+  ],
+  "evoca": "una giornata di sole",
+  "accordi": {
+   "solare": 0.8,
+   "agrumato": 0.5,
+   "floreale-bianco": 0.4,
+   "muschiato": 0.3
+  },
+  "note": {
+   "cocco": 0.6,
+   "bergamotto": 0.5,
+   "fiore d'arancio": 0.5,
+   "tiarè": 0.4,
+   "ylang ylang": 0.3,
+   "muschio": 0.3
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "meteo-sole-cocente",
+  "tipo": "meteo",
+  "forme": [
+   "sole cocente",
+   "sole che scotta",
+   "sole a picco",
+   "sole che picchia",
+   "sole bollente",
+   "sole rovente",
+   "sole forte"
+  ],
+  "evoca": "il sole cocente",
+  "accordi": {
+   "solare": 0.9,
+   "floreale-bianco": 0.5,
+   "legnoso": 0.3,
+   "ambrato": 0.3
+  },
+  "note": {
+   "cocco": 0.7,
+   "ylang ylang": 0.6,
+   "tiarè": 0.6,
+   "sandalo": 0.4,
+   "ambra": 0.3,
+   "sale": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "carattere": [
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "meteo-afa",
+  "tipo": "meteo",
+  "forme": [
+   "afa",
+   "afoso",
+   "caldo umido",
+   "umidità",
+   "clima umido",
+   "aria pesante",
+   "giornata afosa",
+   "umido"
+  ],
+  "evoca": "le giornate di afa",
+  "accordi": {
+   "agrumato": 0.7,
+   "verde": 0.5,
+   "tè": 0.4,
+   "acquatico": 0.4
+  },
+  "note": {
+   "limone": 0.6,
+   "lime": 0.6,
+   "tè verde": 0.5,
+   "menta": 0.4,
+   "note verdi": 0.4,
+   "cetriolo": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "intensita": 1,
+   "persistenza": 2
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "meteo-caldo-torrido",
+  "tipo": "meteo",
+  "forme": [
+   "caldo torrido",
+   "caldo africano",
+   "canicola",
+   "ondata di caldo",
+   "caldo asfissiante",
+   "quaranta gradi",
+   "caldissimo",
+   "caldo infernale",
+   "caldo soffocante"
+  ],
+  "evoca": "il caldo torrido",
+  "accordi": {
+   "agrumato": 0.8,
+   "aromatico": 0.4,
+   "acquatico": 0.4,
+   "muschiato": 0.3
+  },
+  "note": {
+   "pompelmo": 0.6,
+   "limone": 0.6,
+   "verbena": 0.5,
+   "menta": 0.4,
+   "note acquatiche": 0.4,
+   "muschio bianco": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "intensita": 1,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "meteo-scirocco",
+  "tipo": "meteo",
+  "forme": [
+   "scirocco",
+   "vento caldo",
+   "vento del deserto",
+   "libeccio",
+   "aria calda",
+   "vento africano"
+  ],
+  "evoca": "lo scirocco",
+  "accordi": {
+   "ambrato": 0.7,
+   "speziato": 0.5,
+   "solare": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "ambra": 0.6,
+   "sandalo": 0.5,
+   "zafferano": 0.4,
+   "cardamomo": 0.3,
+   "fico": 0.3,
+   "labdano": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "meteo-cielo-terso",
+  "tipo": "meteo",
+  "forme": [
+   "cielo terso",
+   "cielo limpido",
+   "cielo azzurro",
+   "giornata limpida",
+   "cielo sereno",
+   "aria cristallina",
+   "cielo blu",
+   "cielo senza nuvole"
+  ],
+  "evoca": "un cielo terso",
+  "accordi": {
+   "acquatico": 0.7,
+   "agrumato": 0.6,
+   "muschiato": 0.5,
+   "aromatico": 0.3
+  },
+  "note": {
+   "bergamotto": 0.6,
+   "note ozoniche": 0.5,
+   "muschio bianco": 0.5,
+   "ambroxan": 0.4,
+   "neroli": 0.4,
+   "lavanda": 0.2
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "meteo-giornata-grigia",
+  "tipo": "meteo",
+  "forme": [
+   "giornata grigia",
+   "cielo grigio",
+   "cielo coperto",
+   "nuvoloso",
+   "nuvole",
+   "tempo uggioso",
+   "giornata uggiosa",
+   "uggia",
+   "cielo plumbeo",
+   "tempo brutto"
+  ],
+  "evoca": "una giornata grigia",
+  "accordi": {
+   "muschiato": 0.7,
+   "cipriato": 0.5,
+   "legnoso": 0.4,
+   "tè": 0.3
+  },
+  "note": {
+   "cachemire": 0.6,
+   "iris": 0.6,
+   "muschio": 0.6,
+   "sandalo": 0.4,
+   "violetta": 0.4,
+   "tè nero": 0.3
+  },
+  "stagioni": {
+   "autunno": 0.7,
+   "inverno": 0.4
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "meteo-arcobaleno",
+  "tipo": "meteo",
+  "forme": [
+   "arcobaleno",
+   "tutti i colori dell'arcobaleno",
+   "dopo l'arcobaleno"
+  ],
+  "evoca": "l'arcobaleno",
+  "accordi": {
+   "fruttato": 0.7,
+   "floreale-fresco": 0.6,
+   "agrumato": 0.4,
+   "acquatico": 0.2
+  },
+  "note": {
+   "pera": 0.5,
+   "peonia": 0.5,
+   "lampone": 0.4,
+   "mandarino": 0.4,
+   "fresia": 0.4,
+   "note ozoniche": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "colore-bianco",
+  "tipo": "colore",
+  "forme": [
+   "bianco",
+   "colore bianco",
+   "candido",
+   "tutto bianco",
+   "bianco candido",
+   "bianco ottico",
+   "total white"
+  ],
+  "evoca": "il bianco",
+  "accordi": {
+   "muschiato": 0.8,
+   "floreale-bianco": 0.6,
+   "cipriato": 0.4
+  },
+  "note": {
+   "muschio bianco": 1,
+   "fiori bianchi": 0.6,
+   "gelsomino": 0.4,
+   "iris": 0.3,
+   "aldeidi": 0.3,
+   "fiore d'arancio": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "carattere": [
+   "elegante",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "colore-nero",
+  "tipo": "colore",
+  "forme": [
+   "nero",
+   "colore nero",
+   "total black",
+   "tutto nero",
+   "nero corvino",
+   "nero pece",
+   "nero profondo",
+   "nero opaco"
+  ],
+  "evoca": "il nero",
+  "accordi": {
+   "oud": 0.7,
+   "cuoio": 0.6,
+   "incenso": 0.6,
+   "patchouli": 0.4
+  },
+  "note": {
+   "legno di agar": 0.8,
+   "cuoio": 0.7,
+   "incenso": 0.6,
+   "patchouli": 0.5,
+   "pepe nero": 0.4,
+   "legni scuri": 0.3
+  },
+  "misure": {
+   "intensita": 5,
+   "persistenza": 5
+  },
+  "momento": {
+   "sera": 0.7
+  },
+  "carattere": [
+   "misterioso",
+   "audace",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "colore-rosso",
+  "tipo": "colore",
+  "forme": [
+   "rosso",
+   "colore rosso",
+   "rosso fuoco",
+   "rosso passione",
+   "rosso acceso",
+   "scarlatto",
+   "vermiglio"
+  ],
+  "evoca": "il rosso",
+  "accordi": {
+   "rosa": 0.8,
+   "fruttato": 0.6,
+   "speziato": 0.5,
+   "ambrato": 0.4
+  },
+  "note": {
+   "rosa": 0.8,
+   "bacche rosse": 0.6,
+   "ciliegia": 0.5,
+   "pepe rosa": 0.5,
+   "zafferano": 0.4,
+   "ambra": 0.4
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "carattere": [
+   "sensuale",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "colore-bordeaux",
+  "tipo": "colore",
+  "forme": [
+   "bordeaux",
+   "bordò",
+   "rosso scuro",
+   "rosso vino",
+   "color vino",
+   "vinaccia",
+   "amaranto",
+   "granata",
+   "rosso granata"
+  ],
+  "evoca": "il bordeaux",
+  "accordi": {
+   "fruttato": 0.7,
+   "rosa": 0.5,
+   "boozy": 0.4,
+   "patchouli": 0.3,
+   "oud": 0.3
+  },
+  "note": {
+   "prugna": 0.8,
+   "ribes nero": 0.6,
+   "rosa di damasco": 0.5,
+   "patchouli": 0.5,
+   "cognac": 0.3,
+   "legno di agar": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "stagioni": {
+   "autunno": 0.6,
+   "inverno": 0.5
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "carattere": [
+   "sensuale",
+   "elegante"
+  ],
+  "manca": [
+   "vino rosso"
+  ]
+ },
+ {
+  "chiave": "colore-blu",
+  "tipo": "colore",
+  "forme": [
+   "blu",
+   "colore blu",
+   "blu elettrico",
+   "blu cobalto",
+   "blu intenso",
+   "bluette",
+   "blu oltremare",
+   "blu reale"
+  ],
+  "evoca": "il blu",
+  "accordi": {
+   "acquatico": 0.8,
+   "aromatico": 0.6,
+   "legnoso": 0.4,
+   "agrumato": 0.3
+  },
+  "note": {
+   "note marine": 0.7,
+   "lavanda": 0.6,
+   "bergamotto": 0.5,
+   "ambroxan": 0.5,
+   "legno di cedro": 0.4,
+   "salvia": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "carattere": [
+   "sicuro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "colore-blu-notte",
+  "tipo": "colore",
+  "forme": [
+   "blu notte",
+   "blu scuro",
+   "blu navy",
+   "navy",
+   "blu mezzanotte",
+   "blu profondo",
+   "blu marino"
+  ],
+  "evoca": "il blu notte",
+  "accordi": {
+   "aromatico": 0.7,
+   "ambrato": 0.6,
+   "legnoso": 0.5,
+   "cipriato": 0.3
+  },
+  "note": {
+   "lavanda": 0.7,
+   "fava tonka": 0.6,
+   "ambra": 0.5,
+   "iris": 0.4,
+   "legno di cedro": 0.4,
+   "incenso": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "colore-azzurro",
+  "tipo": "colore",
+  "forme": [
+   "azzurro",
+   "azzurrino",
+   "celeste",
+   "azzurro cielo",
+   "carta da zucchero",
+   "color cielo",
+   "azzurro polvere",
+   "celestino"
+  ],
+  "evoca": "l'azzurro",
+  "accordi": {
+   "acquatico": 0.7,
+   "muschiato": 0.5,
+   "agrumato": 0.4,
+   "floreale-fresco": 0.4
+  },
+  "note": {
+   "note acquatiche": 0.6,
+   "muschio bianco": 0.6,
+   "bergamotto": 0.5,
+   "fresia": 0.4,
+   "loto": 0.3,
+   "violetta": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "colore-turchese",
+  "tipo": "colore",
+  "forme": [
+   "turchese",
+   "color turchese",
+   "acquamarina",
+   "azzurro caraibi",
+   "verde caraibi",
+   "blu turchese"
+  ],
+  "evoca": "il turchese",
+  "accordi": {
+   "acquatico": 0.8,
+   "agrumato": 0.5,
+   "solare": 0.3,
+   "verde": 0.3
+  },
+  "note": {
+   "note marine": 0.7,
+   "lime": 0.5,
+   "bergamotto": 0.4,
+   "menta": 0.3,
+   "cocco": 0.3,
+   "alghe": 0.3
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "stagioni": {
+   "estate": 0.7
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "colore-verde-acqua",
+  "tipo": "colore",
+  "forme": [
+   "verde acqua",
+   "verde menta",
+   "menta pastello",
+   "verde salvia",
+   "verde chiaro",
+   "verdino"
+  ],
+  "evoca": "il verde acqua",
+  "accordi": {
+   "verde": 0.7,
+   "aromatico": 0.5,
+   "acquatico": 0.5,
+   "agrumato": 0.3
+  },
+  "note": {
+   "menta": 0.6,
+   "note verdi": 0.5,
+   "note acquatiche": 0.5,
+   "cetriolo": 0.4,
+   "tè verde": 0.3,
+   "bergamotto": 0.3
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "colore-verde",
+  "tipo": "colore",
+  "forme": [
+   "colore verde",
+   "verde prato",
+   "verde brillante",
+   "verde erba",
+   "verde smeraldo",
+   "smeraldo",
+   "verde mela",
+   "verde vivo"
+  ],
+  "evoca": "il verde",
+  "accordi": {
+   "verde": 0.9,
+   "aromatico": 0.4,
+   "agrumato": 0.3
+  },
+  "note": {
+   "note verdi": 0.8,
+   "foglia di violetta": 0.5,
+   "galbano": 0.4,
+   "mela verde": 0.4,
+   "bambù": 0.3,
+   "vetiver": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "colore-verde-bosco",
+  "tipo": "colore",
+  "forme": [
+   "verde bosco",
+   "verde scuro",
+   "verde muschio",
+   "verde oliva",
+   "verde militare",
+   "verde bottiglia",
+   "verde inglese"
+  ],
+  "evoca": "il verde bosco",
+  "accordi": {
+   "legnoso": 0.7,
+   "verde": 0.6,
+   "patchouli": 0.4,
+   "aromatico": 0.3
+  },
+  "note": {
+   "muschio di quercia": 0.7,
+   "vetiver": 0.6,
+   "cipresso": 0.5,
+   "patchouli": 0.4,
+   "abete": 0.3,
+   "felce": 0.3
+  },
+  "carattere": [
+   "calmo",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "colore-verde-petrolio",
+  "tipo": "colore",
+  "forme": [
+   "verde petrolio",
+   "blu petrolio",
+   "ottanio",
+   "color petrolio",
+   "verde pavone",
+   "blu pavone"
+  ],
+  "evoca": "il verde petrolio",
+  "accordi": {
+   "verde": 0.6,
+   "legnoso": 0.7,
+   "aromatico": 0.4,
+   "speziato": 0.2
+  },
+  "note": {
+   "vetiver": 0.7,
+   "muschio di quercia": 0.5,
+   "cipresso": 0.5,
+   "lavanda": 0.3,
+   "cardamomo": 0.3
+  },
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "colore-giallo",
+  "tipo": "colore",
+  "forme": [
+   "giallo",
+   "colore giallo",
+   "giallo limone",
+   "giallo sole",
+   "giallo canarino",
+   "giallo ocra"
+  ],
+  "evoca": "il giallo",
+  "accordi": {
+   "agrumato": 0.8,
+   "floreale-bianco": 0.4,
+   "solare": 0.3,
+   "fruttato": 0.3
+  },
+  "note": {
+   "limone": 0.8,
+   "bergamotto": 0.5,
+   "ylang ylang": 0.4,
+   "mimosa": 0.3,
+   "narciso": 0.3,
+   "ananas": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "colore-oro",
+  "tipo": "colore",
+  "forme": [
+   "oro",
+   "dorato",
+   "color oro",
+   "oro zecchino",
+   "oro antico",
+   "ori"
+  ],
+  "evoca": "l'oro",
+  "accordi": {
+   "ambrato": 0.8,
+   "miele": 0.6,
+   "vaniglia": 0.6,
+   "speziato": 0.3
+  },
+  "note": {
+   "ambra": 0.8,
+   "miele": 0.7,
+   "vaniglia": 0.6,
+   "benzoino": 0.5,
+   "zafferano": 0.5,
+   "labdano": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4,
+   "dolcezza": 4
+  },
+  "occasioni": [
+   "speciale"
+  ],
+  "carattere": [
+   "elegante",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "colore-bronzo",
+  "tipo": "colore",
+  "forme": [
+   "bronzo",
+   "color bronzo",
+   "ramato",
+   "rame",
+   "color rame",
+   "bronzeo"
+  ],
+  "evoca": "il bronzo",
+  "accordi": {
+   "ambrato": 0.7,
+   "speziato": 0.5,
+   "legnoso": 0.4,
+   "solare": 0.3
+  },
+  "note": {
+   "ambra": 0.6,
+   "zafferano": 0.5,
+   "cannella": 0.4,
+   "legno di guaiaco": 0.4,
+   "labdano": 0.4,
+   "cocco": 0.2
+  },
+  "stagioni": {
+   "autunno": 0.6
+  },
+  "carattere": [
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "colore-argento",
+  "tipo": "colore",
+  "forme": [
+   "argento",
+   "argentato",
+   "color argento",
+   "argenteo",
+   "silver",
+   "cromato",
+   "metallico"
+  ],
+  "evoca": "l'argento",
+  "accordi": {
+   "cipriato": 0.7,
+   "muschiato": 0.6,
+   "aromatico": 0.4,
+   "acquatico": 0.4
+  },
+  "note": {
+   "aldeidi": 0.7,
+   "iris": 0.6,
+   "muschio bianco": 0.5,
+   "lavanda": 0.4,
+   "ambroxan": 0.4,
+   "note minerali": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "colore-grigio",
+  "tipo": "colore",
+  "forme": [
+   "grigio",
+   "colore grigio",
+   "grigio perla",
+   "grigio antracite",
+   "grigio fumo",
+   "grigio chiaro",
+   "grigio scuro",
+   "antracite"
+  ],
+  "evoca": "il grigio",
+  "accordi": {
+   "cipriato": 0.7,
+   "legnoso": 0.6,
+   "muschiato": 0.5,
+   "incenso": 0.3
+  },
+  "note": {
+   "iris": 0.7,
+   "vetiver": 0.6,
+   "cachemire": 0.5,
+   "incenso": 0.3,
+   "pepe": 0.3,
+   "violetta": 0.3
+  },
+  "carattere": [
+   "elegante",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "colore-arancione",
+  "tipo": "colore",
+  "forme": [
+   "arancione",
+   "colore arancione",
+   "arancione acceso",
+   "color zucca",
+   "arancio acceso"
+  ],
+  "evoca": "l'arancione",
+  "accordi": {
+   "agrumato": 0.7,
+   "fruttato": 0.6,
+   "solare": 0.4,
+   "speziato": 0.3
+  },
+  "note": {
+   "arancia": 0.8,
+   "mandarino": 0.6,
+   "albicocca": 0.5,
+   "osmanto": 0.4,
+   "zenzero": 0.3
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "colore-corallo",
+  "tipo": "colore",
+  "forme": [
+   "corallo",
+   "color corallo",
+   "color pesca",
+   "salmone",
+   "rosa salmone",
+   "color albicocca"
+  ],
+  "evoca": "il color corallo",
+  "accordi": {
+   "fruttato": 0.7,
+   "solare": 0.4,
+   "floreale-fresco": 0.4,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "pesca": 0.7,
+   "albicocca": 0.5,
+   "osmanto": 0.4,
+   "fiore d'arancio": 0.4,
+   "cocco": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.6
+  },
+  "carattere": [
+   "allegro",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "colore-viola",
+  "tipo": "colore",
+  "forme": [
+   "viola",
+   "colore viola",
+   "viola scuro",
+   "violaceo",
+   "porpora",
+   "color prugna",
+   "melanzana",
+   "viola intenso"
+  ],
+  "evoca": "il viola",
+  "accordi": {
+   "cipriato": 0.7,
+   "fruttato": 0.5,
+   "ambrato": 0.4,
+   "patchouli": 0.3
+  },
+  "note": {
+   "violetta": 0.8,
+   "iris": 0.5,
+   "prugna": 0.5,
+   "ribes nero": 0.4,
+   "patchouli": 0.4,
+   "ambra": 0.3
+  },
+  "carattere": [
+   "misterioso",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "colore-lilla",
+  "tipo": "colore",
+  "forme": [
+   "color lilla",
+   "lilla pastello",
+   "malva",
+   "color malva",
+   "color glicine",
+   "color lavanda",
+   "lavanda chiaro"
+  ],
+  "evoca": "il lilla",
+  "accordi": {
+   "floreale-fresco": 0.7,
+   "aromatico": 0.5,
+   "cipriato": 0.5,
+   "muschiato": 0.4
+  },
+  "note": {
+   "lavanda": 0.6,
+   "lillà": 0.5,
+   "violetta": 0.5,
+   "eliotropio": 0.4,
+   "muschio bianco": 0.4
+  },
+  "misure": {
+   "dolcezza": 3,
+   "intensita": 2
+  },
+  "carattere": [
+   "romantico",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "colore-rosa-cipria",
+  "tipo": "colore",
+  "forme": [
+   "rosa cipria",
+   "rosa antico",
+   "rosa pallido",
+   "rosa polvere",
+   "rosa nude",
+   "rosa tenue",
+   "rosa delicato",
+   "rosa chiaro"
+  ],
+  "evoca": "il rosa cipria",
+  "accordi": {
+   "cipriato": 0.8,
+   "rosa": 0.6,
+   "muschiato": 0.4,
+   "vaniglia": 0.2
+  },
+  "note": {
+   "iris": 0.7,
+   "rosa": 0.6,
+   "violetta": 0.4,
+   "note talcate": 0.4,
+   "eliotropio": 0.4,
+   "muschio": 0.4
+  },
+  "misure": {
+   "dolcezza": 3,
+   "intensita": 2
+  },
+  "carattere": [
+   "romantico",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "colore-rosa-confetto",
+  "tipo": "colore",
+  "forme": [
+   "rosa confetto",
+   "colore rosa",
+   "rosa caramella",
+   "rosa baby",
+   "rosa bambola",
+   "rosa zucchero",
+   "tutto rosa"
+  ],
+  "evoca": "il rosa confetto",
+  "accordi": {
+   "fruttato": 0.7,
+   "gourmand": 0.6,
+   "rosa": 0.5,
+   "muschiato": 0.3
+  },
+  "note": {
+   "zucchero filato": 0.6,
+   "lampone": 0.6,
+   "fragola": 0.5,
+   "rosa": 0.5,
+   "vaniglia": 0.4,
+   "muschio bianco": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "allegro",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "colore-fucsia",
+  "tipo": "colore",
+  "forme": [
+   "fucsia",
+   "rosa shocking",
+   "rosa acceso",
+   "magenta",
+   "rosa fluo",
+   "rosa fluorescente",
+   "ciclamino acceso"
+  ],
+  "evoca": "il fucsia",
+  "accordi": {
+   "fruttato": 0.8,
+   "rosa": 0.6,
+   "speziato": 0.3,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "lampone": 0.7,
+   "litchi": 0.5,
+   "pepe rosa": 0.5,
+   "rosa": 0.5,
+   "ribes nero": 0.4,
+   "peonia": 0.4
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 4
+  },
+  "carattere": [
+   "audace",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "colore-marrone",
+  "tipo": "colore",
+  "forme": [
+   "marrone",
+   "colore marrone",
+   "marroncino",
+   "marrone scuro",
+   "testa di moro",
+   "color tabacco",
+   "color cuoio",
+   "color terra",
+   "color cioccolato"
+  ],
+  "evoca": "il marrone",
+  "accordi": {
+   "legnoso": 0.7,
+   "tabacco": 0.5,
+   "cuoio": 0.5,
+   "gourmand": 0.4
+  },
+  "note": {
+   "fava tonka": 0.5,
+   "foglia di tabacco": 0.5,
+   "cuoio": 0.5,
+   "cacao": 0.4,
+   "caffè": 0.4,
+   "legno di guaiaco": 0.4
+  },
+  "stagioni": {
+   "autunno": 0.7
+  },
+  "carattere": [
+   "calmo",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "colore-beige",
+  "tipo": "colore",
+  "forme": [
+   "beige",
+   "nude",
+   "color carne",
+   "color pelle",
+   "color sabbia",
+   "tortora",
+   "avorio",
+   "color panna",
+   "cammello",
+   "écru"
+  ],
+  "evoca": "i toni nude",
+  "accordi": {
+   "muschiato": 0.8,
+   "cipriato": 0.5,
+   "vaniglia": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "muschio": 0.8,
+   "cachemire": 0.6,
+   "iris": 0.4,
+   "sandalo": 0.4,
+   "fava tonka": 0.3,
+   "ambretta": 0.2
+  },
+  "misure": {
+   "intensita": 2,
+   "dolcezza": 3
+  },
+  "occasioni": [
+   "quotidiano",
+   "ufficio"
+  ],
+  "carattere": [
+   "elegante",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "colore-pastello",
+  "tipo": "colore",
+  "forme": [
+   "pastello",
+   "colori pastello",
+   "tinte pastello",
+   "toni pastello",
+   "tonalità pastello",
+   "tinte tenui"
+  ],
+  "evoca": "i colori pastello",
+  "accordi": {
+   "floreale-fresco": 0.7,
+   "muschiato": 0.6,
+   "cipriato": 0.4,
+   "fruttato": 0.3
+  },
+  "note": {
+   "peonia": 0.6,
+   "muschio bianco": 0.6,
+   "pera": 0.4,
+   "eliotropio": 0.4,
+   "iris": 0.3,
+   "fresia": 0.3
+  },
+  "misure": {
+   "dolcezza": 3,
+   "intensita": 2
+  },
+  "carattere": [
+   "romantico",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "colore-accesi",
+  "tipo": "colore",
+  "forme": [
+   "colori accesi",
+   "colori vivaci",
+   "colori sgargianti",
+   "tinte forti",
+   "colori forti",
+   "fluo",
+   "fluorescente",
+   "multicolore",
+   "coloratissimo",
+   "pieno di colori"
+  ],
+  "evoca": "i colori accesi",
+  "accordi": {
+   "fruttato": 0.8,
+   "agrumato": 0.6,
+   "speziato": 0.3,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "frutto della passione": 0.5,
+   "mango": 0.5,
+   "pompelmo": 0.5,
+   "lampone": 0.4,
+   "ananas": 0.4,
+   "pepe rosa": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "carattere": [
+   "allegro",
+   "energico",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "colore-bianco-nero",
+  "tipo": "colore",
+  "forme": [
+   "bianco e nero",
+   "chiaroscuro",
+   "contrasto bianco e nero"
+  ],
+  "evoca": "il bianco e nero",
+  "accordi": {
+   "cipriato": 0.7,
+   "cuoio": 0.5,
+   "muschiato": 0.5,
+   "legnoso": 0.3
+  },
+  "note": {
+   "iris": 0.7,
+   "cuoio": 0.5,
+   "aldeidi": 0.5,
+   "muschio bianco": 0.5,
+   "vetiver": 0.4,
+   "inchiostro": 0.2
+  },
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ }
+]

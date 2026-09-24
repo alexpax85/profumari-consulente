@@ -1,0 +1,4335 @@
+[
+ {
+  "chiave": "cibo-torta-mele",
+  "tipo": "cibo",
+  "forme": [
+   "torta di mele",
+   "torta di mele calda",
+   "strudel",
+   "strudel di mele",
+   "mele cotte",
+   "mele al forno",
+   "mele e cannella",
+   "cannella e mele",
+   "mela cotta con la cannella",
+   "apple pie"
+  ],
+  "evoca": "una torta di mele appena sfornata",
+  "accordi": {
+   "gourmand": 0.8,
+   "fruttato": 0.6,
+   "speziato": 0.5,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "mela": 1,
+   "cannella": 0.8,
+   "vaniglia": 0.6,
+   "burro": 0.4,
+   "zucchero di canna": 0.4
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "autunno": 0.8,
+   "inverno": 0.5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-crostata",
+  "tipo": "cibo",
+  "forme": [
+   "crostata",
+   "crostata di marmellata",
+   "crostata di albicocche",
+   "crostatina",
+   "pasta frolla",
+   "frolla al burro"
+  ],
+  "evoca": "una crostata di marmellata",
+  "accordi": {
+   "gourmand": 0.8,
+   "fruttato": 0.5,
+   "vaniglia": 0.5
+  },
+  "note": {
+   "albicocca": 0.8,
+   "burro": 0.7,
+   "vaniglia": 0.7,
+   "zucchero": 0.4,
+   "mandorla": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-crostata-frutti-rossi",
+  "tipo": "cibo",
+  "forme": [
+   "crostata di frutti rossi",
+   "crostata ai frutti di bosco",
+   "crostata di fragole",
+   "crostata di lamponi",
+   "tartelletta alla frutta",
+   "tartellette ai frutti di bosco",
+   "torta ai frutti di bosco"
+  ],
+  "evoca": "una crostata ai frutti rossi",
+  "accordi": {
+   "fruttato": 0.9,
+   "gourmand": 0.7,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "lampone": 1,
+   "fragola": 0.8,
+   "bacche rosse": 0.6,
+   "ribes nero": 0.5,
+   "vaniglia": 0.5,
+   "panna montata": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "estate": 0.6,
+   "primavera": 0.5
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-tiramisu",
+  "tipo": "cibo",
+  "forme": [
+   "tiramisù",
+   "tirami su",
+   "savoiardi al caffè",
+   "savoiardi inzuppati",
+   "mascarpone e caffè",
+   "crema al mascarpone"
+  ],
+  "evoca": "un tiramisù",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.4,
+   "boozy": 0.2
+  },
+  "note": {
+   "caffè": 1,
+   "cacao": 0.9,
+   "panna montata": 0.6,
+   "vaniglia": 0.4,
+   "zucchero": 0.3,
+   "liquore": 0.2
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "momento": {
+   "sera": 0.5
+  },
+  "carattere": [
+   "coccola",
+   "sensuale"
+  ],
+  "manca": [
+   "mascarpone"
+  ]
+ },
+ {
+  "chiave": "cibo-cannolo",
+  "tipo": "cibo",
+  "forme": [
+   "cannolo",
+   "cannolo siciliano",
+   "cannoli alla ricotta",
+   "ricotta e canditi",
+   "cassata",
+   "cassata siciliana",
+   "ricotta con gocce di cioccolato"
+  ],
+  "evoca": "un cannolo siciliano",
+  "accordi": {
+   "gourmand": 0.9,
+   "agrumato": 0.4,
+   "vaniglia": 0.4,
+   "fruttato": 0.3
+  },
+  "note": {
+   "frutta candita": 0.8,
+   "arancia": 0.6,
+   "pistacchio": 0.5,
+   "cioccolato": 0.5,
+   "vaniglia": 0.5,
+   "latte": 0.4,
+   "cannella": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "manca": [
+   "ricotta"
+  ]
+ },
+ {
+  "chiave": "cibo-sfogliatella",
+  "tipo": "cibo",
+  "forme": [
+   "sfogliatella",
+   "sfogliatella riccia",
+   "sfogliatella frolla",
+   "sfogliatelle calde",
+   "lobster tail",
+   "coda d'aragosta dolce"
+  ],
+  "evoca": "una sfogliatella calda",
+  "accordi": {
+   "gourmand": 0.8,
+   "vaniglia": 0.5,
+   "agrumato": 0.4,
+   "speziato": 0.3
+  },
+  "note": {
+   "vaniglia": 0.7,
+   "frutta candita": 0.7,
+   "cannella": 0.6,
+   "arancia": 0.5,
+   "burro": 0.5
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "carattere": [
+   "coccola"
+  ],
+  "manca": [
+   "ricotta",
+   "semola"
+  ]
+ },
+ {
+  "chiave": "cibo-baba",
+  "tipo": "cibo",
+  "forme": [
+   "babà",
+   "babà al rum",
+   "savarin",
+   "dolce al rum",
+   "dolce bagnato nel rum",
+   "babà napoletano"
+  ],
+  "evoca": "un babà al rum",
+  "accordi": {
+   "boozy": 1,
+   "gourmand": 0.8,
+   "vaniglia": 0.5
+  },
+  "note": {
+   "rum": 1,
+   "vaniglia": 0.6,
+   "caramello": 0.5,
+   "zucchero": 0.5,
+   "burro": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "momento": {
+   "sera": 0.4
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-pastiera",
+  "tipo": "cibo",
+  "forme": [
+   "pastiera",
+   "pastiera napoletana",
+   "pastiera di grano",
+   "grano e fiori d'arancio",
+   "dolce di pasqua napoletano",
+   "torta di grano e ricotta"
+  ],
+  "evoca": "una pastiera ai fiori d'arancio",
+  "accordi": {
+   "floreale-bianco": 0.8,
+   "gourmand": 0.7,
+   "agrumato": 0.4,
+   "speziato": 0.2
+  },
+  "note": {
+   "fiore d'arancio": 1,
+   "frutta candita": 0.6,
+   "vaniglia": 0.6,
+   "neroli": 0.5,
+   "cannella": 0.4,
+   "latte": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "primavera": 0.9
+  },
+  "carattere": [
+   "coccola"
+  ],
+  "manca": [
+   "ricotta",
+   "grano cotto"
+  ]
+ },
+ {
+  "chiave": "cibo-panettone",
+  "tipo": "cibo",
+  "forme": [
+   "panettone",
+   "panettone artigianale",
+   "fetta di panettone",
+   "uvetta e canditi",
+   "canditi e uvetta",
+   "panettone caldo",
+   "lievitato di natale"
+  ],
+  "evoca": "una fetta di panettone",
+  "accordi": {
+   "gourmand": 0.8,
+   "vaniglia": 0.6,
+   "agrumato": 0.5,
+   "fruttato": 0.4
+  },
+  "note": {
+   "frutta candita": 1,
+   "vaniglia": 0.8,
+   "burro": 0.6,
+   "scorza di arancia": 0.6,
+   "frutti secchi": 0.4,
+   "limone candito": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "carattere": [
+   "coccola"
+  ],
+  "manca": [
+   "uvetta"
+  ]
+ },
+ {
+  "chiave": "cibo-pandoro",
+  "tipo": "cibo",
+  "forme": [
+   "pandoro",
+   "zucchero a velo",
+   "pandoro con lo zucchero a velo",
+   "nuvola di zucchero a velo",
+   "fetta di pandoro",
+   "pandoro farcito"
+  ],
+  "evoca": "un pandoro spolverato di zucchero a velo",
+  "accordi": {
+   "vaniglia": 1,
+   "gourmand": 0.8,
+   "muschiato": 0.2
+  },
+  "note": {
+   "vaniglia": 1,
+   "burro": 0.8,
+   "zucchero vanigliato": 0.8,
+   "zucchero": 0.5,
+   "latte": 0.4
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "inverno": 0.9
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-colomba",
+  "tipo": "cibo",
+  "forme": [
+   "colomba pasquale",
+   "colomba di pasqua",
+   "colomba con le mandorle",
+   "glassa di mandorle",
+   "fetta di colomba",
+   "dolce colomba"
+  ],
+  "evoca": "una colomba pasquale",
+  "accordi": {
+   "gourmand": 0.8,
+   "vaniglia": 0.6,
+   "agrumato": 0.4
+  },
+  "note": {
+   "mandorla": 0.8,
+   "frutta candita": 0.7,
+   "vaniglia": 0.7,
+   "burro": 0.5,
+   "arancia": 0.5,
+   "zucchero": 0.4
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "primavera": 0.9
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-biscotti-sfornati",
+  "tipo": "cibo",
+  "forme": [
+   "biscotti appena sfornati",
+   "biscotti fatti in casa",
+   "biscotti al burro",
+   "frollini",
+   "biscotti caldi",
+   "biscotti nel forno",
+   "biscotti di pasta frolla"
+  ],
+  "evoca": "i biscotti appena sfornati",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.7
+  },
+  "note": {
+   "vaniglia": 1,
+   "burro": 0.8,
+   "zucchero di canna": 0.5,
+   "mandorla": 0.4,
+   "fava tonka": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "autunno": 0.5,
+   "inverno": 0.5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-pan-di-zenzero",
+  "tipo": "cibo",
+  "forme": [
+   "pan di zenzero",
+   "biscotti allo zenzero",
+   "omino di pan di zenzero",
+   "gingerbread",
+   "biscotti speziati",
+   "biscotti alla cannella",
+   "speculoos"
+  ],
+  "evoca": "il pan di zenzero",
+  "accordi": {
+   "speziato": 0.9,
+   "gourmand": 0.8,
+   "miele": 0.3
+  },
+  "note": {
+   "zenzero": 1,
+   "cannella": 0.9,
+   "chiodi di garofano": 0.5,
+   "noce moscata": 0.5,
+   "miele": 0.5,
+   "zucchero di canna": 0.4
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-creme-brulee",
+  "tipo": "cibo",
+  "forme": [
+   "crème brûlée",
+   "crema bruciata",
+   "crema catalana",
+   "zucchero caramellato",
+   "crosta di zucchero bruciato",
+   "crosticina di caramello"
+  ],
+  "evoca": "una crème brûlée",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.8
+  },
+  "note": {
+   "caramello": 1,
+   "vaniglia": 0.9,
+   "zucchero di canna": 0.5,
+   "latte": 0.4,
+   "panna cotta": 0.3,
+   "cannella": 0.2
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "cibo-crema-pasticcera",
+  "tipo": "cibo",
+  "forme": [
+   "crema pasticcera",
+   "crema pasticciera",
+   "bignè alla crema",
+   "bignè",
+   "cannoncini alla crema",
+   "sfogliatine alla crema",
+   "millefoglie",
+   "crema diplomatica"
+  ],
+  "evoca": "la crema pasticcera",
+  "accordi": {
+   "vaniglia": 1,
+   "gourmand": 0.8,
+   "agrumato": 0.15
+  },
+  "note": {
+   "vaniglia": 1,
+   "latte": 0.6,
+   "zucchero vanigliato": 0.6,
+   "panna montata": 0.4,
+   "burro": 0.3,
+   "limone": 0.2
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-panna",
+  "tipo": "cibo",
+  "forme": [
+   "panna",
+   "panna fresca",
+   "ciuffo di panna",
+   "crema chantilly",
+   "chantilly",
+   "panna e zucchero",
+   "cucchiaio di panna"
+  ],
+  "evoca": "la panna montata",
+  "accordi": {
+   "gourmand": 0.8,
+   "vaniglia": 0.6,
+   "muschiato": 0.4
+  },
+  "note": {
+   "panna montata": 1,
+   "latte": 0.6,
+   "vaniglia": 0.5,
+   "zucchero": 0.4,
+   "muschio bianco": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-zabaione",
+  "tipo": "cibo",
+  "forme": [
+   "zabaione",
+   "zabaglione",
+   "crema allo zabaione",
+   "uovo sbattuto con lo zucchero",
+   "uovo sbattuto",
+   "rosso d'uovo e zucchero",
+   "crema al marsala"
+  ],
+  "evoca": "uno zabaione",
+  "accordi": {
+   "gourmand": 0.9,
+   "boozy": 0.6,
+   "vaniglia": 0.6
+  },
+  "note": {
+   "liquore": 0.7,
+   "vaniglia": 0.8,
+   "zucchero": 0.6,
+   "caramello": 0.3,
+   "cognac": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "inverno": 0.5
+  },
+  "carattere": [
+   "coccola"
+  ],
+  "manca": [
+   "marsala"
+  ]
+ },
+ {
+  "chiave": "cibo-caramello-salato",
+  "tipo": "cibo",
+  "forme": [
+   "caramello salato",
+   "caramello al burro salato",
+   "mou",
+   "caramelle mou",
+   "toffee al sale",
+   "caramello e sale",
+   "salted caramel"
+  ],
+  "evoca": "il caramello salato",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.4,
+   "acquatico": 0.15
+  },
+  "note": {
+   "caramello": 1,
+   "toffee": 0.7,
+   "sale": 0.5,
+   "burro": 0.5,
+   "dulce de leche": 0.4,
+   "vaniglia": 0.4
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-zucchero-filato",
+  "tipo": "cibo",
+  "forme": [
+   "zucchero filato del luna park",
+   "zucchero filato rosa",
+   "zucchero filato alla fiera",
+   "zucchero filato alle giostre",
+   "nuvola di zucchero",
+   "cotton candy"
+  ],
+  "evoca": "lo zucchero filato delle giostre",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.4,
+   "fruttato": 0.3
+  },
+  "note": {
+   "zucchero filato": 1,
+   "zucchero": 0.6,
+   "caramello": 0.5,
+   "vaniglia": 0.4,
+   "fragola": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-marshmallow",
+  "tipo": "cibo",
+  "forme": [
+   "marshmallow arrostiti",
+   "marshmallow abbrustoliti",
+   "marshmallow sul fuoco",
+   "marshmellow",
+   "marsh mallow",
+   "caramelle morbide spugnose"
+  ],
+  "evoca": "i marshmallow abbrustoliti",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.7,
+   "muschiato": 0.3
+  },
+  "note": {
+   "marshmallow": 1,
+   "vaniglia": 0.7,
+   "zucchero": 0.6,
+   "caramello": 0.4,
+   "muschio bianco": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-meringa",
+  "tipo": "cibo",
+  "forme": [
+   "meringa al forno",
+   "meringata",
+   "pavlova",
+   "spumiglie",
+   "albume montato",
+   "meringhe con la panna"
+  ],
+  "evoca": "le meringhe",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.6,
+   "muschiato": 0.2
+  },
+  "note": {
+   "meringa": 1,
+   "zucchero": 0.7,
+   "vaniglia": 0.6,
+   "panna montata": 0.3,
+   "mandorla": 0.2
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-profiteroles",
+  "tipo": "cibo",
+  "forme": [
+   "profiteroles",
+   "profiterole",
+   "bignè al cioccolato",
+   "bignè con panna e cioccolato",
+   "torta di bignè"
+  ],
+  "evoca": "i profiteroles",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.5
+  },
+  "note": {
+   "cioccolato": 0.9,
+   "panna montata": 0.8,
+   "cacao": 0.5,
+   "vaniglia": 0.5,
+   "burro": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-torta-cioccolato",
+  "tipo": "cibo",
+  "forme": [
+   "torta al cioccolato",
+   "torta tenerina",
+   "tenerina",
+   "brownie",
+   "tortino al cioccolato",
+   "tortino dal cuore morbido",
+   "cuore caldo di cioccolato",
+   "fondant al cioccolato",
+   "torta caprese"
+  ],
+  "evoca": "una torta al cioccolato",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "cioccolato": 1,
+   "cacao": 0.8,
+   "burro": 0.5,
+   "vaniglia": 0.4,
+   "caramello": 0.3,
+   "mandorla": 0.2
+  },
+  "misure": {
+   "dolcezza": 5,
+   "intensita": 4
+  },
+  "momento": {
+   "sera": 0.4
+  },
+  "carattere": [
+   "coccola",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "cibo-ciambellone",
+  "tipo": "cibo",
+  "forme": [
+   "ciambellone",
+   "ciambella della colazione",
+   "torta margherita",
+   "pan di spagna",
+   "torta soffice",
+   "plumcake",
+   "torta allo yogurt"
+  ],
+  "evoca": "un ciambellone soffice",
+  "accordi": {
+   "gourmand": 0.8,
+   "vaniglia": 0.8,
+   "agrumato": 0.2
+  },
+  "note": {
+   "vaniglia": 1,
+   "burro": 0.6,
+   "zucchero": 0.5,
+   "latte": 0.4,
+   "limone": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "momento": {
+   "giorno": 0.6
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-torta-carote",
+  "tipo": "cibo",
+  "forme": [
+   "torta di carote",
+   "carrot cake",
+   "torta carote e mandorle",
+   "plumcake alle carote"
+  ],
+  "evoca": "una torta di carote",
+  "accordi": {
+   "gourmand": 0.8,
+   "speziato": 0.6,
+   "cipriato": 0.3
+  },
+  "note": {
+   "cannella": 0.7,
+   "vaniglia": 0.6,
+   "semi di carota": 0.5,
+   "noce moscata": 0.4,
+   "zucchero di canna": 0.4,
+   "zenzero": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "autunno": 0.6
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-cheesecake",
+  "tipo": "cibo",
+  "forme": [
+   "cheesecake",
+   "cheese cake",
+   "cheesecake ai frutti di bosco",
+   "cheesecake alla fragola",
+   "torta al formaggio",
+   "torta fredda"
+  ],
+  "evoca": "una cheesecake ai frutti rossi",
+  "accordi": {
+   "gourmand": 0.8,
+   "fruttato": 0.6,
+   "vaniglia": 0.6,
+   "agrumato": 0.2
+  },
+  "note": {
+   "vaniglia": 0.8,
+   "panna montata": 0.6,
+   "lampone": 0.6,
+   "fragola": 0.5,
+   "burro": 0.4,
+   "limone": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "manca": [
+   "formaggio fresco"
+  ]
+ },
+ {
+  "chiave": "cibo-macaron",
+  "tipo": "cibo",
+  "forme": [
+   "macaron",
+   "macaron alla rosa",
+   "macaron al lampone",
+   "pasticcini francesi",
+   "dolcetti colorati alle mandorle",
+   "pasticcini alla rosa"
+  ],
+  "evoca": "i macaron",
+  "accordi": {
+   "gourmand": 0.9,
+   "fruttato": 0.3,
+   "rosa": 0.3,
+   "cipriato": 0.3
+  },
+  "note": {
+   "mandorla": 0.9,
+   "meringa": 0.6,
+   "lampone": 0.5,
+   "vaniglia": 0.5,
+   "rosa": 0.3,
+   "pistacchio": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "elegante",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "cibo-frittelle",
+  "tipo": "cibo",
+  "forme": [
+   "frittelle",
+   "castagnole",
+   "chiacchiere di carnevale",
+   "crostoli",
+   "galani",
+   "dolci di carnevale",
+   "frittelle di carnevale"
+  ],
+  "evoca": "le frittelle di carnevale",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.6,
+   "agrumato": 0.3
+  },
+  "note": {
+   "zucchero": 0.9,
+   "vaniglia": 0.8,
+   "burro": 0.4,
+   "limone": 0.4,
+   "anice": 0.3,
+   "liquore": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "inverno": 0.6
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-zeppole",
+  "tipo": "cibo",
+  "forme": [
+   "zeppole",
+   "zeppole di san giuseppe",
+   "bomboloni",
+   "bombolone alla crema",
+   "krapfen",
+   "ciambelle fritte",
+   "ciambella zuccherata",
+   "graffe"
+  ],
+  "evoca": "le zeppole alla crema",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.8
+  },
+  "note": {
+   "vaniglia": 0.9,
+   "zucchero": 0.8,
+   "burro": 0.5,
+   "amarena": 0.3,
+   "latte": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-croissant",
+  "tipo": "cibo",
+  "forme": [
+   "croissant",
+   "cornetto",
+   "cornetti caldi",
+   "cornetto alla crema",
+   "brioche",
+   "brioche calda",
+   "pain au chocolat",
+   "sfoglia al burro"
+  ],
+  "evoca": "un cornetto caldo",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.7
+  },
+  "note": {
+   "burro": 1,
+   "vaniglia": 0.8,
+   "zucchero": 0.5,
+   "miele": 0.3,
+   "latte": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "momento": {
+   "giorno": 0.8
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-crepes",
+  "tipo": "cibo",
+  "forme": [
+   "crêpes",
+   "crespelle",
+   "pancake",
+   "frittelle americane",
+   "waffle",
+   "gaufre",
+   "cialde calde"
+  ],
+  "evoca": "le crêpes calde",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.6
+  },
+  "note": {
+   "burro": 0.8,
+   "vaniglia": 0.7,
+   "zucchero": 0.5,
+   "latte": 0.4,
+   "caramello": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-sciroppo-acero",
+  "tipo": "cibo",
+  "forme": [
+   "sciroppo d'acero",
+   "pancake con sciroppo d'acero",
+   "acero dolce",
+   "maple syrup"
+  ],
+  "evoca": "lo sciroppo d'acero",
+  "accordi": {
+   "gourmand": 0.9,
+   "ambrato": 0.3,
+   "legnoso": 0.2
+  },
+  "note": {
+   "caramello": 1,
+   "zucchero di canna": 0.7,
+   "fava tonka": 0.4,
+   "cumarina": 0.3,
+   "legno di guaiaco": 0.2
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "autunno": 0.6
+  },
+  "carattere": [
+   "coccola"
+  ],
+  "manca": [
+   "sciroppo d'acero"
+  ]
+ },
+ {
+  "chiave": "cibo-panna-cotta",
+  "tipo": "cibo",
+  "forme": [
+   "pannacotta",
+   "panna cotta al caramello",
+   "budino",
+   "budino alla vaniglia",
+   "crème caramel",
+   "latte alla portoghese"
+  ],
+  "evoca": "una panna cotta al caramello",
+  "accordi": {
+   "vaniglia": 0.9,
+   "gourmand": 0.9
+  },
+  "note": {
+   "panna cotta": 1,
+   "vaniglia": 0.8,
+   "caramello": 0.6,
+   "latte": 0.5
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-dulce-leche",
+  "tipo": "cibo",
+  "forme": [
+   "latte condensato",
+   "confettura di latte",
+   "crema al latte",
+   "cajeta",
+   "crema di latte caramellata"
+  ],
+  "evoca": "la confettura di latte",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.5
+  },
+  "note": {
+   "dulce de leche": 1,
+   "caramello": 0.7,
+   "latte": 0.6,
+   "toffee": 0.4,
+   "vaniglia": 0.4
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-cantucci",
+  "tipo": "cibo",
+  "forme": [
+   "cantucci",
+   "cantuccini",
+   "biscotti di prato",
+   "tozzetti",
+   "biscotti alle mandorle",
+   "biscotti secchi alle mandorle"
+  ],
+  "evoca": "i cantucci alle mandorle",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "mandorla": 1,
+   "zucchero": 0.5,
+   "burro": 0.3,
+   "anice": 0.3,
+   "vaniglia": 0.3,
+   "miele": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.4
+  }
+ },
+ {
+  "chiave": "cibo-amaretti",
+  "tipo": "cibo",
+  "forme": [
+   "amaretti morbidi",
+   "amaretti secchi",
+   "biscotti amaretti",
+   "sapore di mandorla amara",
+   "pasticcini alla mandorla amara"
+  ],
+  "evoca": "gli amaretti",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "mandorla amara": 1,
+   "mandorla": 0.6,
+   "zucchero": 0.5,
+   "meringa": 0.3,
+   "ciliegia": 0.2
+  },
+  "misure": {
+   "dolcezza": 4
+  }
+ },
+ {
+  "chiave": "cibo-marzapane",
+  "tipo": "cibo",
+  "forme": [
+   "marzapane",
+   "pasta di mandorle",
+   "frutta martorana",
+   "frutta di marzapane",
+   "dolcetti di mandorle",
+   "pasticcini di mandorla"
+  ],
+  "evoca": "il marzapane",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "mandorla dolce": 1,
+   "mandorla": 0.8,
+   "zucchero": 0.6,
+   "latte di mandorla": 0.5,
+   "vaniglia": 0.4,
+   "fiore d'arancio": 0.2
+  },
+  "misure": {
+   "dolcezza": 5
+  }
+ },
+ {
+  "chiave": "cibo-struffoli",
+  "tipo": "cibo",
+  "forme": [
+   "struffoli",
+   "cicerchiata",
+   "palline col miele",
+   "pignolata",
+   "dolcetti fritti al miele",
+   "chiacchiere al miele"
+  ],
+  "evoca": "gli struffoli al miele",
+  "accordi": {
+   "miele": 1,
+   "gourmand": 0.8,
+   "agrumato": 0.3
+  },
+  "note": {
+   "miele": 1,
+   "frutta candita": 0.5,
+   "zucchero": 0.4,
+   "arancia": 0.3,
+   "anice": 0.2
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "inverno": 0.8
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-panforte",
+  "tipo": "cibo",
+  "forme": [
+   "panforte",
+   "panpepato",
+   "pan pepato",
+   "certosino",
+   "dolce di natale speziato",
+   "pan speziato"
+  ],
+  "evoca": "un panforte speziato",
+  "accordi": {
+   "speziato": 0.8,
+   "miele": 0.7,
+   "gourmand": 0.7
+  },
+  "note": {
+   "miele": 0.8,
+   "frutta candita": 0.6,
+   "cannella": 0.6,
+   "mandorla": 0.5,
+   "pepe": 0.5,
+   "noce moscata": 0.4
+  },
+  "misure": {
+   "dolcezza": 4,
+   "intensita": 4
+  },
+  "stagioni": {
+   "inverno": 1
+  }
+ },
+ {
+  "chiave": "cibo-cioccolato-fondente",
+  "tipo": "cibo",
+  "forme": [
+   "cioccolato fondente",
+   "fondente",
+   "cioccolato amaro",
+   "cioccolato extra fondente",
+   "tavoletta di fondente",
+   "cioccolato nero",
+   "cioccolato al settanta per cento",
+   "quadretto di fondente"
+  ],
+  "evoca": "il cioccolato fondente",
+  "accordi": {
+   "gourmand": 1,
+   "patchouli": 0.3,
+   "vaniglia": 0.3,
+   "legnoso": 0.2
+  },
+  "note": {
+   "cacao": 1,
+   "cioccolato": 0.8,
+   "fava di cacao": 0.5,
+   "patchouli": 0.4,
+   "fava tonka": 0.3,
+   "caffè": 0.2
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 3
+  },
+  "momento": {
+   "sera": 0.6
+  },
+  "carattere": [
+   "sensuale",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "cibo-cioccolato-latte",
+  "tipo": "cibo",
+  "forme": [
+   "cioccolato al latte",
+   "barretta di cioccolato",
+   "ovetto di cioccolato",
+   "uovo di pasqua",
+   "tavoletta al latte"
+  ],
+  "evoca": "il cioccolato al latte",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.6
+  },
+  "note": {
+   "cioccolato": 1,
+   "latte": 0.6,
+   "cacao": 0.6,
+   "vaniglia": 0.5,
+   "caramello": 0.4,
+   "pralina": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-cioccolato-bianco",
+  "tipo": "cibo",
+  "forme": [
+   "cioccolato bianco e vaniglia",
+   "tavoletta di cioccolato bianco",
+   "cioccolatini bianchi",
+   "ovetto bianco",
+   "cioccolata bianca fusa"
+  ],
+  "evoca": "il cioccolato bianco",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.8,
+   "muschiato": 0.2
+  },
+  "note": {
+   "cioccolato bianco": 1,
+   "burro di cacao": 0.8,
+   "vaniglia": 0.7,
+   "latte": 0.5,
+   "zucchero": 0.4
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-cacao-polvere",
+  "tipo": "cibo",
+  "forme": [
+   "cacao in polvere",
+   "cacao amaro",
+   "granella di cacao",
+   "nibs di cacao",
+   "cacao crudo",
+   "spolverata di cacao"
+  ],
+  "evoca": "il cacao amaro in polvere",
+  "accordi": {
+   "gourmand": 0.9,
+   "patchouli": 0.3,
+   "legnoso": 0.2
+  },
+  "note": {
+   "cacao": 1,
+   "fava di cacao": 0.7,
+   "burro di cacao": 0.4,
+   "patchouli": 0.3,
+   "caffè": 0.2
+  },
+  "misure": {
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "inverno": 0.4
+  }
+ },
+ {
+  "chiave": "cibo-praline",
+  "tipo": "cibo",
+  "forme": [
+   "cioccolatini",
+   "scatola di cioccolatini",
+   "cioccolatini ripieni",
+   "bonbon",
+   "praline di pasticceria",
+   "cioccolatini al liquore"
+  ],
+  "evoca": "una scatola di cioccolatini",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.4,
+   "boozy": 0.15
+  },
+  "note": {
+   "pralina": 1,
+   "cioccolato": 0.8,
+   "caramello": 0.5,
+   "nocciola": 0.4,
+   "mandorla": 0.4,
+   "liquore": 0.2
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "cibo-gianduia",
+  "tipo": "cibo",
+  "forme": [
+   "gianduia",
+   "gianduiotti",
+   "cioccolato alla nocciola",
+   "crema alla nocciola",
+   "crema spalmabile",
+   "crema spalmabile al cacao",
+   "pane e crema alla nocciola",
+   "crema di cioccolato e nocciole"
+  ],
+  "evoca": "la crema alla nocciola",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "nocciola": 1,
+   "cacao": 0.8,
+   "pralina": 0.7,
+   "cioccolato": 0.6,
+   "vaniglia": 0.4,
+   "latte": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-torrone",
+  "tipo": "cibo",
+  "forme": [
+   "torrone",
+   "torroncini",
+   "torrone morbido",
+   "torrone alle mandorle",
+   "torrone di natale",
+   "mandorlato",
+   "torrone al miele"
+  ],
+  "evoca": "il torrone al miele",
+  "accordi": {
+   "gourmand": 0.9,
+   "miele": 0.8,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "mandorla": 1,
+   "miele": 0.9,
+   "nocciola": 0.4,
+   "zucchero": 0.4,
+   "vaniglia": 0.4,
+   "meringa": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "inverno": 0.9
+  }
+ },
+ {
+  "chiave": "cibo-confetti",
+  "tipo": "cibo",
+  "forme": [
+   "confetti",
+   "confetti alla mandorla",
+   "sacchetto di confetti",
+   "confetti del matrimonio",
+   "bomboniera con i confetti",
+   "confettata"
+  ],
+  "evoca": "i confetti alla mandorla",
+  "accordi": {
+   "gourmand": 0.8,
+   "vaniglia": 0.5,
+   "cipriato": 0.4
+  },
+  "note": {
+   "mandorla": 0.9,
+   "zucchero": 0.8,
+   "vaniglia": 0.6,
+   "mandorla dolce": 0.5,
+   "latte di mandorla": 0.3,
+   "note talcate": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "carattere": [
+   "romantico",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "cibo-croccante",
+  "tipo": "cibo",
+  "forme": [
+   "croccante",
+   "croccante di mandorle",
+   "croccante alle arachidi",
+   "mandorle pralinate",
+   "mandorle caramellate",
+   "noccioline caramellate",
+   "brittle"
+  ],
+  "evoca": "il croccante di mandorle",
+  "accordi": {
+   "gourmand": 1
+  },
+  "note": {
+   "caramello": 1,
+   "mandorla": 0.8,
+   "pralina": 0.6,
+   "zucchero di canna": 0.5,
+   "nocciola": 0.3,
+   "sesamo": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  }
+ },
+ {
+  "chiave": "cibo-caramelle",
+  "tipo": "cibo",
+  "forme": [
+   "caramelle",
+   "caramelle alla frutta",
+   "caramelle gommose",
+   "orsetti gommosi",
+   "lecca lecca",
+   "leccalecca",
+   "gelatine di frutta",
+   "caramelle gommose alla frutta"
+  ],
+  "evoca": "le caramelle alla frutta",
+  "accordi": {
+   "gourmand": 0.8,
+   "fruttato": 0.8
+  },
+  "note": {
+   "zucchero": 1,
+   "fragola": 0.6,
+   "note fruttate": 0.5,
+   "lampone": 0.5,
+   "ciliegia": 0.4,
+   "limone": 0.2
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-gomma-masticare",
+  "tipo": "cibo",
+  "forme": [
+   "chewing gum",
+   "gomma americana",
+   "gomma alla fragola",
+   "gomma rosa",
+   "palloncino con la gomma"
+  ],
+  "evoca": "la gomma da masticare",
+  "accordi": {
+   "gourmand": 0.9,
+   "fruttato": 0.5
+  },
+  "note": {
+   "gomma da masticare": 1,
+   "fragola": 0.5,
+   "zucchero": 0.4,
+   "menta": 0.2
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-liquirizia",
+  "tipo": "cibo",
+  "forme": [
+   "caramelle alla liquirizia",
+   "rotelle di liquirizia",
+   "bastoncini di liquirizia",
+   "liquirizia pura",
+   "radice di liquirizia",
+   "pastiglie di liquirizia",
+   "liquirizia e anice"
+  ],
+  "evoca": "la liquirizia",
+  "accordi": {
+   "aromatico": 0.8,
+   "speziato": 0.4,
+   "gourmand": 0.4
+  },
+  "note": {
+   "liquirizia": 1,
+   "anice": 0.6,
+   "anice stellato": 0.5,
+   "zucchero di canna": 0.3,
+   "note legnose": 0.2
+  },
+  "misure": {
+   "intensita": 3
+  }
+ },
+ {
+  "chiave": "cibo-mela-caramellata",
+  "tipo": "cibo",
+  "forme": [
+   "mela caramellata",
+   "mela candita",
+   "mela stregata",
+   "mela del luna park",
+   "mela ricoperta di zucchero"
+  ],
+  "evoca": "una mela caramellata",
+  "accordi": {
+   "gourmand": 0.9,
+   "fruttato": 0.7
+  },
+  "note": {
+   "caramello": 1,
+   "mela rossa": 0.7,
+   "mela": 0.5,
+   "zucchero": 0.5,
+   "cannella": 0.2
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "autunno": 0.6
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-canditi",
+  "tipo": "cibo",
+  "forme": [
+   "canditi",
+   "scorzette candite",
+   "arancia candita",
+   "scorze candite",
+   "cedro candito",
+   "scorzette al cioccolato",
+   "frutta sciroppata candita"
+  ],
+  "evoca": "i canditi",
+  "accordi": {
+   "gourmand": 0.8,
+   "agrumato": 0.7,
+   "fruttato": 0.4
+  },
+  "note": {
+   "frutta candita": 1,
+   "limone candito": 0.7,
+   "scorza di arancia": 0.5,
+   "zucchero": 0.5,
+   "cioccolato": 0.2
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "inverno": 0.6
+  }
+ },
+ {
+  "chiave": "cibo-gelato-vaniglia",
+  "tipo": "cibo",
+  "forme": [
+   "gelato alla vaniglia",
+   "gelato alla crema",
+   "gelato fior di latte",
+   "fior di latte",
+   "cono alla crema",
+   "semifreddo",
+   "coppa alla crema"
+  ],
+  "evoca": "un gelato alla vaniglia",
+  "accordi": {
+   "vaniglia": 1,
+   "gourmand": 0.8,
+   "muschiato": 0.2
+  },
+  "note": {
+   "vaniglia": 1,
+   "gelato": 0.8,
+   "latte": 0.6,
+   "panna montata": 0.5,
+   "zucchero vanigliato": 0.4
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "coccola",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-gelato-pistacchio",
+  "tipo": "cibo",
+  "forme": [
+   "gelato al pistacchio",
+   "crema di pistacchio",
+   "dolce al pistacchio",
+   "semifreddo al pistacchio"
+  ],
+  "evoca": "un gelato al pistacchio",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.4,
+   "verde": 0.2
+  },
+  "note": {
+   "pistacchio": 1,
+   "mandorla": 0.5,
+   "gelato": 0.5,
+   "latte": 0.4,
+   "vaniglia": 0.4,
+   "mandorla verde": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "estate": 0.6
+  }
+ },
+ {
+  "chiave": "cibo-gelato-cocco",
+  "tipo": "cibo",
+  "forme": [
+   "gelato al cocco",
+   "sorbetto al cocco",
+   "ghiacciolo al cocco",
+   "cocco e cioccolato"
+  ],
+  "evoca": "un gelato al cocco",
+  "accordi": {
+   "solare": 0.8,
+   "gourmand": 0.8,
+   "vaniglia": 0.5
+  },
+  "note": {
+   "cocco": 1,
+   "latte di cocco": 0.8,
+   "gelato": 0.6,
+   "vaniglia": 0.5,
+   "ananas": 0.2
+  },
+  "misure": {
+   "dolcezza": 4,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-gelato-nocciola",
+  "tipo": "cibo",
+  "forme": [
+   "gelato alla nocciola",
+   "gelato alla gianduia",
+   "gelato nocciola e cioccolato",
+   "coppetta nocciola"
+  ],
+  "evoca": "un gelato alla nocciola",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "nocciola": 1,
+   "pralina": 0.6,
+   "gelato": 0.6,
+   "cacao": 0.4,
+   "latte": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "estate": 0.6
+  }
+ },
+ {
+  "chiave": "cibo-gelato-cioccolato",
+  "tipo": "cibo",
+  "forme": [
+   "gelato al cioccolato",
+   "gelato alla stracciatella",
+   "stracciatella",
+   "gelato al cacao",
+   "tartufo al cioccolato",
+   "tartufo gelato"
+  ],
+  "evoca": "un gelato al cioccolato",
+  "accordi": {
+   "gourmand": 1,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "cioccolato": 1,
+   "cacao": 0.7,
+   "gelato": 0.7,
+   "latte": 0.4,
+   "vaniglia": 0.4
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "estate": 0.6
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-gelato-frutta",
+  "tipo": "cibo",
+  "forme": [
+   "gelato alla fragola",
+   "gelato alla frutta",
+   "ghiacciolo",
+   "ghiacciolo alla fragola",
+   "sorbetto ai frutti di bosco",
+   "gelato ai frutti di bosco",
+   "sorbetto alla fragola"
+  ],
+  "evoca": "un gelato alla frutta",
+  "accordi": {
+   "fruttato": 1,
+   "gourmand": 0.6
+  },
+  "note": {
+   "fragola": 1,
+   "lampone": 0.6,
+   "gelato": 0.6,
+   "bacche rosse": 0.4,
+   "zucchero": 0.3
+  },
+  "misure": {
+   "dolcezza": 4,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-sorbetto-limone",
+  "tipo": "cibo",
+  "forme": [
+   "sorbetto al limone",
+   "gelato al limone",
+   "sorbetto",
+   "coppetta al limone"
+  ],
+  "evoca": "un sorbetto al limone",
+  "accordi": {
+   "agrumato": 1,
+   "gourmand": 0.3,
+   "fruttato": 0.2
+  },
+  "note": {
+   "limone": 1,
+   "limone di sicilia": 0.6,
+   "zucchero": 0.4,
+   "limone candito": 0.3,
+   "menta": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-gelato",
+  "tipo": "cibo",
+  "forme": [
+   "cono gelato",
+   "coppa gelato",
+   "gelato artigianale",
+   "coppetta di gelato",
+   "gelato in cono",
+   "cono con la panna"
+  ],
+  "evoca": "un cono gelato",
+  "accordi": {
+   "vaniglia": 0.8,
+   "gourmand": 0.8,
+   "fruttato": 0.3
+  },
+  "note": {
+   "gelato": 1,
+   "vaniglia": 0.7,
+   "latte": 0.5,
+   "panna montata": 0.4,
+   "fragola": 0.3
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-frutti-rossi",
+  "tipo": "cibo",
+  "forme": [
+   "frutti rossi",
+   "piccoli frutti",
+   "frutti rossi freschi",
+   "more e lamponi",
+   "lamponi e more",
+   "mirtilli e lamponi",
+   "cestino di frutti rossi",
+   "fragole e lamponi"
+  ],
+  "evoca": "i frutti rossi",
+  "accordi": {
+   "fruttato": 1,
+   "verde": 0.15
+  },
+  "note": {
+   "lampone": 1,
+   "bacche rosse": 0.8,
+   "fragola": 0.7,
+   "ribes rosso": 0.6,
+   "ribes nero": 0.5,
+   "ciliegia": 0.3
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.7
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-frutti-bosco",
+  "tipo": "cibo",
+  "forme": [
+   "frutti di bosco",
+   "more di rovo",
+   "more selvatiche",
+   "mirtilli selvatici",
+   "fragoline di bosco",
+   "mirtilli neri"
+  ],
+  "evoca": "i frutti di bosco",
+  "accordi": {
+   "fruttato": 0.9,
+   "verde": 0.3,
+   "patchouli": 0.1
+  },
+  "note": {
+   "bacche selvatiche": 1,
+   "ribes nero": 0.8,
+   "mirtillo": 0.6,
+   "lampone": 0.6,
+   "fragola": 0.4,
+   "foglie verdi": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.6,
+   "autunno": 0.3
+  },
+  "manca": [
+   "more"
+  ]
+ },
+ {
+  "chiave": "cibo-frutta-esotica",
+  "tipo": "cibo",
+  "forme": [
+   "frutta esotica",
+   "frutta tropicale",
+   "papaya",
+   "maracuja",
+   "passion fruit",
+   "guava",
+   "cesto di frutta esotica"
+  ],
+  "evoca": "la frutta esotica",
+  "accordi": {
+   "fruttato": 1,
+   "solare": 0.4,
+   "agrumato": 0.2
+  },
+  "note": {
+   "frutti tropicali": 1,
+   "frutto della passione": 0.8,
+   "mango": 0.7,
+   "ananas": 0.6,
+   "litchi": 0.4,
+   "fiore di papaya": 0.3
+  },
+  "misure": {
+   "dolcezza": 3,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "allegro",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "cibo-ananas-mango",
+  "tipo": "cibo",
+  "forme": [
+   "ananas e mango",
+   "mango e ananas",
+   "mango maturo",
+   "ananas fresco",
+   "ananas a fette",
+   "mango a fette",
+   "spiedini di frutta",
+   "ananas maturo"
+  ],
+  "evoca": "ananas e mango maturi",
+  "accordi": {
+   "fruttato": 1,
+   "solare": 0.3,
+   "agrumato": 0.2
+  },
+  "note": {
+   "ananas": 1,
+   "mango": 1,
+   "frutto della passione": 0.4,
+   "mango verde": 0.3,
+   "cocco": 0.3
+  },
+  "misure": {
+   "dolcezza": 3,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-cocco",
+  "tipo": "cibo",
+  "forme": [
+   "noce di cocco",
+   "cocco fresco",
+   "polpa di cocco",
+   "fette di cocco",
+   "cocco a pezzi",
+   "cocco grattugiato",
+   "cocco rapé",
+   "cocco in spiaggia"
+  ],
+  "evoca": "il cocco fresco",
+  "accordi": {
+   "solare": 1,
+   "gourmand": 0.5,
+   "muschiato": 0.3
+  },
+  "note": {
+   "cocco": 1,
+   "latte di cocco": 0.8,
+   "acqua di cocco": 0.4,
+   "vaniglia": 0.4,
+   "tiarè": 0.2
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-banana",
+  "tipo": "cibo",
+  "forme": [
+   "banana",
+   "banana matura",
+   "banana split",
+   "banana flambé",
+   "pane alla banana",
+   "banana bread",
+   "banane mature al forno"
+  ],
+  "evoca": "la banana matura",
+  "accordi": {
+   "fruttato": 0.8,
+   "gourmand": 0.5,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "frutti tropicali": 0.6,
+   "note fruttate": 0.6,
+   "ylang ylang": 0.4,
+   "vaniglia": 0.4,
+   "caramello": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "manca": [
+   "banana"
+  ]
+ },
+ {
+  "chiave": "cibo-macedonia",
+  "tipo": "cibo",
+  "forme": [
+   "macedonia",
+   "macedonia di frutta",
+   "frutta mista",
+   "insalata di frutta",
+   "frutta tagliata",
+   "coppa di frutta",
+   "frutta fresca",
+   "frutta di stagione"
+  ],
+  "evoca": "una macedonia di frutta fresca",
+  "accordi": {
+   "fruttato": 1,
+   "agrumato": 0.4,
+   "verde": 0.2
+  },
+  "note": {
+   "pesca": 0.7,
+   "note fruttate": 0.6,
+   "mela": 0.6,
+   "fragola": 0.6,
+   "pera": 0.5,
+   "arancia": 0.4,
+   "melone": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "cibo-fragole-panna",
+  "tipo": "cibo",
+  "forme": [
+   "fragole con la panna",
+   "fragole con panna montata",
+   "fragole e zucchero",
+   "fragole col limone",
+   "coppa di fragole",
+   "fragole e cioccolato"
+  ],
+  "evoca": "le fragole con la panna",
+  "accordi": {
+   "fruttato": 0.9,
+   "gourmand": 0.7,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "fragola": 1,
+   "panna montata": 0.8,
+   "zucchero": 0.4,
+   "vaniglia": 0.3,
+   "latte": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "primavera": 0.8,
+   "estate": 0.4
+  },
+  "carattere": [
+   "romantico",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-fragole-fresche",
+  "tipo": "cibo",
+  "forme": [
+   "fragole fresche",
+   "fragole mature",
+   "cestino di fragole",
+   "fragole appena colte",
+   "fragole dell'orto",
+   "campo di fragole"
+  ],
+  "evoca": "le fragole appena colte",
+  "accordi": {
+   "fruttato": 1,
+   "verde": 0.3
+  },
+  "note": {
+   "fragola": 1,
+   "bacche rosse": 0.4,
+   "foglie verdi": 0.3,
+   "lampone": 0.2
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "primavera": 0.8
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-ciliegie",
+  "tipo": "cibo",
+  "forme": [
+   "ciliegie mature",
+   "cestino di ciliegie",
+   "ciliegie appena colte",
+   "ciliegie nere",
+   "duroni",
+   "ciliegie succose",
+   "ciliegie dall'albero"
+  ],
+  "evoca": "le ciliegie mature",
+  "accordi": {
+   "fruttato": 1,
+   "gourmand": 0.2
+  },
+  "note": {
+   "ciliegia": 1,
+   "ciliegia nera": 0.6,
+   "amarena": 0.5,
+   "mandorla amara": 0.3,
+   "prugna": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.7,
+   "primavera": 0.4
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-amarene",
+  "tipo": "cibo",
+  "forme": [
+   "amarene sciroppate",
+   "amarene in sciroppo",
+   "amarene",
+   "visciole",
+   "ciliegie sotto spirito",
+   "ciliegie sciroppate",
+   "marasche"
+  ],
+  "evoca": "le amarene sciroppate",
+  "accordi": {
+   "fruttato": 0.9,
+   "gourmand": 0.5,
+   "boozy": 0.4
+  },
+  "note": {
+   "amarena": 1,
+   "ciliegia nera": 0.7,
+   "mandorla amara": 0.5,
+   "liquore": 0.4,
+   "zucchero": 0.3
+  },
+  "misure": {
+   "dolcezza": 4,
+   "intensita": 3
+  },
+  "momento": {
+   "sera": 0.4
+  },
+  "carattere": [
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "cibo-fichi",
+  "tipo": "cibo",
+  "forme": [
+   "fichi maturi",
+   "fichi freschi",
+   "fichi appena colti",
+   "fichi secchi",
+   "fichi al sole",
+   "fichi caldi di sole",
+   "fichi dall'albero"
+  ],
+  "evoca": "i fichi maturi",
+  "accordi": {
+   "fruttato": 0.9,
+   "verde": 0.5,
+   "gourmand": 0.3,
+   "legnoso": 0.2
+  },
+  "note": {
+   "fico": 1,
+   "foglia di fico": 0.6,
+   "nettare di fico": 0.5,
+   "albero di fico": 0.4,
+   "latte di cocco": 0.2,
+   "frutti secchi": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.7,
+   "autunno": 0.5
+  },
+  "carattere": [
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "cibo-melone",
+  "tipo": "cibo",
+  "forme": [
+   "melone maturo",
+   "melone fresco",
+   "melone bianco",
+   "melone giallo",
+   "prosciutto e melone",
+   "fetta di melone",
+   "cantalupo",
+   "melone retato"
+  ],
+  "evoca": "un melone maturo",
+  "accordi": {
+   "fruttato": 1,
+   "acquatico": 0.3,
+   "verde": 0.2
+  },
+  "note": {
+   "melone": 1,
+   "anguria": 0.3,
+   "cetriolo": 0.3,
+   "note acquatiche": 0.3,
+   "pesca": 0.2
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "cibo-anguria",
+  "tipo": "cibo",
+  "forme": [
+   "anguria fresca",
+   "cocomero",
+   "fetta d'anguria",
+   "cocomero fresco",
+   "anguria ghiacciata",
+   "melone d'acqua",
+   "fetta di cocomero"
+  ],
+  "evoca": "una fetta d'anguria",
+  "accordi": {
+   "fruttato": 0.9,
+   "acquatico": 0.5,
+   "verde": 0.3
+  },
+  "note": {
+   "anguria": 1,
+   "melone": 0.5,
+   "cetriolo": 0.4,
+   "note acquatiche": 0.4,
+   "menta": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-pesche",
+  "tipo": "cibo",
+  "forme": [
+   "pesche mature",
+   "pesche noci",
+   "nettarine",
+   "pesche gialle",
+   "pesca succosa",
+   "pesche sciroppate",
+   "percoche",
+   "pesche tabacchiere"
+  ],
+  "evoca": "le pesche mature",
+  "accordi": {
+   "fruttato": 1,
+   "solare": 0.2
+  },
+  "note": {
+   "pesca": 1,
+   "pesca bianca": 0.5,
+   "albicocca": 0.5,
+   "osmanto": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-albicocche",
+  "tipo": "cibo",
+  "forme": [
+   "albicocche mature",
+   "albicocche secche",
+   "albicocche al sole",
+   "albicocche appena colte",
+   "armelline"
+  ],
+  "evoca": "le albicocche mature",
+  "accordi": {
+   "fruttato": 1,
+   "cipriato": 0.15
+  },
+  "note": {
+   "albicocca": 1,
+   "osmanto": 0.5,
+   "pesca": 0.4,
+   "frutti essiccati": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.8
+  }
+ },
+ {
+  "chiave": "cibo-mela-verde",
+  "tipo": "cibo",
+  "forme": [
+   "mela verde croccante",
+   "mela acerba",
+   "morso di mela",
+   "mela appena tagliata",
+   "mela croccante",
+   "mela aspra"
+  ],
+  "evoca": "una mela verde croccante",
+  "accordi": {
+   "fruttato": 0.9,
+   "verde": 0.6,
+   "agrumato": 0.2
+  },
+  "note": {
+   "mela verde": 1,
+   "mela": 0.6,
+   "note verdi": 0.4,
+   "rabarbaro": 0.3,
+   "pera": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "carattere": [
+   "fresco",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "cibo-mele-raccolte",
+  "tipo": "cibo",
+  "forme": [
+   "cesto di mele",
+   "mele appena raccolte",
+   "raccolta delle mele",
+   "cassetta di mele",
+   "mele in cantina",
+   "mele mature"
+  ],
+  "evoca": "un cesto di mele appena raccolte",
+  "accordi": {
+   "fruttato": 1,
+   "verde": 0.3
+  },
+  "note": {
+   "mela": 1,
+   "mela rossa": 0.6,
+   "mela verde": 0.3,
+   "foglie verdi": 0.3,
+   "pera": 0.2
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.8
+  }
+ },
+ {
+  "chiave": "cibo-mela-cotogna",
+  "tipo": "cibo",
+  "forme": [
+   "mele cotogne",
+   "cotognata",
+   "gelatina di mele cotogne",
+   "marmellata di cotogne",
+   "cotogne cotte",
+   "pere cotogne"
+  ],
+  "evoca": "la mela cotogna",
+  "accordi": {
+   "fruttato": 0.9,
+   "gourmand": 0.3,
+   "miele": 0.2
+  },
+  "note": {
+   "mela cotogna": 1,
+   "mela": 0.5,
+   "pera": 0.4,
+   "miele": 0.3,
+   "frutta candita": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.9
+  }
+ },
+ {
+  "chiave": "cibo-pere",
+  "tipo": "cibo",
+  "forme": [
+   "pere mature",
+   "pera succosa",
+   "pera williams",
+   "pere cotte",
+   "pere al forno",
+   "pere e cioccolato",
+   "pera e cannella"
+  ],
+  "evoca": "una pera matura",
+  "accordi": {
+   "fruttato": 1,
+   "verde": 0.2
+  },
+  "note": {
+   "pera": 1,
+   "fiore di pero": 0.4,
+   "mela": 0.3,
+   "vaniglia": 0.2,
+   "cannella": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.7
+  }
+ },
+ {
+  "chiave": "cibo-uva",
+  "tipo": "cibo",
+  "forme": [
+   "uva",
+   "grappolo d'uva",
+   "uva bianca",
+   "uva nera",
+   "uva fragola",
+   "acini d'uva",
+   "uva moscato",
+   "zibibbo",
+   "mosto"
+  ],
+  "evoca": "un grappolo d'uva",
+  "accordi": {
+   "fruttato": 1,
+   "verde": 0.3,
+   "boozy": 0.2
+  },
+  "note": {
+   "note fruttate": 0.6,
+   "ribes nero": 0.4,
+   "litchi": 0.4,
+   "fragola": 0.3,
+   "bacche rosse": 0.3,
+   "pera": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.8
+  },
+  "manca": [
+   "uva"
+  ]
+ },
+ {
+  "chiave": "cibo-prugne",
+  "tipo": "cibo",
+  "forme": [
+   "susine",
+   "susine mature",
+   "prugne mature",
+   "prugne secche",
+   "prugne cotte",
+   "mirabelle",
+   "prugne gialle"
+  ],
+  "evoca": "le prugne mature",
+  "accordi": {
+   "fruttato": 0.9,
+   "gourmand": 0.3,
+   "ambrato": 0.2
+  },
+  "note": {
+   "prugna": 1,
+   "mirabella": 0.4,
+   "frutti essiccati": 0.4,
+   "cannella": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.7
+  }
+ },
+ {
+  "chiave": "cibo-datteri",
+  "tipo": "cibo",
+  "forme": [
+   "datteri",
+   "datteri secchi",
+   "datteri maturi",
+   "datteri al miele",
+   "datteri del deserto",
+   "datteri ripieni"
+  ],
+  "evoca": "i datteri",
+  "accordi": {
+   "fruttato": 0.7,
+   "miele": 0.6,
+   "ambrato": 0.5,
+   "gourmand": 0.5
+  },
+  "note": {
+   "frutti essiccati": 0.7,
+   "miele": 0.7,
+   "caramello": 0.6,
+   "zucchero di canna": 0.5,
+   "prugna": 0.4,
+   "benzoino": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "inverno": 0.6
+  },
+  "manca": [
+   "datteri"
+  ]
+ },
+ {
+  "chiave": "cibo-marmellata",
+  "tipo": "cibo",
+  "forme": [
+   "marmellata",
+   "confettura",
+   "marmellata di albicocche",
+   "confettura di frutta",
+   "marmellata fatta in casa",
+   "marmellata di fragole",
+   "barattolo di marmellata",
+   "fette biscottate e marmellata"
+  ],
+  "evoca": "la marmellata fatta in casa",
+  "accordi": {
+   "fruttato": 1,
+   "gourmand": 0.6
+  },
+  "note": {
+   "albicocca": 0.8,
+   "fragola": 0.6,
+   "zucchero": 0.6,
+   "frutta candita": 0.4,
+   "prugna": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-marmellata-arance",
+  "tipo": "cibo",
+  "forme": [
+   "marmellata di arance",
+   "marmellata di arance amare",
+   "marmellata di agrumi",
+   "confettura di arance",
+   "marmellata di clementine"
+  ],
+  "evoca": "la marmellata d'arance",
+  "accordi": {
+   "agrumato": 0.9,
+   "gourmand": 0.5,
+   "fruttato": 0.3
+  },
+  "note": {
+   "arancia amara": 1,
+   "arancia": 0.7,
+   "scorza di arancia": 0.5,
+   "zucchero": 0.5,
+   "frutta candita": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "inverno": 0.5
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-rabarbaro",
+  "tipo": "cibo",
+  "forme": [
+   "torta al rabarbaro",
+   "crumble di rabarbaro",
+   "rabarbaro e fragole",
+   "fragole e rabarbaro",
+   "composta di rabarbaro"
+  ],
+  "evoca": "il rabarbaro con le fragole",
+  "accordi": {
+   "fruttato": 0.7,
+   "verde": 0.6,
+   "agrumato": 0.3
+  },
+  "note": {
+   "rabarbaro": 1,
+   "fragola": 0.5,
+   "note verdi": 0.3,
+   "zucchero": 0.3,
+   "pompelmo": 0.2
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "primavera": 0.8
+  }
+ },
+ {
+  "chiave": "cibo-arancia",
+  "tipo": "cibo",
+  "forme": [
+   "buccia d'arancia",
+   "arancia sbucciata",
+   "sbucciare un'arancia",
+   "spicchi d'arancia",
+   "arance fresche",
+   "arance mature",
+   "arance di sicilia",
+   "arancia appena tagliata"
+  ],
+  "evoca": "un'arancia appena sbucciata",
+  "accordi": {
+   "agrumato": 1,
+   "fruttato": 0.3
+  },
+  "note": {
+   "arancia": 1,
+   "scorza di arancia": 0.7,
+   "arancia dolce": 0.5,
+   "mandarino": 0.3,
+   "neroli": 0.2
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "inverno": 0.5
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "cibo-limone",
+  "tipo": "cibo",
+  "forme": [
+   "scorza di limone",
+   "buccia di limone",
+   "limone grattugiato",
+   "limone appena tagliato",
+   "spicchio di limone",
+   "limoni appena colti",
+   "limone spremuto",
+   "fetta di limone"
+  ],
+  "evoca": "la scorza di limone",
+  "accordi": {
+   "agrumato": 1,
+   "verde": 0.2
+  },
+  "note": {
+   "limone": 1,
+   "limone di sicilia": 0.5,
+   "verbena": 0.3,
+   "lime": 0.3,
+   "bergamotto": 0.3
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "carattere": [
+   "fresco",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "cibo-mandarini",
+  "tipo": "cibo",
+  "forme": [
+   "mandarini a natale",
+   "clementine",
+   "sbucciare un mandarino",
+   "buccia di mandarino",
+   "mandarino sbucciato",
+   "mandarancio",
+   "mandarini sul termosifone"
+  ],
+  "evoca": "i mandarini di Natale",
+  "accordi": {
+   "agrumato": 1,
+   "fruttato": 0.3
+  },
+  "note": {
+   "mandarino": 1,
+   "tangerino": 0.6,
+   "mandarino di sicilia": 0.4,
+   "arancia dolce": 0.3,
+   "mandarino verde": 0.3
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "inverno": 0.9
+  },
+  "carattere": [
+   "allegro",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-pompelmo",
+  "tipo": "cibo",
+  "forme": [
+   "pompelmo rosa",
+   "mezzo pompelmo",
+   "pompelmo a colazione",
+   "spicchi di pompelmo",
+   "pompelmo amaro"
+  ],
+  "evoca": "un pompelmo rosa",
+  "accordi": {
+   "agrumato": 1,
+   "fruttato": 0.3
+  },
+  "note": {
+   "pompelmo": 1,
+   "bergamotto": 0.3,
+   "pepe rosa": 0.3,
+   "rabarbaro": 0.2,
+   "limone": 0.2
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "carattere": [
+   "energico",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "cibo-agrumi",
+  "tipo": "cibo",
+  "forme": [
+   "agrumi appena tagliati",
+   "cesto di agrumi",
+   "agrumi di sicilia",
+   "agrumi misti",
+   "arance e limoni",
+   "limoni e arance"
+  ],
+  "evoca": "un cesto di agrumi",
+  "accordi": {
+   "agrumato": 1,
+   "fruttato": 0.2
+  },
+  "note": {
+   "agrumi": 1,
+   "arancia": 0.6,
+   "limone": 0.6,
+   "mandarino": 0.4,
+   "pompelmo": 0.4,
+   "bergamotto": 0.4
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "carattere": [
+   "fresco",
+   "energico",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "cibo-frutta-secca",
+  "tipo": "cibo",
+  "forme": [
+   "frutta secca",
+   "frutta secca mista",
+   "mix di frutta secca",
+   "frutta secca di natale",
+   "noci e nocciole",
+   "pinoli",
+   "frutta secca tostata"
+  ],
+  "evoca": "la frutta secca",
+  "accordi": {
+   "gourmand": 0.8,
+   "legnoso": 0.3
+  },
+  "note": {
+   "nocciola": 0.8,
+   "mandorla": 0.7,
+   "frutti secchi": 0.6,
+   "pistacchio": 0.5,
+   "fava tonka": 0.3,
+   "sesamo": 0.2
+  },
+  "stagioni": {
+   "autunno": 0.6,
+   "inverno": 0.6
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-mandorle-tostate",
+  "tipo": "cibo",
+  "forme": [
+   "mandorle tostate",
+   "mandorle abbrustolite",
+   "mandorle al forno",
+   "mandorle salate",
+   "mandorle pelate tostate"
+  ],
+  "evoca": "le mandorle tostate",
+  "accordi": {
+   "gourmand": 0.9,
+   "legnoso": 0.2
+  },
+  "note": {
+   "mandorla": 1,
+   "mandorle": 0.6,
+   "caramello": 0.3,
+   "fava tonka": 0.3,
+   "sesamo": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  }
+ },
+ {
+  "chiave": "cibo-nocciole",
+  "tipo": "cibo",
+  "forme": [
+   "nocciole tostate",
+   "nocciole piemontesi",
+   "nocciole abbrustolite",
+   "pasta di nocciole",
+   "torta di nocciole",
+   "granella di nocciole"
+  ],
+  "evoca": "le nocciole tostate",
+  "accordi": {
+   "gourmand": 0.9,
+   "legnoso": 0.3
+  },
+  "note": {
+   "nocciola": 1,
+   "pralina": 0.5,
+   "caramello": 0.3,
+   "fava tonka": 0.3,
+   "cacao": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.6
+  }
+ },
+ {
+  "chiave": "cibo-pistacchi",
+  "tipo": "cibo",
+  "forme": [
+   "pistacchi salati",
+   "pistacchi tostati",
+   "sacchetto di pistacchi",
+   "granella di pistacchio",
+   "pesto di pistacchio",
+   "pistacchi sgusciati"
+  ],
+  "evoca": "i pistacchi",
+  "accordi": {
+   "gourmand": 0.8,
+   "verde": 0.3
+  },
+  "note": {
+   "pistacchio": 1,
+   "mandorla": 0.5,
+   "mandorla verde": 0.3,
+   "sale": 0.2
+  },
+  "misure": {
+   "dolcezza": 2
+  }
+ },
+ {
+  "chiave": "cibo-noci",
+  "tipo": "cibo",
+  "forme": [
+   "noci",
+   "gherigli di noce",
+   "noci fresche",
+   "torta di noci",
+   "mallo di noce",
+   "noci sgusciate",
+   "noci e miele"
+  ],
+  "evoca": "le noci",
+  "accordi": {
+   "legnoso": 0.7,
+   "gourmand": 0.6,
+   "verde": 0.3
+  },
+  "note": {
+   "nocciola": 0.6,
+   "note legnose": 0.5,
+   "frutti secchi": 0.5,
+   "mandorla": 0.4,
+   "fava tonka": 0.3,
+   "foglie verdi": 0.2
+  },
+  "stagioni": {
+   "autunno": 0.9
+  },
+  "manca": [
+   "noci"
+  ]
+ },
+ {
+  "chiave": "cibo-arachidi",
+  "tipo": "cibo",
+  "forme": [
+   "arachidi",
+   "noccioline",
+   "noccioline tostate",
+   "burro d'arachidi",
+   "arachidi salate",
+   "spagnolette",
+   "noccioline americane"
+  ],
+  "evoca": "le noccioline tostate",
+  "accordi": {
+   "gourmand": 0.8,
+   "legnoso": 0.2
+  },
+  "note": {
+   "nocciola": 0.6,
+   "sesamo": 0.5,
+   "caramello": 0.4,
+   "burro": 0.4,
+   "pralina": 0.3,
+   "sale": 0.3
+  },
+  "manca": [
+   "arachidi"
+  ]
+ },
+ {
+  "chiave": "cibo-caldarroste",
+  "tipo": "cibo",
+  "forme": [
+   "caldarroste",
+   "castagne arrosto",
+   "castagne arrostite",
+   "castagne sul fuoco",
+   "castagne nel camino",
+   "ballotte",
+   "castagne lesse"
+  ],
+  "evoca": "le caldarroste",
+  "accordi": {
+   "gourmand": 0.8,
+   "legnoso": 0.4,
+   "incenso": 0.3,
+   "ambrato": 0.2
+  },
+  "note": {
+   "castagna": 1,
+   "fumo": 0.5,
+   "crema di castagne": 0.4,
+   "legno di guaiaco": 0.3,
+   "note legnose": 0.3,
+   "caramello": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 1
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-marron-glace",
+  "tipo": "cibo",
+  "forme": [
+   "marron glacé",
+   "marroni canditi",
+   "castagne candite",
+   "crema di marroni",
+   "montebianco",
+   "monte bianco dolce"
+  ],
+  "evoca": "i marron glacé",
+  "accordi": {
+   "gourmand": 0.9,
+   "vaniglia": 0.7
+  },
+  "note": {
+   "crema di castagne": 1,
+   "castagna": 0.8,
+   "vaniglia": 0.8,
+   "zucchero": 0.5,
+   "panna montata": 0.3,
+   "rum": 0.2
+  },
+  "misure": {
+   "dolcezza": 5
+  },
+  "stagioni": {
+   "autunno": 0.7,
+   "inverno": 0.6
+  },
+  "carattere": [
+   "coccola",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "cibo-sesamo",
+  "tipo": "cibo",
+  "forme": [
+   "semi di sesamo",
+   "sesamo tostato",
+   "halva",
+   "halvah",
+   "giuggiulena",
+   "cubaita",
+   "crema di sesamo"
+  ],
+  "evoca": "il sesamo tostato",
+  "accordi": {
+   "gourmand": 0.7,
+   "legnoso": 0.3
+  },
+  "note": {
+   "sesamo": 1,
+   "miele": 0.5,
+   "nocciola": 0.3,
+   "caramello": 0.3,
+   "sandalo": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  }
+ },
+ {
+  "chiave": "cibo-popcorn",
+  "tipo": "cibo",
+  "forme": [
+   "popcorn",
+   "pop corn",
+   "popcorn al caramello",
+   "popcorn al cinema",
+   "popcorn salati",
+   "pop corn dolci"
+  ],
+  "evoca": "i popcorn",
+  "accordi": {
+   "gourmand": 0.9
+  },
+  "note": {
+   "caramello": 0.8,
+   "burro": 0.8,
+   "zucchero": 0.4,
+   "sale": 0.4,
+   "fieno": 0.2
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "mais"
+  ]
+ },
+ {
+  "chiave": "cibo-pane-caldo",
+  "tipo": "cibo",
+  "forme": [
+   "pane caldo",
+   "pane appena sfornato",
+   "pane fresco",
+   "crosta di pane",
+   "pagnotta",
+   "pane nel forno",
+   "pane casereccio",
+   "pane tostato"
+  ],
+  "evoca": "il pane appena sfornato",
+  "accordi": {
+   "gourmand": 0.7,
+   "legnoso": 0.3,
+   "ambrato": 0.3,
+   "muschiato": 0.3
+  },
+  "note": {
+   "burro": 0.5,
+   "fieno": 0.4,
+   "sesamo": 0.4,
+   "caramello": 0.3,
+   "fava tonka": 0.3,
+   "muschio": 0.3
+  },
+  "misure": {
+   "dolcezza": 2
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ],
+  "manca": [
+   "pane",
+   "lievito"
+  ]
+ },
+ {
+  "chiave": "cibo-burro",
+  "tipo": "cibo",
+  "forme": [
+   "burro fuso",
+   "pane e burro",
+   "burro caldo",
+   "burro nocciola",
+   "burro salato",
+   "panetto di burro",
+   "burro e zucchero"
+  ],
+  "evoca": "il burro fuso",
+  "accordi": {
+   "gourmand": 0.8,
+   "vaniglia": 0.4,
+   "muschiato": 0.3
+  },
+  "note": {
+   "burro": 1,
+   "latte": 0.6,
+   "caramello": 0.3,
+   "vaniglia": 0.3,
+   "burro di cacao": 0.3
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-miele-pane",
+  "tipo": "cibo",
+  "forme": [
+   "pane e miele",
+   "miele e pane",
+   "fetta di pane col miele",
+   "pane burro e miele",
+   "favo di miele",
+   "miele colato",
+   "cucchiaio di miele"
+  ],
+  "evoca": "pane e miele",
+  "accordi": {
+   "miele": 1,
+   "gourmand": 0.5,
+   "ambrato": 0.3
+  },
+  "note": {
+   "miele": 1,
+   "cera d'api": 0.5,
+   "burro": 0.4,
+   "miele bianco": 0.4,
+   "fieno": 0.2,
+   "benzoino": 0.2
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "cibo-yogurt",
+  "tipo": "cibo",
+  "forme": [
+   "yogurt",
+   "yogurt bianco",
+   "yogurt greco",
+   "yogurt alla frutta",
+   "yogurt e miele",
+   "latte fermentato"
+  ],
+  "evoca": "lo yogurt",
+  "accordi": {
+   "gourmand": 0.7,
+   "muschiato": 0.5,
+   "fruttato": 0.3
+  },
+  "note": {
+   "latte": 0.9,
+   "panna montata": 0.4,
+   "muschio bianco": 0.4,
+   "pesca": 0.2
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 2
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "cibo-focaccia",
+  "tipo": "cibo",
+  "forme": [
+   "focaccia calda",
+   "focaccia al rosmarino",
+   "focaccia genovese",
+   "pizza bianca",
+   "focaccia appena sfornata",
+   "focaccia con sale grosso",
+   "schiacciata"
+  ],
+  "evoca": "una focaccia calda al rosmarino",
+  "accordi": {
+   "aromatico": 0.7,
+   "gourmand": 0.3,
+   "legnoso": 0.2,
+   "acquatico": 0.2
+  },
+  "note": {
+   "rosmarino": 0.8,
+   "sale": 0.5,
+   "foglie di olivo": 0.5,
+   "fieno": 0.3,
+   "burro": 0.2
+  },
+  "carattere": [
+   "coccola"
+  ],
+  "manca": [
+   "pane",
+   "olio d'oliva"
+  ]
+ },
+ {
+  "chiave": "cibo-olio-oliva",
+  "tipo": "cibo",
+  "forme": [
+   "olio d'oliva",
+   "olio extravergine",
+   "olio buono",
+   "olive",
+   "pane e olio",
+   "bruschetta"
+  ],
+  "evoca": "l'olio d'oliva nuovo",
+  "accordi": {
+   "verde": 0.8,
+   "aromatico": 0.3,
+   "speziato": 0.1
+  },
+  "note": {
+   "foglie di olivo": 1,
+   "note verdi": 0.6,
+   "foglie verdi": 0.3,
+   "galbano": 0.3,
+   "pepe": 0.2
+  },
+  "stagioni": {
+   "autunno": 0.5
+  },
+  "manca": [
+   "olio d'oliva",
+   "olive"
+  ]
+ },
+ {
+  "chiave": "cibo-sale",
+  "tipo": "cibo",
+  "forme": [
+   "fior di sale",
+   "fleur de sel",
+   "sale grosso",
+   "sale rosa",
+   "sale dell'himalaya",
+   "cristalli di sale",
+   "sale di salina"
+  ],
+  "evoca": "il fior di sale",
+  "accordi": {
+   "acquatico": 0.8,
+   "muschiato": 0.2
+  },
+  "note": {
+   "sale": 1,
+   "sale marino": 0.8,
+   "note minerali": 0.5,
+   "ambroxan": 0.2,
+   "alghe": 0.2
+  },
+  "misure": {
+   "freschezza": 3
+  }
+ },
+ {
+  "chiave": "cibo-tartufo",
+  "tipo": "cibo",
+  "forme": [
+   "tartufo bianco",
+   "tartufo nero",
+   "tagliolini al tartufo",
+   "scaglie di tartufo",
+   "pasta al tartufo",
+   "risotto al tartufo"
+  ],
+  "evoca": "il tartufo",
+  "accordi": {
+   "patchouli": 0.9,
+   "legnoso": 0.3,
+   "cuoio": 0.2
+  },
+  "note": {
+   "tartufo": 1,
+   "note terrose": 0.6,
+   "patchouli": 0.6,
+   "vetiver": 0.3,
+   "muschio vegetale": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "stagioni": {
+   "autunno": 1
+  },
+  "carattere": [
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "cibo-funghi",
+  "tipo": "cibo",
+  "forme": [
+   "funghi porcini",
+   "porcini",
+   "funghi",
+   "funghi freschi",
+   "funghi secchi",
+   "risotto ai funghi"
+  ],
+  "evoca": "i funghi porcini",
+  "accordi": {
+   "patchouli": 0.8,
+   "legnoso": 0.5,
+   "verde": 0.2
+  },
+  "note": {
+   "note terrose": 0.8,
+   "patchouli": 0.7,
+   "tartufo": 0.4,
+   "muschio di quercia": 0.4,
+   "vetiver": 0.3
+  },
+  "stagioni": {
+   "autunno": 1
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "funghi"
+  ]
+ },
+ {
+  "chiave": "cibo-cannella",
+  "tipo": "cibo",
+  "forme": [
+   "stecche di cannella",
+   "cannella in stecche",
+   "bastoncini di cannella",
+   "cannella e zucchero",
+   "girelle alla cannella",
+   "cinnamon roll",
+   "rotolo alla cannella",
+   "cannella in polvere"
+  ],
+  "evoca": "la cannella in stecche",
+  "accordi": {
+   "speziato": 1,
+   "gourmand": 0.6,
+   "ambrato": 0.3
+  },
+  "note": {
+   "cannella": 1,
+   "zucchero di canna": 0.5,
+   "cassia": 0.4,
+   "burro": 0.4,
+   "vaniglia": 0.4,
+   "chiodi di garofano": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "inverno": 0.7
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-spezie-cucina",
+  "tipo": "cibo",
+  "forme": [
+   "spezie da cucina",
+   "cassetto delle spezie",
+   "mix di spezie",
+   "spezie miste",
+   "spezie per dolci",
+   "spezie macinate",
+   "spezie del pan di spezie"
+  ],
+  "evoca": "le spezie della cucina",
+  "accordi": {
+   "speziato": 1,
+   "legnoso": 0.2
+  },
+  "note": {
+   "spezie": 1,
+   "pepe": 0.6,
+   "cannella": 0.5,
+   "noce moscata": 0.5,
+   "chiodi di garofano": 0.5,
+   "cardamomo": 0.5,
+   "zenzero": 0.4
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "stagioni": {
+   "inverno": 0.5
+  }
+ },
+ {
+  "chiave": "cibo-curry",
+  "tipo": "cibo",
+  "forme": [
+   "curry",
+   "pollo al curry",
+   "riso al curry",
+   "polvere di curry",
+   "masala",
+   "garam masala",
+   "spezie indiane",
+   "dal indiano"
+  ],
+  "evoca": "il curry",
+  "accordi": {
+   "speziato": 1,
+   "legnoso": 0.15
+  },
+  "note": {
+   "curcuma": 0.9,
+   "cumino": 0.8,
+   "coriandolo": 0.6,
+   "cardamomo": 0.6,
+   "zenzero": 0.5,
+   "pepe nero": 0.4
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "carattere": [
+   "audace"
+  ],
+  "manca": [
+   "fieno greco"
+  ]
+ },
+ {
+  "chiave": "cibo-risotto-zafferano",
+  "tipo": "cibo",
+  "forme": [
+   "risotto allo zafferano",
+   "risotto alla milanese",
+   "riso giallo",
+   "pistilli di zafferano",
+   "risotto giallo",
+   "bustina di zafferano"
+  ],
+  "evoca": "un risotto allo zafferano",
+  "accordi": {
+   "speziato": 0.9,
+   "cuoio": 0.3,
+   "ambrato": 0.3
+  },
+  "note": {
+   "zafferano": 1,
+   "burro": 0.4,
+   "cuoio": 0.3,
+   "fieno": 0.2
+  },
+  "misure": {
+   "intensita": 3
+  },
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "cibo-besciamella",
+  "tipo": "cibo",
+  "forme": [
+   "besciamella",
+   "noce moscata grattugiata",
+   "noce moscata grattata",
+   "purè con la noce moscata",
+   "lasagne al forno",
+   "cannelloni al forno"
+  ],
+  "evoca": "la besciamella con la noce moscata",
+  "accordi": {
+   "speziato": 0.7,
+   "gourmand": 0.4
+  },
+  "note": {
+   "noce moscata": 1,
+   "burro": 0.5,
+   "latte": 0.5,
+   "pepe bianco": 0.2
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-arancia-chiodi",
+  "tipo": "cibo",
+  "forme": [
+   "arancia coi chiodi di garofano",
+   "arancia con i chiodi di garofano",
+   "arance steccate",
+   "arancia chiodata",
+   "pomander"
+  ],
+  "evoca": "un'arancia steccata di chiodi di garofano",
+  "accordi": {
+   "speziato": 0.9,
+   "agrumato": 0.6
+  },
+  "note": {
+   "chiodi di garofano": 1,
+   "arancia": 0.8,
+   "cannella": 0.4,
+   "garofano": 0.4
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "carattere": [
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "cibo-pepe-macinato",
+  "tipo": "cibo",
+  "forme": [
+   "pepe appena macinato",
+   "pepe macinato",
+   "grani di pepe",
+   "pepe in grani",
+   "macinapepe",
+   "cacio e pepe",
+   "pepe pestato"
+  ],
+  "evoca": "il pepe appena macinato",
+  "accordi": {
+   "speziato": 1,
+   "legnoso": 0.3
+  },
+  "note": {
+   "pepe nero": 1,
+   "pepe": 0.7,
+   "pepe bianco": 0.3,
+   "pepe rosa": 0.3,
+   "legno di cedro": 0.2
+  },
+  "misure": {
+   "intensita": 3
+  },
+  "carattere": [
+   "energico",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "cibo-cardamomo",
+  "tipo": "cibo",
+  "forme": [
+   "bacche di cardamomo",
+   "semi di cardamomo",
+   "dolci al cardamomo",
+   "cardamomo pestato",
+   "treccia al cardamomo",
+   "pane al cardamomo"
+  ],
+  "evoca": "il cardamomo pestato",
+  "accordi": {
+   "speziato": 0.9,
+   "aromatico": 0.3,
+   "agrumato": 0.2
+  },
+  "note": {
+   "cardamomo": 1,
+   "zenzero": 0.3,
+   "cannella": 0.3,
+   "bergamotto": 0.2
+  },
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "cibo-zenzero-fresco",
+  "tipo": "cibo",
+  "forme": [
+   "zenzero fresco",
+   "radice di zenzero",
+   "zenzero grattugiato",
+   "zenzero candito",
+   "zenzero marinato"
+  ],
+  "evoca": "lo zenzero fresco",
+  "accordi": {
+   "speziato": 0.8,
+   "agrumato": 0.6
+  },
+  "note": {
+   "zenzero": 1,
+   "limone": 0.6,
+   "lime": 0.3,
+   "fiore di zenzero": 0.3,
+   "pepe rosa": 0.2
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "energico"
+  ]
+ },
+ {
+  "chiave": "cibo-anice",
+  "tipo": "cibo",
+  "forme": [
+   "semi di anice",
+   "biscotti all'anice",
+   "ciambelline all'anice",
+   "finocchietto",
+   "finocchietto selvatico",
+   "semi di finocchio",
+   "finocchio selvatico",
+   "anicini"
+  ],
+  "evoca": "i semi di anice e finocchietto",
+  "accordi": {
+   "aromatico": 0.8,
+   "speziato": 0.5
+  },
+  "note": {
+   "anice": 1,
+   "anice stellato": 0.6,
+   "aneto": 0.4,
+   "liquirizia": 0.3,
+   "dragoncello": 0.2
+  },
+  "manca": [
+   "finocchio"
+  ]
+ },
+ {
+  "chiave": "cibo-basilico",
+  "tipo": "cibo",
+  "forme": [
+   "foglie di basilico",
+   "basilico fresco",
+   "pesto",
+   "pesto genovese",
+   "vaso di basilico",
+   "basilico appena colto",
+   "caprese"
+  ],
+  "evoca": "il basilico fresco",
+  "accordi": {
+   "aromatico": 0.9,
+   "verde": 0.7
+  },
+  "note": {
+   "basilico": 1,
+   "note verdi": 0.5,
+   "foglie verdi": 0.4,
+   "menta": 0.3,
+   "dragoncello": 0.2
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "cibo-pomodoro",
+  "tipo": "cibo",
+  "forme": [
+   "foglia di pomodoro",
+   "pomodori",
+   "pianta di pomodoro",
+   "pomodori nell'orto",
+   "pomodori maturi",
+   "pomodoro e basilico"
+  ],
+  "evoca": "le foglie di pomodoro nell'orto",
+  "accordi": {
+   "verde": 1,
+   "aromatico": 0.3
+  },
+  "note": {
+   "note verdi": 1,
+   "foglie verdi": 0.7,
+   "galbano": 0.6,
+   "foglia di fico": 0.4,
+   "basilico": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco"
+  ],
+  "manca": [
+   "foglia di pomodoro"
+  ]
+ },
+ {
+  "chiave": "cibo-rosmarino",
+  "tipo": "cibo",
+  "forme": [
+   "rosmarino fresco",
+   "rametto di rosmarino",
+   "patate al rosmarino",
+   "arrosto al rosmarino",
+   "rosmarino e alloro",
+   "rosmarino in cucina",
+   "agnello al rosmarino"
+  ],
+  "evoca": "un rametto di rosmarino",
+  "accordi": {
+   "aromatico": 1,
+   "verde": 0.3,
+   "legnoso": 0.3
+  },
+  "note": {
+   "rosmarino": 1,
+   "salvia": 0.4,
+   "timo": 0.4,
+   "foglia d'alloro": 0.3,
+   "lavanda": 0.2,
+   "bacche di ginepro": 0.2
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "cibo-salvia",
+  "tipo": "cibo",
+  "forme": [
+   "salvia fresca",
+   "foglie di salvia",
+   "burro e salvia",
+   "salvia fritta",
+   "ravioli burro e salvia",
+   "salvia dell'orto"
+  ],
+  "evoca": "le foglie di salvia",
+  "accordi": {
+   "aromatico": 1,
+   "verde": 0.3,
+   "gourmand": 0.1
+  },
+  "note": {
+   "salvia": 1,
+   "salvia sclarea": 0.5,
+   "rosmarino": 0.3,
+   "burro": 0.3,
+   "timo": 0.2
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "cibo-menta",
+  "tipo": "cibo",
+  "forme": [
+   "menta fresca",
+   "foglie di menta",
+   "menta piperita",
+   "mentuccia",
+   "menta e limone",
+   "caramelle alla menta",
+   "gelato alla menta",
+   "mentine"
+  ],
+  "evoca": "la menta fresca",
+  "accordi": {
+   "aromatico": 0.9,
+   "verde": 0.5,
+   "agrumato": 0.2
+  },
+  "note": {
+   "menta": 1,
+   "menta speziata": 0.4,
+   "note verdi": 0.3,
+   "limone": 0.3,
+   "basilico": 0.1
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "stagioni": {
+   "estate": 0.7
+  },
+  "carattere": [
+   "fresco",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "cibo-timo",
+  "tipo": "cibo",
+  "forme": [
+   "timo fresco",
+   "timo selvatico",
+   "rametti di timo",
+   "timo e limone",
+   "origano",
+   "maggiorana",
+   "erbe di provenza"
+  ],
+  "evoca": "il timo selvatico",
+  "accordi": {
+   "aromatico": 1,
+   "verde": 0.3,
+   "legnoso": 0.2,
+   "speziato": 0.2
+  },
+  "note": {
+   "timo": 1,
+   "rosmarino": 0.5,
+   "lavanda": 0.3,
+   "salvia": 0.3,
+   "foglia d'alloro": 0.2
+  },
+  "stagioni": {
+   "estate": 0.5
+  },
+  "manca": [
+   "origano",
+   "maggiorana"
+  ]
+ },
+ {
+  "chiave": "cibo-alloro",
+  "tipo": "cibo",
+  "forme": [
+   "foglie di alloro",
+   "alloro",
+   "lauro",
+   "alloro in cucina",
+   "foglia di lauro",
+   "alloro e ginepro"
+  ],
+  "evoca": "le foglie di alloro",
+  "accordi": {
+   "aromatico": 0.9,
+   "speziato": 0.3,
+   "legnoso": 0.2
+  },
+  "note": {
+   "foglia d'alloro": 1,
+   "mirto": 0.4,
+   "bacche di ginepro": 0.3,
+   "garofano": 0.2
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "cibo-erbe-cucina",
+  "tipo": "cibo",
+  "forme": [
+   "erbe da cucina",
+   "erbe dell'orto",
+   "mazzetto di erbe",
+   "erbette",
+   "erbe fresche",
+   "trito di erbe",
+   "mazzetto guarnito",
+   "aromi per l'arrosto"
+  ],
+  "evoca": "le erbe fresche della cucina",
+  "accordi": {
+   "aromatico": 1,
+   "verde": 0.6
+  },
+  "note": {
+   "rosmarino": 0.7,
+   "salvia": 0.7,
+   "timo": 0.6,
+   "basilico": 0.6,
+   "menta": 0.4,
+   "foglia d'alloro": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "cibo-cetriolo",
+  "tipo": "cibo",
+  "forme": [
+   "cetrioli freschi",
+   "fette di cetriolo",
+   "insalata di cetrioli",
+   "cetriolo a fette",
+   "tzatziki",
+   "cetrioli dell'orto"
+  ],
+  "evoca": "il cetriolo fresco",
+  "accordi": {
+   "verde": 0.8,
+   "acquatico": 0.6
+  },
+  "note": {
+   "cetriolo": 1,
+   "note verdi": 0.5,
+   "note acquatiche": 0.4,
+   "melone": 0.2,
+   "menta": 0.2
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "cibo-insalata",
+  "tipo": "cibo",
+  "forme": [
+   "insalata fresca",
+   "lattuga",
+   "rucola",
+   "verdure fresche",
+   "insalata appena lavata",
+   "foglie di insalata",
+   "insalata dell'orto"
+  ],
+  "evoca": "un'insalata appena colta",
+  "accordi": {
+   "verde": 1,
+   "acquatico": 0.2
+  },
+  "note": {
+   "foglie verdi": 0.8,
+   "note verdi": 0.8,
+   "cetriolo": 0.4,
+   "galbano": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "fresco"
+  ],
+  "manca": [
+   "lattuga"
+  ]
+ }
+]

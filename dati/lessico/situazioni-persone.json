@@ -1,0 +1,3370 @@
+[
+ {
+  "chiave": "sit-primo-appuntamento",
+  "tipo": "situazione",
+  "forme": [
+   "primo appuntamento",
+   "primo incontro",
+   "appuntamento al buio",
+   "prima uscita insieme",
+   "prima uscita con lui",
+   "prima uscita con lei",
+   "prima volta che esco con",
+   "appuntamento galante",
+   "incontro romantico",
+   "uscire con una ragazza",
+   "uscire con un ragazzo",
+   "conquistare qualcuno",
+   "fare colpo",
+   "far colpo su qualcuno"
+  ],
+  "evoca": "la sera di un primo appuntamento",
+  "accordi": {
+   "muschiato": 0.7,
+   "floreale-bianco": 0.5,
+   "agrumato": 0.4,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "muschio bianco": 0.8,
+   "fiore d'arancio": 0.6,
+   "bergamotto": 0.6,
+   "iris": 0.4,
+   "fava tonka": 0.3,
+   "pepe rosa": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 3
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "romantico",
+   "serata"
+  ],
+  "carattere": [
+   "romantico",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "sit-cena-romantica",
+  "tipo": "situazione",
+  "forme": [
+   "cena romantica",
+   "cena a lume di candela",
+   "cena a due",
+   "cenetta romantica",
+   "cena con il mio amore",
+   "cena di coppia",
+   "serata romantica",
+   "serata a due",
+   "serata di coppia",
+   "cena intima"
+  ],
+  "evoca": "una cena a lume di candela",
+  "accordi": {
+   "floreale-bianco": 0.7,
+   "ambrato": 0.6,
+   "vaniglia": 0.5,
+   "speziato": 0.3
+  },
+  "note": {
+   "gelsomino": 0.8,
+   "ambra": 0.7,
+   "vaniglia": 0.6,
+   "sandalo": 0.5,
+   "rosa": 0.4,
+   "cardamomo": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4,
+   "dolcezza": 3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "romantico",
+   "serata"
+  ],
+  "carattere": [
+   "romantico",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "sit-serata-intima",
+  "tipo": "situazione",
+  "forme": [
+   "serata intima",
+   "notte d'amore",
+   "notte romantica",
+   "notte insieme",
+   "momento intimo",
+   "serata sotto le lenzuola",
+   "per sedurre",
+   "per la seduzione",
+   "serata sensuale",
+   "notte di passione"
+  ],
+  "evoca": "una notte d'amore",
+  "accordi": {
+   "ambrato": 0.8,
+   "floreale-bianco": 0.6,
+   "vaniglia": 0.5,
+   "muschiato": 0.5
+  },
+  "note": {
+   "ambra": 0.8,
+   "gelsomino sambac": 0.6,
+   "tuberosa": 0.5,
+   "sandalo": 0.6,
+   "vaniglia": 0.5,
+   "muschio": 0.5,
+   "ylang ylang": 0.4
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4,
+   "dolcezza": 3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "romantico",
+   "serata"
+  ],
+  "carattere": [
+   "sensuale",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "sit-anniversario",
+  "tipo": "situazione",
+  "forme": [
+   "anniversario",
+   "anniversario di matrimonio",
+   "anniversario di fidanzamento",
+   "anni insieme",
+   "festeggiare gli anni insieme",
+   "nozze d'argento",
+   "nozze d'oro",
+   "mesiversario"
+  ],
+  "evoca": "un anniversario da festeggiare",
+  "accordi": {
+   "rosa": 0.7,
+   "ambrato": 0.5,
+   "floreale-bianco": 0.5,
+   "legnoso": 0.3
+  },
+  "note": {
+   "rosa di damasco": 0.7,
+   "rosa": 0.7,
+   "gelsomino": 0.5,
+   "ambra": 0.5,
+   "sandalo": 0.4,
+   "pepe rosa": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4
+  },
+  "momento": {
+   "sera": 0.7
+  },
+  "occasioni": [
+   "romantico",
+   "speciale"
+  ],
+  "carattere": [
+   "romantico",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "sit-matrimonio-invitato",
+  "tipo": "situazione",
+  "forme": [
+   "matrimonio",
+   "invitato a un matrimonio",
+   "matrimonio da invitato",
+   "nozze di un amico",
+   "nozze di un'amica",
+   "sposalizio",
+   "ricevimento di nozze",
+   "pranzo di nozze",
+   "banchetto nuziale",
+   "festa di nozze",
+   "testimone di nozze"
+  ],
+  "evoca": "un matrimonio da invitati",
+  "accordi": {
+   "floreale-fresco": 0.6,
+   "floreale-bianco": 0.6,
+   "agrumato": 0.4,
+   "muschiato": 0.4
+  },
+  "note": {
+   "peonia": 0.7,
+   "neroli": 0.6,
+   "bergamotto": 0.5,
+   "fiore d'arancio": 0.5,
+   "muschio bianco": 0.5,
+   "pera": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4
+  },
+  "momento": {
+   "giorno": 0.7
+  },
+  "occasioni": [
+   "speciale"
+  ],
+  "carattere": [
+   "elegante",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "sit-sposa",
+  "tipo": "situazione",
+  "forme": [
+   "sposa",
+   "futura sposa",
+   "abito da sposa",
+   "vestito da sposa",
+   "sposina",
+   "giorno del mio matrimonio",
+   "profumo nuziale",
+   "per le mie nozze",
+   "velo da sposa"
+  ],
+  "evoca": "il giorno delle nozze",
+  "accordi": {
+   "floreale-bianco": 0.9,
+   "muschiato": 0.5,
+   "cipriato": 0.4,
+   "rosa": 0.3
+  },
+  "note": {
+   "fiore d'arancio": 0.9,
+   "gardenia": 0.6,
+   "gelsomino": 0.6,
+   "muschio bianco": 0.6,
+   "iris": 0.4,
+   "tuberosa": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4,
+   "dolcezza": 3
+  },
+  "occasioni": [
+   "speciale",
+   "romantico"
+  ],
+  "carattere": [
+   "romantico",
+   "elegante"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "sit-sposo",
+  "tipo": "situazione",
+  "forme": [
+   "sposo",
+   "futuro sposo",
+   "abito da sposo",
+   "vestito da sposo",
+   "ci sposiamo",
+   "giorno delle nozze",
+   "all'altare",
+   "novelli sposi"
+  ],
+  "evoca": "gli sposi all'altare",
+  "accordi": {
+   "agrumato": 0.6,
+   "floreale-bianco": 0.5,
+   "legnoso": 0.5,
+   "muschiato": 0.5
+  },
+  "note": {
+   "bergamotto": 0.7,
+   "neroli": 0.7,
+   "fiore d'arancio": 0.5,
+   "legno di cedro": 0.5,
+   "iris": 0.4,
+   "muschio bianco": 0.5
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4
+  },
+  "occasioni": [
+   "speciale",
+   "romantico"
+  ],
+  "carattere": [
+   "elegante",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "sit-cerimonia",
+  "tipo": "situazione",
+  "forme": [
+   "cerimonia",
+   "cerimonia elegante",
+   "evento formale",
+   "occasione formale",
+   "occasione importante",
+   "grande occasione",
+   "evento importante",
+   "ricevimento",
+   "abito da cerimonia",
+   "vestito elegante",
+   "in giacca e cravatta",
+   "in abito lungo",
+   "occasione speciale"
+  ],
+  "evoca": "una cerimonia elegante",
+  "accordi": {
+   "cipriato": 0.6,
+   "legnoso": 0.6,
+   "floreale-bianco": 0.4,
+   "ambrato": 0.3
+  },
+  "note": {
+   "iris": 0.8,
+   "sandalo": 0.6,
+   "violetta": 0.4,
+   "gelsomino": 0.4,
+   "aldeidi": 0.4,
+   "ambra": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4
+  },
+  "occasioni": [
+   "speciale"
+  ],
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "sit-gala",
+  "tipo": "situazione",
+  "forme": [
+   "gala",
+   "serata di gala",
+   "cena di gala",
+   "ballo di gala",
+   "evento di gala",
+   "abito da sera",
+   "smoking",
+   "red carpet",
+   "tappeto rosso",
+   "serata di beneficenza",
+   "prima cinematografica",
+   "black tie"
+  ],
+  "evoca": "una serata di gala",
+  "accordi": {
+   "ambrato": 0.7,
+   "floreale-bianco": 0.5,
+   "cipriato": 0.5,
+   "oud": 0.3
+  },
+  "note": {
+   "ambra": 0.7,
+   "tuberosa": 0.6,
+   "iris": 0.6,
+   "aldeidi": 0.4,
+   "zafferano": 0.4,
+   "legno di agar": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 5
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "speciale",
+   "serata"
+  ],
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "sit-teatro-opera",
+  "tipo": "situazione",
+  "forme": [
+   "serata a teatro",
+   "opera",
+   "prima alla scala",
+   "lirica",
+   "balletto",
+   "concerto di musica classica",
+   "concerto sinfonico",
+   "musica classica"
+  ],
+  "evoca": "una serata a teatro",
+  "accordi": {
+   "cipriato": 0.8,
+   "rosa": 0.4,
+   "legnoso": 0.4,
+   "ambrato": 0.3
+  },
+  "note": {
+   "iris": 0.8,
+   "violetta": 0.6,
+   "rosa": 0.4,
+   "aldeidi": 0.4,
+   "sandalo": 0.5,
+   "benzoino": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata",
+   "speciale"
+  ],
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "sit-colloquio",
+  "tipo": "situazione",
+  "forme": [
+   "colloquio",
+   "colloquio di lavoro",
+   "selezione del personale",
+   "incontro con le risorse umane",
+   "assunzione",
+   "fare bella impressione",
+   "prima impressione",
+   "colloquio importante",
+   "intervista di lavoro"
+  ],
+  "evoca": "un colloquio di lavoro",
+  "accordi": {
+   "muschiato": 0.8,
+   "agrumato": 0.6,
+   "cipriato": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "muschio bianco": 0.8,
+   "bergamotto": 0.7,
+   "iris": 0.5,
+   "neroli": 0.4,
+   "legno di cedro": 0.4,
+   "tè": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 3,
+   "dolcezza": 2
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "ufficio"
+  ],
+  "carattere": [
+   "sicuro",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "sit-riunione",
+  "tipo": "situazione",
+  "forme": [
+   "riunione",
+   "riunione importante",
+   "riunione di lavoro",
+   "meeting",
+   "presentazione",
+   "presentazione in pubblico",
+   "parlare in pubblico",
+   "conferenza",
+   "convegno",
+   "trattativa",
+   "incontro con un cliente",
+   "appuntamento di lavoro",
+   "consiglio di amministrazione",
+   "discorso"
+  ],
+  "evoca": "una riunione importante",
+  "accordi": {
+   "legnoso": 0.7,
+   "agrumato": 0.5,
+   "aromatico": 0.4,
+   "muschiato": 0.4
+  },
+  "note": {
+   "vetiver": 0.7,
+   "bergamotto": 0.7,
+   "legno di cedro": 0.6,
+   "pepe": 0.3,
+   "salvia": 0.3,
+   "muschio": 0.4
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 4,
+   "dolcezza": 2
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "ufficio"
+  ],
+  "carattere": [
+   "sicuro",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "sit-ufficio",
+  "tipo": "situazione",
+  "forme": [
+   "ufficio",
+   "lavoro in ufficio",
+   "andare al lavoro",
+   "per andare a lavorare",
+   "scrivania",
+   "tutti i giorni in ufficio"
+  ],
+  "evoca": "l'ufficio di tutti i giorni",
+  "accordi": {
+   "muschiato": 0.7,
+   "agrumato": 0.6,
+   "tè": 0.3,
+   "legnoso": 0.3
+  },
+  "note": {
+   "muschio bianco": 0.7,
+   "bergamotto": 0.7,
+   "tè verde": 0.4,
+   "neroli": 0.4,
+   "legno di cedro": 0.4,
+   "iris": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 3,
+   "dolcezza": 2
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "ufficio",
+   "quotidiano"
+  ],
+  "carattere": [
+   "sicuro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "sit-lavoro-a-contatto",
+  "tipo": "situazione",
+  "forme": [
+   "lavoro a contatto con il pubblico",
+   "lavoro con il pubblico",
+   "lavoro in negozio",
+   "commessa",
+   "lavoro in ospedale",
+   "infermiera",
+   "lavoro al bancone",
+   "cameriere",
+   "lavoro a contatto con la gente",
+   "lavoro in mezzo alla gente",
+   "lavoro in farmacia",
+   "sportello"
+  ],
+  "evoca": "una giornata a contatto con la gente",
+  "accordi": {
+   "muschiato": 0.8,
+   "agrumato": 0.5,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "muschio bianco": 0.9,
+   "note pulite": 0.5,
+   "bergamotto": 0.5,
+   "mandarino": 0.4,
+   "mughetto": 0.3
+  },
+  "misure": {
+   "intensita": 1,
+   "persistenza": 3,
+   "dolcezza": 2
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "ufficio",
+   "quotidiano"
+  ],
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "sit-tutti-i-giorni",
+  "tipo": "situazione",
+  "forme": [
+   "uso quotidiano",
+   "per il quotidiano",
+   "quotidianità",
+   "vita di tutti i giorni",
+   "passepartout",
+   "jolly",
+   "tuttofare",
+   "sempre addosso",
+   "uso giornaliero"
+  ],
+  "evoca": "la vita di tutti i giorni",
+  "accordi": {
+   "muschiato": 0.6,
+   "agrumato": 0.5,
+   "legnoso": 0.4,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "muschio bianco": 0.6,
+   "bergamotto": 0.6,
+   "pera": 0.3,
+   "legno di cedro": 0.4,
+   "neroli": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 3
+  },
+  "momento": {
+   "giorno": 0.8
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "sit-palestra",
+  "tipo": "situazione",
+  "forme": [
+   "allenamento",
+   "allenarsi",
+   "fitness",
+   "crossfit",
+   "spinning",
+   "sport",
+   "sportivo",
+   "calcetto",
+   "partita di calcetto"
+  ],
+  "evoca": "l'allenamento in palestra",
+  "accordi": {
+   "agrumato": 0.8,
+   "acquatico": 0.5,
+   "aromatico": 0.5,
+   "verde": 0.3
+  },
+  "note": {
+   "pompelmo": 0.8,
+   "limone": 0.6,
+   "menta": 0.5,
+   "note marine": 0.5,
+   "zenzero": 0.4,
+   "vetiver": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 2,
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "sport"
+  ],
+  "carattere": [
+   "energico",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "sit-corsa",
+  "tipo": "situazione",
+  "forme": [
+   "corsa",
+   "correre",
+   "jogging",
+   "corsetta",
+   "corsa al parco",
+   "maratona",
+   "running",
+   "bicicletta",
+   "giro in bici",
+   "ciclismo",
+   "tennis",
+   "padel",
+   "sport all'aperto",
+   "sport all'aria aperta",
+   "vela"
+  ],
+  "evoca": "una corsa all'aria aperta",
+  "accordi": {
+   "agrumato": 0.7,
+   "verde": 0.6,
+   "acquatico": 0.5,
+   "aromatico": 0.3
+  },
+  "note": {
+   "limone": 0.7,
+   "pompelmo": 0.6,
+   "note verdi": 0.6,
+   "note ozoniche": 0.5,
+   "menta": 0.4,
+   "bambù": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 2,
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "sport"
+  ],
+  "carattere": [
+   "energico",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "sit-yoga",
+  "tipo": "situazione",
+  "forme": [
+   "yoga",
+   "lezione di yoga",
+   "pilates",
+   "meditazione",
+   "meditare",
+   "stretching",
+   "tappetino",
+   "respirazione",
+   "mindfulness",
+   "tai chi",
+   "rilassarsi con lo yoga"
+  ],
+  "evoca": "una lezione di yoga",
+  "accordi": {
+   "tè": 0.6,
+   "incenso": 0.4,
+   "aromatico": 0.5,
+   "legnoso": 0.4
+  },
+  "note": {
+   "tè verde": 0.7,
+   "lavanda": 0.5,
+   "sandalo": 0.6,
+   "palo santo": 0.4,
+   "olibano": 0.3,
+   "bambù": 0.3
+  },
+  "misure": {
+   "intensita": 1,
+   "persistenza": 2,
+   "dolcezza": 2
+  },
+  "occasioni": [
+   "sport",
+   "quotidiano"
+  ],
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "sit-dopo-sport",
+  "tipo": "situazione",
+  "forme": [
+   "dopo lo sport",
+   "dopo la palestra",
+   "dopo l'allenamento",
+   "dopo la corsa",
+   "dopo la partita",
+   "doccia in palestra",
+   "per rinfrescarsi dopo lo sport",
+   "post allenamento",
+   "dopo aver sudato"
+  ],
+  "evoca": "la doccia dopo lo sport",
+  "accordi": {
+   "acquatico": 0.7,
+   "agrumato": 0.6,
+   "muschiato": 0.5,
+   "aromatico": 0.3
+  },
+  "note": {
+   "note marine": 0.7,
+   "bergamotto": 0.6,
+   "limone": 0.5,
+   "muschio bianco": 0.5,
+   "menta": 0.4,
+   "lavanda": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 2,
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "occasioni": [
+   "sport"
+  ],
+  "carattere": [
+   "fresco",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "sit-dopo-doccia",
+  "tipo": "situazione",
+  "forme": [
+   "dopo la doccia",
+   "uscito dalla doccia",
+   "appena lavato",
+   "dopo il bagno",
+   "pelle appena lavata",
+   "profumo di doccia",
+   "effetto doccia",
+   "accappatoio"
+  ],
+  "evoca": "la pelle appena uscita dalla doccia",
+  "accordi": {
+   "muschiato": 0.9,
+   "agrumato": 0.4,
+   "floreale-fresco": 0.3,
+   "aromatico": 0.3
+  },
+  "note": {
+   "muschio bianco": 0.9,
+   "note pulite": 0.6,
+   "aldeidi": 0.5,
+   "bergamotto": 0.4,
+   "lavanda": 0.3,
+   "mughetto": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 3,
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "sit-uscire-a-bere",
+  "tipo": "situazione",
+  "forme": [
+   "uscire a bere qualcosa",
+   "drink con gli amici",
+   "drink con le amiche",
+   "cocktail party",
+   "bere qualcosa insieme",
+   "aperitivo in centro",
+   "serata al bar",
+   "uscita al bar",
+   "ritrovo al bar",
+   "spritz con le amiche"
+  ],
+  "evoca": "un drink con gli amici",
+  "accordi": {
+   "agrumato": 0.8,
+   "fruttato": 0.4,
+   "speziato": 0.3,
+   "muschiato": 0.3
+  },
+  "note": {
+   "arancia amara": 0.7,
+   "bergamotto": 0.6,
+   "pompelmo": 0.5,
+   "pepe rosa": 0.4,
+   "rabarbaro": 0.3,
+   "muschio": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 3,
+   "freschezza": 4
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "serata",
+   "quotidiano"
+  ],
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "sit-festa",
+  "tipo": "situazione",
+  "forme": [
+   "festa",
+   "party",
+   "festa a casa di amici",
+   "festa di compleanno",
+   "festicciola",
+   "festeggiare",
+   "serata di festa",
+   "festa privata",
+   "festa a tema",
+   "addio al nubilato",
+   "addio al celibato"
+  ],
+  "evoca": "una festa con gli amici",
+  "accordi": {
+   "fruttato": 0.7,
+   "vaniglia": 0.4,
+   "floreale-bianco": 0.4,
+   "speziato": 0.3
+  },
+  "note": {
+   "lampone": 0.6,
+   "pepe rosa": 0.5,
+   "pera": 0.5,
+   "gelsomino": 0.4,
+   "vaniglia": 0.5,
+   "pralina": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4,
+   "dolcezza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "sit-discoteca",
+  "tipo": "situazione",
+  "forme": [
+   "serata in disco",
+   "andare a ballare",
+   "serata in discoteca",
+   "rave",
+   "dj set",
+   "serata danzante",
+   "ballare tutta la notte"
+  ],
+  "evoca": "una serata in discoteca",
+  "accordi": {
+   "vaniglia": 0.6,
+   "ambrato": 0.6,
+   "speziato": 0.5,
+   "fruttato": 0.4
+  },
+  "note": {
+   "vaniglia": 0.6,
+   "ambroxan": 0.6,
+   "cardamomo": 0.5,
+   "ananas": 0.4,
+   "fava tonka": 0.5,
+   "cannella": 0.3,
+   "rum": 0.3
+  },
+  "misure": {
+   "intensita": 5,
+   "persistenza": 5,
+   "dolcezza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "audace",
+   "energico",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "sit-notte-brava",
+  "tipo": "situazione",
+  "forme": [
+   "notte brava",
+   "fare serata",
+   "tirare tardi",
+   "serata folle",
+   "notte fuori",
+   "sballo",
+   "serata senza pensieri",
+   "movida"
+  ],
+  "evoca": "una notte brava fino all'alba",
+  "accordi": {
+   "boozy": 0.6,
+   "ambrato": 0.6,
+   "speziato": 0.5,
+   "tabacco": 0.3
+  },
+  "note": {
+   "rum": 0.6,
+   "ambra": 0.6,
+   "pepe nero": 0.5,
+   "vaniglia": 0.5,
+   "zafferano": 0.3,
+   "cuoio": 0.3
+  },
+  "misure": {
+   "intensita": 5,
+   "persistenza": 5,
+   "dolcezza": 3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "audace",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "sit-concerto",
+  "tipo": "situazione",
+  "forme": [
+   "concerto",
+   "concerto rock",
+   "concerto all'aperto",
+   "festival musicale",
+   "festival estivo",
+   "concerto allo stadio",
+   "live",
+   "serata di musica dal vivo",
+   "musica dal vivo",
+   "sotto il palco"
+  ],
+  "evoca": "un concerto dal vivo",
+  "accordi": {
+   "speziato": 0.5,
+   "legnoso": 0.5,
+   "agrumato": 0.5,
+   "cuoio": 0.3
+  },
+  "note": {
+   "pepe rosa": 0.6,
+   "pompelmo": 0.5,
+   "zenzero": 0.5,
+   "vetiver": 0.4,
+   "cuoio": 0.3,
+   "patchouli": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "energico",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "sit-cena-elegante",
+  "tipo": "situazione",
+  "forme": [
+   "cena elegante",
+   "cena raffinata",
+   "cena importante",
+   "cena fuori",
+   "cena al ristorante",
+   "cena in un bel ristorante",
+   "cena di classe"
+  ],
+  "evoca": "una cena elegante al ristorante",
+  "accordi": {
+   "legnoso": 0.6,
+   "ambrato": 0.5,
+   "cipriato": 0.4,
+   "speziato": 0.3
+  },
+  "note": {
+   "sandalo": 0.6,
+   "iris": 0.5,
+   "ambra": 0.5,
+   "legno di cedro": 0.4,
+   "cardamomo": 0.4,
+   "gelsomino": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata",
+   "speciale"
+  ],
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "sit-cena-lavoro",
+  "tipo": "situazione",
+  "forme": [
+   "cena di lavoro",
+   "cena aziendale",
+   "cena con i clienti",
+   "cena con il capo",
+   "pranzo di lavoro",
+   "evento aziendale",
+   "festa aziendale",
+   "cena di natale aziendale",
+   "networking",
+   "fiera",
+   "convention"
+  ],
+  "evoca": "una cena di lavoro",
+  "accordi": {
+   "legnoso": 0.7,
+   "agrumato": 0.4,
+   "cipriato": 0.3,
+   "ambrato": 0.3
+  },
+  "note": {
+   "legno di cedro": 0.6,
+   "vetiver": 0.6,
+   "bergamotto": 0.5,
+   "iris": 0.4,
+   "pepe": 0.3,
+   "ambra": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 4,
+   "dolcezza": 2
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "ufficio",
+   "serata"
+  ],
+  "carattere": [
+   "sicuro",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "sit-cena-amici",
+  "tipo": "situazione",
+  "forme": [
+   "cena con gli amici",
+   "cena con le amiche",
+   "pizza con gli amici",
+   "pizzata",
+   "serata tra amiche",
+   "grigliata con gli amici",
+   "rimpatriata",
+   "cena di classe con i compagni",
+   "uscita con gli amici",
+   "serata con gli amici"
+  ],
+  "evoca": "una cena tra amici",
+  "accordi": {
+   "agrumato": 0.5,
+   "fruttato": 0.4,
+   "legnoso": 0.4,
+   "speziato": 0.3
+  },
+  "note": {
+   "bergamotto": 0.5,
+   "mandarino": 0.5,
+   "pepe rosa": 0.4,
+   "fico": 0.3,
+   "legno di cedro": 0.4,
+   "muschio": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 3
+  },
+  "momento": {
+   "sera": 0.9
+  },
+  "occasioni": [
+   "serata",
+   "quotidiano"
+  ],
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "sit-uscita-sera",
+  "tipo": "situazione",
+  "forme": [
+   "uscire la sera",
+   "uscita serale",
+   "per uscire",
+   "per le uscite",
+   "sabato sera",
+   "venerdì sera",
+   "serata fuori",
+   "fine settimana la sera",
+   "per la sera fuori",
+   "quando esco"
+  ],
+  "evoca": "un'uscita di sera",
+  "accordi": {
+   "ambrato": 0.6,
+   "speziato": 0.5,
+   "legnoso": 0.4,
+   "vaniglia": 0.4
+  },
+  "note": {
+   "ambra": 0.6,
+   "pepe rosa": 0.5,
+   "cardamomo": 0.4,
+   "sandalo": 0.5,
+   "fava tonka": 0.5,
+   "patchouli": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "sicuro",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "sit-vacanza-mare",
+  "tipo": "situazione",
+  "forme": [
+   "vacanza al mare",
+   "vacanza in spiaggia",
+   "ferie al mare",
+   "ferie estive",
+   "vacanze estive",
+   "villeggiatura",
+   "vacanza su un'isola",
+   "settimana al mare",
+   "mese al mare",
+   "vacanza in barca",
+   "crociera"
+  ],
+  "evoca": "una vacanza al mare",
+  "accordi": {
+   "acquatico": 0.7,
+   "solare": 0.6,
+   "agrumato": 0.5,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "note marine": 0.7,
+   "sale": 0.5,
+   "cocco": 0.5,
+   "bergamotto": 0.5,
+   "fiore d'arancio": 0.4,
+   "tiarè": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 2
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "giorno": 0.8
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "sit-weekend-fuori",
+  "tipo": "situazione",
+  "forme": [
+   "weekend fuori",
+   "fine settimana fuori",
+   "weekend fuori porta",
+   "fuga romantica",
+   "weekend romantico",
+   "weekend in una città d'arte",
+   "fuga di due giorni",
+   "weekend in agriturismo",
+   "weekend in montagna",
+   "ponte lungo"
+  ],
+  "evoca": "un weekend fuori porta",
+  "accordi": {
+   "agrumato": 0.5,
+   "verde": 0.4,
+   "legnoso": 0.4,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "bergamotto": 0.5,
+   "fico": 0.4,
+   "note verdi": 0.4,
+   "legno di cedro": 0.4,
+   "neroli": 0.3,
+   "muschio": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 3
+  },
+  "occasioni": [
+   "quotidiano",
+   "romantico"
+  ],
+  "carattere": [
+   "allegro",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "sit-gita",
+  "tipo": "situazione",
+  "forme": [
+   "gita",
+   "gita fuori porta",
+   "scampagnata",
+   "picnic",
+   "pic nic",
+   "passeggiata in campagna",
+   "escursione",
+   "trekking",
+   "gita in giornata"
+  ],
+  "evoca": "una gita fuori porta",
+  "accordi": {
+   "verde": 0.7,
+   "agrumato": 0.5,
+   "aromatico": 0.4,
+   "fruttato": 0.3
+  },
+  "note": {
+   "note verdi": 0.7,
+   "fico": 0.4,
+   "limone": 0.5,
+   "rosmarino": 0.4,
+   "mela verde": 0.3,
+   "vetiver": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "freschezza": 4
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "sit-viaggio-lavoro",
+  "tipo": "situazione",
+  "forme": [
+   "viaggio di lavoro",
+   "trasferta",
+   "sempre in viaggio",
+   "sempre in aereo",
+   "da portare in valigia",
+   "formato da viaggio",
+   "viaggiare per lavoro",
+   "aeroporto",
+   "volo lungo",
+   "viaggio in aereo"
+  ],
+  "evoca": "un viaggio di lavoro",
+  "accordi": {
+   "muschiato": 0.6,
+   "legnoso": 0.5,
+   "agrumato": 0.5,
+   "tè": 0.3
+  },
+  "note": {
+   "muschio bianco": 0.6,
+   "bergamotto": 0.5,
+   "legno di cedro": 0.5,
+   "vetiver": 0.4,
+   "tè nero": 0.3,
+   "pepe": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 4
+  },
+  "occasioni": [
+   "ufficio"
+  ],
+  "carattere": [
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "sit-domenica-relax",
+  "tipo": "situazione",
+  "forme": [
+   "domenica in relax",
+   "giornata di relax",
+   "giornata libera",
+   "rilassarsi",
+   "relax",
+   "giornata a casa",
+   "senza impegni",
+   "pigrizia",
+   "oziare"
+  ],
+  "evoca": "una domenica senza impegni",
+  "accordi": {
+   "muschiato": 0.7,
+   "tè": 0.4,
+   "floreale-fresco": 0.3,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "muschio bianco": 0.7,
+   "cachemire": 0.5,
+   "tè": 0.4,
+   "fiore d'arancio": 0.3,
+   "fava tonka": 0.3,
+   "pera": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 3
+  },
+  "momento": {
+   "giorno": 0.8
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "calmo",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "sit-divano-coperta",
+  "tipo": "situazione",
+  "forme": [
+   "divano e coperta",
+   "sul divano",
+   "copertina sul divano",
+   "plaid",
+   "sotto la coperta",
+   "film sul divano",
+   "serata sul divano",
+   "serie tv sul divano",
+   "tisana sul divano",
+   "pigiama",
+   "calzettoni",
+   "tutto il giorno in pigiama"
+  ],
+  "evoca": "una serata sul divano sotto la coperta",
+  "accordi": {
+   "vaniglia": 0.7,
+   "muschiato": 0.6,
+   "ambrato": 0.4,
+   "gourmand": 0.3
+  },
+  "note": {
+   "cachemire": 0.7,
+   "vaniglia": 0.6,
+   "fava tonka": 0.5,
+   "muschio": 0.5,
+   "benzoino": 0.3,
+   "latte": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 3,
+   "dolcezza": 4
+  },
+  "stagioni": {
+   "inverno": 0.6,
+   "autunno": 0.5
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "sit-dormire",
+  "tipo": "situazione",
+  "forme": [
+   "per dormire",
+   "prima di dormire",
+   "andare a letto",
+   "per la notte a letto",
+   "sul cuscino",
+   "buonanotte",
+   "ninna nanna",
+   "addormentarsi"
+  ],
+  "evoca": "il momento di andare a dormire",
+  "accordi": {
+   "aromatico": 0.6,
+   "muschiato": 0.6,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "lavanda": 0.8,
+   "camomilla": 0.5,
+   "muschio bianco": 0.6,
+   "cachemire": 0.4,
+   "fava tonka": 0.3
+  },
+  "misure": {
+   "intensita": 1,
+   "persistenza": 2,
+   "dolcezza": 3
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "calmo",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "sit-laurea",
+  "tipo": "situazione",
+  "forme": [
+   "laurea",
+   "festa di laurea",
+   "discussione della tesi",
+   "proclamazione",
+   "corona d'alloro",
+   "diploma",
+   "maturità",
+   "consegna del diploma",
+   "festa di diploma"
+  ],
+  "evoca": "il giorno della laurea",
+  "accordi": {
+   "agrumato": 0.6,
+   "aromatico": 0.4,
+   "floreale-fresco": 0.4,
+   "muschiato": 0.4
+  },
+  "note": {
+   "bergamotto": 0.6,
+   "foglia di alloro": 0.3,
+   "foglia d'alloro": 0.3,
+   "neroli": 0.5,
+   "peonia": 0.4,
+   "muschio bianco": 0.4,
+   "pepe rosa": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 3
+  },
+  "momento": {
+   "giorno": 0.8
+  },
+  "occasioni": [
+   "speciale"
+  ],
+  "carattere": [
+   "allegro",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "sit-esame",
+  "tipo": "situazione",
+  "forme": [
+   "esame",
+   "esame all'università",
+   "giorno dell'esame",
+   "interrogazione",
+   "concorso",
+   "prova scritta",
+   "orale",
+   "sessione d'esami",
+   "università",
+   "lezioni all'università",
+   "biblioteca a studiare",
+   "studiare"
+  ],
+  "evoca": "il giorno di un esame",
+  "accordi": {
+   "agrumato": 0.6,
+   "aromatico": 0.5,
+   "tè": 0.4,
+   "muschiato": 0.4
+  },
+  "note": {
+   "limone": 0.5,
+   "bergamotto": 0.5,
+   "rosmarino": 0.4,
+   "menta": 0.4,
+   "tè verde": 0.4,
+   "muschio bianco": 0.4
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 3,
+   "freschezza": 4
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "sit-scuola",
+  "tipo": "situazione",
+  "forme": [
+   "scuola",
+   "liceo",
+   "superiori",
+   "zaino",
+   "rientro a scuola",
+   "primo giorno di scuola",
+   "in aula"
+  ],
+  "evoca": "una mattina a scuola",
+  "accordi": {
+   "agrumato": 0.6,
+   "fruttato": 0.5,
+   "muschiato": 0.4
+  },
+  "note": {
+   "mandarino": 0.5,
+   "mela verde": 0.4,
+   "pera": 0.4,
+   "muschio bianco": 0.5,
+   "bergamotto": 0.4
+  },
+  "misure": {
+   "intensita": 1,
+   "persistenza": 2,
+   "freschezza": 4
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "sit-primo-giorno-lavoro",
+  "tipo": "situazione",
+  "forme": [
+   "primo giorno di lavoro",
+   "nuovo lavoro",
+   "inizio un nuovo lavoro",
+   "nuovo impiego",
+   "primo giorno in ufficio",
+   "cambio lavoro",
+   "promozione",
+   "nuovo incarico",
+   "nuovi colleghi"
+  ],
+  "evoca": "il primo giorno in un lavoro nuovo",
+  "accordi": {
+   "agrumato": 0.6,
+   "muschiato": 0.6,
+   "legnoso": 0.4,
+   "aromatico": 0.3
+  },
+  "note": {
+   "bergamotto": 0.7,
+   "muschio bianco": 0.6,
+   "neroli": 0.4,
+   "vetiver": 0.4,
+   "pepe rosa": 0.3,
+   "iris": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 3
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "ufficio"
+  ],
+  "carattere": [
+   "sicuro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "sit-battesimo-comunione",
+  "tipo": "situazione",
+  "forme": [
+   "battesimo",
+   "comunione",
+   "prima comunione",
+   "cresima",
+   "invitato a una comunione",
+   "festa di battesimo",
+   "confermazione",
+   "cerimonia in chiesa"
+  ],
+  "evoca": "una festa di battesimo o comunione",
+  "accordi": {
+   "floreale-fresco": 0.6,
+   "cipriato": 0.5,
+   "muschiato": 0.5,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "mughetto": 0.6,
+   "iris": 0.5,
+   "muschio bianco": 0.6,
+   "peonia": 0.4,
+   "fiore d'arancio": 0.4,
+   "note talcate": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 3,
+   "dolcezza": 3
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "speciale"
+  ],
+  "carattere": [
+   "elegante",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "sit-funerale",
+  "tipo": "situazione",
+  "forme": [
+   "funerale",
+   "lutto",
+   "veglia funebre",
+   "commemorazione",
+   "occasione triste",
+   "cerimonia funebre",
+   "condoglianze"
+  ],
+  "evoca": "un momento di raccoglimento",
+  "accordi": {
+   "muschiato": 0.6,
+   "legnoso": 0.5,
+   "incenso": 0.3
+  },
+  "note": {
+   "muschio bianco": 0.6,
+   "iris": 0.4,
+   "legno di cedro": 0.4,
+   "incenso": 0.3,
+   "violetta": 0.3
+  },
+  "misure": {
+   "intensita": 1,
+   "persistenza": 2,
+   "dolcezza": 1
+  },
+  "occasioni": [
+   "speciale"
+  ],
+  "carattere": [
+   "calmo",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "sit-terrazza-estate",
+  "tipo": "situazione",
+  "forme": [
+   "sera d'estate in terrazza",
+   "terrazza d'estate",
+   "serata in terrazza",
+   "cena in terrazza",
+   "cena all'aperto",
+   "serata all'aperto",
+   "cena sotto le stelle",
+   "sera d'estate sul balcone",
+   "cena sotto il pergolato",
+   "serata estiva all'aperto"
+  ],
+  "evoca": "una sera d'estate in terrazza",
+  "accordi": {
+   "floreale-bianco": 0.7,
+   "agrumato": 0.5,
+   "verde": 0.3,
+   "legnoso": 0.3
+  },
+  "note": {
+   "gelsomino": 0.8,
+   "neroli": 0.5,
+   "bergamotto": 0.5,
+   "fico": 0.4,
+   "fiore d'arancio": 0.4,
+   "vetiver": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 3,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata",
+   "romantico"
+  ],
+  "carattere": [
+   "romantico",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "sit-festa-giardino",
+  "tipo": "situazione",
+  "forme": [
+   "festa in giardino",
+   "garden party",
+   "pranzo in giardino",
+   "festa all'aperto",
+   "grigliata in giardino",
+   "barbecue",
+   "brunch all'aperto",
+   "rinfresco in giardino",
+   "merenda in giardino"
+  ],
+  "evoca": "una festa in giardino",
+  "accordi": {
+   "floreale-fresco": 0.6,
+   "verde": 0.5,
+   "fruttato": 0.5,
+   "agrumato": 0.4
+  },
+  "note": {
+   "peonia": 0.6,
+   "note verdi": 0.5,
+   "fresia": 0.4,
+   "pera": 0.4,
+   "ribes nero": 0.4,
+   "pompelmo": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "freschezza": 4
+  },
+  "stagioni": {
+   "primavera": 0.8,
+   "estate": 0.6
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "speciale",
+   "quotidiano"
+  ],
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "sit-pranzo-domenica",
+  "tipo": "situazione",
+  "forme": [
+   "pranzo della domenica",
+   "pranzo in famiglia",
+   "pranzo dalla nonna",
+   "pranzo dai suoceri",
+   "cena in famiglia",
+   "riunione di famiglia",
+   "festa di famiglia",
+   "pranzo con i parenti",
+   "tutti a tavola",
+   "pranzo delle feste"
+  ],
+  "evoca": "il pranzo della domenica in famiglia",
+  "accordi": {
+   "muschiato": 0.5,
+   "floreale-fresco": 0.4,
+   "agrumato": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "muschio bianco": 0.5,
+   "fiore d'arancio": 0.4,
+   "mandarino": 0.4,
+   "iris": 0.3,
+   "sandalo": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 3
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "quotidiano",
+   "speciale"
+  ],
+  "carattere": [
+   "calmo",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "sit-conoscere-suoceri",
+  "tipo": "situazione",
+  "forme": [
+   "conoscere i suoceri",
+   "conoscere i genitori di lui",
+   "conoscere i genitori di lei",
+   "presentazione ai genitori",
+   "cena con i suoceri",
+   "conoscere i suoi genitori",
+   "incontrare la famiglia di lui",
+   "incontrare la famiglia di lei"
+  ],
+  "evoca": "l'incontro con i futuri suoceri",
+  "accordi": {
+   "muschiato": 0.7,
+   "cipriato": 0.4,
+   "agrumato": 0.4,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "muschio bianco": 0.7,
+   "iris": 0.5,
+   "bergamotto": 0.5,
+   "neroli": 0.4,
+   "mughetto": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 3,
+   "dolcezza": 2
+  },
+  "occasioni": [
+   "speciale"
+  ],
+  "carattere": [
+   "elegante",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "sit-shopping-citta",
+  "tipo": "situazione",
+  "forme": [
+   "shopping",
+   "giro per negozi",
+   "passeggiata in centro",
+   "giro in centro",
+   "vasche in centro",
+   "struscio",
+   "passeggiata in città",
+   "brunch in città",
+   "commissioni in città",
+   "girare per la città"
+  ],
+  "evoca": "un pomeriggio in giro per il centro",
+  "accordi": {
+   "fruttato": 0.5,
+   "agrumato": 0.5,
+   "floreale-fresco": 0.4,
+   "muschiato": 0.4
+  },
+  "note": {
+   "pera": 0.5,
+   "bergamotto": 0.5,
+   "pepe rosa": 0.4,
+   "peonia": 0.4,
+   "muschio": 0.4,
+   "ribes nero": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 3
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "quotidiano"
+  ],
+  "carattere": [
+   "allegro",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "sit-mostra-vernissage",
+  "tipo": "situazione",
+  "forme": [
+   "mostra",
+   "inaugurazione",
+   "evento culturale",
+   "presentazione di un libro",
+   "sfilata",
+   "evento mondano"
+  ],
+  "evoca": "l'inaugurazione di una mostra",
+  "accordi": {
+   "cipriato": 0.6,
+   "legnoso": 0.5,
+   "incenso": 0.3,
+   "verde": 0.3
+  },
+  "note": {
+   "iris": 0.7,
+   "legno di cedro": 0.5,
+   "papiro": 0.3,
+   "inchiostro": 0.3,
+   "incenso": 0.3,
+   "pepe rosa": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4
+  },
+  "occasioni": [
+   "serata",
+   "speciale"
+  ],
+  "carattere": [
+   "elegante",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "sit-casino-lusso",
+  "tipo": "situazione",
+  "forme": [
+   "casinò",
+   "serata al casinò",
+   "serata in yacht",
+   "vita di lusso",
+   "lusso sfrenato",
+   "serata esclusiva",
+   "evento esclusivo"
+  ],
+  "evoca": "una serata di lusso",
+  "accordi": {
+   "oud": 0.6,
+   "ambrato": 0.6,
+   "rosa": 0.4,
+   "cuoio": 0.3
+  },
+  "note": {
+   "legno di agar": 0.6,
+   "zafferano": 0.5,
+   "ambra": 0.6,
+   "rosa": 0.4,
+   "cuoio": 0.3,
+   "vaniglia": 0.3
+  },
+  "misure": {
+   "intensita": 5,
+   "persistenza": 5
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata",
+   "speciale"
+  ],
+  "carattere": [
+   "audace",
+   "elegante",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "sit-pub",
+  "tipo": "situazione",
+  "forme": [
+   "serata al pub",
+   "birretta con gli amici",
+   "partita al bar",
+   "bar sport",
+   "whisky bar",
+   "serata tra uomini"
+  ],
+  "evoca": "una serata al pub",
+  "accordi": {
+   "boozy": 0.5,
+   "legnoso": 0.5,
+   "tabacco": 0.4,
+   "cuoio": 0.3
+  },
+  "note": {
+   "whisky": 0.5,
+   "legno di cedro": 0.5,
+   "foglia di tabacco": 0.4,
+   "cuoio": 0.4,
+   "vetiver": 0.3,
+   "fava tonka": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "sicuro"
+  ],
+  "manca": [
+   "birra"
+  ]
+ },
+ {
+  "chiave": "sit-giro-moto",
+  "tipo": "situazione",
+  "forme": [
+   "giro in moto",
+   "motociclista",
+   "in moto",
+   "viaggio in moto",
+   "giubbotto di pelle",
+   "on the road",
+   "viaggio on the road",
+   "guidare di notte"
+  ],
+  "evoca": "un giro in moto",
+  "accordi": {
+   "cuoio": 0.7,
+   "legnoso": 0.5,
+   "speziato": 0.4,
+   "tabacco": 0.3
+  },
+  "note": {
+   "cuoio": 0.8,
+   "betulla": 0.5,
+   "pepe nero": 0.4,
+   "vetiver": 0.4,
+   "legno di guaiaco": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "audace",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "sit-appuntamento-giorno",
+  "tipo": "situazione",
+  "forme": [
+   "appuntamento di giorno",
+   "pranzo romantico",
+   "passeggiata romantica",
+   "passeggiata mano nella mano",
+   "pomeriggio insieme",
+   "picnic romantico",
+   "caffè insieme",
+   "incontro di pomeriggio"
+  ],
+  "evoca": "un appuntamento di giorno",
+  "accordi": {
+   "floreale-fresco": 0.6,
+   "fruttato": 0.5,
+   "muschiato": 0.4,
+   "agrumato": 0.4
+  },
+  "note": {
+   "peonia": 0.6,
+   "pesca": 0.4,
+   "fresia": 0.4,
+   "muschio bianco": 0.5,
+   "mandarino": 0.4,
+   "rosa": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "persistenza": 3,
+   "freschezza": 3
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "romantico"
+  ],
+  "carattere": [
+   "romantico",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "sit-festa-spiaggia",
+  "tipo": "situazione",
+  "forme": [
+   "festa in spiaggia",
+   "beach party",
+   "serata in spiaggia",
+   "aperitivo in spiaggia",
+   "stabilimento balneare la sera"
+  ],
+  "evoca": "una festa in spiaggia",
+  "accordi": {
+   "solare": 0.7,
+   "fruttato": 0.5,
+   "acquatico": 0.4,
+   "boozy": 0.3
+  },
+  "note": {
+   "cocco": 0.7,
+   "ananas": 0.5,
+   "rum bianco": 0.3,
+   "lime": 0.5,
+   "note marine": 0.4,
+   "tiarè": 0.4
+  },
+  "misure": {
+   "intensita": 3,
+   "dolcezza": 3,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "sera": 0.8
+  },
+  "occasioni": [
+   "serata"
+  ],
+  "carattere": [
+   "allegro",
+   "audace"
+  ]
+ },
+ {
+  "chiave": "sit-gita-in-barca",
+  "tipo": "situazione",
+  "forme": [
+   "gita in barca",
+   "giro in barca",
+   "uscita in barca",
+   "gommone",
+   "veleggiata",
+   "tuffi dalla barca"
+  ],
+  "evoca": "una giornata in barca",
+  "accordi": {
+   "acquatico": 0.8,
+   "agrumato": 0.5,
+   "aromatico": 0.3,
+   "legnoso": 0.3
+  },
+  "note": {
+   "note marine": 0.8,
+   "sale marino": 0.5,
+   "alghe": 0.3,
+   "limone": 0.5,
+   "legno marino": 0.3,
+   "rosmarino": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "intensita": 2,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "occasioni": [
+   "sport",
+   "quotidiano"
+  ],
+  "carattere": [
+   "fresco",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "sit-giornata-lunga",
+  "tipo": "situazione",
+  "forme": [
+   "giornata lunga",
+   "dalla mattina alla sera",
+   "tutto il giorno fuori casa",
+   "dura tutto il giorno",
+   "turni lunghi",
+   "turno di notte",
+   "dodici ore fuori",
+   "non ho tempo di rimetterlo"
+  ],
+  "evoca": "una giornata lunga, dalla mattina alla sera",
+  "accordi": {
+   "legnoso": 0.5,
+   "muschiato": 0.5,
+   "ambrato": 0.4
+  },
+  "note": {
+   "ambroxan": 0.6,
+   "muschio": 0.5,
+   "legno di cedro": 0.5,
+   "sandalo": 0.4,
+   "iso e super": 0.3
+  },
+  "misure": {
+   "persistenza": 5,
+   "intensita": 3
+  },
+  "occasioni": [
+   "quotidiano",
+   "ufficio"
+  ],
+  "carattere": [
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "per-uomo",
+  "tipo": "persona",
+  "forme": [
+   "lui",
+   "uomo",
+   "maschile",
+   "maschio",
+   "gentiluomo",
+   "virilità"
+  ],
+  "evoca": "lui",
+  "filtro": {
+   "genere": "uomo"
+  }
+ },
+ {
+  "chiave": "per-donna",
+  "tipo": "persona",
+  "forme": [
+   "lei",
+   "donna",
+   "femminile",
+   "femmina",
+   "signorina"
+  ],
+  "evoca": "lei",
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-signore",
+  "tipo": "persona",
+  "forme": [
+   "signore",
+   "signore distinto",
+   "signore elegante",
+   "signore di una certa età"
+  ],
+  "evoca": "un signore",
+  "misure": {
+   "persistenza": 4
+  },
+  "carattere": [
+   "elegante"
+  ],
+  "filtro": {
+   "genere": "uomo"
+  }
+ },
+ {
+  "chiave": "per-signora",
+  "tipo": "persona",
+  "forme": [
+   "signora",
+   "signora distinta",
+   "signora elegante",
+   "signora di una certa età",
+   "gran signora"
+  ],
+  "evoca": "una signora",
+  "misure": {
+   "persistenza": 4
+  },
+  "carattere": [
+   "elegante"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-marito",
+  "tipo": "persona",
+  "forme": [
+   "marito",
+   "maritino",
+   "futuro marito",
+   "partner uomo"
+  ],
+  "evoca": "tuo marito",
+  "accordi": {
+   "legnoso": 0.5,
+   "aromatico": 0.3
+  },
+  "misure": {
+   "intensita": 3
+  },
+  "carattere": [
+   "sicuro",
+   "elegante"
+  ],
+  "filtro": {
+   "genere": "uomo"
+  }
+ },
+ {
+  "chiave": "per-moglie",
+  "tipo": "persona",
+  "forme": [
+   "moglie",
+   "mogliettina",
+   "partner donna",
+   "futura moglie"
+  ],
+  "evoca": "tua moglie",
+  "accordi": {
+   "floreale-bianco": 0.4,
+   "rosa": 0.3
+  },
+  "misure": {
+   "intensita": 3
+  },
+  "carattere": [
+   "elegante",
+   "romantico"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-fidanzato",
+  "tipo": "persona",
+  "forme": [
+   "fidanzato",
+   "boyfriend",
+   "compagno",
+   "compagno di vita"
+  ],
+  "evoca": "il tuo compagno",
+  "accordi": {
+   "legnoso": 0.4,
+   "speziato": 0.3,
+   "agrumato": 0.3
+  },
+  "misure": {
+   "intensita": 3
+  },
+  "occasioni": [
+   "romantico"
+  ],
+  "carattere": [
+   "sensuale",
+   "sicuro"
+  ],
+  "filtro": {
+   "genere": "uomo"
+  }
+ },
+ {
+  "chiave": "per-fidanzata",
+  "tipo": "persona",
+  "forme": [
+   "fidanzata",
+   "girlfriend",
+   "compagna",
+   "compagna di vita"
+  ],
+  "evoca": "la tua compagna",
+  "accordi": {
+   "floreale-bianco": 0.4,
+   "fruttato": 0.3,
+   "vaniglia": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "dolcezza": 3
+  },
+  "occasioni": [
+   "romantico"
+  ],
+  "carattere": [
+   "romantico",
+   "sensuale"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-partner",
+  "tipo": "persona",
+  "forme": [
+   "partner",
+   "consorte",
+   "anima gemella",
+   "dolce metà",
+   "amore mio",
+   "persona che amo",
+   "la persona che mi piace",
+   "moroso",
+   "morosino",
+   "fidanzatino"
+  ],
+  "evoca": "la persona che ami",
+  "occasioni": [
+   "romantico"
+  ],
+  "carattere": [
+   "romantico",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "per-ragazzo",
+  "tipo": "persona",
+  "forme": [
+   "ragazzo",
+   "ragazzo giovane",
+   "ragazzo adolescente",
+   "adolescente maschio",
+   "ragazzo di vent'anni",
+   "giovanotto",
+   "ragazzotto",
+   "teenager maschio",
+   "nipote maschio",
+   "figlio maschio"
+  ],
+  "evoca": "un ragazzo",
+  "accordi": {
+   "agrumato": 0.5,
+   "acquatico": 0.4,
+   "aromatico": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 3
+  },
+  "carattere": [
+   "energico",
+   "fresco"
+  ],
+  "filtro": {
+   "genere": "uomo"
+  }
+ },
+ {
+  "chiave": "per-ragazza",
+  "tipo": "persona",
+  "forme": [
+   "ragazza",
+   "ragazza giovane",
+   "ragazza adolescente",
+   "adolescente femmina",
+   "ragazza di vent'anni",
+   "teenager femmina",
+   "nipote femmina",
+   "figlia femmina",
+   "giovane donna",
+   "donna giovane",
+   "signorina giovane"
+  ],
+  "evoca": "una ragazza",
+  "accordi": {
+   "fruttato": 0.5,
+   "floreale-fresco": 0.4,
+   "agrumato": 0.3
+  },
+  "misure": {
+   "dolcezza": 3,
+   "freschezza": 3,
+   "intensita": 2
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-giovane",
+  "tipo": "persona",
+  "forme": [
+   "adolescente",
+   "teenager",
+   "giovane",
+   "giovanissimo",
+   "ragazzino",
+   "diciottenne",
+   "neomaggiorenne",
+   "nipote",
+   "universitario",
+   "ventenne"
+  ],
+  "evoca": "una persona giovane",
+  "accordi": {
+   "agrumato": 0.5,
+   "fruttato": 0.4,
+   "acquatico": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "intensita": 3
+  },
+  "carattere": [
+   "energico",
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "per-figlio",
+  "tipo": "persona",
+  "forme": [
+   "figlio",
+   "figlio adolescente",
+   "figlio grande",
+   "figliolo"
+  ],
+  "evoca": "tuo figlio",
+  "accordi": {
+   "agrumato": 0.5,
+   "aromatico": 0.3,
+   "acquatico": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "carattere": [
+   "energico",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "per-figlia",
+  "tipo": "persona",
+  "forme": [
+   "figlia",
+   "figlia adolescente",
+   "figlia grande",
+   "figliola"
+  ],
+  "evoca": "tua figlia",
+  "accordi": {
+   "fruttato": 0.5,
+   "floreale-fresco": 0.4
+  },
+  "misure": {
+   "dolcezza": 3,
+   "freschezza": 3
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-papa",
+  "tipo": "persona",
+  "forme": [
+   "papà",
+   "padre",
+   "babbo",
+   "papi",
+   "paparino",
+   "festa del papà"
+  ],
+  "evoca": "tuo padre",
+  "accordi": {
+   "legnoso": 0.5,
+   "aromatico": 0.4,
+   "agrumato": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4
+  },
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ],
+  "filtro": {
+   "genere": "uomo"
+  }
+ },
+ {
+  "chiave": "per-mamma",
+  "tipo": "persona",
+  "forme": [
+   "mamma",
+   "madre",
+   "mammina",
+   "mami",
+   "festa della mamma",
+   "matrigna"
+  ],
+  "evoca": "tua madre",
+  "accordi": {
+   "floreale-bianco": 0.4,
+   "cipriato": 0.3,
+   "rosa": 0.3
+  },
+  "misure": {
+   "intensita": 3,
+   "persistenza": 4
+  },
+  "carattere": [
+   "elegante",
+   "coccola"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-nonno",
+  "tipo": "persona",
+  "forme": [
+   "nonno",
+   "nonnino",
+   "bisnonno",
+   "anziano",
+   "persona anziana",
+   "terza età",
+   "festa dei nonni",
+   "vecchietto"
+  ],
+  "evoca": "il nonno",
+  "accordi": {
+   "aromatico": 0.5,
+   "legnoso": 0.4,
+   "cipriato": 0.3
+  },
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "elegante",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "per-nonna",
+  "tipo": "persona",
+  "forme": [
+   "nonna",
+   "signora anziana",
+   "donna anziana"
+  ],
+  "evoca": "la nonna",
+  "accordi": {
+   "cipriato": 0.5,
+   "rosa": 0.4,
+   "floreale-fresco": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "dolcezza": 3
+  },
+  "carattere": [
+   "elegante",
+   "calmo",
+   "coccola"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-fratello",
+  "tipo": "persona",
+  "forme": [
+   "fratello",
+   "fratellino",
+   "fratellone"
+  ],
+  "evoca": "tuo fratello",
+  "filtro": {
+   "genere": "uomo"
+  }
+ },
+ {
+  "chiave": "per-sorella",
+  "tipo": "persona",
+  "forme": [
+   "sorella",
+   "sorellina",
+   "sorellona"
+  ],
+  "evoca": "tua sorella",
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-zio",
+  "tipo": "persona",
+  "forme": [
+   "zio",
+   "zione"
+  ],
+  "evoca": "tuo zio",
+  "filtro": {
+   "genere": "uomo"
+  }
+ },
+ {
+  "chiave": "per-zia",
+  "tipo": "persona",
+  "forme": [
+   "zia",
+   "zietta"
+  ],
+  "evoca": "tua zia",
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-cugino",
+  "tipo": "persona",
+  "forme": [
+   "cugino",
+   "cognato",
+   "parente"
+  ],
+  "evoca": "un parente",
+  "misure": {
+   "intensita": 3
+  }
+ },
+ {
+  "chiave": "per-cugina",
+  "tipo": "persona",
+  "forme": [
+   "cugina",
+   "cognata"
+  ],
+  "evoca": "una parente",
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-suocero",
+  "tipo": "persona",
+  "forme": [
+   "suocero",
+   "futuro suocero",
+   "genitori di lui",
+   "genitori di lei"
+  ],
+  "evoca": "i suoceri",
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "per-suocera",
+  "tipo": "persona",
+  "forme": [
+   "suocera",
+   "futura suocera"
+  ],
+  "evoca": "la suocera",
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "elegante"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-amico",
+  "tipo": "persona",
+  "forme": [
+   "amico",
+   "migliore amico",
+   "amico del cuore",
+   "compagno di classe",
+   "compagno di squadra",
+   "coinquilino",
+   "vicino di casa",
+   "amici di vecchia data"
+  ],
+  "evoca": "un amico",
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "per-amica",
+  "tipo": "persona",
+  "forme": [
+   "amica",
+   "migliore amica",
+   "amica del cuore",
+   "compagna di classe",
+   "collega donna",
+   "amiche di vecchia data"
+  ],
+  "evoca": "un'amica",
+  "carattere": [
+   "allegro"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-maestro",
+  "tipo": "persona",
+  "forme": [
+   "maestro",
+   "professore",
+   "insegnante",
+   "regalo di fine anno",
+   "allenatore"
+  ],
+  "evoca": "l'insegnante",
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "elegante",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "per-maestra",
+  "tipo": "persona",
+  "forme": [
+   "maestra",
+   "professoressa",
+   "educatrice",
+   "tata",
+   "babysitter"
+  ],
+  "evoca": "la maestra",
+  "misure": {
+   "intensita": 2
+  },
+  "carattere": [
+   "elegante",
+   "calmo"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-collega",
+  "tipo": "persona",
+  "forme": [
+   "collega",
+   "capo",
+   "capufficio",
+   "responsabile",
+   "direttore",
+   "cliente importante",
+   "regalo aziendale"
+  ],
+  "evoca": "un collega",
+  "misure": {
+   "intensita": 2
+  },
+  "occasioni": [
+   "ufficio"
+  ],
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "per-uomo-maturo",
+  "tipo": "persona",
+  "forme": [
+   "uomo maturo",
+   "uomo di una certa età",
+   "uomo distinto",
+   "uomo elegante",
+   "uomo di classe",
+   "uomo in carriera",
+   "uomo d'affari",
+   "manager",
+   "uomo sui cinquanta",
+   "cinquantenne uomo"
+  ],
+  "evoca": "un uomo distinto",
+  "accordi": {
+   "legnoso": 0.5,
+   "cuoio": 0.3,
+   "cipriato": 0.3
+  },
+  "misure": {
+   "persistenza": 4,
+   "dolcezza": 2
+  },
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ],
+  "filtro": {
+   "genere": "uomo"
+  }
+ },
+ {
+  "chiave": "per-uomo-virile",
+  "tipo": "persona",
+  "forme": [
+   "virile",
+   "maschio alfa",
+   "uomo deciso",
+   "uomo forte",
+   "uomo vero",
+   "da vero uomo",
+   "mascolino",
+   "rude",
+   "macho"
+  ],
+  "evoca": "un uomo deciso",
+  "accordi": {
+   "cuoio": 0.5,
+   "legnoso": 0.5,
+   "tabacco": 0.3,
+   "speziato": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "audace",
+   "sicuro"
+  ],
+  "filtro": {
+   "genere": "uomo"
+  }
+ },
+ {
+  "chiave": "per-donna-matura",
+  "tipo": "persona",
+  "forme": [
+   "donna matura",
+   "donna di una certa età",
+   "donna distinta",
+   "donna elegante",
+   "donna di classe",
+   "donna in carriera",
+   "donna manager",
+   "cinquantenne donna"
+  ],
+  "evoca": "una donna elegante",
+  "accordi": {
+   "cipriato": 0.5,
+   "floreale-bianco": 0.4,
+   "legnoso": 0.3
+  },
+  "misure": {
+   "persistenza": 4
+  },
+  "carattere": [
+   "elegante",
+   "sicuro"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-donna-fatale",
+  "tipo": "persona",
+  "forme": [
+   "donna fatale",
+   "femme fatale",
+   "femminilissima",
+   "donna seducente",
+   "donna sexy",
+   "donna misteriosa",
+   "vamp",
+   "seduttrice"
+  ],
+  "evoca": "una donna fatale",
+  "accordi": {
+   "floreale-bianco": 0.5,
+   "ambrato": 0.5,
+   "vaniglia": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 5,
+   "dolcezza": 3
+  },
+  "carattere": [
+   "sensuale",
+   "misterioso",
+   "audace"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-bambino",
+  "tipo": "persona",
+  "forme": [
+   "bambino",
+   "bimbo",
+   "nipotino",
+   "piccolino",
+   "figlio piccolo",
+   "maschietto"
+  ],
+  "evoca": "un bambino",
+  "accordi": {
+   "agrumato": 0.5,
+   "muschiato": 0.4
+  },
+  "misure": {
+   "intensita": 1,
+   "persistenza": 2
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "per-bambina",
+  "tipo": "persona",
+  "forme": [
+   "bambina",
+   "nipotina",
+   "femminuccia",
+   "principessina",
+   "piccola principessa",
+   "figlia piccola"
+  ],
+  "evoca": "una bambina",
+  "accordi": {
+   "fruttato": 0.5,
+   "floreale-fresco": 0.4
+  },
+  "misure": {
+   "intensita": 1,
+   "persistenza": 2,
+   "dolcezza": 3
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ],
+  "filtro": {
+   "genere": "donna"
+  }
+ },
+ {
+  "chiave": "per-unisex",
+  "tipo": "persona",
+  "forme": [
+   "unisex",
+   "senza genere",
+   "neutro",
+   "genderless",
+   "gender fluid",
+   "sia uomo che donna",
+   "per entrambi",
+   "tutti e due",
+   "da condividere",
+   "per la coppia",
+   "per tutti quanti",
+   "adatto a tutti"
+  ],
+  "evoca": "un profumo per tutti",
+  "accordi": {
+   "legnoso": 0.4,
+   "agrumato": 0.4,
+   "muschiato": 0.4
+  },
+  "misure": {
+   "dolcezza": 2
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "regalo",
+  "tipo": "persona",
+  "forme": [
+   "regalo",
+   "da regalare",
+   "devo fare un regalo",
+   "pensierino",
+   "pensiero",
+   "dono",
+   "omaggio",
+   "regalo di compleanno",
+   "regalo di natale",
+   "idea regalo",
+   "confezione regalo",
+   "sorpresa"
+  ],
+  "evoca": "un regalo",
+  "modo": "regalo"
+ }
+]

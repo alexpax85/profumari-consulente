@@ -1,0 +1,3645 @@
+[
+ {
+  "chiave": "mare",
+  "tipo": "luogo",
+  "forme": [
+   "mare",
+   "aria di mare",
+   "brezza marina",
+   "brezza di mare",
+   "vento di mare",
+   "mare aperto",
+   "onde del mare"
+  ],
+  "evoca": "il mare",
+  "accordi": {
+   "acquatico": 1,
+   "agrumato": 0.4,
+   "muschiato": 0.3,
+   "legnoso": 0.2
+  },
+  "note": {
+   "note marine": 1,
+   "sale marino": 0.7,
+   "alghe": 0.5,
+   "bergamotto": 0.4,
+   "ambroxan": 0.4,
+   "legno di cedro": 0.2
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "mare-estate",
+  "tipo": "luogo",
+  "forme": [
+   "mare d'estate",
+   "estate al mare",
+   "giornata al mare",
+   "bagno al mare",
+   "tuffo in mare",
+   "mare e sole"
+  ],
+  "evoca": "una giornata di mare d'estate",
+  "accordi": {
+   "acquatico": 0.9,
+   "solare": 0.7,
+   "agrumato": 0.5,
+   "muschiato": 0.2
+  },
+  "note": {
+   "note marine": 0.8,
+   "cocco": 0.6,
+   "bergamotto": 0.5,
+   "sale": 0.5,
+   "tiarè": 0.4,
+   "pompelmo": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "giorno": 0.8
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "spiaggia",
+  "tipo": "luogo",
+  "forme": [
+   "spiaggia",
+   "sabbia calda",
+   "sabbia",
+   "ombrellone",
+   "sotto l'ombrellone",
+   "lettino al sole",
+   "stabilimento balneare",
+   "lido",
+   "bagnasciuga",
+   "riva del mare"
+  ],
+  "evoca": "la spiaggia",
+  "accordi": {
+   "solare": 1,
+   "acquatico": 0.7,
+   "floreale-bianco": 0.3,
+   "muschiato": 0.3
+  },
+  "note": {
+   "cocco": 1,
+   "note marine": 0.7,
+   "tiarè": 0.6,
+   "sale": 0.5,
+   "ylang ylang": 0.4,
+   "ambroxan": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "giorno": 0.8
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "spiaggia-tramonto",
+  "tipo": "luogo",
+  "forme": [
+   "spiaggia al tramonto",
+   "tramonto sul mare",
+   "mare al tramonto",
+   "sole che cala sul mare",
+   "sole che tramonta sul mare",
+   "tramonto in spiaggia"
+  ],
+  "evoca": "una spiaggia al tramonto",
+  "accordi": {
+   "solare": 0.9,
+   "ambrato": 0.7,
+   "acquatico": 0.5,
+   "legnoso": 0.3
+  },
+  "note": {
+   "cocco": 0.7,
+   "ambra": 0.8,
+   "note marine": 0.6,
+   "ylang ylang": 0.5,
+   "sandalo": 0.5,
+   "tiarè": 0.4
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "momento": {
+   "sera": 0.9
+  },
+  "carattere": [
+   "romantico",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "spiaggia-alba",
+  "tipo": "luogo",
+  "forme": [
+   "alba sul mare",
+   "mare all'alba",
+   "spiaggia all'alba",
+   "spiaggia di mattina presto",
+   "mare di mattina"
+  ],
+  "evoca": "il mare all'alba",
+  "accordi": {
+   "acquatico": 1,
+   "agrumato": 0.6,
+   "muschiato": 0.4,
+   "floreale-bianco": 0.2
+  },
+  "note": {
+   "note marine": 1,
+   "note ozoniche": 0.7,
+   "bergamotto": 0.6,
+   "muschio bianco": 0.5,
+   "neroli": 0.4,
+   "pompelmo": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "estate": 0.7
+  },
+  "momento": {
+   "giorno": 1
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "spiaggia-notte",
+  "tipo": "luogo",
+  "forme": [
+   "spiaggia di notte",
+   "mare di notte",
+   "notte in spiaggia",
+   "falò in spiaggia",
+   "luna sul mare",
+   "notte sul mare",
+   "bagno di mezzanotte"
+  ],
+  "evoca": "una notte in spiaggia",
+  "accordi": {
+   "acquatico": 0.8,
+   "legnoso": 0.6,
+   "ambrato": 0.5,
+   "incenso": 0.3
+  },
+  "note": {
+   "note marine": 0.9,
+   "legno marino": 0.5,
+   "ambra": 0.6,
+   "fumo": 0.4,
+   "sale": 0.5,
+   "sandalo": 0.4
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "misterioso",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "mare-inverno",
+  "tipo": "luogo",
+  "forme": [
+   "mare d'inverno",
+   "spiaggia d'inverno",
+   "spiaggia deserta",
+   "mare fuori stagione",
+   "lungomare d'inverno",
+   "mare in autunno",
+   "spiaggia vuota"
+  ],
+  "evoca": "il mare d'inverno",
+  "accordi": {
+   "acquatico": 0.9,
+   "legnoso": 0.5,
+   "muschiato": 0.3,
+   "aromatico": 0.2
+  },
+  "note": {
+   "note marine": 1,
+   "sale": 0.7,
+   "ambra grigia": 0.6,
+   "cipresso": 0.4,
+   "note minerali": 0.4,
+   "salvia": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "inverno": 0.7,
+   "autunno": 0.5
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "mare-tempesta",
+  "tipo": "luogo",
+  "forme": [
+   "mare in tempesta",
+   "mare mosso",
+   "mareggiata",
+   "mare agitato",
+   "burrasca",
+   "burrasca in mare",
+   "onde che si infrangono",
+   "spruzzi delle onde",
+   "cavalloni"
+  ],
+  "evoca": "il mare in tempesta",
+  "accordi": {
+   "acquatico": 1,
+   "aromatico": 0.3,
+   "legnoso": 0.3,
+   "ambrato": 0.2
+  },
+  "note": {
+   "note ozoniche": 0.9,
+   "sale marino": 0.8,
+   "alghe": 0.6,
+   "note marine": 0.8,
+   "ambra grigia": 0.5,
+   "salvia": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "audace",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "oceano",
+  "tipo": "luogo",
+  "forme": [
+   "oceano",
+   "oceano aperto",
+   "onde dell'oceano",
+   "riva dell'oceano",
+   "costa atlantica",
+   "costa oceanica",
+   "spiaggia sull'oceano"
+  ],
+  "evoca": "l'oceano",
+  "accordi": {
+   "acquatico": 1,
+   "ambrato": 0.3,
+   "muschiato": 0.3,
+   "legnoso": 0.2
+  },
+  "note": {
+   "note marine": 1,
+   "sale marino": 0.6,
+   "ambra grigia": 0.6,
+   "alghe": 0.5,
+   "note ozoniche": 0.5,
+   "legno marino": 0.3
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "carattere": [
+   "fresco",
+   "energico"
+  ]
+ },
+ {
+  "chiave": "fiordi",
+  "tipo": "luogo",
+  "forme": [
+   "fiordo",
+   "mare del nord",
+   "costa del nord",
+   "scogliere del nord",
+   "costa nordica"
+  ],
+  "evoca": "un fiordo del nord",
+  "accordi": {
+   "acquatico": 0.9,
+   "legnoso": 0.6,
+   "aromatico": 0.2,
+   "muschiato": 0.2
+  },
+  "note": {
+   "note marine": 0.8,
+   "abete": 0.7,
+   "note ozoniche": 0.6,
+   "alghe": 0.5,
+   "ambra grigia": 0.4,
+   "betulla": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "inverno": 0.4
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "scogliera",
+  "tipo": "luogo",
+  "forme": [
+   "scogliera",
+   "scogli",
+   "falesia",
+   "rocce sul mare",
+   "strapiombo sul mare",
+   "spiaggia di sassi",
+   "ciottoli sul mare",
+   "caletta tra gli scogli"
+  ],
+  "evoca": "gli scogli sul mare",
+  "accordi": {
+   "acquatico": 1,
+   "aromatico": 0.5,
+   "legnoso": 0.3
+  },
+  "note": {
+   "note minerali": 0.8,
+   "alghe": 0.8,
+   "sale": 0.7,
+   "cavolo marino": 0.4,
+   "rosmarino": 0.4,
+   "legno marino": 0.3,
+   "note marine": 0.6
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "estate": 0.7
+  },
+  "carattere": [
+   "fresco"
+  ],
+  "manca": [
+   "finocchio marino"
+  ]
+ },
+ {
+  "chiave": "salsedine",
+  "tipo": "luogo",
+  "forme": [
+   "salsedine",
+   "aria salmastra",
+   "salmastro",
+   "sale sulla pelle",
+   "pelle salata",
+   "sapore di sale",
+   "pelle dopo il mare",
+   "sale marino sulla pelle"
+  ],
+  "evoca": "la salsedine sulla pelle",
+  "accordi": {
+   "acquatico": 0.9,
+   "muschiato": 0.5,
+   "solare": 0.4,
+   "ambrato": 0.3
+  },
+  "note": {
+   "sale": 1,
+   "sale marino": 0.8,
+   "ambroxan": 0.6,
+   "ambra grigia": 0.5,
+   "muschio bianco": 0.4,
+   "cocco": 0.2
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "sensuale",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "costiera",
+  "tipo": "luogo",
+  "forme": [
+   "costiera",
+   "costa mediterranea",
+   "riviera",
+   "riviera ligure",
+   "caletta",
+   "insenatura",
+   "baia",
+   "costa rocciosa",
+   "paesino sul mare",
+   "borgo sul mare",
+   "terrazze sul mare"
+  ],
+  "evoca": "la costiera mediterranea",
+  "accordi": {
+   "acquatico": 0.8,
+   "agrumato": 0.7,
+   "aromatico": 0.5,
+   "legnoso": 0.3
+  },
+  "note": {
+   "limone": 0.8,
+   "bergamotto": 0.6,
+   "note marine": 0.8,
+   "rosmarino": 0.4,
+   "mirto": 0.4,
+   "cipresso": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "isola-mediterranea",
+  "tipo": "luogo",
+  "forme": [
+   "isola greca",
+   "isola del mediterraneo",
+   "isolotto",
+   "isoletta",
+   "isola in estate"
+  ],
+  "evoca": "un'isola del Mediterraneo",
+  "accordi": {
+   "acquatico": 0.7,
+   "fruttato": 0.5,
+   "aromatico": 0.6,
+   "verde": 0.4
+  },
+  "note": {
+   "fico": 0.8,
+   "foglia di fico": 0.5,
+   "timo": 0.5,
+   "note marine": 0.7,
+   "sale": 0.4,
+   "legno di cedro": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "isola-tropicale",
+  "tipo": "luogo",
+  "forme": [
+   "isola tropicale",
+   "spiaggia tropicale",
+   "mare tropicale",
+   "atollo",
+   "palme",
+   "sotto le palme",
+   "paradiso tropicale",
+   "isola deserta",
+   "mari del sud"
+  ],
+  "evoca": "un'isola tropicale",
+  "accordi": {
+   "solare": 1,
+   "fruttato": 0.6,
+   "floreale-bianco": 0.5,
+   "acquatico": 0.4
+  },
+  "note": {
+   "cocco": 1,
+   "tiarè": 0.7,
+   "frangipane": 0.5,
+   "ananas": 0.5,
+   "frutti tropicali": 0.5,
+   "note marine": 0.4
+  },
+  "misure": {
+   "dolcezza": 3,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "laguna",
+  "tipo": "luogo",
+  "forme": [
+   "laguna",
+   "acqua salmastra",
+   "barene",
+   "valli da pesca",
+   "canali della laguna"
+  ],
+  "evoca": "la laguna",
+  "accordi": {
+   "acquatico": 1,
+   "verde": 0.5,
+   "muschiato": 0.2
+  },
+  "note": {
+   "note acquatiche": 1,
+   "alghe": 0.6,
+   "note verdi": 0.5,
+   "sale": 0.4,
+   "ninfea": 0.3,
+   "vetiver": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "grotta-marina",
+  "tipo": "luogo",
+  "forme": [
+   "grotta marina",
+   "grotta sul mare",
+   "caverna sul mare",
+   "grotta nella scogliera"
+  ],
+  "evoca": "una grotta sul mare",
+  "accordi": {
+   "acquatico": 1,
+   "legnoso": 0.2,
+   "muschiato": 0.2
+  },
+  "note": {
+   "note minerali": 0.9,
+   "alghe": 0.7,
+   "acqua di mare": 0.6,
+   "sale": 0.6,
+   "note marine": 0.7,
+   "ambra grigia": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "misterioso",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "dune",
+  "tipo": "luogo",
+  "forme": [
+   "dune",
+   "dune di sabbia",
+   "dune sul mare",
+   "dune costiere",
+   "sabbia e cespugli"
+  ],
+  "evoca": "le dune sul mare",
+  "accordi": {
+   "acquatico": 0.6,
+   "legnoso": 0.6,
+   "aromatico": 0.5,
+   "solare": 0.3
+  },
+  "note": {
+   "sale": 0.7,
+   "note minerali": 0.6,
+   "vetiver": 0.6,
+   "fieno": 0.5,
+   "note marine": 0.5,
+   "legno marino": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "elicriso"
+  ]
+ },
+ {
+  "chiave": "pineta-mare",
+  "tipo": "luogo",
+  "forme": [
+   "pineta al mare",
+   "pini al mare",
+   "pini marittimi",
+   "pineta vicino al mare",
+   "pineta in riva al mare"
+  ],
+  "evoca": "la pineta al mare",
+  "accordi": {
+   "legnoso": 0.8,
+   "acquatico": 0.6,
+   "verde": 0.5,
+   "ambrato": 0.3
+  },
+  "note": {
+   "aghi di pino": 0.8,
+   "resina di abete": 0.7,
+   "note marine": 0.7,
+   "cipresso": 0.4,
+   "mirto": 0.3,
+   "sale": 0.4
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ],
+  "manca": [
+   "resina di pino"
+  ]
+ },
+ {
+  "chiave": "montagna",
+  "tipo": "luogo",
+  "forme": [
+   "montagna",
+   "aria di montagna",
+   "monti",
+   "aria fina",
+   "cime",
+   "vette",
+   "alpi",
+   "dolomiti",
+   "appennino",
+   "aria pulita di montagna"
+  ],
+  "evoca": "l'aria di montagna",
+  "accordi": {
+   "legnoso": 0.8,
+   "verde": 0.6,
+   "aromatico": 0.5,
+   "acquatico": 0.3
+  },
+  "note": {
+   "abete": 1,
+   "cipresso": 0.6,
+   "bacche di ginepro": 0.6,
+   "note ozoniche": 0.5,
+   "muschio di quercia": 0.4,
+   "resina di abete": 0.4
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "alta-montagna",
+  "tipo": "luogo",
+  "forme": [
+   "alta montagna",
+   "alta quota",
+   "in cima alla montagna",
+   "aria rarefatta",
+   "cima innevata",
+   "vette innevate",
+   "aria gelida di montagna",
+   "sopra le nuvole"
+  ],
+  "evoca": "l'alta montagna",
+  "accordi": {
+   "acquatico": 0.6,
+   "legnoso": 0.6,
+   "muschiato": 0.4,
+   "aromatico": 0.3
+  },
+  "note": {
+   "note ozoniche": 1,
+   "note minerali": 0.7,
+   "abete": 0.6,
+   "ambroxan": 0.5,
+   "muschio bianco": 0.4,
+   "iris": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "inverno": 0.5
+  },
+  "carattere": [
+   "fresco",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "ghiacciaio",
+  "tipo": "luogo",
+  "forme": [
+   "ghiacciaio",
+   "ghiacciai",
+   "ghiaccio eterno",
+   "neve perenne",
+   "nevaio",
+   "nevai",
+   "crepacci",
+   "lingua di ghiaccio"
+  ],
+  "evoca": "un ghiacciaio",
+  "accordi": {
+   "acquatico": 0.8,
+   "muschiato": 0.5,
+   "cipriato": 0.3,
+   "aromatico": 0.3
+  },
+  "note": {
+   "note ozoniche": 1,
+   "note minerali": 0.8,
+   "menta": 0.5,
+   "muschio bianco": 0.5,
+   "aldeidi": 0.4,
+   "iris": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "inverno": 0.6
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "montagna-estate",
+  "tipo": "luogo",
+  "forme": [
+   "montagna d'estate",
+   "estate in montagna",
+   "vacanze in montagna",
+   "montagna a luglio",
+   "montagna ad agosto"
+  ],
+  "evoca": "la montagna d'estate",
+  "accordi": {
+   "verde": 0.8,
+   "legnoso": 0.6,
+   "aromatico": 0.6,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "fieno": 0.8,
+   "abete": 0.7,
+   "bacche di ginepro": 0.5,
+   "timo": 0.5,
+   "camomilla": 0.4,
+   "note verdi": 0.6
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "fresco",
+   "energico"
+  ],
+  "manca": [
+   "genziana"
+  ]
+ },
+ {
+  "chiave": "montagna-inverno",
+  "tipo": "luogo",
+  "forme": [
+   "montagna d'inverno",
+   "montagna innevata",
+   "monti innevati",
+   "settimana bianca",
+   "piste da sci",
+   "montagna con la neve",
+   "paesaggio innevato"
+  ],
+  "evoca": "la montagna d'inverno",
+  "accordi": {
+   "legnoso": 0.9,
+   "acquatico": 0.3,
+   "incenso": 0.3,
+   "muschiato": 0.3
+  },
+  "note": {
+   "abete": 1,
+   "resina di abete": 0.7,
+   "note ozoniche": 0.5,
+   "cipresso": 0.5,
+   "fumo": 0.3,
+   "cachemire": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "inverno": 1
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "alpeggio",
+  "tipo": "luogo",
+  "forme": [
+   "alpeggio",
+   "pascoli",
+   "prati di montagna",
+   "malga",
+   "prati alpini",
+   "pascoli d'alta quota"
+  ],
+  "evoca": "i pascoli di montagna",
+  "accordi": {
+   "verde": 0.9,
+   "aromatico": 0.5,
+   "miele": 0.2,
+   "vaniglia": 0.2
+  },
+  "note": {
+   "fieno": 1,
+   "camomilla": 0.6,
+   "note verdi": 0.6,
+   "miele": 0.3,
+   "fava tonka": 0.3,
+   "timo": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "sentiero-montagna",
+  "tipo": "luogo",
+  "forme": [
+   "sentiero di montagna",
+   "escursione in montagna",
+   "trekking in montagna",
+   "camminata in montagna",
+   "passeggiata in montagna",
+   "gita in montagna",
+   "sentiero nel bosco"
+  ],
+  "evoca": "un sentiero di montagna",
+  "accordi": {
+   "legnoso": 0.8,
+   "verde": 0.7,
+   "aromatico": 0.5
+  },
+  "note": {
+   "abete": 0.8,
+   "bacche di ginepro": 0.6,
+   "timo": 0.5,
+   "muschio di quercia": 0.5,
+   "vetiver": 0.4,
+   "felce": 0.4
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "occasioni": [
+   "sport"
+  ],
+  "carattere": [
+   "energico",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "lago-montagna",
+  "tipo": "luogo",
+  "forme": [
+   "lago di montagna",
+   "lago alpino",
+   "laghetto di montagna",
+   "lago tra i monti",
+   "lago tra gli abeti"
+  ],
+  "evoca": "un lago di montagna",
+  "accordi": {
+   "acquatico": 1,
+   "legnoso": 0.5,
+   "verde": 0.5,
+   "aromatico": 0.2
+  },
+  "note": {
+   "note acquatiche": 1,
+   "abete": 0.6,
+   "note minerali": 0.5,
+   "note ozoniche": 0.4,
+   "menta": 0.3,
+   "felce": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "bosco",
+  "tipo": "luogo",
+  "forme": [
+   "bosco",
+   "foresta",
+   "selva",
+   "aria del bosco",
+   "passeggiata nel bosco",
+   "in mezzo agli alberi",
+   "alberi",
+   "natura",
+   "boscaglia"
+  ],
+  "evoca": "il bosco",
+  "accordi": {
+   "legnoso": 1,
+   "verde": 0.7,
+   "patchouli": 0.4,
+   "muschiato": 0.2
+  },
+  "note": {
+   "note boschive": 0.9,
+   "muschio di quercia": 0.8,
+   "legno di cedro": 0.6,
+   "vetiver": 0.6,
+   "felce": 0.4,
+   "abete": 0.4
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "bosco-inverno",
+  "tipo": "luogo",
+  "forme": [
+   "bosco d'inverno",
+   "bosco innevato",
+   "foresta innevata",
+   "bosco con la neve",
+   "bosco sotto la neve",
+   "bosco gelato",
+   "foresta d'inverno",
+   "bosco ghiacciato"
+  ],
+  "evoca": "il bosco d'inverno",
+  "accordi": {
+   "legnoso": 0.9,
+   "verde": 0.6,
+   "aromatico": 0.4,
+   "incenso": 0.2
+  },
+  "note": {
+   "abete": 1,
+   "cipresso": 0.8,
+   "bacche di ginepro": 0.7,
+   "muschio di quercia": 0.6,
+   "vetiver": 0.5,
+   "resina di abete": 0.5
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "inverno": 0.8
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "pino"
+  ]
+ },
+ {
+  "chiave": "bosco-autunno",
+  "tipo": "luogo",
+  "forme": [
+   "bosco d'autunno",
+   "bosco autunnale",
+   "foresta d'autunno",
+   "foglie secche",
+   "foglie cadute",
+   "foglie morte",
+   "tappeto di foglie",
+   "foliage",
+   "colori dell'autunno nel bosco"
+  ],
+  "evoca": "il bosco d'autunno",
+  "accordi": {
+   "patchouli": 0.8,
+   "legnoso": 0.8,
+   "verde": 0.3,
+   "speziato": 0.2
+  },
+  "note": {
+   "patchouli": 0.9,
+   "muschio di quercia": 0.7,
+   "note terrose": 0.6,
+   "vetiver": 0.5,
+   "tartufo": 0.3,
+   "legni scuri": 0.4
+  },
+  "misure": {
+   "freschezza": 2,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "autunno": 1
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "bosco-primavera",
+  "tipo": "luogo",
+  "forme": [
+   "bosco in primavera",
+   "bosco di mughetti",
+   "mughetti nel bosco",
+   "violette nel bosco",
+   "viole del bosco",
+   "sottobosco in fiore"
+  ],
+  "evoca": "il bosco in primavera",
+  "accordi": {
+   "floreale-fresco": 1,
+   "verde": 0.8,
+   "cipriato": 0.2
+  },
+  "note": {
+   "mughetto": 0.9,
+   "violetta": 0.6,
+   "foglia di violetta": 0.5,
+   "note verdi": 0.7,
+   "giacinto": 0.4,
+   "muschio di quercia": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "primavera": 1
+  },
+  "carattere": [
+   "fresco",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "bosco-pioggia",
+  "tipo": "luogo",
+  "forme": [
+   "bosco dopo la pioggia",
+   "bosco bagnato",
+   "bosco sotto la pioggia",
+   "foresta dopo la pioggia",
+   "bosco umido",
+   "alberi bagnati",
+   "foglie bagnate"
+  ],
+  "evoca": "il bosco dopo la pioggia",
+  "accordi": {
+   "verde": 0.8,
+   "legnoso": 0.7,
+   "acquatico": 0.4,
+   "patchouli": 0.4
+  },
+  "note": {
+   "muschio di quercia": 0.9,
+   "vetiver": 0.7,
+   "note verdi": 0.6,
+   "note acquatiche": 0.5,
+   "patchouli": 0.4,
+   "cipresso": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "autunno": 0.5,
+   "primavera": 0.4
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "sottobosco",
+  "tipo": "luogo",
+  "forme": [
+   "sottobosco",
+   "muschio del bosco",
+   "muschio sugli alberi",
+   "terra umida",
+   "terriccio",
+   "felci",
+   "humus",
+   "foglie umide",
+   "odore di terra"
+  ],
+  "evoca": "il sottobosco",
+  "accordi": {
+   "patchouli": 1,
+   "verde": 0.6,
+   "legnoso": 0.6
+  },
+  "note": {
+   "patchouli": 1,
+   "muschio di quercia": 0.9,
+   "felce": 0.5,
+   "vetiver": 0.5,
+   "note terrose": 0.6,
+   "tartufo": 0.4,
+   "iris": 0.2
+  },
+  "misure": {
+   "dolcezza": 1,
+   "freschezza": 2
+  },
+  "stagioni": {
+   "autunno": 0.8
+  },
+  "carattere": [
+   "misterioso",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "radura",
+  "tipo": "luogo",
+  "forme": [
+   "radura",
+   "radura nel bosco",
+   "radura soleggiata",
+   "sole tra gli alberi",
+   "luce nel bosco"
+  ],
+  "evoca": "una radura nel bosco",
+  "accordi": {
+   "verde": 0.9,
+   "legnoso": 0.6,
+   "aromatico": 0.3
+  },
+  "note": {
+   "note verdi": 0.8,
+   "fieno": 0.5,
+   "felce": 0.5,
+   "legno di cedro": 0.5,
+   "camomilla": 0.3,
+   "muschio di quercia": 0.4
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "primavera": 0.5,
+   "estate": 0.5
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "pineta",
+  "tipo": "luogo",
+  "forme": [
+   "pineta",
+   "pini",
+   "bosco di pini",
+   "resina di pino",
+   "pigne",
+   "pinoli nel bosco"
+  ],
+  "evoca": "la pineta",
+  "accordi": {
+   "legnoso": 0.9,
+   "verde": 0.6,
+   "ambrato": 0.4,
+   "incenso": 0.2
+  },
+  "note": {
+   "aghi di pino": 1,
+   "resina di abete": 0.8,
+   "abete": 0.7,
+   "cipresso": 0.5,
+   "labdano": 0.3,
+   "olibano": 0.2
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "foresta-conifere",
+  "tipo": "luogo",
+  "forme": [
+   "foresta di conifere",
+   "conifere",
+   "abetaia",
+   "bosco di abeti",
+   "abeti rossi",
+   "foresta nordica",
+   "foresta del nord",
+   "taiga",
+   "larici",
+   "bosco di larici",
+   "foresta di abeti"
+  ],
+  "evoca": "una foresta di conifere",
+  "accordi": {
+   "legnoso": 1,
+   "verde": 0.5,
+   "aromatico": 0.4,
+   "ambrato": 0.2
+  },
+  "note": {
+   "abete": 1,
+   "resina di abete": 0.8,
+   "cipresso": 0.6,
+   "bacche di ginepro": 0.5,
+   "legno di cedro": 0.5,
+   "betulla": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "inverno": 0.5
+  },
+  "carattere": [
+   "calmo",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "foresta-cedri",
+  "tipo": "luogo",
+  "forme": [
+   "foresta di cedri",
+   "bosco di cedri",
+   "cedri secolari",
+   "cedro del libano",
+   "cedri giganti"
+  ],
+  "evoca": "una foresta di cedri",
+  "accordi": {
+   "legnoso": 1,
+   "incenso": 0.3,
+   "aromatico": 0.2
+  },
+  "note": {
+   "legno di cedro": 1,
+   "cedro": 0.7,
+   "cipresso": 0.4,
+   "incenso": 0.3,
+   "vetiver": 0.3,
+   "muschio di quercia": 0.3
+  },
+  "misure": {
+   "dolcezza": 1
+  },
+  "carattere": [
+   "sicuro",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "faggeta",
+  "tipo": "luogo",
+  "forme": [
+   "faggeta",
+   "faggi",
+   "bosco di faggi",
+   "querceto",
+   "bosco di querce",
+   "querce secolari",
+   "bosco di betulle",
+   "betulle bianche",
+   "bosco di latifoglie"
+  ],
+  "evoca": "una faggeta",
+  "accordi": {
+   "legnoso": 1,
+   "verde": 0.6,
+   "patchouli": 0.2
+  },
+  "note": {
+   "quercia": 0.8,
+   "muschio di quercia": 0.8,
+   "betulla": 0.6,
+   "note boschive": 0.7,
+   "vetiver": 0.4,
+   "felce": 0.4
+  },
+  "misure": {
+   "dolcezza": 1,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.5
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "castagneto",
+  "tipo": "luogo",
+  "forme": [
+   "castagneto",
+   "castagni",
+   "bosco di castagni",
+   "raccolta delle castagne",
+   "andar per castagne",
+   "ricci di castagna"
+  ],
+  "evoca": "un castagneto d'autunno",
+  "accordi": {
+   "legnoso": 0.8,
+   "patchouli": 0.5,
+   "gourmand": 0.4
+  },
+  "note": {
+   "castagna": 0.8,
+   "muschio di quercia": 0.6,
+   "patchouli": 0.6,
+   "note terrose": 0.4,
+   "legni scuri": 0.4,
+   "crema di castagne": 0.2
+  },
+  "misure": {
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "autunno": 1
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "foresta-pluviale",
+  "tipo": "luogo",
+  "forme": [
+   "foresta pluviale",
+   "giungla",
+   "jungle",
+   "foresta tropicale",
+   "foresta amazzonica",
+   "amazzonia",
+   "vegetazione tropicale",
+   "foresta umida",
+   "foresta equatoriale"
+  ],
+  "evoca": "la foresta tropicale",
+  "accordi": {
+   "verde": 1,
+   "floreale-bianco": 0.4,
+   "fruttato": 0.3,
+   "patchouli": 0.3,
+   "acquatico": 0.3
+  },
+  "note": {
+   "note verdi": 0.9,
+   "galbano": 0.6,
+   "bambù": 0.5,
+   "orchidea": 0.5,
+   "frutto della passione": 0.4,
+   "patchouli": 0.4,
+   "note acquatiche": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "carattere": [
+   "audace",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "bosco-bambu",
+  "tipo": "luogo",
+  "forme": [
+   "bosco di bambù",
+   "foresta di bambù",
+   "bambuseto",
+   "canne di bambù",
+   "boschetto di bambù"
+  ],
+  "evoca": "un bosco di bambù",
+  "accordi": {
+   "verde": 1,
+   "acquatico": 0.4,
+   "tè": 0.3
+  },
+  "note": {
+   "bambù": 1,
+   "note verdi": 0.7,
+   "note acquatiche": 0.5,
+   "tè verde": 0.4,
+   "papiro": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "eucalipti",
+  "tipo": "luogo",
+  "forme": [
+   "bosco di eucalipti",
+   "eucalipteto",
+   "eucalipti al mare",
+   "boschetto di eucalipti",
+   "alberi di eucalipto"
+  ],
+  "evoca": "un bosco di eucalipti",
+  "accordi": {
+   "aromatico": 1,
+   "verde": 0.5,
+   "legnoso": 0.3
+  },
+  "note": {
+   "menta": 0.8,
+   "rosmarino": 0.6,
+   "cipresso": 0.4,
+   "note verdi": 0.4,
+   "menta speziata": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "fresco",
+   "energico"
+  ],
+  "manca": [
+   "eucalipto"
+  ]
+ },
+ {
+  "chiave": "prato",
+  "tipo": "luogo",
+  "forme": [
+   "prato",
+   "erba",
+   "erba verde",
+   "distesa d'erba",
+   "prato verde",
+   "distesa verde"
+  ],
+  "evoca": "un prato",
+  "accordi": {
+   "verde": 1,
+   "floreale-fresco": 0.3,
+   "aromatico": 0.2,
+   "muschiato": 0.2
+  },
+  "note": {
+   "note verdi": 1,
+   "foglie verdi": 0.6,
+   "galbano": 0.4,
+   "fieno": 0.3,
+   "muschio bianco": 0.2
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "primavera": 0.7
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "prato-fiorito",
+  "tipo": "luogo",
+  "forme": [
+   "prato fiorito",
+   "fiori di campo",
+   "fiori selvatici",
+   "prato di fiori",
+   "campo di fiori",
+   "margherite",
+   "papaveri",
+   "campo di papaveri",
+   "prato in primavera",
+   "prato di margherite"
+  ],
+  "evoca": "un prato fiorito",
+  "accordi": {
+   "floreale-fresco": 1,
+   "verde": 0.7,
+   "aromatico": 0.3,
+   "miele": 0.2
+  },
+  "note": {
+   "note floreali": 0.8,
+   "mughetto": 0.5,
+   "camomilla": 0.5,
+   "fieno": 0.4,
+   "note verdi": 0.6,
+   "biancospino": 0.4
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "primavera": 1
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "prato-tagliato",
+  "tipo": "luogo",
+  "forme": [
+   "prato appena tagliato",
+   "erba tagliata",
+   "erba appena tagliata",
+   "taglio dell'erba",
+   "erba falciata",
+   "tosaerba",
+   "sfalcio",
+   "prato rasato"
+  ],
+  "evoca": "l'erba appena tagliata",
+  "accordi": {
+   "verde": 1,
+   "aromatico": 0.3
+  },
+  "note": {
+   "note verdi": 1,
+   "galbano": 0.7,
+   "foglie verdi": 0.6,
+   "foglia di violetta": 0.4,
+   "fieno": 0.4,
+   "cetriolo": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "primavera": 0.6,
+   "estate": 0.5
+  },
+  "carattere": [
+   "energico",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "prato-rugiada",
+  "tipo": "luogo",
+  "forme": [
+   "erba bagnata",
+   "prato bagnato",
+   "rugiada",
+   "erba con la rugiada",
+   "prato all'alba",
+   "prato di mattina",
+   "rugiada del mattino",
+   "gocce di rugiada"
+  ],
+  "evoca": "l'erba bagnata di rugiada",
+  "accordi": {
+   "verde": 1,
+   "acquatico": 0.5,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "note verdi": 0.9,
+   "foglia di violetta": 0.6,
+   "note acquatiche": 0.6,
+   "galbano": 0.4,
+   "mughetto": 0.4,
+   "muschio bianco": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "momento": {
+   "giorno": 0.9
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "fieno",
+  "tipo": "luogo",
+  "forme": [
+   "fienile",
+   "balle di fieno",
+   "campo di fieno",
+   "fienagione",
+   "fieno appena tagliato",
+   "fieno al sole",
+   "covoni",
+   "pagliaio"
+  ],
+  "evoca": "il fieno al sole",
+  "accordi": {
+   "aromatico": 0.7,
+   "vaniglia": 0.5,
+   "verde": 0.5,
+   "miele": 0.3
+  },
+  "note": {
+   "fieno": 1,
+   "fava tonka": 0.8,
+   "cumarina": 0.5,
+   "camomilla": 0.4,
+   "miele": 0.3,
+   "tabacco": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "calmo",
+   "coccola"
+  ]
+ },
+ {
+  "chiave": "campo-lavanda",
+  "tipo": "luogo",
+  "forme": [
+   "campo di lavanda",
+   "lavandeto",
+   "lavanda in fiore",
+   "distese di lavanda",
+   "file di lavanda",
+   "raccolta della lavanda"
+  ],
+  "evoca": "un campo di lavanda",
+  "accordi": {
+   "aromatico": 1,
+   "floreale-fresco": 0.4,
+   "miele": 0.2,
+   "muschiato": 0.2
+  },
+  "note": {
+   "lavanda": 1,
+   "salvia sclarea": 0.4,
+   "rosmarino": 0.3,
+   "timo": 0.3,
+   "miele": 0.3,
+   "muschio bianco": 0.2
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "calmo",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "campo-grano",
+  "tipo": "luogo",
+  "forme": [
+   "campo di grano",
+   "grano maturo",
+   "spighe",
+   "spighe di grano",
+   "mietitura",
+   "grano",
+   "campi dorati",
+   "distese di grano"
+  ],
+  "evoca": "un campo di grano maturo",
+  "accordi": {
+   "verde": 0.5,
+   "vaniglia": 0.5,
+   "miele": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "fieno": 1,
+   "fava tonka": 0.6,
+   "miele": 0.5,
+   "sandalo": 0.3,
+   "iris": 0.2,
+   "legno biondo": 0.2
+  },
+  "misure": {
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "grano"
+  ]
+ },
+ {
+  "chiave": "girasoli",
+  "tipo": "luogo",
+  "forme": [
+   "girasoli",
+   "campo di girasoli",
+   "distese di girasoli"
+  ],
+  "evoca": "un campo di girasoli",
+  "accordi": {
+   "verde": 0.6,
+   "miele": 0.6,
+   "solare": 0.3,
+   "legnoso": 0.2
+  },
+  "note": {
+   "miele": 0.8,
+   "note verdi": 0.6,
+   "fieno": 0.5,
+   "mimosa": 0.3,
+   "sandalo": 0.3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "girasole"
+  ]
+ },
+ {
+  "chiave": "campo-rose",
+  "tipo": "luogo",
+  "forme": [
+   "campo di rose",
+   "valle delle rose",
+   "raccolta delle rose",
+   "rose all'alba",
+   "coltivazione di rose"
+  ],
+  "evoca": "un campo di rose all'alba",
+  "accordi": {
+   "rosa": 1,
+   "verde": 0.3,
+   "miele": 0.2
+  },
+  "note": {
+   "rosa di damasco": 1,
+   "rosa bulgara": 0.8,
+   "rosa": 0.7,
+   "note verdi": 0.3,
+   "miele": 0.2,
+   "pepe rosa": 0.2
+  },
+  "stagioni": {
+   "primavera": 0.9
+  },
+  "momento": {
+   "giorno": 0.7
+  },
+  "carattere": [
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "campo-zafferano",
+  "tipo": "luogo",
+  "forme": [
+   "campo di zafferano",
+   "fiori di zafferano",
+   "raccolta dello zafferano",
+   "crochi"
+  ],
+  "evoca": "un campo di zafferano",
+  "accordi": {
+   "speziato": 0.9,
+   "cuoio": 0.3,
+   "miele": 0.2
+  },
+  "note": {
+   "zafferano": 1,
+   "fieno": 0.4,
+   "miele": 0.3,
+   "cuoio": 0.3,
+   "iris": 0.2
+  },
+  "stagioni": {
+   "autunno": 0.8
+  },
+  "carattere": [
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "campo-tabacco",
+  "tipo": "luogo",
+  "forme": [
+   "campi di tabacco",
+   "piantagione di tabacco",
+   "tabacco in foglia",
+   "essiccatoio del tabacco",
+   "tabacco messo a seccare",
+   "tabacchificio"
+  ],
+  "evoca": "un campo di tabacco",
+  "accordi": {
+   "tabacco": 1,
+   "aromatico": 0.4,
+   "miele": 0.4,
+   "vaniglia": 0.3
+  },
+  "note": {
+   "foglia di tabacco": 1,
+   "fieno": 0.6,
+   "miele": 0.5,
+   "fava tonka": 0.4,
+   "tabacco": 0.5
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.5,
+   "autunno": 0.5
+  },
+  "carattere": [
+   "calmo",
+   "sicuro"
+  ]
+ },
+ {
+  "chiave": "piantagione-vaniglia",
+  "tipo": "luogo",
+  "forme": [
+   "piantagione di vaniglia",
+   "vaniglieto",
+   "baccelli di vaniglia",
+   "orchidea della vaniglia",
+   "vaniglia del madagascar"
+  ],
+  "evoca": "una piantagione di vaniglia",
+  "accordi": {
+   "vaniglia": 1,
+   "floreale-bianco": 0.3,
+   "verde": 0.3,
+   "ambrato": 0.3
+  },
+  "note": {
+   "vaniglia": 1,
+   "caviale di vaniglia": 0.4,
+   "orchidea": 0.4,
+   "benzoino": 0.3,
+   "note verdi": 0.3
+  },
+  "misure": {
+   "dolcezza": 4
+  },
+  "carattere": [
+   "coccola",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "piantagione-te",
+  "tipo": "luogo",
+  "forme": [
+   "piantagione di tè",
+   "campi di tè",
+   "coltivazione di tè",
+   "colline del tè",
+   "terrazze di tè",
+   "raccolta del tè"
+  ],
+  "evoca": "una piantagione di tè",
+  "accordi": {
+   "tè": 1,
+   "verde": 0.7,
+   "agrumato": 0.2,
+   "floreale-bianco": 0.2
+  },
+  "note": {
+   "tè verde": 1,
+   "tè": 0.8,
+   "note verdi": 0.5,
+   "gelsomino": 0.3,
+   "bergamotto": 0.3,
+   "note acquatiche": 0.2
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "calmo",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "piantagione-caffe",
+  "tipo": "luogo",
+  "forme": [
+   "piantagione di caffè",
+   "fiori di caffè",
+   "caffè in pianta",
+   "coltivazione di caffè"
+  ],
+  "evoca": "una piantagione di caffè",
+  "accordi": {
+   "gourmand": 0.7,
+   "verde": 0.5,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "caffè": 0.9,
+   "note verdi": 0.5,
+   "gelsomino": 0.4,
+   "cacao": 0.3,
+   "fiore d'arancio": 0.2
+  },
+  "carattere": [
+   "energico"
+  ]
+ },
+ {
+  "chiave": "piantagione-cacao",
+  "tipo": "luogo",
+  "forme": [
+   "piantagione di cacao",
+   "albero del cacao",
+   "baccelli di cacao",
+   "cacao in pianta"
+  ],
+  "evoca": "una piantagione di cacao",
+  "accordi": {
+   "gourmand": 0.9,
+   "verde": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "cacao": 1,
+   "fava di cacao": 0.7,
+   "burro di cacao": 0.4,
+   "note verdi": 0.4,
+   "legni scuri": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "carattere": [
+   "coccola",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "risaia",
+  "tipo": "luogo",
+  "forme": [
+   "risaia",
+   "campi di riso",
+   "risaie allagate",
+   "mondine",
+   "terrazze di riso"
+  ],
+  "evoca": "le risaie",
+  "accordi": {
+   "verde": 0.9,
+   "acquatico": 0.8
+  },
+  "note": {
+   "note acquatiche": 1,
+   "note verdi": 0.8,
+   "loto": 0.3,
+   "fieno": 0.3,
+   "note terrose": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "primavera": 0.5,
+   "estate": 0.5
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "riso"
+  ]
+ },
+ {
+  "chiave": "savana",
+  "tipo": "luogo",
+  "forme": [
+   "savana",
+   "erba secca",
+   "prateria",
+   "steppa",
+   "altopiano arido"
+  ],
+  "evoca": "la savana",
+  "accordi": {
+   "legnoso": 0.6,
+   "aromatico": 0.5,
+   "ambrato": 0.4,
+   "verde": 0.4
+  },
+  "note": {
+   "fieno": 0.8,
+   "vetiver": 0.7,
+   "mimosa": 0.3,
+   "ambra": 0.4,
+   "note terrose": 0.3,
+   "legno di guaiaco": 0.3
+  },
+  "misure": {
+   "freschezza": 2
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "audace"
+  ]
+ },
+ {
+  "chiave": "campagna",
+  "tipo": "luogo",
+  "forme": [
+   "campagna",
+   "aria di campagna",
+   "vita di campagna",
+   "aperta campagna",
+   "campi",
+   "casolare",
+   "cascina",
+   "fattoria",
+   "paesaggio di campagna"
+  ],
+  "evoca": "la campagna",
+  "accordi": {
+   "verde": 1,
+   "aromatico": 0.5,
+   "floreale-fresco": 0.3
+  },
+  "note": {
+   "fieno": 0.8,
+   "note verdi": 0.8,
+   "camomilla": 0.4,
+   "note terrose": 0.3,
+   "biancospino": 0.3,
+   "miele": 0.2
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "campagna-toscana",
+  "tipo": "luogo",
+  "forme": [
+   "campagna toscana",
+   "colline toscane",
+   "viale di cipressi",
+   "filari di cipressi",
+   "cipressi sulla collina",
+   "poderi"
+  ],
+  "evoca": "la campagna toscana",
+  "accordi": {
+   "legnoso": 0.8,
+   "aromatico": 0.7,
+   "verde": 0.5,
+   "cipriato": 0.2
+  },
+  "note": {
+   "cipresso": 1,
+   "foglie di olivo": 0.5,
+   "rosmarino": 0.5,
+   "fieno": 0.4,
+   "iris": 0.3,
+   "vetiver": 0.3
+  },
+  "stagioni": {
+   "estate": 0.5,
+   "autunno": 0.4
+  },
+  "carattere": [
+   "elegante",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "collina",
+  "tipo": "luogo",
+  "forme": [
+   "collina",
+   "colli",
+   "dolci colline",
+   "collinette",
+   "paesaggio collinare"
+  ],
+  "evoca": "le colline",
+  "accordi": {
+   "verde": 0.9,
+   "aromatico": 0.5,
+   "legnoso": 0.5
+  },
+  "note": {
+   "note verdi": 0.8,
+   "fieno": 0.5,
+   "timo": 0.4,
+   "cipresso": 0.4,
+   "vetiver": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "siepe-campagna",
+  "tipo": "luogo",
+  "forme": [
+   "siepi di campagna",
+   "siepe di biancospino",
+   "rose selvatiche",
+   "rosa canina",
+   "rovi",
+   "bordo dei campi"
+  ],
+  "evoca": "le siepi di campagna",
+  "accordi": {
+   "floreale-fresco": 0.7,
+   "fruttato": 0.6,
+   "verde": 0.6,
+   "rosa": 0.4
+  },
+  "note": {
+   "biancospino": 0.8,
+   "bacche selvatiche": 0.7,
+   "rosa": 0.5,
+   "ribes nero": 0.5,
+   "note verdi": 0.5
+  },
+  "stagioni": {
+   "primavera": 0.5,
+   "estate": 0.5
+  },
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "more"
+  ]
+ },
+ {
+  "chiave": "brughiera",
+  "tipo": "luogo",
+  "forme": [
+   "brughiera",
+   "erica",
+   "landa",
+   "lande selvagge",
+   "distese di erica"
+  ],
+  "evoca": "la brughiera",
+  "accordi": {
+   "verde": 0.7,
+   "miele": 0.5,
+   "legnoso": 0.5,
+   "aromatico": 0.4
+  },
+  "note": {
+   "fieno": 0.6,
+   "miele": 0.6,
+   "muschio di quercia": 0.5,
+   "felce": 0.5,
+   "vetiver": 0.4,
+   "betulla": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "autunno": 0.6
+  },
+  "carattere": [
+   "misterioso",
+   "calmo"
+  ],
+  "manca": [
+   "erica"
+  ]
+ },
+ {
+  "chiave": "palude",
+  "tipo": "luogo",
+  "forme": [
+   "palude",
+   "torbiera",
+   "acquitrino",
+   "stagno",
+   "canneto"
+  ],
+  "evoca": "la palude",
+  "accordi": {
+   "patchouli": 0.8,
+   "legnoso": 0.6,
+   "verde": 0.5,
+   "incenso": 0.3
+  },
+  "note": {
+   "vetiver": 0.8,
+   "note terrose": 0.7,
+   "patchouli": 0.6,
+   "muschio di quercia": 0.6,
+   "fumo": 0.4,
+   "note acquatiche": 0.4,
+   "betulla": 0.3
+  },
+  "misure": {
+   "dolcezza": 1
+  },
+  "carattere": [
+   "misterioso"
+  ],
+  "manca": [
+   "torba"
+  ]
+ },
+ {
+  "chiave": "lago",
+  "tipo": "luogo",
+  "forme": [
+   "lago",
+   "riva del lago",
+   "sponde del lago",
+   "lungolago",
+   "laghetto",
+   "specchio d'acqua"
+  ],
+  "evoca": "il lago",
+  "accordi": {
+   "acquatico": 1,
+   "verde": 0.6,
+   "muschiato": 0.2,
+   "floreale-fresco": 0.2
+  },
+  "note": {
+   "note acquatiche": 1,
+   "loto": 0.4,
+   "note verdi": 0.5,
+   "ninfea": 0.3,
+   "muschio bianco": 0.3,
+   "vetiver": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "fiume",
+  "tipo": "luogo",
+  "forme": [
+   "fiume",
+   "riva del fiume",
+   "lungofiume",
+   "argine",
+   "sponda del fiume",
+   "ansa del fiume"
+  ],
+  "evoca": "la riva di un fiume",
+  "accordi": {
+   "acquatico": 0.9,
+   "verde": 0.7,
+   "legnoso": 0.3
+  },
+  "note": {
+   "note acquatiche": 0.9,
+   "note verdi": 0.6,
+   "vetiver": 0.5,
+   "papiro": 0.4,
+   "muschio di quercia": 0.3,
+   "note terrose": 0.3
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "ruscello",
+  "tipo": "luogo",
+  "forme": [
+   "ruscello",
+   "torrente",
+   "sorgente",
+   "fonte",
+   "acqua che scorre",
+   "sorgente di montagna",
+   "rigagnolo"
+  ],
+  "evoca": "un ruscello di montagna",
+  "accordi": {
+   "acquatico": 1,
+   "verde": 0.6,
+   "aromatico": 0.2
+  },
+  "note": {
+   "note acquatiche": 1,
+   "note minerali": 0.6,
+   "menta": 0.4,
+   "note verdi": 0.5,
+   "felce": 0.4,
+   "cetriolo": 0.3
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "fresco",
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "cascata",
+  "tipo": "luogo",
+  "forme": [
+   "cascata",
+   "cascata nel bosco",
+   "spruzzi d'acqua",
+   "acqua che cade",
+   "salto d'acqua"
+  ],
+  "evoca": "una cascata",
+  "accordi": {
+   "acquatico": 1,
+   "verde": 0.5,
+   "muschiato": 0.2
+  },
+  "note": {
+   "note acquatiche": 1,
+   "note ozoniche": 0.8,
+   "note minerali": 0.5,
+   "note verdi": 0.5,
+   "felce": 0.4,
+   "muschio bianco": 0.2
+  },
+  "misure": {
+   "freschezza": 5,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "energico",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "grotta",
+  "tipo": "luogo",
+  "forme": [
+   "grotta",
+   "caverna",
+   "roccia umida",
+   "pietra umida",
+   "antro",
+   "grotta carsica"
+  ],
+  "evoca": "una grotta",
+  "accordi": {
+   "patchouli": 0.6,
+   "acquatico": 0.5,
+   "legnoso": 0.4,
+   "incenso": 0.3
+  },
+  "note": {
+   "note minerali": 1,
+   "note terrose": 0.6,
+   "patchouli": 0.5,
+   "muschio di quercia": 0.5,
+   "note acquatiche": 0.4,
+   "incenso": 0.3
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "vulcano",
+  "tipo": "luogo",
+  "forme": [
+   "vulcano",
+   "isola vulcanica",
+   "terra vulcanica",
+   "pietra lavica",
+   "sabbia nera",
+   "lava"
+  ],
+  "evoca": "un'isola vulcanica",
+  "accordi": {
+   "incenso": 0.6,
+   "speziato": 0.4,
+   "acquatico": 0.4,
+   "legnoso": 0.3
+  },
+  "note": {
+   "note minerali": 0.9,
+   "fumo": 0.7,
+   "pepe nero": 0.5,
+   "note marine": 0.4,
+   "fico": 0.3,
+   "legno di guaiaco": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "carattere": [
+   "audace",
+   "misterioso"
+  ],
+  "manca": [
+   "zolfo"
+  ]
+ },
+ {
+  "chiave": "deserto",
+  "tipo": "luogo",
+  "forme": [
+   "deserto",
+   "dune del deserto",
+   "sabbie del deserto",
+   "sahara",
+   "deserto rovente",
+   "carovana nel deserto"
+  ],
+  "evoca": "il deserto",
+  "accordi": {
+   "ambrato": 1,
+   "speziato": 0.6,
+   "oud": 0.4,
+   "incenso": 0.4
+  },
+  "note": {
+   "ambra": 1,
+   "labdano": 0.6,
+   "zafferano": 0.5,
+   "legno di agar": 0.4,
+   "incenso": 0.4,
+   "note minerali": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "freschezza": 1
+  },
+  "carattere": [
+   "audace",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "deserto-notte",
+  "tipo": "luogo",
+  "forme": [
+   "notte nel deserto",
+   "deserto di notte",
+   "tenda nel deserto",
+   "cielo stellato nel deserto",
+   "accampamento nel deserto",
+   "notte tra le dune"
+  ],
+  "evoca": "una notte nel deserto",
+  "accordi": {
+   "incenso": 0.8,
+   "oud": 0.7,
+   "ambrato": 0.7,
+   "speziato": 0.4
+  },
+  "note": {
+   "incenso": 0.8,
+   "legno di agar": 0.7,
+   "ambra": 0.7,
+   "zafferano": 0.5,
+   "cardamomo": 0.4,
+   "rosa": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "persistenza": 4
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "misterioso",
+   "sensuale"
+  ]
+ },
+ {
+  "chiave": "oasi",
+  "tipo": "luogo",
+  "forme": [
+   "oasi",
+   "oasi nel deserto",
+   "palmeto",
+   "palme da dattero",
+   "sorgente nel deserto",
+   "giardino nel deserto"
+  ],
+  "evoca": "un'oasi",
+  "accordi": {
+   "verde": 0.6,
+   "acquatico": 0.6,
+   "ambrato": 0.5,
+   "fruttato": 0.4
+  },
+  "note": {
+   "note acquatiche": 0.6,
+   "fico": 0.5,
+   "note verdi": 0.5,
+   "ambra": 0.5,
+   "fiore d'arancio": 0.4,
+   "caramello": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "carattere": [
+   "calmo",
+   "misterioso"
+  ],
+  "manca": [
+   "datteri"
+  ]
+ },
+ {
+  "chiave": "giardino",
+  "tipo": "luogo",
+  "forme": [
+   "giardino",
+   "giardino fiorito",
+   "aiuole",
+   "giardinetto",
+   "giardino di casa"
+  ],
+  "evoca": "un giardino fiorito",
+  "accordi": {
+   "floreale-fresco": 1,
+   "verde": 0.7,
+   "rosa": 0.4
+  },
+  "note": {
+   "note verdi": 0.7,
+   "peonia": 0.6,
+   "rosa": 0.6,
+   "mughetto": 0.5,
+   "geranio": 0.4,
+   "foglie verdi": 0.4
+  },
+  "misure": {
+   "freschezza": 3,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "primavera": 0.7
+  },
+  "carattere": [
+   "allegro",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "giardino-inglese",
+  "tipo": "luogo",
+  "forme": [
+   "giardino inglese",
+   "giardino di rose",
+   "roseto",
+   "cespugli di rose",
+   "rose in fiore",
+   "roseto in fiore",
+   "pergolato di rose",
+   "rose rampicanti"
+  ],
+  "evoca": "un giardino di rose",
+  "accordi": {
+   "rosa": 1,
+   "verde": 0.5,
+   "floreale-fresco": 0.5,
+   "cipriato": 0.2
+  },
+  "note": {
+   "rosa": 1,
+   "rosa di damasco": 0.7,
+   "peonia": 0.5,
+   "geranio": 0.4,
+   "note verdi": 0.4,
+   "violetta": 0.2
+  },
+  "stagioni": {
+   "primavera": 0.9
+  },
+  "carattere": [
+   "romantico",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "giardino-mediterraneo",
+  "tipo": "luogo",
+  "forme": [
+   "giardino mediterraneo",
+   "giardino sul mare",
+   "terrazza fiorita sul mare",
+   "giardino del sud"
+  ],
+  "evoca": "un giardino mediterraneo",
+  "accordi": {
+   "aromatico": 0.7,
+   "agrumato": 0.7,
+   "floreale-bianco": 0.5,
+   "verde": 0.4
+  },
+  "note": {
+   "fiore d'arancio": 0.7,
+   "rosmarino": 0.6,
+   "limone": 0.6,
+   "gelsomino": 0.5,
+   "fico": 0.4,
+   "cipresso": 0.3,
+   "lavanda": 0.3
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "allegro",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "giardino-zen",
+  "tipo": "luogo",
+  "forme": [
+   "giardino giapponese",
+   "giardino zen",
+   "giardino orientale",
+   "tempio giapponese",
+   "laghetto con le carpe"
+  ],
+  "evoca": "un giardino giapponese",
+  "accordi": {
+   "tè": 0.8,
+   "verde": 0.7,
+   "legnoso": 0.6,
+   "acquatico": 0.3
+  },
+  "note": {
+   "tè verde": 0.8,
+   "bambù": 0.7,
+   "legno di cedro": 0.6,
+   "note acquatiche": 0.4,
+   "muschio di quercia": 0.4,
+   "yuzu": 0.3
+  },
+  "misure": {
+   "intensita": 2,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "calmo",
+   "elegante"
+  ],
+  "manca": [
+   "legno di hinoki"
+  ]
+ },
+ {
+  "chiave": "ciliegi-fiore",
+  "tipo": "luogo",
+  "forme": [
+   "ciliegi in fiore",
+   "fiori di ciliegio",
+   "fioritura dei ciliegi",
+   "sakura",
+   "hanami"
+  ],
+  "evoca": "i ciliegi in fiore",
+  "accordi": {
+   "floreale-fresco": 1,
+   "fruttato": 0.4,
+   "cipriato": 0.3,
+   "muschiato": 0.3
+  },
+  "note": {
+   "note floreali": 0.6,
+   "peonia": 0.6,
+   "ciliegia": 0.5,
+   "mandorla": 0.4,
+   "eliotropio": 0.4,
+   "muschio bianco": 0.4
+  },
+  "misure": {
+   "dolcezza": 3,
+   "intensita": 2
+  },
+  "stagioni": {
+   "primavera": 1
+  },
+  "carattere": [
+   "romantico"
+  ],
+  "manca": [
+   "fiore di ciliegio"
+  ]
+ },
+ {
+  "chiave": "giardino-notte",
+  "tipo": "luogo",
+  "forme": [
+   "giardino di notte",
+   "giardino la sera",
+   "giardino al chiaro di luna",
+   "notte d'estate in giardino",
+   "fiori della notte"
+  ],
+  "evoca": "un giardino di notte",
+  "accordi": {
+   "floreale-bianco": 1,
+   "verde": 0.4,
+   "muschiato": 0.2
+  },
+  "note": {
+   "gelsomino": 0.8,
+   "tuberosa": 0.7,
+   "gardenia": 0.5,
+   "note verdi": 0.4,
+   "datura": 0.3,
+   "muschio": 0.3
+  },
+  "misure": {
+   "intensita": 4
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "momento": {
+   "sera": 1
+  },
+  "carattere": [
+   "sensuale",
+   "misterioso"
+  ]
+ },
+ {
+  "chiave": "serra",
+  "tipo": "luogo",
+  "forme": [
+   "serra tropicale",
+   "serra",
+   "orto botanico",
+   "giardino botanico",
+   "serra di orchidee"
+  ],
+  "evoca": "una serra tropicale",
+  "accordi": {
+   "verde": 1,
+   "floreale-bianco": 0.6,
+   "acquatico": 0.2
+  },
+  "note": {
+   "note verdi": 0.8,
+   "orchidea": 0.7,
+   "gardenia": 0.4,
+   "galbano": 0.4,
+   "felce": 0.3,
+   "note acquatiche": 0.3
+  },
+  "carattere": [
+   "misterioso",
+   "elegante"
+  ]
+ },
+ {
+  "chiave": "gelsomini-fiore",
+  "tipo": "luogo",
+  "forme": [
+   "gelsomini in fiore",
+   "pergola di gelsomino",
+   "gelsomino rampicante",
+   "siepe di gelsomino",
+   "gelsomino notturno",
+   "muro di gelsomino"
+  ],
+  "evoca": "i gelsomini in fiore",
+  "accordi": {
+   "floreale-bianco": 1,
+   "verde": 0.3,
+   "solare": 0.2
+  },
+  "note": {
+   "gelsomino": 1,
+   "gelsomino sambac": 0.7,
+   "fiore d'arancio": 0.4,
+   "ylang ylang": 0.3,
+   "note verdi": 0.3
+  },
+  "misure": {
+   "intensita": 4,
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "momento": {
+   "sera": 0.6
+  },
+  "carattere": [
+   "sensuale",
+   "romantico"
+  ]
+ },
+ {
+  "chiave": "tiglio",
+  "tipo": "luogo",
+  "forme": [
+   "tiglio in fiore",
+   "tigli in fiore",
+   "tiglio",
+   "tigli",
+   "viale di tigli",
+   "fiori di tiglio",
+   "viale alberato in fiore"
+  ],
+  "evoca": "i tigli in fiore",
+  "accordi": {
+   "floreale-fresco": 0.8,
+   "miele": 0.7,
+   "verde": 0.4
+  },
+  "note": {
+   "miele": 0.8,
+   "note floreali": 0.5,
+   "note verdi": 0.5,
+   "mimosa": 0.4,
+   "camomilla": 0.3,
+   "eliotropio": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "primavera": 0.6,
+   "estate": 0.5
+  },
+  "carattere": [
+   "coccola",
+   "calmo"
+  ],
+  "manca": [
+   "tiglio"
+  ]
+ },
+ {
+  "chiave": "glicine",
+  "tipo": "luogo",
+  "forme": [
+   "glicine",
+   "glicine in fiore",
+   "pergolato di glicine",
+   "glicine sul muro",
+   "cascate di glicine"
+  ],
+  "evoca": "il glicine in fiore",
+  "accordi": {
+   "floreale-fresco": 1,
+   "cipriato": 0.3,
+   "verde": 0.2
+  },
+  "note": {
+   "lillà": 0.7,
+   "giacinto": 0.6,
+   "note floreali": 0.5,
+   "violetta": 0.4,
+   "mughetto": 0.3
+  },
+  "stagioni": {
+   "primavera": 1
+  },
+  "carattere": [
+   "romantico",
+   "elegante"
+  ],
+  "manca": [
+   "glicine"
+  ]
+ },
+ {
+  "chiave": "caprifoglio",
+  "tipo": "luogo",
+  "forme": [
+   "caprifoglio",
+   "madreselva",
+   "siepe di caprifoglio",
+   "caprifoglio in fiore",
+   "fiori di caprifoglio"
+  ],
+  "evoca": "il caprifoglio in fiore",
+  "accordi": {
+   "floreale-bianco": 0.7,
+   "miele": 0.6,
+   "verde": 0.4,
+   "fruttato": 0.2
+  },
+  "note": {
+   "gelsomino": 0.6,
+   "miele": 0.6,
+   "fiore d'arancio": 0.4,
+   "note verdi": 0.4,
+   "pesca": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "estate": 0.7
+  },
+  "carattere": [
+   "romantico"
+  ],
+  "manca": [
+   "caprifoglio"
+  ]
+ },
+ {
+  "chiave": "sambuco",
+  "tipo": "luogo",
+  "forme": [
+   "sambuco in fiore",
+   "fiori di sambuco",
+   "siepe di sambuco"
+  ],
+  "evoca": "il sambuco in fiore",
+  "accordi": {
+   "floreale-fresco": 0.8,
+   "verde": 0.6,
+   "fruttato": 0.4,
+   "miele": 0.2
+  },
+  "note": {
+   "note verdi": 0.6,
+   "ribes nero": 0.5,
+   "pera": 0.4,
+   "miele": 0.4,
+   "mughetto": 0.4
+  },
+  "misure": {
+   "freschezza": 4
+  },
+  "stagioni": {
+   "primavera": 0.8
+  },
+  "carattere": [
+   "fresco",
+   "allegro"
+  ],
+  "manca": [
+   "sambuco"
+  ]
+ },
+ {
+  "chiave": "orto",
+  "tipo": "luogo",
+  "forme": [
+   "orto",
+   "orto di casa",
+   "ortaggi",
+   "orto in estate"
+  ],
+  "evoca": "l'orto d'estate",
+  "accordi": {
+   "verde": 1,
+   "aromatico": 0.5
+  },
+  "note": {
+   "note verdi": 0.8,
+   "foglie verdi": 0.7,
+   "basilico": 0.6,
+   "galbano": 0.5,
+   "cetriolo": 0.4,
+   "rabarbaro": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "estate": 0.8
+  },
+  "carattere": [
+   "fresco"
+  ],
+  "manca": [
+   "foglia di pomodoro"
+  ]
+ },
+ {
+  "chiave": "orto-aromatico",
+  "tipo": "luogo",
+  "forme": [
+   "orto aromatico",
+   "giardino delle erbe",
+   "aiuola di erbe",
+   "erbe del giardino",
+   "vasi di erbe sul balcone"
+  ],
+  "evoca": "un orto di erbe aromatiche",
+  "accordi": {
+   "aromatico": 1,
+   "verde": 0.5
+  },
+  "note": {
+   "rosmarino": 0.8,
+   "salvia": 0.6,
+   "timo": 0.6,
+   "basilico": 0.6,
+   "menta": 0.5,
+   "lavanda": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 1
+  },
+  "carattere": [
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "sotto-fico",
+  "tipo": "luogo",
+  "forme": [
+   "sotto il fico",
+   "all'ombra del fico",
+   "pianta di fico",
+   "fichi maturi sull'albero",
+   "fico in giardino"
+  ],
+  "evoca": "l'ombra di un albero di fico",
+  "accordi": {
+   "verde": 0.9,
+   "fruttato": 0.6,
+   "legnoso": 0.3,
+   "solare": 0.2
+  },
+  "note": {
+   "foglia di fico": 0.8,
+   "fico": 0.8,
+   "albero di fico": 0.6,
+   "note verdi": 0.5,
+   "latte di cocco": 0.3,
+   "sandalo": 0.3
+  },
+  "stagioni": {
+   "estate": 1
+  },
+  "carattere": [
+   "calmo"
+  ]
+ },
+ {
+  "chiave": "frutteto",
+  "tipo": "luogo",
+  "forme": [
+   "frutteto",
+   "alberi da frutto",
+   "raccolta della frutta",
+   "meleto",
+   "mele sull'albero",
+   "pereto",
+   "pescheto"
+  ],
+  "evoca": "un frutteto",
+  "accordi": {
+   "fruttato": 1,
+   "verde": 0.6,
+   "floreale-fresco": 0.2
+  },
+  "note": {
+   "mela": 0.8,
+   "pera": 0.7,
+   "pesca": 0.6,
+   "note verdi": 0.5,
+   "albicocca": 0.3,
+   "fiore di pero": 0.3
+  },
+  "misure": {
+   "dolcezza": 3,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 0.6,
+   "autunno": 0.5
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "frutteto-fiore",
+  "tipo": "luogo",
+  "forme": [
+   "frutteto in fiore",
+   "alberi in fiore",
+   "peschi in fiore",
+   "meli in fiore",
+   "fiori di pesco",
+   "fiori di melo",
+   "mandorli in fiore",
+   "fioritura degli alberi"
+  ],
+  "evoca": "un frutteto in fiore",
+  "accordi": {
+   "floreale-fresco": 1,
+   "fruttato": 0.4,
+   "cipriato": 0.2
+  },
+  "note": {
+   "biancospino": 0.7,
+   "fiore di pero": 0.5,
+   "mandorla": 0.4,
+   "note floreali": 0.5,
+   "pesca": 0.4,
+   "eliotropio": 0.3
+  },
+  "misure": {
+   "dolcezza": 2,
+   "freschezza": 3
+  },
+  "stagioni": {
+   "primavera": 1
+  },
+  "carattere": [
+   "romantico",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "agrumeto",
+  "tipo": "luogo",
+  "forme": [
+   "agrumeto",
+   "giardino di agrumi",
+   "piantagione di agrumi",
+   "alberi di agrumi",
+   "agrumi sull'albero"
+  ],
+  "evoca": "un agrumeto",
+  "accordi": {
+   "agrumato": 1,
+   "floreale-bianco": 0.4,
+   "verde": 0.4
+  },
+  "note": {
+   "arancia": 0.8,
+   "limone": 0.8,
+   "bergamotto": 0.5,
+   "mandarino": 0.6,
+   "neroli": 0.5,
+   "fiore d'arancio": 0.4
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "stagioni": {
+   "estate": 0.6
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ],
+  "manca": [
+   "foglia di agrume"
+  ]
+ },
+ {
+  "chiave": "limonaia",
+  "tipo": "luogo",
+  "forme": [
+   "limonaia",
+   "limoneto",
+   "alberi di limone",
+   "limoni sull'albero",
+   "giardino di limoni",
+   "terrazze di limoni",
+   "pergolato di limoni",
+   "limoni in costiera"
+  ],
+  "evoca": "una limonaia",
+  "accordi": {
+   "agrumato": 1,
+   "verde": 0.5,
+   "floreale-bianco": 0.3
+  },
+  "note": {
+   "limone": 1,
+   "limone di sicilia": 0.4,
+   "fiore d'arancio": 0.4,
+   "verbena": 0.4,
+   "note verdi": 0.5,
+   "bergamotto": 0.3
+  },
+  "misure": {
+   "freschezza": 5
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "allegro",
+   "fresco"
+  ]
+ },
+ {
+  "chiave": "aranceto",
+  "tipo": "luogo",
+  "forme": [
+   "aranceto",
+   "arance sull'albero",
+   "raccolta delle arance",
+   "alberi di arance",
+   "giardino di aranci",
+   "aranci"
+  ],
+  "evoca": "un aranceto",
+  "accordi": {
+   "agrumato": 1,
+   "fruttato": 0.4,
+   "verde": 0.3
+  },
+  "note": {
+   "arancia": 1,
+   "arancia rossa": 0.6,
+   "mandarino": 0.6,
+   "scorza di arancia": 0.5,
+   "arancia dolce": 0.4,
+   "note verdi": 0.3
+  },
+  "misure": {
+   "freschezza": 4,
+   "dolcezza": 2
+  },
+  "stagioni": {
+   "inverno": 0.5
+  },
+  "carattere": [
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "aranceto-fiore",
+  "tipo": "luogo",
+  "forme": [
+   "aranceto in fiore",
+   "zagara",
+   "aranci in fiore",
+   "agrumi in fiore",
+   "fioritura degli aranci"
+  ],
+  "evoca": "la zagara degli aranci in fiore",
+  "accordi": {
+   "floreale-bianco": 1,
+   "agrumato": 0.6,
+   "miele": 0.2
+  },
+  "note": {
+   "fiore d'arancio": 1,
+   "neroli": 0.8,
+   "arancia": 0.5,
+   "mandarino": 0.4,
+   "gelsomino": 0.3,
+   "miele": 0.2
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "primavera": 1
+  },
+  "carattere": [
+   "romantico",
+   "allegro"
+  ]
+ },
+ {
+  "chiave": "uliveto",
+  "tipo": "luogo",
+  "forme": [
+   "uliveto",
+   "oliveto",
+   "ulivi",
+   "ulivo secolare",
+   "raccolta delle olive"
+  ],
+  "evoca": "un uliveto",
+  "accordi": {
+   "verde": 1,
+   "legnoso": 0.5,
+   "aromatico": 0.4
+  },
+  "note": {
+   "foglie di olivo": 1,
+   "note verdi": 0.7,
+   "vetiver": 0.4,
+   "rosmarino": 0.3,
+   "legno di guaiaco": 0.3,
+   "fico": 0.2
+  },
+  "misure": {
+   "dolcezza": 1
+  },
+  "stagioni": {
+   "autunno": 0.5,
+   "estate": 0.5
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "olive"
+  ]
+ },
+ {
+  "chiave": "vigna",
+  "tipo": "luogo",
+  "forme": [
+   "vigna",
+   "vigneto",
+   "filari",
+   "filari di vite",
+   "pergolato d'uva",
+   "viti"
+  ],
+  "evoca": "una vigna",
+  "accordi": {
+   "verde": 0.8,
+   "fruttato": 0.6,
+   "legnoso": 0.3,
+   "boozy": 0.2
+  },
+  "note": {
+   "note verdi": 0.7,
+   "ribes nero": 0.5,
+   "prugna": 0.3,
+   "note fruttate": 0.4,
+   "legno di cedro": 0.3,
+   "note terrose": 0.3
+  },
+  "stagioni": {
+   "estate": 0.5,
+   "autunno": 0.6
+  },
+  "carattere": [
+   "calmo"
+  ],
+  "manca": [
+   "uva",
+   "foglia di vite"
+  ]
+ },
+ {
+  "chiave": "vendemmia",
+  "tipo": "luogo",
+  "forme": [
+   "vendemmia",
+   "raccolta dell'uva",
+   "pigiatura",
+   "uva appena raccolta",
+   "tempo di vendemmia"
+  ],
+  "evoca": "la vendemmia",
+  "accordi": {
+   "fruttato": 1,
+   "boozy": 0.6,
+   "legnoso": 0.3,
+   "gourmand": 0.2
+  },
+  "note": {
+   "prugna": 0.7,
+   "ribes nero": 0.6,
+   "liquore": 0.5,
+   "cognac": 0.4,
+   "fico": 0.4,
+   "legno di cedro": 0.3
+  },
+  "misure": {
+   "dolcezza": 3
+  },
+  "stagioni": {
+   "autunno": 1
+  },
+  "carattere": [
+   "allegro"
+  ],
+  "manca": [
+   "uva",
+   "mosto"
+  ]
+ },
+ {
+  "chiave": "macchia-mediterranea",
+  "tipo": "luogo",
+  "forme": [
+   "macchia mediterranea",
+   "macchia",
+   "gariga",
+   "mirto e lentisco",
+   "lentisco",
+   "cisto",
+   "elicriso",
+   "arbusti sul mare"
+  ],
+  "evoca": "la macchia mediterranea",
+  "accordi": {
+   "aromatico": 1,
+   "ambrato": 0.5,
+   "legnoso": 0.5,
+   "verde": 0.4
+  },
+  "note": {
+   "mirto": 1,
+   "labdano": 0.8,
+   "rosmarino": 0.7,
+   "timo": 0.6,
+   "salvia": 0.5,
+   "ginepro": 0.5,
+   "cipresso": 0.4
+  },
+  "misure": {
+   "freschezza": 3
+  },
+  "stagioni": {
+   "estate": 0.9
+  },
+  "carattere": [
+   "fresco",
+   "sicuro"
+  ],
+  "manca": [
+   "lentisco",
+   "elicriso"
+  ]
+ }
+]
