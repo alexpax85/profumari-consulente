@@ -3,12 +3,17 @@
 // cartella sopra); su GitHub Pages il workflow copia i JSON dentro app/dati/.
 // Si prova prima il percorso pubblicato, poi quello di sviluppo.
 
-const FILE_CONFIG = ['accordi', 'domande', 'pesi', 'frasi', 'testi', 'ricerca'];
+const FILE_CONFIG = ['accordi', 'domande', 'pesi', 'frasi', 'testi', 'ricerca', 'consulente'];
 
 // note.json (19 KB) sta fuori dalla configurazione di proposito: config finisce in
 // localStorage a ogni salvataggio e dentro ognuno dei dieci punti di ripristino.
 // Serve solo in lettura alla ricerca per note, quindi viaggia a parte.
 const FILE_NOTE = 'note';
+
+// lessico.json (il consulente a parole, docs/13-consulente.md) viaggia a parte per
+// la stessa ragione, e di più: sono centinaia di KB di sola lettura, compilati
+// fuori dal chiosco con scripts/costruisci_lessico.mjs. Non si tara, si ricompila.
+const FILE_LESSICO = 'lessico';
 
 /**
  * Versione dei profili di fabbrica. **Si alza di uno** ogni volta che
@@ -169,7 +174,7 @@ export function aggiornaConfig(salvata, difetto) {
   );
   config.domande = conElenco(config.domande || difetto.domande, 'domande', esitoDomande.domande);
 
-  for (const chiave of ['frasi', 'testi', 'pesi', 'ricerca']) {
+  for (const chiave of ['frasi', 'testi', 'pesi', 'ricerca', 'consulente']) {
     config[chiave] = fondiMancanti(config[chiave], difetto[chiave], conto);
   }
 
@@ -221,7 +226,7 @@ async function facoltativo(url) {
   }
 }
 
-/** { config: {accordi, domande, pesi, frasi, testi, ricerca}, catalogo, profili, note } */
+/** { config: {accordi, domande, pesi, frasi, testi, ricerca, consulente}, catalogo, profili, note, lessico } */
 export async function caricaPredefiniti() {
   const necessari = ['accordi', 'domande', 'pesi', 'frasi', 'testi'];
   const parti = await Promise.all(FILE_CONFIG.map((nome) => (necessari.includes(nome)
@@ -229,12 +234,13 @@ export async function caricaPredefiniti() {
     : facoltativo(`config/${nome}.json`))));
   const config = {};
   FILE_CONFIG.forEach((nome, i) => { if (parti[i]) config[nome] = parti[i]; });
-  const [catalogo, profili, note] = await Promise.all([
+  const [catalogo, profili, note, lessico] = await Promise.all([
     primoDisponibile('catalogo.json'),
     primoDisponibile('profili.json'),
     facoltativo(`config/${FILE_NOTE}.json`),
+    facoltativo(`config/${FILE_LESSICO}.json`),
   ]);
-  return { config, catalogo, profili, note: note || {} };
+  return { config, catalogo, profili, note: note || {}, lessico: lessico || null };
 }
 
 /**

@@ -67,6 +67,8 @@ const D = {
   tramonto: '<path d="M2.6 18.6h18.8"/><path d="M6.4 18.6a5.6 5.6 0 0 1 11.2 0"/><path d="M12 9V3.6M9.6 6.6 12 9l2.4-2.4"/><path d="M4.4 9.4 6 11M19.6 9.4 18 11"/>',
   vento: '<path d="M3 9h10.6a3 3 0 1 0-3-3"/><path d="M3 14h13.6a3 3 0 1 1-3 3"/><path d="M3 19h6.6"/>',
   spunta: '<path d="M4.5 12.5 9.5 17.5 19.5 6.5"/>',
+  fumetto: '<path d="M4 5.4h16v10.2H10.4L6 19.4v-3.8H4z"/><path d="M8 9.4h8M8 12.2h5.2"/>',
+  microfono: '<rect x="9" y="3.2" width="6" height="11" rx="3"/><path d="M5.6 11.4a6.4 6.4 0 0 0 12.8 0"/><path d="M12 17.8v3M8.8 20.8h6.4"/>',
 };
 
 /** I nomi disponibili, per chi deve farli scegliere (l'editor delle domande). */
@@ -95,7 +97,7 @@ const TINTE = {
   tabacco: 'notte', oud: 'notte', erba: 'salvia', foglia: 'salvia', pera: 'cipria',
   alba: 'sabbia', tramonto: 'sabbia', vento: 'salvia', cuore: 'cipria', casa: 'sabbia',
   amici: 'salvia', valigetta: 'notte', scintilla: 'cipria', persona: 'salvia', pacco: 'cipria',
-  uomo: 'salvia', donna: 'cipria', entrambi: 'sabbia',
+  uomo: 'salvia', donna: 'cipria', entrambi: 'sabbia', fumetto: 'cipria', microfono: 'notte',
 };
 
 export function tintaIcona(nome) {

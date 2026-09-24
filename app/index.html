@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>Profumari · Consulente olfattivo</title>
-<meta name="description" content="Percorso guidato: poche domande e tre codici di fragranza da provare al banco.">
+<meta name="description" content="Consulente olfattivo: poche domande, le note o un racconto a parole, e qualche codice di fragranza da provare al banco.">
 <meta name="theme-color" content="#121212">
 <meta name="color-scheme" content="light">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -43,7 +43,7 @@
   <main class="bivio" tabindex="-1">
     <h2 id="scelta-titolo">Da dove vuoi partire?</h2>
     <p id="scelta-sotto" class="sottotitolo"></p>
-    <div class="porte">
+    <div class="porte tre">
       <button id="porta-domande" class="porta" type="button">
         <span class="cerchio salvia" data-icona="sorriso"></span>
         <span class="testo">
@@ -59,6 +59,14 @@
           <span class="dettaglio" id="porta-note-detto"></span>
         </span>
         <span class="durata" id="porta-note-durata"></span>
+      </button>
+      <button id="porta-parole" class="porta" type="button">
+        <span class="cerchio cipria" data-icona="fumetto"></span>
+        <span class="testo">
+          <span class="etichetta" id="porta-parole-titolo">Raccontami cosa cerchi</span>
+          <span class="dettaglio" id="porta-parole-detto"></span>
+        </span>
+        <span class="durata" id="porta-parole-durata"></span>
       </button>
     </div>
     <p id="scelta-aiuto" class="aiuto"></p>
@@ -167,6 +175,64 @@
   <footer class="fondo">
     <button id="trovati-cambia" class="grande" type="button">Cambia le note</button>
     <button id="trovati-ricomincia" class="grande primario" type="button">Ricomincia</button>
+  </footer>
+</div>
+
+<!-- ============================================= il consulente a parole -->
+<div id="racconto" class="schermo colonna" hidden>
+  <header class="top sottile">
+    <div class="brand">
+      <img class="logo" src="img/logo.svg" alt="i profumari" draggable="false">
+      <span class="sep" aria-hidden="true"></span>
+      <h1>Consulente</h1>
+    </div>
+    <button id="esci-racconto" class="chiudi" type="button" aria-label="Ricomincia da capo">Ricomincia</button>
+  </header>
+
+  <main class="racconto" tabindex="-1">
+    <h2 id="racconto-titolo"></h2>
+    <p id="racconto-sotto" class="sottotitolo"></p>
+    <div class="frase-box">
+      <textarea id="frase" rows="3" maxlength="300" autocomplete="off" autocapitalize="sentences" spellcheck="false" aria-labelledby="racconto-titolo"></textarea>
+      <button id="microfono" class="microfono" type="button" aria-pressed="false" hidden>
+        <span class="cerchio notte" data-icona="microfono"></span>
+        <span id="microfono-testo">Parla</span>
+      </button>
+    </div>
+    <p id="racconto-messaggio" class="avviso-morbido" role="status" hidden></p>
+    <h3 id="spunti-titolo" class="spunti-titolo"></h3>
+    <div id="spunti" class="spunti"></div>
+  </main>
+
+  <footer class="fondo">
+    <button id="frase-cancella" class="grande" type="button">Cancella</button>
+    <button id="frase-vai" class="grande primario" type="button">Trova i profumi</button>
+  </footer>
+</div>
+
+<div id="consigli" class="schermo colonna" hidden>
+  <header class="top sottile">
+    <div class="brand">
+      <img class="logo" src="img/logo.svg" alt="i profumari" draggable="false">
+      <span class="sep" aria-hidden="true"></span>
+      <h1>Consulente</h1>
+    </div>
+    <button id="esci-consigli" class="chiudi" type="button" aria-label="Ricomincia da capo">Ricomincia</button>
+  </header>
+
+  <main class="esito" tabindex="-1">
+    <h2 id="consigli-titolo"></h2>
+    <p id="consigli-sotto" class="esito-sotto"></p>
+    <div id="consigli-capito" class="riepilogo"></div>
+    <p id="consigli-avviso" class="avviso-morbido" hidden></p>
+    <div id="consigli-schede" class="schede"></div>
+    <p id="consigli-banco" class="banco"></p>
+  </main>
+
+  <footer class="fondo">
+    <button id="consigli-riserva" class="grande" type="button">Nessuno mi convince</button>
+    <button id="consigli-cambia" class="grande" type="button">Cambia la frase</button>
+    <button id="consigli-ricomincia" class="grande primario" type="button">Ricomincia</button>
   </footer>
 </div>
 

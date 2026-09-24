@@ -175,6 +175,11 @@ button.porta { display: flex; flex-direction: column; align-items: flex-start; g
 button.porta:hover { background: var(--teal-bg); border-color: var(--teal); border-top-color: var(--teal); }
 button.porta .cerchio { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: var(--salvia); flex: 0 0 auto; }
 button.porta .cerchio.sabbia { background: var(--sabbia); }
+button.porta .cerchio.cipria { background: var(--cipria); }
+/* tre porte: in orizzontale, pari fra loro, quando lo schermo le tiene; sull'iPad
+   in verticale restano due per riga e la terza prende tutta la larghezza */
+@media (min-width: 760px) { .porte.tre > .porta:last-child { grid-column: 1 / -1; min-height: 150px; } }
+@media (min-width: 1080px) { .porte.tre { grid-template-columns: repeat(3, 1fr); } .porte.tre > .porta:last-child { grid-column: auto; min-height: 190px; } }
 button.porta .cerchio svg { width: 30px; height: 30px; stroke: var(--nero); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 button.porta .etichetta { display: block; font-weight: 600; font-size: 1.3rem; line-height: 1.25; }
 button.porta .dettaglio { display: block; margin-top: 6px; font-size: 1rem; font-weight: 400; color: var(--muted-forte); line-height: 1.45; }
@@ -405,3 +410,38 @@ label.casella input { width: 18px; height: 18px; }
   header.top .logo { height: 28px; }
   .kpi .v { font-size: 1.7rem; }
 }
+
+/* ================================================ il consulente a parole */
+.racconto { flex: 1 1 auto; padding: 26px 20px 20px; overflow-y: auto; display: flex; flex-direction: column; }
+.racconto:focus { outline: none; }
+.racconto h2 { font-weight: 300; font-size: 1.9rem; letter-spacing: .01em; }
+.racconto .sottotitolo { margin: 0 0 18px; color: var(--muted-forte); font-size: 1.05rem; max-width: 52ch; }
+@media (min-width: 820px) { .racconto { padding: 34px 40px 24px; } .racconto h2 { font-size: 2.3rem; } }
+
+.frase-box { display: flex; gap: 12px; align-items: stretch; margin-bottom: 14px; }
+.frase-box textarea { flex: 1 1 auto; min-height: 120px; padding: 16px 18px; border: 1px solid var(--line); border-top: 3px solid var(--teal); border-radius: var(--radius-scheda); background: var(--card); color: var(--ink); font: inherit; font-size: 1.35rem; font-weight: 300; line-height: 1.4; resize: none; }
+.frase-box textarea:focus { outline: 2px solid var(--teal); outline-offset: 1px; }
+.frase-box textarea::placeholder { color: var(--muted); font-style: italic; }
+button.microfono { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; width: 112px; min-height: 120px; padding: 10px; border: 1px solid var(--line); border-radius: var(--radius-scheda); background: var(--card); color: var(--ink); letter-spacing: .08em; font-size: .8rem; }
+button.microfono[hidden] { display: none; }
+button.microfono .cerchio { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: var(--notte); }
+button.microfono .cerchio svg { width: 30px; height: 30px; stroke: #fff; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+button.microfono.acceso { border-color: var(--teal); background: var(--teal-bg); }
+button.microfono.acceso .cerchio { background: var(--teal); animation: ascolto 1.4s ease-in-out infinite; }
+@keyframes ascolto { 0%, 100% { box-shadow: 0 0 0 0 rgba(1, 138, 134, .45); } 50% { box-shadow: 0 0 0 12px rgba(1, 138, 134, 0); } }
+@media (prefers-reduced-motion: reduce) { button.microfono.acceso .cerchio { animation: none; } }
+
+.spunti-titolo { margin: 8px 0 10px; font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted-forte); }
+.spunti { display: flex; flex-direction: column; gap: 12px; }
+.gruppo-spunti { display: flex; flex-direction: column; gap: 6px; }
+.gruppo-spunti .titolo-spunti { font-size: .9rem; color: var(--ink2); }
+.gruppo-spunti .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+/* gli spunti si toccano in piedi: non stanno sotto la misura minima del tocco */
+button.chip.spunto { min-height: var(--tap); padding: 0 16px; font-size: .95rem; font-weight: 400; }
+button.chip.spenta { background: transparent; border-style: dashed; color: var(--muted-forte); font-weight: 400; }
+
+.scheda-consiglio .piramide { border-top: 1px solid var(--line2); padding-top: 12px; }
+.scheda-consiglio .piramide .fila > .nome { flex-basis: 48px; }
+/* backoffice: la prova del consulente */
+tr.evidenza td { background: var(--teal-bg); }
+button.link { min-height: 0; padding: 0; border: 0; background: none; color: var(--teal-scuro); font-size: .9rem; font-weight: 400; letter-spacing: 0; text-transform: none; text-align: left; text-decoration: underline; }

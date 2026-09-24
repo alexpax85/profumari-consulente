@@ -7,22 +7,30 @@ import { caricaPredefiniti, aggiornaProfili, aggiornaConfig, VERSIONE_DATI } fro
 import { store, VERSIONE_STATO } from './store-locale.js';
 import { creaPercorso } from './percorso.js';
 import { creaEsplora } from './esplora.js';
+import { creaConsiglio } from './consiglio.js';
+import { preparaLessico } from './interpreta.js';
 import { creaRisultati } from './risultati.js';
 import { creaBackoffice } from './backoffice.js';
 import { raccomanda, profiliAttivi } from './motore.js';
 import { icona } from './icone.js';
 import {
   nuoveStatistiche, segnaInizio, segnaCompletato, segnaAbbandono, segnaRisposta,
-  segnaPercorso, segnaRicerca, segnaSchedaAperta,
+  segnaPercorso, segnaRicerca, segnaSchedaAperta, segnaConsulto,
 } from './statistiche.js';
 
 // La ricerca per note si legge: ci vuole più tempo di una domanda a schede.
-const INATTIVITA = { scelta: 45_000, percorso: 60_000, risultati: 90_000, ricerca: 120_000, trovati: 120_000 };
+// E chi racconta a parole ha bisogno del tempo di scrivere, o di pensarci.
+const INATTIVITA = {
+  scelta: 45_000, percorso: 60_000, risultati: 90_000, ricerca: 120_000, trovati: 120_000,
+  racconto: 120_000, consigli: 120_000,
+};
 
 let stato = null;
 let predefiniti = null;
 let percorso = null;
 let esplora = null;
+let consiglio = null;
+let lessicoPronto = null;   // il lessico preparato sul catalogo di adesso
 let risultati = null;
 let backoffice = null;
 let schermo = 'attesa';
@@ -40,6 +48,16 @@ const testi = () => stato.config.testi;
  * salvataggio e dentro ognuno dei dieci punti di ripristino (vedi dati.js).
  */
 const configRicerca = () => ({ ...stato.config, note: predefiniti.note });
+
+/**
+ * Il lessico del consulente, pronto da usare: si prepara la prima volta che serve
+ * e si rifà quando il catalogo cambia (all'uscita dal banco), perché riconosce
+ * solo le note che le referenze attive hanno davvero.
+ */
+function lessico() {
+  if (!lessicoPronto) lessicoPronto = preparaLessico(predefiniti.lessico, configRicerca(), profiliInGioco());
+  return lessicoPronto;
+}
 
 function salva() {
   if (store.disponibile()) store.salva(stato);
@@ -100,7 +118,7 @@ function profiliInGioco() {
 function vaiA(nuovo) {
   schermo = nuovo;
   // Chi non è in questo elenco non viene mai nascosto: resterebbe sopra a tutto.
-  for (const nome of ['attesa', 'scelta', 'percorso', 'risultati', 'ricerca', 'trovati', 'backoffice']) {
+  for (const nome of ['attesa', 'scelta', 'percorso', 'risultati', 'ricerca', 'trovati', 'racconto', 'consigli', 'backoffice']) {
     mostra($(`#${nome}`), nome === nuovo);
   }
   riavviaInattivita();
@@ -122,6 +140,7 @@ function riavviaInattivita() {
 function tornaInAttesa() {
   if (percorso) percorso.ferma();
   if (esplora) esplora.ferma();
+  if (consiglio) consiglio.ferma();
   vaiA('attesa');
 }
 
@@ -129,6 +148,7 @@ function tornaInAttesa() {
 function vaiAllaScelta() {
   if (percorso) percorso.ferma();
   if (esplora) esplora.ferma();
+  if (consiglio) consiglio.ferma();
   vaiA('scelta');
 }
 
@@ -151,6 +171,15 @@ function avviaRicerca() {
   salva();
   vaiA('ricerca');
   esplora.avvia();
+}
+
+// ------------------------------------------------------------ a parole
+
+function avviaRacconto() {
+  segnaInizio(stato.statistiche);
+  segnaPercorso(stato.statistiche, 'parole');
+  salva();
+  consiglio.avvia();
 }
 
 function concludiPercorso(risposte, { secondi }) {
@@ -239,7 +268,9 @@ function apriBackoffice() {
       salva,
       provaMotore: (risposte) => raccomanda(risposte, profiliInGioco(), config()),
       profiliInGioco,
-      esci: () => { backoffice.aggiornaStato(stato); tornaInAttesa(); },
+      lessico: () => predefiniti.lessico,
+      // Il catalogo o i profili possono essere cambiati: il lessico si riprepara.
+      esci: () => { backoffice.aggiornaStato(stato); lessicoPronto = null; tornaInAttesa(); },
       sostituisciStato: (nuovo) => {
         stato = nuovo;
         stato.config = aggiornaConfig(stato.config || {}, predefiniti.config).config;
@@ -269,6 +300,7 @@ function scriviTestiScelta() {
   const t = testi().scelta || {};
   const domande = t.domande || {};
   const note = t.note || {};
+  const parole = t.parole || {};
   $('#scelta-titolo').textContent = t.titolo || 'Da dove vuoi partire?';
   $('#scelta-sotto').textContent = t.sotto || '';
   $('#scelta-aiuto').textContent = t.aiuto || '';
@@ -278,6 +310,9 @@ function scriviTestiScelta() {
   $('#porta-note-titolo').textContent = note.titolo || 'Parti dalle note che ti piacciono';
   $('#porta-note-detto').textContent = note.dettaglio || '';
   $('#porta-note-durata').textContent = note.durata || '';
+  $('#porta-parole-titolo').textContent = parole.titolo || 'Raccontami cosa cerchi';
+  $('#porta-parole-detto').textContent = parole.dettaglio || '';
+  $('#porta-parole-durata').textContent = parole.durata || '';
   for (const cerchio of $$('#scelta [data-icona]')) {
     if (cerchio.firstChild) continue;
     cerchio.append(icona(cerchio.dataset.icona));
@@ -335,6 +370,20 @@ async function avvia() {
     },
   });
 
+  consiglio = creaConsiglio({
+    dammiConfig: configRicerca,
+    dammiTesti: testi,
+    dammiProfili: profiliInGioco,
+    dammiPronto: lessico,
+    vaiA,
+    allUscita: tornaInAttesa,
+    alConsulto: (desiderio, esito) => {
+      segnaConsulto(stato.statistiche, desiderio, esito);
+      salva();
+      riavviaInattivita();
+    },
+  });
+
   risultati = creaRisultati({
     dammiConfig: config,
     dammiTesti: testi,
@@ -353,12 +402,18 @@ async function avvia() {
   });
   $('#porta-domande').addEventListener('click', avviaPercorso);
   $('#porta-note').addEventListener('click', avviaRicerca);
+  $('#porta-parole').addEventListener('click', avviaRacconto);
 
   // Senza note.json la tavolozza sarebbe vuota: meglio non offrire una porta che
   // non porta da nessuna parte. Succede solo se il file manca davvero.
   if (!predefiniti.note || !predefiniti.note.note) {
     mostra($('#porta-note'), false);
     console.warn('note.json non disponibile: la ricerca per note resta chiusa.');
+  }
+  // Senza lessico il consulente a parole non capirebbe niente: la porta non si offre.
+  if (!predefiniti.lessico || !Array.isArray(predefiniti.lessico.scene)) {
+    mostra($('#porta-parole'), false);
+    console.warn('lessico.json non disponibile: il consulente a parole resta chiuso.');
   }
   $('#esci-scelta').addEventListener('click', tornaInAttesa);
   $('#esci-percorso').addEventListener('click', () => {

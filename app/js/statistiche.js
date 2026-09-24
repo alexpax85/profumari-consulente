@@ -5,7 +5,7 @@
 import { oggi } from './ui.js';
 
 export function nuoveStatistiche() {
-  return { giorni: {}, codici: {}, opzioni: {}, abbandoni: {}, percorsi: {}, note: {}, ricerche: {} };
+  return { giorni: {}, codici: {}, opzioni: {}, abbandoni: {}, percorsi: {}, note: {}, ricerche: {}, consulti: {} };
 }
 
 function giorno(statistiche) {
@@ -45,6 +45,27 @@ export function segnaRicerca(statistiche, criteri = {}, esito = {}) {
     const veti = ricerche.veti || (ricerche.veti = {});
     veti[String(chiave)] = (veti[String(chiave)] || 0) + 1;
   }
+}
+
+/**
+ * Cosa racconta chi entra dalla porta delle parole (docs/13-consulente.md).
+ * Si contano le CHIAVI delle scene capite — che sono nostre, scritte nel lessico —
+ * e mai la frase: una frase libera è un dato del cliente, e potrebbe contenere un
+ * nome commerciale. Delle parole non capite si conta solo che c'erano.
+ */
+export function segnaConsulto(statistiche, desiderio = {}, esito = null) {
+  if (!statistiche) return;
+  const c = statistiche.consulti || (statistiche.consulti = {});
+  c.fatti = (c.fatti || 0) + 1;
+  if (!esito || !esito.proposte || !esito.proposte.length) c.vuoti = (c.vuoti || 0) + 1;
+  if ((desiderio.ignorate || []).length) c.conParoleIgnote = (c.conParoleIgnote || 0) + 1;
+  for (const capita of desiderio.capito || []) {
+    const dove = capita.modo === 'no' ? 'veti' : 'scene';
+    const conteggi = c[dove] || (c[dove] = {});
+    conteggi[capita.chiave] = (conteggi[capita.chiave] || 0) + 1;
+  }
+  const codici = statistiche.codici || (statistiche.codici = {});
+  for (const p of (esito && esito.proposte) || []) codici[p.codice] = (codici[p.codice] || 0) + 1;
 }
 
 /** Il codice che il cliente si è aperto per leggerne la piramide. */
@@ -102,5 +123,6 @@ export function riepilogo(statistiche) {
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
   const percorsi = (statistiche && statistiche.percorsi) || {};
   const ricerche = (statistiche && statistiche.ricerche) || {};
-  return { giorni, iniziati, completati, mediano, codici, abbandoni, note, percorsi, ricerche };
+  const consulti = (statistiche && statistiche.consulti) || {};
+  return { giorni, iniziati, completati, mediano, codici, abbandoni, note, percorsi, ricerche, consulti };
 }

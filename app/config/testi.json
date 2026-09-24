@@ -8,7 +8,7 @@
  },
  "scelta": {
   "titolo": "Da dove vuoi partire?",
-  "sotto": "Due strade per arrivare alla stessa cosa: qualche codice da provare al banco.",
+  "sotto": "Tre strade per arrivare alla stessa cosa: qualche codice da provare al banco.",
   "domande": {
    "titolo": "Rispondi a qualche domanda",
    "dettaglio": "Posti, colori, stagioni: da come ti senti tiriamo fuori tre profumi.",
@@ -19,7 +19,12 @@
    "dettaglio": "Muschio, cuoio, agrumi, vaniglia: scegli tu gli ingredienti e guardiamo nel catalogo.",
    "durata": "quanto vuoi tu"
   },
-  "aiuto": "Se non sai decidere, comincia dalle domande: si fa in un minuto."
+  "aiuto": "Se non sai decidere, comincia dalle domande: si fa in un minuto.",
+  "parole": {
+   "titolo": "Raccontami cosa cerchi",
+   "dettaglio": "Un posto, un sapore, un ricordo: dimmelo a parole e lo cerco nelle piramidi del catalogo.",
+   "durata": "a voce o per iscritto"
+  }
  },
  "avanzamento": "{n} di {tot}",
  "risultati": {
@@ -111,5 +116,46 @@
   "sottoTolgo": "Tocca quello che non vuoi sentire: lo togliamo dalla ricerca.",
   "dentro": "Quale ti piace di più?",
   "vediTutte": "Vedi tutte le {n} note"
+ },
+ "consulente": {
+  "titolo": "Raccontami che profumo cerchi",
+  "sotto": "Un posto, un sapore, un momento, una sensazione: come lo diresti a un amico.",
+  "segnaposto": "Per esempio: fresco, come un bosco d'inverno…",
+  "parla": "Parla",
+  "ascolto": "Ti ascolto…",
+  "fermaAscolto": "Ho finito",
+  "erroreVoce": "Non riesco a sentirti: prova a scriverlo, o tocca uno spunto qui sotto.",
+  "spunti": "Oppure componi toccando",
+  "vai": "Trova i profumi",
+  "cancella": "Cancella",
+  "vuota": "Raccontami qualcosa, o tocca uno spunto.",
+  "nonCapito": "Non ho capito abbastanza per proporti qualcosa. Prova a dirmi un posto, un sapore o un momento.",
+  "ignote": "Queste parole non le conosco ancora: {parole}.",
+  "risultati": {
+   "me": {
+    "titolo": "Tre profumi per quello che racconti",
+    "sotto": "Non è una sentenza: sono tre idee da provare, cercate nelle piramidi del catalogo."
+   },
+   "regalo": {
+    "titolo": "Tre idee per il tuo regalo",
+    "sotto": "Non è una sentenza: sono tre idee da provare, cercate nelle piramidi del catalogo."
+   },
+   "banco": "Chiedi al banco di fartele sentire: di' i codici, o mostra questo schermo.",
+   "capito": "Ho capito",
+   "tocca": "Tocca una parola per toglierla, toccala di nuovo per rimetterla.",
+   "manca": "In catalogo non c'è {cose}: ti propongo quello che ci va più vicino.",
+   "allargato": "Non ho trovato tre profumi che mettano insieme tutto: qualcuno va un po' più in là.",
+   "tutteTolte": "Hai tolto tutto quello che avevo capito: rimettine una, o cambia la frase.",
+   "riserva": "Nessuno mi convince",
+   "riservaVuota": "Non ho una quarta proposta: prova a cambiare la frase.",
+   "cambia": "Cambia la frase",
+   "ricomincia": "Ricomincia"
+  },
+  "modi": {
+   "no": "niente {x}",
+   "attenuato": "non troppo {x}",
+   "poco": "un filo di {x}",
+   "forte": "tanto {x}"
+  }
  }
 }

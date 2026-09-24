@@ -5,7 +5,9 @@
 import { $, $$, el, svuota, toast, scarica, oggi, dataItaliana, chiediConferma } from './ui.js';
 import { leggiCatalogo, categoriaDaCodice, ripristinaConfig, domandeProprie, aggiornaConfig } from './dati.js';
 import { store } from './store-locale.js';
-import { SCENARI, RICERCHE } from './scenari.js';
+import { SCENARI, RICERCHE, FRASI, controllaAttese } from './scenari.js';
+import { preparaLessico, interpreta, haSostanza } from './interpreta.js';
+import { consiglia, pesiConsulente } from './consulente.js';
 import { indiceNote, cerca, impostazioni } from './ricerca.js';
 import { riepilogo, nuoveStatistiche } from './statistiche.js';
 import { creaEditorDomande } from './editor-domande.js';
@@ -20,7 +22,7 @@ const CONFIDENZE = ['alta', 'media', 'bassa'];
 const BADGE_CONFIDENZA = { alta: 'ok', media: 'sotto', bassa: 'esaurito' };
 const ETICHETTA_ATTRIBUTI = { intensita: 'Intensità', persistenza: 'Persistenza', dolcezza: 'Dolcezza', freschezza: 'Freschezza' };
 
-export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profiliInGioco, esci, sostituisciStato }) {
+export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profiliInGioco, esci, sostituisciStato, lessico }) {
   let s = stato;
   let scheda = 'catalogo';
   let filtriCatalogo = { senzaProfilo: false, bassa: false, inattivi: false, cerca: '' };
@@ -29,6 +31,8 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
   let risposteProva = { per_chi: 'me', genere: 'libero' };
   let criteriProva = { accordi: [], note: [], escludi: [], escludiNote: [] };
   let esitoImport = null; // sopravvive al ridisegno della scheda dopo il salvataggio
+  let fraseProva = "fresco, come un bosco d'inverno";
+  let esitoFrasi = null;   // la passata sulle frasi tipiche, finché non si rifà
 
   const editorDomande = creaEditorDomande({
     salva,
@@ -562,6 +566,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
     sezione.append(cardProvaRapida());
 
     sezione.append(cardRicercaNote());
+    if (lessico && lessico()) sezione.append(cardConsulente());
 
     sezione.append(el('section', { class: 'card' }, [
       el('h2', { testo: 'Valori di fabbrica' }),
@@ -804,7 +809,172 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
     ]);
   }
 
+  /**
+   * Il consulente a parole: si scrive una frase e si vede cosa ha capito, perché
+   * propone quello che propone, e come vanno le frasi tipiche di scenari.js.
+   * Il lessico non si modifica qui: si scrive in dati/lessico/ e si ricompila.
+   */
+  function cardConsulente() {
+    const consulente = s.config.consulente || (s.config.consulente = {});
+    const pesi = consulente.pesi || (consulente.pesi = {});
+    const attuali = pesiConsulente(s.config);
+    const configConNote = () => ({ ...s.config, note: predefiniti.note });
+    const profili = profiliInGioco();
+    const pronto = preparaLessico(lessico(), configConNote(), profili);
+
+    const numerico = (chiave, etichetta, min, max, passo = 0.01) => el('label', { class: 'campo' }, [
+      etichetta,
+      el('input', {
+        type: 'number', value: String(pesi[chiave] ?? attuali[chiave]), min: String(min), max: String(max), step: String(passo),
+        onchange: (e) => { pesi[chiave] = Number(e.target.value); esitoFrasi = null; salvaEDisegna(); },
+      }),
+    ]);
+
+    const numero = (v) => (typeof v === 'number' ? v.toFixed(3) : '—');
+    const esitoNodo = el('div');
+    function ricalcola() {
+      const desiderio = interpreta(fraseProva, pronto);
+      const capite = desiderio.capito.map((c) => `${c.chiave}${c.modo === 'si' ? '' : ` (${c.modo})`}`);
+      const accordi = Object.entries(desiderio.accordi).sort((a, b) => b[1] - a[1]).slice(0, 6)
+        .map(([k, v]) => `${k} ${v.toFixed(2)}`);
+      const note = Object.entries(desiderio.note).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([k]) => k);
+      const misure = Object.entries(desiderio.attributi).map(([k, v]) => `${k} ${v}`);
+      const veti = [...Object.keys(desiderio.esclusioni), ...desiderio.noteEscluse,
+        ...Object.keys(desiderio.esclusioniAttributi).map((a) => `${a} alta`)];
+      const righe = [
+        `Capito: ${capite.join(', ') || 'niente'}`,
+        `Accordi: ${accordi.join(', ') || '—'}`,
+        `Note: ${note.join(', ') || '—'}`,
+        misure.length ? `Misure: ${misure.join(', ')}` : null,
+        veti.length ? `Veti: ${veti.join(', ')}` : null,
+        desiderio.filtri.genere ? `Solo ${desiderio.filtri.genere} e unisex` : null,
+        desiderio.ignorate.length ? `Parole che il lessico non conosce: ${desiderio.ignorate.join(', ')}` : null,
+      ].filter(Boolean);
+      svuota(esitoNodo).append(...righe.map((r) => el('p', { class: 'piccolo-testo muted', testo: r })));
+      if (!haSostanza(desiderio)) {
+        esitoNodo.append(el('p', { class: 'avviso', testo: 'Con questa frase il cliente vedrebbe "non ho capito abbastanza".' }));
+        return;
+      }
+      const esito = consiglia(desiderio, profili, configConNote(), pronto);
+      const proposti = new Set(esito.proposte.map((p) => p.codice));
+      esitoNodo.append(
+        el('div', { class: 'tabella-wrap' }, [el('table', {}, [
+          el('thead', {}, [el('tr', {}, [
+            el('th', { testo: 'Codice' }), el('th', { testo: 'Famiglia' }),
+            el('th', { class: 'num', testo: 'Punteggio' }), el('th', { class: 'num', testo: 'Accordi' }),
+            el('th', { class: 'num', testo: 'Note' }),
+          ])]),
+          el('tbody', {}, esito.classifica.map((c) => {
+            const profilo = profiloDi(c.codice) || {};
+            return el('tr', { class: proposti.has(c.codice) ? 'evidenza' : '' }, [
+              el('td', { class: 'cod', testo: `${c.codice}${proposti.has(c.codice) ? ' ●' : ''}` }),
+              el('td', { testo: `${profilo.famiglia || ''} · ${profilo.sottofamiglia || ''}` }),
+              el('td', { class: 'num', testo: numero(c.totale) }),
+              el('td', { class: 'num', testo: numero(c.accordi) }),
+              el('td', { class: 'num', testo: numero(c.note) }),
+            ]);
+          })),
+        ])]),
+        ...esito.proposte.map((p) => el('p', { class: 'piccolo-testo', testo: `${p.codice}: ${p.motivi.join(' ')}` })),
+      );
+    }
+
+    const campo = el('input', {
+      type: 'text', value: fraseProva, placeholder: 'Scrivi una frase come la direbbe un cliente',
+      onchange: (e) => { fraseProva = e.target.value; ricalcola(); },
+      onkeydown: (e) => { if (e.key === 'Enter') { fraseProva = e.target.value; ricalcola(); } },
+    });
+
+    const frasiNodo = el('div');
+    function disegnaFrasi() {
+      svuota(frasiNodo);
+      if (!esitoFrasi) return;
+      const buone = esitoFrasi.filter((f) => !f.problemi.length).length;
+      frasiNodo.append(
+        el('p', { class: buone === esitoFrasi.length ? 'piccolo-testo' : 'avviso', testo: `${buone} frasi su ${esitoFrasi.length} danno quello che ci si aspetta.` }),
+        el('div', { class: 'tabella-wrap' }, [el('table', {}, [
+          el('tbody', {}, esitoFrasi.map((f) => el('tr', {}, [
+            el('td', { testo: f.problemi.length ? 'no' : 'ok' }),
+            el('td', {}, [el('button', { type: 'button', class: 'link', onclick: () => { fraseProva = f.frase; disegna(); } }, f.frase)]),
+            el('td', { class: 'mono', testo: f.codici.join(' ') }),
+            el('td', { class: 'muted piccolo-testo', testo: f.problemi.join('; ') }),
+          ]))),
+        ])]),
+      );
+    }
+
+    const perTipo = {};
+    for (const scena of lessico().scene || []) perTipo[scena.tipo] = (perTipo[scena.tipo] || 0) + 1;
+
+    ricalcola();
+    disegnaFrasi();
+    return el('section', { class: 'card' }, [
+      el('h2', { testo: 'Consulente a parole' }),
+      el('p', { class: 'muted piccolo-testo' },
+        'Il terzo percorso: il cliente racconta un posto, un sapore, un momento, e il lessico lo traduce in accordi e note. '
+        + 'Qui si tarano i pesi e si prova una frase; le scene si scrivono in dati/lessico/ e si compilano con node scripts/costruisci_lessico.mjs.'),
+      el('p', { class: 'piccolo-testo muted', testo: `${(lessico().scene || []).length} scene · ${pronto.note} note del catalogo riconosciute per nome · `
+        + Object.entries(perTipo).sort((a, b) => b[1] - a[1]).map(([t, n]) => `${t} ${n}`).join(', ') }),
+      el('div', { class: 'riga' }, [
+        numerico('accordi', 'Accordi', 0, 1), numerico('note', 'Note', 0, 1),
+        numerico('attributi', 'Misure', 0, 1), numerico('contesto', 'Contesto', 0, 1),
+      ]),
+      el('div', { class: 'riga' }, [
+        numerico('carattere', 'Carattere', 0, 1), numerico('affinitaNota', 'Nota assente, famiglia forte', 0, 1),
+        numerico('esclusione', 'Forza dei veti', 0, 3), numerico('esclusioneFuori', 'Veto che esclude', 0, 1, 0.05),
+      ]),
+      el('h3', { testo: 'Prova una frase' }),
+      el('label', { class: 'campo' }, ['Frase', campo]),
+      esitoNodo,
+      el('h3', { testo: 'Le frasi tipiche' }),
+      el('div', { class: 'azioni' }, [
+        el('button', {
+          type: 'button',
+          onclick: () => {
+            esitoFrasi = FRASI.map(({ frase, attese }) => {
+              const desiderio = interpreta(frase, pronto);
+              const esito = consiglia(desiderio, profili, configConNote(), pronto);
+              return { frase, codici: esito.proposte.map((p) => p.codice), problemi: controllaAttese(esito, attese) };
+            });
+            disegnaFrasi();
+          },
+        }, `Prova le ${FRASI.length} frasi tipiche`),
+      ]),
+      frasiNodo,
+    ]);
+  }
+
   // ============================================================ statistiche
+
+  /** Cosa racconta chi entra dalla porta delle parole: solo le scene capite, mai le frasi. */
+  function cardConsulti(dati) {
+    const c = dati.consulti || {};
+    const voci = new Map(((lessico && lessico()) || { scene: [] }).scene.map((sc) => [sc.chiave, sc]));
+    const etichetta = (chiave) => {
+      const voce = voci.get(chiave);
+      if (voce) return `${voce.evoca} (${voce.tipo})`;
+      return chiave.replace(/^nota:/, '').replace(/^famiglia:/, 'famiglia ');
+    };
+    const scene = Object.entries(c.scene || {}).sort((a, b) => b[1] - a[1]);
+    const veti = Object.entries(c.veti || {}).sort((a, b) => b[1] - a[1]);
+    return el('section', { class: 'card' }, [
+      el('h2', { testo: 'Consulente a parole' }),
+      el('p', { class: 'muted piccolo-testo' },
+        `${c.fatti === 1 ? 'Un racconto' : `${c.fatti || 0} racconti`}`
+        + `${c.vuoti ? `, ${c.vuoti} senza abbastanza da proporre` : ''}`
+        + `${c.conParoleIgnote ? `, ${c.conParoleIgnote} con parole che il lessico non conosce` : ''}`
+        + '. Le frasi non si salvano mai: si contano solo le scene riconosciute.'),
+      scene.length
+        ? el('div', { class: 'tabella-wrap' }, [el('table', {}, [
+          el('thead', {}, [el('tr', {}, [el('th', { testo: 'Raccontato' }), el('th', { class: 'num', testo: 'Volte' })])]),
+          el('tbody', {}, scene.slice(0, 40).map(([chiave, n]) => el('tr', {}, [
+            el('td', { testo: etichetta(chiave) }), el('td', { class: 'num', testo: String(n) }),
+          ]))),
+        ])])
+        : el('p', { class: 'vuoto', testo: 'Ancora nessun racconto.' }),
+      veti.length ? el('p', { class: 'piccolo-testo muted', testo: `Non lo voglio: ${veti.slice(0, 20).map(([k, n]) => `${etichetta(k)} ${n}`).join(' · ')}` }) : null,
+    ]);
+  }
 
   /** Cosa cerca chi entra dalla porta delle note: famiglie, note precise, veti. */
   function cardNoteCercate(dati) {
@@ -848,9 +1018,11 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
       riquadro(dati.abbandoni.length ? dati.abbandoni[0][0] : '—', 'Si abbandona su', dati.abbandoni.length ? 'warn' : ''),
       riquadro(String(dati.percorsi.guidato || 0), 'Scelgono le domande'),
       riquadro(String(dati.percorsi.note || 0), 'Scelgono le note', 'teal'),
+      riquadro(String(dati.percorsi.parole || 0), 'Raccontano a parole', 'teal'),
     ]));
 
     sezione.append(cardNoteCercate(dati));
+    sezione.append(cardConsulti(dati));
 
     sezione.append(el('section', { class: 'card' }, [
       el('h2', { testo: 'Codici proposti più spesso' }),
@@ -897,7 +1069,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
             const scelte = await chiediConferma({
               titolo: 'Azzera le statistiche',
               righe: [
-                { cosa: 'cambia', testo: `Percorsi (${dati.iniziati}), tempi, codici proposti, risposte e ricerche per note tornano a zero.` },
+                { cosa: 'cambia', testo: `Percorsi (${dati.iniziati}), tempi, codici proposti, risposte, ricerche per note e racconti tornano a zero.` },
                 { cosa: 'resta', testo: 'Catalogo, profili, domande e tarature non si toccano.' },
                 { cosa: 'resta', testo: 'Prima viene creato un punto di ripristino.' },
               ],
