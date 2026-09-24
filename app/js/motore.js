@@ -409,7 +409,12 @@ function confronta(a, b) {
   return String(a.profilo.codice).localeCompare(String(b.profilo.codice));
 }
 
-function scegliConDiversita(candidati, quanti, pesi, maxFamiglia) {
+/**
+ * Sceglie i tre (o quanti) fra i candidati già ordinati, al massimo uno per
+ * sottofamiglia e due per famiglia, allargando per gradi quando non bastano.
+ * La usa anche consulente.js: la diversità della rosa è la stessa per tutte le porte.
+ */
+export function scegliConDiversita(candidati, quanti, pesi, maxFamiglia) {
   const perSf = numero(pesi.maxPerSottofamiglia, 1);
   const perFam = numero(maxFamiglia, numero(pesi.maxPerFamiglia, 2));
   const fasi = [

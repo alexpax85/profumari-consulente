@@ -1,0 +1,35 @@
+{
+ "versione": 1,
+ "nota": "Il consulente a parole (docs/13-consulente.md): i pesi del punteggio, i modelli delle motivazioni e gli spunti da toccare. Le scene stanno in lessico.json, che non si modifica a mano. Dopo una modifica: node scripts/test_consulente.mjs",
+ "pesi": {
+  "accordi": 0.42,
+  "note": 0.33,
+  "attributi": 0.12,
+  "contesto": 0.08,
+  "carattere": 0.05,
+  "esclusione": 1,
+  "esclusioneFuori": 0.5,
+  "confidenzaBassa": 0.03,
+  "affinitaNota": 0.4,
+  "sogliaMinima": 0.2,
+  "proposte": 3,
+  "maxPerSottofamiglia": 1,
+  "maxPerFamiglia": 2
+ },
+ "frasi": {
+  "_nota": "{evoca} è come il lessico nomina la scena ('il bosco d'inverno'); {note} sono le note ritrovate in piramide con il loro posto ('abete in testa, vetiver sul fondo').",
+  "scenaNote": "Per {evoca}: {note}.",
+  "scenaAccordi": "Per {evoca}: {accordi}.",
+  "nota": "{note}, come chiedevi.",
+  "famiglia": "{famiglia} in primo piano, come chiedevi.",
+  "vicino": "Non ha tutto, ma è il più vicino a quello che racconti: {famiglia}.",
+  "dove": { "testa": "in testa", "cuore": "nel cuore", "fondo": "sul fondo" }
+ },
+ "spunti": [
+  { "titolo": "Un posto", "voci": ["il mare", "un bosco d'inverno", "la montagna", "un giardino fiorito", "una spa", "una biblioteca antica", "il deserto", "un'isola tropicale"] },
+  { "titolo": "Un sapore", "voci": ["un caffè", "la cioccolata calda", "un mojito", "i frutti rossi", "la vaniglia", "un tè verde", "il miele", "gli agrumi"] },
+  { "titolo": "Un momento", "voci": ["d'estate", "d'inverno", "la sera", "un primo appuntamento", "in ufficio", "dopo la pioggia", "a Natale", "in vacanza"] },
+  { "titolo": "Com'è", "voci": ["fresco", "pulito", "caldo e avvolgente", "elegante", "sensuale", "leggero", "intenso", "non troppo dolce"] },
+  { "titolo": "Per chi", "voci": ["per me", "per lui", "per lei", "è un regalo"] }
+ ]
+}
