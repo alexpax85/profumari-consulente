@@ -185,11 +185,9 @@ export function creaConsiglio({
     tolte = new Set();
     const { desiderio, trovato } = calcola();
     if (!trovato || !trovato.proposte.length) {
-      const ignote = desiderio.ignorate.length
-        ? ` ${conModello(T().ignote || '', { parole: desiderio.ignorate.map((p) => `«${p}»`).join(', ') })}` : '';
       const soloVeti = desiderio.capito.length > 0 && desiderio.capito.every((c) => c.modo === 'no' || c.modo === 'attenuato' || c.tipo === 'persona');
       if (soloVeti) mostraMessaggio(T().soloVeti || T().nonCapito || '');
-      else mostraMessaggio(`${T().nonCapito || ''}${ignote}`, { guida: true });
+      else mostraMessaggio(T().nonCapito || '', { guida: true });
       if (alConsulto && fraseContata !== testo) { fraseContata = testo; alConsulto(desiderio, null); }
       return;
     }
@@ -290,9 +288,8 @@ export function creaConsiglio({
       const cose = mancano.length > 1 ? `${mancano.slice(0, -1).join(', ')} e ${mancano[mancano.length - 1]}` : mancano[0];
       avvisi.push(conModello(R().manca || '', { cose }));
     }
-    if (desiderio.ignorate.length) {
-      avvisi.push(conModello(T().ignote || '', { parole: desiderio.ignorate.map((p) => `«${p}»`).join(', ') }));
-    }
+    // Le parole che il lessico non conosce non si mostrano al cliente: finiscono,
+    // contate, nella scheda Parole del banco, da dove si arricchisce il lessico.
     if (esito.allargato) avvisi.push(R().allargato || '');
     if (!esito.proposte.length) avvisi.push(R().tutteTolte || '');
     riferimenti.avviso.textContent = avvisi.filter(Boolean).join(' ');

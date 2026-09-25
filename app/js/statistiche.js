@@ -47,18 +47,35 @@ export function segnaRicerca(statistiche, criteri = {}, esito = {}) {
   }
 }
 
+// Le parole sconosciute si tengono una per una, mai in fila: una parola sola non
+// ricostruisce la frase. Solo lettere, di lunghezza ragionevole, e un tetto
+// all'elenco, così un chiosco lasciato acceso per mesi non si gonfia.
+const PAROLA_BUONA = /^[\p{L}'’]{3,24}$/u;
+export const MASSIMO_PAROLE = 300;
+
 /**
  * Cosa racconta chi entra dalla porta delle parole (docs/13-consulente.md).
  * Si contano le CHIAVI delle scene capite — che sono nostre, scritte nel lessico —
- * e mai la frase: una frase libera è un dato del cliente, e potrebbe contenere un
- * nome commerciale. Delle parole non capite si conta solo che c'erano.
+ * e mai la frase: una frase libera è un dato del cliente. Delle parole che il
+ * lessico non conosce si conta ciascuna da sola, per arricchire il lessico dal banco;
+ * quante volte è arrivata e quante in una frase rimasta senza proposte.
  */
 export function segnaConsulto(statistiche, desiderio = {}, esito = null) {
   if (!statistiche) return;
   const c = statistiche.consulti || (statistiche.consulti = {});
   c.fatti = (c.fatti || 0) + 1;
-  if (!esito || !esito.proposte || !esito.proposte.length) c.vuoti = (c.vuoti || 0) + 1;
+  const vuoto = !esito || !esito.proposte || !esito.proposte.length;
+  if (vuoto) c.vuoti = (c.vuoti || 0) + 1;
   if ((desiderio.ignorate || []).length) c.conParoleIgnote = (c.conParoleIgnote || 0) + 1;
+  const parole = c.parole || (c.parole = {});
+  for (const grezza of desiderio.ignorate || []) {
+    const parola = String(grezza).toLowerCase();
+    if (!PAROLA_BUONA.test(parola)) continue;
+    if (!parole[parola] && Object.keys(parole).length >= MASSIMO_PAROLE) continue;
+    const voce = parole[parola] || (parole[parola] = { volte: 0, vuote: 0 });
+    voce.volte++;
+    if (vuoto) voce.vuote++;
+  }
   for (const capita of desiderio.capito || []) {
     const dove = capita.modo === 'no' ? 'veti' : 'scene';
     const conteggi = c[dove] || (c[dove] = {});
@@ -69,6 +86,22 @@ export function segnaConsulto(statistiche, desiderio = {}, esito = null) {
 }
 
 /** Il codice che il cliente si è aperto per leggerne la piramide. */
+/** Le parole sconosciute, le più frequenti prima. */
+export function paroleIgnote(statistiche) {
+  const parole = (statistiche && statistiche.consulti && statistiche.consulti.parole) || {};
+  return Object.entries(parole)
+    .map(([parola, v]) => ({ parola, volte: v.volte || 0, vuote: v.vuote || 0 }))
+    .sort((a, b) => b.volte - a.volte || a.parola.localeCompare(b.parola));
+}
+
+/** Toglie dall'elenco una parola (già sistemata nel lessico), o tutte. */
+export function dimenticaParole(statistiche, quali = null) {
+  const c = statistiche && statistiche.consulti;
+  if (!c || !c.parole) return;
+  if (!quali) { c.parole = {}; return; }
+  for (const parola of [].concat(quali)) delete c.parole[parola];
+}
+
 export function segnaSchedaAperta(statistiche, codice) {
   if (!statistiche || !codice) return;
   const aperte = (statistiche.ricerche || (statistiche.ricerche = {}));

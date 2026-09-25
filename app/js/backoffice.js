@@ -1,5 +1,5 @@
-// Area del personale (docs/06-backoffice.md): catalogo, profili, taratura,
-// statistiche, backup. Stessa impostazione visiva del gestionale.
+// Area del personale (docs/06-backoffice.md): catalogo, profili, una scheda per
+// ciascuna delle tre porte (domande, note, parole), statistiche, backup. Stessa impostazione visiva del gestionale.
 // Nessun nome commerciale entra qui: dall'import teniamo solo codice, categoria, attivo.
 
 import { $, $$, el, svuota, toast, scarica, oggi, dataItaliana, chiediConferma } from './ui.js';
@@ -9,7 +9,7 @@ import { SCENARI, RICERCHE, FRASI, controllaAttese } from './scenari.js';
 import { preparaLessico, interpreta, haSostanza } from './interpreta.js';
 import { consiglia, pesiConsulente } from './consulente.js';
 import { indiceNote, cerca, impostazioni } from './ricerca.js';
-import { riepilogo, nuoveStatistiche } from './statistiche.js';
+import { riepilogo, nuoveStatistiche, paroleIgnote, dimenticaParole, MASSIMO_PAROLE } from './statistiche.js';
 import { creaEditorDomande } from './editor-domande.js';
 import {
   elencoAccordi, elencoFamiglie, elencoDomande, ATTRIBUTI, STAGIONI, MOMENTI,
@@ -531,9 +531,39 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
     ]);
   }
 
-  // =============================================================== taratura
+  // ======================================================= le tre porte
 
-  function disegnaTaratura(sezione) {
+  /** Due righe in cima a ogni scheda: a cosa serve, detto per chi sta al banco. */
+  function intro(testo) {
+    return el('p', { class: 'muted intro-scheda', testo });
+  }
+
+  function disegnaDomande(sezione) {
+    sezione.append(
+      intro('La prima porta: il cliente risponde a qualche domanda. Qui si scrivono le domande, si prova il percorso con tutte le risposte in vista e, per chi vuole, si muovono i pesi del punteggio.'),
+      ...editorDomande.sezione(s),
+      cardProvaRapida(),
+      cardCoefficienti(),
+    );
+  }
+
+  function disegnaNote(sezione) {
+    sezione.append(
+      intro('La seconda porta: il cliente sceglie gli ingredienti e sfoglia il catalogo. Qui si prova la ricerca e si controlla che il catalogo attivo copra tutte le famiglie.'),
+      cardRicercaNote(),
+    );
+  }
+
+  function disegnaParole(sezione) {
+    sezione.append(intro('La terza porta: il cliente racconta un posto, un sapore, un momento. Qui ci sono le parole che il lessico non ha ancora capito, la prova di una frase e i pesi.'));
+    if (!lessico || !lessico()) {
+      sezione.append(el('p', { class: 'vuoto', testo: 'Il lessico non è stato caricato: la porta delle parole è spenta.' }));
+      return;
+    }
+    sezione.append(cardParoleIgnote(), cardConsulente());
+  }
+
+  function cardCoefficienti() {
     const pesi = s.config.pesi;
     const numerico = (chiave, etichetta, min, max, passo = 0.01) => el('label', { class: 'campo' }, [
       etichetta,
@@ -543,7 +573,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
       }),
     ]);
 
-    sezione.append(el('section', { class: 'card' }, [
+    return el('section', { class: 'card' }, [
       el('h2', { testo: 'Coefficienti del punteggio' }),
       el('p', { class: 'muted piccolo-testo' }, 'Somiglianza degli accordi, vicinanza degli attributi, contesto, carattere; poi la forza dei veti e la penalità delle bozze incerte.'),
       el('div', { class: 'riga' }, [
@@ -559,18 +589,13 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
         numerico('maxPerFamiglia', 'Max per famiglia', 1, 3, 1),
         numerico('proposte', 'Quante proposte', 1, 5, 1),
       ]),
-    ]));
+    ]);
+  }
 
-    sezione.append(...editorDomande.sezione(s));
-
-    sezione.append(cardProvaRapida());
-
-    sezione.append(cardRicercaNote());
-    if (lessico && lessico()) sezione.append(cardConsulente());
-
-    sezione.append(el('section', { class: 'card' }, [
+  function cardValoriFabbrica() {
+    return el('section', { class: 'card' }, [
       el('h2', { testo: 'Valori di fabbrica' }),
-      el('p', { class: 'muted' }, 'Rimette pesi, domande, frasi, testi e le soglie della ricerca per note come sono nei file di configurazione. Catalogo, profili e statistiche non si toccano.'),
+      el('p', { class: 'muted' }, 'Rimette come li abbiamo consegnati i settaggi delle tre porte: domande e pesi, soglie della ricerca per note, pesi del consulente a parole, frasi e testi. Catalogo, profili e statistiche non si toccano.'),
       el('div', { class: 'azioni' }, [
         el('button', {
           class: 'pericolo', type: 'button',
@@ -605,7 +630,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
           },
         }, 'Ripristina i valori consigliati'),
       ]),
-    ]));
+    ]);
   }
 
   function cardProvaRapida() {
@@ -677,7 +702,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
     ricalcola();
     return el('section', { class: 'card' }, [
       el('h2', { testo: 'Prova rapida' }),
-      el('p', { class: 'muted piccolo-testo' }, 'Tutte le domande in una schermata: i risultati si aggiornano mentre scegli. È il modo più veloce per capire se una taratura funziona.'),
+      el('p', { class: 'muted piccolo-testo' }, 'Tutte le domande in una schermata: i risultati si aggiornano mentre scegli. È il modo più veloce per capire se una modifica alle domande funziona.'),
       comandi,
       el('div', { class: 'azioni' }, [
         el('button', { type: 'button', onclick: () => { risposteProva = { per_chi: 'me', genere: 'libero' }; disegna(); } }, 'Azzera le risposte'),
@@ -806,6 +831,76 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
         }, r.titolo)),
       ]),
       esitoNodo,
+    ]);
+  }
+
+  /**
+   * Le parole che i clienti hanno scritto e il lessico non conosce: una per una,
+   * mai la frase. Servono a noi per scrivere nuove scene in dati/lessico/;
+   * toccandone una la si prova qui sotto, "Sistemata" la toglie dall'elenco.
+   */
+  function cardParoleIgnote() {
+    const parole = paroleIgnote(s.statistiche);
+    const testoElenco = () => parole.map((p) => `${p.parola}\t${p.volte}\t${p.vuote}`).join('\n');
+    return el('section', { class: 'card' }, [
+      el('h2', { testo: 'Parole che non conosco ancora' }),
+      el('p', { class: 'muted piccolo-testo' },
+        'Le parole scritte dai clienti che il consulente non ha saputo tradurre, contate una per una: la frase intera non si salva mai. '
+        + 'Il cliente non le vede più. Scaricate l\'elenco e mandatecelo: ne facciamo nuove scene del lessico.'),
+      parole.length
+        ? el('div', { class: 'tabella-wrap' }, [el('table', {}, [
+          el('thead', {}, [el('tr', {}, [
+            el('th', { testo: 'Parola' }), el('th', { class: 'num', testo: 'Volte' }),
+            el('th', { class: 'num', testo: 'Senza proposte' }), el('th', { testo: '' }),
+          ])]),
+          el('tbody', {}, parole.slice(0, 80).map((p) => el('tr', {}, [
+            el('td', {}, [el('button', {
+              type: 'button', class: 'link', title: 'Provala nel riquadro qui sotto',
+              onclick: () => { fraseProva = p.parola; disegna(); },
+            }, p.parola)]),
+            el('td', { class: 'num', testo: String(p.volte) }),
+            el('td', { class: 'num', testo: p.vuote ? String(p.vuote) : '—' }),
+            el('td', {}, [el('button', {
+              type: 'button', class: 'piccolo',
+              onclick: () => { dimenticaParole(s.statistiche, p.parola); salvaEDisegna(`«${p.parola}» tolta dall'elenco.`); },
+            }, 'Sistemata')]),
+          ]))),
+        ])])
+        : el('p', { class: 'vuoto', testo: 'Nessuna parola sconosciuta, per ora.' }),
+      parole.length > 80 ? el('p', { class: 'piccolo-testo muted', testo: `Qui le 80 più frequenti; nel file ci sono tutte e ${parole.length}.` }) : null,
+      parole.length >= MASSIMO_PAROLE ? el('p', { class: 'avviso', testo: `L'elenco è pieno (${MASSIMO_PAROLE} parole): le nuove non entrano finché non lo si scarica e svuota.` }) : null,
+      parole.length
+        ? el('div', { class: 'azioni' }, [
+          el('button', {
+            class: 'primario', type: 'button',
+            onclick: () => scarica(`parole-sconosciute-${oggi()}.tsv`, `parola\tvolte\tsenza proposte\n${testoElenco()}\n`, 'text/tab-separated-values'),
+          }, 'Scarica l\'elenco'),
+          el('button', {
+            type: 'button',
+            onclick: async () => {
+              try { await navigator.clipboard.writeText(testoElenco()); toast('Elenco copiato.'); }
+              catch { toast('Copia non riuscita: usa "Scarica l\'elenco".'); }
+            },
+          }, 'Copia'),
+          el('button', {
+            class: 'pericolo', type: 'button',
+            onclick: async () => {
+              const scelte = await chiediConferma({
+                titolo: 'Svuota l\'elenco delle parole',
+                righe: [
+                  { cosa: 'cambia', testo: `Le ${parole.length} parole sconosciute vengono dimenticate.` },
+                  { cosa: 'resta', testo: 'Il resto delle statistiche, il lessico e le tarature non si toccano.' },
+                ],
+                conferma: 'Svuota',
+                pericolo: true,
+              });
+              if (!scelte) return;
+              dimenticaParole(s.statistiche);
+              salvaEDisegna('Elenco svuotato.');
+            },
+          }, 'Svuota l\'elenco'),
+        ])
+        : null,
     ]);
   }
 
@@ -962,7 +1057,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
       el('p', { class: 'muted piccolo-testo' },
         `${c.fatti === 1 ? 'Un racconto' : `${c.fatti || 0} racconti`}`
         + `${c.vuoti ? `, ${c.vuoti} senza abbastanza da proporre` : ''}`
-        + `${c.conParoleIgnote ? `, ${c.conParoleIgnote} con parole che il lessico non conosce` : ''}`
+        + `${c.conParoleIgnote ? `, ${c.conParoleIgnote} con parole che il lessico non conosce (l'elenco è nella scheda Parole)` : ''}`
         + '. Le frasi non si salvano mai: si contano solo le scene riconosciute.'),
       scene.length
         ? el('div', { class: 'tabella-wrap' }, [el('table', {}, [
@@ -1217,6 +1312,7 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
           ])))
           : el('p', { class: 'vuoto', testo: 'Ancora nessun punto di ripristino.' }),
       ]),
+      cardValoriFabbrica(),
       el('section', { class: 'card' }, [
         el('h2', { testo: 'Codice del banco' }),
         el('div', { class: 'azioni' }, [
@@ -1254,12 +1350,16 @@ export function creaBackoffice({ stato, predefiniti, salva, provaMotore, profili
     for (const pulsante of $$('#bo-tabs button')) {
       pulsante.classList.toggle('attivo', pulsante.dataset.tab === scheda);
     }
-    for (const nome of ['catalogo', 'profili', 'taratura', 'statistiche', 'backup']) {
+    for (const nome of ['catalogo', 'profili', 'domande', 'note', 'parole', 'statistiche', 'backup']) {
       const sezione = $(`#tab-${nome}`);
       sezione.classList.toggle('attivo', nome === scheda);
       if (nome !== scheda) { svuota(sezione); continue; }
       svuota(sezione);
-      ({ catalogo: disegnaCatalogo, profili: disegnaProfili, taratura: disegnaTaratura, statistiche: disegnaStatistiche, backup: disegnaBackup })[nome](sezione);
+      ({
+        catalogo: disegnaCatalogo, profili: disegnaProfili,
+        domande: disegnaDomande, note: disegnaNote, parole: disegnaParole,
+        statistiche: disegnaStatistiche, backup: disegnaBackup,
+      })[nome](sezione);
     }
     const attivi = profiliInGioco().length;
     $('#bo-stato').textContent = `${attivi} fragranze nel percorso`;

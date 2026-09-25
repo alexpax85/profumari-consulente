@@ -136,7 +136,7 @@ Una nota arriva scritta in due modi: dal cassetto come chiave già risolta (`ros
 | `spiegazioni` | la riga che dice cos'è una nota, in parole normali |
 | `massimoScelte`, `minimoOccorrenze`, `quanteNotePerGruppo`, `quantiRisultati` | quanto si può chiedere e quanto si mostra |
 
-Le soglie si tarano dal backoffice (Taratura → *Ricerca per note*); gruppi, sinonimi e spiegazioni si scrivono nel file. Dopo una modifica:
+Le soglie si tarano dal backoffice (scheda Note); gruppi, sinonimi e spiegazioni si scrivono nel file. Dopo una modifica:
 
 ```bash
 node scripts/test_ricerca.mjs
@@ -146,7 +146,7 @@ node scripts/test_ricerca.mjs
 
 - `node scripts/test_ricerca.mjs` — le prove: indice, sinonimi, peso delle file, pieno contro parziale, veti, filtri, ordine stabile, più una passata sul catalogo vero (ogni nota ha la sua famiglia, nessuna famiglia resta senza note, le ricerche tipiche trovano qualcosa).
 - `node scripts/prova_ricerca.mjs` — le ricerche tipiche sul catalogo vero, da leggere a occhio col personale; `--indice` stampa la tavolozza com'è oggi (gruppi, famiglie, note e conteggi).
-- Backoffice → Taratura → **Ricerca per note**: le stesse cose dal banco, con le soglie da muovere, gli scenari pronti e i controlli di salute (famiglie rimaste senza note, famiglie con poche referenze attive).
+- Backoffice → scheda **Note**: le stesse cose dal banco, con le soglie da muovere, gli scenari pronti e i controlli di salute (famiglie rimaste senza note, famiglie con poche referenze attive).
 
 ## 8. Statistiche
 

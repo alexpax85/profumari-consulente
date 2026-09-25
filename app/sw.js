@@ -2,7 +2,7 @@
 // Alla prima visita mette in cache il guscio dell'app e i dati di partenza;
 // poi serve dalla cache e aggiorna in sottofondo.
 
-const CACHE = 'consulente-v6';   // si alza a ogni pubblicazione che cambia file o dati
+const CACHE = 'consulente-v7';   // si alza a ogni pubblicazione che cambia file o dati
 
 const GUSCIO = [
   './',

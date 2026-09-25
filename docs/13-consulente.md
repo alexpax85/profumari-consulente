@@ -114,7 +114,7 @@ Mai un numero, mai un punteggio. Sulla scheda la piramide si accende come nella 
 - **Il bivio** ha tre porte: *Rispondi a qualche domanda*, *Parti dalle note che ti piacciono*, *Raccontami cosa cerchi*.
 - **Il racconto** (`#racconto`): un riquadro grande per la frase; il **microfono**, se il browser sa ascoltare (Safari su iPad lo sa: il testo compare mentre si parla, e si corregge con la tastiera); e gli **spunti da toccare** — *un posto, un sapore, un momento, com'è, per chi* — che compongono la frase senza tastiera. Chi non vuole scrivere né parlare costruisce *"il mare, d'estate, fresco, per lui"* con quattro tocchi.
 - **I consigli** (`#consigli`): *"Ho capito: bosco d'inverno · fresco · niente dolce"* come chip — toccandone una la si toglie e i codici si ricalcolano, toccandola di nuovo torna. Poi le tre schede (codice, famiglia, perché, piramide, descrizione), *Nessuno mi convince* per la riserva, *Cambia la frase*, *Ricomincia*. Tocco lungo su una scheda: il dettaglio del punteggio per il personale.
-- Quando non capisce abbastanza lo dice, e nomina le parole che non conosce: *"Queste parole non le conosco ancora: «astronave»."*
+- Quando non capisce abbastanza lo dice e invita a raccontare un posto, un sapore, un momento. Le parole che non conosce non le mostra al cliente: finiscono, contate una per una, nella scheda *Parole* del banco.
 
 ## 4. Tastiera e voce sul chiosco — da decidere col cliente
 
@@ -138,7 +138,7 @@ node scripts/test_consulente.mjs    # il punteggio e il perché su profili sinte
 node scripts/prova_consulente.mjs   # le frasi tipiche, da leggere a occhio col personale ("frase libera" per provarne una)
 ```
 
-Le **frasi tipiche** stanno in `app/js/scenari.js` (`FRASI`), ognuna con le sue attese scritte in termini di catalogo, non di scene — *"almeno due delle tre hanno legni o note verdi"*, *"nessuna è gourmand"*, *"nessuna è da donna"* — così restano valide quando il lessico cresce. Sono le stesse che il backoffice prova con un tocco (Taratura → *Consulente a parole*), dove si scrive anche una frase qualsiasi e si vede cosa ha capito e perché propone quello che propone.
+Le **frasi tipiche** stanno in `app/js/scenari.js` (`FRASI`), ognuna con le sue attese scritte in termini di catalogo, non di scene — *"almeno due delle tre hanno legni o note verdi"*, *"nessuna è gourmand"*, *"nessuna è da donna"* — così restano valide quando il lessico cresce. Sono le stesse che il backoffice prova con un tocco (scheda Parole), dove si scrive anche una frase qualsiasi e si vede cosa ha capito e perché propone quello che propone.
 
 ## 7. Come si fa crescere
 

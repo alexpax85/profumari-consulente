@@ -19,16 +19,29 @@ Area riservata dentro la stessa web app, raggiungibile con tocco lungo di tre se
 - Anteprima: "Con che risposte esce questo profumo?" mostra, per il profilo aperto, i tre scenari tipici in cui finirebbe in rosa (calcolati dal motore sugli scenari di `prova_catalogo`). Aiuta a capire se la scheda è credibile.
 - Duplica da un altro codice (per varianti tipo "intense", "elixir", "eau fraîche").
 
-### Taratura
+### Una scheda per porta: Domande, Note, Parole
 
-- Coefficienti del punteggio (`config.pesi`), soglia minima, vincoli di diversità.
+Fino al 25/09/2026 era una sola scheda *Taratura*; il titolare la trovava troppo lunga, e ora ogni porta ha la sua. Ognuna si apre con due righe che dicono a cosa serve.
+
+**Domande**
+
 - **Domande del percorso**: si scrivono da qui, non dai file. La tabella elenca titolo, tipo, gruppo, numero di risposte, peso e interruttore, e permette di riordinarle. Aprendone una si modificano titolo e sottotitolo, il tipo (una risposta sola, più risposte, cursore 1-5), il gruppo (percorso o gioco), e ogni risposta: testo, icona scelta da una griglia, e **verso cosa porta** — gli accordi si toccano a giro su tre livelli (*un tocco · abbastanza · tanto*) invece di scrivere numeri, più le chip di carattere e occasioni. "Nuova domanda", "Duplica" (nasce spenta) e "Elimina" completano il giro; un badge *da completare* segnala le domande che non hanno ancora titolo, due risposte o un contributo.
 - Una domanda modificata qui viene marcata `toccata`: da quel momento gli aggiornamenti dell'app non la riscrivono più. Quelle di fabbrica mai toccate invece si riallineano da sole quando l'app si aggiorna, tenendo però peso e interruttore. Se una domanda di fabbrica viene eliminata, l'id finisce in `config.domandeRimosse` e non torna più indietro.
 - La Prova rapida qui sotto usa la configurazione del momento: una domanda appena scritta si prova subito, senza uscire dalla scheda.
+- Coefficienti del punteggio (`config.pesi`), soglia minima, vincoli di diversità: in fondo, per chi tara.
+
+**Note**
+
 - **Ricerca per note** (`12-ricerca-note.md`): le soglie del secondo percorso — quando una famiglia c'è, quando un veto colpisce, quanto vale una somiglianza, quante cose si possono mettere insieme, quante note per cassetto — più la prova sul catalogo vero (famiglie e note da toccare, scenari pronti, tabella dei risultati con il motivo per cui ognuno è uscito) e i **controlli di salute**: famiglie rimaste senza note da mostrare, famiglie con poche referenze attive, note del catalogo senza riga in `note.json`. Sono le cose che un import del catalogo può rompere in silenzio. I gruppi della tavolozza, i sinonimi e le spiegazioni delle note stanno in `app/config/ricerca.json`.
-- Testi del percorso (versione "per me" e "regalo").
-- **Prova rapida**: un pannello dove il personale compila il percorso in forma compatta (tutte le domande in una schermata) e vede in tempo reale i tre risultati con punteggi e accordi coincidenti. È lo strumento principale per capire e correggere il motore.
-- "Ripristina i valori consigliati" riporta ai file di configurazione di fabbrica.
+
+**Parole**
+
+- **Parole che non conosco ancora**: le parole scritte dai clienti che il lessico non ha saputo tradurre. Il cliente non le vede (fino al 25/09/2026 comparivano in un avviso sotto i risultati). Si contano una per una — mai la frase — con quante volte sono arrivate e quante in una frase rimasta senza proposte; solo lettere, da 3 a 24, al massimo 300 parole diverse. Toccandone una la si prova nel riquadro della frase; *Sistemata* la toglie, *Scarica l'elenco* (TSV) o *Copia* servono a mandarcele per scrivere nuove scene in `dati/lessico/`, *Svuota l'elenco* le dimentica tutte.
+- **Consulente a parole** (`13-consulente.md`): pesi, prova di una frase, le frasi tipiche.
+
+**Prova rapida** (scheda Domande): un pannello dove il personale compila il percorso in forma compatta (tutte le domande in una schermata) e vede in tempo reale i tre risultati con punteggi e accordi coincidenti. È lo strumento principale per capire e correggere il motore.
+
+"Ripristina i valori consigliati" (scheda Backup) riporta i settaggi delle tre porte ai file di configurazione di fabbrica.
 
 ### Statistiche
 
